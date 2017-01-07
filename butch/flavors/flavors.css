@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* FLAVORS Library
 ======================== */
 
@@ -60,4 +61,68 @@
 .yellow, .lemon { background-color: #ffff00 !important; }
 .yellow-text .lemon-text { color: #ffff00 !important; }
 .banana { background-color: #F4FA58 !important; }
+=======
+/* FLAVORS Library
+======================== */
+
+/* Whites */
+.vanilla, .white, .albino { background-color: #fff !important; }
+.vanilla-text, .white-text, .albino-text { color: #fff !important; }
+.vanilla-bean { background-color: #FBFBEF !important; }
+.vanilla-bean-text { color: #FBFBEF !important; }
+
+/* Shades of Grey */
+.silver { background-color: #C0C0C0 !important; }
+.silver-text { color: #C0C0C0 !important; }
+.grey, .gray { background-color: #808080 !important; }
+.grey-text, .gray-text { color: #808080 !important; }
+.black { background-color: #000 !important; }
+.black-text { color: #000 !important; }
+
+/* Reds */
+.red { background-color: #ff0000 !important; }
+.red-text { color: #ff0000 !important; }
+.strawberry { background-color: #FE2E2E !important; }
+.strawberry-text { color: #FE2E2E !important; }
+.blood, .maroon { background-color: #800000 !important; }
+.blood-text, .maroon-text { color: #800000 !important; } 
+.blood-orange { background-color: #ED300E !important; }
+.blood-orange-text { color: #ED300E !important; }
+
+/* Oranges */
+.orange { background-color: #FFA500 !important; }
+.orange-text { color: #FFA500 !important; }
+
+/* Pinks */ 
+.pink { }
+
+/* Purples */ 
+.purple, .plum { background-color: #800080 !important; }
+.purple-text, .plum-text { color: #800080 !important; }
+
+/* Blues */
+.blue { background-color: #0000FF !important; }
+.blue-text { color: #0000FF !important; }
+.blueberry { background-color: #485B88 !important; }
+.blueberry-text { color: #485B88 !important; }
+
+/* Browns */
+.brown { background-color: #A52A2A !important; }
+.brown-text { color: #A52A2A !important; }
+.chocolate { background-color: #4c3428 !important; }
+.chocolate-text { color: #4c3428 !important; }
+
+/* Greens */
+.green { background-color: #008000 !important; } 
+.green-text { color: #008000 !important; }
+.lime { background-color: #00ff00 !important; }
+.lime-text { color: #00ff00 !important; }
+.olive { background-color: #808000 !important; }
+.olive-text { color: #808000 !important; }
+
+/* Yellows */ 
+.yellow, .lemon { background-color: #ffff00 !important; }
+.yellow-text .lemon-text { color: #ffff00 !important; }
+.banana { background-color: #F4FA58 !important; }
+>>>>>>> origin/master
 .banana-text { color: #F4FA58 !important; }
