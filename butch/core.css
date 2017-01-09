@@ -1,7 +1,7 @@
-<<<<<<< HEAD
 /*******************
-  BUTCH CORE
+BUTCH CORE
 *************************/
+@import url('buix.css');
 
 .jagged { position: relative; margin-top: 50px; margin-bottom: 50px}
 .jagged::before, .jagged::after {
@@ -31,8 +31,9 @@
 	background-position: 50%;
 }
 
-.comfortable { padding: 4em; }
-.uncomfortable { padding: -2em; }
+.comfortable { padding: 4em !important; }
+.uncomfortable { padding: -2em !important; }
+.solitary { margin: 4em !important; }
 
 /* Layout Utilities
 *******************/
@@ -62,6 +63,7 @@ input[type=range] + .thumb {
   text-overflow: ellipsis;
 }
 .no-padding { padding: 0 !important; }
+.padding { padding: 2em; }
 
 	.enlarge, .enlarged {
 		-ms-transform: scale(1.5,1.5); /* IE 9 */
@@ -117,6 +119,19 @@ input[type=range] + .thumb {
 
 /* TYPOGRAPHY
 *******************/
+.arial-text { font-family: arial, sans-serif; }
+.arial-black-text { font-family: 'Arial Black', sans-serif; }
+.comic-sans-text { font-family: 'Comic Sans MS', sans-serif; }
+.tahoma-text { font-family: tahoma, sans-serif; }
+.helvetica-text { font-family: Helvetica, sans-serif; }
+.impact-text { font-family: Impact, sans-serif; }
+.verdana-text { font-family: verdana, sans-serif; }
+.courier-new-text { font-family: 'Courier New', Courier, monospace; }
+.lucida-console-text { font-family: 'Lucida Console', Monaco, monospace; }
+.georgia-text { font-family: Georgia, serif; }
+.times-text { font-family: 'Times New Roman', Times, serif; }
+.palatino-text { font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; }
+
 .thin { font-weight: 200; }
 .text-center { text-align: center; }
 .text-right { text-align: right; }
@@ -147,6 +162,7 @@ input[type=range] + .thumb {
 .tal-center { text-align-last: center; }
 .tal-justify { text-align-last: justify; }
 
+/* Flow-Text */
 .flow-text {
   font-weight: 300;
 }
@@ -155,19 +171,16 @@ input[type=range] + .thumb {
     font-size: 1.2rem;
   }
 }
-
 @media only screen and (min-width: 390px) {
   .flow-text {
     font-size: 1.224rem;
   }
 }
-
 @media only screen and (min-width: 420px) {
   .flow-text {
     font-size: 1.248rem;
   }
 }
-
 @media only screen and (min-width: 450px) {
   .flow-text {
     font-size: 1.272rem;
@@ -280,287 +293,9 @@ input[type=range] + .thumb {
   .flow-text {
     font-size: 1.2rem;
   }
-=======
-/*******************
-  BUTCH CORE
-*************************/
-
-.jagged { position: relative; margin-top: 50px; margin-bottom: 50px}
-.jagged::before, .jagged::after {
-	right: 0;
-	left: 0;
-	display: block;
-	height: 90px;
-	background-size: 50px 100%;
-	position: absolute;
-	content: '';
-	pointer-events: none;
-}
-.jagged::before {
-	top: -90px;
-	background-image: -webkit-gradient(linear, 0 0, 300% 100%, color-stop(0.25, transparent), color-stop(0.25, #C0C0C0));
-	background-image:
-		linear-gradient(315deg, #808080 25%, transparent 25%),
-		linear-gradient( 45deg, #C0C0C0 25%, transparent 25%);
-	background-position: 50%;
-}
-.jagged::after {
-	top: 100%;
-	background-image: -webkit-gradient(linear, 0 0, 300% 100%, color-stop(0.25, #C0C0C0), color-stop(0.25, #808080));
-	background-image: 
-		linear-gradient(135deg, #C0C0C0 25%, transparent 25%),
-		linear-gradient(225deg, #C0C0C0 25%, transparent 25%);
-	background-position: 50%;
 }
 
-.comfortable { padding: 4em; }
-.uncomfortable { padding: -2em; }
 
-/* Layout Utilities
+/* MEDIA Styles
 *******************/
-.hide { display: none !important; }
-.left-align { text-align: left; }
-.right-align { text-align: right; }
-.center, .center-align { text-align: center; }
-.left { float: left !important; }
-.right { float: right !important; }
-.no-select, input[type=range],
-input[type=range] + .thumb {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.truncate {
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.no-padding { padding: 0 !important; }
-
-	.enlarge, .enlarged {
-		-ms-transform: scale(1.5,1.5); /* IE 9 */
-		-webkit-transform: scale(1.5,1.5); /* Safari */
-		transform: scale(1.5,1.5); /* Standard syntax */
-	}
-	.double-size {
-		-ms-transform: scale(2,2); /* IE 9 */
-		-webkit-transform: scale(2,2); /* Safari */
-		transform: scale(2,2); /* Standard syntax */
-	}
-	.triple-size {
-		-ms-transform: scale(3,3); /* IE 9 */
-		-webkit-transform: scale(3,3); /* Safari */
-		transform: scale(3,3); /* Standard syntax */
-	}
-	.shrink, .shrunk {
-		-ms-transform: scale(0.75, 0.75); /* IE 9 */
-		-webkit-transform: scale(0.75, 0.75); /* Safari */
-		transform: scale(0.75, 0.75); /* Standard syntax */
-	}
-	.half-size {
-		-ms-transform: scale(0.5, 0.5); /* IE 9 */
-		-webkit-transform: scale(0.5, 0.5); /* Safari */
-		transform: scale(0.5, 0.5); /* Standard syntax */
-	}
-	.skew, .skew-left {
-		-webkit-transform: skew(20deg);
-		-moz-transform: skew(20deg);
-		-o-transform: skew(20deg);
-	}
-	.skew-right {
-		-webkit-transform: skew(-20deg);
-		-moz-transform: skew(-20deg);
-		-o-transform: skew(-20deg);
-	}
-	.perspective, .perspective-left {
-		-ms-transform: skew(15deg,10deg); /* IE 9 */
-		-webkit-transform: skew(15deg,10deg); /* Safari */
-		transform: skew(15deg,10deg); /* Standard syntax */
-	}
-	.perspective-right {
-		-ms-transform: skew(-15deg,-10deg); /* IE 9 */
-		-webkit-transform: skew(-15deg,-10deg); /* Safari */
-		transform: skew(-15deg,-10deg); /* Standard syntax */
-	}
-
-
-/* SHAPES
-*******************/
-.circle { border-radius: 50%; }
-
-
-/* TYPOGRAPHY
-*******************/
-.thin { font-weight: 200; }
-.text-center { text-align: center; }
-.text-right { text-align: right; }
-.text-left { text-align: left; }
-.spread { letter-spacing: 3px; }
-.oblique { font-style: oblique; }
-.double-col { -moz-columns:2; -webkit-columns:2; columns:2; }
-.triple-col { -moz-columns:3; -webkit-columns:3; columns:3; }
-.quad-col { -moz-columns:4; -webkit-columns:4; columns:4; }
-.quint-col { -moz-columns:5; -webkit-columns:5; columns:5; }
-.six-col { -moz-columns:6; -webkit-columns:6; columns:6; }
-.six-col { -moz-columns:7; -webkit-columns:7; columns:7; }
-.pad10{ -webkit-column-gap: 10px; -moz-column-gap: 10px; column-gap: 10px; }
-.pad20{ -webkit-column-gap: 20px; -moz-column-gap: 20px; column-gap: 20px; }
-.pad30{ -webkit-column-gap: 30px; -moz-column-gap: 30px; column-gap: 30px; }
-.pad40{ -webkit-column-gap: 40px; -moz-column-gap: 40px; column-gap: 40px; }
-.pad50{ -webkit-column-gap: 50px; -moz-column-gap: 50px; column-gap: 50px; }
-.dbl-spaced { line-height: 200% !important; }
-.allcaps { text-transform: uppercase !important; }
-.alllower { text-transform: lowercase !important; }
-.capitals { text-transform: capitalize !important; }
-.indent { text-indent: 1cm !important; }
-.wordspace-small { word-spacing: 0.5em; }
-.wordspace-medium { word-spacing: 1em; }
-.wordspace-large { word-spacing: 1.5em; }
-.tal-left { text-align-last: left; }
-.tal-right { text-align-last: right; }
-.tal-center { text-align-last: center; }
-.tal-justify { text-align-last: justify; }
-
-.flow-text {
-  font-weight: 300;
-}
-@media only screen and (min-width: 360px) {
-  .flow-text {
-    font-size: 1.2rem;
-  }
-}
-
-@media only screen and (min-width: 390px) {
-  .flow-text {
-    font-size: 1.224rem;
-  }
-}
-
-@media only screen and (min-width: 420px) {
-  .flow-text {
-    font-size: 1.248rem;
-  }
-}
-
-@media only screen and (min-width: 450px) {
-  .flow-text {
-    font-size: 1.272rem;
-  }
-}
-
-@media only screen and (min-width: 480px) {
-  .flow-text {
-    font-size: 1.296rem;
-  }
-}
-
-@media only screen and (min-width: 510px) {
-  .flow-text {
-    font-size: 1.32rem;
-  }
-}
-
-@media only screen and (min-width: 540px) {
-  .flow-text {
-    font-size: 1.344rem;
-  }
-}
-
-@media only screen and (min-width: 570px) {
-  .flow-text {
-    font-size: 1.368rem;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .flow-text {
-    font-size: 1.392rem;
-  }
-}
-
-@media only screen and (min-width: 630px) {
-  .flow-text {
-    font-size: 1.416rem;
-  }
-}
-
-@media only screen and (min-width: 660px) {
-  .flow-text {
-    font-size: 1.44rem;
-  }
-}
-
-@media only screen and (min-width: 690px) {
-  .flow-text {
-    font-size: 1.464rem;
-  }
-}
-
-@media only screen and (min-width: 720px) {
-  .flow-text {
-    font-size: 1.488rem;
-  }
-}
-
-@media only screen and (min-width: 750px) {
-  .flow-text {
-    font-size: 1.512rem;
-  }
-}
-
-@media only screen and (min-width: 780px) {
-  .flow-text {
-    font-size: 1.536rem;
-  }
-}
-
-@media only screen and (min-width: 810px) {
-  .flow-text {
-    font-size: 1.56rem;
-  }
-}
-
-@media only screen and (min-width: 840px) {
-  .flow-text {
-    font-size: 1.584rem;
-  }
-}
-
-@media only screen and (min-width: 870px) {
-  .flow-text {
-    font-size: 1.608rem;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  .flow-text {
-    font-size: 1.632rem;
-  }
-}
-
-@media only screen and (min-width: 930px) {
-  .flow-text {
-    font-size: 1.656rem;
-  }
-}
-
-@media only screen and (min-width: 960px) {
-  .flow-text {
-    font-size: 1.68rem;
-  }
-}
-
-@media only screen and (max-width: 360px) {
-  .flow-text {
-    font-size: 1.2rem;
-  }
->>>>>>> origin/master
-}
+img.responsive { width: 100%; height: auto !important; }

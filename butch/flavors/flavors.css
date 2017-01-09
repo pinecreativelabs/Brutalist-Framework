@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 /* FLAVORS Library
 ======================== */
 
 /* Whites */
-.vanilla, .white, .albino { background-color: #fff !important; }
-.vanilla-text, .white-text, .albino-text { color: #fff !important; }
+.vanilla, .white, .cream { background-color: #fff !important; }
+.vanilla-text, .white-text, .cream-text { color: #fff !important; }
 .vanilla-bean { background-color: #FBFBEF !important; }
 .vanilla-bean-text { color: #FBFBEF !important; }
 
@@ -15,39 +14,72 @@
 .grey-text, .gray-text { color: #808080 !important; }
 .black { background-color: #000 !important; }
 .black-text { color: #000 !important; }
+.mushroom { background-color: #cfd8dc !important; }
+.mushroom-text { color: #cfd8dc !important; }
 
 /* Reds */
-.red { background-color: #ff0000 !important; }
-.red-text { color: #ff0000 !important; }
+.red, .tomato { background-color: #ff0000 !important; }
+.red-text, .tomato-text { color: #ff0000 !important; }
 .strawberry { background-color: #FE2E2E !important; }
 .strawberry-text { color: #FE2E2E !important; }
-.blood, .maroon { background-color: #800000 !important; }
-.blood-text, .maroon-text { color: #800000 !important; } 
-.blood-orange { background-color: #ED300E !important; }
-.blood-orange-text { color: #ED300E !important; }
+.blood, .maroon, .pomegranate{ background-color: #800000 !important; }
+.blood-text, .maroon-text, .pomegranate-text { color: #800000 !important; } 
+.blood-orange { background-color: #dd2c00 !important; }
+.blood-orange-text { color: #dd2c00 !important; }
 
 /* Oranges */
-.orange { background-color: #FFA500 !important; }
-.orange-text { color: #FFA500 !important; }
+.orange { background-color: #ff9800 !important; }
+.orange-text { color: #ff9800 !important; }
+.pumpkin-spice { background-color: #e65100 !important; }
+.pumpkin-spice-text { color: #e65100 !important; }
+.mango { background-color: #ffab40 !important; }
+.mango-text { color: #ffab40 !important; }
+.tangerine { background-color: #ff6d00 !important; }
+.tangerine-text { color: #ff6d00 !important; } 
+.peach { background-color: #ffab91 !important; }
+.peach-text { color: #ffab91 !important; }
+.carrot { background-color: #ef6c00 !important; }
+.carrot-text { color: #ef6c00 !important; }
 
 /* Pinks */ 
-.pink { }
+.pink { background-color: #e91e63 !important; }
+.pink-text { color: #e91e63 !important; }
+.cotton-candy { background-color: #ff80ab !important; }
+.cotton-candy-text { color: #ff80ab !important; }
+.bubble-gum { background-color: #f8bbd0 !important; }
+.bubble-gum-text { color: #f8bbd0 !important; }
+.raspberry { background-color: #ad1457 !important; }
+.raspberry-text { color: #ad1457 !important; }
 
 /* Purples */ 
 .purple, .plum { background-color: #800080 !important; }
 .purple-text, .plum-text { color: #800080 !important; }
+.grape { background-color: #4a148c !important; }
+.grape-text { color: #4a148c !important; }
+.eggplant { background-color: #7b1fa2 !important; }
+.eggplant-text { color: #7b1fa2 !important; }
+.light-purple { background-color: #ce93d8 !important; }
+.light-purple-text { color: #ce93d8 !important; }
 
 /* Blues */
 .blue { background-color: #0000FF !important; }
 .blue-text { color: #0000FF !important; }
 .blueberry { background-color: #485B88 !important; }
 .blueberry-text { color: #485B88 !important; }
+.light-blue, .water { background-color: #ADD8E6 !important; }
+.light-blue-text, .water-text { color: #ADD8E6 !important; }
+.navy-blue { background-color: #283593 !important; }
+.navy-blue-text { color: #283593 !important; }
 
 /* Browns */
-.brown { background-color: #A52A2A !important; }
-.brown-text { color: #A52A2A !important; }
+.brown { background-color: #795548 !important; }
+.brown-text { color: #795548 !important; }
 .chocolate { background-color: #4c3428 !important; }
 .chocolate-text { color: #4c3428 !important; }
+.dark-chocolate { background-color: #3e2723 !important; }
+.dark-chocolate-text { color: #3e2723 !important; }
+.light-brown, .cappuccino { background-color: #be9b7b !important; }
+.light-brown-text, .cappuccino-text { color: #be9b7b !important; }
 
 /* Greens */
 .green { background-color: #008000 !important; } 
@@ -56,73 +88,93 @@
 .lime-text { color: #00ff00 !important; }
 .olive { background-color: #808000 !important; }
 .olive-text { color: #808000 !important; }
+.pistachio { background: #81c784 !important; }
+.pistachio-text { color: #81c784 !important; }
+.mint { background-color: #a5d6a7 !important; }
+.mint-text { color: #a5d6a7 !important; }
+.spinach { background-color: #1b5e20 !important; }
+.spinach-text { color: #1b5e20 !important; }
 
 /* Yellows */ 
 .yellow, .lemon { background-color: #ffff00 !important; }
-.yellow-text .lemon-text { color: #ffff00 !important; }
+.yellow-text, .lemon-text { color: #ffff00 !important; }
 .banana { background-color: #F4FA58 !important; }
-=======
-/* FLAVORS Library
-======================== */
-
-/* Whites */
-.vanilla, .white, .albino { background-color: #fff !important; }
-.vanilla-text, .white-text, .albino-text { color: #fff !important; }
-.vanilla-bean { background-color: #FBFBEF !important; }
-.vanilla-bean-text { color: #FBFBEF !important; }
-
-/* Shades of Grey */
-.silver { background-color: #C0C0C0 !important; }
-.silver-text { color: #C0C0C0 !important; }
-.grey, .gray { background-color: #808080 !important; }
-.grey-text, .gray-text { color: #808080 !important; }
-.black { background-color: #000 !important; }
-.black-text { color: #000 !important; }
-
-/* Reds */
-.red { background-color: #ff0000 !important; }
-.red-text { color: #ff0000 !important; }
-.strawberry { background-color: #FE2E2E !important; }
-.strawberry-text { color: #FE2E2E !important; }
-.blood, .maroon { background-color: #800000 !important; }
-.blood-text, .maroon-text { color: #800000 !important; } 
-.blood-orange { background-color: #ED300E !important; }
-.blood-orange-text { color: #ED300E !important; }
-
-/* Oranges */
-.orange { background-color: #FFA500 !important; }
-.orange-text { color: #FFA500 !important; }
-
-/* Pinks */ 
-.pink { }
-
-/* Purples */ 
-.purple, .plum { background-color: #800080 !important; }
-.purple-text, .plum-text { color: #800080 !important; }
-
-/* Blues */
-.blue { background-color: #0000FF !important; }
-.blue-text { color: #0000FF !important; }
-.blueberry { background-color: #485B88 !important; }
-.blueberry-text { color: #485B88 !important; }
-
-/* Browns */
-.brown { background-color: #A52A2A !important; }
-.brown-text { color: #A52A2A !important; }
-.chocolate { background-color: #4c3428 !important; }
-.chocolate-text { color: #4c3428 !important; }
-
-/* Greens */
-.green { background-color: #008000 !important; } 
-.green-text { color: #008000 !important; }
-.lime { background-color: #00ff00 !important; }
-.lime-text { color: #00ff00 !important; }
-.olive { background-color: #808000 !important; }
-.olive-text { color: #808000 !important; }
-
-/* Yellows */ 
-.yellow, .lemon { background-color: #ffff00 !important; }
-.yellow-text .lemon-text { color: #ffff00 !important; }
-.banana { background-color: #F4FA58 !important; }
->>>>>>> origin/master
 .banana-text { color: #F4FA58 !important; }
+.butter { background-color: #F2F5A9 !important; }
+.butter-text { color: #F2F5A9 !important; }
+.honey, .amber { background-color: #ffc107 !important; }
+.honey-text, .amber-text { color: #ffc107 !important; }
+
+/* MIXED FLAVORS 
+======================== */
+.strawberry-banana { background-color: #FE2E2E !important; color: #F4FA58 !important; }
+.orange-cream { background-color: #FFA500 !important; color: #fff !important; }
+.blueberry-pomegranate { background-color: #485B88 !important; color: #800000 !important; }
+.lemon-lime { background-color: #ffff00 !important; color: #00ff00 !important; }
+.honey-blueberry { color: #485B88 !important; background-color: #ffc107 !important; }
+.chocolate-strawberry { color: #FE2E2E !important; background-color: #4c3428 !important; }
+.pumpkin-spice-butter { color: #F2F5A9 !important; background-color: #e65100 !important; }
+.vanilla-chocolate { background-color: #ffffff !important; color: #4c3428 !important; }
+.olive-mushroom { background-color: #808000 !important; color: #cfd8dc !important; }
+.raspberry-bubble-gum { background-color: #ad1457 !important; color: #f8bbd0 !important; }
+.mint-chocolate { background-color: #a5d6a7 !important; color: #4c3428 !important; }
+.peach-plum { background-color: #ffab91 !important; color: #800080 !important; }
+
+/* GRADIENTS
+======================== */
+.strawberry-banana-gradient {
+	background: #FE2E2E; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#FE2E2E, #F4FA58); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#FE2E2E, #F4FA58); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#FE2E2E, #F4FA58); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#FE2E2E, #F4FA58); /* Standard syntax */
+}
+.orange-cream-gradient {
+	background: #FFA500; 
+	background: -webkit-linear-gradient(#FFA500, #FFFFFF); 
+	background: -o-linear-gradient(#FFA500, #FFFFFF); 
+	background: -moz-linear-gradient(#FFA500, #FFFFFF); 
+	background: linear-gradient(#FFA500, #FFFFFF); 
+}
+.blueberry-pomegranate-gradient {
+	background: #485B88; 
+	background: -webkit-linear-gradient(#485B88, #800000); 
+	background: -o-linear-gradient(#485B88, #800000); 
+	background: -moz-linear-gradient(#485B88, #800000); 
+	background: linear-gradient(#485B88, #800000); 
+}
+.lemon-lime-gradient {
+	background: #ffff00; 
+	background: -webkit-linear-gradient(#ffff00, #00ff00); 
+	background: -o-linear-gradient(#ffff00, #00ff00); 
+	background: -moz-linear-gradient(#ffff00, #00ff00); 
+	background: linear-gradient(#ffff00, #00ff00); 
+}
+.vanilla-chocolate-gradient {
+	background: #ffffff; 
+	background: -webkit-linear-gradient(#ffffff, #4c3428); 
+	background: -o-linear-gradient(#ffffff, #4c3428); 
+	background: -moz-linear-gradient(#ffffff, #4c3428); 
+	background: linear-gradient(#ffffff, #4c3428); 
+}
+.neapolitan {
+	background: #4c3428; 
+	background: -webkit-linear-gradient(#4c3428, #FE2E2E, #ffffff); 
+	background: -o-linear-gradient(#4c3428, #FE2E2E, #ffffff); 
+	background: -moz-linear-gradient(#4c3428, #FE2E2E, #ffffff); 
+	background: linear-gradient(#4c3428, #FE2E2E, #ffffff);
+}
+.blood-black-gradient {
+	background: #800000; 
+	background: -webkit-linear-gradient(#800000, #000000); 
+	background: -o-linear-gradient(#800000, #000000); 
+	background: -moz-linear-gradient(#800000, #000000); 
+	background: linear-gradient(#800000, #000000);
+}
+.mint-chocolate-gradient {
+	background: #a5d6a7; 
+	background: -webkit-linear-gradient(#a5d6a7, #4c3428); 
+	background: -o-linear-gradient(#a5d6a7, #4c3428); 
+	background: -moz-linear-gradient(#a5d6a7, #4c3428); 
+	background: linear-gradient(#a5d6a7, #4c3428);
+}
