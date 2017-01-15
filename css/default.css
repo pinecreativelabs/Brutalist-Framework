@@ -108,7 +108,7 @@ abbr[title] {
  */
 b,
 strong {
-  font-weight: bold;
+  font-weight: 700 !important;
 }
 
 /**
@@ -145,18 +145,15 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-sub,
-sup {
+sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
 }
-
 sup {
   top: -0.5em;
 }
-
 sub {
   bottom: -0.25em;
 }
@@ -391,22 +388,20 @@ table {
 td,th { padding: 0; }
 html { box-sizing: border-box; }
 *, *:before, *:after { box-sizing: inherit; }
-
-ul {
-  padding: 0;
-  list-style-type: none;
-}
-
 ul.browser-default,
 ul.browser-default li { list-style-type: initial; }
-ul li { list-style-type: none; }
-
+ul.inside, ol.inside { list-style-position: inside !important; }
+ul.square { list-style-type: square !important; }
+ul.circle {list-style-type: circle !important;}
+ul.disc {list-style-type: disc !important;}
+ul.square {list-style-type: square !important;}
+ol.upper-roman {list-style-type: upper-roman !important;}
+ol.lower-alpha {list-style-type: lower-alpha !important;}
 a {
   color: #039be5;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
-
 .valign-wrapper {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -486,13 +481,8 @@ h6 {
   margin: 0.5rem 0 0.4rem 0;
 }
 em { font-style: italic; }
-strong { font-weight: 700 !important; }
+strong { font-weight: 500; }
 small { font-size: 75%; }
 p { margin: 0; padding: 0; }
-hr.thick { border: 0; height: 4px; margin-top: 1em; margin-bottom: 1em; }
-hr.jagged { margin-top: 4em; margin-bottom: 4em; }
 
-/* Effects Styles */
-.arc-text, .circle-text, .bezier-text, .spiral-text, .wave-text {
-	overflow: hidden; 
-}
+.arc-text, .circle-text, .spiral-text, .wave-text, .bezier-text { overflow: hidden; }

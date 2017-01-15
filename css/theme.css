@@ -1,6 +1,11 @@
-<<<<<<< HEAD
-.row { margin-bottom: 0px !important; margin-top: 0px !important; }
-=======
-.row { margin-bottom: 0px !important; margin-top: 0px !important; }
->>>>>>> origin/master
-.row .col { padding: 0px !important; }
+/* Theme Styles 
+ *
+ * Styles for setting a custom theme for your site
+ ===================================================*/ 
+ 
+.home-head {
+	background: url('../assets/images/apocalypse-architecture.jpg');
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center center;
+}
