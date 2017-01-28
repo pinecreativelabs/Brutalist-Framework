@@ -6,6 +6,14 @@ $(".fittext").fitText();
 $(".fittext-compress").fitText(2.2); /* Increases compression */
 $(".fittext-uncompress").fitText(0.8); /* Reduces compression */
 	
+/* Equal Heights */
+$('.equal-height').matchHeight({
+	byRow: true,
+    property: 'height',
+    target: null,
+    remove: false
+});	
+	
 /* BAFFLE */
 /* Animation speed value can be increased or decreased. Same with duration */
 let b = baffle('.baffle', { characters: '█▓▒░', speed: 150 }).reveal(2500); /* Runs animation only once, upon page load */

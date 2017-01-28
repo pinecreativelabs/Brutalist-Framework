@@ -379,6 +379,43 @@ input[type=range] + .thumb {
 }
 
 
-/* MEDIA Styles
+/* Media Styles
 *******************/
 img.responsive { width: 100%; height: auto !important; }
+
+
+/* MEDIA QUERIES
+Improve upon responsive behavior
+**********************************/
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.jagged { position: relative; margin-top: 25px; margin-bottom: 25px}
+	.jagged::before, .jagged::after {
+		height: 45px;
+		background-size: 25px 100%;
+	}
+	.jagged::before {
+		top: -45px;
+	}
+	.solitary { margin: 0.5em; }
+	.padding { padding: 1.25em; }
+	.small-padding: { padding: 16px; }
+	.comfortable { padding: 1.5em; }
+}
+@media only screen and (max-width: 767px) {
+	.jagged { position: relative; margin-top: 25px; margin-bottom: 25px}
+	.jagged::before, .jagged::after {
+		height: 45px;
+		background-size: 25px 100%;
+	}
+	.jagged::before {
+		top: -45px;
+	}
+	.solitary { margin: 0.3em; }
+	.padding { padding: 1em; }
+	.small-padding { padding: 8px; }
+	.comfortable { padding-left: 1em !important; padding-right: 1em !important; padding-top: 1.5em !important; padding-bottom: 1.5em !important; }
+	
+	.double-col, .triple-col, .quad-col, .quint-col, .six-col, .sept-col, .oct-col { -moz-columns:1; -webkit-columns:1; columns:1; }
+	.pad10, .pad20, .pad30, .pad40, .pad50 { -webkit-column-gap: 0px; -moz-column-gap: 0px; column-gap: 0px; }
+}
