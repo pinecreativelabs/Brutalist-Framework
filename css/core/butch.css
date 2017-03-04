@@ -1,7 +1,6 @@
 /*******************
 BUTCH CORE
 *************************/
-@import url('buix.css');
 
 .jagged { position: relative; margin-top: 50px; margin-bottom: 50px}
 .jagged::before, .jagged::after {
@@ -34,11 +33,11 @@ BUTCH CORE
 /* Layout & Spacing
 *******************/
 .no-padding { padding: 0 !important; }
-.padding { padding: 2em !important; }
-.comfortable { padding: 4em !important; }
-.uncomfortable { padding: -2em !important; }
-.solitary { margin: 4em !important; }
-.sociable { margin: -2em !important; }
+.padding { padding: 2em; }
+.comfortable { padding: 4em; }
+.uncomfortable { padding: -2em; }
+.solitary { margin: 4em; }
+.sociable { margin: -2em; }
 .hide { display: none !important; }
 .left { float: left !important; }
 .right { float: right !important; }
@@ -419,3 +418,150 @@ Improve upon responsive behavior
 	.double-col, .triple-col, .quad-col, .quint-col, .six-col, .sept-col, .oct-col { -moz-columns:1; -webkit-columns:1; columns:1; }
 	.pad10, .pad20, .pad30, .pad40, .pad50 { -webkit-column-gap: 0px; -moz-column-gap: 0px; column-gap: 0px; }
 }
+
+/* GLITCH EFFECT
+***********************/
+.glitch {
+	-webkit-animation: glitch1 2.5s infinite;
+	animation: glitch1 2.5s infinite;
+}
+span.glitch {
+	-webkit-animation: glitch1 1.5s infinite;
+	animation: glitch1 1.5s infinite;
+}
+@-webkit-keyframes glitch1 {
+  0% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+  7% {
+    -webkit-transform: skew(-0.5deg, -0.9deg);
+            transform: skew(-0.5deg, -0.9deg);
+    opacity: 0.75;
+  }
+  10% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+  27% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+  30% {
+    -webkit-transform: skew(0.8deg, -0.1deg);
+            transform: skew(0.8deg, -0.1deg);
+    opacity: 0.75;
+  }
+  35% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+  52% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: skew(-1deg, 0.2deg);
+            transform: skew(-1deg, 0.2deg);
+    opacity: 0.75;
+  }
+  50% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+  72% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+  75% {
+    -webkit-transform: skew(0.4deg, 1deg);
+            transform: skew(0.4deg, 1deg);
+    opacity: 0.75;
+  }
+  80% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes glitch1 {
+  0% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+  7% {
+    -webkit-transform: skew(-0.5deg, -0.9deg);
+            transform: skew(-0.5deg, -0.9deg);
+    opacity: 0.75;
+  }
+  10% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+  27% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+  30% {
+    -webkit-transform: skew(0.8deg, -0.1deg);
+            transform: skew(0.8deg, -0.1deg);
+    opacity: 0.75;
+  }
+  35% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+  52% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: skew(-1deg, 0.2deg);
+            transform: skew(-1deg, 0.2deg);
+    opacity: 0.75;
+  }
+  50% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+  72% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+  75% {
+    -webkit-transform: skew(0.4deg, 1deg);
+            transform: skew(0.4deg, 1deg);
+    opacity: 0.75;
+  }
+  80% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+}
+

@@ -2,7 +2,8 @@
  *
  * Styles for setting a custom theme for your site
  ===================================================*/ 
- 
+
+p { font-size: 1.1em }
 .home-head {
 	background: url('../assets/images/apocalypse-architecture.jpg');
 	background-repeat: no-repeat; 

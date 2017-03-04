@@ -23,15 +23,12 @@
 	<meta property="og:description" content="A simple framework for the brutalist web design trend." /> 
 	<meta property="og:site_name" content="Brutalist Framework" />
 
-	<!-- Icons
-	<link rel="shortcut icon" href="images/icons/mf-icon44.png" type="image/x-icon" />
-	<link rel="icon" href="images/icons/mf-icon15.ico" type="image/x-icon" />
-	<link rel="apple-touch-icon" href="images/icons/mf-icon-57.png" />-->
+	<!-- Icons -->
+	<link rel="shortcut icon" href="assets/icons/bf44.png" type="image/x-icon" />
+	<link rel="icon" href="assets/icons/bf15.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="assets/icons/bf57.png" />
 	<!-- CSS  -->
-	<link href="css/default.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-	<link href="css/core/grid.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-	<link href="css/core/butch.css" type="text/css" rel="stylesheet" media="screen,projection" />
-	<link href="css/core/flavors.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link href="css/core/core.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link href="css/theme.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 <body class="black">
@@ -77,12 +74,12 @@
 					<h3 class="white-text courier-new-text fittext-compress">FITTEXT</h3>
 					<p class="white-text courier-new-text flow-text"><em>Fittext</em> makes any text aggressively responsive. Re-size your browser window to see them scale!</p>
 
-					<p class="white-text courier-new-text flow-text"><strong>Default Fittext</strong> - Best scales text to fit within container.</p>
-					<p class="white-text courier-new-text fittext blue">.fittext</p>
-					<p class="white-text courier-new-text flow-text"><strong>Compressed Fittext</strong> - Increases compression.</p>
-					<p class="white-text courier-new-text fittext-compress blue">.fittext-compress</p>
-					<p class="white-text courier-new-text flow-text"><strong>Uncompressed Fittext:</strong> - Decreases compression.</p>
-					<p class="white-text courier-new-text fittext-uncompress blue">.fittext-uncompress</p>
+					<p class="white-text courier-new-text flow-text"><strong>.fittext</strong> - Best scales text to fit within container.</p>
+					<p class="white-text arial-text fittext black">Brutalist Framework</p>
+					<p class="white-text courier-new-text flow-text"><strong>.fittext-compress</strong> - Increases compression.</p>
+					<p class="white-text arial-text fittext-compress black">Brutalist Framework</p>
+					<p class="white-text courier-new-text flow-text"><strong>.fittext-uncompress</strong> - Decreases compression.</p>
+					<p class="white-text arial-text fittext-uncompress black">Brutalist Framework</p>
 					<p class="padding"></p>
 					<hr class="thick white" />
 					<h3 class="white-text courier-new-text fittext-compress">CURVED TEXT</h3>
@@ -131,7 +128,34 @@
 							</div>
 						</div>
 					</div>
-					
+					<hr class="thick white" />
+					<h3 class="white-text courier-new-text fittext-compress">Pride Filter</h3>
+					<p class="white-text flow-text courier-new-text"><strong>Got pride?</strong> Add a rainbow color filter to any image! Apply the class <strong>.pride</strong> to the img tag. To apply to multiple images, simply wrap them within a div with the pride class.</p>
+					<div class="row">
+						<div class="col s12 m4 l4">
+							<p class="flow-text white-text courier-new-text"><strong>Original Image</strong></p>
+							<img class="responsive" src="assets/images/brutal-building.jpg" alt="Original" />
+						</div>
+						<div class="col s12 m4 l4">
+							<p class="flow-text white-text courier-new-text"><strong>.pride</strong></p>
+							<img class="responsive pride" src="assets/images/brutal-building.jpg" alt="Prideified" />
+						</div>
+					</div>
+					<p class="padding"></p>
+					<hr class="thick white" />
+					<h3 class="white-text courier-new-text fittext-compress">Glitch</h3>
+					<p class="white-text courier-new-text flow-text">Add a glitch effect to any element! Works on images and text, or even entire areas! It is entirely CSS-based. Apply <strong>.glitch</strong> class to any element.</p>
+					<div class="row">
+						<div class="col s12 m4 l4">
+							<p class="flow-text white-text courier-new-text"><strong><span class="glitch">Glitched</span> Circle Image</strong></p>
+							<img class="responsive circle glitch" src="assets/images/brutal-building.jpg" alt="Original" />
+						</div>
+						<div class="col s12 m4 l4">
+							<p class="flow-text white-text courier-new-text"><strong>Glitched Paragraph</strong></p>
+							<p class="white-text glitch arial-text">This is a rather glitchy paragraph. You could even baffle all your <span class="baffle-forever">firking</span> enemies!</p>
+							<p class="white-text tahoma-text">This paragraph has just one <span class="glitch"><strong>glitched</strong></span> word, using the span tag.</p>
+						</div>
+					</div>
 					<p class="padding"></p>
 				</section>
 			</div>
@@ -141,17 +165,49 @@
 <footer class="black padding">
 	<div class="row">
 		<div class="col s12 no-padding">
-			<p class="courier-new-text black-text flow-text center"><a href="http://www.brutalistframework.com/assets/Brutalist_Framework_B2.1.zip"><span class="lime blue-text invert-hover"><strong>DOWNLOAD</strong></span></a> ||&nbsp;
+			<p class="courier-new-text black-text flow-text center">
 				<a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank"><span class="lime blue-text invert-hover">GITHUB PROJECT</span></a>&nbsp;
 				<a href="http://www.twitter.com/brutalistfwk" target="_blank">@brutalistfwk</a>
 			</p>
-			<div class="jagged center lime">
-				<p class="fittext-compress vanilla-bean-text courier-new-text">Built by <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-text">Brad Fogelstrom</span></a>
-				</p>
+			<div class="jagged gray">
+				<div class="row">
+					<div class="col s12 m12 l4 no-padding">
+						<div class="padding flow-text vanilla-bean-text arial-text">
+							<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="green yellow-text invert-hover">Pine Creative Labs</a> production</p>
+							<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-text invert-hover">Brad Fogelstrom</span></a></p>
+						</div>
+					</div>
+					<div class="col s12 m12 l4 no-padding">
+						<div class="padding flow-text vanilla-bean-text arial-text">
+							<p>Interview on<br /><a href="http://www.brutalistwebsites.com/brutalistframework.com" target="_blank" class="white blue-text invert-hover">BrutalistWebsites.com</a>
+						</div>
+					</div>
+					<div class="col s12 m12 l4 no-padding">
+						<div class="padding arial-text vanilla-bean-text">
+							<p class="flow-text">Contact us:</p>
+							<ul class="tags">
+								<li><a href="http://www.twitter.com/brutalistfwk" target="_blank" class="btn white-text blue-candy hue-hover"><strong>Twitter</strong></a></li>
+								<li><a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank" class="btn black white-text invert-hover"><strong>GitHub</strong></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
+			<p class="center white-text lucida-text">&copy; 2017 <em>BrutalistFramework</em>. All rights reserved.</p>
 		</div>
 	</div>
 </footer>
+
+<!-- Sticky Download Box -->
+	<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_B3.zip" target="_blank">
+	<div class="sticky-bottom-right stack-top solitary">
+		<div class="skew lemon-lime-gradient btn invert-hover">
+		<p class="flow-text black-text skew-right"><strong>Download</strong></p>
+		</div>
+		<p class="lime-text center">Version BETA 3</p>
+	</div></a>
+<!-- End Sticky -->
+
 <!--  Scripts-->
 <script src="js/jquery.js"></script>
 <script src="js/brutalist.js"></script>

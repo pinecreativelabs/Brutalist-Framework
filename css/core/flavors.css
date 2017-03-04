@@ -26,6 +26,10 @@
 .blood-text, .maroon-text, .pomegranate-text { color: #800000 !important; } 
 .blood-orange { background-color: #dd2c00 !important; }
 .blood-orange-text { color: #dd2c00 !important; }
+.cherry { background-color: #b52026 !important; }
+.cherry-text { color: #b52026 !important; }
+.black-cherry { background-color: #5a1a18 !important; }
+.black-cherry-text { color: #5a1a18 !important; }
 
 /* Oranges */
 .orange { background-color: #ff9800 !important; }
@@ -64,10 +68,14 @@
 /* Blues */
 .blue { background-color: #0000FF !important; }
 .blue-text { color: #0000FF !important; }
+.blue-candy { background-color: #2196f3 !important; }
+.blue-candy-text { color: #2196f3 !important; }
 .blueberry { background-color: #485B88 !important; }
 .blueberry-text { color: #485B88 !important; }
 .light-blue, .water { background-color: #ADD8E6 !important; }
 .light-blue-text, .water-text { color: #ADD8E6 !important; }
+.pool-water { background-color: #81d4fa !important; }
+.pool-water-text { color: #81d4fa !important; }
 .navy-blue { background-color: #283593 !important; }
 .navy-blue-text { color: #283593 !important; }
 

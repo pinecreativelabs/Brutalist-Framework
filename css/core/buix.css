@@ -2,6 +2,20 @@
 BUIX - Brutalist User Interface Experience
 **************************************************/
 
+/* BUTTONS
+**********************************/
+button, .button, .btn {
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 0.3em;
+	line-height: 150%;
+}
+.blocked:hover { 
+	cursor: not-allowed !important; 
+}
+
+
 /* NAVIGATION
 **********************************/
 /* Default Nav */
@@ -10,3 +24,78 @@ nav a.active { text-decoration: underline; }
 nav a:hover { text-decoration: underline; }
 nav ul li ul li a { padding-left: 0.5em; }
 nav ul li ul li ul li a { padding-left: 1em; }
+
+/* STACKS: create layers
+**********************************/
+.stack-base { z-index: 1 !important; }
+.stack-below { z-index: -9 !important; }
+.stack-above { z-index: 9 !important; }
+.stack-high { z-index: 49 !important; }
+.stack-top { z-index: 99 !important; }
+
+/* STICKIES: fixed positions 
+**********************************/
+.sticky { position: fixed; }
+.sticky-bottom-right { position: fixed; bottom: 0; right: 0; }
+.sticky-bottom-left { position: fixed; bottom: 0; left: 0; }
+.sticky-top-right { position: fixed; top: 0; right: 0; }
+.sticky-top-left { position: fixed; top: 0; left: 0; }
+
+/* TAGS 
+**********************************/
+ul.tags { list-style: none; padding: 0; margin: 0; }
+ul.tags li { display: inline-block; list-style-type: none; padding: 0; margin: 0.4em; }
+
+
+.modal:before {
+  content: "";
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 999;
+}
+.modal:target:before {
+  display: block;
+}
+.modal:target .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  top: 20%;
+}
+.modal-dialog {
+  background: #fefefe;
+  border: #333 solid 1px;
+  border-radius: 5px;
+  margin-left: -200px;
+  position: fixed;
+  left: 50%;
+  top: -100%;
+  z-index: 9999;
+  width: 360px;
+  -webkit-transform: translate(0, -500%);
+  -ms-transform: translate(0, -500%);
+  transform: translate(0, -500%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+.modal-body {
+  padding: 20px;
+}
+.modal-header,
+.modal-footer {
+  padding: 10px 20px;
+}
+.modal-header {
+  border-bottom: #eee solid 1px;
+}
+.modal-header h2 {
+  font-size: 20px;
+}
+.modal-footer {
+  border-top: #eee solid 1px;
+  text-align: right;
+}

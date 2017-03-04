@@ -717,3 +717,71 @@
     left: 100%;
   }
 }
+/*********************
+  Device Visibility Helpers
+**********************/
+@media only screen and (max-width: 600px) {
+  .hide-on-small-only, .hide-on-small-and-down {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .hide-on-med-and-down {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .hide-on-med-and-up {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .hide-on-med-only {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .hide-on-large-only {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .show-on-large {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .show-on-medium {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .show-on-small {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .show-on-medium-and-up {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .show-on-medium-and-down {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .center-on-small-only {
+    text-align: center;
+  }
+}
