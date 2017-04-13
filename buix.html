@@ -54,7 +54,7 @@
 							<li><a href="#" class="active lime-text">BUIX</a></li>
 							<li><a href="bfx.html" class="lime-text">BFX</a></li>
 							<li><a href="grid.html" class="lime-text">Grid</a></li>
-							<li><a href="themes.html" class="lime-text">Themes</a></li>
+							<li><a href="templates.html" class="lime-text">Templates</a></li>
 							<li><a href="http://www.twitter.com/brutalistfwk" target="_blank">@brutalistfwk</a></li>
 						</ul>
 					</nav>
@@ -84,12 +84,28 @@
 					<p class="padding"></p>
 					<h3 class="white-text courier-new-text fittext-compress">Stacks</h3>
 					<p class="white-text courier-new-text flow-text">Stack an element behind or on top of others. Apply these classes:</p>
-					<p class="white-text courier-new-text flow-text"><strong>.stack-base</strong> - Forces layer to 1.<br />
-						<strong>.stack-below</strong> - Forces layer to -9 (behind base layer).<br />
-						<strong>.stack-above</strong> - Forces layer to 9 (above base).<br />
-						<strong>.stack-high</strong> - Forces layer to 49.<br />
-						<strong>.stack-top</strong> - Forces layer to 99.
+					<p class="white-text arial-text">
+						<strong>.stack-base</strong> - Forces layer to 0.<br />
+						<strong>.stack1</strong> - Layer 1.<br />
+						<strong>.stack2</strong> - Layer 2.<br />
+						<strong>.stack3</strong> - Layer 3.<br />
+						<strong>.stack4</strong> - Layer 4.<br />
+						<strong>.stack5</strong> - Layer 5.<br />
+						<strong>.stack6</strong> - Layer 6.<br />
+						<strong>.stack7</strong> - Layer 7.<br />
+						<strong>.stack8</strong> - Layer 8.<br />
+						<strong>.stack9</strong> - Layer 9.<br /><strong>.stack-middle</strong> - Layer 29.<br />
+						<strong>.stack-high</strong> - Layer 49.<br />
+						<strong>.stack-top</strong> - Layer 99.
 					</p>
+					<p class="white-text arial-text"><span class="flow-text courier-new-text heavy">.stack-auto</span><br />
+					Apply this class to automatically increment the z-index value - starting at 0 - for every element that uses this class. Requires <em>start.brutalizing.js</em>.
+					</p>
+					<div class="flow-text lucida-text">
+						<div class="water stack-auto"><span class="blueberry-text">.stack-auto</span>&nbsp;z-index = 0</div>
+						<div class="blueberry stack-auto"><span class="water-text">.stack-auto</span>&nbsp;z-index = 1</div>
+						<div class="navy-blue stack-auto"><span class="blue-candy-text">.stack-auto</span>&nbsp;z-index = 2</div>
+					</div>
 					<p class="padding"></p>
 					<h3 class="white-text courier-new-text fittext-compress">Sticky Stack Example</h3>
 					<p class="white-text courier-new-text flow-text">In the top right corner of this page, you should see a skewed circle image inside an orange-cream box. It should always be visible and overlapping all content as you scroll down the page.</p>
@@ -103,27 +119,35 @@
 					<p class="padding"></p>
 					<hr class="thick white" />
 					<h3 class="white-text courier-new-text fittext-compress">Tags</h3>
-					<p class="white-text courier-new-text flow-text">To create a list of tags, simply apply the class <strong>.tags</strong> to an unordered list.</p>
-					<ul class="tags">
+					<p class="white-text arial-text">To create a list of tags, simply apply the class <strong>.tags</strong> to an unordered list.</p>
+					<ul class="tags lucida-text heavy">
 						<li>Brutalist</li>
 						<li>Architecture</li>
 						<li>Framework</li>
 					</ul>
-					<p class="white-text courier-new-text flow-text">Tag list with links, with additional classes applied to each tag.</p>
+					<p class="white-text arial-text">Tag list with links, with additional classes applied to each tag.</p>
 					<ul class="tags flow-text">
 						<li class="skew"><a href="#" class="lime blue-text invert-hover">Brutalist</a></li>
 						<li class="skew"><a href="#" class="mint-chocolate invert-hover">Architecture</a></li>
 						<li class="skew"><a href="#" class="lemon-lime-gradient blue-text darken-hover">Framework</a></li>
-					</ul>
+					</ul>					
 					<p class="padding"></p>
 					<hr class="thick white" />
-					
-					<p class="white-text courier-new-text flow-text"><em>Roadmap:</em></p>
-					<ul class="flow-text white-text courier-new-text">
-						<li>Tabs</li>
-						<li>Modal Box</li>
-						<li>Others TBD</li>
-					</ul>
+					<h3 class="white-text courier-new-text fittext-compress">Revelations</h3>
+					<p class="white-text arial-text"><em>Revelations</em> is a hover effect, for revealing hidden content!</p>
+					<div class="row">
+						<div class="col s12 m6">
+							<p class="arial-text white-text">The revelation container starts at a maximum width of 50% of the container it is wrapped within, and enlarges to 100% width upon hover while also revealing a caption.</p>
+							<p class="lucida-text lime-text black"><span class="heavy">.revelation</span> (wrap content within this class)<br />
+							&nbsp;&nbsp;&nbsp;<span class="heavy">.secret</span> (hidden content to be revealed upon hover)</p>
+						</div>
+						<div class="col s12 m6 center">
+							<div class="revelation orange-cream">
+								<img src="assets/images/brutal-building.jpg" class="responsive" />
+								<p class="white-text arial-text secret">SECRET - only visible upon hover!</p>
+							</div>
+						</div>
+					</div>
 					<p class="padding"></p>
 
 				</section>
@@ -168,12 +192,12 @@
 </footer>
 
 <!-- Sticky Download Box -->
-	<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_B3.zip" target="_blank">
+	<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.0.zip" target="_blank">
 	<div class="sticky-bottom-right stack-top solitary">
 		<div class="skew lemon-lime-gradient btn invert-hover">
 		<p class="flow-text black-text skew-right"><strong>Download</strong></p>
 		</div>
-		<p class="lime-text center">Version BETA 3</p>
+		<p class="lime-text center">Version 1.0</p>
 	</div></a>
 <!-- End Sticky -->
 
@@ -183,6 +207,14 @@
 <script src="js/start.brutalizing.js"></script>
 
 <!-- TRACKING -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-93046252-1', 'auto');
+  ga('send', 'pageview');
+</script>
 </body>
 </html>

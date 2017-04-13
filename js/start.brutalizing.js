@@ -7,6 +7,11 @@ $(document).ready(function(){
 $(".fittext").fitText();
 $(".fittext-compress").fitText(2.2); /* Increases compression */
 $(".fittext-uncompress").fitText(0.8); /* Reduces compression */
+
+/* STACKS */
+$('.stack-auto').each(function(index) {
+	$(this).css("z-index", index);
+});
 	
 /* Equal Heights */
 $('.equal-height').matchHeight({

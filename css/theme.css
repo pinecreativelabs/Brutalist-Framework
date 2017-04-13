@@ -10,3 +10,8 @@ p { font-size: 1.1em }
 	background-size: cover;
 	background-position: center center;
 }
+
+.demo-cover-1 { background-image: url('../assets/images/apocalypse-architecture.jpg'); }
+.clip-bg-demo1 {
+    background-image: url('../assets/images/vacation.jpg');
+}

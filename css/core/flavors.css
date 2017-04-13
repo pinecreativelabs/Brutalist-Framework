@@ -110,11 +110,17 @@
 .banana-text { color: #F4FA58 !important; }
 .butter { background-color: #F2F5A9 !important; }
 .butter-text { color: #F2F5A9 !important; }
+.cheddar { background-color: #F7B92A !important; }
+.cheddar-text { color: #F7B92A !important; }
 .honey, .amber { background-color: #ffc107 !important; }
 .honey-text, .amber-text { color: #ffc107 !important; }
+.pineapple { background-color: #FFE874 !important; }
+.pineapple-text { color: #FFE874 !important; }
 
 /* MIXED FLAVORS 
 ======================== */
+.monochrome { background-color: #fff !important; color: #000 !important; }
+.spinach-carrot { background-color: #1b5e20 !important; color: #ef6c00 !important; }
 .strawberry-banana { background-color: #FE2E2E !important; color: #F4FA58 !important; }
 .orange-cream { background-color: #FFA500 !important; color: #fff !important; }
 .blueberry-pomegranate { background-color: #485B88 !important; color: #800000 !important; }
@@ -127,6 +133,8 @@
 .raspberry-bubble-gum { background-color: #ad1457 !important; color: #f8bbd0 !important; }
 .mint-chocolate { background-color: #a5d6a7 !important; color: #4c3428 !important; }
 .peach-plum { background-color: #ffab91 !important; color: #800080 !important; }
+.cherry-vanilla { background-color: #b52026 !important; color: #fff !important; }
+.grape-pool-water { background-color: #4a148c; color: #81d4fa !important; }
 
 /* GRADIENTS
 ======================== */
@@ -136,6 +144,20 @@
 	background: -o-linear-gradient(#FE2E2E, #F4FA58); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(#FE2E2E, #F4FA58); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(#FE2E2E, #F4FA58); /* Standard syntax */
+}
+.monochrome-gradient {
+	background: #FFFFFF; 
+	background: -webkit-linear-gradient(#FFFFFF, #000000); 
+	background: -o-linear-gradient(#FFFFFF, #000000); 
+	background: -moz-linear-gradient(#FFFFFF, #000000); 
+	background: linear-gradient(#FFFFFF, #000000); 
+}
+.vanilla-cherry-gradient {
+	background: #FFFFFF; 
+	background: -webkit-linear-gradient(#FFFFFF, #b52026); 
+	background: -o-linear-gradient(#FFFFFF, #b52026); 
+	background: -moz-linear-gradient(#FFFFFF, #b52026); 
+	background: linear-gradient(#FFFFFF, #b52026); 
 }
 .orange-cream-gradient {
 	background: #FFA500; 

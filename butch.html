@@ -54,7 +54,7 @@
 							<li><a href="buix.html" class="lime-text">BUIX</a></li>
 							<li><a href="bfx.html" class="lime-text">BFX</a></li>
 							<li><a href="grid.html" class="lime-text">Grid</a></li>
-							<li><a href="themes.html" class="lime-text">Themes</a></li>
+							<li><a href="templates.html" class="lime-text">Templates</a></li>
 							<li><a href="http://www.twitter.com/brutalistfwk" target="_blank">@brutalistfwk</a></li>
 						</ul>
 					</nav>
@@ -64,7 +64,8 @@
 				<section class="comfortable">
 					<h3 class="white-text courier-new-text fittext-compress">Typography</h3>
 					<div class="row">
-						<div class="col s6 m6 l6">
+						<div class="col s6 m6 l6 white-text">
+							<!-- Font Families -->
 							<p class="white-text courier-new-text flow-text black">Font Family Classes</p>
 							<p class="flow-text arial-text white-text">.arial-text</p>
 							<p class="flow-text white-text arial-black-text">.arial-black-text</p>
@@ -78,27 +79,48 @@
 							<p class="flow-text white-text georgia-text">.georgia-text</p>
 							<p class="flow-text white-text times-text">.times-text</p>
 							<p class="flow-text white-text palatino-text">.palatino-text</p>
-						</div>
-						<div class="col s6 m6 l6 courier-new-text">
-							<p class="white-text flow-text black">Text Alignment</p>
-							<p class="flow-text white-text text-center">.text-center</p>
-							<p class="flow-text white-text text-left">.text-left</p>
-							<p class="flow-text white-text text-right">.text-right</p>
-							<p class="flow-text white-text justify">.justify</p>
-							
-							<p class="white-text flow-text black">Text Formatting</p>
-							<p class="flow-text white-text"><strong>.spread</strong> - <span class="spread">Adds 3px between characters</span></p>
-							<p class="flow-text white-text"><strong>.oblique</strong> - <span class="oblique">Slants text</span></p>
-							<p class="flow-text white-text"><strong>.allcaps</strong> - <span class="allcaps">Capitalizes all characters</span></p>
-							<p class="flow-text white-text"><strong>.alllower</strong> - <span class="alllower">ALL LOWERCASE</span></p>
-							<p class="flow-text white-text"><strong>.capitals</strong> - <span class="capitals">All words uppercased</span></p>
-							<p class="flow-text white-text dbl-spaced"><strong>.dbl-spaced</strong> - Doubles the spacing of line heights within paragraphs.</p>
-							<p class="white-text flow-text"><strong>.tal-left</strong> - Left-aligns last line of text<br /><strong>.tal-right</strong> - Right-aligns last line of text<br />
-							<strong>.tal-center</strong> - Ceners last line of text<br /><strong>.tal-justify</strong> - Justifies last line of text<br />
-							<strong>.indent</strong> - Indents text by 1cm</p>
-							<p class="white-text flow-text black">.flow-text</p>
+							<!-- Font Weight -->
+							<p class="white-text courier-new-text flow-text black">Font Weight</p>
+							<p class="thin flow-text arial-text">.thin</p>
+							<p class="normal flow-text arial-text">.normal</p>
+							<p class="heavy flow-text arial-text">.heavy</p>
+							<!-- Font Sizing -->
+							<p class="white-text courier-new-text flow-text black">Font Sizing</p>
+							<p class="arial-text">Normal size text</p>
+							<p class="smaller arial-text">.smaller</p>
+							<p class="bigger arial-text">.bigger</p>
+							<p class="huge arial-text">.huge</p>
+							<p class="white-text flow-text black courier-new-text">.flow-text</p>
 							<p class="white-text flow-text">Flow-text makes your text responsive!</p>
 							<p class="white-text">This is a paragraph without flow-text applied.</p>
+						</div>
+						<div class="col s6 m6 l6 arial-text white-text">
+							<p class="white-text flow-text black courier-new-text">Text Alignment</p>
+							<p class="flow-text text-center">.text-center</p>
+							<p class="flow-text text-left">.text-left</p>
+							<p class="flow-text text-right">.text-right</p>
+							<p class="flow-text justify">.justify</p>
+							
+							<p class="white-text flow-text black courier-new-text">Text Formatting</p>
+							<p><strong>.spread</strong> - <span class="spread">Adds 3px between characters</span><br />
+							<strong>.oblique</strong> - <span class="oblique">Slants text</span><br />
+							<strong>.allcaps</strong> - <span class="allcaps">Capitalizes all characters</span><br />
+							<strong>.alllower</strong> - <span class="alllower">ALL LOWERCASE</span><br />
+							<strong>.capitals</strong> - <span class="capitals">All words uppercased</span><br />
+							<strong>.smallcaps</strong> - <span class="smallcaps">Small-caps font is displayed</span></p>
+							<p class="dbl-spaced"><strong>.dbl-spaced</strong> - Doubles the spacing of line heights within paragraphs.</p>
+							<p class="tpl-spaced"><strong>.tpl-spaced</strong> - Triples the spacing of line heights within paragraphs.</p>
+							<p><strong>.tal-left</strong> - Left-aligns last line of text<br /><strong>.tal-right</strong> - Right-aligns last line of text<br />
+							<strong>.tal-center</strong> - Ceners last line of text<br /><strong>.tal-justify</strong> - Justifies last line of text<br />
+							<strong>.indent</strong> - Indents text by 1cm</p>
+							<p class="nowrap"><strong>.nowrap</strong> - Text will never wrap to next line.</p>
+							<p class="wordspace-small"><strong>.wordspace-small</strong> - Small increase in word spacing.</p>
+							<p class="wordspace-medium"><strong>.wordspace-medium</strong> - Medium increase in word spacing.</p>
+							<p class="wordspace-large"><strong>.wordspace-large</strong> - Large increase in word spacing.</p>
+							<p class="wordbreak-keep"><strong>.wordbreak-keep</strong> - Breaks are prohibited between pairs of letters.</p>
+							<p class="wordbreak-all"><strong>.wordbreak-all</strong> - Lines may break between any two letters.</p>
+							<p class="wordwrap-break"><strong>.wordwrap-break</strong> - Allows unbreakable words to be broken.</p>
+							<p class="guard-text"><strong>.guard-text</strong> - Prevents text from being selectable.</p>
 						</div>
 					</div>
 					<p class="padding"></p>
@@ -230,6 +252,21 @@
 					<p class="white-text courier-new-text flow-text"><span class="black allcaps"><strong>Borders</strong></span></p>
 					<p class="flow-text white-text courier-new-text"><strong>.jagged</strong> - Creates a grey triangular border above and below an element</p>
 					<p class="padding"></p>
+					<hr class="thick white" />
+					<h3 class="white-text courier-new-text fittext-compress">Media</h3>
+					<div class="row">
+						<div class="col s12 m6">
+							<h4 class="black white-text courier-new-text flow-text">Responsive Images</h4>
+							<p class="white-text arial-text">To make an image fluid width so that it fits within any area, simply apply the class: <em><strong>.responsive</strong></em></p>
+						</div>
+						<div class="col s12 m6">
+							<h4 class="black white-text courier-new-text flow-text">Responsive Videos</h4>
+							<p class="white-text arial-text">Use the <em>video</em> tag, and the video will be fluid-width. If embedding a YouTube, Vimeo, or any other third-party video that uses an iframe, simply wrap the <em>iframe</em> embed code within a div with class <strong><em>.video</em></strong>.</p>
+							<div class="video">
+								<iframe src="https://www.youtube.com/embed/Dt7LZA1GutU?showinfo=0" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
 				</section>
 			</div>
 		</div>
@@ -271,12 +308,12 @@
 </footer>
 
 <!-- Sticky Download Box -->
-	<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_B3.zip" target="_blank">
+	<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.0.zip" target="_blank">
 	<div class="sticky-bottom-right stack-top solitary">
 		<div class="skew lemon-lime-gradient btn invert-hover">
 		<p class="flow-text black-text skew-right"><strong>Download</strong></p>
 		</div>
-		<p class="lime-text center">Version BETA 3</p>
+		<p class="lime-text center">Version 1.0</p>
 	</div></a>
 <!-- End Sticky -->
 
@@ -286,6 +323,14 @@
 <script src="js/start.brutalizing.js"></script>
 
 <!-- TRACKING -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-93046252-1', 'auto');
+  ga('send', 'pageview');
+</script>
 </body>
 </html>

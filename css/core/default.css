@@ -11,6 +11,14 @@ html {
   /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+*, *:before, *:after { 
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit; 
 }
 
 /**

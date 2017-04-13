@@ -27,9 +27,18 @@ nav ul li ul li ul li a { padding-left: 1em; }
 
 /* STACKS: create layers
 **********************************/
-.stack-base { z-index: 1 !important; }
-.stack-below { z-index: -9 !important; }
-.stack-above { z-index: 9 !important; }
+.stack-auto { display: flex; }
+.stack-base { z-index: 0 !important; }
+.stack1 { z-index: 1 !important; }
+.stack2 { z-index: 2 !important; }
+.stack3 { z-index: 3 !important; }
+.stack4 { z-index: 4 !important; }
+.stack5 { z-index: 5 !important; }
+.stack6 { z-index: 6 !important; }
+.stack7 { z-index: 7 !important; }
+.stack8 { z-index: 8 !important; }
+.stack9 { z-index: 9 !important; }
+.stack-middle { z-index: 29 !important; }
 .stack-high { z-index: 49 !important; }
 .stack-top { z-index: 99 !important; }
 
@@ -47,55 +56,9 @@ ul.tags { list-style: none; padding: 0; margin: 0; }
 ul.tags li { display: inline-block; list-style-type: none; padding: 0; margin: 0.4em; }
 
 
-.modal:before {
-  content: "";
-  display: none;
-  background: rgba(0, 0, 0, 0.6);
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  z-index: 999;
-}
-.modal:target:before {
-  display: block;
-}
-.modal:target .modal-dialog {
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
-  top: 20%;
-}
-.modal-dialog {
-  background: #fefefe;
-  border: #333 solid 1px;
-  border-radius: 5px;
-  margin-left: -200px;
-  position: fixed;
-  left: 50%;
-  top: -100%;
-  z-index: 9999;
-  width: 360px;
-  -webkit-transform: translate(0, -500%);
-  -ms-transform: translate(0, -500%);
-  transform: translate(0, -500%);
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  -moz-transition: -moz-transform 0.3s ease-out;
-  -o-transition: -o-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-}
-.modal-body {
-  padding: 20px;
-}
-.modal-header,
-.modal-footer {
-  padding: 10px 20px;
-}
-.modal-header {
-  border-bottom: #eee solid 1px;
-}
-.modal-header h2 {
-  font-size: 20px;
-}
-.modal-footer {
-  border-top: #eee solid 1px;
-  text-align: right;
-}
+/* REVELATIONS
+**********************************/
+.revelation { display: inline-block; max-width: 50%; height: auto; transition: max-width 2s; -webkit-transition: max-width 2s; }
+.revelation .secret { display: none; }
+.revelation:hover, .revelation:active, .revelation:focus { max-width: 100%; height: auto; cursor: pointer; }
+.revelation:hover .secret, .revelation:active .secret, .revelation:focus .secret { display: block; }
