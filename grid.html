@@ -39,36 +39,46 @@
 			</div>
 			<div class="col s12 m6 l9 no-padding">
 				<h1 class="courier-new-text fittext white-text baffle">Grid</h1>
-				<h2 class="white-text fittext-compress courier-new-text">Responsive grid</h2>
-				<p class="white-text flow-text courier-new-text">The grid structure is pretty simple!</p>
+				<h2 class="white-text fittext-compress courier-new-text">Responsive grids</h2>
+				<p class="white-text flow-text courier-new-text">There are two responsive grids included: <em>default</em> and <em>FlexBox</em>!</p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col s12 m6 l3 no-padding">
 				<aside class="black comfortable jagged">
-					<nav>
-						<ul class="courier-new-text flow-text">
-							<li><a href="index.html" class="lime-text">Home</a></li>
-							<li><a href="flavors.html" class="lime-text">Flavors</a></li>
-							<li><a href="butch.html" class="lime-text">BUTCH</a></li>
-							<li><a href="buix.html" class="lime-text">BUIX</a></li>
-							<li><a href="bfx.html" class="lime-text">BFX</a></li>
-							<li><a href="#" class="active lime-text">Grid</a></li>
-							<li><a href="templates.html" class="lime-text">Templates</a></li>
-							<li><a href="http://www.twitter.com/brutalistfwk" target="_blank">@brutalistfwk</a></li>
+					<nav class="simple">
+						<ul class="courier-new-text flow-text lime-text">
+							<li class="invert-hover"><a href="index.html" class="lime-text">Home</a></li>
+							<li class="invert-hover"><a href="flavors.html" class="lime-text">Flavors</a></li>
+							<li class="invert-hover"><a href="butch.html" class="lime-text">BUTCH</a></li>
+							<li class="invert-hover"><a href="buix.html" class="lime-text">BUIX</a></li>
+							<li class="invert-hover"><a href="bfx.html" class="lime-text">BFX</a></li>
+							<li class="invert-hover active"><a href="#" class="lime-text">Grid</a></li>
+							<li class="invert-hover"><a href="templates.html" class="lime-text">Templates</a></li>
+							<li class="blue-candy invert-hover"><a href="http://www.twitter.com/brutalistfwk" target="_blank">@brutalistfwk</a></li>
 						</ul>
 					</nav>
 				</aside>
 			</div>
 			<div class="col s12 m6 l9 no-padding">
 				<section class="comfortable">
-					<h3 class="white-text courier-new-text fittext-compress">Basic Structure</h3>
-					<p class="white-text courier-new-text flow-text">It goes like this:<br />
-					
-					<strong>.container<br />&nbsp;&nbsp;.row<br />&nbsp;&nbsp;&nbsp;&nbsp;.col .s12 .m12 l12</strong></p>
-					<p class="white-text flow-text courier-new-text">Container is optional, as it centers the page. By <em>not</em> using the container class, the rows will be the full width of the window. The maximum number of columns is 12.</p>
-					<p class="white-text flow-text courier-new-text"><strong>.s12</strong> = 12 columns (full width) on small devices<br />
-						<strong>.m6</strong> = 6 columns (half width) on medium devices<br /><strong>.l4</strong> = 4 columns (1/3 width) on large devices</p>
+					<div class="row">
+						<div class="col s12 m6">
+							<h3 class="white-text courier-new-text fittext-h3">Default Grid</h3>
+							<p class="white-text arial-text flow-text">It goes like this:</p>
+							<code class="black lime-text">
+								<strong>.container<br />&nbsp;&nbsp;.row<br />&nbsp;&nbsp;&nbsp;&nbsp;.col .s12 .m12 .l12</strong>
+							</code>
+							<p class="white-text arial-text">Container is optional, as it centers the page. By <em>not</em> using the container class, the rows will be the full width of the window. The maximum number of columns is 12.</p>
+							<p class="white-text flow-text arial-text"><strong>.s12</strong> = <span class="smaller">12 columns (full width) on small devices</span><br />
+								<strong>.m6</strong> = <span class="smaller">6 columns (half width) on medium devices</span><br /><strong>.l4</strong> = <span class="smaller">4 columns (1/3 width) on large devices</span><br /><br /></p>
+						</div>
+						<div class="col s12 m6">
+							<h3 class="white-text courier-new-text fittext-h3">Flexbox Grid</h3>
+							<p class="white-text arial-text flow-text">We've also included Flexbox grid. Learn about it here:<br />
+								<a class="button lemon invert-hover" href="http://flexboxgrid.com" target="_blank">FlexboxGrid.com</a></p>
+						</div>
+					</div>
 					<p class="white-text flow-text courier-new-text">Let's take a look at the grid. Re-size your window to see it in action.</p>
 					<p class="padding"></p>
 					<p class="white-text flow-text courier-new-text"><strong>Full Width:</strong> On all screen sizes.</p>
@@ -116,6 +126,34 @@
 						</div>
 					</div>
 					<p class="padding"></p>
+					<h3 class="fittext-h3 white-text courier-new">Flexbox Fusion Example</h3>
+					<p class="white-text arial-text">Here, we are using the Flexbox grid, combined with the default grid.</p>
+					<div class="padding charcoal">
+						<div class="row">
+							<div class="col-xs-12 strawberry">
+								<p class="vanilla-bean-text" style="padding: 0.4em;">Flexbox Full-width<br /><strong>col-xs-12</strong></p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-md-6 vanilla">
+								<p class="strawberry-text" style="padding: 0.4em;">Flexbox Left Column<br /><strong>col-xs-12 col-md-6</strong></p>
+							</div>
+							<div class="col-xs-12 col-md-6 vanilla">
+								<p class="strawberry-text" style="padding: 0.4em;">Flexbox Right Column<br /><strong>col-xs-12 col-md-6</strong></p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 strawberry">
+								<p class="vanilla-bean-text" style="padding: 0.4em;">Default 2-column layout wrapped within full-width flexbox<br /><strong>col-xs-12</strong></p>
+								<div class="col s12 m6 no-padding white">
+									<p class="strawberry-text" style="padding: 0.4em;"><strong>col s12 m6</strong></p>
+								</div>
+								<div class="col s12 m6 no-padding white">
+									<p class="strawberry-text" style="padding: 0.4em;"><strong>col s12 m6</strong></p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</section>
 			</div>
 		</div>
@@ -158,12 +196,12 @@
 </footer>
 
 <!-- Sticky Download Box -->
-	<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.0.zip" target="_blank">
+	<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.1.zip" target="_blank">
 	<div class="sticky-bottom-right stack-top solitary">
 		<div class="skew lemon-lime-gradient btn invert-hover">
 		<p class="flow-text black-text skew-right"><strong>Download</strong></p>
 		</div>
-		<p class="lime-text center">Version 1.0</p>
+		<p class="lime-text center">Version 1.1</p>
 	</div></a>
 <!-- End Sticky -->
 
@@ -173,14 +211,6 @@
 <script src="js/start.brutalizing.js"></script>
 
 <!-- TRACKING -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-93046252-1', 'auto');
-  ga('send', 'pageview');
-</script>
 </body>
 </html>

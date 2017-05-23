@@ -46,16 +46,16 @@
 		<div class="row">
 			<div class="col s12 m6 l3 no-padding">
 				<aside class="black comfortable jagged">
-					<nav>
-						<ul class="courier-new-text flow-text">
-							<li><a href="index.html" class="lime-text">Home</a></li>
-							<li><a href="flavors.html" class="lime-text">Flavors</a></li>
-							<li><a href="butch.html" class="lime-text">BUTCH</a></li>
-							<li><a href="buix.html" class="lime-text">BUIX</a></li>
-							<li><a href="#" class="active lime-text">BFX</a></li>
-							<li><a href="grid.html" class="lime-text">Grid</a></li>
-							<li><a href="themes.html" class="lime-text">Themes</a></li>
-							<li><a href="http://www.twitter.com/brutalistfwk" target="_blank">@brutalistfwk</a></li>
+					<nav class="simple">
+						<ul class="courier-new-text flow-text lime-text">
+							<li class="invert-hover"><a href="index.html" class="lime-text">Home</a></li>
+							<li class="invert-hover"><a href="flavors.html" class="lime-text">Flavors</a></li>
+							<li class="invert-hover"><a href="butch.html" class="lime-text">BUTCH</a></li>
+							<li class="invert-hover"><a href="buix.html" class="lime-text">BUIX</a></li>
+							<li class="invert-hover active"><a href="#" class="lime-text">BFX</a></li>
+							<li class="invert-hover"><a href="grid.html" class="lime-text">Grid</a></li>
+							<li class="invert-hover"><a href="templates.html" class="lime-text">Templates</a></li>
+							<li class="blue-candy invert-hover"><a href="http://www.twitter.com/brutalistfwk" target="_blank">@brutalistfwk</a></li>
 						</ul>
 					</nav>
 				</aside>
@@ -63,16 +63,19 @@
 			<div class="col s12 m6 l9 no-padding">
 				<section class="comfortable">
 					<h3 class="white-text courier-new-text fittext-compress">BAFFLE</h3>
-					<p class="white-text courier-new-text flow-text"><em>Baffle</em> adds an animated obfuscation effect to any text. Reload page to see effect.</p>
+					<p class="white-text arial-text"><em>Baffle</em> adds an animated obfuscation effect to any text. Reload page to see effect.</p>
 
 					<p class="white-text courier-new-text flow-text"><strong>Classes:</strong></p>
 					<p class="white-text courier-new-text flow-text"><span class="baffle">.baffle</span> - Baffles once upon page load.</p>
 					<p class="white-text courier-new-text flow-text"><span class="baffle-longer">.baffle-longer</span> - Baffles once, but for a longer duration (3 seconds).</p>
+					<p class="white-text courier-new-text flow-text"><span class="baffle-prolonged">.baffle-prolonged</span> - Baffles for a prolonged period.</p>
 					<p class="white-text courier-new-text flow-text"><span class="baffle-forever">.baffle-forever</span> - <em>.baffle-forever</em> - Baffles endlessly.</p>
+					
 					<p class="padding"></p>
 					<hr class="thick white" />
+				<!-- FITTEXT -->
 					<h3 class="white-text courier-new-text fittext-compress">FITTEXT</h3>
-					<p class="white-text courier-new-text flow-text"><em>Fittext</em> makes any text aggressively responsive. Re-size your browser window to see them scale!</p>
+					<p class="white-text arial-text"><em>Fittext</em> makes any text aggressively responsive. Re-size your browser window to see them scale!</p>
 
 					<p class="white-text courier-new-text flow-text"><strong>.fittext</strong> - Best scales text to fit within container.</p>
 					<p class="white-text arial-text fittext black">Brutalist Framework</p>
@@ -80,6 +83,15 @@
 					<p class="white-text arial-text fittext-compress black">Brutalist Framework</p>
 					<p class="white-text courier-new-text flow-text"><strong>.fittext-uncompress</strong> - Decreases compression.</p>
 					<p class="white-text arial-text fittext-uncompress black">Brutalist Framework</p>
+					<p class="white-text courier-new-text flow-text" style="margin-top: 1.1em;">Below are fittext classes that are ideal for H1 - H6 tags.</p>
+					<div class="white-text black">
+						<h1 class="fittext-h1">.fittext-h1</h1>
+						<h2 class="fittext-h2">.fittext-h2</h2>
+						<h3 class="fittext-h3">.fittext-h3</h3>
+						<h4 class="fittext-h4">.fittext-h4</h4>
+						<h5 class="fittext-h5">.fittext-h5</h5>
+						<h6 class="fittext-h6">.fittext-h6</h6>
+					</div>
 					<p class="padding"></p>
 					<hr class="thick white" />
 					<h3 class="white-text courier-new-text fittext-compress">CURVED TEXT</h3>
@@ -107,6 +119,7 @@
 						</div>
 					</div>
 					<hr class="thick white" />
+				<!-- EQUAL HEIGHTS -->
 					<h3 class="white-text courier-new-text fittext-compress">Equal Heights</h3>
 					<p class="white-text flow-text courier-new-text">Equal heights makes boxes the same height within a multi-column layout. In the example below, notice how all 3 column boxes have the same height.</p>
 					<p class="white-text flow-text courier-new-text"><strong>.equal-height</strong></p>
@@ -129,20 +142,23 @@
 						</div>
 					</div>
 					<hr class="thick white" />
+				<!-- PRIDE FILTER -->
 					<h3 class="white-text courier-new-text fittext-compress">Pride Filter</h3>
 					<p class="white-text flow-text courier-new-text"><strong>Got pride?</strong> Add a rainbow color filter to any image! Apply the class <strong>.pride</strong> to the img tag. To apply to multiple images, simply wrap them within a div with the pride class.</p>
+					<p class="lemon-text arial-text"><strong>NOTE:</strong> Pride filter requires a live server to work.</p>
 					<div class="row">
-						<div class="col s12 m4 l4">
+						<div class="col s12 m6 l6">
 							<p class="flow-text white-text courier-new-text"><strong>Original Image</strong></p>
 							<img class="responsive" src="assets/images/brutal-building.jpg" alt="Original" />
 						</div>
-						<div class="col s12 m4 l4">
+						<div class="col s12 m6 l6">
 							<p class="flow-text white-text courier-new-text"><strong>.pride</strong></p>
 							<img class="responsive pride" src="assets/images/brutal-building.jpg" alt="Prideified" />
 						</div>
 					</div>
 					<p class="padding"></p>
 					<hr class="thick white" />
+				<!-- GLITCH -->
 					<h3 class="white-text courier-new-text fittext-compress">Glitch</h3>
 					<p class="white-text courier-new-text flow-text">Add a glitch effect to any element! Works on images and text, or even entire areas! It is entirely CSS-based. Apply <strong>.glitch</strong> class to any element.</p>
 					<div class="row">
@@ -158,13 +174,13 @@
 					</div>
 					<p class="padding"></p>
 					<hr class="thick white" />
+				<!-- CLIP-BOX -->
 					<h3 class="white-text courier-new-text fittext-compress">Clip-Box</h3>
 					<p class="white-text arial-text"><em>Clip-Box</em> allows you to apply a custom background image to any text! </p>
 					<p class="white-text arial-text"><strong>.clip-box</strong> - Outer wrapper for area to contain text with background image.<br />
 					<strong>.clip-box-cover</strong> - Makes the background image fluid<br /><br />
 					<strong>Apply Background Image</strong>: Create a custom class in the theme CSS file, and specify the background-image url.<br /><br />
 					</p>
-					
 					<div class="row">
 						<div class="col s12">
 							<p class="flow-text lucida-text white-text"><span class="heavy">DEMO 1:</span> Clip-Box text in a vanilla-cherry-gradient container.</p>
@@ -224,12 +240,12 @@
 </footer>
 
 <!-- Sticky Download Box -->
-	<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.0.zip" target="_blank">
+	<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.1.zip" target="_blank">
 	<div class="sticky-bottom-right stack-top solitary">
 		<div class="skew lemon-lime-gradient btn invert-hover">
 		<p class="flow-text black-text skew-right"><strong>Download</strong></p>
 		</div>
-		<p class="lime-text center">Version 1.0</p>
+		<p class="lime-text center">Version 1.1</p>
 	</div></a>
 <!-- End Sticky -->
 
@@ -239,14 +255,6 @@
 <script src="js/start.brutalizing.js"></script>
 
 <!-- TRACKING -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-93046252-1', 'auto');
-  ga('send', 'pageview');
-</script>
 </body>
 </html>

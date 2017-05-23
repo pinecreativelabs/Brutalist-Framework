@@ -46,16 +46,16 @@
 		<div class="row">
 			<div class="col s12 m4 l3 no-padding">
 				<aside class="black comfortable jagged">
-					<nav>
-						<ul class="courier-new-text flow-text">
-							<li><a href="index.html" class="lime-text">Home</a></li>
-							<li><a href="flavors.html" class="lime-text">Flavors</a></li>
-							<li><a href="#" class="active lime-text">BUTCH</a></li>
-							<li><a href="buix.html" class="lime-text">BUIX</a></li>
-							<li><a href="bfx.html" class="lime-text">BFX</a></li>
-							<li><a href="grid.html" class="lime-text">Grid</a></li>
-							<li><a href="templates.html" class="lime-text">Templates</a></li>
-							<li><a href="http://www.twitter.com/brutalistfwk" target="_blank">@brutalistfwk</a></li>
+					<nav class="simple">
+						<ul class="courier-new-text flow-text lime-text">
+							<li class="invert-hover"><a href="index.html" class="lime-text">Home</a></li>
+							<li class="invert-hover"><a href="flavors.html" class="lime-text">Flavors</a></li>
+							<li class="invert-hover active"><a href="#" class="lime-text">BUTCH</a></li>
+							<li class="invert-hover"><a href="buix.html" class="lime-text">BUIX</a></li>
+							<li class="invert-hover"><a href="bfx.html" class="lime-text">BFX</a></li>
+							<li class="invert-hover"><a href="grid.html" class="lime-text">Grid</a></li>
+							<li class="invert-hover"><a href="templates.html" class="lime-text">Templates</a></li>
+							<li class="blue-candy invert-hover"><a href="http://www.twitter.com/brutalistfwk" target="_blank">@brutalistfwk</a></li>
 						</ul>
 					</nav>
 				</aside>
@@ -100,7 +100,6 @@
 							<p class="flow-text text-left">.text-left</p>
 							<p class="flow-text text-right">.text-right</p>
 							<p class="flow-text justify">.justify</p>
-							
 							<p class="white-text flow-text black courier-new-text">Text Formatting</p>
 							<p><strong>.spread</strong> - <span class="spread">Adds 3px between characters</span><br />
 							<strong>.oblique</strong> - <span class="oblique">Slants text</span><br />
@@ -121,6 +120,84 @@
 							<p class="wordbreak-all"><strong>.wordbreak-all</strong> - Lines may break between any two letters.</p>
 							<p class="wordwrap-break"><strong>.wordwrap-break</strong> - Allows unbreakable words to be broken.</p>
 							<p class="guard-text"><strong>.guard-text</strong> - Prevents text from being selectable.</p>
+						</div>
+					</div>
+					<p class="padding"></p>
+					<div class="row">
+						<div class="col s12 m4 l4">
+							<p class="white-text flow-text black courier-new-text">Address</p>
+							<address>
+								Address Line 1<br />Address Line 2<br />Address Line 3
+							</address>
+							<p>&nbsp;</p>
+							<p class="white-text flow-text black courier-new-text">Blockquote</p>
+							<blockquote>
+								New brutalism, inevitably, in global dissemination, degenerated into a rough concrete style.
+							</blockquote>
+						</div>
+						<div class="col s12 m8 l8">
+							<p class="white-text flow-text black courier-new-text">Unordered Lists</p>
+							<div class="row">
+								<div class="col s12 m4">
+									<p class="white-text"><strong>ul.disc</strong></p>
+									<ul class="disc">
+										<li>Item 1</li>
+										<li>Item 2</li>
+										<li>Item 3</li>
+									</ul>
+								</div>
+								<div class="col s12 m4">
+									<p class="white-text"><strong>ul.circle</strong></p>
+									<ul class="circle">
+										<li>Item 1</li>
+										<li>Item 2</li>
+										<li>Item 3</li>
+									</ul>
+								</div>
+								<div class="col s12 m4">
+									<p class="white-text"><strong>ul.square</strong></p>
+									<ul class="square">
+										<li>Item 1</li>
+										<li>Item 2</li>
+										<li>Item 3</li>
+									</ul>
+								</div>
+							</div>
+							<p class="white-text flow-text black courier-new-text">Ordered Lists</p>
+							<div class="row">
+								<div class="col s12 m3">
+									<p class="white-text"><strong>Default</strong></p>
+									<ol>
+										<li>Item 1</li>
+										<li>Item 2</li>
+										<li>Item 3</li>
+									</ol>
+								</div>
+								<div class="col s12 m3">
+									<p class="white-text"><strong>ol.roman</strong></p>
+									<ol class="roman">
+										<li>Item 1</li>
+										<li>Item 2</li>
+										<li>Item 3</li>
+									</ol>
+								</div>
+								<div class="col s12 m3">
+									<p class="white-text"><strong>ol.alpha</strong></p>
+									<ol class="alpha">
+										<li>Item 1</li>
+										<li>Item 2</li>
+										<li>Item 3</li>
+									</ol>
+								</div>
+								<div class="col s12 m3">
+									<p class="white-text"><strong>ol.none</strong></p>
+									<ol class="none">
+										<li>Item 1</li>
+										<li>Item 2</li>
+										<li>Item 3</li>
+									</ol>
+								</div>
+							</div>
 						</div>
 					</div>
 					<p class="padding"></p>
@@ -155,9 +232,8 @@
 							<p class="padding"></p>
 						</div>
 					</div>
-					
 					<hr class="thick white" />
-					
+				<!-- BRUTALIST UTILITY CLASSES -->
 					<h3 class="white-text courier-new-text fittext-compress">Brutalist Utility Classes</h3>
 					<p class="white-text courier-new-text flow-text">These classes are used for brutalizing your content. Apply them to any element.</p>
 					<p class="white-text courier-new-text flow-text"><span class="black allcaps"><strong>Scale Classes</strong></span></p>
@@ -184,6 +260,7 @@
 					<p class="flow-text white-text courier-new-text"><strong>.sociable</strong> - Negative margin spacing</p>
 					<p class="padding"></p>
 					<hr class="thick white" />
+				<!-- FILTERS -->
 					<h3 class="white-text courier-new-text fittext-compress">Filters</h3>
 					<p class="white-text courier-new-text flow-text">Use these classes to apply filters to any element.</p>
 					<div class="row">
@@ -222,8 +299,8 @@
 							<img class="responsive" src="assets/images/brutal-building.jpg" /></p>
 						</div>
 					</div>
-					<p class="flow-text white-text courier-new-text allcaps"><strong>Hover</strong></p>
-					<p class="flow-text white-text courier-new-text">Apply a filter upon hover simply by adding <em>-hover</em> after the class. <br />
+					<p class="flow-text white-text courier-new-text allcaps"><strong>Hover Filter</strong></p>
+					<p class="white-text arial-text">Apply a filter upon hover simply by adding <em>-hover</em> after the class. <br />
 					<strong>Examples:</strong> <em>.blur-hover</em>, <em>.grayscale-hover</em></p>
 					<div class="row">
 						<div class="col s6 m3">
@@ -245,14 +322,65 @@
 					</div>
 					<p class="padding"></p>
 					<hr class="thick white" />
+				<!-- BORDERS & SEPARATORS -->
 					<h3 class="white-text courier-new-text fittext-compress">Borders & Separators</h3>
 					<p class="white-text courier-new-text flow-text">Use these classes for borders and horizontal rule separators.</p>
 					<p class="white-text courier-new-text flow-text"><span class="black allcaps"><strong>Horizontal Rules</strong></span></p>
-					<p class="flow-text white-text courier-new-text"><strong>hr.thick</strong> - Creates thick horizontal rule</p>
+					<div class="row">
+						<div class="col s12 m4">
+							<p class="flow-text white-text arial-text"><strong>hr.jagged-rule-dark</strong></p>
+							<hr class="jagged-rule-dark" />
+							<p class="flow-text white-text arial-text"><strong>hr.jagged-rule-light</strong></p>
+							<hr class="jagged-rule-light" />
+						</div>
+						<div class="col s12 m4">
+							<p class="flow-text white-text arial-text"><strong>hr.cut-light</strong></p>
+							<hr class="cut-light" />
+							<p class="flow-text white-text arial-text"><strong>hr.cut-dark</strong></p>
+							<hr class="cut-dark" />
+						</div>
+						<div class="col s12 m4">
+							<p class="flow-text white-text arial-text"><strong>hr.thick.white</strong></p>
+							<hr class="thick white" />
+							<p class="flow-text white-text arial-text"><strong>hr.thick.lime</strong></p>
+							<hr class="thick lime" />
+						</div>
+					</div>
+					<p class="padding"></p>
 					<p class="white-text courier-new-text flow-text"><span class="black allcaps"><strong>Borders</strong></span></p>
-					<p class="flow-text white-text courier-new-text"><strong>.jagged</strong> - Creates a grey triangular border above and below an element</p>
+					<div class="row">
+						<div class="col s12 m6">
+							<div class="brutal-border-dark white">
+								<p class="fittext blue-text arial-text">.brutal-border-dark</p>
+							</div>
+						</div>
+						<div class="col s12 m6">
+							<div class="brutal-border-light white">
+								<p class="fittext blue-text arial-text">.brutal-border-light</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12"><div class="jagged white">
+							<p class="blue-text arial-text fittext">.jagged</p>
+							<p class="grey-text arial-text">Creates a grey triangular border above and below an element.</p>
+						</div></div>
+					</div>
+					<div class="row">
+						<div class="col s6 m6 l6">
+							<div class="coupon-light white blue-text">
+								<p class="arial-text fittext">.coupon-light</p>
+							</div>
+						</div>
+						<div class="col s6 m6 l6">
+							<div class="coupon-dark white blue-text">
+								<p class="arial-text fittext">.coupon-dark</p>
+							</div>
+						</div>
+					</div>
 					<p class="padding"></p>
 					<hr class="thick white" />
+				<!-- MEDIA -->
 					<h3 class="white-text courier-new-text fittext-compress">Media</h3>
 					<div class="row">
 						<div class="col s12 m6">
@@ -308,12 +436,12 @@
 </footer>
 
 <!-- Sticky Download Box -->
-	<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.0.zip" target="_blank">
+	<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.1.zip" target="_blank">
 	<div class="sticky-bottom-right stack-top solitary">
 		<div class="skew lemon-lime-gradient btn invert-hover">
 		<p class="flow-text black-text skew-right"><strong>Download</strong></p>
 		</div>
-		<p class="lime-text center">Version 1.0</p>
+		<p class="lime-text center">Version 1.1</p>
 	</div></a>
 <!-- End Sticky -->
 
@@ -323,14 +451,6 @@
 <script src="js/start.brutalizing.js"></script>
 
 <!-- TRACKING -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-93046252-1', 'auto');
-  ga('send', 'pageview');
-</script>
 </body>
 </html>

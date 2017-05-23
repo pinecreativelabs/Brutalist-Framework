@@ -14,8 +14,12 @@
 .grey-text, .gray-text { color: #808080 !important; }
 .black { background-color: #000 !important; }
 .black-text { color: #000 !important; }
+.charcoal { background-color: #2e2e2e !important; }
+.charcoal-text { color: #2e2e2e !important; }
 .mushroom { background-color: #cfd8dc !important; }
 .mushroom-text { color: #cfd8dc !important; }
+.platinum { background-color: #e6e6e6 !important; }
+.platinum-text { color: #e6e6e6 !important; }
 
 /* Reds */
 .red, .tomato { background-color: #ff0000 !important; }

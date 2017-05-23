@@ -1,7 +1,7 @@
 /* Load Default */
 @import url('default.css');
-/* Load Grid */
-@import url('grid.css');
+/* Load Grid Core */
+@import url('grids/core.css');
 /* Load Flavors */
 @import url('flavors.css');
 /* Load BUTCH */

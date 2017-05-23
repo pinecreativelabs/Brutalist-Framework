@@ -2,34 +2,6 @@
 BUTCH CORE
 *************************/
 
-.jagged { position: relative; margin-top: 50px; margin-bottom: 50px}
-.jagged::before, .jagged::after {
-	right: 0;
-	left: 0;
-	display: block;
-	height: 90px;
-	background-size: 50px 100%;
-	position: absolute;
-	content: '';
-	pointer-events: none;
-}
-.jagged::before {
-	top: -90px;
-	background-image: -webkit-gradient(linear, 0 0, 300% 100%, color-stop(0.25, transparent), color-stop(0.25, #C0C0C0));
-	background-image:
-		linear-gradient(315deg, #808080 25%, transparent 25%),
-		linear-gradient( 45deg, #C0C0C0 25%, transparent 25%);
-	background-position: 50%;
-}
-.jagged::after {
-	top: 100%;
-	background-image: -webkit-gradient(linear, 0 0, 300% 100%, color-stop(0.25, #C0C0C0), color-stop(0.25, #808080));
-	background-image: 
-		linear-gradient(135deg, #C0C0C0 25%, transparent 25%),
-		linear-gradient(225deg, #C0C0C0 25%, transparent 25%);
-	background-position: 50%;
-}
-
 /* SPACING
 *******************/
 .no-padding { padding: 0 !important; }
@@ -196,6 +168,89 @@ input[type=range] + .thumb {
 *******************/
 .circle { border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; }
 
+/* BORDERS & DIVIDERS
+*******************/
+.jagged { position: relative; margin-top: 50px; margin-bottom: 50px}
+.jagged::before, .jagged::after {
+	right: 0;
+	left: 0;
+	display: block;
+	height: 90px;
+	background-size: 50px 100%;
+	position: absolute;
+	content: '';
+	pointer-events: none;
+}
+.jagged::before {
+	top: -90px;
+	background-image: -webkit-gradient(linear, 0 0, 300% 100%, color-stop(0.25, transparent), color-stop(0.25, #C0C0C0));
+	background-image:
+		linear-gradient(315deg, #808080 25%, transparent 25%),
+		linear-gradient( 45deg, #C0C0C0 25%, transparent 25%);
+	background-position: 50%;
+}
+.jagged::after {
+	top: 100%;
+	background-image: -webkit-gradient(linear, 0 0, 300% 100%, color-stop(0.25, #C0C0C0), color-stop(0.25, #808080));
+	background-image: 
+		linear-gradient(135deg, #C0C0C0 25%, transparent 25%),
+		linear-gradient(225deg, #C0C0C0 25%, transparent 25%);
+	background-position: 50%;
+}
+
+hr.jagged-rule-dark {  
+  border: none !important;
+  height: 10px;
+  background: linear-gradient(-135deg, transparent 5px, transparent 0) 0 5px, linear-gradient(135deg, transparent 5px, #333333 0) 0 5px;
+  background-color: transparent;
+  background-position: left bottom;
+  background-repeat: repeat-x;
+  background-size: 10px 10px;
+}
+hr.jagged-rule-light {  
+  border: none !important;
+  height: 10px;
+  background: linear-gradient(-135deg, transparent 5px, transparent 0) 0 5px, linear-gradient(135deg, transparent 5px, #f2f2f2 0) 0 5px;
+  background-color: transparent;
+  background-position: left bottom;
+  background-repeat: repeat-x;
+  background-size: 10px 10px;
+}
+hr.thick { height: 8px; border: none !important; }
+hr.cut-light, hr.cut-dark { border: none !important; }
+hr.cut-light { 
+	border-top: 2px dashed #d8d8d8 !important;
+}
+hr.cut-light:after, hr.cut-dark:after {
+	content: '\002702';
+	display: inline-block;
+	position: relative;
+	top: -16px; 
+	left: 25px; 
+	padding: 0 3px; 
+	background: transparent;
+	font-size: 20px;
+}
+hr.cut-light:after {
+  color: #d8d8d8; 
+}
+hr.cut-dark { 
+	border-top: 2px dashed #424242 !important;
+}
+hr.cut-dark:after {
+  color: #424242; 
+}
+.coupon-light { border: 3px dashed #d8d8d8; }
+.coupon-dark { border: 3px dashed #424242; }
+
+.brutal-border-dark {
+	border: 10px solid pink;
+	border-image: repeating-linear-gradient( 45deg, #d8d8d8, #d8d8d8 1%, #424242 1%, #424242 8%) 10;
+}
+.brutal-border-light {
+	border: 10px solid pink;
+	border-image: repeating-linear-gradient( 45deg, #424242, #424242 1%, #d8d8d8 1%, #d8d8d8 8%) 10;
+}
 
 /* TYPOGRAPHY
 *******************/
@@ -239,6 +294,16 @@ input[type=range] + .thumb {
 .alllower { text-transform: lowercase !important; }
 .capitals { text-transform: capitalize !important; }
 .smallcaps { font-variant: small-caps !important; }
+
+/* Unordered Lists */
+ul.disc { list-style-type: disc; }
+ul.square{ list-style-type: square; }
+ul.circle { list-style-type: circle; }
+
+/* Ordered Lists */
+ol.roman { list-style-type: upper-roman; }
+ol.alpha { list-style-type: upper-alpha; }
+ol.none, ul.none { list-style-type: none; }
 
 /* Text Layout (works on both P and DIV) */
 .double-col { -moz-columns:2; -webkit-columns:2; columns:2; }

@@ -26,6 +26,7 @@ html {
  */
 body {
   margin: 0 !important; padding: 0 !important;
+  overflow-x: hidden;
 }
 
 /* HTML5 display definitions
@@ -215,6 +216,7 @@ pre,
 samp {
   font-family: monospace, monospace;
   font-size: 1em;
+  display: block;
 }
 
 /* Forms
@@ -398,13 +400,7 @@ html { box-sizing: border-box; }
 *, *:before, *:after { box-sizing: inherit; }
 ul.browser-default,
 ul.browser-default li { list-style-type: initial; }
-ul.inside, ol.inside { list-style-position: inside !important; }
-ul.square { list-style-type: square !important; }
-ul.circle {list-style-type: circle !important;}
-ul.disc {list-style-type: disc !important;}
-ul.square {list-style-type: square !important;}
-ol.upper-roman {list-style-type: upper-roman !important;}
-ol.lower-alpha {list-style-type: lower-alpha !important;}
+ul, ol { list-style-position: inside; }
 a {
   color: #039be5;
   text-decoration: none;
@@ -492,5 +488,8 @@ em { font-style: italic; }
 strong { font-weight: 500; }
 small { font-size: 75%; }
 p { margin: 0; padding: 0; }
+address { padding: 0.3em; font-style: italic; font-weight: 600; }
+blockquote { padding: 0.4em; font-weight: 600; display: block; line-height: 160%; margin-left: 0.5em; }
+blockquote::before{ content: "\201C"; font-size: 200%; padding: 0.3em; float: left; }
 
 .arc-text, .circle-text, .spiral-text, .wave-text, .bezier-text { overflow: hidden; }
