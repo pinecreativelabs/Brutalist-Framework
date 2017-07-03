@@ -1,0 +1,16 @@
+/* CORE TEMPLATE STYLES
+ *
+ * Styles for setting a custom theme
+ ==========================================*/ 
+
+p { font-size: 1.1em }
+
+.splash-cover {
+	height: 100vh;
+	background-image: url('../../assets/images/rough-concrete.jpg');
+	background-position: center; background-size: cover;
+}
+.feature-cover {
+	background-image: url('../../assets/images/county-bldg-brutal-angle-bottom.jpg');
+	background-position: center; background-size: cover;
+}

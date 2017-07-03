@@ -10,6 +10,7 @@ button, .button, .btn {
 	cursor: pointer;
 	padding: 0.3em;
 	line-height: 150%;
+	margin: 0.3em;
 }
 .blocked:hover { 
 	cursor: not-allowed !important; 
@@ -63,6 +64,11 @@ ul.simple-nav li a:hover span, nav.simple ul li a:hover span {
 ul.simple-nav li.active, nav.simple ul li.active {
 	font-size: 140%; font-weight: 600;
 }
+
+ul.simple-nav li ul { list-style: none; padding: 0; margin: 0; }
+ul.simple-nav li ul li { list-style: none; padding-left: 0.8em; margin: 0;  }
+ul.simple-nav li ul li a { border: none; }
+ul.simple-nav li ul li a:hover { border-top: none; border-right: 3px solid #fff; border-left: 3px solid #fff; }
 
 /* STACKS: create layers
 **********************************/

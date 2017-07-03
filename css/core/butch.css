@@ -6,10 +6,11 @@ BUTCH CORE
 *******************/
 .no-padding { padding: 0 !important; }
 .padding { padding: 2em; }
-.comfortable { padding: 4em; }
+.comfortable { padding: 3.5em; }
 .uncomfortable { padding: -2em; }
 .solitary { margin: 4em; }
 .sociable { margin: -2em; }
+.paranoid { margin-left: 2em; margin-right: 2em; }
 .hide { display: none !important; }
 .left { float: left !important; }
 .right { float: right !important; }
@@ -69,11 +70,19 @@ input[type=range] + .thumb {
 		-webkit-transform: skew(20deg);
 		-moz-transform: skew(20deg);
 		-o-transform: skew(20deg);
+		-moz-transform: skewX(20deg);
+		-ms-transform: skewX(20deg);
+		-webkit-transform: skewX(20deg);
+		transform: skewX(20deg);
 	}
 	.skew-right {
 		-webkit-transform: skew(-20deg);
 		-moz-transform: skew(-20deg);
 		-o-transform: skew(-20deg);
+		-moz-transform: skewX(-20deg);
+		-ms-transform: skewX(-20deg);
+		-webkit-transform: skewX(-20deg);
+		transform: skewX(-20deg);
 	}
 	.perspective, .perspective-left {
 		-ms-transform: skew(15deg,10deg); /* IE 9 */
@@ -124,7 +133,7 @@ input[type=range] + .thumb {
 	-ms-filter: invert(100%);
 }
 .grayscale, img.grayscale, *.grayscale-hover:hover {
-	filter: grayscale(100%);
+	filter: grayscale(100%); 
 	-webkit-filter: grayscale(100%);
 	-moz-filter: grayscale(100%);
 	-o-filter: grayscale(100%);
@@ -170,6 +179,12 @@ input[type=range] + .thumb {
 
 /* BORDERS & DIVIDERS
 *******************/
+.border-solid-thin { border-style: solid; border-width: 2px; }
+.border-solid-thick { border-style: solid; border-width: 5px; }
+.border-dotted-thin { border-style: dotted; border-width: 2px; }
+.border-dotted-thick { border-style: dotted; border-width: 5px; }
+.border-dashed-thin { border-style: dashed; border-width: 2px; }
+.border-dashed-thick { border-style: dashed; border-width: 5px; }
 .jagged { position: relative; margin-top: 50px; margin-bottom: 50px}
 .jagged::before, .jagged::after {
 	right: 0;
@@ -240,8 +255,6 @@ hr.cut-dark {
 hr.cut-dark:after {
   color: #424242; 
 }
-.coupon-light { border: 3px dashed #d8d8d8; }
-.coupon-dark { border: 3px dashed #424242; }
 
 .brutal-border-dark {
 	border: 10px solid pink;

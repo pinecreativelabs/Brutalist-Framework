@@ -8,6 +8,8 @@ BFX - Brutal Effects
     position: relative;
     display: block;
     -webkit-background-clip: text;
+	-moz-background-clip: text;
+      background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -185,5 +187,47 @@ span.glitch {
     -webkit-transform: none;
             transform: none;
     opacity: 1;
+  }
+}
+
+/* THROB
+**********************/
+.throb {
+  animation-name: throb; 
+  animation-iteration-count: infinite;
+  animation-duration: 2s; 
+  display: inline-block !important;
+}
+@keyframes throb
+{
+  0%
+  {
+    transform: scale( .75 );
+	-webkit-transform: scale( .75 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+	-webkit-transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .75 );
+	-webkit-transform: scale( .75 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+	-webkit-transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .75 );
+	-webkit-transform: scale( .75 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+	-webkit-transform: scale( .75 );
   }
 }
