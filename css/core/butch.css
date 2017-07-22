@@ -5,7 +5,7 @@ BUTCH CORE
 /* SPACING
 *******************/
 .no-padding { padding: 0 !important; }
-.padding { padding: 2em; }
+.padding { padding: 1em; }
 .comfortable { padding: 3.5em; }
 .uncomfortable { padding: -2em; }
 .solitary { margin: 4em; }
@@ -265,6 +265,17 @@ hr.cut-dark:after {
 	border-image: repeating-linear-gradient( 45deg, #424242, #424242 1%, #d8d8d8 1%, #d8d8d8 8%) 10;
 }
 
+/* BOX SHADOWS
+*********************/
+.box-shadow { box-shadow: 5px 5px 0 #000; }
+.box-shadow-thick { box-shadow: 8px 8px 0 #000; }
+.box-shadow-fat { box-shadow: 12px 12px 0 #000; }
+.box-shadow-double { box-shadow: 5px 5px 0 #000, 10px 10px 0 #2E2E2E; }
+.box-shadow-triple { box-shadow: 5px 5px 0 #000, 10px 10px 0 #2E2E2E, 15px 15px 0 #585858; }
+.box-shadow-quad { box-shadow: 4px 4px 0 #000, 8px 8px 0 #2E2E2E, 12px 12px 0 #585858, 16px 16px 0 #848484; }
+.box-shadow-bottom { box-shadow: 0px 8px 0 #000; }
+.box-shadow-right { box-shadow: 8px 0 #000; }
+
 /* TYPOGRAPHY
 *******************/
 .arial-text { font-family: arial, sans-serif; }
@@ -507,7 +518,7 @@ Improve upon responsive behavior
 		top: -45px;
 	}
 	.solitary { margin: 0.5em; }
-	.padding { padding: 1.25em; }
+	.padding { padding: 0.75em; }
 	.small-padding: { padding: 16px; }
 	.comfortable { padding: 1.5em; }
 }
@@ -521,7 +532,7 @@ Improve upon responsive behavior
 		top: -45px;
 	}
 	.solitary { margin: 0.3em; }
-	.padding { padding: 1em; }
+	.padding { padding: 0.5em; }
 	.small-padding { padding: 8px; }
 	.comfortable { padding-left: 1em !important; padding-right: 1em !important; padding-top: 1.5em !important; padding-bottom: 1.5em !important; }
 	

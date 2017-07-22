@@ -130,6 +130,12 @@
 .light-brown, .cappuccino { background-color: #be9b7b !important; }
 .light-brown-text, .cappuccino-text { color: #be9b7b !important; }
 .light-brown-border { border-color: #be9b7b !important; }
+.wheat { background-color: #dac3a1 !important; }
+.wheat-text { color: #dac3a1 !important; }
+.wheat-border { border-color: #dac3a1 !important; }
+.peanut, .peanut-butter { background-color: #c29963 !important; }
+.peanut-text, .peanut-butter-text { color: #c29963 !important; }
+.peanut-border, .peanut-butter-border { border-color: #c29963 !important; }
 
 /* Greens */
 .green, .cucumber { background-color: #008000 !important; } 
@@ -194,7 +200,9 @@
 .mint-chocolate { background-color: #a5d6a7 !important; color: #4c3428 !important; }
 .peach-plum { background-color: #ffab91 !important; color: #800080 !important; }
 .cherry-vanilla { background-color: #b52026 !important; color: #fff !important; }
-.grape-pool-water { background-color: #4a148c; color: #81d4fa !important; }
+.grape-pool-water { background-color: #4a148c !important; color: #81d4fa !important; }
+.chocolate-peanut-butter { background-color: #4c3428 !important; color: #c29963 !important; }
+.green-apple-blueberry { background-color: #5BC236 !important; color: #485B88 !important; }
 
 /* GRADIENTS
 ======================== */
@@ -247,6 +255,27 @@
 	background: -moz-linear-gradient(#ffffff, #4c3428); 
 	background: linear-gradient(#ffffff, #4c3428); 
 }
+.water-blueberry-gradient {
+	background: #ADD8E6; 
+	background: -webkit-linear-gradient(#ADD8E6, #485B88); 
+	background: -o-linear-gradient(#ADD8E6, #485B88); 
+	background: -moz-linear-gradient(#ADD8E6, #485B88); 
+	background: linear-gradient(#ADD8E6, #485B88); 
+}
+.kiwi-cucumber-gradient {
+	background: #58FA82; 
+	background: -webkit-linear-gradient(#58FA82, #008000); 
+	background: -o-linear-gradient(#58FA82, #008000); 
+	background: -moz-linear-gradient(#58FA82, #008000); 
+	background: linear-gradient(#58FA82, #008000); 
+}
+.bubble-gum-grape-gradient {
+	background: #f8bbd0; 
+	background: -webkit-linear-gradient(#f8bbd0, #4a148c); 
+	background: -o-linear-gradient(#f8bbd0, #4a148c); 
+	background: -moz-linear-gradient(#f8bbd0, #4a148c); 
+	background: linear-gradient(#f8bbd0, #4a148c);
+}
 .neapolitan {
 	background: #4c3428; 
 	background: -webkit-linear-gradient(#4c3428, #FE2E2E, #ffffff); 
@@ -267,4 +296,12 @@
 	background: -o-linear-gradient(#a5d6a7, #4c3428); 
 	background: -moz-linear-gradient(#a5d6a7, #4c3428); 
 	background: linear-gradient(#a5d6a7, #4c3428);
+}
+.pride-gradient {
+	background: #ff0000; 
+	/* To make this gradient vertical, remove the "left" from the color array below */
+	background: -webkit-linear-gradient(left, #ff0000, #ff9800, #ffff00, #008000, #0000FF, #800080); 
+	background: -o-linear-gradient(left, #ff0000, #ff9800, #ffff00, #008000, #0000FF, #800080); 
+	background: -moz-linear-gradient(left, #ff0000, #ff9800, #ffff00, #008000, #0000FF, #800080); 
+	background: linear-gradient(left, #ff0000, #ff9800, #ffff00, #008000, #0000FF, #800080);
 }

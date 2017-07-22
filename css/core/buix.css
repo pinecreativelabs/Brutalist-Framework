@@ -90,8 +90,10 @@ ul.simple-nav li ul li a:hover { border-top: none; border-right: 3px solid #fff;
 /* STICKIES: fixed positions 
 **********************************/
 .sticky { position: fixed; }
+.sticky-bottom { position: fixed; bottom: 0; }
 .sticky-bottom-right { position: fixed; bottom: 0; right: 0; }
 .sticky-bottom-left { position: fixed; bottom: 0; left: 0; }
+.sticky-top { position: fixed; top: 0; }
 .sticky-top-right { position: fixed; top: 0; right: 0; }
 .sticky-top-left { position: fixed; top: 0; left: 0; }
 
@@ -107,3 +109,76 @@ ul.tags li { display: inline-block; list-style-type: none; padding: 0; margin: 0
 .revelation .secret { display: none; }
 .revelation:hover, .revelation:active, .revelation:focus { max-width: 100%; height: auto; cursor: pointer; }
 .revelation:hover .secret, .revelation:active .secret, .revelation:focus .secret { display: block; }
+
+/* THUMBNAILS
+**********************************/
+ul.thumbs-tiny, ul.thumbs-small, ul.thumbs-medium, ul.thumbs-large, ul.thumbs-xlarge {
+	list-style: none; padding: 0; margin: 0; display: inline-block; width: 100%;
+}
+ul.thumbs-tiny li, ul.thumbs-small li, ul.thumbs-medium li, ul.thumbs-large li, ul.thumbs-xlarge li {
+	display: inline-block; float: left;
+}
+ul.thumbs-tiny img { height: 60px; width: auto; }
+ul.thumbs-small img { height: 90px; width: auto; }
+ul.thumbs-medium img { height: 120px; width: auto; }
+ul.thumbs-large img { height: 150px; width: auto; }
+ul.thumbs-xlarge img { height: 180px; width: auto; }
+
+/* MODALS
+**********************************/
+.modal {
+  left: 50%;
+  margin: -250px 0 0 -32%;
+  opacity: 0;
+  position: absolute;
+  top: -50%;
+  visibility: hidden;
+  width: 65%;
+  box-shadow: 0 3px 7px rgba(0,0,0,.25);
+  box-sizing: border-box;
+  transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out
+}
+
+.modal:target {
+  opacity: 1;
+  top: 50%;
+  visibility: visible
+}
+.modal .modal-head, .modal .modal-footer {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.modal .modal-footer {
+  border: none;
+  border-top: 1px solid #e7e7e7;
+}
+.modal h2, .modal h3, .modal h4 { margin: 0; }
+.modal .modal-content, .modal .modal-head, .modal .modal-footer {
+  padding: 10px;
+}
+
+.modal-content {
+  position: relative;
+  z-index: 9999;
+}
+
+.modal .overlay {
+  background: rgba(0,0,0,0.8); /* Default color - this can be overridden by using a flavor! */
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9989;
+}
+.modal .overlay.opacity {
+  opacity: 0.8;
+}
+
+.modal-content a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+}

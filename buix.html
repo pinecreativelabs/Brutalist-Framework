@@ -54,7 +54,7 @@
 							<li class="invert-hover active"><a href="#" class="lime-text">BUIX</a></li>
 							<li class="invert-hover"><a href="bfx.html" class="lime-text">BFX</a></li>
 							<li class="invert-hover"><a href="grid.html" class="lime-text">Grid</a></li>
-							<li class="invert-hover"><a href="templates.html" class="lime-text">Templates</a></li>
+							<li class="invert-hover"><a href="/templates" class="lime-text">Templates</a></li>
 							<li class="blue-candy invert-hover"><a href="http://www.twitter.com/brutalistfwk" target="_blank">@brutalistfwk</a></li>
 						</ul>
 					</nav>
@@ -77,8 +77,10 @@
 					<h3 class="white-text courier-new-text fittext-compress">Stickies</h3>
 					<p class="white-text courier-new-text flow-text">Make any element fixed positioned. Apply these classes:</p>
 					<p class="white-text arial-text"><strong>.sticky</strong> - Makes any element fixed positioned.<br />
+						<strong>.sticky-bottom</strong> - Fixes element at bottom<br />
 						<strong>.sticky-bottom-right</strong> - Fixes element to bottom right corner of display<br />
 						<strong>.sticky-bottom-left</strong> - Fixes element to bottom left corner of display<br />
+						<strong>.sticky-top</strong> - Fixes element at top<br />
 						<strong>.sticky-top-right</strong> - Fixes element to top right corner of display<br />
 						<strong>.sticky-top-left</strong> - Fixes element to top left corner of display
 					</p>
@@ -224,7 +226,161 @@
 							</code>
 						</div>
 					</div>
+					
+					<p class="padding"></p>
+					<hr class="thick white"/>
+					
+					<h3 class="white-text courier-new-text fittext-compress">Thumbnails</h3>
+					<p class="white-text arial-text">Thumbnails allow you to display a list of images at a reduced size. Useful for galleries.</p>
+					<div class="row">
+						<div class="col s12 m8 l8">
+							<h4 class="arial-text white-text"><strong>.thumbs-tiny</strong></h4>
+							<ul class="thumbs-tiny">
+								<li><img src="assets/images/brutal-building.jpg"></li>
+								<li><img src="assets/images/spomenik.jpg"></li>
+								<li><img src="assets/images/rupp-drive-brutalism.jpg"></li>
+								<li><img src="assets/images/county-bldg-brutalist.jpg"></li>
+							</ul>
+							<h4 class="arial-text white-text"><strong>.thumbs-small</strong></h4>
+							<ul class="thumbs-small">
+								<li><img src="assets/images/brutal-building.jpg"></li>
+								<li><img src="assets/images/spomenik.jpg"></li>
+								<li><img src="assets/images/rupp-drive-brutalism.jpg"></li>
+								<li><img src="assets/images/county-bldg-brutalist.jpg"></li>
+							</ul>
 
+							<h4 class="arial-text white-text"><strong>.thumbs-medium</strong></h4>
+							<ul class="thumbs-medium">
+								<li><img src="assets/images/brutal-building.jpg"></li>
+								<li><img src="assets/images/spomenik.jpg"></li>
+								<li><img src="assets/images/rupp-drive-brutalism.jpg"></li>
+								<li><img src="assets/images/county-bldg-brutalist.jpg"></li>
+							</ul>
+							<h4 class="arial-text white-text"><strong>.thumbs-large</strong></h4>
+							<ul class="thumbs-large">
+								<li><img src="assets/images/brutal-building.jpg"></li>
+								<li><img src="assets/images/spomenik.jpg"></li>
+								<li><img src="assets/images/rupp-drive-brutalism.jpg"></li>
+								<li><img src="assets/images/county-bldg-brutalist.jpg"></li>
+							</ul>
+							<h4 class="arial-text white-text"><strong>.thumbs-xlarge</strong></h4>
+							<ul class="thumbs-xlarge">
+								<li><img src="assets/images/brutal-building.jpg"></li>
+								<li><img src="assets/images/spomenik.jpg"></li>
+								<li><img src="assets/images/rupp-drive-brutalism.jpg"></li>
+								<li><img src="assets/images/county-bldg-brutalist.jpg"></li>
+							</ul>
+						</div>
+						<div class="col s12 m4 l4">
+							<h4 class="white-text courier-new-text">Markup</h4>
+							<code class="black lime-text lucida-text padding">
+								&lt;ul class="thumbs-size"&gt;<br />
+								&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;img src="URL" /&gt;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br />
+								&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;img src="URL" /&gt;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br />
+								&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;img src="URL" /&gt;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br />
+								&lt;/ul&gt;
+							</code>
+						</div>
+					</div>
+					
+					<p class="padding"></p>
+					<hr class="thick white"/>
+					
+					<h3 class="white-text courier-new-text fittext-compress">Modals</h3>
+					<p class="white-text arial-text">Modals are hidden content boxes that can be made visible upon clicking a link or button. Entirely CSS-based - <em>NO</em> javascript needed!</p>
+					<div class="row">
+						<div class="col s12 m4">
+							<h4 class="white-text lucida-text">Example 1</h4>
+							<p class="arial-text white-text">Basic modal with plain text.</p>
+							<p style="margin-top: 1.2em;"><a href="#modal-1" class="btn border-solid-thin blue-border pink invert-hover banana-text lucida-text">Launch Modal</a></p>
+						</div>
+						<div class="col s12 m4">
+							<h4 class="white-text lucida-text">Example 2</h4>
+							<p class="arial-text white-text">Modal with lemon-flavored overlay and thumbnail images.</p>
+							<p style="margin-top: 1.2em;"><a href="#modal-2" class="btn border-solid-thin blue-border pink invert-hover banana-text lucida-text">Launch Modal</a></p>
+						</div>
+						<div class="col s12 m4">
+							<h4 class="white-text lucida-text">Example 3</h4>
+							<p class="arial-text white-text">Modal with chocolate-flavored semi-transparent overlay.</p>
+							<p style="margin-top: 1.2em;"><a href="#modal-3" class="btn border-solid-thin blue-border pink invert-hover banana-text lucida-text">Launch Modal</a></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12 m6">
+							<h4 class="white-text courier-new-text">Markup</h4>
+							<code class="black lime-text lucida-text padding">
+								&lt;div id="unique-modal-id" class="modal"&gt;<br />
+								&nbsp;&nbsp;&nbsp;&lt;div class="modal-content"&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="modal-head"&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Modal Header&lt;/h3&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="modal-content"&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Modal Content&lt;/p&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="modal-footer"&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="btn"&gt;CLOSE&lt;/a&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+								&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+								&lt;/div&gt;
+							</code>
+						</div>
+						<div class="col s12 m6">
+							<p class="arial-text white-text flow-text" style="margin-top: 1em;"><strong>Launch a Modal</strong></p>
+							<p class="arial-text white-text">Simply link to the modal unique ID.<br /><br /><span style="font-size: 18px;">&lt;a href="#unique-modal-id"&gt;Launch Modal&lt;/a&gt;</span></p>
+						</div>
+					</div>
+					<!-- Modal-1 -->
+					<div id="modal-1" class="modal">
+						<div class="modal-content platinum">
+							<div class="modal-head">
+								<h2 class="charcoal-text courier-new-text">Modal Header</h2>
+							</div>
+							<div class="modal-content vanilla-bean">
+								<p class="flow-text lucida-text">Modal content. Display anything you want here - text, images, video, anything!</p>
+								<p class="flow-text lucida-text">Modals are useful for having on-demand content.</p>
+							</div>
+							<div class="modal-footer">
+								<a href="#" class="btn black platinum-text">CLOSE</a>
+							</div>
+						</div>
+						<div class="overlay"></div>
+					</div>
+					<!-- Modal-2 -->
+					<div id="modal-2" class="modal">
+						<div class="modal-content platinum">
+							<div class="modal-head">
+								<h2 class="charcoal-text courier-new-text">Modal Header</h2>
+							</div>
+							<div class="modal-content vanilla-bean">
+								<p class="flow-text lucida-text">This modal has a lemon flavor applied to the overlay! There's even a thumbnail set!</p>
+								<ul class="thumbs-small">
+									<li><img src="assets/images/brutal-building.jpg"></li>
+									<li><img src="assets/images/spomenik.jpg"></li>
+									<li><img src="assets/images/rupp-drive-brutalism.jpg"></li>
+									<li><img src="assets/images/county-bldg-brutalist.jpg"></li>
+								</ul>
+							</div>
+							<div class="modal-footer">
+								<a href="#" class="btn black platinum-text">CLOSE</a>
+							</div>
+						</div>
+						<div class="overlay lemon"></div>
+					</div>
+					<!-- Modal-3 -->
+					<div id="modal-3" class="modal">
+						<div class="modal-content platinum">
+							<div class="modal-head">
+								<h2 class="charcoal-text courier-new-text">Modal Header</h2>
+							</div>
+							<div class="modal-content vanilla-bean">
+								<p class="flow-text lucida-text">This modal has a chocolate-flavored semi-transparent overlay!</p>
+							</div>
+							<div class="modal-footer">
+								<a href="#" class="btn black platinum-text">CLOSE</a>
+							</div>
+						</div>
+						<div class="overlay chocolate opacity"></div>
+					</div>
 				</section>
 			</div>
 		</div>
@@ -267,12 +423,12 @@
 </footer>
 
 <!-- Sticky Download Box -->
-	<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.2.zip" target="_blank">
+	<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.3.zip" target="_blank">
 	<div class="sticky-bottom-right stack-top solitary">
 		<div class="skew lemon-lime-gradient btn invert-hover">
 		<p class="flow-text black-text skew-right"><strong>Download</strong></p>
 		</div>
-		<p class="lime-text center">Version 1.2</p>
+		<p class="lime-text center">Version 1.3</p>
 	</div></a>
 <!-- End Sticky -->
 
