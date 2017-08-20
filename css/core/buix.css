@@ -105,9 +105,14 @@ ul.tags li { display: inline-block; list-style-type: none; padding: 0; margin: 0
 
 /* REVELATIONS
 **********************************/
-.revelation { display: inline-block; max-width: 50%; height: auto; transition: max-width 2s; -webkit-transition: max-width 2s; }
+.revelation { display: inline-block; transition: transform 2s; -webkit-transition: transform 2s; }
 .revelation .secret { display: none; }
-.revelation:hover, .revelation:active, .revelation:focus { max-width: 100%; height: auto; cursor: pointer; }
+.revelation:hover, .revelation:active, .revelation:focus { 
+	cursor: pointer; 
+	-ms-transform: scale(1.5,1.5); /* IE 9 */
+	-webkit-transform: scale(1.5,1.5); /* Safari */
+	transform: scale(1.5,1.5); /* Standard syntax */
+}
 .revelation:hover .secret, .revelation:active .secret, .revelation:focus .secret { display: block; }
 
 /* THUMBNAILS
@@ -118,11 +123,11 @@ ul.thumbs-tiny, ul.thumbs-small, ul.thumbs-medium, ul.thumbs-large, ul.thumbs-xl
 ul.thumbs-tiny li, ul.thumbs-small li, ul.thumbs-medium li, ul.thumbs-large li, ul.thumbs-xlarge li {
 	display: inline-block; float: left;
 }
-ul.thumbs-tiny img { height: 60px; width: auto; }
-ul.thumbs-small img { height: 90px; width: auto; }
-ul.thumbs-medium img { height: 120px; width: auto; }
-ul.thumbs-large img { height: 150px; width: auto; }
-ul.thumbs-xlarge img { height: 180px; width: auto; }
+ul.thumbs-tiny img, img.tiny-thumb { height: 60px; width: auto; }
+ul.thumbs-small img, img.small-thumb { height: 90px; width: auto; }
+ul.thumbs-medium img, img.medium-thumb { height: 120px; width: auto; }
+ul.thumbs-large img, img.large-thumb { height: 150px; width: auto; }
+ul.thumbs-xlarge img, img.xlarge-thumb { height: 180px; width: auto; }
 
 /* MODALS
 **********************************/

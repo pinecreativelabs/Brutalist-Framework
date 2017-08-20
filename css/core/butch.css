@@ -173,6 +173,22 @@ input[type=range] + .thumb {
 	cursor: pointer; cursor: hand;
 }
 
+/* OPACITIES
+*******************/
+.transparent { background: transparent !important; }
+.semi-transparent { filter:alpha(opacity=50); /* IE */
+	-moz-opacity:0.5; /* Mozilla */
+	opacity: 0.5;
+}
+.high-opacity { filter:alpha(opacity=75); /* IE */
+	-moz-opacity:0.75; /* Mozilla */
+	opacity: 0.75;
+}
+.low-opacity { filter:alpha(opacity=25); /* IE */
+	-moz-opacity:0.25; /* Mozilla */
+	opacity: 0.25;
+}
+
 /* SHAPES
 *******************/
 .circle { border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; }
@@ -263,6 +279,19 @@ hr.cut-dark:after {
 .brutal-border-light {
 	border: 10px solid pink;
 	border-image: repeating-linear-gradient( 45deg, #424242, #424242 1%, #d8d8d8 1%, #d8d8d8 8%) 10;
+}
+
+.bevel {
+	border-style: outset;
+    -moz-box-shadow: inset 4px 4px 4px rgba(255, 255, 255, .5), inset -4px -4px 4px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: inset 4px 4px 4px rgba(255, 255, 255, .5), inset -4px -4px 4px rgba(0, 0, 0, .5);
+    box-shadow: inset 4px 4px 4px rgba(255, 255, 255, .5), inset -4px -4px 4px rgba(0, 0, 0, .5);
+}
+.emboss {
+	border-style: inset;
+    box-shadow: 0 1px 2px #fff, 0 -1px 1px #666, inset 0 -1px 1px rgba(0,0,0,0.5), inset 0 1px 1px rgba(255,255,255,0.8);
+    -moz-box-shadow: 0 1px 2px #fff, 0 -1px 1px #666, inset 0 -1px 1px rgba(0,0,0,0.5), inset 0 1px 1px rgba(255,255,255,0.8);
+    -webkit-box-shadow: 0 1px 2px #fff, 0 -1px 1px #666, inset 0 -1px 1px rgba(0,0,0,0.5), inset 0 1px 1px rgba(255,255,255,0.8);
 }
 
 /* BOX SHADOWS

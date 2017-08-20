@@ -38,3 +38,9 @@ p { font-size: 1.1em }
 
 /* Gallery Basic */
 .thumbs-medium li { margin: 8px; }
+
+/* Email Boilerplate 01 */
+.email-body { width: 600px; margin: 0 auto !important; display: block;}
+@media only screen and (max-width: 620px) {
+	.email-body { width: 100%; }
+}

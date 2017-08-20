@@ -27,8 +27,11 @@ $('.equal-height').matchHeight({
     remove: false
 });
 	
-/* Prideify - rainbow color filter */
-$('.pride').prideify({ crossOriginProxy: true });
+/* Blinker Fluid */
+$('.blink').blink({delay: 350});
+$('.blink-slow').blink({delay: 600});
+$('.blink-fast').blink({delay: 100});
+$('.blink-182').blink({delay: 182});
 
 /* BAFFLE */
 /* Animation speed value can be increased or decreased. Same with duration */
