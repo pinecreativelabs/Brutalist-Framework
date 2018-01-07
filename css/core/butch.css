@@ -6,11 +6,11 @@ BUTCH CORE
 *******************/
 .no-padding { padding: 0 !important; }
 .padding { padding: 1em; }
-.comfortable { padding: 3.5em; }
+.comfortable { padding: 3.25em; }
 .uncomfortable { padding: -2em; }
 .solitary { margin: 4em; }
 .sociable { margin: -2em; }
-.paranoid { margin-left: 2em; margin-right: 2em; }
+.paranoid { margin-left: 1.75em; margin-right: 1.75em; }
 .hide { display: none !important; }
 .left { float: left !important; }
 .right { float: right !important; }
@@ -66,7 +66,7 @@ input[type=range] + .thumb {
 		transform: scale(0.25, 0.25); /* Standard syntax */
 	}
 /* SKEW CLASSES */
-	.skew, .skew-left {
+	.skew, .skew-left, .skew-hover:hover, .skew-left-hover:hover {
 		-webkit-transform: skew(20deg);
 		-moz-transform: skew(20deg);
 		-o-transform: skew(20deg);
@@ -75,7 +75,7 @@ input[type=range] + .thumb {
 		-webkit-transform: skewX(20deg);
 		transform: skewX(20deg);
 	}
-	.skew-right {
+	.skew-right, .skew-right-hover:hover {
 		-webkit-transform: skew(-20deg);
 		-moz-transform: skew(-20deg);
 		-o-transform: skew(-20deg);
@@ -84,15 +84,46 @@ input[type=range] + .thumb {
 		-webkit-transform: skewX(-20deg);
 		transform: skewX(-20deg);
 	}
-	.perspective, .perspective-left {
-		-ms-transform: skew(15deg,10deg); /* IE 9 */
-		-webkit-transform: skew(15deg,10deg); /* Safari */
-		transform: skew(15deg,10deg); /* Standard syntax */
+	.perspective, .perspective-left, .perspective-hover:hover, .perspective-left-hover:hover {
+		-ms-transform: skew(15deg,10deg);
+		-webkit-transform: skew(15deg,10deg);
+		transform: skew(15deg,10deg);
 	}
-	.perspective-right {
-		-ms-transform: skew(-15deg,-10deg); /* IE 9 */
-		-webkit-transform: skew(-15deg,-10deg); /* Safari */
-		transform: skew(-15deg,-10deg); /* Standard syntax */
+	.perspective-right, .perspective-right-hover:hover {
+		-ms-transform: skew(-15deg,-10deg);
+		-webkit-transform: skew(-15deg,-10deg); 
+		transform: skew(-15deg,-10deg); 
+	}
+/* ROTATION CLASSES */
+	.rotate-left, .rotate-left-hover:hover {
+		-ms-transform: rotate(-25deg);
+		-webkit-transform: rotate(-25deg);
+		transform: rotate(-25deg);
+	}
+	.rotate-right, .rotate-right-hover:hover {
+		-ms-transform: rotate(25deg);
+		-webkit-transform: rotate(25deg);
+		transform: rotate(25deg);
+	}
+	.rotate-left-45, .rotate-left-45-hover:hover  {
+		-ms-transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+	}
+	.rotate-right-45, .rotate-right-45-hover:hover {
+		-ms-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	.rotate-left-90, .rotate-left-90-hover:hover  {
+		-ms-transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
+		transform: rotate(-90deg);
+	}
+	.rotate-right-90, .rotate-right-90-hover:hover {
+		-ms-transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+		transform: rotate(90deg);
 	}
 
 /* FILTERS
@@ -201,7 +232,7 @@ input[type=range] + .thumb {
 .border-dotted-thick { border-style: dotted; border-width: 5px; }
 .border-dashed-thin { border-style: dashed; border-width: 2px; }
 .border-dashed-thick { border-style: dashed; border-width: 5px; }
-.jagged { position: relative; margin-top: 50px; margin-bottom: 50px}
+.jagged { position: relative; margin-top: 50px; margin-bottom: 50px; padding: 0; display: block; }
 .jagged::before, .jagged::after {
 	right: 0;
 	left: 0;
@@ -296,6 +327,12 @@ hr.cut-dark:after {
 
 /* BOX SHADOWS
 *********************/
+.box-shadow, .box-shadow-thick, .box-shadow-fat, .box-shadow-double, .box-shadow-triple, .box-shadow-quad, .box-shadow-bottom, .box-shadow-right { 
+	display: block; margin-bottom: 0.75em; 
+}
+.box-shadow:after, .box-shadow-thick:after, .box-shadow-fat:after, .box-shadow-double:after, .box-shadow-triple:after, .box-shadow-quad:after, .box-shadow-bottom:after, .box-shadow-right:after {
+	display: block; content: ''; clear: both;
+}
 .box-shadow { box-shadow: 5px 5px 0 #000; }
 .box-shadow-thick { box-shadow: 8px 8px 0 #000; }
 .box-shadow-fat { box-shadow: 12px 12px 0 #000; }
@@ -521,7 +558,7 @@ ol.none, ul.none { list-style-type: none; }
 
 /* Media Styles
 *******************/
-img.responsive, video { width: 100%; height: auto !important; }
+img.responsive, .responsive img, video { width: 100%; height: auto !important; }
 .video { /*Outer wrap for embedded video */
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */

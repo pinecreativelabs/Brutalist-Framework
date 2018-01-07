@@ -32,20 +32,20 @@
 	<link href="css/theme.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 <body class="black">
-	<div class="red">
+	<div class="red container-fluid">
 		<div class="row">
-			<div class="col s12 m6 l3 no-padding">
-				<img class="responsive comfortable" src="assets/images/brutalist-framework512.jpg" alt="Brutalist Framework" />
+			<div class="col s12 m4 l3 no-padding">
+				<a href="index.html"><img class="responsive comfortable" src="assets/images/brutalist-framework512.jpg" alt="Brutalist Framework" /></a>
 			</div>
-			<div class="col s12 m6 l9 no-padding">
+			<div class="col s12 m8 l9 no-padding">
 				<h1 class="courier-new-text fittext white-text baffle">BUIX</h1>
 				<h2 class="white-text fittext-compress courier-new-text">Brutal User Interface Experience</h2>
 				<p class="white-text flow-text courier-new-text">Elelments for a brutal user interface and experience.</p>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col s12 m6 l3 no-padding">
-				<aside class="black comfortable jagged">
+			<div class="col s12 m4 l3 no-padding">
+				<aside class="black jagged">
 					<nav class="simple">
 						<ul class="courier-new-text flow-text lime-text">
 							<li class="invert-hover"><a href="index.html" class="lime-text">Home</a></li>
@@ -54,26 +54,117 @@
 							<li class="invert-hover active"><a href="#" class="lime-text">BUIX</a></li>
 							<li class="invert-hover"><a href="bfx.html" class="lime-text">BFX</a></li>
 							<li class="invert-hover"><a href="grid.html" class="lime-text">Grid</a></li>
-							<li class="invert-hover"><a href="/templates" class="lime-text">Templates</a></li>
+							<li class="invert-hover"><a href="templates/index.html" class="lime-text">Templates</a></li>
 							<li class="blue-candy invert-hover"><a href="http://www.twitter.com/brutalistfwk" target="_blank">@brutalistfwk</a></li>
 						</ul>
 					</nav>
 				</aside>
 			</div>
-			<div class="col s12 m6 l9 no-padding">
+			<div class="col s12 m8 l9 no-padding">
 				<section class="comfortable">
+					<!-- BUTTONS -->
 					<h3 class="white-text courier-new-text fittext-compress">Buttons</h3>
-					<p class="white-text arial-text">To create a button, simply use the <strong>button</strong> tag, or apply <strong>.btn</strong> or <strong>.button</strong> class.</p>
-					<p><button>Default Button</button>
-						<button class="green white-text">Green White-Text Button</button><br /><br />
-						<a href="#" class="btn yellow blue-text flow-text">Yellow Button with Blue Flow Text</a><br /><br />
-						<a href="#" class="btn yellow blue-text invert-hover">Yellow Button with Blue Text Inverted upon hover</a><br /><br />
-					</p>
-					<p class="arial-text white-text flow-text">Advanced Examples</p>
-					<a href="#" class="button blocked grey blur-hover yellow-text">Blocked Button</a><a href="#" class="button glitch black yellow-text flow-text">Glitched Button</a><br /><br />
-					<a href="#" class="throb btn kiwi black-cherry-text border-dashed-thin black-cherry-border"><strong>Throbbing Kiwi Button with Black Cherry Text</strong></a>
+					<p class="white-text arial-text">To create a button, simply use the <strong>button</strong> tag, or apply <strong>.btn</strong> or <strong>.button</strong> class to a link. Buttons are displayed as an inline block, by default.</p>
+					<div class="row">
+						<div class="col s12 m6 l6">
+							<p><button>Default Button</button>
+								<button class="green white-text">Green White-Text Button</button><br /><br />
+								<a href="#" class="btn yellow blue-text flow-text">Yellow Button with Blue Flow Text</a><br /><br />
+								<a href="#" class="btn yellow blue-text invert-hover">Yellow Button with Blue Text Inverted upon hover</a><br /><br />
+							</p>
+						</div>
+						<div class="col s12 m6 l6">
+							<p class="arial-text white-text flow-text">Advanced Examples</p>
+							<a href="#" class="button blocked grey blur-hover yellow-text">Blocked Button</a><a href="#" class="button glitch black yellow-text flow-text">Glitched Button</a><br /><br />
+							<a href="#" class="throb btn kiwi black-cherry-text border-dashed-thin black-cherry-border"><strong>Throbbing Kiwi Button with Black Cherry Text</strong></a>
+						</div>
+					</div>
+					<h4 class="white-text">Special Button Classes</h4>
+					<p class="white-text arial-text">To add weight and sizing to a button, apply these classes.</p>
+					<div class="row">
+						<div class="col s12 m6">
+							<a href="#" class="btn large-btn charcoal lemon-text darken-hover"><span class="bigger">.large-btn</span></a>
+							<a href="#" class="btn medium-btn charcoal lemon-text lighten-hover"><span class="bigger">.medium-btn</span></a>
+						</div>
+						<div class="col s12 m6">
+							<p class="white-text arial-text">To make a button take up the full width of a container, apply this class:</p>
+							<a href="#" class="btn full-btn charcoal lemon-text darken-hover"><span class="bigger">.full-btn</span></a>
+							<p class="white-text arial-text">To remove the rounded corners from a button, apply this class:</p>
+							<a href="#" class="btn squared medium-btn charcoal lemon-text darken-hover"><span class="bigger">.squared</span></a>
+						</div>
+					</div>
 					<p class="padding"></p>
 					<hr class="thick white" />
+					<!-- FORMS -->
+					<h3 class="white-text courier-new-text fittext-compress">Forms</h3>
+					<div class="row">
+						<div class="col s12 m6">
+							<p class="white-text arial-text">Basic forms are supported. It is possible to apply classes from other components, such as Flavors and BUTCH classes.<br /><br />
+							In this example, we apply some Flavors to the email input, and have made the text larger by applying the class <em>.bigger</em>.<br /><br /></p>
+							<p class="white-text arial-text"><span class="heavy">Layouts</span><br />You can use the <a href="grid.html" class="yellow invert-hover">grid</a> to create a custom layout for your form. This can be done within the <em>form</em> tag, and it is possible to nest layouts.<br /><br />
+							<span class="heavy">.form-group</span><br />Use this class to add vertical spacing above and below a group of form elements.</p>
+						</div>
+						<div class="col s12 m6">
+							<form class="white grey-text brutal-border-dark box-shadow-thick padding" name="demoform" action="" method="post">
+								<div class="row">
+									<div class="col s12">
+										<div class="form-group">
+											<label class="heavy">Text Label</label>
+											<input type="text" name="name" placeholder="Text Input" />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12">
+										<div class="form-group">
+											<label class="heavy">Email Input</label>
+											<input type="email" name="name" placeholder="email@address.net" class="strawberry-border border-dashed-thin blue-text banana bigger" />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12 m6">
+										<div class="form-group">
+											<input type="checkbox" name="check1" value="True"><label class="radio">True</label><br>
+											<input type="checkbox" name="check2" value="False"><label class="radio">False</label>
+										</div>
+									</div>
+									<div class="col s12 m6">
+										<div class="form-group">
+											<input type="radio" name="radio-group" value="responsive"><label class="radio">Responsive</label><br />
+											<input type="radio" name="radio-group" value="nonresponsive"><label class="radio">Non-Responsive</label>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12 m6">
+										<label class="heavy">Select Dropdown</label>
+										<select name="optionlist">
+											<option value="">Choose</option>
+											<option value="mobile">Mobile</option>
+											<option value="tablet">Tablet</option>
+											<option value="desktop">Desktop</option>
+										</select>
+									</div>
+									<div class="col s12 m6">
+										<label class="heavy">Number</label>
+										<input type="number" name="quantity" min="1" max="50">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="heavy">Text Area</label>
+									<textarea name="comments" placeholder="Text area comments"></textarea>
+								</div>
+								<div class="form-group">
+									<input type="submit" value="Submit" class="squared">
+								</div>
+							</form>
+						</div>
+					</div>
+					
+					<p class="padding"></p>
+					<hr class="thick white" />
+					<!-- STICKIES -->
 					<h3 class="white-text courier-new-text fittext-compress">Stickies</h3>
 					<p class="white-text courier-new-text flow-text">Make any element fixed positioned. Apply these classes:</p>
 					<p class="white-text arial-text"><strong>.sticky</strong> - Makes any element fixed positioned.<br />
@@ -123,7 +214,7 @@
 						</div>
 					</div>
 					<p class="padding"></p>
-					<h3 class="white-text courier-new-text fittext-compress">Sticky Stack Example</h3>
+					<h4 class="white-text arial-text">Sticky Stack Example</h4>
 					<p class="white-text courier-new-text flow-text">In the top right corner of this page, you should see a skewed circle image inside an orange-cream box. It should always be visible and overlapping all content as you scroll down the page.</p>
 					<!-- Sticky Example -->
 						<div class="sticky-top-right stack-high orange-cream padding center">
@@ -304,17 +395,17 @@
 					<p class="white-text arial-text">Modals are hidden content boxes that can be made visible upon clicking a link or button. Entirely CSS-based - <em>NO</em> javascript needed!</p>
 					<div class="row">
 						<div class="col s12 m4">
-							<h4 class="white-text lucida-text">Example 1</h4>
+							<h4 class="white-text lucida-text" id="modal-anchor-1">Example 1</h4>
 							<p class="arial-text white-text">Basic modal with plain text.</p>
 							<p style="margin-top: 1.2em;"><a href="#modal-1" class="btn border-solid-thin blue-border pink invert-hover banana-text lucida-text">Launch Modal</a></p>
 						</div>
 						<div class="col s12 m4">
-							<h4 class="white-text lucida-text">Example 2</h4>
+							<h4 class="white-text lucida-text" id="modal-anchor-2">Example 2</h4>
 							<p class="arial-text white-text">Modal with lemon-flavored overlay and thumbnail images.</p>
 							<p style="margin-top: 1.2em;"><a href="#modal-2" class="btn border-solid-thin blue-border pink invert-hover banana-text lucida-text">Launch Modal</a></p>
 						</div>
 						<div class="col s12 m4">
-							<h4 class="white-text lucida-text">Example 3</h4>
+							<h4 class="white-text lucida-text" id="modal-anchor-3">Example 3</h4>
 							<p class="arial-text white-text">Modal with chocolate-flavored semi-transparent overlay.</p>
 							<p style="margin-top: 1.2em;"><a href="#modal-3" class="btn border-solid-thin blue-border pink invert-hover banana-text lucida-text">Launch Modal</a></p>
 						</div>
@@ -340,9 +431,12 @@
 						</div>
 						<div class="col s12 m6">
 							<p class="arial-text white-text flow-text" style="margin-top: 1em;"><strong>Launch a Modal</strong></p>
-							<p class="arial-text white-text">Simply link to the modal unique ID.<br /><br /><span style="font-size: 18px;">&lt;a href="#unique-modal-id"&gt;Launch Modal&lt;/a&gt;</span></p>
+							<p class="arial-text white-text">Simply link to the modal unique ID.<br /><br /><span class="black lime-text" style="font-size: 18px;">&lt;a href="#unique-modal-id"&gt;Launch Modal&lt;/a&gt;</span></p>
+							<p class="arial-text white-text flow-text" style="margin-top: 1em;"><strong>Close a Modal</strong></p>
+							<p class="arial-text white-text">When the modal closes, you will want to return to the location on the page where the modal was opened from. To do this, simply link the <em>Close</em> button to a unique ID (anchor link).</p>
 						</div>
 					</div>
+					
 					<!-- Modal-1 -->
 					<div id="modal-1" class="modal">
 						<div class="modal-content platinum">
@@ -354,7 +448,7 @@
 								<p class="flow-text lucida-text">Modals are useful for having on-demand content.</p>
 							</div>
 							<div class="modal-footer">
-								<a href="#" class="btn black platinum-text">CLOSE</a>
+								<a href="#modal-anchor-1" class="btn black platinum-text">CLOSE</a>
 							</div>
 						</div>
 						<div class="overlay"></div>
@@ -375,7 +469,7 @@
 								</ul>
 							</div>
 							<div class="modal-footer">
-								<a href="#" class="btn black platinum-text">CLOSE</a>
+								<a href="#modal-anchor-2" class="btn black platinum-text">CLOSE</a>
 							</div>
 						</div>
 						<div class="overlay lemon"></div>
@@ -390,11 +484,167 @@
 								<p class="flow-text lucida-text">This modal has a chocolate-flavored semi-transparent overlay!</p>
 							</div>
 							<div class="modal-footer">
-								<a href="#" class="btn black platinum-text">CLOSE</a>
+								<a href="#modal-anchor-3" class="btn black platinum-text">CLOSE</a>
 							</div>
 						</div>
 						<div class="overlay chocolate opacity"></div>
 					</div>
+					
+					<!-- TABLES -->
+					<p class="padding"></p>
+					<hr class="thick white"/>
+					
+					<h3 class="white-text courier-new-text fittext-compress">Tables</h3>
+					<p class="white-text arial-text">Tables can be made responsive simply by applying the class <span class="heavy"><em>.responsive</em></span> directly to the <em>table</em> tag. On devices under 600px wide, each table row is displayed as a record. Re-size your browser window to see it in action.</p>
+					<div class="row">
+						<div class="col s12">
+						<table class="responsive">
+							<caption>Table.responsive</caption>
+							<thead>
+								<tr class="water-blueberry-gradient">
+								  <th scope="col">Client</th>
+								  <th scope="col">Due Date</th>
+								  <th scope="col">Amount</th>
+								  <th scope="col">Status</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="kiwi-cucumber-gradient">
+								  <td data-label="Account">Ma Pa Shop</td>
+								  <td data-label="Due Date">08/20/2017</td>
+								  <td data-label="Amount">$1,165</td>
+								  <td data-label="Period">Paid</td>
+								</tr>
+								<tr class="kiwi-cucumber-gradient">
+								  <td scope="row" data-label="Account">Creative Studio</td>
+								  <td data-label="Due Date">02/01/2015</td>
+								  <td data-label="Amount">$2,167</td>
+								  <td data-label="Period">Collections</td>
+								</tr>
+								<tr class="kiwi-cucumber-gradient">
+									<td scope="row" data-label="Account">Food Bistro</td>
+									<td data-label="Due Date">04/30/2020</td>
+									<td data-label="Amount">$978</td>
+									<td data-label="Period">Good Standing</td>
+								</tr>
+								<tr class="kiwi-cucumber-gradient">
+								  <td scope="row" data-label="Acount">Repair Shop</td>
+								  <td data-label="Due Date">02/15/2019</td>
+								  <td data-label="Amount">$15,500</td>
+								  <td data-label="Period">Unpaid</td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+					</div>
+					
+					<!-- CONTENT SCROLLERS -->
+					<p class="padding"></p>
+					<hr class="thick white"/>
+					
+					<h3 class="white-text courier-new-text fittext-compress">Scrolling Content</h3>
+					<p class="white-text arial-text">Create an infinitely scrolling content area. It is pure CSS, so no javascript is needed. There are four directions that content can be scrolled: left, right, up, and down. Hover over the scroller to pause it.<br /><br /></p>
+					<div class="row">
+						<div class="col s12 m6">
+							<p class="flow-text white-text arial-text"><strong>Scroll Left</strong></p>
+							<div class="scroller-wrap black" style="height: 30px;">
+								<div class="scroll-left">
+									<div class="scroll-item">
+										<p class="blue lemon-text" style="font-size: 20px; line-height: 30px; padding-left: 8px; padding-right: 8px;"> I'm a scrolling text box! </p>
+									</div>
+									<div class="scroll-item">
+										<p class="pink grape-text" style="font-size: 20px; line-height: 30px; padding-left: 8px; padding-right: 8px;"> Create as many <span class="blink">scrolling</span> content items as you want! </p>
+									</div>
+									<div class="scroll-item">
+										<p class="green banana-text" style="font-size: 20px; line-height: 30px; padding-left: 8px; padding-right: 8px;"> I scroll to the left... </p>
+									</div>
+								</div>
+							</div>
+							<p class="flow-text white-text arial-text"><strong>Scroll Right</strong></p>
+							<div class="scroller-wrap gray" style="height: 120px;">
+								<div class="scroll-right">
+									<div class="scroll-item">
+										<img src="assets/images/brutal-building.jpg" class="medium-thumb" />
+									</div>
+									<div class="scroll-item">
+										<img src="assets/images/capsule-tower.jpg" class="medium-thumb" />
+									</div>
+									<div class="scroll-item">
+										<img src="assets/images/spomenik.jpg" class="medium-thumb" />
+									</div>
+									<div class="scroll-item">
+										<img src="assets/images/rupp-drive-brutalist.jpg" class="medium-thumb" />
+									</div>
+									<div class="scroll-item">
+										<img src="assets/images/county-bldg-brutalist.jpg" class="medium-thumb" />
+									</div>
+								</div>
+							</div>
+							<p class="flow-text white-text arial-text"><strong>Scroll Up</strong></p>
+							<div class="scroller-wrap white blue-border border-solid-thin" style="height: 250px;">
+								<div class="scroll-up">
+									<div class="scroll-item">
+										<p class="purple banana-text tahoma-text">This is a mixed content scroller with paragraphs and images.</p>
+									</div>
+									<div class="scroll-item">
+										<img src="assets/images/county-bldg-brutal-angle-top.jpg" class="responsive" />
+									</div>
+									<div class="scroll-item">
+										<p class="water navy-blue-text flow-text arial-text">This could be used as a news feed!</p>
+									</div>
+									<div class="scroll-item">
+										<img src="assets/images/rupp-drive-brutalism.jpg" class="responsive" />
+									</div>
+								</div>
+							</div>
+							<p class="flow-text white-text arial-text"><strong>Scroll Down</strong></p>
+							<div class="scroller-wrap blue lemon-text lucida-text blue-border border-solid-thin" style="height: 180px;">
+								<div class="scroll-down">
+									<div class="scroll-item">
+										<p>This is the first paragraph of text.</p>
+									</div>
+									<div class="scroll-item">
+										<img src="assets/images/county-bldg-brutal-angle-top.jpg" class="small-thumb" />
+									</div>
+									<div class="scroll-item">
+										<p class="blink-182">I'm blinking to get your attention!</p>
+									</div>
+									<div class="scroll-item">
+										<p class="flow-text">Flow-text paragraph because I'm more important</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col s12 m6">
+							<p class="white-text arial-text flow-text"><strong>Define the Height</strong></p>
+							<p class="white-text arial-text">The height of the scroller will need to be defined. When using a horizontal (left or right) scroller, the wrapped content will also need to have the same height. A vertical scroller (up or down) only needs the height defined for the wrapper.</p>
+							
+							<h4 class="white-text courier-new-text">Markup</h4>
+							<p class="white-text arial-text">This is the markup for creating a scroller. Note that the scroller-wrap needs a specific height defined.</p>
+							<code class="black lime-text lucida-text padding">
+								&lt;div class="scroller-wrap" style="height: 200px;" &gt;<br />
+								&nbsp;&nbsp;&nbsp;&lt;div class="scroll-direction"&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="scroll-item"&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="scroll-item"&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+								&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+								&lt;/div&gt;
+							</code>
+							<p class="white-text arial-text flow-text"><strong>Changing the Speed</strong></p>
+							<p class="white-text arial-text">By default, the scroller takes 10 seconds to scroll all the content. The wider or taller the area is, the faster it will appear to scroll. The shorter or narrower, the movement appears slower.</p>
+							<p class="white-text arial-text">To change the speed, you will need to modify the scroll direction classes in the <em>buix.css</em> file. </p>
+							<ul class="none white-text heavy">
+								<li>.scroll-left</li>
+								<li>.scroll-right</li>
+								<li>.scroll-up</li>
+								<li>.scroll-down</li>
+							</ul>
+						</div>
+					</div>
+					
 				</section>
 			</div>
 		</div>
@@ -402,25 +652,25 @@
 
 <footer class="black padding">
 	<div class="row">
-		<div class="col s12 no-padding">
+		<div class="col s12">
 			<p class="courier-new-text black-text flow-text center">
 				<a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank"><span class="lime blue-text invert-hover">GITHUB PROJECT</span></a>&nbsp;
 				<a href="http://www.twitter.com/brutalistfwk" target="_blank">@brutalistfwk</a>
 			</p>
 			<div class="jagged gray">
 				<div class="row">
-					<div class="col s12 m12 l4 no-padding">
+					<div class="col s12 m12 l4">
 						<div class="padding flow-text vanilla-bean-text arial-text">
 							<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="green yellow-text invert-hover">Pine Creative Labs</a> production</p>
 							<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-text invert-hover">Brad Fogelstrom</span></a></p>
 						</div>
 					</div>
-					<div class="col s12 m12 l4 no-padding">
+					<div class="col s12 m12 l4">
 						<div class="padding flow-text vanilla-bean-text arial-text">
 							<p>Interview on<br /><a href="http://www.brutalistwebsites.com/brutalistframework.com" target="_blank" class="white blue-text invert-hover">BrutalistWebsites.com</a>
 						</div>
 					</div>
-					<div class="col s12 m12 l4 no-padding">
+					<div class="col s12 m12 l4">
 						<div class="padding arial-text vanilla-bean-text">
 							<p class="flow-text">Contact us:</p>
 							<ul class="tags">
@@ -431,18 +681,18 @@
 					</div>
 				</div>
 			</div>
-			<p class="center white-text lucida-text">&copy; 2017 <em>BrutalistFramework</em>. All rights reserved.</p>
+			<p class="center white-text lucida-text">&copy; 2018 <em>BrutalistFramework</em>. All rights reserved.</p>
 		</div>
 	</div>
 </footer>
 
 <!-- Sticky Download Box -->
-	<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.4.zip" target="_blank">
+	<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.5.zip" target="_blank">
 	<div class="sticky-bottom-right stack-top solitary">
 		<div class="skew lemon-lime-gradient btn invert-hover">
 		<p class="flow-text black-text skew-right"><strong>Download</strong></p>
 		</div>
-		<p class="lime-text center">Version 1.4</p>
+		<p class="lime-text center">Version 1.5</p>
 	</div></a>
 <!-- End Sticky -->
 

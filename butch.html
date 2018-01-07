@@ -32,10 +32,10 @@
 	<link href="css/theme.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 <body class="black">
-	<div class="red">
+	<div class="red container-fluid">
 		<div class="row">
 			<div class="col s12 m4 l3 no-padding">
-				<img class="responsive comfortable" src="assets/images/brutalist-framework512.jpg" alt="Brutalist Framework" />
+				<a href="index.html"><img class="responsive comfortable" src="assets/images/brutalist-framework512.jpg" alt="Brutalist Framework" /></a>
 			</div>
 			<div class="col s12 m8 l9 no-padding">
 				<h1 class="courier-new-text fittext white-text baffle">BUTCH</h1>
@@ -45,7 +45,7 @@
 		</div>
 		<div class="row">
 			<div class="col s12 m4 l3 no-padding">
-				<aside class="black comfortable jagged">
+				<aside class="black jagged">
 					<nav class="simple">
 						<ul class="courier-new-text flow-text lime-text">
 							<li class="invert-hover"><a href="index.html" class="lime-text">Home</a></li>
@@ -54,7 +54,7 @@
 							<li class="invert-hover"><a href="buix.html" class="lime-text">BUIX</a></li>
 							<li class="invert-hover"><a href="bfx.html" class="lime-text">BFX</a></li>
 							<li class="invert-hover"><a href="grid.html" class="lime-text">Grid</a></li>
-							<li class="invert-hover"><a href="/templates" class="lime-text">Templates</a></li>
+							<li class="invert-hover"><a href="templates/index.html" class="lime-text">Templates</a></li>
 							<li class="blue-candy invert-hover"><a href="http://www.twitter.com/brutalistfwk" target="_blank">@brutalistfwk</a></li>
 						</ul>
 					</nav>
@@ -236,28 +236,46 @@
 				<!-- BRUTALIST UTILITY CLASSES -->
 					<h3 class="white-text courier-new-text fittext-compress">Brutalist Utility Classes</h3>
 					<p class="white-text courier-new-text flow-text">These classes are used for brutalizing your content. Apply them to any element.</p>
-					<p class="white-text courier-new-text flow-text"><span class="black allcaps"><strong>Scale Classes</strong></span></p>
-					<p class="flow-text white-text courier-new-text"><strong>.enlarge / .enlarged</strong> - Enlarges container size by 50%</p>
-					<p class="flow-text white-text courier-new-text"><strong>.double-size</strong> - Doubles size of container</p>
-					<p class="flow-text white-text courier-new-text"><strong>.triple-size</strong> - Triples size of container</p>
-					<p class="flow-text white-text courier-new-text"><strong>.shrink / .shrunk</strong> - Reduces container size by 25%</p>
-					<p class="flow-text white-text courier-new-text"><strong>.half-size</strong> - Reduces container to half it's original size</p>
-					<p class="flow-text white-text courier-new-text"><strong>.quarter-size</strong> - Reduces container to 25% of original size</p>
-					<p class="white-text courier-new-text flow-text"><span class="black allcaps"><strong>Skew Classes</strong></span></p>
-					<p class="flow-text white-text courier-new-text"><strong>.skew / .skew-left</strong> - Skews container to left</p>
-					<p class="flow-text white-text courier-new-text"><strong>.skew-right</strong> - Skews container to right</p>
-					<p class="flow-text white-text courier-new-text"><strong>.perspective, .perspective-left</strong> - Angles container to the left</p>
-					<p class="flow-text white-text courier-new-text"><strong>.perspective-right</strong> - Angles container to the right</p>
-					<p class="white-text courier-new-text flow-text"><span class="black allcaps"><strong>Transformation Classes</strong></span></p>
-					<p class="flow-text white-text courier-new-text"><strong>.flip</strong> - Flips container horizontally</p>
-					<p class="flow-text white-text courier-new-text"><strong>.flip-up</strong> - Flips container vertically</p>
-					<p class="white-text courier-new-text flow-text"><span class="black allcaps"><strong>Spacing Classes</strong></span></p>
-					<p class="flow-text white-text courier-new-text"><strong>.padding</strong> - Adds padding to container</p>
-					<p class="flow-text white-text courier-new-text"><strong>.no-padding</strong> - No padding on container</p>
-					<p class="flow-text white-text courier-new-text"><strong>.comfortable</strong> - Increases padding within container</p>
-					<p class="flow-text white-text courier-new-text"><strong>.uncomfortable</strong> - Negative padding within container</p>
-					<p class="flow-text white-text courier-new-text"><strong>.solitary</strong> - Increases margin spacing</p>
-					<p class="flow-text white-text courier-new-text"><strong>.sociable</strong> - Negative margin spacing</p>
+					<div class="row">
+						<div class="col s12 m6">
+							<p class="white-text courier-new-text flow-text"><span class="black allcaps"><strong>Scale Classes</strong></span></p>
+							<p class="white-text arial-text"><strong>.enlarge / .enlarged</strong> - Enlarges container size by 50%<br />
+								<strong>.double-size</strong> - Doubles size of container<br />
+								<strong>.triple-size</strong> - Triples size of container<br />
+								<strong>.shrink / .shrunk</strong> - Reduces container size by 25%<br />
+								<strong>.half-size</strong> - Reduces container to half it's original size<br />
+								<strong>.quarter-size</strong> - Reduces container to 25% of original size<br /><br />
+							</p>
+							<p class="white-text courier-new-text flow-text"><span class="black allcaps"><strong>Skew Classes</strong></span></p>
+							<p class="white-text arial-text"><strong>.skew / .skew-left</strong> - Skews container to left<br />
+								<strong>.skew-right</strong> - Skews container to right<br />
+								<strong>.perspective / .perspective-left</strong> - Angles container to the left<br />
+								<strong>.perspective-right</strong> - Angles container to the right<br /><br />
+							</p>
+							<p class="white-text courier-new-text flow-text"><span class="black allcaps"><strong>Transformation Classes</strong></span></p>
+							<p class="white-text arial-text"><strong>.flip</strong> - Flips container horizontally<br />
+								<strong>.flip-up</strong> - Flips container vertically<br /><br />
+							</p>
+						</div>
+						<div class="col s12 m6">
+							<p class="white-text courier-new-text flow-text"><span class="black allcaps"><strong>Rotation Classes</strong></span></p>
+							<p class="white-text arial-text"><strong>.rotate-right</strong> - Rotates element 25 degrees to the right<br />
+								<strong>.rotate-left</strong> - Rotates element 25 degrees to the left<br />
+								<strong>.rotate-right-45</strong> - Rotates element 45 degrees to the right<br />
+								<strong>.rotate-left-45</strong> - Rotates element 45 degrees to the left<br />
+								<strong>.rotate-right-90</strong> - Rotates element 90 degrees to the right<br />
+								<strong>.rotate-left-90</strong> - Rotates element 90 degrees to the left<br /><br />
+							</p>
+							<p class="white-text courier-new-text flow-text"><span class="black allcaps"><strong>Spacing Classes</strong></span></p>
+							<p class="white-text arial-text"><strong>.padding</strong> - Adds padding to container<br />
+								<strong>.no-padding</strong> - No padding on container<br />
+								<strong>.comfortable</strong> - Increases padding within container<br />
+								<strong>.uncomfortable</strong> - Negative padding within container<br />
+								<strong>.solitary</strong> - Increases margin spacing<br />
+								<strong>.sociable</strong> - Negative margin spacing
+							</p>
+						</div>
+					</div>
 					<p class="padding"></p>
 					<hr class="thick white" />
 				<!-- FILTERS -->
@@ -423,10 +441,12 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col s12"><div class="jagged white">
-							<p class="blue-text arial-text fittext">.jagged</p>
-							<p class="grey-text arial-text">Creates a grey triangular border above and below an element.</p>
-						</div></div>
+						<div class="col s12">
+							<div class="jagged white padding">
+								<p class="blue-text arial-text fittext">.jagged</p>
+								<p class="grey-text arial-text">Creates a grey triangular border above and below an element.</p>
+							</div>
+						</div>
 					</div>
 					<p class="padding"></p>
 					<hr class="thick white" />
@@ -490,7 +510,7 @@
 						<div class="col s12 m6">
 							<h4 class="black white-text courier-new-text flow-text">Responsive Videos</h4>
 							<p class="white-text arial-text">Use the <em>video</em> tag, and the video will be fluid-width. If embedding a YouTube, Vimeo, or any other third-party video that uses an iframe, simply wrap the <em>iframe</em> embed code within a div with class <strong><em>.video</em></strong>.</p>
-							<div class="video box-shadow-quad">
+							<div class="video box-shadow">
 								<iframe src="https://www.youtube.com/embed/Dt7LZA1GutU?showinfo=0" frameborder="0" allowfullscreen></iframe>
 							</div>
 						</div>
@@ -501,25 +521,25 @@
 	</div>
 <footer class="black padding">
 	<div class="row">
-		<div class="col s12 no-padding">
+		<div class="col s12">
 			<p class="courier-new-text black-text flow-text center">
 				<a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank"><span class="lime blue-text invert-hover">GITHUB PROJECT</span></a>&nbsp;
 				<a href="http://www.twitter.com/brutalistfwk" target="_blank">@brutalistfwk</a>
 			</p>
 			<div class="jagged gray">
 				<div class="row">
-					<div class="col s12 m12 l4 no-padding">
+					<div class="col s12 m12 l4">
 						<div class="padding flow-text vanilla-bean-text arial-text">
 							<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="green yellow-text invert-hover">Pine Creative Labs</a> production</p>
 							<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-text invert-hover">Brad Fogelstrom</span></a></p>
 						</div>
 					</div>
-					<div class="col s12 m12 l4 no-padding">
+					<div class="col s12 m12 l4">
 						<div class="padding flow-text vanilla-bean-text arial-text">
 							<p>Interview on<br /><a href="http://www.brutalistwebsites.com/brutalistframework.com" target="_blank" class="white blue-text invert-hover">BrutalistWebsites.com</a>
 						</div>
 					</div>
-					<div class="col s12 m12 l4 no-padding">
+					<div class="col s12 m12 l4">
 						<div class="padding arial-text vanilla-bean-text">
 							<p class="flow-text">Contact us:</p>
 							<ul class="tags">
@@ -530,18 +550,18 @@
 					</div>
 				</div>
 			</div>
-			<p class="center white-text lucida-text">&copy; 2017 <em>BrutalistFramework</em>. All rights reserved.</p>
+			<p class="center white-text lucida-text">&copy; 2018 <em>BrutalistFramework</em>. All rights reserved.</p>
 		</div>
 	</div>
 </footer>
 
 <!-- Sticky Download Box -->
-	<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.4.zip" target="_blank">
+	<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.5.zip" target="_blank">
 	<div class="sticky-bottom-right stack-top solitary">
 		<div class="skew lemon-lime-gradient btn invert-hover">
 		<p class="flow-text black-text skew-right"><strong>Download</strong></p>
 		</div>
-		<p class="lime-text center">Version 1.4</p>
+		<p class="lime-text center">Version 1.5</p>
 	</div></a>
 <!-- End Sticky -->
 

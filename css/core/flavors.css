@@ -351,11 +351,39 @@
 	background: -moz-linear-gradient(#a5d6a7, #4c3428); 
 	background: linear-gradient(#a5d6a7, #4c3428);
 }
-.pride-gradient {
+.pride-gradient, .rainbow {
 	background: #ff0000; 
 	/* To make this gradient vertical, remove the "left" from the color array below */
 	background: -webkit-linear-gradient(left, #ff0000, #ff9800, #ffff00, #008000, #0000FF, #800080); 
 	background: -o-linear-gradient(left, #ff0000, #ff9800, #ffff00, #008000, #0000FF, #800080); 
 	background: -moz-linear-gradient(left, #ff0000, #ff9800, #ffff00, #008000, #0000FF, #800080); 
 	background: linear-gradient(left, #ff0000, #ff9800, #ffff00, #008000, #0000FF, #800080);
+}
+.watermelon { 
+	background: #d03b3b; 
+	background: -webkit-linear-gradient(#1c6123, #d5f3d8, #d03b3b, #d03b3b, #d5f3d8, #1c6123); 
+	background: -o-linear-gradient(#1c6123, #d5f3d8, #d03b3b, #d03b3b, #d5f3d8, #1c6123); 
+	background: -moz-linear-gradient(#1c6123, #d5f3d8, #d03b3b, #d03b3b, #d5f3d8, #1c6123); 
+	background: linear-gradient(#1c6123, #d5f3d8, #d03b3b, #d03b3b, #d5f3d8, #1c6123);
+}
+.dragonfruit {
+	background: #e0e0e0; 
+	background: -webkit-linear-gradient(#5eb81b, #d5036f, #e0e0e0, #e0e0e0, #e0e0e0, #e0e0e0, #d5036f, #5eb81b); 
+	background: -o-linear-gradient(#5eb81b, #d5036f, #e0e0e0, #e0e0e0, #e0e0e0, #e0e0e0, #d5036f, #5eb81b); 
+	background: -moz-linear-gradient(#5eb81b, #d5036f, #e0e0e0, #e0e0e0, #e0e0e0, #e0e0e0, #d5036f, #5eb81b); 
+	background: linear-gradient(#5eb81b, #d5036f, #e0e0e0, #e0e0e0, #e0e0e0, #e0e0e0, #d5036f, #5eb81b);
+}
+.oreo {
+	background: #271f13; 
+	background: -webkit-linear-gradient(#271f13, #271f13, #efefef, #efefef, #271f13, #271f13); 
+	background: -o-linear-gradient(#271f13, #271f13, #efefef, #efefef, #271f13, #271f13); 
+	background: -moz-linear-gradient(#271f13, #271f13, #efefef, #efefef, #271f13, #271f13); 
+	background: linear-gradient(#271f13, #271f13, #efefef, #efefef, #271f13, #271f13);
+}
+.peppermint {
+	background: #ffffff; 
+	background: -webkit-linear-gradient(#ff0000, #ffffff, #ffffff, #ff0000, #ffffff, #ffffff, #ff0000); 
+	background: -o-linear-gradient(#ff0000, #ffffff, #ffffff, #ff0000, #ffffff, #ffffff, #ff0000); 
+	background: -moz-linear-gradient(#ff0000, #ffffff, #ffffff, #ff0000, #ffffff, #ffffff, #ff0000); 
+	background: linear-gradient(#ff0000, #ffffff, #ffffff, #ff0000, #ffffff, #ffffff, #ff0000);
 }

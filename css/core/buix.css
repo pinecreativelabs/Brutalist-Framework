@@ -4,8 +4,9 @@ BUIX - Brutalist User Interface Experience
 
 /* BUTTONS
 **********************************/
-button, .button, .btn {
+button, .button, .btn, input[type="submit"] {
 	text-align: center;
+	display: inline-block; 
 	border-radius: 5px;
 	cursor: pointer;
 	padding: 0.3em;
@@ -16,6 +17,10 @@ button, .button, .btn {
 	cursor: not-allowed !important; 
 }
 
+.large-btn { padding: 2em; line-height: 180%; }
+.medium-btn { padding: 1.45em; line-height: 160%; }
+.full-btn { display: block; width: 100%; text-align: center; }
+button.squared, .btn.squared, .button.squared, input[type="submit"].squared { border-radius: 0 !important; }
 
 /* NAVIGATION
 **********************************/
@@ -186,4 +191,131 @@ ul.thumbs-xlarge img, img.xlarge-thumb { height: 180px; width: auto; }
   text-decoration: none;
   display: inline-block;
   padding: 5px 10px;
+}
+
+/* FORMS
+**********************************/
+form { display: block; }
+form .form-group { display: block; margin-top: 0.75em; margin-bottom: 0.75em; }
+form input[type="text"], form input[type="email"], form input[type="tel"], form input[type="url"], form input[type="number"] { 
+	padding: 0.4em; margin: 0.25em; display: block; width: 98.5%; 
+}
+form input[type="checkbox"] { width: 1.5em; height: 1.5em; margin: 0.25em; }
+form input[type="radio"] { width: 1.5em; height: 1.5em; margin: 0.25em; }
+label.radio, label.checkbox { line-height: 1.5em; font-size: 1.1em; margin: 0.25em; }
+form select { width: 98.5%; padding: 0.4em; margin: 0.25em; }
+form select option { background: #ccc; color: #333; font-size: 1.35em;}
+form textarea { width: 98.5%; min-height: 3em; padding: 0.4em; margin: 0.25em; }
+form input[type="text"]:active, form input[type="email"]:active, form input[type="tel"]:active, form input[type="url"]:active, form input[type="number"]:active, form textarea:active, 
+form input[type="text"]:focus, form input[type="email"]:focus, form input[type="tel"]:focus, form input[type="url"]:focus, form input[type="number"]:focus, form textarea:focus, form select:focus, form select:active { 
+	border: 3px solid #333; outline: none !important; 
+}
+form input[type="submit"] { padding: 0.75em; margin: 0.25em; }
+
+/* TABLES
+**********************************/
+table.responsive {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+table.responsive caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+table.responsive tr {
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+table.responsive th,
+table.responsive td {
+  padding: .625em;
+  text-align: center;
+}
+table.responsive th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 600px) {
+  table.responsive {
+    border: 0;
+  }
+  table.responsive caption {
+    font-size: 1.3em;
+  }
+  table.responsive thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table.responsive tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  table.responsive td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  table.responsive td:before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  table.responsive td:last-child {
+    border-bottom: 0;
+  }
+}
+
+/* SCROLLER
+**********************************/
+
+.scroller-wrap { display: block;
+	width: 100%; overflow: hidden;
+}
+.scroll-left, .scroll-right, .scroll-up, .scroll-down { 
+	display: block; position: relative; overflow: hidden; 
+}
+.scroll-left { animation: scroll-left 10s linear infinite; width: 200%; }
+.scroll-right { animation: scroll-right 10s linear infinite; width: 100%; }
+.scroll-up { animation: scroll-up 10s linear infinite; }
+.scroll-down { animation: scroll-down 10s linear infinite; }
+.scroll-left .scroll-item, .scroll-right .scroll-item { display: block; }
+.scroll-right .scroll-item { float: right; }
+.scroll-left .scroll-item { float: left; }
+.scroll-up .scroll-item, .scroll-down .scroll-item { display: block !important; }
+.scroll-left:hover, .scroll-right:hover, .scroll-up:hover, .scroll-down:hover {
+    animation-play-state: paused;
+}
+@keyframes scroll-left {
+	0% {left:100%;}
+	100% {left:-100%;}
+}
+@keyframes scroll-right {
+	0% {right:100%}
+	100% {right:-100%;}
+}
+@keyframes scroll-up {
+	0% {top:100%;}
+	100% {top:-250%;}
+}
+@keyframes scroll-down {
+	0% {bottom:220%;}
+	100% {bottom:-220%;}
 }

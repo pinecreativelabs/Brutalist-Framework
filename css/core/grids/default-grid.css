@@ -1,9 +1,14 @@
-/*Core Grid */
+/* Core Default Grid */
 
 .container {
   margin: 0 auto;
   max-width: 1280px;
   width: 90%;
+}
+.container-960 {
+	margin: 0 auto;
+	max-width: 960px;
+	width: 96%;
 }
 
 @media only screen and (min-width: 601px) {

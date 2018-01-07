@@ -43,6 +43,22 @@ BFX - Brutal Effects
 	background-position: 50% 50%;
 }
 
+/* BRUTAL TEXT EFFECT
+***********************/
+.brutal-text {
+    letter-spacing: .15em;
+    text-shadow:  0.35rem -0.35rem rgba(178, 217, 35, 0.75), -0.35rem -0.35rem rgba(39, 172, 227, 0.75), 0 0.5rem rgba(255, 213, 25, 0.75);
+}
+.brutal-text-mono {
+    letter-spacing: .15em;
+    text-shadow:  0.35rem -0.35rem rgba(100, 100, 100, 0.75), -0.35rem -0.35rem rgba(150, 150, 150, 0.75), 0 0.5rem rgba(200, 200, 200, 0.75);
+}
+.brutal-text-neon {
+    letter-spacing: .15em;
+    text-shadow:  0.35rem -0.35rem rgba(255, 105, 180, 0.9), -0.25rem -0.25rem rgba(251, 167, 58, 0.9), -0.25rem 0.35rem rgba(72, 222, 252, 0.9);
+}
+
+
 
 /* GLITCH EFFECT
 ***********************/
