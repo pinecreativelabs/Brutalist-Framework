@@ -1,0 +1,46 @@
+/* CORE TEMPLATE STYLES
+ *
+ * Styles for setting a custom theme
+ ==========================================*/ 
+
+p { font-size: 1.1em }
+
+/* Splash Page 001 */
+.splash-cover {
+	height: 100vh;
+	background-image: url('../../assets/images/rough-concrete.jpg');
+	background-position: center; background-size: cover;
+}
+.feature-cover {
+	background-image: url('../../assets/images/county-bldg-brutal-angle-bottom.jpg');
+	background-position: center; background-size: cover;
+}
+
+/* Splash Page 002 */
+.splash-cover-002 {
+	height: 60vh;
+	background-image: url('../../assets/images/county-bldg-brutal-angle-top.jpg');
+	background-position: center; background-size: cover;
+}
+
+/* Blog Post Basic */
+.full-width-block { display: block; width: 100%; }
+.blog-post-cover {
+	height: 45vh; display: block;
+	background-image: url('../../assets/images/county-bldg-brutal-angle-top.jpg');
+	background-position: center; background-size: cover;
+}
+@media only screen and (max-width: 700px) {
+	.blog-post-cover { height: 80vh; }
+}
+.blog-post-thumb { max-width: 90px; margin: 0 auto !important; }
+.tags li { padding: 0.3em !important; }
+
+/* Gallery Basic */
+.thumbs-medium li { margin: 8px; }
+
+/* Email Boilerplate 01 */
+.email-body { width: 600px; margin: 0 auto !important; display: block;}
+@media only screen and (max-width: 620px) {
+	.email-body { width: 100%; }
+}

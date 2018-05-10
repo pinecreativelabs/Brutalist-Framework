@@ -5,7 +5,7 @@ BUTCH CORE
 /* SPACING
 *******************/
 .no-padding { padding: 0 !important; }
-.padding { padding: 1em; }
+.padding, .padded { padding: 1em; }
 .comfortable { padding: 3.25em; }
 .uncomfortable { padding: -2em; }
 .solitary { margin: 4em; }
@@ -234,10 +234,8 @@ input[type=range] + .thumb {
 .border-dashed-thick { border-style: dashed; border-width: 5px; }
 .jagged { position: relative; margin-top: 50px; margin-bottom: 50px; padding: 0; display: block; }
 .jagged::before, .jagged::after {
-	right: 0;
-	left: 0;
-	display: block;
-	height: 90px;
+	right: 0; 
+	left: 0; display: block; height: 90px;
 	background-size: 50px 100%;
 	position: absolute;
 	content: '';
@@ -365,6 +363,7 @@ hr.cut-dark:after {
 /* Font Weights */
 .thin { font-weight: 200; }
 .normal { font-weight: 400; }
+.bold { font-weight: 600; }
 .heavy { font-weight: 900; }
 
 /* Text Alignments */
@@ -372,6 +371,7 @@ hr.cut-dark:after {
 .text-center, .center { text-align: center; }
 .text-right { text-align: right; }
 .text-left { text-align: left; }
+.rtl { direction: rtl; }
 
 /* Character Spacing */
 .spread { letter-spacing: 3px; }
@@ -555,6 +555,76 @@ ol.none, ul.none { list-style-type: none; }
   }
 }
 
+/* TABLES
+**********************************/
+table.responsive {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+table.responsive caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+table.responsive tr {
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+table.responsive th,
+table.responsive td {
+  padding: .625em;
+  text-align: center;
+}
+table.responsive th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 600px) {
+  table.responsive {
+    border: 0;
+  }
+  table.responsive caption {
+    font-size: 1.3em;
+  }
+  table.responsive thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table.responsive tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  table.responsive td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  table.responsive td:before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  table.responsive td:last-child {
+    border-bottom: 0;
+  }
+}
 
 /* Media Styles
 *******************/

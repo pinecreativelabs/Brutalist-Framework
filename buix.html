@@ -31,83 +31,101 @@
 	<link href="css/core/core.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link href="css/theme.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
-<body class="black">
-	<div class="red container-fluid">
-		<div class="row">
-			<div class="col s12 m4 l3 no-padding">
-				<a href="index.html"><img class="responsive comfortable" src="assets/images/brutalist-framework512.jpg" alt="Brutalist Framework" /></a>
+<body>
+	<div class="container-fluid no-padding">
+		<div class="row red" id="scrolltop">
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 no-padding">
+				<a href="index.html"><img class="responsive logo" src="assets/images/brutalist-framework512.jpg" alt="Brutalist Framework" /></a>
 			</div>
-			<div class="col s12 m8 l9 no-padding">
+			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 no-padding">
 				<h1 class="courier-new-text fittext white-text baffle">BUIX</h1>
-				<h2 class="white-text fittext-compress courier-new-text">Brutal User Interface Experience</h2>
+				<h2 class="white-text fittext-compress lucida-text">Brutal User Interface Experience</h2>
 				<p class="white-text flow-text courier-new-text">Elelments for a brutal user interface and experience.</p>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col s12 m4 l3 no-padding">
-				<aside class="black jagged">
-					<nav class="simple">
-						<ul class="courier-new-text flow-text lime-text">
-							<li class="invert-hover"><a href="index.html" class="lime-text">Home</a></li>
-							<li class="invert-hover"><a href="flavors.html" class="lime-text">Flavors</a></li>
-							<li class="invert-hover"><a href="butch.html" class="lime-text">BUTCH</a></li>
-							<li class="invert-hover active"><a href="#" class="lime-text">BUIX</a></li>
-							<li class="invert-hover"><a href="bfx.html" class="lime-text">BFX</a></li>
-							<li class="invert-hover"><a href="grid.html" class="lime-text">Grid</a></li>
-							<li class="invert-hover"><a href="templates/index.html" class="lime-text">Templates</a></li>
-							<li class="blue-candy invert-hover"><a href="http://www.twitter.com/brutalistfwk" target="_blank">@brutalistfwk</a></li>
-						</ul>
-					</nav>
-				</aside>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 no-padding black">
+				<div class="glued">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 no-padding">
+							<nav class="simple bold">
+								<ul class="courier-new-text flow-text">
+									<li class="red invert-hover"><a href="index.html" class="black-text">Home</a></li>
+									<li class="red invert-hover"><a href="flavors.html" class="black-text">Flavors</a></li>
+									<li class="red invert-hover"><a href="butch.html" class="black-text">BUTCH</a></li>
+									<li class="lime invert-hover active"><a href="#" class="black-text">BUIX</a></li>
+									<li class="red invert-hover"><a href="bfx.html" class="black-text">BFX</a></li>
+									<li class="red invert-hover"><a href="grid.html" class="black-text">Grid</a></li>
+									<li class="red invert-hover"><a href="templates.html" class="black-text">Templates</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-xs-12 col-sm-6 no-padding">
+							<nav class="simple blue">
+								<ul class="courier-new-text flow-text lime-text">
+									<li class="invert-hover"><a href="#buttons" class="lime-text">Buttons</a></li>
+									<li class="invert-hover"><a href="#forms" class="lime-text">Forms</a></li>
+									<li class="invert-hover"><a href="#stickies" class="lime-text">Stickies</a></li>
+									<li class="invert-hover"><a href="#stacks" class="lime-text">Stacks</a></li>
+									<li class="invert-hover"><a href="#tags" class="lime-text">Tags</a></li>
+									<li class="invert-hover"><a href="#reveal" class="lime-text">Reveal</a></li>
+									<li class="invert-hover"><a href="#simplemenu" class="lime-text">Simple Menu</a></li>
+									<li class="invert-hover"><a href="#thumbs" class="lime-text">Thumbnails</a></li>
+									<li class="invert-hover"><a href="#modals" class="lime-text">Modals</a></li>
+									<li class="invert-hover"><a href="#tabs" class="lime-text">Tabs</a></li>
+									<li class="invert-hover"><a href="#scrollers" class="lime-text">Scrollers</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<a href="#scrolltop" class="lime invert-hover bold black-text scrolltop lucida-text">Back to Top &uarr;</a>
+				</div>
 			</div>
-			<div class="col s12 m8 l9 no-padding">
-				<section class="comfortable">
+			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 no-padding">
+				<div class="padding">
 					<!-- BUTTONS -->
-					<h3 class="white-text courier-new-text fittext-compress">Buttons</h3>
-					<p class="white-text arial-text">To create a button, simply use the <strong>button</strong> tag, or apply <strong>.btn</strong> or <strong>.button</strong> class to a link. Buttons are displayed as an inline block, by default.</p>
+					<h3 class="red-text courier-new-text fittext-compress" id="buttons">Buttons</h3>
+					<p class="charcoal-text arial-text" style="margin-bottom: 1.1em;">To create a button, simply use the <strong>button</strong> tag, or apply <strong>.btn</strong> or <strong>.button</strong> class to a link. Buttons are displayed as an inline block, by default.</p>
 					<div class="row">
-						<div class="col s12 m6 l6">
-							<p><button>Default Button</button>
-								<button class="green white-text">Green White-Text Button</button><br /><br />
-								<a href="#" class="btn yellow blue-text flow-text">Yellow Button with Blue Flow Text</a><br /><br />
-								<a href="#" class="btn yellow blue-text invert-hover">Yellow Button with Blue Text Inverted upon hover</a><br /><br />
-							</p>
+						<div class="col-xs-12 col-sm-12 col-md-6">
+							<div class="info padded bold center">
+								<button>Default Button</button><br /><br />
+								<button class="large-btn">.large-btn</button><br /><br />
+								<button class="medium-btn">.medium-btn</button>&nbsp;&nbsp;<button class="small-btn">.small-btn</button><br /><br />
+								<p>To make a button take up the full width of a container, apply this class:</p>
+								<button class="btn full-btn">.full-btn</button>
+								<p>Remove the rounded corners from a button:</p>
+								<button class="squared">.squared</button>
+							</div>
 						</div>
-						<div class="col s12 m6 l6">
-							<p class="arial-text white-text flow-text">Advanced Examples</p>
-							<a href="#" class="button blocked grey blur-hover yellow-text">Blocked Button</a><a href="#" class="button glitch black yellow-text flow-text">Glitched Button</a><br /><br />
-							<a href="#" class="throb btn kiwi black-cherry-text border-dashed-thin black-cherry-border"><strong>Throbbing Kiwi Button with Black Cherry Text</strong></a>
+						<div class="col-xs-12 col-sm-12 col-md-6">
+							<div class="ready padded">
+								<h4 class="lucida-text flow-text">Examples</h4>
+								<p>
+									<a href="#" class="button blocked disabled blur-hover">Blocked Button</a> - apply class <strong>.blocked</strong> to any button or link<br />
+									<a href="#" class="button glitch black yellow-text flow-text">Glitched Button</a><br /><br />
+									<a href="#" class="throb small-btn alert border-dashed-thick lemon-border"><strong>Small Throbbing Alert Button!</strong></a>
+								</p>
+							</div>
 						</div>
 					</div>
-					<h4 class="white-text">Special Button Classes</h4>
-					<p class="white-text arial-text">To add weight and sizing to a button, apply these classes.</p>
+				</div>
+				<p class="padding"></p>
+				<hr class="thick tomato" />
+				<!-- FORMS -->
+				<div class="padding">
+					<h3 class="red-text courier-new-text fittext-compress" id="forms">Forms</h3>
 					<div class="row">
-						<div class="col s12 m6">
-							<a href="#" class="btn large-btn charcoal lemon-text darken-hover"><span class="bigger">.large-btn</span></a>
-							<a href="#" class="btn medium-btn charcoal lemon-text lighten-hover"><span class="bigger">.medium-btn</span></a>
-						</div>
-						<div class="col s12 m6">
-							<p class="white-text arial-text">To make a button take up the full width of a container, apply this class:</p>
-							<a href="#" class="btn full-btn charcoal lemon-text darken-hover"><span class="bigger">.full-btn</span></a>
-							<p class="white-text arial-text">To remove the rounded corners from a button, apply this class:</p>
-							<a href="#" class="btn squared medium-btn charcoal lemon-text darken-hover"><span class="bigger">.squared</span></a>
-						</div>
-					</div>
-					<p class="padding"></p>
-					<hr class="thick white" />
-					<!-- FORMS -->
-					<h3 class="white-text courier-new-text fittext-compress">Forms</h3>
-					<div class="row">
-						<div class="col s12 m6">
-							<p class="white-text arial-text">Basic forms are supported. It is possible to apply classes from other components, such as Flavors and BUTCH classes.<br /><br />
+						<div class="col-sm-12 col-md-6">
+							<p class="charcoal-text arial-text">Basic forms are supported. It is possible to apply classes from other components, such as Flavors and BUTCH classes.<br /><br />
 							In this example, we apply some Flavors to the email input, and have made the text larger by applying the class <em>.bigger</em>.<br /><br /></p>
-							<p class="white-text arial-text"><span class="heavy">Layouts</span><br />You can use the <a href="grid.html" class="yellow invert-hover">grid</a> to create a custom layout for your form. This can be done within the <em>form</em> tag, and it is possible to nest layouts.<br /><br />
+							<p class="charcoal-text arial-text"><span class="heavy">Layouts</span><br />You can use the <a href="grid.html" class="yellow invert-hover">grid</a> to create a custom layout for your form. This can be done within the <em>form</em> tag, and it is possible to nest layouts.<br /><br />
 							<span class="heavy">.form-group</span><br />Use this class to add vertical spacing above and below a group of form elements.</p>
 						</div>
-						<div class="col s12 m6">
+						<div class="col-sm-12 col-md-6">
 							<form class="white grey-text brutal-border-dark box-shadow-thick padding" name="demoform" action="" method="post">
 								<div class="row">
-									<div class="col s12">
+									<div class="col-sm-12">
 										<div class="form-group">
 											<label class="heavy">Text Label</label>
 											<input type="text" name="name" placeholder="Text Input" />
@@ -115,7 +133,7 @@
 									</div>
 								</div>
 								<div class="row">
-									<div class="col s12">
+									<div class="col-sm-12">
 										<div class="form-group">
 											<label class="heavy">Email Input</label>
 											<input type="email" name="name" placeholder="email@address.net" class="strawberry-border border-dashed-thin blue-text banana bigger" />
@@ -123,13 +141,13 @@
 									</div>
 								</div>
 								<div class="row">
-									<div class="col s12 m6">
+									<div class="col-sm-12 col-md-6">
 										<div class="form-group">
 											<input type="checkbox" name="check1" value="True"><label class="radio">True</label><br>
 											<input type="checkbox" name="check2" value="False"><label class="radio">False</label>
 										</div>
 									</div>
-									<div class="col s12 m6">
+									<div class="col-sm-12 col-md-6">
 										<div class="form-group">
 											<input type="radio" name="radio-group" value="responsive"><label class="radio">Responsive</label><br />
 											<input type="radio" name="radio-group" value="nonresponsive"><label class="radio">Non-Responsive</label>
@@ -137,7 +155,7 @@
 									</div>
 								</div>
 								<div class="row">
-									<div class="col s12 m6">
+									<div class="col-sm-12 col-md-6">
 										<label class="heavy">Select Dropdown</label>
 										<select name="optionlist">
 											<option value="">Choose</option>
@@ -146,59 +164,78 @@
 											<option value="desktop">Desktop</option>
 										</select>
 									</div>
-									<div class="col s12 m6">
+									<div class="col-sm-12 col-md-6">
 										<label class="heavy">Number</label>
 										<input type="number" name="quantity" min="1" max="50">
 									</div>
 								</div>
-								<div class="form-group">
-									<label class="heavy">Text Area</label>
-									<textarea name="comments" placeholder="Text area comments"></textarea>
-								</div>
-								<div class="form-group">
-									<input type="submit" value="Submit" class="squared">
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="form-group">
+											<label class="heavy">Text Area</label>
+											<textarea name="comments" placeholder="Text area comments"></textarea>
+										</div>
+										<div class="form-group">
+											<input type="submit" value="Submit" class="squared full-btn">
+										</div>
+									</div>
 								</div>
 							</form>
 						</div>
 					</div>
-					
-					<p class="padding"></p>
-					<hr class="thick white" />
-					<!-- STICKIES -->
-					<h3 class="white-text courier-new-text fittext-compress">Stickies</h3>
-					<p class="white-text courier-new-text flow-text">Make any element fixed positioned. Apply these classes:</p>
-					<p class="white-text arial-text"><strong>.sticky</strong> - Makes any element fixed positioned.<br />
-						<strong>.sticky-bottom</strong> - Fixes element at bottom<br />
-						<strong>.sticky-bottom-right</strong> - Fixes element to bottom right corner of display<br />
-						<strong>.sticky-bottom-left</strong> - Fixes element to bottom left corner of display<br />
-						<strong>.sticky-top</strong> - Fixes element at top<br />
-						<strong>.sticky-top-right</strong> - Fixes element to top right corner of display<br />
-						<strong>.sticky-top-left</strong> - Fixes element to top left corner of display
-					</p>
-					<p class="padding"></p>
-					<h3 class="white-text courier-new-text fittext-compress">Stacks</h3>
-					<p class="white-text courier-new-text flow-text">Stack an element behind or on top of others. Apply these classes:</p>
-					<p class="white-text arial-text">
-						<strong>.stack-base</strong> - Forces layer to 0.<br />
-						<strong>.stack1</strong> - Layer 1.<br />
-						<strong>.stack2</strong> - Layer 2.<br />
-						<strong>.stack3</strong> - Layer 3.<br />
-						<strong>.stack4</strong> - Layer 4.<br />
-						<strong>.stack5</strong> - Layer 5.<br />
-						<strong>.stack6</strong> - Layer 6.<br />
-						<strong>.stack7</strong> - Layer 7.<br />
-						<strong>.stack8</strong> - Layer 8.<br />
-						<strong>.stack9</strong> - Layer 9.<br /><strong>.stack-middle</strong> - Layer 29.<br />
-						<strong>.stack-high</strong> - Layer 49.<br />
-						<strong>.stack-top</strong> - Layer 99.
-					</p>
+				</div>	
+				<p class="padding"></p>
+				<hr class="thick tomato" />
+				<!-- STICKIES -->
+				<div class="padding">
+					<h3 class="red-text courier-new-text fittext-compress" id="stickies">Stickies</h3>
+					<p class="charcoal-text courier-new-text flow-text">Make any element fixed positioned. Apply these classes:</p>
+					<div class="info padded arial-text">
+						<p><strong>.sticky</strong> - Makes any element fixed positioned.<br />
+							<strong>.sticky-bottom</strong> - Fixes element at bottom<br />
+							<strong>.sticky-bottom-right</strong> - Fixes element to bottom right corner of display<br />
+							<strong>.sticky-bottom-left</strong> - Fixes element to bottom left corner of display<br />
+							<strong>.sticky-top</strong> - Fixes element at top<br />
+							<strong>.sticky-top-right</strong> - Fixes element to top right corner of display<br />
+							<strong>.sticky-top-left</strong> - Fixes element to top left corner of display
+						</p>
+					</div>
+					<div class="disabled padded">
+						<p class="charcoal-text arial-text"><span class="flow-text courier-new-text heavy">.glued</span><br />Apply this class to make an element stay visible while scrolling. Best used within a sidebar.</p>
+					</div>
+				</div>
+				<p class="padding"></p>
+				<hr class="thick tomato" />
+				<!-- Stacks -->
+				<div class="padding">
+					<h3 class="red-text courier-new-text fittext-compress" id="stacks">Stacks</h3>
+					<p class="charcoal-text courier-new-text flow-text">Stack an element behind or on top of others. Apply these classes:</p>
 					<div class="row">
-						<div class="col s12 m6">
-							<p class="white-text arial-text"><span class="flow-text black courier-new-text heavy">.stack-auto</span><br />
-								Apply this class to automatically increment the z-index value - starting at 0 - for every element that uses this class. <span class="lemon-text">Requires <em>start.brutalizing.js</em>.</span></p>
-							<p class="white-text arial-text"><strong>EXAMPLE:</strong> This examples shows a 2-layer box, using nested divs. The outermost div acts as the base layer, as the z-index is at 0.</p>
+						<div class="col-sm-12 col-md-6">
+							<div class="info padded">
+								<p class="arial-text">
+									<strong>.stack-base</strong> - Forces layer to 0.<br />
+									<strong>.stack1</strong> - Layer 1.<br />
+									<strong>.stack2</strong> - Layer 2.<br />
+									<strong>.stack3</strong> - Layer 3.<br />
+									<strong>.stack4</strong> - Layer 4.<br />
+									<strong>.stack5</strong> - Layer 5.<br />
+									<strong>.stack6</strong> - Layer 6.<br />
+									<strong>.stack7</strong> - Layer 7.<br />
+									<strong>.stack8</strong> - Layer 8.<br />
+									<strong>.stack9</strong> - Layer 9.<br /><strong>.stack-middle</strong> - Layer 29.<br />
+									<strong>.stack-high</strong> - Layer 49.<br />
+									<strong>.stack-top</strong> - Layer 99.
+								</p>
+							</div>
+							
 						</div>
-						<div class="col s12 m6">
+						<div class="col-sm-12 col-md-6">
+							<div class="ready padded">
+								<p class="charcoal-text arial-text"><span class="flow-text courier-new-text heavy">.stack-auto</span><br />
+								Apply this class to automatically increment the z-index value - starting at 0 - for every element that uses this class. <span class="lemon-text">Requires <em>start.brutalizing.js</em>.</span></p>
+								<p class="charcoal-text arial-text"><strong>EXAMPLE:</strong> 2-layer box, using nested divs. The outermost div acts as the base layer, as the z-index is at 0.</p>
+							</div>
 							<div class="water stack-auto" style="display: block; width: 100%; padding: 0.4em;">
 								<h4 class="blueberry-text">Base Layer</h4>
 								<p class="white-text">z-index = 0</p>
@@ -214,65 +251,71 @@
 						</div>
 					</div>
 					<p class="padding"></p>
-					<h4 class="white-text arial-text">Sticky Stack Example</h4>
-					<p class="white-text courier-new-text flow-text">In the top right corner of this page, you should see a skewed circle image inside an orange-cream box. It should always be visible and overlapping all content as you scroll down the page.</p>
+					<h4 class="charcoal-text arial-text">Sticky Stack Example</h4>
+					<p class="charcoal-text courier-new-text flow-text">In the top right corner of this page, you should see a skewed circle image inside a success box. It should always be visible and overlapping all content as you scroll down the page.</p>
 					<!-- Sticky Example -->
-						<div class="sticky-top-right stack-high orange-cream padding center">
+						<div class="sticky-top-right stack-high success padding center">
 							<img class="circle skew" src="assets/images/spomenik.jpg" style="width: 70px; height: 70px;" /><br />
 							<strong><span class="lucida-text">Sticky</span></strong>
 						</div>
 					<!-- End Sticky -->
-
-					<p class="padding"></p>
-					<hr class="thick white" />
-					<h3 class="white-text courier-new-text fittext-compress">Tags</h3>
-					<p class="white-text arial-text">To create a list of tags, simply apply the class <strong>.tags</strong> to an unordered list.</p>
+				</div>
+				<p class="padding"></p>
+				<hr class="thick tomato" />
+				<!-- TAGS -->
+				<div class="padding">
+					<h3 class="red-text courier-new-text fittext-compress" id="tags">Tags</h3>
+					<p class="charcoal-text arial-text">To create a list of tags, simply apply the class <strong>.tags</strong> to an unordered list.</p>
 					<ul class="tags lucida-text heavy">
 						<li>Brutalist</li>
 						<li>Architecture</li>
 						<li>Framework</li>
 					</ul>
-					<p class="white-text arial-text">Tag list with links, with additional classes applied to each tag.</p>
-					<ul class="tags flow-text">
-						<li class="skew"><a href="#" class="lime blue-text invert-hover">Brutalist</a></li>
-						<li class="skew"><a href="#" class="mint-chocolate invert-hover">Architecture</a></li>
-						<li class="skew"><a href="#" class="lemon-lime-gradient blue-text darken-hover">Framework</a></li>
-					</ul>					
-					<p class="padding"></p>
-					<hr class="thick white" />
+					<p class="charcoal-text arial-text">Tag list with links, with additional classes applied to each tag.</p>
+					<ul class="tags flow-text lucida-text">
+						<li><a href="#" class="lime blue-text invert-hover">Brutalist</a></li>
+						<li><a href="#" class="mint-chocolate invert-hover">Architecture</a></li>
+						<li><a href="#" class="lemon-lime-gradient blue-text darken-hover">Framework</a></li>
+					</ul>
+				</div>
+				<p class="padding"></p>
+				<hr class="thick tomato" />
 					
-				<!-- REVELATIONS -->
-					<h3 class="white-text courier-new-text fittext-compress">Revelations</h3>
-					<p class="white-text arial-text"><em>Revelations</em> is a hover effect, for revealing hidden content!</p>
+				<!-- REVEAL -->
+				<div class="padding">
+					<h3 class="red-text courier-new-text fittext-compress" id="reveal">Reveal</h3>
+					<p class="charcoal-text arial-text"><em>Reveal</em> is a hover effect, for revealing hidden content!</p>
 					<div class="row">
-						<div class="col s12 m4">
-							<p class="arial-text white-text">The revelation container starts at a maximum width of 50% of the container it is wrapped within, and enlarges to 100% width upon hover while also revealing a caption.</p>
-							<p class="lucida-text lime-text black"><span class="heavy">.revelation</span> (wrap content within this class)<br />
+						<div class="col-sm-12 col-md-4 no-padding">
+							<p class="arial-text charcoal-text">The reveal container starts at a maximum width of 50% of the container it is wrapped within, and enlarges to 100% width upon hover while also revealing a caption.</p>
+							<p class="info padded"><span class="heavy">.reveal</span> (wrap content within this class)<br />
 							&nbsp;&nbsp;&nbsp;<span class="heavy">.secret</span> (hidden content to be revealed upon hover)</p>
 						</div>
-						<div class="col s12 m4 center">
-							<div class="revelation orange-cream">
+						<div class="col-sm-12 col-md-4 no-padding center">
+							<div class="reveal orange-cream">
 								<p class="lucida-text heavy flow-text center">Hover Over Me!</p>
 								<p class="arial-text secret center">I'm a <span class="heavy">SECRET</span>!</p>
 							</div>
 						</div>
-						<div class="col s12 m4 center">
-							<div class="revelation orange-cream">
+						<div class="col-sm-12 col-md-4 no-padding center">
+							<div class="reveal orange-cream">
 								<img src="assets/images/brutal-building.jpg" class="medium-thumb" />
 								<p class="arial-text secret">SECRET - only visible upon hover!</p>
 							</div>
 						</div>
 					</div>
-					<p class="padding"></p>
-					<hr class="thick white"/>
+				</div>
+				<p class="padding"></p>
+				<hr class="thick tomato"/>
 					
-				<!-- Simple Menu -->
-					<h3 class="white-text courier-new-text fittext-compress">Simple Menu</h3>
-					<p class="white-text arial-text"><em>Simple Menu</em> is a pure CSS menu that displays a description upon hover over each item.</p>
+				<!-- SIMPLE MENU -->
+				<div class="padding">
+					<h3 class="red-text courier-new-text fittext-compress" id="simplemenu">Simple Menu</h3>
+					<p class="charcoal-text arial-text"><em>Simple Menu</em> is a pure CSS menu that displays a description upon hover over each item.</p>
 					<div class="row">
-						<div class="col s12 m4 l4">
-							<h4 class="white-text courier-new-text">Default View</h4>
-							<ul class="simple-nav">
+						<div class="col-sm-12 col-md-4 col-lg-4">
+							<h4 class="charcoal-text courier-new-text">Default View</h4>
+							<ul class="simple-nav lucida-text">
 								<li><a href="#">Link 1
 									<span>Description text for item 1.</span></a>
 								</li>
@@ -282,7 +325,12 @@
 								<li><a href="#">Link 3
 									<span>Description text for item 3.</span></a>
 									<ul>
-										<li><a href="#">Sub-Page 1</a></li>
+										<li><a href="#">Sub-Page 1</a>
+											<ul>
+												<li><a href="#">Sub-Sub-Page 1</a></li>
+												<li><a href="#">Sub-Sub-Page 2</a></li>
+											</ul>
+										</li>
 										<li><a href="#">Sub-Page 2</a></li>
 										<li><a href="#">Sub-Page 3</a></li>
 									</ul>
@@ -295,8 +343,8 @@
 								</li>
 							</ul>
 						</div>
-						<div class="col s12 m4 l4">
-							<h4 class="white-text courier-new-text">Add Some Flavors!</h4>
+						<div class="col-sm-12 col-md-4 col-lg-4">
+							<h4 class="red-text courier-new-text">Add Some Flavors!</h4>
 							<ul class="simple-nav blueberry white-text">
 								<li><a href="#">Blueberry Nav
 									<span>This menu is a blueberry flavored menu!</span></a>
@@ -315,8 +363,8 @@
 								</li>
 							</ul>
 						</div>
-						<div class="col s12 m4 l4">
-							<h4 class="white-text courier-new-text">Markup</h4>
+						<div class="col-sm-12 col-md-4 col-lg-4">
+							<h4 class="charcoal-text courier-new-text">Markup</h4>
 							<code class="black lime-text lucida-text padding">
 								&lt;ul class="simple-nav"&gt;<br />
 								&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;List Item<br />
@@ -326,22 +374,23 @@
 							</code>
 						</div>
 					</div>
-					
-					<p class="padding"></p>
-					<hr class="thick white"/>
-					
-					<h3 class="white-text courier-new-text fittext-compress">Thumbnails</h3>
-					<p class="white-text arial-text">Thumbnails allow you to display a list of images at a reduced size. Useful for galleries.</p>
+				</div>	
+				<p class="padding"></p>
+				<hr class="thick tomato"/>
+				<!-- THUMBNAILS -->
+				<div class="padding">
+					<h3 class="red-text courier-new-text fittext-compress" id="thumbs">Thumbnails</h3>
+					<p class="charcoal-text arial-text">Thumbnails allow you to display a list of images at a reduced size. Useful for galleries.</p>
 					<div class="row">
-						<div class="col s12 m8 l8">
-							<h4 class="arial-text white-text"><strong>.thumbs-tiny</strong></h4>
+						<div class="col-sm-12 col-md-8">
+							<h4 class="arial-text charcoal-text"><strong>.thumbs-tiny</strong></h4>
 							<ul class="thumbs-tiny">
 								<li><img src="assets/images/brutal-building.jpg"></li>
 								<li><img src="assets/images/spomenik.jpg"></li>
 								<li><img src="assets/images/rupp-drive-brutalism.jpg"></li>
 								<li><img src="assets/images/county-bldg-brutalist.jpg"></li>
 							</ul>
-							<h4 class="arial-text white-text"><strong>.thumbs-small</strong></h4>
+							<h4 class="arial-text charcoal-text"><strong>.thumbs-small</strong></h4>
 							<ul class="thumbs-small">
 								<li><img src="assets/images/brutal-building.jpg"></li>
 								<li><img src="assets/images/spomenik.jpg"></li>
@@ -349,21 +398,21 @@
 								<li><img src="assets/images/county-bldg-brutalist.jpg"></li>
 							</ul>
 
-							<h4 class="arial-text white-text"><strong>.thumbs-medium</strong></h4>
+							<h4 class="arial-text charcoal-text"><strong>.thumbs-medium</strong></h4>
 							<ul class="thumbs-medium">
 								<li><img src="assets/images/brutal-building.jpg"></li>
 								<li><img src="assets/images/spomenik.jpg"></li>
 								<li><img src="assets/images/rupp-drive-brutalism.jpg"></li>
 								<li><img src="assets/images/county-bldg-brutalist.jpg"></li>
 							</ul>
-							<h4 class="arial-text white-text"><strong>.thumbs-large</strong></h4>
+							<h4 class="arial-text charcoal-text"><strong>.thumbs-large</strong></h4>
 							<ul class="thumbs-large">
 								<li><img src="assets/images/brutal-building.jpg"></li>
 								<li><img src="assets/images/spomenik.jpg"></li>
 								<li><img src="assets/images/rupp-drive-brutalism.jpg"></li>
 								<li><img src="assets/images/county-bldg-brutalist.jpg"></li>
 							</ul>
-							<h4 class="arial-text white-text"><strong>.thumbs-xlarge</strong></h4>
+							<h4 class="arial-text charcoal-text"><strong>.thumbs-xlarge</strong></h4>
 							<ul class="thumbs-xlarge">
 								<li><img src="assets/images/brutal-building.jpg"></li>
 								<li><img src="assets/images/spomenik.jpg"></li>
@@ -371,8 +420,8 @@
 								<li><img src="assets/images/county-bldg-brutalist.jpg"></li>
 							</ul>
 						</div>
-						<div class="col s12 m4 l4">
-							<h4 class="white-text courier-new-text">Markup</h4>
+						<div class="col-sm-12 col-md-4">
+							<h4 class="charcoal-text courier-new-text">Markup</h4>
 							<code class="black lime-text lucida-text padding">
 								&lt;ul class="thumbs-size"&gt;<br />
 								&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;img src="URL" /&gt;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br />
@@ -381,38 +430,39 @@
 								&lt;/ul&gt;
 							</code>
 							<p>&nbsp;</p>
-							<hr class="thick white" />
-							<h4 class="white-text courier-new-text">Single Image Thumbnails</h4>
-							<p class="white-text arial-text">Apply these classes directly to the <em>img</em> tag for single images. Their sizes correspond to the above examples.</p>
-							<p class="white-text lucida-text flow-text">.tiny-thumb<br />.small-thumb<br />.medium-thumb<br />.large-thumb<br />.xlarge-thumb</p>
+							<div class="info padded arial-text">
+								<h4 class="lucida-text">Single Image Thumbnails</h4>
+								<p>Apply these classes directly to the <em>img</em> tag for single images. Their sizes correspond to the above examples.</p>
+								<p class="flow-text">.tiny-thumb<br />.small-thumb<br />.medium-thumb<br />.large-thumb<br />.xlarge-thumb</p>
+							</div>
 						</div>
 					</div>
-					
-					<p class="padding"></p>
-					<hr class="thick white"/>
-					
-					<h3 class="white-text courier-new-text fittext-compress">Modals</h3>
-					<p class="white-text arial-text">Modals are hidden content boxes that can be made visible upon clicking a link or button. Entirely CSS-based - <em>NO</em> javascript needed!</p>
+				</div>	
+				<p class="padding"></p>
+				<hr class="thick tomato"/>
+				<div class="padding">
+					<h3 class="red-text courier-new-text fittext-compress" id="modals">Modals</h3>
+					<p class="charcoal-text arial-text">Modals are hidden content boxes that can be made visible upon clicking a link or button. Entirely CSS-based - <em>NO</em> javascript needed!</p>
 					<div class="row">
-						<div class="col s12 m4">
-							<h4 class="white-text lucida-text" id="modal-anchor-1">Example 1</h4>
-							<p class="arial-text white-text">Basic modal with plain text.</p>
+						<div class="col-sm-12 col-md-4">
+							<h4 class="charcoal-text lucida-text" id="modal-anchor-1">Example 1</h4>
+							<p class="arial-text grey-text">Basic modal with plain text.</p>
 							<p style="margin-top: 1.2em;"><a href="#modal-1" class="btn border-solid-thin blue-border pink invert-hover banana-text lucida-text">Launch Modal</a></p>
 						</div>
-						<div class="col s12 m4">
-							<h4 class="white-text lucida-text" id="modal-anchor-2">Example 2</h4>
-							<p class="arial-text white-text">Modal with lemon-flavored overlay and thumbnail images.</p>
+						<div class="col-sm-12 col-md-4">
+							<h4 class="charcoal-text lucida-text" id="modal-anchor-2">Example 2</h4>
+							<p class="arial-text grey-text">Modal with lemon-flavored overlay and thumbnail images.</p>
 							<p style="margin-top: 1.2em;"><a href="#modal-2" class="btn border-solid-thin blue-border pink invert-hover banana-text lucida-text">Launch Modal</a></p>
 						</div>
-						<div class="col s12 m4">
-							<h4 class="white-text lucida-text" id="modal-anchor-3">Example 3</h4>
-							<p class="arial-text white-text">Modal with chocolate-flavored semi-transparent overlay.</p>
+						<div class="col-sm-12 col-md-4">
+							<h4 class="charcoal-text lucida-text" id="modal-anchor-3">Example 3</h4>
+							<p class="arial-text grey-text">Modal with chocolate-flavored semi-transparent overlay.</p>
 							<p style="margin-top: 1.2em;"><a href="#modal-3" class="btn border-solid-thin blue-border pink invert-hover banana-text lucida-text">Launch Modal</a></p>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col s12 m6">
-							<h4 class="white-text courier-new-text">Markup</h4>
+						<div class="col-sm-12 col-md-6">
+							<h4 class="charcoal-text courier-new-text">Markup</h4>
 							<code class="black lime-text lucida-text padding">
 								&lt;div id="unique-modal-id" class="modal"&gt;<br />
 								&nbsp;&nbsp;&nbsp;&lt;div class="modal-content"&gt;<br />
@@ -429,14 +479,14 @@
 								&lt;/div&gt;
 							</code>
 						</div>
-						<div class="col s12 m6">
-							<p class="arial-text white-text flow-text" style="margin-top: 1em;"><strong>Launch a Modal</strong></p>
-							<p class="arial-text white-text">Simply link to the modal unique ID.<br /><br /><span class="black lime-text" style="font-size: 18px;">&lt;a href="#unique-modal-id"&gt;Launch Modal&lt;/a&gt;</span></p>
-							<p class="arial-text white-text flow-text" style="margin-top: 1em;"><strong>Close a Modal</strong></p>
-							<p class="arial-text white-text">When the modal closes, you will want to return to the location on the page where the modal was opened from. To do this, simply link the <em>Close</em> button to a unique ID (anchor link).</p>
+						<div class="col-sm-12 col-md-6 charcoal-text arial-text">
+							<p class="flow-text" style="margin-top: 1em;"><strong>Launch a Modal</strong></p>
+							<p>Simply link to the modal unique ID.<br /><br /><span class="black lime-text" style="font-size: 18px;">&lt;a href="#unique-modal-id"&gt;Launch Modal&lt;/a&gt;</span></p>
+							<p class="flow-text" style="margin-top: 1em;"><strong>Close a Modal</strong></p>
+							<p>When the modal closes, you will want to return to the location on the page where the modal was opened from. To do this, simply link the <em>Close</em> button to a unique ID (anchor link).</p>
 						</div>
 					</div>
-					
+				</div>
 					<!-- Modal-1 -->
 					<div id="modal-1" class="modal">
 						<div class="modal-content platinum">
@@ -490,63 +540,81 @@
 						<div class="overlay chocolate opacity"></div>
 					</div>
 					
-					<!-- TABLES -->
-					<p class="padding"></p>
-					<hr class="thick white"/>
-					
-					<h3 class="white-text courier-new-text fittext-compress">Tables</h3>
-					<p class="white-text arial-text">Tables can be made responsive simply by applying the class <span class="heavy"><em>.responsive</em></span> directly to the <em>table</em> tag. On devices under 600px wide, each table row is displayed as a record. Re-size your browser window to see it in action.</p>
+				<!-- TABS -->
+				<p class="padding"></p>
+				<hr class="thick tomato"/>
+				<div class="padding">
+					<h3 class="red-text courier-new-text fittext-compress" id="tabs">Tabs</h3>
+					<p class="charcoal-text arial-text">Tabs are purely CSS, so no javascript is required! Apply flavor classes to add color. You can add any type of content within a tab!<br /><br /></p>
 					<div class="row">
-						<div class="col s12">
-						<table class="responsive">
-							<caption>Table.responsive</caption>
-							<thead>
-								<tr class="water-blueberry-gradient">
-								  <th scope="col">Client</th>
-								  <th scope="col">Due Date</th>
-								  <th scope="col">Amount</th>
-								  <th scope="col">Status</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr class="kiwi-cucumber-gradient">
-								  <td data-label="Account">Ma Pa Shop</td>
-								  <td data-label="Due Date">08/20/2017</td>
-								  <td data-label="Amount">$1,165</td>
-								  <td data-label="Period">Paid</td>
-								</tr>
-								<tr class="kiwi-cucumber-gradient">
-								  <td scope="row" data-label="Account">Creative Studio</td>
-								  <td data-label="Due Date">02/01/2015</td>
-								  <td data-label="Amount">$2,167</td>
-								  <td data-label="Period">Collections</td>
-								</tr>
-								<tr class="kiwi-cucumber-gradient">
-									<td scope="row" data-label="Account">Food Bistro</td>
-									<td data-label="Due Date">04/30/2020</td>
-									<td data-label="Amount">$978</td>
-									<td data-label="Period">Good Standing</td>
-								</tr>
-								<tr class="kiwi-cucumber-gradient">
-								  <td scope="row" data-label="Acount">Repair Shop</td>
-								  <td data-label="Due Date">02/15/2019</td>
-								  <td data-label="Amount">$15,500</td>
-								  <td data-label="Period">Unpaid</td>
-								</tr>
-							</tbody>
-						</table>
+						<div class="col-sm-12">
+							<div class="tabs">
+							  <input type="radio" name="tabs" id="tab1" checked="checked">
+							  <label for="tab1" class="blue-border border-solid-thin lucida-text">Welcome</label>
+							  <div class="tab anim-bg-hot blue-border border-solid-thin">
+								<h4 class="blue-text lucida-text black-text-shadow">Hot Tab!</h4>
+								<p class="bold tahoma-text charcoal-text">This tab has a <span class="blink">hot</span> animated background.</p>
+								<img src="assets/images/capsule-tower.jpg" alt="Capsule Tower" class="right medium-thumb border-dashed-thick blue-border paranoid" />
+								<p class="double-col pad30 charcoal-text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&nbsp;
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							  </div>
+							  
+							  <input type="radio" name="tabs" id="tab2">
+							  <label for="tab2" class="blue-border border-solid-thin lucida-text">Custom Layout</label>
+							  <div class="tab blue-border border-solid-thin anim-bg-water">
+								<h4 class="blue-text lucida-text black-text-shadow">Watery Tab with Custom Layout</h4>
+								<p class="bold tahoma-text">This tab has a nested 3-column grid layout!</p>
+								<div class="row" style="margin-top: 1em;">
+									<div class="col-xs-12 col-sm-4 border-dotted-thin navy-blue-border">
+										<div class="padded navy-blue">
+											<h4 class="lucida-text lime-text">Column 1</h4>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-4 border-dotted-thin blue-candy-border">
+										<div class="padded blue-candy"><h4 class="lucida-text pink-text">Column 2</h4></div>
+									</div>
+									<div class="col-xs-12 col-sm-4 border-dotted-thin navy-blue-border">
+										<div class="navy-blue padded"><h4 class="lucida-text lime-text">Column 3</h4></div>
+									</div>
+								</div>
+							  </div>
+							  
+							  <input type="radio" name="tabs" id="tab3">
+							  <label for="tab3" class="blue-border border-solid-thin lucida-text">Markup</label>
+							  <div class="tab blue-border border-solid-thin">
+								<h4 class="lucida-text">Markup</h4>
+								<code class="padded">
+									&lt;div class="tabs"&gt; <span class="blue-candy-text">/* outer wrapper */</span><br />
+									<span class="blue-candy-text">/* Tab 1 */</span><br />
+									&nbsp;&nbsp;&nbsp;&lt;input type="radio" name="tabs" id="tab1" checked="checked"&gt;<br />
+									&nbsp;&nbsp;&nbsp;&lt;label for="tab1" class=""&gt;Tab One&lt;/label&gt;<br />
+									&nbsp;&nbsp;&nbsp;&lt;div class="tab"&gt;<br />
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...content...<br />
+									&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+									<span class="blue-candy-text">/* Tab 2 */</span><br />
+									&nbsp;&nbsp;&nbsp;&lt;input type="radio" name="tabs" id="tab2" checked="checked"&gt;<br />
+									&nbsp;&nbsp;&nbsp;&lt;label for="tab2" class=""&gt;Tab One&lt;/label&gt;<br />
+									&nbsp;&nbsp;&nbsp;&lt;div class="tab"&gt;<br />
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...content...<br />
+									&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+									&lt;/div&gt;
+								</code>
+							  </div>
+							</div>
 						</div>
 					</div>
-					
-					<!-- CONTENT SCROLLERS -->
-					<p class="padding"></p>
-					<hr class="thick white"/>
-					
-					<h3 class="white-text courier-new-text fittext-compress">Scrolling Content</h3>
-					<p class="white-text arial-text">Create an infinitely scrolling content area. It is pure CSS, so no javascript is needed. There are four directions that content can be scrolled: left, right, up, and down. Hover over the scroller to pause it.<br /><br /></p>
+				</div>
+				<!-- CONTENT SCROLLERS -->
+				<p class="padding"></p>
+				<hr class="thick tomato"/>
+				<div class="padding">
+					<h3 class="red-text courier-new-text fittext-compress" id="scrollers">Scrolling Content</h3>
+					<p class="charcoal-text arial-text">Create an infinitely scrolling content area. It is pure CSS, so no javascript is needed. There are four directions that content can be scrolled: left, right, up, and down. Hover over the scroller to pause it.<br /><br /></p>
 					<div class="row">
-						<div class="col s12 m6">
-							<p class="flow-text white-text arial-text"><strong>Scroll Left</strong></p>
+						<div class="col-sm-12 col-md-6">
+							<p class="flow-text charcoal-text arial-text"><strong>Scroll Left</strong></p>
 							<div class="scroller-wrap black" style="height: 30px;">
 								<div class="scroll-left">
 									<div class="scroll-item">
@@ -560,7 +628,7 @@
 									</div>
 								</div>
 							</div>
-							<p class="flow-text white-text arial-text"><strong>Scroll Right</strong></p>
+							<p class="flow-text charcoal-text arial-text"><strong>Scroll Right</strong></p>
 							<div class="scroller-wrap gray" style="height: 120px;">
 								<div class="scroll-right">
 									<div class="scroll-item">
@@ -580,7 +648,7 @@
 									</div>
 								</div>
 							</div>
-							<p class="flow-text white-text arial-text"><strong>Scroll Up</strong></p>
+							<p class="flow-text charcoal-text arial-text"><strong>Scroll Up</strong></p>
 							<div class="scroller-wrap white blue-border border-solid-thin" style="height: 250px;">
 								<div class="scroll-up">
 									<div class="scroll-item">
@@ -597,7 +665,7 @@
 									</div>
 								</div>
 							</div>
-							<p class="flow-text white-text arial-text"><strong>Scroll Down</strong></p>
+							<p class="flow-text charcoal-text arial-text"><strong>Scroll Down</strong></p>
 							<div class="scroller-wrap blue lemon-text lucida-text blue-border border-solid-thin" style="height: 180px;">
 								<div class="scroll-down">
 									<div class="scroll-item">
@@ -615,13 +683,13 @@
 								</div>
 							</div>
 						</div>
-						<div class="col s12 m6">
-							<p class="white-text arial-text flow-text"><strong>Define the Height</strong></p>
-							<p class="white-text arial-text">The height of the scroller will need to be defined. When using a horizontal (left or right) scroller, the wrapped content will also need to have the same height. A vertical scroller (up or down) only needs the height defined for the wrapper.</p>
+						<div class="col-sm-12 col-md-6">
+							<p class="charcoal-text arial-text flow-text"><strong>Define the Height</strong></p>
+							<p class="charcoal-text arial-text">The height of the scroller will need to be defined. When using a horizontal (left or right) scroller, the wrapped content will also need to have the same height. A vertical scroller (up or down) only needs the height defined for the wrapper.</p>
 							
-							<h4 class="white-text courier-new-text">Markup</h4>
-							<p class="white-text arial-text">This is the markup for creating a scroller. Note that the scroller-wrap needs a specific height defined.</p>
-							<code class="black lime-text lucida-text padding">
+							<h4 class="charcoal-text courier-new-text">Markup</h4>
+							<p class="charcoal-text arial-text">This is the markup for creating a scroller. Note that the scroller-wrap needs a specific height defined.</p>
+							<code class="padding">
 								&lt;div class="scroller-wrap" style="height: 200px;" &gt;<br />
 								&nbsp;&nbsp;&nbsp;&lt;div class="scroll-direction"&gt;<br />
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="scroll-item"&gt;<br />
@@ -633,44 +701,47 @@
 								&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
 								&lt;/div&gt;
 							</code>
-							<p class="white-text arial-text flow-text"><strong>Changing the Speed</strong></p>
-							<p class="white-text arial-text">By default, the scroller takes 10 seconds to scroll all the content. The wider or taller the area is, the faster it will appear to scroll. The shorter or narrower, the movement appears slower.</p>
-							<p class="white-text arial-text">To change the speed, you will need to modify the scroll direction classes in the <em>buix.css</em> file. </p>
-							<ul class="none white-text heavy">
-								<li>.scroll-left</li>
-								<li>.scroll-right</li>
-								<li>.scroll-up</li>
-								<li>.scroll-down</li>
-							</ul>
+							<div class="info padded arial-text">
+								<p class="flow-text"><strong>Changing the Speed</strong></p>
+								<p>By default, the scroller takes 10 seconds to scroll all the content. The wider or taller the area is, the faster it will appear to scroll. The shorter or narrower, the movement appears slower.</p>
+								<p>To change the speed, you will need to modify the scroll direction classes in the <em>buix.css</em> file. </p>
+								<p class="bigger" style="margin-top: 1em; margin-bottom: -0.5em;"><strong>Directions<strong></p>
+								<ul class="none heavy no-padding">
+									<li>.scroll-left</li>
+									<li>.scroll-right</li>
+									<li>.scroll-up</li>
+									<li>.scroll-down</li>
+								</ul>
+							</div>
 						</div>
 					</div>
-					
-				</section>
+				</div>
+				
 			</div>
 		</div>
 	</div>
 
 <footer class="black padding">
 	<div class="row">
-		<div class="col s12">
+		<div class="col-sm-12">
 			<p class="courier-new-text black-text flow-text center">
 				<a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank"><span class="lime blue-text invert-hover">GITHUB PROJECT</span></a>&nbsp;
 				<a href="http://www.twitter.com/brutalistfwk" target="_blank">@brutalistfwk</a>
 			</p>
 			<div class="jagged gray">
 				<div class="row">
-					<div class="col s12 m12 l4">
+					<div class="col-sm-12 col-md-12 col-lg-4">
 						<div class="padding flow-text vanilla-bean-text arial-text">
 							<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="green yellow-text invert-hover">Pine Creative Labs</a> production</p>
 							<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-text invert-hover">Brad Fogelstrom</span></a></p>
 						</div>
 					</div>
-					<div class="col s12 m12 l4">
+					<div class="col-sm-12 col-md-12 col-lg-4">
 						<div class="padding flow-text vanilla-bean-text arial-text">
 							<p>Interview on<br /><a href="http://www.brutalistwebsites.com/brutalistframework.com" target="_blank" class="white blue-text invert-hover">BrutalistWebsites.com</a>
 						</div>
 					</div>
-					<div class="col s12 m12 l4">
+					<div class="col-sm-12 col-md-12 col-lg-4">
 						<div class="padding arial-text vanilla-bean-text">
 							<p class="flow-text">Contact us:</p>
 							<ul class="tags">
@@ -687,13 +758,13 @@
 </footer>
 
 <!-- Sticky Download Box -->
-	<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.5.zip" target="_blank">
-	<div class="sticky-bottom-right stack-top solitary">
-		<div class="skew lemon-lime-gradient btn invert-hover">
-		<p class="flow-text black-text skew-right"><strong>Download</strong></p>
-		</div>
-		<p class="lime-text center">Version 1.5</p>
-	</div></a>
+<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.6.zip" target="_blank">
+<div class="sticky-bottom-right stack-top padding red">
+	<div class="skew lemon-lime-gradient btn invert-hover">
+		<p class="flow-text black-text lucida-text skew-right"><strong>Download</strong></p>
+	</div>
+	<p class="lime-text center">Version 1.6</p>
+</div></a>
 <!-- End Sticky -->
 
 <!--  Scripts-->

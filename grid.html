@@ -31,155 +31,324 @@
 	<link href="css/core/core.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link href="css/theme.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
-<body class="black">
-	<div class="red container-fluid">
-		<div class="row">
-			<div class="col s12 m4 l3 no-padding">
-				<a href="index.html"><img class="responsive comfortable" src="assets/images/brutalist-framework512.jpg" alt="Brutalist Framework" /></a>
+<body>
+	<div class="container-fluid no-padding">
+		<div class="row red" id="scrolltop">
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 no-padding">
+				<a href="index.html"><img class="responsive logo" src="assets/images/brutalist-framework512.jpg" alt="Brutalist Framework" /></a>
 			</div>
-			<div class="col s12 m8 l9 no-padding">
+			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 no-padding">
 				<h1 class="courier-new-text fittext white-text baffle">Grid</h1>
-				<h2 class="white-text fittext-compress courier-new-text">Responsive grids</h2>
+				<h2 class="white-text fittext-compress lucida-text">Responsive grids</h2>
 				<p class="white-text flow-text courier-new-text">There are two responsive grids included: <em>default</em> and <em>FlexBox</em>!</p>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col s12 m4 l3 no-padding">
-				<aside class="black comfortable jagged">
-					<nav class="simple">
-						<ul class="courier-new-text flow-text lime-text">
-							<li class="invert-hover"><a href="index.html" class="lime-text">Home</a></li>
-							<li class="invert-hover"><a href="flavors.html" class="lime-text">Flavors</a></li>
-							<li class="invert-hover"><a href="butch.html" class="lime-text">BUTCH</a></li>
-							<li class="invert-hover"><a href="buix.html" class="lime-text">BUIX</a></li>
-							<li class="invert-hover"><a href="bfx.html" class="lime-text">BFX</a></li>
-							<li class="invert-hover active"><a href="#" class="lime-text">Grid</a></li>
-							<li class="invert-hover"><a href="templates/index.html" class="lime-text">Templates</a></li>
-							<li class="blue-candy invert-hover"><a href="http://www.twitter.com/brutalistfwk" target="_blank">@brutalistfwk</a></li>
-						</ul>
-					</nav>
-				</aside>
-			</div>
-			<div class="col s12 m8 l9 no-padding">
-				<section class="comfortable">
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 no-padding black">
+				<div class="glued">
 					<div class="row">
-						<div class="col s12 m6">
-							<h3 class="white-text courier-new-text fittext-h3">Default Grid</h3>
-							<p class="white-text arial-text flow-text">It goes like this:</p>
-							<code class="black lime-text">
-								<strong>.container<br />&nbsp;&nbsp;.row<br />&nbsp;&nbsp;&nbsp;&nbsp;.col .s12 .m12 .l12</strong>
-							</code>
-							<p class="white-text arial-text">Container is optional, as it centers the page. By <em>not</em> using the container class, the rows will be the full width of the window. The maximum number of columns is 12.</p>
-							<p class="white-text flow-text arial-text"><strong>.s12</strong> = <span class="smaller">12 columns (full width) on small devices</span><br />
+						<div class="col-xs-12 col-sm-6 no-padding">
+							<nav class="simple bold">
+								<ul class="courier-new-text flow-text red">
+									<li class="red invert-hover"><a href="index.html" class="black-text">Home</a></li>
+									<li class="red invert-hover"><a href="flavors.html" class="black-text">Flavors</a></li>
+									<li class="red invert-hover"><a href="butch.html" class="black-text">BUTCH</a></li>
+									<li class="red invert-hover"><a href="buix.html" class="black-text">BUIX</a></li>
+									<li class="red invert-hover"><a href="bfx.html" class="black-text">BFX</a></li>
+									<li class="lime invert-hover active"><a href="#" class="black-text">Grid</a></li>
+									<li class="red invert-hover"><a href="templates.html" class="black-text">Templates</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-xs-12 col-sm-6 no-padding">
+							<nav class="simple blue">
+								<ul class="courier-new-text flow-text lime-text">
+									<li class="invert-hover"><a href="#defaultg" class="lime-text">Default Grid</a></li>
+									<li class="invert-hover"><a href="#flexbox" class="lime-text">Flexbox Grid</a></li>
+									<li class="invert-hover"><a href="#b3grid" class="lime-text">B3Grid (BETA)</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<a href="#scrolltop" class="lime invert-hover bold black-text scrolltop lucida-text">Back to Top &uarr;</a>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 no-padding">
+				<div class="padded">
+					<div class="row">
+						<div class="col-sm-12">
+							<h3 class="red-text courier-new-text fittext-h3" id="defaultg">Default Grid</h3>
+							<div class="alert padded box-shadow">
+								<p class="bold lucida-text"><span class="blink lemon red-text">ALERT!</span> Default Grid is now deprecated, and will be fully removed by version 2. Use the Flexbox grid instead.</p>
+								<div class="white padded">
+								<p class="charcoal-text arial-text flow-text">It goes like this:</p>
+								<code>
+									<strong>.container<br />&nbsp;&nbsp;.row<br />&nbsp;&nbsp;&nbsp;&nbsp;.col .s12 .m12 .l12</strong>
+								</code>
+								<p class="charcoal-text arial-text">Container is optional, as it centers the page. By <em>not</em> using the container class, the rows will be the full width of the window. The maximum number of columns is 12.</p>
+								<p class="charcoal-text flow-text arial-text"><strong>.s12</strong> = <span class="smaller">12 columns (full width) on small devices</span><br />
 								<strong>.m6</strong> = <span class="smaller">6 columns (half width) on medium devices</span><br /><strong>.l4</strong> = <span class="smaller">4 columns (1/3 width) on large devices</span><br /><br /></p>
-						</div>
-						<div class="col s12 m6">
-							<h3 class="white-text courier-new-text fittext-h3">Flexbox Grid</h3>
-							<p class="white-text arial-text flow-text">We've also included Flexbox grid. Learn about it here:<br />
-								<a class="button lemon invert-hover" href="http://flexboxgrid.com" target="_blank">FlexboxGrid.com</a></p>
-						</div>
-					</div>
-					<p class="white-text flow-text courier-new-text">Let's take a look at the grid. Re-size your window to see it in action.</p>
-					<p class="padding"></p>
-					<p class="white-text flow-text courier-new-text"><strong>Full Width:</strong> On all screen sizes.</p>
-					<div class="row black padding">
-						<div class="col s12 m12 l12 lime">
-							<p class="black-text flow-text courier-new-text">col s12 m12 l12</p>
-						</div>
-					</div>
-					<p class="white-text flow-text courier-new-text"><strong>Three columns:</strong> Becomes half width on medium devices, and full-width on small devices.</p>
-					<div class="row black padding">
-						<div class="col s12 m6 l4 lime">
-							<p class="black-text flow-text courier-new-text">col s12 m6 l4</p>
-						</div>
-						<div class="col s12 m6 l4 white">
-							<p class="black-text flow-text courier-new-text">col s12 m6 l4</p>
-						</div>
-						<div class="col s12 m6 l4 lime">
-							<p class="black-text flow-text courier-new-text">col s12 m6 l4</p>
-						</div>
-					</div>
-					<p class="padding"></p>
-					<p class="white-text flow-text courier-new-text"><strong>Nesting:</strong> Yes, you can nest within other layouts. Below, we have a two-column layout within another two-column layout.</p>
-					<div class="row black padding">
-						<div class="col s12 m12 l6 lime">
-							<p class="black-text flow-text courier-new-text">col s12 m12 l6</p>
-							<div class="row light-blue">
-								<div class="col s12 m6">
-									<p class="black-text flow-text courier-new-text">col s12 m6</p>
+							
+								<p class="charcoal-text flow-text courier-new-text">Let's take a look at the grid. Re-size your window to see it in action.</p>
+								<p class="padding"></p>
+								<p class="charcoal-text flow-text courier-new-text"><strong>Full Width:</strong> On all screen sizes.</p>
+								<div class="row black padding">
+									<div class="col s12 m12 l12 lime">
+										<p class="black-text flow-text courier-new-text">col s12 m12 l12</p>
+									</div>
 								</div>
-								<div class="col s12 m6">
-									<p class="black-text flow-text courier-new-text">col s12 m6</p>
+								<p class="charcoal-text flow-text courier-new-text"><strong>Three columns:</strong> Becomes half width on medium devices, and full-width on small devices.</p>
+								<div class="row black padding">
+									<div class="col s12 m6 l4 lime">
+										<p class="black-text flow-text courier-new-text">col s12 m6 l4</p>
+									</div>
+									<div class="col s12 m6 l4 white">
+										<p class="black-text flow-text courier-new-text">col s12 m6 l4</p>
+									</div>
+									<div class="col s12 m6 l4 lime">
+										<p class="black-text flow-text courier-new-text">col s12 m6 l4</p>
+									</div>
 								</div>
-							</div>
-						</div>
-						<div class="col s12 m12 l6 white">
-							<p class="black-text flow-text courier-new-text">col s12 m12 l6</p>
-							<div class="row green">
-								<div class="col s12 m6">
-									<p class="black-text flow-text courier-new-text">col s12 m6</p>
+								<p class="padding"></p>
+								<p class="charcoal-text flow-text courier-new-text"><strong>Nesting:</strong> Yes, you can nest within other layouts. Below, we have a two-column layout within another two-column layout.</p>
+								<div class="row black padding">
+									<div class="col s12 m12 l6 lime">
+										<p class="black-text flow-text courier-new-text">col s12 m12 l6</p>
+										<div class="row light-blue">
+											<div class="col s12 m6">
+												<p class="black-text flow-text courier-new-text">col s12 m6</p>
+											</div>
+											<div class="col s12 m6">
+												<p class="black-text flow-text courier-new-text">col s12 m6</p>
+											</div>
+										</div>
+									</div>
+									<div class="col s12 m12 l6 white">
+										<p class="black-text flow-text courier-new-text">col s12 m12 l6</p>
+										<div class="row green">
+											<div class="col s12 m6">
+												<p class="black-text flow-text courier-new-text">col s12 m6</p>
+											</div>
+											<div class="col s12 m6">
+												<p class="black-text flow-text courier-new-text">col s12 m6</p>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="col s12 m6">
-									<p class="black-text flow-text courier-new-text">col s12 m6</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					<p class="padding"></p>
-					<h3 class="fittext-h3 white-text courier-new">Flexbox Fusion Example</h3>
-					<p class="white-text arial-text">Here, we are using the Flexbox grid, combined with the default grid.</p>
-					<div class="padding charcoal">
-						<div class="row">
-							<div class="col-xs-12 strawberry">
-								<p class="vanilla-bean-text" style="padding: 0.4em;">Flexbox Full-width<br /><strong>col-xs-12</strong></p>
+				</div>
+				<p class="padding"></p>
+				<hr class="thick tomato" />
+				<!-- FLEXBOX GRID -->
+				<div class="padding">
+					<h3 class="fittext-h3 red-text courier-new-text" id="flexbox">Flexbox Grid</h3>
+					<p class="charcoal-text lucida-text flow-text">We believe flexbox is the future for responsive and flexible layouts, so we have integrated <a href="http://flexboxgrid.com" target="_blank" class="blue invert-hover yellow-text">Flexbox Grid</a> into the framework! If you're familiar with the <a href="https://getbootstrap.com/docs/4.0/layout/grid/" target="_blank" class="invert-hover blueberry-text">Bootstrap grid</a>, this will be easy for you to use!</p>
+					
+					<div class="row">
+						<div class="col-xs-12 col-md-6 no-padding">
+							<div class="padded">
+								<h4 class="charcoal-text lucida-text">Markup</h4>
+								<code class="padding">
+									&lt;div class="<strong>container</strong>"&gt;<br />
+									&nbsp;&nbsp;&lt;div class="<strong>row</strong>"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<strong>col-xs-12 col-sm-12 col-md-12 col-lg-12</strong>"&gt;<br />
+									&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+									&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+								</code>
+								<p class="padded info"><span class="bold">NOTE:</span> The outer <em>container</em> class is optional. Remove it to make the page fluid-width.</p>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-xs-12 col-md-6 vanilla">
-								<p class="strawberry-text" style="padding: 0.4em;">Flexbox Left Column<br /><strong>col-xs-12 col-md-6</strong></p>
-							</div>
-							<div class="col-xs-12 col-md-6 vanilla">
-								<p class="strawberry-text" style="padding: 0.4em;">Flexbox Right Column<br /><strong>col-xs-12 col-md-6</strong></p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-12 strawberry">
-								<p class="vanilla-bean-text" style="padding: 0.4em;">Default 2-column layout wrapped within full-width flexbox<br /><strong>col-xs-12</strong></p>
-								<div class="col s12 m6 no-padding white">
-									<p class="strawberry-text" style="padding: 0.4em;"><strong>col s12 m6</strong></p>
+						<div class="col-xs-12 col-md-6 no-padding">
+							<div class="padded">
+								<div class="info padded">
+									<p class="lucida-text">
+										<span class="bold">.col-xs-12</span> - 12 columns (full-width) on extra small device<br />
+										<span class="bold">.col-sm-6</span> - 6 columns (half-width) on small device<br />
+										<span class="bold">.col-md-4</span> - 4 columns (one-third width) on tablets<br />
+										<span class="bold">.col-lg-3</span> - 3 columns (one-fourth width) on desktops
+									</p>
 								</div>
-								<div class="col s12 m6 no-padding white">
-									<p class="strawberry-text" style="padding: 0.4em;"><strong>col s12 m6</strong></p>
+								<a href="http://flexboxgrid.com" target="_blank" class="blue-border border-solid-thick center flow-text small-btn full-btn yellow invert-hover"><span class="blue-text lucida-text bold allcaps">Learn the Grid &raquo;</span></a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<p class="padding"></p>
+				<hr class="thick tomato" />
+				<!-- B3GRID -->
+				<div class="padded">
+					<h3 class="fittext-h3 red-text courier-new-text" id="b3grid">B3Grid</h3>
+					<h4 class="bold charcoal-text lucida-text">Brutal Blocks 'n Bricks Grid</h4>
+					<p class="charcoal-text lucida-text flow-text">A grid for when you don't want rows!</p>
+					<div class="blocks">
+						<div class="silver block b33 padded">
+							<h5 class="red-text lucida-text">Blocks vs. Bricks</h5>
+							<p class="charcoal-text arial-text"><strong>Blocks</strong> are flex containers that can be specified by both width and height.</p>
+							<p class="charcoal-text arial-text"><strong>Bricks</strong> are inline blocks that can only be specified by width.</p>
+						</div>
+						<div class="platinum block b33 padded">
+							<div class="info padded">
+								<h5 class="red-text lucida-text">Structure</h5>
+								<p><strong>.blocks / .bricks</strong> - outer wrapper for blocks and / or bricks</p>
+								<p><strong>.block</strong> - supports both widths and heights</p>
+								<p><strong>.brick</strong> - supports only widths; can be wrapped within blocks</p>
+							</div>
+						</div>
+						<div class="platinum block b33 padded">
+							<div class="info padded">
+								<h5 class="red-text lucida-text">Widths</h5>
+								<p class="arial-text">Can be applied to both block and brick classes.</p>
+								<p><strong>.b20</strong> - 20% (one fifth) width<br />
+								<strong>.b25</strong> - 25% (quarter) width<br /><strong>.b33</strong> - 33% (one-third) width<br />
+								<strong>.b50</strong> - 50% (half) width<br /><strong>.b75</strong> - 75% (three-fourths) width<br />
+								<strong>.b100</strong> - 100% (full) width
+								</p>
+							</div>
+						</div>
+						<div class="platinum block b33 padded">
+							<div class="info padded">
+								<h5 class="red-text lucida-text">Heights</h5>
+								<p class="arial-text">Applies only to the block class. Height is relative to the window size.</p>
+								<p><strong>.bh20</strong> - 20% (one fifth) height<br />
+								<strong>.bh25</strong> - 25% (quarter) height<br /><strong>.bh33</strong> - 33% (one-third) height<br />
+								<strong>.bh50</strong> - 50% (half) height<br /><strong>.bh75</strong> - 75% (three-fourths) height<br />
+								<strong>.bh100</strong> - 100% (full) height
+								</p>
+							</div>
+						</div>
+						<div class="silver block b33 padded">
+							<h5 class="red-text lucida-text">Blocks Markup</h5>
+							<code class="padding">
+								&lt;div class="<strong>blocks</strong>"&gt;<br />
+								&nbsp;&nbsp;&nbsp;&lt;div class="<strong>block b25 bh50</strong>"&gt;<br />
+								&nbsp;&nbsp;&nbsp;... content ...<br />
+								&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+								&nbsp;&nbsp;&nbsp;&lt;div class="<strong>block b75 bh50</strong>"&gt;<br />
+								&nbsp;&nbsp;&nbsp;... content ...<br />
+								&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+								&lt;/div&gt;
+							</code>
+							<h5 class="red-text lucida-text">Bricks Markup</h5>
+							<code class="padding">
+								&lt;div class="<strong>bricks</strong>"&gt;<br />
+								&nbsp;&nbsp;&nbsp;&lt;div class="<strong>brick b33</strong>"&gt;<br />
+								&nbsp;&nbsp;&nbsp;... content ...<br />
+								&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+								&nbsp;&nbsp;&nbsp;&lt;div class="<strong>brick b33</strong>"&gt;<br />
+								&nbsp;&nbsp;&nbsp;... content ...<br />
+								&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+								&nbsp;&nbsp;&nbsp;&lt;div class="<strong>brick b33</strong>"&gt;<br />
+								&nbsp;&nbsp;&nbsp;... content ...<br />
+								&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+								&lt;/div&gt;
+							</code>
+						</div>
+						<div class="silver block b33 padded">
+							<h5 class="red-text lucida-text">Nested Blocks Markup</h5>
+							<p class="arial-text charcoal-text">Three blocks within a two-block area.</p>
+							<code class="padding">
+								&lt;div class="<strong>blocks</strong>"&gt;<br />
+								&nbsp;&nbsp;&nbsp;&lt;div class="<strong>block b50 bh50</strong>"&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<strong>blocks</strong>"&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<strong>block b33</strong>"&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...content...<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt/div&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<strong>block b33</strong>"&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...content...<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt/div&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<strong>block b33</strong>"&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...content...<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt/div&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+								&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+								&nbsp;&nbsp;&nbsp;&lt;div class="<strong>block b50 bh50</strong>"&gt;<br />
+								&nbsp;&nbsp;&nbsp;... content ...<br />
+								&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+								&lt;/div&gt;
+							</code>
+						</div>
+					</div>
+					<div class="blocks">
+						<div class="block b50 silver">
+							<div class="bricks strawberry-text">
+								<p class="brick b100 flow-text red-text lucida-text"><strong>Bricks Example</strong></p>
+								<p class="brick b100 center black-cherry cherry-border border-solid-thin flow-text">.b100</p>
+								<div class="brick b50 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.b50</span></div>
+								<div class="brick b50 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.b50</span></div>
+								<div class="brick b25 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.b25</span></div>
+								<div class="brick b25 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.b25</span></div>
+								<div class="brick b25 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.b25</span></div>
+								<div class="brick b25 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.b25</span></div>
+								<div class="brick b33 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.b33</span></div>
+								<div class="brick b33 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.b33</span></div>
+								<div class="brick b33 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.b33</span></div>
+								<div class="brick b75 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.b75</span></div>
+								<div class="brick b25 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.b25</span></div>
+								<div class="brick b20 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.b20</span></div>
+								<div class="brick b20 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.b20</span></div>
+								<div class="brick b20 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.b20</span></div>
+								<div class="brick b20 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.b20</span></div>
+								<div class="brick b20 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.b20</span></div>
+							</div>
+						</div>
+						<div class="block b50 silver">
+							<div class="blocks">
+								<p class="block b100 flow-text red-text lucida-text"><strong>Bricks Within Blocks Example</strong></p>
+								<div class="block b25 charcoal strawberry-text">
+									<p class="center flow-text white-text"><strong>Block 1</strong></p>
+									<div class="brick b100 maroon black-cherry-border border-solid-thin">
+										<p class="flow-text">Single Brick<br />.b100</p>
+									</div>
+									<div class="brick b150 maroon black-cherry-border border-solid-thin">
+										<p class="flow-text">Half Brick</p>
+									</div>
+								</div>
+								<div class="block b75 grey strawberry-text">
+									<p class="center flow-text white-text"><strong>Block 2</strong> - Block with Bricks</p>
+									<div class="bricks">
+										<div class="brick b33 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.b33</span></div>
+										<div class="brick b33 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.b33</span></div>
+										<div class="brick b33 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.b33</span></div>
+										<div class="brick b50 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.b50</span></div>
+										<div class="brick b50 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.b50</span></div>
+									</div>
+									<p class="center flow-text white-text">More of Block 2</p>
+								</div>
+								<div class="block b100 bh25 strawberry white-text">
+									<p class="center lucida-text" style="margin-top: 1.5em;"><strong>.b100 .bh25</strong><br />This block is one-fourth the height of the screen.</p>
 								</div>
 							</div>
 						</div>
 					</div>
-				</section>
+				</div>
 			</div>
 		</div>
 	</div>
 
 <footer class="black padding">
 	<div class="row">
-		<div class="col s12">
+		<div class="col-sm-12">
 			<p class="courier-new-text black-text flow-text center">
 				<a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank"><span class="lime blue-text invert-hover">GITHUB PROJECT</span></a>&nbsp;
 				<a href="http://www.twitter.com/brutalistfwk" target="_blank">@brutalistfwk</a>
 			</p>
 			<div class="jagged gray">
 				<div class="row">
-					<div class="col s12 m12 l4">
+					<div class="col-sm-12 col-md-12 col-lg-4">
 						<div class="padding flow-text vanilla-bean-text arial-text">
 							<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="green yellow-text invert-hover">Pine Creative Labs</a> production</p>
 							<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-text invert-hover">Brad Fogelstrom</span></a></p>
 						</div>
 					</div>
-					<div class="col s12 m12 l4">
+					<div class="col-sm-12 col-md-12 col-lg-4">
 						<div class="padding flow-text vanilla-bean-text arial-text">
 							<p>Interview on<br /><a href="http://www.brutalistwebsites.com/brutalistframework.com" target="_blank" class="white blue-text invert-hover">BrutalistWebsites.com</a>
 						</div>
 					</div>
-					<div class="col s12 m12 l4">
+					<div class="col-sm-12 col-md-12 col-lg-4">
 						<div class="padding arial-text vanilla-bean-text">
 							<p class="flow-text">Contact us:</p>
 							<ul class="tags">
@@ -196,13 +365,13 @@
 </footer>
 
 <!-- Sticky Download Box -->
-	<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.5.zip" target="_blank">
-	<div class="sticky-bottom-right stack-top solitary">
-		<div class="skew lemon-lime-gradient btn invert-hover">
-		<p class="flow-text black-text skew-right"><strong>Download</strong></p>
-		</div>
-		<p class="lime-text center">Version 1.5</p>
-	</div></a>
+<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.6.zip" target="_blank">
+<div class="sticky-bottom-right stack-top padding red">
+	<div class="skew lemon-lime-gradient btn invert-hover">
+		<p class="flow-text black-text lucida-text skew-right"><strong>Download</strong></p>
+	</div>
+	<p class="lime-text center">Version 1.6</p>
+</div></a>
 <!-- End Sticky -->
 
 <!--  Scripts-->

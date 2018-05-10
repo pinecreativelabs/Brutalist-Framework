@@ -247,3 +247,162 @@ span.glitch {
 	-webkit-transform: scale( .75 );
   }
 }
+
+/* ANIMATED GRADIENT BACKGROUNDS
+***********************************/
+.anim-bg-brutal {
+background: linear-gradient(-11deg, #1C1C1C, #808080, #2e2e2e, #1C1C1C, #1C1C1C, #808080, #2e2e2e, #1C1C1C, #1C1C1C, #808080, #2e2e2e, #1C1C1C, #1C1C1C, #808080, #2e2e2e, #1C1C1C, #1C1C1C, #808080, #2e2e2e, #1C1C1C, #1C1C1C, #808080, #2e2e2e);
+	background-size: 400% 400%;
+	-webkit-animation: Brutal 18s linear infinite;
+	-moz-animation: Brutal 18s linear infinite;
+	animation: Brutal 18s linear infinite;
+}
+@-webkit-keyframes Brutal {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
+@-moz-keyframes Brutal {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
+@keyframes Brutal {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
+.anim-bg-plain {
+background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+@-webkit-keyframes Gradient {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
+@-moz-keyframes Gradient {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
+@keyframes Gradient {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
+.anim-bg-vampire { color: #000;
+background: linear-gradient(-69deg, #8A0808, #610B0B, #3B0B0B, #610B0B, #8A0808, #610B0B, #3B0B0B);
+	background-size: 400% 400%;
+	-webkit-animation: Vampire 16s ease infinite;
+	-moz-animation: Vampire 16s ease infinite;
+	animation: Vampire 16s ease infinite;
+}
+@-webkit-keyframes Vampire {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
+@-moz-keyframes Vampire {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
+@keyframes Vampire {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
+.anim-bg-pastel { color: #000;
+background: linear-gradient(217deg, rgba(255,0,0,1), rgba(255,0,0,0) 70.71%),
+      linear-gradient(127deg, rgba(0,255,0,1), rgba(0,255,0,0) 70.71%),
+      linear-gradient(336deg, rgba(0,0,255,1), rgba(0,0,255,0) 70.71%);
+	background-size: 400% 400%;
+	-webkit-animation: Pastel 13s ease infinite;
+	-moz-animation: Pastel 13s ease infinite;
+	animation: Pastel 13s ease infinite;
+}
+@-webkit-keyframes Pastel {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
+@-moz-keyframes Pastel {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
+@keyframes Pastel {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
+.anim-bg-hot { color: #000;
+background: linear-gradient(98deg, #ff0000, #ffab40, #ff9800, #F4FA58);
+	background-size: 400% 400%;
+	-webkit-animation: Hot 12s ease infinite;
+	-moz-animation: Hot 12s ease infinite;
+	animation: Hot 12s ease infinite;
+}
+@-webkit-keyframes Hot {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
+@-moz-keyframes Hot {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
+@keyframes Hot {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
+.anim-bg-water { color: #fff;
+background: linear-gradient(45deg, #ADD8E6, #81d4fa, #2196f3, #2196f3, #ADD8E6, #81d4fa, #2196f3, #2196f3, #ADD8E6, #81d4fa, #2196f3, #2196f3);
+	background-size: 400% 400%;
+	-webkit-animation: Water 14s ease-in-out infinite;
+	-moz-animation: Water 14s ease-in-out infinite;
+	animation: Water 14s ease-in-out infinite;
+}
+@-webkit-keyframes Water {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
+@-moz-keyframes Water {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
+@keyframes Water {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
+.anim-bg-shine { color: #000;
+background: linear-gradient(-45deg, #808080, #808080, #e6e6e6, #808080, #808080, #e6e6e6, #808080, #808080, #e6e6e6);
+	background-size: 400% 400%;
+	-webkit-animation: Shine 9s ease-in-out infinite;
+	-moz-animation: Shine 9s ease-in-out infinite;
+	animation: Shine 9s ease-in-out infinite;
+}
+@-webkit-keyframes Shine {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
+@-moz-keyframes Shine {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
+@keyframes Shine {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}

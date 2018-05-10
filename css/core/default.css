@@ -44,7 +44,8 @@ html {
  */
 body {
   margin: 0 !important; padding: 0 !important;
-  overflow-x: hidden;
+  max-width: 100% !important;
+  /*overflow-x: hidden;*/
 }
 
 /* HTML5 display definitions
@@ -55,19 +56,9 @@ body {
  * and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav,
+section, summary {
   display: block;
 }
 
@@ -75,9 +66,7 @@ summary {
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
-audio,
-canvas,
-progress,
+audio, canvas, progress,
 video {
   display: inline-block;
   /* 1 */
@@ -103,23 +92,12 @@ template {
   display: none;
 }
 
+aside, nav { padding: 0; margin: 0; }
+
 /* Links
    ========================================================================== */
-/**
- * Remove the gray background color from active links in IE 10.
- */
-a {
-  background-color: transparent;
-}
-
-/**
- * Improve readability of focused elements when they are also in an
- * active/hover state.
- */
-a:active,
-a:hover {
-  outline: 0;
-}
+a { background-color: transparent; }
+a:active, a:hover { outline: 0; }
 
 /* Text-level semantics
    ========================================================================== */
@@ -227,14 +205,12 @@ pre {
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
-code,
-kbd,
-pre,
-samp {
+code, kbd, pre, samp {
   font-family: monospace, monospace;
   font-size: 1em;
   display: block;
 }
+code { background: #000; color: #00ff00; }
 
 /* Forms
    ========================================================================== */
@@ -248,10 +224,7 @@ samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-button,
-input,
-optgroup,
-select,
+button, input, optgroup, select,
 textarea {
   color: inherit;
   /* 1 */
@@ -274,8 +247,7 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
-button,
-select {
+button, select {
   text-transform: none;
 }
 
@@ -401,9 +373,6 @@ textarea {
 optgroup {
   font-weight: bold;
 }
-
-/* Tables
-   ========================================================================== */
 
 table {
   border-collapse: collapse;
