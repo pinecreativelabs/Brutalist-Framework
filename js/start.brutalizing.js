@@ -37,6 +37,11 @@ $('.blink-slow').blink({delay: 600});
 $('.blink-fast').blink({delay: 100});
 $('.blink-182').blink({delay: 182});
 
+/* Draggable */
+$('.draggable').tinyDraggable();
+$('.draggable-wrap').tinyDraggable({ handle: '.drag-handle' });
+$('.draggable-exclude').tinyDraggable({ exclude: '.exclude_me, input' });
+
 /* BAFFLE */
 /* Animation speed value can be increased or decreased. Same with duration */
 var b = baffle('.baffle', { characters: '█▓▒░', speed: 150 }).reveal(2500); /* Runs animation only once, upon page load */

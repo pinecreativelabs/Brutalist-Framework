@@ -228,39 +228,41 @@ input[type=range] + .thumb {
 *******************/
 .border-solid-thin { border-style: solid; border-width: 2px; }
 .border-solid-thick { border-style: solid; border-width: 5px; }
+.border-solid-fat { border-style: solid; border-width: 8px; }
 .border-dotted-thin { border-style: dotted; border-width: 2px; }
 .border-dotted-thick { border-style: dotted; border-width: 5px; }
+.border-dotted-fat { border-style: dotted; border-width: 8px; }
 .border-dashed-thin { border-style: dashed; border-width: 2px; }
 .border-dashed-thick { border-style: dashed; border-width: 5px; }
-.jagged { position: relative; margin-top: 50px; margin-bottom: 50px; padding: 0; display: block; }
-.jagged::before, .jagged::after {
-	right: 0; 
-	left: 0; display: block; height: 90px;
+.border-dashed-fat { border-style: dashed; border-width: 8px; }
+.jagged, .jagged2 { position: relative; margin-top: 50px; margin-bottom: 50px; padding: 0; display: block; }
+.jagged::before, .jagged::after, .jagged2::before, .jagged2::after {
+	right: 0; left: 0; display: block; height: 90px;
 	background-size: 50px 100%;
-	position: absolute;
-	content: '';
+	position: absolute; content: '';
 	pointer-events: none;
 }
 .jagged::before {
 	top: -90px;
 	background-image: -webkit-gradient(linear, 0 0, 300% 100%, color-stop(0.25, transparent), color-stop(0.25, #C0C0C0));
-	background-image:
-		linear-gradient(315deg, #808080 25%, transparent 25%),
-		linear-gradient( 45deg, #C0C0C0 25%, transparent 25%);
+	background-image: linear-gradient(315deg, #808080 25%, transparent 25%), linear-gradient( 45deg, #C0C0C0 25%, transparent 25%);
 	background-position: 50%;
 }
-.jagged::after {
+.jagged::after, .jagged2::after {
 	top: 100%;
 	background-image: -webkit-gradient(linear, 0 0, 300% 100%, color-stop(0.25, #C0C0C0), color-stop(0.25, #808080));
-	background-image: 
-		linear-gradient(135deg, #C0C0C0 25%, transparent 25%),
-		linear-gradient(225deg, #C0C0C0 25%, transparent 25%);
+	background-image: linear-gradient(135deg, #C0C0C0 25%, transparent 25%), linear-gradient(225deg, #C0C0C0 25%, transparent 25%);
+	background-position: 50%;
+}
+.jagged2::before {
+	top: -30px; height: 30px !important;
+	background-image: -webkit-gradient(linear, 0 0, 200% 100%, color-stop(0.25, transparent), color-stop(0.25, #C0C0C0));
+	background-image: linear-gradient(315deg, #C0C0C0 50%, transparent 50%), linear-gradient( 65deg, #808080 20%, transparent 25%);
 	background-position: 50%;
 }
 
 hr.jagged-rule-dark {  
-  border: none !important;
-  height: 10px;
+  border: none !important; height: 10px;
   background: linear-gradient(-135deg, transparent 5px, transparent 0) 0 5px, linear-gradient(135deg, transparent 5px, #333333 0) 0 5px;
   background-color: transparent;
   background-position: left bottom;
@@ -268,8 +270,7 @@ hr.jagged-rule-dark {
   background-size: 10px 10px;
 }
 hr.jagged-rule-light {  
-  border: none !important;
-  height: 10px;
+  border: none !important; height: 10px;
   background: linear-gradient(-135deg, transparent 5px, transparent 0) 0 5px, linear-gradient(135deg, transparent 5px, #f2f2f2 0) 0 5px;
   background-color: transparent;
   background-position: left bottom;
@@ -285,8 +286,7 @@ hr.cut-light:after, hr.cut-dark:after {
 	content: '\002702';
 	display: inline-block;
 	position: relative;
-	top: -16px; 
-	left: 25px; 
+	top: -16px; left: 25px; 
 	padding: 0 3px; 
 	background: transparent;
 	font-size: 20px;
@@ -354,6 +354,10 @@ hr.cut-dark:after {
 .georgia-text { font-family: Georgia, serif; }
 .times-text { font-family: 'Times New Roman', Times, serif; }
 .palatino-text { font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; }
+
+/* Links */
+.link { text-decoration: underline; }
+a:hover, .link:hover { cursor: pointer; text-decoration: none; }
 
 /* Font Sizing */
 .smaller { font-size: 75%; }
@@ -645,17 +649,15 @@ Improve upon responsive behavior
 **********************************/
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-	.jagged { position: relative; margin-top: 25px; margin-bottom: 25px}
-	.jagged::before, .jagged::after {
-		height: 45px;
-		background-size: 25px 100%;
+	.jagged, .jagged2 { position: relative; margin-top: 25px; margin-bottom: 25px}
+	.jagged::before, .jagged::after, .jagged2::before, .jagged2::after {
+		height: 45px; background-size: 25px 100%;
 	}
-	.jagged::before {
+	.jagged::before, .jagged2::before {
 		top: -45px;
 	}
 	.solitary { margin: 0.5em; }
-	.padding { padding: 0.75em; }
-	.small-padding: { padding: 16px; }
+	.padding, .padded { padding: 0.75em; }
 	.comfortable { padding: 1.5em; }
 }
 @media only screen and (max-width: 767px) {
@@ -668,8 +670,7 @@ Improve upon responsive behavior
 		top: -45px;
 	}
 	.solitary { margin: 0.3em; }
-	.padding { padding: 0.5em; }
-	.small-padding { padding: 8px; }
+	.padding, .padded { padding: 0.5em; }
 	.comfortable { padding-left: 1em !important; padding-right: 1em !important; padding-top: 1.5em !important; padding-bottom: 1.5em !important; }
 	
 	.double-col, .triple-col, .quad-col, .quint-col, .six-col, .sept-col, .oct-col { -moz-columns:1; -webkit-columns:1; columns:1; }

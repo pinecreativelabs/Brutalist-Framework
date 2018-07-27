@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>Brutalist Framework || ReBAR</title>
+	<meta name="description" content="A simple framework for the brutalist web design trend." />
+	<meta name="keywords" content="brutalism, brutalist, framework, css, open source, style, design trend" />
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@pinebuilder">
+	<meta name="twitter:title" content="Brutalist Framework || ReBAR">
+	<meta name="twitter:description" content="A simple framework for the brutalist web design trend.">
+	<meta name="twitter:creator" content="@pinebuilder">
+	<!-- Twitter Summary card images must be at least 120x120px -->
+	<meta name="twitter:image" content="http://www.brutalistframework.com/assets/images/brutalist-framework512.jpg">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Brutalist Framework || ReBAR" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.brutalistframework.com" />
+	<meta property="og:image" content="http://www.brutalistframework.com/assets/images/brutalist-framework512.jpg" />
+	<meta property="og:description" content="A simple framework for the brutalist web design trend." /> 
+	<meta property="og:site_name" content="Brutalist Framework" />
+
+	<!-- Icons -->
+	<link rel="shortcut icon" href="assets/icons/bf44.png" type="image/x-icon" />
+	<link rel="icon" href="assets/icons/bf15.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="assets/icons/bf57.png" />
+	<!-- CSS  -->
+	<link href="css/core/core.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="css/theme.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+<body>
+	<div class="container-fluid no-padding">
+		<div class="row red" id="scrolltop">
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 no-padding">
+				<a href="http://www.brutalistframework.com"><img class="responsive logo" src="assets/images/brutalist-framework512.jpg" alt="Brutalist Framework" /></a>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 no-padding">
+				<h1 class="courier-new-text fittext white-text baffle">ReBAR</h1>
+				<h2 class="white-text fittext-compress lucida-text">Responsive Breakpoint Assistance Reference</h2>
+				<p class="white-text flow-text courier-new-text">Library of responsive class helpers</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 no-padding black">
+				<div class="glued">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 no-padding">
+							<nav class="simple bold">
+								<ul class="courier-new-text flow-text lime-text">
+									<li class="red invert-hover"><a href="index.html" class="black-text">Home</a></li>
+									<li class="red invert-hover"><a href="flavors.html" class="black-text">Flavors</a></li>
+									<li class="red invert-hover"><a href="butch.html" class="black-text">BUTCH</a></li>
+									<li class="red invert-hover"><a href="buix.html" class="black-text">BUIX</a></li>
+									<li class="red invert-hover"><a href="bfx.html" class="black-text">BFX</a></li>
+									<li class="red invert-hover"><a href="grid.html" class="black-text">Grid</a></li>
+									<li class="lime active red invert-hover"><a href="#" class="black-text">ReBAR</a></li>
+									<li class="red invert-hover"><a href="templates.html" class="black-text">Templates</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-xs-12 col-sm-6 no-padding">
+							<nav class="simple blue">
+								<ul class="courier-new-text flow-text lime-text">
+									<li class="invert-hover"><a href="#overview" class="lime-text">Overview</a></li>
+									<li class="invert-hover"><a href="#widths" class="lime-text">Width Breakpoints</a></li>
+									<li class="invert-hover"><a href="#wrange" class="lime-text">Width-Based Breakpoint Ranges</a></li>
+									<li class="invert-hover"><a href="#heights" class="lime-text">Height Breakpoints</a></li>
+									<li class="invert-hover"><a href="#orient" class="lime-text">Orientation</a></li>
+									<li class="invert-hover"><a href="#puc" class="lime-text">Print Utility Classes (PUC)</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<a href="#scrolltop" class="lime invert-hover bold black-text scrolltop lucida-text">Back to Top &uarr;</a>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 no-padding">
+				<div class="padding">
+					<h3 class="red-text courier-new-text fittext-compress" id="overview">Overview</h3>
+					<p class="charcoal-text courier-new-text flow-text">ReBAR is a class reference for visibility of elements in relation to screen sizes, orientation, and printing. A breakpoint is the point at which an element is either hidden or displayed, based on the width or height of the screen. This is accomplished using media queries.</p>
+					<h4 class="lucida-text red-text white-text-shadow">General Visibility</h4>
+					<p class="charcoal-text lucida-text">Use these classes to either show or hide any element.</p>
+					<p class="arial-text charcoal-text"><span class="heavy black-text">.visible</span> - display an element<br /><span class="heavy black-text">.hidden</span> - hide an element</p>
+					<p class="padding"></p>
+				</div>
+				<p class="padding"></p>
+				<hr class="thick tomato" />
+				<!-- WIDTH BREAKPOINTS -->
+				<div class="padded">
+					<h3 class="tomato-text courier-new-text fittext-compress" id="widths">Width Breakpoints</h3>
+					<p class="charcoal-text lucida-text">There are two width-based breakpoint types: min-width or max-width. Classes from each can be combined.</p>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 no-padding">
+							<div class="padded">
+								<h4 class="lucida-text red-text white-text-shadow">Min-Width</h4>
+								<p class="charcoal-text lucida-text">Use min-width classes to display or hide elements on these screen sizes and up.</p>
+								<div class="info padded">
+									<p><b>.show-over-240</b> - display on screens 241px and up<br /><b>.hide-over-240</b> - hide on screens 241px and up</p>
+									<hr />
+									<p><b>.show-over-320</b> - display on screens 321px and up<br /><b>.hide-over-320</b> - hide on screens 321px and up</p>
+									<hr />
+									<p><b>.show-over-480</b> - display on screens 481px and up<br /><b>.hide-over-480</b> - hide on screens 481px and up</p>
+									<hr />
+									<p><b>.show-over-540</b> - display on screens 541px and up<br /><b>.hide-over-540</b> - hide on screens 541px and up</p>
+									<hr />
+									<p><b>.show-over-640</b> - display on screens 641px and up<br /><b>.hide-over-640</b> - hide on screens 641px and up</p>
+									<hr />
+									<p><b>.show-over-768</b> - display on screens 769px and up<br /><b>.hide-over-768</b> - hide on screens 769px and up</p>
+									<hr />
+									<p><b>.show-over-960</b> - display on screens 961px and up<br /><b>.hide-over-960</b> - hide on screens 961px and up</p>
+									<hr />
+									<p><b>.show-over-1024</b> - display on screens 1025px and up<br /><b>.hide-over-1024</b> - hide on screens 1025px and up</p>
+									<hr />
+									<p><b>.show-over-1280</b> - display on screens 1281px and up<br /><b>.hide-over-1280</b> - hide on screens 1281px and up</p>
+									<hr />
+									<p><b>.show-over-1366</b> - display on screens 1367px and up<br /><b>.hide-over-1366</b> - hide on screens 1367px and up</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 no-padding">
+							<div class="padded">
+								<h4 class="lucida-text red-text white-text-shadow">Max-Width</h4>
+								<p class="charcoal-text lucida-text">Use max-width classes to display or hide elements on these screen sizes and down.</p>
+								<div class="info padded">
+									<p><b>.show-under-240</b> - display on screens 240px and under<br /><b>.hide-under-240</b> - hide on screens 240px and under</p>
+									<hr />
+									<p><b>.show-under-320</b> - display on screens 320px and under<br /><b>.hide-under-320</b> - hide on screens 320px and under</p>
+									<hr />
+									<p><b>.show-under-480</b> - display on screens 480px and under<br /><b>.hide-under-480</b> - hide on screens 480px and under</p>
+									<hr />
+									<p><b>.show-under-540</b> - display on screens 540px and under<br /><b>.hide-under-540</b> - hide on screens 540px and under</p>
+									<hr />
+									<p><b>.show-under-640</b> - display on screens 640px and under<br /><b>.hide-under-640</b> - hide on screens 640px and under</p>
+									<hr />
+									<p><b>.show-under-768</b> - display on screens 768px and under<br /><b>.hide-under-768</b> - hide on screens 768px and under</p>
+									<hr />
+									<p><b>.show-under-960</b> - display on screens 960px and under<br /><b>.hide-under-960</b> - hide on screens 960px and under</p>
+									<hr />
+									<p><b>.show-under-1024</b> - display on screens 1024px and under<br /><b>.hide-under-1024</b> - hide on screens 1024px and under</p>
+									<hr />
+									<p><b>.show-under-1280</b> - display on screens 1280px and under<br /><b>.hide-under-1280</b> - hide on screens 1280px and under</p>
+									<hr />
+									<p><b>.show-under-1366</b> - display on screens 1366px and under<br /><b>.hide-under-1366</b> - hide on screens 1366px and under</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 no-padding">
+							<div class="padded">
+								<h4 class="lucida-text red-text white-text-shadow">Example 1</h4>
+								<p class="charcoal-text lucida-text">Let's say we want to display a box of content <em>ONLY</em> on screen sizes that are over 480px, which is roughly the size of a small tablet or large phone. To do this, we simply need to apply two classes to the box:</p>
+								<p class="ready padded heavy">.hide-under-480 .show-over-480</p>
+								<p class="hide-under-480 show-over-480 padded success">This box becomes hidden on screens that are 480px or smaller. Re-size your browser window!</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 no-padding">
+							<div class="padded">
+								<h4 class="lucida-text red-text white-text-shadow">Example 2</h4>
+								<p class="charcoal-text lucida-text">We may wish to replace content at different screen sizes. Re-size your browser window to see the changes.</p>
+								<!-- Display success box on screens over 1024px -->
+								<div class="padded success hide-under-1024 show-over-1024">
+									<p class="center">This box is only visible on screens over 1024px.</p>
+								</div>
+								<!-- Display info box on screens 1024px or less -->
+								<div class="padded info show-under-1024 hide-over-1024">
+									<p class="center">This box is only visible on screens UNDER 1024px.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="padding"></p>
+				<hr class="thick tomato" />
+				<!-- Width-Based Breakpoint Ranges -->
+				<div class="padded">
+					<h3 class="tomato-text courier-new-text fittext-compress" id="wrange">Width-Based Breakpoint Ranges</h3>
+					<p class="charcoal-text lucida-text">Use these classes to show or hide elements within a specific range of screen size.</p>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 no-padding">
+								<div class="info padded">
+									<p><b>.hide-240-320</b> - hide on screens between 240 and 319px<br /><b>.show-240-320</b> - display on screens between 240 and 319px</p>
+									<hr />
+									<p><b>.hide-320-480</b> - hide on screens between 320 and 479px<br /><b>.show-320-480</b> - display on screens between 320 and 479px</p>
+									<hr />
+									<p><b>.hide-480-540</b> - hide on screens between 480 and 539px<br /><b>.show-480-540</b> - display on screens between 480 and 539px</p>
+									<hr />
+									<p><b>.hide-540-640</b> - hide on screens between 540 and 639px<br /><b>.show-540-640</b> - display on screens between 540 and 639px</p>
+									<hr />
+									<p><b>.hide-640-768</b> - hide on screens between 640 and 767px<br /><b>.show-640-768</b> - display on screens between 640 and 767px</p>
+									<hr />
+									<p><b>.hide-768-960</b> - hide on screens between 768 and 959px<br /><b>.show-768-960</b> - display on screens between 768 and 959px</p>
+									<hr />
+									<p><b>.hide-960-1024</b> - hide on screens between 960 and 1023px<br /><b>.show-960-1024</b> - display on screens between 960 and 1023px</p>
+									<hr />
+									<p><b>.hide-1024-1280</b> - hide on screens between 1024 and 1279px<br /><b>.show-1024-1280</b> - display on screens between 1024 and 1279px</p>
+									<hr />
+									<p><b>.hide-1280-1366</b> - hide on screens between 1280 and 1365px<br /><b>.show-1280-1366</b> - display on screens between 1280 and 1365px</p>
+								</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 no-padding">
+							<div class="padded">
+								<h4 class="lucida-text red-text white-text-shadow">Example</h4>
+								<p class="charcoal-text lucida-text">We may wish to hide a block only on screens that are between 320 and 480px, as well as between 768 and 1024px. At all other sizes, the block will be always visible. To do this, we just need to use these classes:</p>
+								<div class="ready padded heavy">.hide-320-480 .hide-768-960 .hide-960-1024</div>
+								<!-- Hide this box at various screen size ranges -->
+								<div class="padded success hide-320-480 hide-768-960 hide-960-1024">
+									<p class="center">This box is hidden when the screen width is between 320 and 480px, as well as between 960 and 1024px.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="padding"></p>
+				<hr class="thick tomato" />
+				<!-- HEIGHT BREAKPOINTS -->
+				<div class="padded">
+					<h3 class="tomato-text courier-new-text fittext-compress" id="heights">Height Breakpoints</h3>
+					<p class="charcoal-text courier-new-text flow-text">There are two height-based breakpoint types: min-height or max-height. Classes from each can be combined.</p>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 no-padding">
+							<div class="padded">
+								<h4 class="lucida-text red-text white-text-shadow">Min-Height</h4>
+								<p class="charcoal-text lucida-text">Use min-height classes to display or hide elements on these screen sizes and up, based on the screen height.</p>
+								<div class="info padded">
+									<p><b>.show-over-320h</b> - display on screens with a height of 321px or above<br /><b>.hide-over-320h</b> - hide on screens with a height of 321px or above</p>
+									<hr />
+									<p><b>.show-over-480h</b> - display on screens with a height of 481px or above<br /><b>.hide-over-480h</b> - hide on screens with a height of 481px or above</p>
+									<hr />
+									<p><b>.show-over-540h</b> - display on screens with a height of 541px or above<br /><b>.hide-over-540h</b> - hide on screens with a height of 541px or above</p>
+									<hr />
+									<p><b>.show-over-768h</b> - display on screens with a height of 769px or above<br /><b>.hide-over-768h</b> - hide on screens with a height of 769px or above</p>
+									<hr />
+									<p><b>.show-over-960h</b> - display on screens with a height of 961px or above<br /><b>.hide-over-960h</b> - hide on screens with a height of 961px or above</p>
+									<hr />
+									<p><b>.show-over-1024h</b> - display on screens with a height of 1025px or above<br /><b>.hide-over-1024h</b> - hide on screens with a height of 1025px or above</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 no-padding">
+							<div class="padded">
+								<h4 class="lucida-text red-text white-text-shadow">Max-Width</h4>
+								<p class="charcoal-text lucida-text">Use max-width classes to display or hide elements on these screen sizes and down.</p>
+								<div class="info padded">
+									<p><b>.show-under-320h</b> - display on screens with a height of 320px or above<br /><b>.hide-under-320h</b> - hide on screens with a height of 320px or less</p>
+									<hr />
+									<p><b>.show-under-480h</b> - display on screens with a height of 480px or above<br /><b>.hide-under-480h</b> - hide on screens with a height of 480px or less</p>
+									<hr />
+									<p><b>.show-under-540h</b> - display on screens with a height of 540px or above<br /><b>.hide-under-540h</b> - hide on screens with a height of 540px or less</p>
+									<hr />
+									<p><b>.show-under-768h</b> - display on screens with a height of 768px or above<br /><b>.hide-under-768h</b> - hide on screens with a height of 768px or less</p>
+									<hr />
+									<p><b>.show-under-960h</b> - display on screens with a height of 960px or above<br /><b>.hide-under-960h</b> - hide on screens with a height of 960px or less</p>
+									<hr />
+									<p><b>.show-under-1024h</b> - display on screens with a height of 1024px or above<br /><b>.hide-under-1024h</b> - hide on screens with a height of 1024px or less</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 no-padding">
+							<div class="padded">
+								<h4 class="lucida-text red-text white-text-shadow">Example 1</h4>
+								<p class="charcoal-text lucida-text">We have a content area that needs to be hidden on screens that are under 540px. To do this, simply apply this class:</p>
+								<p class="ready padded heavy">.hide-under-540h</p>
+								<p class="hide-under-540h padded success">This box becomes hidden on screens that are under 540px tall. Re-size your browser window!</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 no-padding">
+							<div class="padded">
+								<h4 class="lucida-text red-text white-text-shadow">Example 2</h4>
+								<p class="charcoal-text lucida-text">Here, we want to hide our content box <em>only</em> for screens that have a height ranging between 320 and 768px. To do this, we will need to use these classes:</p>
+								<p class="ready padded heavy">.show-under-320h .hide-over-320h .show-over-768h</p>
+								<div class="padded success show-under-320h hide-over-320h show-over-768h">
+									<p class="center">This box is shown on screens with a height under 320px and over 768px, but is hidden on screen heights between 321 and 768px.</p>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="padding"></p>
+				<hr class="thick tomato" />
+				<!-- ORIENTATION -->
+				<div class="padded">
+					<h3 class="tomato-text courier-new-text fittext-compress" id="orient">Orientation</h3>
+					<p class="charcoal-text courier-new-text flow-text">Display or hide elements depending on the device orientation (landscape or portrait).</p>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 no-padding">
+							<div class="padded">
+								<h4 class="lucida-text red-text white-text-shadow">Classes</h4>
+								<p class="charcoal-text lucida-text">Use these classes to either show or hide elements based on the device orientation:</p>
+								<div class="info padded">
+									<p><b>.show-on-landscape</b> - display only when device is in landscape orientation</p>
+									<hr />
+									<p><b>.show-on-portrait</b> - display only when device is in portrait orientation</p>
+									<hr />
+									<p><b>.hide-on-landscape</b> - hidden only when device is in landscape orientation</p>
+									<hr />
+									<p><b>.hide-on-portrait</b> - hidden only when device is in portrait orientation</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 no-padding">
+							<div class="padded">
+								<h4 class="lucida-text red-text white-text-shadow">Example</h4>
+								<p class="charcoal-text lucida-text">We wish to show a different content box on a screen that's in a portrait orientation, than one that's in a landscape orientation.</p>
+								<!-- Display for Portrait orientation -->
+								<div class="padded success show-on-portrait hide-on-landscape">
+									<p class="center">This box is <em>only</em> visible in the PORTRAIT orientation on mobile devices.</p>
+								</div>
+								<!-- Display for Landscape orientation -->
+								<div class="padded ready show-on-landscape hide-on-portrait">
+									<p class="center">This box is <em>only</em> visible in the LANDSCAPE orientation. On desktops and laptops, only this box should be visible.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="padding"></p>
+				<hr class="thick tomato" />
+				<!-- PRINT UTILITY CLASSES (PUC) -->
+				<div class="padded">
+					<h3 class="tomato-text courier-new-text fittext-compress" id="puc">Print Utility Classes (PUC)</h3>
+					<p class="charcoal-text courier-new-text flow-text">Render certain content only for printing.</p>
+					<div class="info padded">
+						<p><b>.print-only</b> - content is only displayed when being printed, but is hidden on screens</p>
+						<hr />
+						<p><b>.screen-only</b> - content is hidden from being printed, and is only visible on screens</p>
+						<hr />
+						<p><b>.print-monochrome</b> - applied only to print view, all text is black, and images are rendered in grayscale</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<footer class="black padding">
+	<div class="row">
+		<div class="col-sm-12">
+			<p class="courier-new-text black-text flow-text center">
+				<a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank"><span class="lime blue-text invert-hover">GITHUB PROJECT</span></a>&nbsp;
+				<a href="http://www.twitter.com/brutalistfwk" target="_blank">@brutalistfwk</a>
+			</p>
+			<div class="jagged gray">
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-4">
+						<div class="padding flow-text vanilla-bean-text arial-text">
+							<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="green yellow-text invert-hover">Pine Creative Labs</a> production</p>
+							<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-text invert-hover">Brad Fogelstrom</span></a></p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-4">
+						<div class="padding flow-text vanilla-bean-text arial-text">
+							<p>Interview on<br /><a href="http://www.brutalistwebsites.com/brutalistframework.com" target="_blank" class="white blue-text invert-hover">BrutalistWebsites.com</a>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-4">
+						<div class="padding arial-text vanilla-bean-text">
+							<p class="flow-text">Contact us:</p>
+							<ul class="tags">
+								<li><a href="http://www.twitter.com/brutalistfwk" target="_blank" class="btn white-text blue-candy hue-hover"><strong>Twitter</strong></a></li>
+								<li><a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank" class="btn black white-text invert-hover"><strong>GitHub</strong></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="center white-text lucida-text">&copy; 2018 <em>BrutalistFramework</em>. All rights reserved.</p>
+		</div>
+	</div>
+</footer>
+
+<!-- Sticky Download Box -->
+<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.7.zip" target="_blank">
+<div class="sticky-bottom-right stack-top padding red">
+	<div class="skew lemon-lime-gradient btn invert-hover">
+		<p class="flow-text black-text lucida-text skew-right"><strong>Download</strong></p>
+	</div>
+	<p class="lime-text center">Version 1.7</p>
+</div></a>
+<!-- End Sticky -->
+
+<!--  Scripts-->
+<script src="js/jquery.js"></script>
+<script src="js/brutalist.js"></script>
+<script src="js/start.brutalizing.js"></script>
+
+<!-- TRACKING -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-93046252-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>

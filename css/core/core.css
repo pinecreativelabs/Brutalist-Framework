@@ -3,6 +3,8 @@
 @import url('default.css');
 /* Load Grid Core */
 @import url('grids/core.css');
+/* Load ReBAR */
+@import url('rebar.css');
 /* Load Flavors */
 @import url('flavors.css');
 /* Load BUTCH */

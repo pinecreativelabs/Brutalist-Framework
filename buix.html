@@ -56,6 +56,7 @@
 									<li class="lime invert-hover active"><a href="#" class="black-text">BUIX</a></li>
 									<li class="red invert-hover"><a href="bfx.html" class="black-text">BFX</a></li>
 									<li class="red invert-hover"><a href="grid.html" class="black-text">Grid</a></li>
+									<li class="red invert-hover"><a href="rebar.html" class="black-text">ReBAR</a></li>
 									<li class="red invert-hover"><a href="templates.html" class="black-text">Templates</a></li>
 								</ul>
 							</nav>
@@ -65,8 +66,7 @@
 								<ul class="courier-new-text flow-text lime-text">
 									<li class="invert-hover"><a href="#buttons" class="lime-text">Buttons</a></li>
 									<li class="invert-hover"><a href="#forms" class="lime-text">Forms</a></li>
-									<li class="invert-hover"><a href="#stickies" class="lime-text">Stickies</a></li>
-									<li class="invert-hover"><a href="#stacks" class="lime-text">Stacks</a></li>
+									<li class="invert-hover"><a href="#stackies" class="lime-text">Stickies & Stacks</a></li>
 									<li class="invert-hover"><a href="#tags" class="lime-text">Tags</a></li>
 									<li class="invert-hover"><a href="#reveal" class="lime-text">Reveal</a></li>
 									<li class="invert-hover"><a href="#simplemenu" class="lime-text">Simple Menu</a></li>
@@ -74,6 +74,7 @@
 									<li class="invert-hover"><a href="#modals" class="lime-text">Modals</a></li>
 									<li class="invert-hover"><a href="#tabs" class="lime-text">Tabs</a></li>
 									<li class="invert-hover"><a href="#scrollers" class="lime-text">Scrollers</a></li>
+									<li class="invert-hover"><a href="#drag" class="lime-text">Draggable</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -188,7 +189,7 @@
 				<hr class="thick tomato" />
 				<!-- STICKIES -->
 				<div class="padding">
-					<h3 class="red-text courier-new-text fittext-compress" id="stickies">Stickies</h3>
+					<h3 class="red-text courier-new-text fittext-compress" id="stackies">Stickies</h3>
 					<p class="charcoal-text courier-new-text flow-text">Make any element fixed positioned. Apply these classes:</p>
 					<div class="info padded arial-text">
 						<p><strong>.sticky</strong> - Makes any element fixed positioned.<br />
@@ -204,11 +205,9 @@
 						<p class="charcoal-text arial-text"><span class="flow-text courier-new-text heavy">.glued</span><br />Apply this class to make an element stay visible while scrolling. Best used within a sidebar.</p>
 					</div>
 				</div>
-				<p class="padding"></p>
-				<hr class="thick tomato" />
 				<!-- Stacks -->
 				<div class="padding">
-					<h3 class="red-text courier-new-text fittext-compress" id="stacks">Stacks</h3>
+					<h3 class="red-text courier-new-text fittext-compress">Stacks</h3>
 					<p class="charcoal-text courier-new-text flow-text">Stack an element behind or on top of others. Apply these classes:</p>
 					<div class="row">
 						<div class="col-sm-12 col-md-6">
@@ -445,18 +444,18 @@
 					<p class="charcoal-text arial-text">Modals are hidden content boxes that can be made visible upon clicking a link or button. Entirely CSS-based - <em>NO</em> javascript needed!</p>
 					<div class="row">
 						<div class="col-sm-12 col-md-4">
-							<h4 class="charcoal-text lucida-text" id="modal-anchor-1">Example 1</h4>
+							<h4 class="charcoal-text lucida-text" id="modal-anchor-1">Simple Modal</h4>
 							<p class="arial-text grey-text">Basic modal with plain text.</p>
 							<p style="margin-top: 1.2em;"><a href="#modal-1" class="btn border-solid-thin blue-border pink invert-hover banana-text lucida-text">Launch Modal</a></p>
 						</div>
 						<div class="col-sm-12 col-md-4">
-							<h4 class="charcoal-text lucida-text" id="modal-anchor-2">Example 2</h4>
-							<p class="arial-text grey-text">Modal with lemon-flavored overlay and thumbnail images.</p>
+							<h4 class="charcoal-text lucida-text" id="modal-anchor-2">Draggable Modal</h4>
+							<p class="arial-text grey-text">Draggable modal with lemon-flavored overlay and thumbnail images.</p>
 							<p style="margin-top: 1.2em;"><a href="#modal-2" class="btn border-solid-thin blue-border pink invert-hover banana-text lucida-text">Launch Modal</a></p>
 						</div>
 						<div class="col-sm-12 col-md-4">
-							<h4 class="charcoal-text lucida-text" id="modal-anchor-3">Example 3</h4>
-							<p class="arial-text grey-text">Modal with chocolate-flavored semi-transparent overlay.</p>
+							<h4 class="charcoal-text lucida-text" id="modal-anchor-3">Iframe Modal</h4>
+							<p class="arial-text grey-text">Iframe modal with chocolate-flavored semi-transparent overlay.</p>
 							<p style="margin-top: 1.2em;"><a href="#modal-3" class="btn border-solid-thin blue-border pink invert-hover banana-text lucida-text">Launch Modal</a></p>
 						</div>
 					</div>
@@ -491,7 +490,7 @@
 					<div id="modal-1" class="modal">
 						<div class="modal-content platinum">
 							<div class="modal-head">
-								<h2 class="charcoal-text courier-new-text">Modal Header</h2>
+								<h2 class="charcoal-text courier-new-text">Simple Modal</h2>
 							</div>
 							<div class="modal-content vanilla-bean">
 								<p class="flow-text lucida-text">Modal content. Display anything you want here - text, images, video, anything!</p>
@@ -504,13 +503,13 @@
 						<div class="overlay"></div>
 					</div>
 					<!-- Modal-2 -->
-					<div id="modal-2" class="modal">
+					<div id="modal-2" class="modal draggable">
 						<div class="modal-content platinum">
 							<div class="modal-head">
-								<h2 class="charcoal-text courier-new-text">Modal Header</h2>
+								<h2 class="charcoal-text courier-new-text">Draggable Modal</h2>
 							</div>
 							<div class="modal-content vanilla-bean">
-								<p class="flow-text lucida-text">This modal has a lemon flavor applied to the overlay! There's even a thumbnail set!</p>
+								<p class="flow-text lucida-text">This draggable modal has a lemon flavor applied to the overlay! There's even a thumbnail set!</p>
 								<ul class="thumbs-small">
 									<li><img src="assets/images/brutal-building.jpg"></li>
 									<li><img src="assets/images/spomenik.jpg"></li>
@@ -528,10 +527,11 @@
 					<div id="modal-3" class="modal">
 						<div class="modal-content platinum">
 							<div class="modal-head">
-								<h2 class="charcoal-text courier-new-text">Modal Header</h2>
+								<h2 class="charcoal-text courier-new-text">Modal with Iframe</h2>
 							</div>
 							<div class="modal-content vanilla-bean">
-								<p class="flow-text lucida-text">This modal has a chocolate-flavored semi-transparent overlay!</p>
+								<p class="lucida-text">This modal has a chocolate-flavored semi-transparent overlay, with an iframe to display the content.</p>
+								<iframe src="http://www.bradfogelstrom.com" style="height: 300px;"></iframe>
 							</div>
 							<div class="modal-footer">
 								<a href="#modal-anchor-3" class="btn black platinum-text">CLOSE</a>
@@ -705,7 +705,7 @@
 								<p class="flow-text"><strong>Changing the Speed</strong></p>
 								<p>By default, the scroller takes 10 seconds to scroll all the content. The wider or taller the area is, the faster it will appear to scroll. The shorter or narrower, the movement appears slower.</p>
 								<p>To change the speed, you will need to modify the scroll direction classes in the <em>buix.css</em> file. </p>
-								<p class="bigger" style="margin-top: 1em; margin-bottom: -0.5em;"><strong>Directions<strong></p>
+								<p class="bigger" style="margin-top: 1em; margin-bottom: -0.5em;"><strong>Directions</strong></p>
 								<ul class="none heavy no-padding">
 									<li>.scroll-left</li>
 									<li>.scroll-right</li>
@@ -717,6 +717,36 @@
 					</div>
 				</div>
 				
+				<!-- DRAGGABLE ELEMENTS -->
+				<p class="padding"></p>
+				<hr class="thick tomato"/>
+				<div class="padding">
+					<h3 class="red-text courier-new-text fittext-compress" id="drag">Draggable</h3>
+					<p class="charcoal-text arial-text">Make any element draggable! Simply apply the class <span class="heavy bigger">.draggable</span> to any element.</p>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-6">
+						<h4 class="red-text lucida-text">Example: Draggable Bricks</h4>
+						<p class="charcoal-text arial-text" style="margin-bottom: 0.9em;">Bricks are ideal as draggable elements. Simply apply class <em>draggable</em> to bricks: <strong>.brick.draggable</strong>.</p>
+						<!-- Draggable Bricks -->
+						<div class="padded maroon banana-text draggable brick">Drag Me</div>
+						<div class="padded pink lemon-text draggable brick">PSSHH... I'm such a <span class="blink-182">drag queen</span></div>
+						<div class="padded peanut chocolate-text draggable brick">Drag me through the mud</div>
+						<p class="info padded" style="margin-top: 2em;"><span class="bigger bold">Draggable Modals</span><br />Make a modal draggable just by adding the class <em>draggable</em> to the modal wrapper:<br /><span class="bold">.modal.draggable</span></p>
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<h4 class="red-text lucida-text">Example: Stacked Draggable Bricks</h4>
+						<p class="charcoal-text arial-text" style="margin-bottom: 0.9em;">We could stack our bricks on top of each other using <em>stack-auto</em>, and make them draggable: <strong>.brick.stack-auto.draggable</strong>.</p>
+						<div class="silver padded" style="min-height: 15em; border-bottom: 3px solid #666; margin-bottom: 2em;">
+							<div class="lucida-text bigger silver grey-text text-right draggable border-solid-thin grey-border padded stack-top" style="float: right;">Draggable area!<br /><small>This whole container<br />can also be dragged!</small></div>
+							<!-- Stacked Draggable Bricks -->
+							<div class="stack-auto brick padded maroon lime-text draggable huge border-dotted-thick red-border">I'm on the<br /><span class="bold">bottom</span></div>
+							<div class="stack-auto brick padded plum peach-text draggable bigger peach-border border-dashed-thin">Brick #2:<br /><span class="blink">Drag me!</span></div>
+							<div class="stack-auto brick padded orange red-text draggable lucida-text border-solid-thin blue-border bold">Top Brick</div>
+						</div>
+					</div>
+				</div>
+				<p class="padding"></p>
 			</div>
 		</div>
 	</div>
@@ -758,12 +788,12 @@
 </footer>
 
 <!-- Sticky Download Box -->
-<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.6.zip" target="_blank">
+<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.7.zip" target="_blank">
 <div class="sticky-bottom-right stack-top padding red">
 	<div class="skew lemon-lime-gradient btn invert-hover">
 		<p class="flow-text black-text lucida-text skew-right"><strong>Download</strong></p>
 	</div>
-	<p class="lime-text center">Version 1.6</p>
+	<p class="lime-text center">Version 1.7</p>
 </div></a>
 <!-- End Sticky -->
 

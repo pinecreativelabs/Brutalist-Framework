@@ -84,6 +84,8 @@ a.scrolltop:hover { text-decoration: line-through; }
 /* STACKS: create layers
 **********************************/
 .stack-auto { display: flex; }
+.stack-auto.draggable { position: absolute; }
+.stack-auto.draggable, .stack-auto.brick { display: inline-block !important; }
 .stack-base { z-index: 0 !important; }
 .stack1 { z-index: 1 !important; }
 .stack2 { z-index: 2 !important; }
@@ -155,7 +157,14 @@ ul.thumbs-xlarge img, img.xlarge-thumb { height: 180px; width: auto; }
   box-sizing: border-box;
   transition: all .4s ease-in-out;
   -moz-transition: all .4s ease-in-out;
+  -o-transition-property: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out
+}
+.modal.draggable:active { transition: none;
+-webkit-transition-property: none; 
+-moz-transition-property: none;
+-o-transition-property: none;
+transition-property: none;
 }
 
 .modal:target {
@@ -163,19 +172,13 @@ ul.thumbs-xlarge img, img.xlarge-thumb { height: 180px; width: auto; }
   top: 50%;
   visibility: visible
 }
-.modal .modal-head, .modal .modal-footer {
-  border-bottom: 1px solid #e7e7e7;
-}
-
+.modal .modal-head, .modal .modal-footer { border-bottom: 1px solid #e7e7e7; }
 .modal .modal-footer {
   border: none;
   border-top: 1px solid #e7e7e7;
 }
 .modal h2, .modal h3, .modal h4 { margin: 0; }
-.modal .modal-content, .modal .modal-head, .modal .modal-footer {
-  padding: 10px;
-}
-
+.modal .modal-content, .modal .modal-head, .modal .modal-footer { padding: 10px; }
 .modal-content {
   position: relative;
   z-index: 9999;
@@ -190,15 +193,13 @@ ul.thumbs-xlarge img, img.xlarge-thumb { height: 180px; width: auto; }
   width: 100%;
   z-index: 9989;
 }
-.modal .overlay.opacity {
-  opacity: 0.8;
-}
-
+.modal .overlay.opacity { opacity: 0.8; }
 .modal-content a {
   text-decoration: none;
   display: inline-block;
   padding: 5px 10px;
 }
+.modal-content iframe { width: 98%; margin: 0 auto;  }
 
 /* FORMS
 **********************************/
@@ -260,10 +261,12 @@ form input[type="submit"] { padding: 0.75em; margin: 0.25em; }
   }
 }
 
+/* DRAGGABLE
+**********************************/
+.draggable { cursor: move; }
 
 /* SCROLLER
 **********************************/
-
 .scroller-wrap { display: block;
 	width: 100%; overflow: hidden;
 }

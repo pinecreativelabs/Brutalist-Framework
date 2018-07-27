@@ -58,6 +58,75 @@ BFX - Brutal Effects
     text-shadow:  0.35rem -0.35rem rgba(255, 105, 180, 0.9), -0.25rem -0.25rem rgba(251, 167, 58, 0.9), -0.25rem 0.35rem rgba(72, 222, 252, 0.9);
 }
 
+/* STEP TEXT EFFECT
+***********************/
+.step-text {
+  margin: 0 auto;
+  padding: 80px 0;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: 68px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-kerning: normal;
+  -webkit-text-size-adjust: 100%;
+}
+
+.step-line {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+}
+.step-line:nth-child(odd) {
+  -webkit-transform: skew(60deg, -30deg) scaleY(0.66667);
+          transform: skew(60deg, -30deg) scaleY(0.66667);
+}
+.step-line:nth-child(even) {
+  -webkit-transform: skew(0deg, -30deg) scaleY(1.33333);
+          transform: skew(0deg, -30deg) scaleY(1.33333);
+}
+.step-line:nth-child(1) {
+  left: 29px;
+}
+.step-line:nth-child(2) {
+  left: 58px;
+}
+.step-line:nth-child(3) {
+  left: 87px;
+}
+.step-line:nth-child(4) {
+  left: 116px;
+}
+.step-line:nth-child(5) {
+  left: 145px;
+}
+.step-line:nth-child(6) {
+  left: 174px;
+}
+.step-line:nth-child(7) {
+  left: 203px;
+}
+
+/*
+** Fine-grained text styles
+*/
+.step-text .step-line p {
+  height: 50px;
+  line-height: 45px;
+  padding: 0 10px;
+  transition: all .4s ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  vertical-align: top;
+  white-space: nowrap;
+}
+.step-text:hover p {
+  -webkit-transform: translate3d(0, -50px, 0);
+        transform: translate3d(0, -50px, 0);
+}
 
 
 /* GLITCH EFFECT

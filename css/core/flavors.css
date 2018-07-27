@@ -10,6 +10,14 @@
 .vanilla-bean-text { color: #FBFBEF !important; }
 .vanilla-bean-text-shadow { text-shadow: 2px 2px #FBFBEF !important; }
 .vanilla-bean-border { border-color: #FBFBEF !important; }
+.coconut { background-color: #f7f9e0 !important; }
+.coconut-text { color: #f7f9e0 !important; }
+.coconut-text-shadow { text-shadow: 2px 2px #f7f9e0 !important; }
+.coconut-border { border-color: #f7f9e0 !important; }
+.rice { background-color: #f4f1e4 !important; }
+.rice-text { color: #f4f1e4 !important; }
+.rice-text-shadow { text-shadow: 2px 2px #f4f1e4 !important; }
+.rice-border { border-color: #f4f1e4 !important; }
 
 /* Shades of Grey */
 .silver { background-color: #C0C0C0 !important; }
@@ -62,6 +70,14 @@
 .black-cherry-text { color: #5a1a18 !important; }
 .black-cherry-text-shadow { text-shadow: 2px 2px #5a1a18 !important; }
 .black-cherry-border { border-color: #5a1a18 !important; }
+.fruit-punch { background-color: #6f0215 !important; }
+.fruit-punch-text { color: #6f0215 !important; }
+.fruit-punch-text-shadow { text-shadow: 2px 2px #6f0215 !important; }
+.fruit-punch-border { border-color: #6f0215 !important; }
+.grapefruit { background-color: #f25f53 !important; }
+.grapefruit-text { color: #f25f53 !important; }
+.grapefruit-text-shadow { text-shadow: 2px 2px #f25f53 !important; }
+.grapefruit-border { border-color: #f25f53 !important; }
 
 /* Oranges */
 .orange { background-color: #ff9800 !important; }
@@ -94,6 +110,10 @@
 .pink-text { color: #e91e63 !important; }
 .pink-text-shadow { text-shadow: 2px 2px #e91e63 !important; }
 .pink-border { border-color: #e91e63 !important; }
+.pink-champagne { background-color: #d986a2 !important; }
+.pink-champagne-text { color: #d986a2 !important; }
+.pink-champagne-text-shadow { text-shadow: 2px 2px #d986a2 !important; }
+.pink-champagne-border { border-color: #d986a2 !important; }
 .cotton-candy { background-color: #ff80ab !important; }
 .cotton-candy-text { color: #ff80ab !important; }
 .cotton-candy-text-shadow { text-shadow: 2px 2px #ff80ab !important; }
@@ -106,6 +126,10 @@
 .raspberry-text { color: #ad1457 !important; }
 .raspberry-text-shadow { text-shadow: 2px 2px #ad1457 !important; }
 .raspberry-border { border-color: #ad1457 !important; }
+.salmon { background-color: #fa8072 !important; }
+.salmon-text { color: #fa8072 !important; }
+.salmon-text-shadow { text-shadow: 2px 2px #fa8072 !important; }
+.salmon-border { border-color: #fa8072 !important; }
 
 /* Purples */ 
 .purple, .plum { background-color: #800080 !important; }
