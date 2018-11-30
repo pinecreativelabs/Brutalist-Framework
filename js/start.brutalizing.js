@@ -1,4 +1,4 @@
-﻿/* Let the Brutalization Begin */
+/* Let the Brutalization Begin */
 /* NOTE: This script is must be UTF-8 encoded, so as to ensure obfuscated character rendering on Baffle */
 
 $(document).ready(function(){
