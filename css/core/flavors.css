@@ -80,22 +80,22 @@
 .grapefruit-border { border-color: #f25f53 !important; }
 
 /* Oranges */
-.orange { background-color: #ff9800 !important; }
+.orange { background-color: #fc6600 !important; }
 .orange-text { color: #ff9800 !important; }
 .orange-text-shadow { text-shadow: 2px 2px #ff9800 !important; }
 .orange-border { border-color: #ff9800 !important; }
-.pumpkin-spice { background-color: #e65100 !important; }
-.pumpkin-spice-text { color: #e65100 !important; }
-.pumpkin-spice-text-shadow { text-shadow: 2px 2px #e65100 !important; }
-.pumpkin-spice-border { border-color: #e65100 !important; }
+.pumpkin, .pumpkin-spice { background-color: #e65100 !important; }
+.pumpkin-text, .pumpkin-spice-text { color: #e65100 !important; }
+.pumpkin-text-shadow, .pumpkin-spice-text-shadow { text-shadow: 2px 2px #e65100 !important; }
+.pumpkin-border, .pumpkin-spice-border { border-color: #e65100 !important; }
 .mango { background-color: #ffab40 !important; }
 .mango-text { color: #ffab40 !important; }
 .mango-text-shadow { text-shadow: 2px 2px #ffab40 !important; }
 .mango-border { border-color: #ffab40 !important; }
-.tangerine { background-color: #ff6d00 !important; }
-.tangerine-text { color: #ff6d00 !important; }
-.tangerine-text-shadow { text-shadow: 2px 2px #ff6d00 !important; }
-.tangerine-border { border-color: #ff6d00 !important; }
+.tangerine { background-color: #f9812a !important; }
+.tangerine-text { color: #f9812a !important; }
+.tangerine-text-shadow { text-shadow: 2px 2px #f9812a !important; }
+.tangerine-border { border-color: #f9812a !important; }
 .peach { background-color: #ffab91 !important; }
 .peach-text { color: #ffab91 !important; }
 .peach-text-shadow { text-shadow: 2px 2px #ffab91 !important; }
@@ -104,6 +104,15 @@
 .carrot-text { color: #ef6c00 !important; }
 .carrot-text-shadow { text-shadow: 2px 2px #ef6c00 !important; }
 .carrot-border { border-color: #ef6c00 !important; }
+.fire { background-color: #fda50f !important; }
+.fire-text { color: #fda50f !important; }
+.fire-text-shadow { text-shadow: 2px 2px #fda50f !important; }
+.fire-border { border-color: #fda50f !important; }
+.squash { background-color: #c95c0a !important; }
+.squash-text { color: #c95c0a !important; }
+.squash-text-shadow { text-shadow: 2px 2px #c95c0a !important; }
+.squash-border { border-color: #c95c0a !important; }
+
 
 /* Pinks */ 
 .pink { background-color: #e91e63 !important; }
@@ -170,10 +179,18 @@
 .pool-water-text { color: #81d4fa !important; }
 .pool-water-text-shadow { text-shadow: 2px 2px #81d4fa !important; }
 .pool-water-border { border-color: #81d4fa !important; }
-.navy-blue { background-color: #283593 !important; }
-.navy-blue-text { color: #283593 !important; }
-.navy-blue-text-shadow { text-shadow: 2px 2px #283593 !important; }
-.navy-blue-border { border-color: #283593 !important; }
+.navy, .navy-blue { background-color: #000080 !important; }
+.navy-text, .navy-blue-text { color: #000080 !important; }
+.navy-text-shadow, .navy-blue-text-shadow { text-shadow: 2px 2px #000080 !important; }
+.navy-border, .navy-blue-border { border-color: #000080 !important; }
+.cornflower { background-color: #6693f5 !important; }
+.cornflower-text { color: #6693f5 !important; }
+.cornflower-text-shadow { text-shadow: 2px 2px #6693f5 !important; }
+.cornflower-border { border-color: #6693f5 !important; }
+.sky { background-color: #95c8d8 !important; }
+.sky-text { color: #95c8d8 !important; }
+.sky-text-shadow { text-shadow: 2px 2px #95c8d8 !important; }
+.sky-border { border-color: #95c8d8 !important; }
 
 /* Browns */
 .brown { background-color: #795548 !important; }

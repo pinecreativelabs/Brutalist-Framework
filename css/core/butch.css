@@ -207,25 +207,46 @@ input[type=range] + .thumb {
 /* OPACITIES
 *******************/
 .transparent { background: transparent !important; }
-.semi-transparent { filter:alpha(opacity=50); /* IE */
+.transparent-hover:hover { opacity: 0; background: transparent; -moz-opacity: 0; filter:alpha(opacity=0); }
+.semi-transparent, .semi-transparent-hover:hover { filter:alpha(opacity=50); /* IE */
 	-moz-opacity:0.5; /* Mozilla */
 	opacity: 0.5;
 }
-.high-opacity { filter:alpha(opacity=75); /* IE */
+.high-opacity, .high-opacity-hover:hover { filter:alpha(opacity=75); /* IE */
 	-moz-opacity:0.75; /* Mozilla */
 	opacity: 0.75;
 }
-.low-opacity { filter:alpha(opacity=25); /* IE */
+.low-opacity, .low-opacity-hover:hover { filter:alpha(opacity=25); /* IE */
 	-moz-opacity:0.25; /* Mozilla */
 	opacity: 0.25;
 }
 
 /* SHAPES
 *******************/
-.circle { border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; }
+.circle, .circle-float-left, .circle-float-right { border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; }
+.sketchbox { border-radius: 2em 1em 4em / 0.5em 3em; }
+.rounded { border-radius: 1em; }
+
+/* BETA SHAPES - Experimental, not supported in all browsers */
+.circle-float-left { float: left; shape-outside: circle(50%); }
+.circle-float-right { float: right; shape-outside: circle(50%); }
+.notched {
+  --notchSize: 1em; /* Adjust the size as necessary (ex. 20px, 1.5em, etc.) */
+  clip-path: 
+    polygon(
+      0% var(--notchSize), 
+      var(--notchSize) 0%, 
+      calc(100% - var(--notchSize)) 0%, 
+      100% var(--notchSize), 
+      100% calc(100% - var(--notchSize)), 
+      calc(100% - var(--notchSize)) 100%, 
+      var(--notchSize) 100%, 
+      0% calc(100% - var(--notchSize))
+    );
+}
 
 /* BORDERS & DIVIDERS
-*******************/
+************************/
 .border-solid-thin { border-style: solid; border-width: 2px; }
 .border-solid-thick { border-style: solid; border-width: 5px; }
 .border-solid-fat { border-style: solid; border-width: 8px; }
@@ -393,6 +414,14 @@ a:hover, .link:hover { cursor: pointer; text-decoration: none; }
 ul.disc { list-style-type: disc; }
 ul.square{ list-style-type: square; }
 ul.circle { list-style-type: circle; }
+ul.diamond, ul.triangle, ul.brutal { list-style: none; }
+ul.diamond li, ul.triangle li { list-style-position: outside; }
+ul.diamond li:before, ul.triangle li:before, ul.brutal li:before { margin-right: 0.75em;}
+ul.diamond li:before { content: '\25C6'; }
+ul.triangle li:before { content: '\25B6'; }
+ul.brutal li { list-style-position: outside; }
+ul.brutal li:before { content: '\25B0'; }
+ul.brutal li:before { margin-left: 0.5em; }
 
 /* Ordered Lists */
 ol.roman { list-style-type: upper-roman; }
@@ -642,7 +671,15 @@ img.responsive, .responsive img, video { width: 100%; height: auto !important; }
 .video iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 /* Background Sizes & Positions */
 .cover { background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; }
-.cover-center { background-position: center center; }
+.cover.topleft { background-position: left top; }
+.cover.centertop { background-position: center top; }
+.cover.topright { background-position: right top; }
+.cover.leftcenter { background-position: left center; }
+.cover-center, .cover.center { background-position: center center; }
+.cover.rightcenter { background-position: right center; }
+.cover.bottomleft { background-position: left bottom; }
+.cover.bottomcenter { background-position: center bottom; }
+.cover.bottomright { background-position: right bottom; }
 
 /* MEDIA QUERIES
 Improve upon responsive behavior

@@ -64,16 +64,13 @@
 						<div class="col-xs-12 col-sm-6 no-padding">
 							<nav class="simple blue">
 								<ul class="courier-new-text flow-text lime-text">
-									<li class="invert-hover"><a href="#baffle" class="lime-text">Baffle</a></li>
+									<li class="invert-hover"><a href="#textfx" class="lime-text">Text Effects</a></li>
+									<li class="invert-hover"><a href="#anims" class="lime-text">Animations</a></li>
 									<li class="invert-hover"><a href="#fittext" class="lime-text">Fittext</a></li>
+									<li class="invert-hover"><a href="#rotatetext" class="lime-text">Rotate Text</a></li>
 									<li class="invert-hover"><a href="#curved" class="lime-text">Curved Text</a></li>
 									<li class="invert-hover"><a href="#equalh" class="lime-text">Equal Heights</a></li>
-									<li class="invert-hover"><a href="#brutaltext" class="lime-text">Brutal Text</a></li>
-									<li class="invert-hover"><a href="#glitch" class="lime-text">Glitch</a></li>
-									<li class="invert-hover"><a href="#blink" class="lime-text">Blink</a></li>
-									<li class="invert-hover"><a href="#throb" class="lime-text">Throb</a></li>
 									<li class="invert-hover"><a href="#clipbox" class="lime-text">Clip-Box</a></li>
-									<li class="invert-hover"><a href="#chop" class="lime-text">Chop Text</a></li>
 									<li class="invert-hover"><a href="#animbg" class="lime-text">Animated Backgrounds</a></li>
 								</ul>
 							</nav>
@@ -84,18 +81,106 @@
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 no-padding">
 				<div class="padding">
-					<h3 class="red-text courier-new-text fittext-compress" id="baffle">BAFFLE</h3>
-					<p class="charcoal-text arial-text"><em>Baffle</em> adds an animated obfuscation effect to any text. Reload page to see effect. Apply these baffling classes!</p>
+					<h3 class="red-text courier-new-text fittext-compress" id="textfx">Text Effects</h3>
+					
+					<div class="row">
+						<div class="col-sm-12 col-md-4">
+							<!-- BAFFLE -->
+							<h4 class="red-text courier-new-text heavy">BAFFLE Text</h4>
+							<p class="charcoal-text arial-text"><em>Baffle</em> adds an animated obfuscation effect to any text. <span class="heavy">Reload page to see effect.</span> Apply these baffling classes!</p>
+							<p class="lucida-text"><span class="baffle red-text bold">.baffle</span><span class="charcoal-text arial-text"> - Baffles once upon page load.</span></p>
+							<p class="lucida-text"><span class="baffle-longer red-text bold">.baffle-longer</span><span class="charcoal-text arial-text"> - Baffles once, but for a longer duration (3 seconds).</span></p>
+							<p class="lucida-text"><span class="baffle-prolonged bold red-text">.baffle-prolonged</span><span class="charcoal-text arial-text"> - Baffles for a prolonged period.</span></p>
+							<p class="lucida-text"><span class="baffle-forever red-text bold">.baffle-forever</span><span class="charcoal-text arial-text"> - <em><strong>.baffle-forever</strong></em> - Baffles endlessly.</span></p>
+						</div>
+						<div class="col-sm-12 col-md-4">
+							<!-- BrutalText -->
+							<h4 class="red-text courier-new-text heavy">Brutal Text Effect</h4>
+							<p class="charcoal-text arial-text">Apply these classes to any text for a brutal text effect!</p>
+							<div class="charcoal box-shadow padding center">
+								<h4 class="brutal-text black-text">.brutal-text</h4>
+								<p class="grey-text heavy">Default brutal (black) text</p>
+							</div>
+							<div class="charcoal box-shadow padding center">
+								<h4 class="brutal-text-mono blue-text">.brutal-text-mono</h4>
+								<p class="grey-text heavy">Brutal monochrome (blue) text</p>
+							</div>
+							<div class="charcoal box-shadow padding center">
+								<h4 class="brutal-text-neon lime-text">.brutal-text-neon</h4>
+								<p class="vanilla-bean-text heavy">Brutal neon (lime) text</p>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-4">
+							<!-- Chop Text -->
+							<h4 class="red-text courier-new-text heavy">Chop Text</h4>
+							<p class="charcoal-text arial-text">Truncate a paragraph of text to a preset number of characters. Requires <em>start.brutalizing.js</em>. Apply any of these classes to any text to truncate.</p>
 
-					<p class="lucida-text flow-text"><span class="baffle red-text">.baffle</span><span class="charcoal-text arial-text"> - Baffles once upon page load.</span></p>
-					<p class="lucida-text flow-text"><span class="baffle-longer red-text">.baffle-longer</span><span class="charcoal-text arial-text"> - Baffles once, but for a longer duration (3 seconds).</span></p>
-					<p class="lucida-text flow-text"><span class="baffle-prolonged red-text">.baffle-prolonged</span><span class="charcoal-text arial-text"> - Baffles for a prolonged period.</span></p>
-					<p class="lucida-text flow-text"><span class="baffle-forever red-text">.baffle-forever</span><span class="charcoal-text arial-text"> - <em><strong>.baffle-forever</strong></em> - Baffles endlessly.</span></p>
+							<h4>.chop-64</h4>
+							<p class="chop-64 success padding arial-text equal-height">
+								Lorem ipsum no facer prompta vim, movet ubique qui ei. Per no regione aliquid, ea mei nulla scribentur liberavisse. Vim cu tale ludus possit, discere suavitate nam ad. No verterem reprimique vix, phaedrum hendrerit an quo. Qui feugait apeirian ut, ne virtute numquam mandamus mea. Eos et enim dicant deterruisset.
+							</p>
+							<h4>.chop-128</h4>
+							<p class="chop-128 info padding arial-text equal-height">
+								Lorem ipsum no facer prompta vim, movet ubique qui ei. Per no regione aliquid, ea mei nulla scribentur liberavisse. Vim cu tale ludus possit, discere suavitate nam ad. No verterem reprimique vix, phaedrum hendrerit an quo. Qui feugait apeirian ut, ne virtute numquam mandamus mea. Eos et enim dicant deterruisset.
+							</p>
+							<h4>.chop-256</h4>
+							<p class="chop-256 ready padding arial-text equal-height">
+								Lorem ipsum no facer prompta vim, movet ubique qui ei. Per no regione aliquid, ea mei nulla scribentur liberavisse. Vim cu tale ludus possit, discere suavitate nam ad. No verterem reprimique vix, phaedrum hendrerit an quo. Qui feugait apeirian ut, ne virtute numquam mandamus mea. Eos et enim dicant deterruisset.
+							</p>
+						</div>
+					</div>
 				</div>
 				<p class="padding"></p>
 				<hr class="thick tomato" />
-				<!-- FITTEXT -->
+				
+				<!-- ANIMATIONS -->
 				<div class="padding">
+					<h3 class="red-text courier-new-text fittext-compress" id="anims">Animations</h3>
+					<div class="row">
+						<!-- Glitch -->
+						<div class="col-sm-12 col-md-4">
+							<h4 class="red-text courier-new-text heavy glitch">Glitch</h4>
+							<p class="charcoal-text arial-text">Add a glitch effect to any element! Works on images and text, or even entire areas! It is entirely CSS-based. Apply <strong><span class="blue-text">.glitch</span></strong> class to any element.</p>
+							<p class="flow-text lucida-text center"><strong><span class="glitch">Glitched</span> Circle Image</strong>
+								<img class="circle xlarge-thumb glitch border-dotted-thick blue-border" src="assets/images/brutal-building.jpg" alt="Original" />
+							</p>
+							<p class="flow-text charcoal-text courier-new-text"><strong>Glitched Paragraph</strong></p>
+							<p class="charcoal-text glitch arial-text">This is a rather glitchy paragraph. You could even baffle all your <span class="baffle-forever">firking</span> enemies!</p>
+							<p class="charcoal-text tahoma-text">This paragraph has just one <span class="glitch"><strong>glitched</strong></span> word, using the span tag.</p>
+						</div>
+						
+						<!-- Blink -->
+						<div class="col-sm-12 col-md-4">
+							<h4 class="red-text courier-new-text heavy blink">Blink</h4>
+							<p class="charcoal-text arial-text">Blink is back! Apply theses classes to blink any element, even entire areas! Requires <em>brutalist.js</em> and <em>start.brutalizing.js</em>.</p>
+							<h4 class="charcoal-text lucida-text flow-text">.blink</h4>
+							<p class="blink alert box-shadow-double lucida-text padded">ALERT!<br />&nbsp;ALERT!<br />&nbsp;&nbsp;ALERT!</p>
+							<h4 class="charcoal-text lucida-text flow-text">.blink-slow</h4>
+							<p class="blink-slow warning box-shadow lucida-text center flow-text bold">////////<br />WARNING!!!!<br />////////</p>
+							<h4 class="charcoal-text lucida-text flow-text">.blink-fast</h4>
+							<p class="box-shadow-triple info center">Here is a <span class="blink-fast">fast-blinking</span> span and image:<br />
+								<img src="assets/images/brutal-building.jpg" alt="Fast-blinking Image" class="blink-fast small-thumb" />
+							</p>
+							<h4 class="charcoal-text lucida-text flow-text">.blink-182</h4>
+							<p class="box-shadow-bottom charcoal orange-text center">Get Your Blinker Fluid <span class="blink-182">NOW</span>!<br />
+								<img src="assets/images/blinker-fluid.jpg" alt="Blinker Fluid" class="blink-182 circle medium-thumb" />
+							</p>
+						</div>
+						
+						<!-- Throb -->
+						<div class="col-sm-12 col-md-4">
+							<h4 class="red-text courier-new-text heavy throb">Throb</h4>
+							<p class="charcoal-text arial-text">Apply a throbbing, pulsing effect. It's CSS-based, so no javascript is needed. Simply apply the class <strong>.throb</strong> to an element. </p>
+							<p class="flow-text white-text arial-text"><strong>Image Example</strong></p>
+							<img class="responsive circle throb" src="assets/images/brutal-building.jpg" alt="Original" style="width: 200px; height: auto;" />
+						</div>
+					</div>
+				</div>
+				
+				<p class="padding"></p>
+				<hr class="thick tomato" />
+				<div class="padding">
+					<!-- FITTEXT -->
 					<h3 class="red-text courier-new-text fittext-compress" id="fittext">FITTEXT</h3>
 					<p class="charcoal-text arial-text"><em>Fittext</em> makes any text aggressively responsive. Re-size your browser window to see them scale!</p>
 					<div class="row">
@@ -128,6 +213,53 @@
 				</div>
 				<p class="padding"></p>
 				<hr class="thick tomato" />
+				
+				<!-- ROTATE TEXT -->
+				<div class="padding">
+					<h3 class="red-text courier-new-text fittext-compress" id="rotatetext">ROTATE TEXT</h3>
+					<p class="charcoal-text arial-text"><em>Rotate Text</em> allows the rotation of text within an element.</p>
+					<div class="row">
+						<div class="col-sm-12 col-md-6 no-padding">
+							<div class="disabled padded">
+								<h4 class="lucida-text">Example 1:</h4>
+								<div id="rotate-demo1" class="rotator charcoal" data-rotate-interval="4000" data-rotate-animate="rotateInDownLeft,rollOut" style="padding: 8px;">
+									<h5 class="courier-new-text lime-text">Brutalist Framework uses <span class="rotate-arena" style="background: #ff0000; color: #fff;"></span> to Brutalize!</h5>
+									<ul>
+										<li>HTML5</li><li>CSS3</li><li>jQuery</li>
+									</ul>
+								</div>
+								<h4 class="lucida-text">Example 2:</h4>
+								<div id="rotate-demo2" class="rotator charcoal" data-rotate-interval="3000" data-rotate-animate="fadeIn,fadeOut" style="padding: 8px;">
+									<h5 class="courier-new-text lemon-text rotate-arena"></h5>
+									<ul>
+										<li>Crude and Harsh</li><li>Ugly, Unrefined, Uncomfortable</li><li>Cynical and Confrontational</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 no-padding">
+							<div class="info padded">
+								<h5 class="lucida-text">Markup</h5>
+								<p class="arial-text">Rotate Text requires javascript, and the markup uses data attributes to configure the settings. You will need to apply a unique ID to each individual Rotate Text element. The markup is as follows:</p>
+								<code class="black lime-text lucida-text padding">
+								&lt;div id="rotate-text-1" class="rotator" data-rotate-interval="3000" data-rotate-animate="fadeIn,rollOut"&gt;<br />
+								&lt;p class="rotate-arena"&gt;&lt;/p&gt;<br />
+								&lt;ul&gt;<br />
+								&nbsp;&nbsp;&nbsp;&lt;li&gt;First Text Phrase&lt;/li&gt;<br />
+								&nbsp;&nbsp;&nbsp;&lt;li&gt;Second Phrase of Text&lt;/li&gt;<br />
+								&nbsp;&nbsp;&nbsp;&lt;li&gt;Last Text Phrase&lt;/li&gt;<br />
+								&lt;/ul&gt;<br />
+								&lt;/div&gt;
+								</code>
+								<p class="arial-text"><strong>Rotate Interval</strong> = 3000 = 3 seconds until next rotation<br /><strong>Rotate Animate</strong> - There are numerous animation styles supported. Consult <em>animations.css</em>.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="padding"></p>
+				<hr class="thick tomato" />
+				
+				<!-- CURVED TEXT -->
 				<div class="padding">
 					<h3 class="red-text courier-new-text fittext-compress" id="curved">CURVED TEXT</h3>
 					<p class="charcoal-text courier-new-text flow-text">Warp your text into curves, spirals, circles, and waves! Works best on paragraphs. All are fully responsive.</p>
@@ -156,6 +288,7 @@
 				</div>
 				<p class="padding"></p>
 				<hr class="thick tomato" />
+				
 				<!-- EQUAL HEIGHTS -->
 				<div class="padding">
 					<h3 class="red-text courier-new-text fittext-compress" id="equalh">Equal Heights</h3>
@@ -183,107 +316,6 @@
 				<p class="padding"></p>
 				<hr class="thick tomato" />
 				
-				<!-- BRUTAL TEXT -->
-				<div class="padded">
-					<h3 class="red-text courier-new-text fittext-compress" id="brutaltext">Brutal Text Effect</h3>
-					<p class="charcoal-text arial-text">Apply these classes to any text for a brutal text effect!</p>
-					<div class="row">
-						<div class="col-sm-12 col-md-4">
-							<div class="vanilla-bean box-shadow padding center">
-								<h4 class="brutal-text black-text">.brutal-text</h4>
-								<p class="grey-text heavy">Default brutal (black) text</p>
-							</div>
-						</div>
-						<div class="col-sm-12 col-md-4">
-							<div class="vanilla-bean box-shadow padding center">
-								<h4 class="brutal-text-mono blue-text">.brutal-text-mono</h4>
-								<p class="grey-text heavy">Brutal monochrome (blue) text</p>
-							</div>
-						</div>
-						<div class="col-sm-12 col-md-4">
-							<div class="black box-shadow padding center">
-								<h4 class="brutal-text-neon lime-text">.brutal-text-neon</h4>
-								<p class="vanilla-bean-text heavy">Brutal neon (lime) text</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<p class="padding"></p>
-				<hr class="thick tomato" />
-				
-				<!-- GLITCH -->
-				<div class="padding">
-					<h3 class="red-text courier-new-text fittext-compress" id="glitch">Glitch</h3>
-					<p class="charcoal-text courier-new-text flow-text">Add a glitch effect to any element! Works on images and text, or even entire areas! It is entirely CSS-based. Apply <strong><span class="blue-text">.glitch</span></strong> class to any element.</p>
-					<div class="row">
-						<div class="col-sm-12 col-md-4">
-							<div class="disabled padding">
-								<p class="flow-text lucida-text"><strong><span class="glitch">Glitched</span> Circle Image</strong></p>
-								<img class="responsive circle glitch border-dotted-thick blue-border" src="assets/images/brutal-building.jpg" alt="Original" />
-							</div>
-						</div>
-						<div class="col-sm-12 col-md-4">
-							<p class="flow-text charcoal-text courier-new-text"><strong>Glitched Paragraph</strong></p>
-							<p class="charcoal-text glitch arial-text">This is a rather glitchy paragraph. You could even baffle all your <span class="baffle-forever">firking</span> enemies!</p>
-							<p class="charcoal-text tahoma-text">This paragraph has just one <span class="glitch"><strong>glitched</strong></span> word, using the span tag.</p>
-						</div>
-						<div class="col-sm-12 col-md-4">
-						
-						</div>
-					</div>
-				</div>
-				<p class="padding"></p>
-				<hr class="thick tomato" />
-					
-				<!-- BLINK -->
-				<div class="padding">
-					<h3 class="red-text courier-new-text fittext-compress" id="blink">Blink</h3>
-					<p class="charcoal-text arial-text flow-text">Blink is back! Apply theses classes to blink any element, even entire areas! Requires <em>brutalist.js</em> and <em>start.brutalizing.js</em>.</p>
-					<div class="row">
-						<div class="col-xs-12 col-sm-6 col-md-3">
-							<h4 class="charcoal-text lucida-text flow-text">.blink</h4>
-							<p class="blink alert box-shadow-double lucida-text flow-text padded">ALERT!<br />&nbsp;ALERT!<br />&nbsp;&nbsp;ALERT!</p>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-md-3">
-							<h4 class="charcoal-text lucida-text flow-text">.blink-slow</h4>
-							<p class="blink-slow warning box-shadow lucida-text center flow-text bold">////////<br />WARNING!!!!<br />////////</p>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-md-3">
-							<h4 class="charcoal-text lucida-text flow-text">.blink-fast</h4>
-							<p class="box-shadow-triple info center">Here is a <span class="blink-fast">fast-blinking</span> span and image:<br />
-							<img src="assets/images/brutal-building.jpg" alt="Fast-blinking Image" class="blink-fast small-thumb" />
-							</p>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-md-3">
-							<h4 class="charcoal-text lucida-text flow-text">.blink-182</h4>
-							<p class="box-shadow-bottom charcoal orange-text center">Get Your Blinker Fluid <span class="blink-182">NOW</span>!<br />
-							<img src="assets/images/blinker-fluid.jpg" alt="Blinker Fluid" class="blink-182 circle medium-thumb" />
-							</p>
-						</div>
-					</div>
-				</div>
-				<p class="padding"></p>
-				<hr class="thick tomato" />
-					
-				<!-- THROB -->
-				<div class="padding">
-					<h3 class="red-text courier-new-text fittext-compress" id="throb">Throb</h3>
-					<p class="charcoal-text courier-new-text flow-text">Apply a throbbing, pulsing effect. It's CSS-based, so no javascript is needed. Simply apply the class <strong>.throb</strong> to an element. </p>
-					<div class="row">
-						<div class="col-sm-12 col-md-6">
-							<p class="flow-text white-text arial-text"><strong>Image Example</strong></p>
-							<img class="responsive circle throb" src="assets/images/brutal-building.jpg" alt="Original" style="width: 200px; height: auto;" />
-						</div>
-						<div class="col-sm-12 col-md-6">
-							<div class="throb alert padded">
-								<h4>ALERT!</h4>
-								<p class="flow-text lucida-text"><strong>Content Block Example</strong><br />See how I throb!</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<p class="padding"></p>
-				<hr class="thick tomato" />
 				<!-- CLIP-BOX -->
 				<div class="padding">
 					<h3 class="red-text courier-new-text fittext-compress" id="clipbox">Clip-Box</h3>
@@ -311,34 +343,7 @@
 				</div>
 				<p class="padding"></p>
 				<hr class="thick tomato" />
-				<!-- CHOP TEXT -->
-				<div class="padding">
-					<h3 class="red-text courier-new-text fittext-compress" id="chop">Chop Text</h3>
-					<p class="charcoal-text arial-text">Truncate a paragraph of text to a preset number of characters. Requires <em>start.brutalizing.js</em>. Apply any of these classes to any text to truncate.</p>
-					
-					<div class="row">
-						<div class="col-sm-12 col-md-4">
-							<h4>.chop-64</h4>
-							<p class="chop-64 success padding arial-text equal-height">
-							Lorem ipsum no facer prompta vim, movet ubique qui ei. Per no regione aliquid, ea mei nulla scribentur liberavisse. Vim cu tale ludus possit, discere suavitate nam ad. No verterem reprimique vix, phaedrum hendrerit an quo. Qui feugait apeirian ut, ne virtute numquam mandamus mea. Eos et enim dicant deterruisset.
-							</p>
-						</div>
-						<div class="col-sm-12 col-md-4">
-							<h4>.chop-128</h4>
-							<p class="chop-128 info padding arial-text equal-height">
-							Lorem ipsum no facer prompta vim, movet ubique qui ei. Per no regione aliquid, ea mei nulla scribentur liberavisse. Vim cu tale ludus possit, discere suavitate nam ad. No verterem reprimique vix, phaedrum hendrerit an quo. Qui feugait apeirian ut, ne virtute numquam mandamus mea. Eos et enim dicant deterruisset.
-							</p>
-						</div>
-						<div class="col-sm-12 col-md-4">
-							<h4>.chop-256</h4>
-							<p class="chop-256 ready padding arial-text equal-height">
-							Lorem ipsum no facer prompta vim, movet ubique qui ei. Per no regione aliquid, ea mei nulla scribentur liberavisse. Vim cu tale ludus possit, discere suavitate nam ad. No verterem reprimique vix, phaedrum hendrerit an quo. Qui feugait apeirian ut, ne virtute numquam mandamus mea. Eos et enim dicant deterruisset.
-							</p>
-						</div>
-					</div>
-				</div>
-				<p class="padding"></p>
-				<hr class="thick tomato" />
+
 				<!-- ANIMATED GRADIENT BACKGROUNDS -->
 				<div class="padding">
 					<h3 class="red-text courier-new-text fittext-compress" id="animbg">Animated Gradient Backgrounds</h3>
@@ -404,18 +409,18 @@
 					</div>
 				</div>
 			</div>
-			<p class="center white-text lucida-text">&copy; 2018 <em>BrutalistFramework</em>. All rights reserved.</p>
+			<p class="center white-text lucida-text">&copy; 2019 <em>BrutalistFramework</em>. All rights reserved.</p>
 		</div>
 	</div>
 </footer>
 
 <!-- Sticky Download Box -->
-<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.7.zip" target="_blank">
+<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.8.zip" target="_blank">
 <div class="sticky-bottom-right stack-top padding red">
 	<div class="skew lemon-lime-gradient btn invert-hover">
 		<p class="flow-text black-text lucida-text skew-right"><strong>Download</strong></p>
 	</div>
-	<p class="lime-text center">Version 1.7</p>
+	<p class="lime-text center">Version 1.8</p>
 </div></a>
 <!-- End Sticky -->
 
@@ -425,15 +430,7 @@
 <script src="js/start.brutalizing.js"></script>
 
 <!-- TRACKING -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-93046252-1', 'auto');
-  ga('send', 'pageview');
-</script>
 
 </body>
 </html>

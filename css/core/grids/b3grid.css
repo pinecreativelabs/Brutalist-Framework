@@ -3,6 +3,8 @@ BRUTAL BLOCKS 'n BRICKS GRID
 **********************************/
 
 .blocks, .bricks { display: flex; display: -webkit-flex; display: -ms-flex; flex-wrap: wrap; -webkit-flex-wrap: wrap; } /* outer wrapper for blocks and bricks */
+.blocks p, .bricks p { display: block; width: 100%; }
+.blocks.center, .bricks.center { justify-content: center; align-items: center; } /* Center items within these containers */
 .block { display: block; flex: 1; -ms-flex: 1; -webkit-flex: 1; }
 .brick { display: inline-block; margin: 0; padding: 1em; }
 .brick.right { float: right; }
@@ -15,17 +17,19 @@ BRUTAL BLOCKS 'n BRICKS GRID
 .b20 { -webkit-flex-basis: 20%; flex-basis: 20%; width: 20%; max-width: 20%; }
 .b25 { -webkit-flex-basis: 25%; flex-basis: 25%; width: 25%; max-width: 25%; }
 .b33 { -webkit-flex-basis: 33.33%; flex-basis: 33.33%; width: 33.33%; max-width: 33.33%; }
+.b40 { -webkit-flex-basis: 40%; flex-basis: 40%; width: 40%; max-width: 40%; }
 .b50 { -webkit-flex-basis: 50%; flex-basis: 50%; width: 50%; max-width: 50%; }
+.b60 { -webkit-flex-basis: 60%; flex-basis: 60%; width: 60%; max-width: 60%; }
 .b75 { -webkit-flex-basis: 75%; flex-basis: 75%; width: 75%; max-width: 75%; }
 .b100 { -webkit-flex-basis: 100%; flex-basis: 100%; width: 100%; }
 
-/* Block Heights */
-.block.bh20 { height: 20vh; }
-.block.bh25 { height: 25vh; }
-.block.bh33 { height: 33vh; }
-.block.bh50 { height: 50vh; }
-.block.bh75 { height: 75vh; }
-.block.bh100 { height: 100vh; }
+/* Heights */
+.blocks.bh20, .block.bh20, .bricks.bh20 { height: 20vh; }
+.blocks.bh25, .block.bh25, .bricks.bh25 { height: 25vh; }
+.blocks.bh33, .block.bh33, .bricks.bh33 { height: 33vh; }
+.blocks.bh50, .block.bh50, .bricks.bh50 { height: 50vh; }
+.blocks.bh75, .block.bh75, .bricks.bh75 { height: 75vh; }
+.blocks.bh100, .block.bh100, .bricks.bh100 { height: 100vh; }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width:320px) and (max-width:480px) {

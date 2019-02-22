@@ -33,6 +33,10 @@ this},r._applyDataApi=function(){var e={};t("[data-match-height], [data-mh]").ea
 * Draggable
 */
 !function(e){e.fn.tinyDraggable=function(n){var t=e.extend({handle:0,exclude:0},n);return this.each(function(){var n,o,u=e(this),a=t.handle?e(t.handle,u):u;a.on({mousedown:function(a){if(!t.exclude||!~e.inArray(a.target,e(t.exclude,u))){a.preventDefault();var f=u.offset();n=a.pageX-f.left,o=a.pageY-f.top,e(document).on("mousemove.drag",function(e){u.offset({top:e.pageY-o,left:e.pageX-n})})}},mouseup:function(){e(document).off("mousemove.drag")}})})}}(jQuery);
+/*!
+* Text Rotator
+*/
+"function"!=typeof Object.create&&(Object.create=function(t){function a(){}return a.prototype=t,new a}),function(t){var a={init:function(a,e){var n=this;n.rotatelist=a,n.options=t.extend({},t.fn.rotator.options,e),n.item=new Array;for(var i=0,r=n.rotatelist.length;r>i;i++)n.item[i]=new Array,n.item[i].rotateId=t(n.rotatelist[i]).attr("id"),n.item[i].terms=t("#"+n.item[i].rotateId+" ul li"),n.item[i].animate=n.valid_anim(t("#"+n.item[i].rotateId).attr("data-rotate-animate").split(",")),n.item[i].arena=t("#"+n.item[i].rotateId+" .rotate-arena"),n.item[i].interval=n.valid_interval(t("#"+n.item[i].rotateId).attr("data-rotate-interval")),t("#"+n.item[i].rotateId+" ul").hide(),n.rotatePlay(i)},rotatePlay:function(t){var a=this;setTimeout(function(){var e=a.item[t],n=e.arena.data("term")||0;e.arena.data("term",n===e.terms.length-1?0:n+1).html(e.terms.eq([n]).html()),a.anim(e.arena,e.animate[0]),setTimeout(function(){a.anim(e.arena,e.animate[1]),a.rotatePlay(t)},e.interval)},1e3)},valid_anim:function(a){var e=this;return a?a:t("#"+e.options.interval).attr("data-rotate-animate").split(",")},valid_interval:function(t){var a=this;return isNaN(t)?a.options.interval:t},anim:function(t,a){var e=this;t.removeClass().addClass("rotate-arena "+a+" "+e.options.animateClass).one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend")}};t.fn.rotator=function(e){var n=Object.create(a);n.init(this,e),t.data(this,"rotator",a)},t.fn.rotator.options={animateClass:"animated",interval:"5000",animate:"fadeInUp,fadeOutDown"}}(jQuery,window,document);
 
 /**
  * jQuery Throttle
@@ -73,8 +77,7 @@ $(document).ready(function(){
         };
     };
     $('.arc-text').curvedText({
-        curve:    arc,
-        domain:   [-0.2, 0.2],
+        curve: arc, domain:   [-0.2, 0.2],
         viewport: { x: 0.0, y: 0.0, width: 1000.0, height: 400.0 }
     });
 	/*** Circle */
@@ -86,8 +89,7 @@ $(document).ready(function(){
         };
     };
     $('.circle-text').curvedText({
-        curve:    circle,
-        domain:   [0.0, 1.0],
+        curve: circle, domain: [0.0, 1.0],
         viewport: { x: 0.0, y: 0.0, width: 1000.0, height: 1000.0 }
     });
 	/*** Bezier */
@@ -99,30 +101,25 @@ $(document).ready(function(){
             ay = [py[0], 3.0 * (py[1] - py[0]), 3.0 * (py[2] - 2.0 * py[1] + py[0]), py[3] - 3.0 * py[2] + 3.0 * py[1] - py[0]],
             cx = ax[0] + ax[1] * t + ax[2] * t * t + ax[3] * t * t * t,
             cy = ay[0] + ay[1] * t + ay[2] * t * t + ay[3] * t * t * t;
-
         return {
-            x: cx,
-            y: cy
+            x: cx, y: cy
         };
     };
     $('.bezier-text').curvedText({
-        curve:    bezier,
-        domain:   [0.0, 1.0],
+        curve: bezier, domain: [0.0, 1.0],
         viewport: { x: 0.0, y: 0.0, width: 1000.0, height: 500.0 }
     });
 	/*** Spiral */
     var spiral = function (t)
     {
         var s = t + 1.0;
-
         return {
             x: 300.0 + 50.0 * s * Math.cos(2.0 * Math.PI * s - 0.5 * Math.PI),
             y: 300.0 + 50.0 * s * Math.sin(2.0 * Math.PI * s - 0.5 * Math.PI)
         };
     };
     $('.spiral-text').curvedText({
-        curve:    spiral,
-        domain:   [0.0, 3.0],
+        curve: spiral, domain: [0.0, 3.0],
         viewport: { x: 0.0, y: 0.0, width: 600.0, height: 600.0 }
     });
 	var sine = function (t)
@@ -134,8 +131,6 @@ $(document).ready(function(){
     };
 	var domain   = [0.0, 1.0], viewport = { x: 0.0, y: 0.0, width: 1000.0, height: 500.0 };
 	$('.wave-text').curvedText({
-        curve:    sine,
-        domain:   domain,
-        viewport: viewport
+        curve: sine, domain: domain, viewport: viewport
     });
 });

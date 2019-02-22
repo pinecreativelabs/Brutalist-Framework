@@ -283,23 +283,45 @@
 				<!-- REVEAL -->
 				<div class="padding">
 					<h3 class="red-text courier-new-text fittext-compress" id="reveal">Reveal</h3>
-					<p class="charcoal-text arial-text"><em>Reveal</em> is a hover effect, for revealing hidden content!</p>
 					<div class="row">
-						<div class="col-sm-12 col-md-4 no-padding">
+						<div class="col-sm-12 col-md-6">
+							<h4>Reveal.hover</h4>
+							<p class="charcoal-text arial-text"><em>Reveal.hover</em> reveals hidden content upon hovering over an element!</p>
 							<p class="arial-text charcoal-text">The reveal container starts at a maximum width of 50% of the container it is wrapped within, and enlarges to 100% width upon hover while also revealing a caption.</p>
 							<p class="info padded"><span class="heavy">.reveal</span> (wrap content within this class)<br />
-							&nbsp;&nbsp;&nbsp;<span class="heavy">.secret</span> (hidden content to be revealed upon hover)</p>
+								&nbsp;&nbsp;&nbsp;<span class="heavy">.secret</span> (hidden content to be revealed upon hover)</p>
+							<div class="row" style="margin-top: 2em;"><div class="col-sm-6">
+								<div class="reveal hover orange-cream">
+									<p class="lucida-text heavy flow-text center">Hover Over Me!</p>
+									<p class="arial-text secret center">I'm a <span class="heavy">SECRET</span>!</p>
+								</div>
+							</div><div class="col-sm-6">
+								<div class="reveal hover orange-cream">
+									<img src="assets/images/brutal-building.jpg" class="medium-thumb" />
+									<p class="arial-text secret">SECRET - only visible upon hover!</p>
+								</div>
+							</div></div>
 						</div>
-						<div class="col-sm-12 col-md-4 no-padding center">
-							<div class="reveal orange-cream">
-								<p class="lucida-text heavy flow-text center">Hover Over Me!</p>
-								<p class="arial-text secret center">I'm a <span class="heavy">SECRET</span>!</p>
-							</div>
-						</div>
-						<div class="col-sm-12 col-md-4 no-padding center">
-							<div class="reveal orange-cream">
-								<img src="assets/images/brutal-building.jpg" class="medium-thumb" />
-								<p class="arial-text secret">SECRET - only visible upon hover!</p>
+						<div class="col-sm-12 col-md-6">
+							<h4>Reveal.toggle</h4>
+							<p class="charcoal-text arial-text"><em>Reveal.toggle</em> toggles content upon clicking on a label. </p>
+							<div class="reveal toggle">
+								<input id="toggle1" class="toggle" type="checkbox"><!-- To have the toggle open by default, simply set the "checked" attribute -->
+								<label for="toggle1" class="label-toggle navy white-text tahoma-text heavy">Toggle Me!</label>
+								<div class="toggle-content">
+									<div class="content-inner grey navy-text">
+										<p>You will need a unique ID for each reveal toggle element. Clicking on the label either opens or closes the toggled content. Use the markup as follows:</p>
+											<code class="black lime-text lucida-text padding">
+											&lt;div class="reveal toggle"&gt;<br />
+											&lt;input id="unique-id-1" class="toggle" type="checkbox"&gt;<br />
+											&lt;label for="unique-id-1" class="label-toggle"&gt;<br />
+											&nbsp;&lt;div class="toggle-content"&gt;<br />
+											&nbsp;&nbsp;&lt;div class="content-inner"&gt;<br />
+											&nbsp;&nbsp;...content...<br />&nbsp;&nbsp;&lt;/div&gt;<br />
+											&nbsp;&lt;/div&gt;<br />&lt;/div&gt;
+											</code>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -782,18 +804,18 @@
 					</div>
 				</div>
 			</div>
-			<p class="center white-text lucida-text">&copy; 2018 <em>BrutalistFramework</em>. All rights reserved.</p>
+			<p class="center white-text lucida-text">&copy; 2019 <em>BrutalistFramework</em>. All rights reserved.</p>
 		</div>
 	</div>
 </footer>
 
 <!-- Sticky Download Box -->
-<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.7.zip" target="_blank">
+<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.8.zip" target="_blank">
 <div class="sticky-bottom-right stack-top padding red">
 	<div class="skew lemon-lime-gradient btn invert-hover">
 		<p class="flow-text black-text lucida-text skew-right"><strong>Download</strong></p>
 	</div>
-	<p class="lime-text center">Version 1.7</p>
+	<p class="lime-text center">Version 1.8</p>
 </div></a>
 <!-- End Sticky -->
 
@@ -803,14 +825,6 @@
 <script src="js/start.brutalizing.js"></script>
 
 <!-- TRACKING -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-93046252-1', 'auto');
-  ga('send', 'pageview');
-</script>
 </body>
 </html>
