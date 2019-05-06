@@ -409,10 +409,10 @@
 .pride-gradient, .rainbow {
 	background: #ff0000; 
 	/* To make this gradient vertical, remove the "left" from the color array below */
-	background: -webkit-linear-gradient(left, #ff0000, #ff9800, #ffff00, #008000, #0000FF, #800080); 
-	background: -o-linear-gradient(left, #ff0000, #ff9800, #ffff00, #008000, #0000FF, #800080); 
-	background: -moz-linear-gradient(left, #ff0000, #ff9800, #ffff00, #008000, #0000FF, #800080); 
-	background: linear-gradient(left, #ff0000, #ff9800, #ffff00, #008000, #0000FF, #800080);
+	background: -webkit-linear-gradient(to right, #ff0000, #ff9800, #ffff00, #008000, #0000FF, #800080); 
+	background: -o-linear-gradient(to right, #ff0000, #ff9800, #ffff00, #008000, #0000FF, #800080); 
+	background: -moz-linear-gradient(to right, #ff0000, #ff9800, #ffff00, #008000, #0000FF, #800080); 
+	background: linear-gradient(to right, #ff0000, #ff9800, #ffff00, #008000, #0000FF, #800080);
 }
 .watermelon { 
 	background: #d03b3b; 
