@@ -245,8 +245,8 @@ input[type=range] + .thumb {
     );
 }
 
-/* BORDERS & DIVIDERS
-************************/
+/* BORDERS OUTLINES & DIVIDERS
+*******************************/
 .border-solid-thin { border-style: solid; border-width: 2px; }
 .border-solid-thick { border-style: solid; border-width: 5px; }
 .border-solid-fat { border-style: solid; border-width: 8px; }
@@ -256,6 +256,20 @@ input[type=range] + .thumb {
 .border-dashed-thin { border-style: dashed; border-width: 2px; }
 .border-dashed-thick { border-style: dashed; border-width: 5px; }
 .border-dashed-fat { border-style: dashed; border-width: 8px; }
+.outline-solid-thin { outline-style: solid; outline-width: 2px; }
+.outline-solid-thick { outline-style: solid; outline-width: 5px; }
+.outline-solid-fat { outline-style: solid; outline-width: 8px; }
+.outline-dotted-thin { outline-style: dotted; outline-width: 2px; }
+.outline-dotted-thick { outline-style: dotted; outline-width: 5px; }
+.outline-dotted-fat { outline-style: dotted; outline-width: 8px; }
+.outline-dashed-thin { outline-style: dashed; outline-width: 2px; }
+.outline-dashed-thick { outline-style: dashed; outline-width: 5px; }
+.outline-dashed-fat { outline-style: dashed; outline-width: 8px; }
+.os-2 { outline-offset: 2px; }
+.os-5 { outline-offset: 5px; }
+.os-10 { outline-offset: 10px; }
+.os-15 { outline-offset: 15px; }
+.os-20 { outline-offset: 20px; }
 .jagged, .jagged2 { position: relative; margin-top: 50px; margin-bottom: 50px; padding: 0; display: block; }
 .jagged::before, .jagged::after, .jagged2::before, .jagged2::after {
 	right: 0; left: 0; display: block; height: 90px;

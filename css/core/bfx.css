@@ -171,6 +171,47 @@ span.glitch { -webkit-animation: glitch2 1.25s infinite; animation: glitch2 1.25
   }
 }
 
+/* SPIN ANIMATIONS
+***********************************/
+.spin, .spin-fast, .spin-reverse, .spin-reverse-fast, .spin-cycle { 
+	animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */ 
+   /* transform: rotate(.03turn);  */
+}
+.spin { animation-name: spin;
+  animation-duration: 5000ms;
+}
+.spin-fast { animation-name: spin;
+  animation-duration: 1500ms;
+}
+.spin-reverse { animation-name: spin-reverse;
+  animation-duration: 5000ms;
+}
+.spin-reverse-fast { animation-name: spin-reverse;
+  animation-duration: 1500ms;
+}
+.spin-cycle { animation-name: spin-cycle;
+	animation-duration: 5000ms;
+}
+@keyframes spin {
+    from { transform:rotate(0deg); }
+    to { transform:rotate(360deg); }
+}
+@keyframes spin-reverse {
+    from { transform:rotate(360deg); }
+    to { transform:rotate(0deg); }
+}
+@keyframes spin-cycle {
+    0%   {transform:rotate(360deg);}
+	25%  {transform:rotate(0deg);}
+	50%  {transform:rotate(180deg);}
+	75%	 {transform:rotate(90deg);}
+	100% {transform:rotate(360deg);}
+}
+
 /* ANIMATED GRADIENT BACKGROUNDS
 ***********************************/
 .anim-bg-brutal {

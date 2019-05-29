@@ -133,7 +133,7 @@
 								<p class="dbl-spaced"><strong>.dbl-spaced</strong> - Doubles the spacing of line heights within paragraphs.</p>
 								<p class="tpl-spaced"><strong>.tpl-spaced</strong> - Triples the spacing of line heights within paragraphs.</p>
 								<p><strong>.tal-left</strong> - Left-aligns last line of text<br /><strong>.tal-right</strong> - Right-aligns last line of text<br />
-								<strong>.tal-center</strong> - Ceners last line of text<br /><strong>.tal-justify</strong> - Justifies last line of text<br />
+								<strong>.tal-center</strong> - Centers last line of text<br /><strong>.tal-justify</strong> - Justifies last line of text<br />
 								<strong>.indent</strong> - Indents text by 1cm</p>
 								<p class="nowrap"><strong>.nowrap</strong> - Text will never wrap to next line.</p>
 								<p class="wordspace-small"><strong>.wordspace-small</strong> - Small increase in word spacing.</p>
@@ -479,6 +479,24 @@
 								<p class="flow-text border-dashed-fat black-border" style="margin-bottom: 1em;"><strong>.border-dashed-fat</strong></p>
 							</div>
 						</div>
+						<p class="white-text courier-new-text flow-text"><span class="charcoal allcaps"><strong>Outlines</strong></span></p>
+						<p class="charcoal-text arial-text">Add an outline border around any element. You can apply both borders and outlines to the same element. Similar to the border classes above, use outline in place of border. Below are some examples.</p>
+						<div class="row charcoal-text arial-text">
+							<div class="col-xs-12 col-sm-12 col-md-4">
+								<p class="border-solid-thin outline-dashed-thick black-border red-outline" style="margin-bottom: 1.5em;"><strong>.border-solid-thin .outline-dashed-thick .red-outline</strong></p>
+								<p class="strawberry-banana outline-dotted-thick chocolate-outline os-5" style="margin-bottom: 1.75em;"><strong>.strawberry-banana .outline-dotted-thick .os-5</strong></p>
+								<p class="grey outline-solid-fat charcoal-outline os-10" style="margin-bottom: 1em;"><strong>.solid-outline-fat .os-10</strong></p>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-4">
+								<p class="outline-dotted-thin lime-outline blue-border border-solid-thin" style="margin-bottom: 1.5em;"><strong>.outline-dotted-thin .border-solid-thin</strong></p>
+								<p class="border-dashed-thick purple-border red-outline outline-solid-thin" style="margin-bottom: 1.5em;"><strong>.border-dashed-thick .outline-solid-thin .os-5</strong></p>
+								<p class="border-dashed-thin black-border outline-dashed-thin black-outline os-2" style="margin-bottom: 1em;"><strong>.border-dashed-thin .outline-dashed-thin .os-2</strong></p>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-4">
+								<p class="info padded"><strong>Offset Outlines</strong><br />Offset outline borders by 2, 5, 10, 15, or 20px. Use these classes:<br />
+								<strong>.os-2<br />.os-5<br />.os-10<br />.os-15<br />.os-20</strong></p>
+							</div>
+						</div>
 						<p class="white-text courier-new-text flow-text"><span class="charcoal allcaps"><strong>Horizontal Rules</strong></span></p>
 						<div class="row charcoal-text arial-text">
 							<div class="col-xs-12 col-sm-12 col-md-4">
@@ -559,23 +577,7 @@
 								</div>
 							</div>
 						</div>
-						<p class="padding"></p>
-						<p class="white-text courier-new-text flow-text"><span class="charcoal allcaps"><strong>BETA Shapes</strong></span></p>
-						<p class="grey-text arial-text">Experimental shapes - NOT supported in all browsers!</p>
-						<div class="row">
-							<div class="col-xs-12 col-sm-12 col-md-6">
-								<div class="paranoid notched gray">
-									<p class="flow-text blue-text center">&nbsp;<br />.notched<br />&nbsp;</p>
-								</div>
-							</div>
-							<div class="col-xs-12 col-sm-12 col-md-6">
-								<div class="padded">
-									<div class="circle-float-left border-solid-thin orange-border" style="width: 140px; height: 140px;"></div>
-									<div class="circle-float-right border-solid-thin orange-border" style="width: 90px; height: 90px;">CIRCLE</div>
-									<p class="green-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit libero esse odio excepturi fuga est ut itaque a quod suscipit, rerum asperiores. Consequuntur voluptates illo rerum recusandae pariatur asperiores, aspernatur, saepe ipsum error dolorem, quod inventore possimus modi deleniti tenetur et officiis. </p>
-								</div>
-							</div>
-						</div>
+						
 					</div>
 					<p class="padding"></p>
 					<hr class="thick tomato" />
@@ -739,12 +741,12 @@
 </footer>
 
 <!-- Sticky Download Box -->
-<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.7.zip" target="_blank">
+<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.9.zip" target="_blank">
 <div class="sticky-bottom-right stack-top padding red">
 	<div class="skew lemon-lime-gradient btn invert-hover">
 		<p class="flow-text black-text lucida-text skew-right"><strong>Download</strong></p>
 	</div>
-	<p class="lime-text center">Version 1.7</p>
+	<p class="lime-text center">Version 1.9</p>
 </div></a>
 <!-- End Sticky -->
 
@@ -754,6 +756,14 @@
 <script src="js/start.brutalizing.js"></script>
 
 <!-- TRACKING -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-93046252-1', 'auto');
+  ga('send', 'pageview');
+</script>
 </body>
 </html>
