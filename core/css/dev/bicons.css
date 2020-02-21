@@ -1,0 +1,92 @@
+/* bIcons - Brutalist Icons 
+NOTE: not all text editors support all symbols, so some symbols may appear as boxes.
+https://www.w3schools.com/charsets/ref_utf_symbols.asp */
+
+.bi:before { 
+	display: inline-block;
+  font: normal normal normal 24px/1 arial;
+  font-size: inherit;
+  text-rendering: auto;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bi-sun::before { content: "\☀";}
+.bi-cloud::before { content: "\☁";}
+.bi-umbrella::before { content: "\☂";}
+.bi-comet::before { content: "\☄";}
+.bi-star::before { content: "\★";}
+.bi-star-o::before { content: "\☆";}
+.bi-phone::before { content: "\☎";}
+.bi-phone-o::before { content: "\☏";}
+.bi-box::before { content: "\☐";}
+.bi-box-check::before { content: "\☑";}
+.bi-box-x::before { content: "\☒";}
+.bi-balance::before { content: "\⚖";}
+.bi-cross::before { content: "\♰";}
+.bi-peace::before { content: "\☮";}
+.bi-yin-yang::before { content: "\☯";}
+.bi-happy::before { content: "\☺";}
+.bi-sad::before { content: "\☹";}
+.bi-heart::before, .bi-love::before { content: "\♥";}
+.bi-heart-o::before, .bi-love-o::before { content: "\♡";}
+.bi-music::before { content: "\♫";}
+.bi-flag::before { content: "\⚑"; }
+.bi-flag-o::before { content: "\⚐";}
+.bi-handicap::before { content: "\♿";}
+.bi-tools::before { content: "\⚒";}
+.bi-pick::before { content: "\⛏";}
+.bi-amp::before { content: "\⚡";}
+.bi-truck::before { content: "\⛟";}
+.bi-ship::before { content: "\⛴";}
+.bi-gear::before { content: "\⛭";}
+.bi-navigate::before { content: "\⛯";}
+.bi-two-way::before { content: "\⛖";}
+.bi-two-way-o::before { content: "\⛗";}
+.bi-yield::before { content: "\⛛";}
+.bi-warning::before { content: "\⚠";}
+.bi-restricted::before { content: "\⛔";}
+.bi-communist::before { content: "\☭";}
+.bi-dead::before { content: "\☠";}
+.bi-radioactive::before { content: "\☢";}
+.bi-biohazard::before { content: "\☣";}
+.bi-anchor::before { content: "\⚓";}
+.bi-chains::before { content: "\⛓";}
+.bi-shamrock::before { content: "\☘";}
+.bi-coffee::before { content: "\☕";}
+.bi-corners::before { content: "\⛶";}
+.bi-control::before { content: "\⛮";}
+.bi-converge-right::before { content: "\⚞";}
+.bi-converge-left::before { content: "\⚟";}
+.bi-soccer::before { content: "\⚽";}
+.bi-baseball::before { content: "\⚾";}
+.bi-golf::before { content: "\⛳";}
+.bi-beach::before { content: "\⛱";}
+.bi-thunderstorm::before { content: "\⛈";}
+.bi-rain::before { content: "\⛆";}
+.bi-camp::before { content: "\⛺";}
+.bi-church::before { content: "\⛪";}
+.bi-fuel::before { content: "\⛽";}
+.bi-recycle::before { content: "\♻";}
+.bi-king::before { content: "\♚";}
+.bi-queen::before { content: "\♛";}
+.bi-male::before { content: "\♂";}
+.bi-female::before { content:"\♀";}
+.bi-point-left::before { content: "\☚";}
+.bi-point-right::before { content: "\☛";}
+.bi-opposition::before { content: "\☍";}
+.bi-conjunction::before { content: "\☌";}
+/* Horoscopes */
+.bi-aquarius::before { content: "\♒";}
+.bi-aries::before { content: "\♈";}
+.bi-cancer::before { content: "\♋";}
+.bi-capricorn::before { content: "\♑";}
+.bi-gemini::before { content: "\♊";}
+.bi-leo::before { content: "\♌";}
+.bi-libra::before { content: "\♎";}
+.bi-pisces::before { content: "\♓";}
+.bi-saggitarius::before { content: "\♐";}
+.bi-scorpius::before { content: "\♏";}
+.bi-taurus::before { content: "\♉";}
+.bi-virgo::before { content: "\♍";}

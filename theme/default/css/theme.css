@@ -1,0 +1,17 @@
+/* Default Theme Style
+===================================================*/ 
+header { padding: 1em 0 1em 0; }
+
+.home-head h1 { display: inline-block; font-size: 2em; }
+.hometab1 p, .hometab1 h4 { background: rgba(0,0,0,0.6); padding: 4px;}
+.page-title, .page-desc { display: inline-block; float: left; clear: left; }
+.page-title { padding: 8px; margin: 20px; background: rgba(0,0,0,0.8); }
+.page-desc { max-width: 80%; padding: 1em; margin: 20px 20px 20px 40px; background: rgba(0,0,0,0.8);}
+.page-desc h2 { margin: 0; line-height: 150%; width: 100%; display: block; }
+.page-desc p::before { display: block; content: ''; width: 20%; height: 4px; background: #fff; margin-top: 8px; margin-bottom: 8px; padding: 0; }
+.about-section { background: url('../files/images/county-bldg-brutalist.jpg');
+	background-repeat: no-repeat; background-size: cover; background-position: center center; 
+	padding-top: 1.8em; padding-bottom: 1.8em;
+}
+.demo-cover-1 { background-image: url('../files/images/apocalypse-architecture.jpg'); }
+.about-section .tabs input[type="radio"]:checked + label { background: #fff !important; } /* Force white background on active tabs on home page */

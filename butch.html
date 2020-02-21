@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 	<title>Brutalist Framework || BUTCH</title>
 	<meta name="description" content="A simple framework for the brutalist web design trend." />
-	<meta name="keywords" content="brutalism, brutalist, framework, css, open source, style, design trend" />
+
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@pinebuilder">
@@ -13,115 +13,155 @@
 	<meta name="twitter:description" content="A simple framework for the brutalist web design trend.">
 	<meta name="twitter:creator" content="@pinebuilder">
 	<!-- Twitter Summary card images must be at least 120x120px -->
-	<meta name="twitter:image" content="http://www.brutalistframework.com/assets/images/brutalist-framework512.jpg">
+	<meta name="twitter:image" content="http://www.brutalistframework.com/files/images/brutalist-framework512.jpg">
 
 	<!-- Open Graph data -->
 	<meta property="og:title" content="Brutalist Framework || BUTCH" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://www.brutalistframework.com" />
-	<meta property="og:image" content="http://www.brutalistframework.com/assets/images/brutalist-framework512.jpg" />
+	<meta property="og:image" content="http://www.brutalistframework.com/files/images/brutalist-framework512.jpg" />
 	<meta property="og:description" content="A simple framework for the brutalist web design trend." /> 
 	<meta property="og:site_name" content="Brutalist Framework" />
 
 	<!-- Icons -->
-	<link rel="shortcut icon" href="assets/icons/bf44.png" type="image/x-icon" />
-	<link rel="icon" href="assets/icons/bf15.ico" type="image/x-icon" />
-	<link rel="apple-touch-icon" href="assets/icons/bf57.png" />
-	<!-- CSS  -->
-	<link href="css/core/core.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-	<link href="css/theme.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link rel="shortcut icon" href="files/icons/bf44.png" type="image/x-icon" />
+	<link rel="icon" href="files/icons/bf15.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="files/icons/bf57.png" />
+	
+	<!-- CORE CSS  -->
+	<!--<link href="core/css/dev/core.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
+	<link href="core/css/brutalist.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	
+	<!-- Theme CSS -->
+	<link href="theme/default/css/theme.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	
+	<!-- Plugins -->
+	<link href="plugins/megamenu/view.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
-<body>
-	<div class="container-fluid no-padding">
-		<div class="row red" id="scrolltop">
-			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 no-padding">
-				<a href="index.html"><img class="responsive logo" src="assets/images/brutalist-framework512.jpg" alt="Brutalist Framework" /></a>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 no-padding">
-				<h1 class="courier-new-text fittext white-text baffle">BUTCH</h1>
-				<h2 class="white-text fittext-compressed lucida-text">Brutalist Utility & Typography Class Helpers</h2>
-				<p class="white-text flow-text lucida-text">General-use classes for typography style, layouts, and page elements.</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 no-padding black">
-				<div class="glued">
-					<div class="row">
-						<div class="col-xs-12 col-sm-6 no-padding">
-							<nav class="simple bold">
-								<ul class="courier-new-text flow-text red">
-									<li class="red invert-hover"><a href="index.html" class="black-text">Home</a></li>
-									<li class="red invert-hover"><a href="flavors.html" class="black-text">Flavors</a></li>
-									<li class="lime invert-hover active"><a href="#" class="black-text">BUTCH</a></li>
-									<li class="red invert-hover"><a href="buix.html" class="black-text">BUIX</a></li>
-									<li class="red invert-hover"><a href="bfx.html" class="black-text">BFX</a></li>
-									<li class="red invert-hover"><a href="grid.html" class="black-text">Grid</a></li>
-									<li class="red invert-hover"><a href="rebar.html" class="black-text">ReBAR</a></li>
-									<li class="red invert-hover"><a href="templates.html" class="black-text">Templates</a></li>
-								</ul>
-							</nav>
-						</div>
-						<div class="col-xs-12 col-sm-6 no-padding">
-							<nav class="simple blue">
-								<ul class="courier-new-text flow-text lime-text">
-									<li class="invert-hover"><a href="#typog" class="lime-text">Typography</a></li>
-									<li class="invert-hover"><a href="#utils" class="lime-text">Utility Classes</a></li>
-									<li class="invert-hover"><a href="#filters" class="lime-text">Filters</a></li>
-									<li class="invert-hover"><a href="#opacities" class="lime-text">Opacities</a></li>
-									<li class="invert-hover"><a href="#borders" class="lime-text">Borders</a></li>
-									<li class="invert-hover"><a href="#boxes" class="lime-text">Box Shadows</a></li>
-									<li class="invert-hover"><a href="#tables" class="lime-text">Tables</a></li>
-									<li class="invert-hover"><a href="#media" class="lime-text">Media</a></li>
-								</ul>
-							</nav>
-						</div>
+<body class="black">
+	<header class="container-fluid triangle-light anim-bg-neon stack-base">
+		<div class="row"><div class="col-sm-12"><div class="container-1200">
+			<div class="row no-padding stack1 content" id="scrolltop">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 no-padding">
+					<a href="index.html" class="logo"><img class="responsive border-solid-fat red-border" src="files/images/brutalist-framework512.jpg" alt="Brutalist Framework" /></a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 no-padding lucida-text">
+					<h1 class="page-title border-solid-thick red-border courier-new-text fittext-h1 white-text baffle-prolonged">BUTCH</h1>
+					<div class="page-desc border-solid-thick red-border rice-text">
+						<h2 class="flow-text baffle">Brutalist Utility & Typography Class Helpers</h2><br />
+						<p>General-use classes for typography style, layouts, and page elements.</p>
 					</div>
-					<a href="#scrolltop" class="lime invert-hover bold black-text scrolltop lucida-text">Back to Top &uarr;</a>
 				</div>
 			</div>
+		</div></div></div>
+	</header>
+<div class="monochrome-gradient">
+	<div class="container-1200 no-padding white">
+		<div class="row"><div class="col-sm-12">
+			
+		</div></div>
+		
+		<div class="row">
+			
 			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 no-padding">
+				<!-- MEGAMENU -->
+				<div class="menu-container glued stack-top">
+					<div class="menu lucida bold">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#">CORE</a>
+								<ul>
+									<li><a href="flavors.html">Flavors</a></li>
+									<li><a href="butch.html">BUTCH</a></li>
+									<li><a href="buix.html">BUIX</a></li>
+									<li><a href="bfx.html">BFX</a></li>
+									<li><a href="grid.html">Grid</a></li>
+									<li><a href="rebar.html">ReBAR</a></li>
+									<li><a href="bicons.html">bIcons</a></li>
+								</ul>
+							</li>
+							<li><a href="extensions.html">Plugins</a>
+								<ul>
+									<li><a href="extensions.html#megamenu">Megamenu</a></li>
+									<li><a href="extensions.html#printer">Printer</a></li>
+									<li><a href="extensions.html#curvetext">CurveText</a></li>
+								</ul>
+							</li>
+							<li><a href="templates.html">Starting Points</a>
+								<ul>
+									<li><a href="templates.html#emailbp">Email</a>
+										<ul>
+											<li><a href="starting-points/email-boilerplate-01.html" target="_blank">Boilerplate 01</a></li>
+											<li><a href="starting-points/email-boilerplate-02.html" target="_blank">Boilerplate 02</a></li>
+											<li><a href="starting-points/email-boilerplate-03.html" target="_blank">Boilerplate 03</a></li>
+										</ul>
+									</li>
+									<li><a href="templates.html#landings">Landing Pages</a>
+										<ul>
+											<li><a href="starting-points/leads.html" target="_blank">Lead Capture</a></li>
+											<li><a href="starting-points/thank-you.html" target="_blank">Thank You</a></li>
+											<li><a href="starting-points/event.html" target="_blank">Event</a></li>
+										</ul>
+									</li>
+									<li><a href="templates.html#blogs">Blog / Media</a>
+										<ul>
+											<li><a href="statting-points/blog-post-list.html" target="_blank">Blog Post List</a></li>
+											<li><a href="starting-points/blog-post.html" target="_blank">Blog Post</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki" target="_blank">About</a>
+								<ul>
+									<li><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank">Roadmap</a></li>
+									<li><a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank">Github Repository</a></li>
+									<li><a href="https://twitter.com/brutalistfwk" target="_blank">Twitter</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- END MEGAMENU -->
 				
 					<div class="padding">
-						<h3 class="tomato-text courier-new-text fittext-compress" id="typog">Typography</h3>
+						<h3 class="tomato-text lucida" id="typog">Typography</h3>
 						<div class="row">
 							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 charcoal-text">
 								<!-- Font Families -->
-								<p class="white-text courier-new-text flow-text charcoal">Font Family Classes</p>
-								<p class="flow-text arial-text">.arial-text</p>
-								<p class="flow-text arial-black-text">.arial-black-text</p>
-								<p class="flow-text comic-sans-text">.comic-sans-text</p>
-								<p class="flow-text tahoma-text">.tahoma-text</p>
-								<p class="flow-text helvetica-text">.helvetica-text</p>
-								<p class="flow-text impact-text">.impact-text</p>
-								<p class="flow-text verdana-text">.verdana-text</p>
-								<p class="flow-text courier-new-text">.courier-new-text</p>
-								<p class="flow-text lucida-text">.lucida-text</p>
-								<p class="flow-text georgia-text">.georgia-text</p>
-								<p class="flow-text times-text">.times-text</p>
-								<p class="flow-text palatino-text">.palatino-text</p>
+								<h4 class="white-text courier-new flow-text charcoal">Font Family Classes</h4>
+								<p class="arial">.arial</p>
+								<p class="arial-black">.arial-black</p>
+								<p class="comic-sans">.comic-sans</p>
+								<p class="tahoma">.tahoma</p>
+								<p class="helvetica">.helvetica</p>
+								<p class="impact">.impact</p>
+								<p class="verdana">.verdana</p>
+								<p class="courier-new">.courier-new</p>
+								<p class="lucida">.lucida</p>
+								<p class="georgia">.georgia</p>
+								<p class="times">.times</p>
+								<p class="palatino">.palatino</p>
 								<!-- Font Weight -->
-								<p class="white-text courier-new-text flow-text charcoal">Font Weight</p>
-								<p class="thin flow-text arial-text">.thin</p>
-								<p class="normal flow-text arial-text">.normal</p>
-								<p class="bold flow-text arial-text">.bold</p>
-								<p class="heavy flow-text arial-text">.heavy</p>
+								<h4 class="white-text flow-text courier-new charcoal">Font Weight</h4>
+								<p class="bold arial">.bold</p>
+								<p class="heavy arial">.heavy</p>
 								<!-- Font Sizing -->
-								<p class="white-text courier-new-text flow-text charcoal">Font Sizing</p>
+								<h4 class="white-text courier-new-text flow-text charcoal">Font Sizing</h4>
 								<p class="arial-text">Normal size text</p>
 								<p class="smaller arial-text">.smaller</p>
 								<p class="bigger arial-text">.bigger</p>
 								<p class="huge arial-text">.huge</p>
-								<p class="white-text flow-text charcoal courier-new-text">.flow-text</p>
+								<h4 class="white-text flow-text charcoal courier-new-text">.flow-text</h4>
 								<p class="flow-text">Flow-text makes your text responsive!</p>
 								<p>This is a paragraph without flow-text applied.</p>
 							</div>
 							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 arial-text charcoal-text">
 								<p class="white-text flow-text charcoal courier-new-text">Text Alignment</p>
-								<p class="flow-text text-center">.text-center</p>
-								<p class="flow-text text-left">.text-left</p>
-								<p class="flow-text text-right">.text-right</p>
+								<p class="flow-text center">.center</p>
+								<p class="flow-text align-left">.align-left</p>
+								<p class="flow-text align-right">.align-right</p>
 								<p class="flow-text justify">.justify</p>
-								<p class="rtl flow-text"><strong>rtl</strong> - right-to-left text.</p>
+								<p class="rtl flow-text"><strong>rtl</strong> (right-to-left).</p>
 								
 								<p class="white-text flow-text charcoal courier-new-text">Text Formatting</p>
 								<p><strong>.spread</strong> - <span class="spread">Adds 3px between characters</span><br />
@@ -148,7 +188,7 @@
 						<p class="padding"></p>
 						<div class="row">
 							<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-								<p class="white-text flow-text charcoal courier-new-text">Address</p>
+								<p class="white-text flow-text charcoal courier-new">Address</p>
 								<address>
 									Address Line 1<br />Address Line 2<br />Address Line 3
 								</address>
@@ -204,7 +244,18 @@
 										</ul>
 									</div>
 								</div>
-								<p class="white-text flow-text charcoal courier-new-text">Ordered Lists</p>
+								<div class="row charcoal-text">
+									<div class="col-xs-12">
+										<p><strong>ul.tags</strong> - makes ul li items display inline</p>
+										<ul class="tags bold">
+											<li>Tag 1</li>
+											<li>Tag 2</li>
+											<li>Taggg</li>
+											<li>Tag IV</li>
+										</ul>
+									</div>
+								</div>
+								<p class="white-text flow-text charcoal courier-new" style="margin-top: 1em;">Ordered Lists</p>
 								<div class="row charcoal-text">
 									<div class="col-xs-12 col-sm-3 col-md-3">
 										<p><strong>Default</strong></p>
@@ -242,26 +293,26 @@
 							</div>
 						</div>
 						<p class="padding"></p>
-						<h3 class="red-text courier-new-text fittext-compress">Text Layout</h3>
-						<p class="flow-text charcoal-text courier-new-text">Apply these classes to paragraphs or divs to create a layout.</p>
+						<h3 class="red-text lucida">Text Layout</h3>
+						<p class="flow-text charcoal-text courier-new">Apply these classes to paragraphs or divs to create a layout.</p>
 						<div class="row charcoal-text">
 							<div class="col-xs-12 col-sm-12 col-md-8">
-								<p class="flow-text white-text courier-new-text charcoal"><strong>.double-col</strong> - 2 column layout</p>
+								<p class="flow-text white-text courier-new charcoal"><strong>.double-col</strong> - 2 column layout</p>
 								<p class="arial-text double-col">
 								Lorem ipsum no facer prompta vim, movet ubique qui ei. Per no regione aliquid, ea mei nulla scribentur liberavisse. Vim cu tale ludus possit, discere suavitate nam ad. No verterem reprimique vix, phaedrum hendrerit an quo. Qui feugait apeirian ut, ne virtute numquam mandamus mea. Eos et enim dicant deterruisset. At nec ceteros mentitum, ex solum putent offendit per.
 								</p>
 								<p>&nbsp;</p>
-								<p class="flow-text white-text courier-new-text charcoal"><strong>.triple-col</strong> - 3 column layout</p>
+								<p class="flow-text white-text courier-new charcoal"><strong>.triple-col</strong> - 3 column layout</p>
 								<p class="arial-text triple-col">
 								Lorem ipsum no facer prompta vim, movet ubique qui ei. Per no regione aliquid, ea mei nulla scribentur liberavisse. Vim cu tale ludus possit, discere suavitate nam ad. No verterem reprimique vix, phaedrum hendrerit an quo. Qui feugait apeirian ut, ne virtute numquam mandamus mea. Eos et enim dicant deterruisset. At nec ceteros mentitum, ex solum putent offendit per.
 								</p>
 								<p>&nbsp;</p>
-								<p class="flow-text white-text courier-new-text charcoal"><strong>.quad-col</strong> - 4 column layout</p>
+								<p class="flow-text white-text courier-new charcoal"><strong>.quad-col</strong> - 4 column layout</p>
 								<p class="arial-text quad-col">
 								Lorem ipsum no facer prompta vim, movet ubique qui ei. Per no regione aliquid, ea mei nulla scribentur liberavisse. Vim cu tale ludus possit, discere suavitate nam ad. No verterem reprimique vix, phaedrum hendrerit an quo. Qui feugait apeirian ut, ne virtute numquam mandamus mea. Eos et enim dicant deterruisset. At nec ceteros mentitum, ex solum putent offendit per.
 								</p>
 							</div>
-							<div class="col-xs-12 col-sm-12 col-md-4 charcoal-text arial-text">
+							<div class="col-xs-12 col-sm-12 col-md-4 charcoal-text arial">
 								<div class="disabled padding">
 									<p><strong>.quint-col</strong> - 5 column layout<br /><strong>.six-col</strong> - 6 column layout<br /><strong>.sept-col</strong> - 7 column layout<br /><strong>.oct-col</strong> - 8 column layout</p>
 								</div>
@@ -281,45 +332,51 @@
 					<hr class="thick tomato" />
 				<!-- BRUTALIST UTILITY CLASSES -->
 					<div class="padded">
-						<h3 class="tomato-text courier-new-text fittext-compress" id="utils">Brutalist Utility Classes</h3>
-						<p class="charcoal-text courier-new-text flow-text">These classes are used for brutalizing your content. Apply them to any element.</p>
-						<div class="row arial-text charcoal-text">
+						<h3 class="tomato-text lucida" id="utils">Brutalist Utility Classes</h3>
+						<p class="charcoal-text courier-new flow-text">These classes are used for brutalizing your content. Apply them to any element.</p>
+						<div class="row arial charcoal-text">
 							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 								<p class="white-text courier-new-text flow-text"><span class="charcoal allcaps"><strong>Scale Classes</strong></span></p>
-								<p><strong>.enlarge / .enlarged</strong> - Enlarges container size by 50%<br />
+								<p><strong>.enlarge</strong> - Enlarges container size by 50%<br />
 									<strong>.double-size</strong> - Doubles size of container<br />
 									<strong>.triple-size</strong> - Triples size of container<br />
-									<strong>.shrink / .shrunk</strong> - Reduces container size by 25%<br />
+									<strong>.shrink</strong> - Reduces container size by 25%<br />
 									<strong>.half-size</strong> - Reduces container to half it's original size<br />
 									<strong>.quarter-size</strong> - Reduces container to 25% of original size<br /><br />
 								</p>
-								<p class="white-text courier-new-text flow-text"><span class="charcoal allcaps"><strong>Skew Classes</strong></span></p>
-								<p><strong>.skew / .skew-left</strong> - Skews container to left<br />
+								<p class="white-text courier-new flow-text"><span class="charcoal allcaps"><strong>Skew Classes</strong></span></p>
+								<p><strong>.skew</strong> - Skews container to left<br />
 									<strong>.skew-right</strong> - Skews container to right<br />
-									<strong>.perspective / .perspective-left</strong> - Angles container to the left<br />
+									<strong>.perspective</strong> - Angles container to the left<br />
 									<strong>.perspective-right</strong> - Angles container to the right<br /><br />
 								</p>
-								<p class="white-text courier-new-text flow-text"><span class="charcoal allcaps"><strong>Transformation Classes</strong></span></p>
+								<p class="white-text courier-new flow-text"><span class="charcoal allcaps"><strong>Transformation Classes</strong></span></p>
 								<p><strong>.flip</strong> - Flips container horizontally<br />
-									<strong>.flip-up</strong> - Flips container vertically<br /><br />
+									<strong>.flip-hover</strong> - Flip horizontally upon hover<br />
+									<strong>.flip-up</strong> - Flips container vertically<br />
+									<strong>.flip-up-hover</strong> - Flips vertically upon hover<br /><br />
 								</p>
 							</div>
 							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-								<p class="white-text courier-new-text flow-text"><span class="charcoal allcaps"><strong>Rotation Classes</strong></span></p>
-								<p><strong>.rotate-right</strong> - Rotates element 25 degrees to the right<br />
-									<strong>.rotate-left</strong> - Rotates element 25 degrees to the left<br />
-									<strong>.rotate-right-45</strong> - Rotates element 45 degrees to the right<br />
-									<strong>.rotate-left-45</strong> - Rotates element 45 degrees to the left<br />
-									<strong>.rotate-right-90</strong> - Rotates element 90 degrees to the right<br />
-									<strong>.rotate-left-90</strong> - Rotates element 90 degrees to the left<br /><br />
+								<p class="white-text courier-new flow-text"><span class="charcoal allcaps"><strong>Rotation Classes</strong></span></p>
+								<p><strong>.rr25</strong> - Rotate 25 degrees to the right<br />
+									<strong>.rl25</strong> - Rotate 25 degrees to the left<br />
+									<strong>.rr45</strong> - Rotate 45 degrees to the right<br />
+									<strong>.rl45</strong> - Rotate 45 degrees to the left<br />
+									<strong>.rr60</strong> - Rotate 60 degrees to the right<br />
+									<strong>.rl60</strong> - Rotate 60 degrees to the left<br />
+									<strong>.rr90</strong> - Rotate 90 degrees to the right<br />
+									<strong>.rl90</strong> - Rotate 90 degrees to the left<br /><br />
 								</p>
-								<p class="white-text courier-new-text flow-text"><span class="charcoal allcaps"><strong>Spacing Classes</strong></span></p>
-								<p><strong>.padding</strong> - Adds padding to container<br />
+								<p class="white-text courier-new flow-text"><span class="charcoal allcaps"><strong>Spacing Classes</strong></span></p>
+								<p><strong>.padding / .padded</strong> - 1em padding<br />
 									<strong>.no-padding</strong> - No padding on container<br />
-									<strong>.comfortable</strong> - Increases padding within container<br />
-									<strong>.uncomfortable</strong> - Negative padding within container<br />
-									<strong>.solitary</strong> - Increases margin spacing<br />
-									<strong>.sociable</strong> - Negative margin spacing
+									<strong>.comfortable</strong> - 3.33em padding<br />
+									<strong>.uncomfortable</strong> - Negative 1.75em padding<br />
+									<strong>.solitary</strong> - 3.33em margins<br />
+									<strong>.sociable</strong> - Negative 2.25em margins<br />
+									<strong>.paranoid</strong> - 1.75em margins on left and right<br />
+									<strong>.isolated</strong> - 1.75em margins on top and bottom<br />
 								</p>
 							</div>
 						</div>
@@ -329,66 +386,65 @@
 
 				<!-- FILTERS -->
 					<div class="padding">
-						<h3 class="red-text courier-new-text fittext-compress" id="filters">Filters</h3>
-						<p class="charcoal-text courier-new-text flow-text">Use these classes to apply filters to any element.</p>
-						<p class="padding alert lucida-text" style="margin-bottom: 1.5em;"><strong>NOTE:</strong> Filters do NOT work on IE 11! F<span class="baffle-forever">UCK</span> Internet Explorer anyway.</p>
+						<h3 class="red-text lucida bold" id="filters">Filters</h3>
+						<p class="charcoal-text courier-new flow-text">Use these classes to apply filters to any element.</p>
 						<div class="row charcoal-text">
 							<div class="col-xs-12 col-sm-6 col-md-3">
-								<p class="flow-text courier-new-text"><strong>Original Image</strong><br />
-								<img class="responsive" src="assets/images/brutal-building.jpg" /></p>
+								<p class="lucida"><strong>Original Image</strong><br />
+								<img class="responsive" src="files/images/brutal-building.jpg" /></p>
 							</div>
 							<div class="col-xs-12 col-sm-6 col-md-3">
-								<p class="flow-text courier-new-text"><strong>.invert</strong><br />
-								<img class="responsive invert" src="assets/images/brutal-building.jpg" /></p>
+								<p class="lucida"><strong>.invert</strong><br />
+								<img class="responsive invert" src="files/images/brutal-building.jpg" /></p>
 							</div>
 							<div class="col-xs-12 col-sm-6 col-md-3">
-								<p class="flow-text courier-new-text"><strong>.sepia</strong><br />
-								<img class="responsive sepia" src="assets/images/brutal-building.jpg" /></p>
+								<p class="lucida"><strong>.sepia</strong><br />
+								<img class="responsive sepia" src="files/images/brutal-building.jpg" /></p>
 							</div>
 							<div class="col-xs-12 col-sm-6 col-md-3">
-								<p class="flow-text courier-new-text"><strong>.grayscale</strong><br />
-								<img class="responsive grayscale" src="assets/images/brutal-building.jpg" /></p>
+								<p class="lucida"><strong>.grayscale</strong><br />
+								<img class="responsive grayscale" src="files/images/brutal-building.jpg" /></p>
 							</div>
 						</div>
 						<div class="row charcoal-text">
 							<div class="col-xs-12 col-sm-6 col-md-3">
-								<p class="flow-text courier-new-text"><strong>.darken</strong><br />
-								<img class="responsive darken" src="assets/images/brutal-building.jpg" /></p>
+								<p class="lucida"><strong>.darken</strong><br />
+								<img class="responsive darken" src="files/images/brutal-building.jpg" /></p>
 							</div>
 							<div class="col-xs-12 col-sm-6 col-md-3">
-								<p class="flow-text courier-new-text"><strong>.lighten</strong><br />
-								<img class="responsive lighten" src="assets/images/brutal-building.jpg" /></p>
+								<p class="lucida"><strong>.lighten</strong><br />
+								<img class="responsive lighten" src="files/images/brutal-building.jpg" /></p>
 							</div>
 							<div class="col-xs-12 col-sm-6 col-md-3">
-								<p class="flow-text courier-new-text"><strong>.blur</strong><br />
-								<img class="responsive blur" src="assets/images/brutal-building.jpg" /></p>
+								<p class="lucida"><strong>.blur</strong><br />
+								<img class="responsive blur" src="files/images/brutal-building.jpg" /></p>
 							</div>
 							<div class="col-xs-12 col-sm-6 col-md-3">
-								<p class="flow-text courier-new-text"><strong>.hue</strong><br />
-								<img class="responsive hue" src="assets/images/brutal-building.jpg" /></p>
+								<p class="lucida"><strong>.hue</strong><br />
+								<img class="responsive hue" src="files/images/brutal-building.jpg" /></p>
 							</div>
 						</div>
 						<div class="disabled arial-text padding">
-							<p class="flow-text courier-new-text allcaps"><strong>Hover Filter</strong></p>
+							<p class="flow-text courier-new allcaps"><strong>Hover Filter</strong></p>
 							<p>Apply a filter upon hover simply by adding <em>-hover</em> after the class. <br />
 							<strong>Examples:</strong> <em>.blur-hover</em>, <em>.grayscale-hover</em></p>
 						
 							<div class="row charcoal-text">
 								<div class="col-xs-12 col-sm-6 col-md-3">
-									<p class="courier-new-text darken"><strong>.darken .lighten-hover</strong><br />
-									<img class="responsive lighten-hover" src="assets/images/brutal-building.jpg" /></p>
+									<p class="courier-new darken"><strong>.darken .lighten-hover</strong><br />
+									<img class="responsive lighten-hover" src="files/images/brutal-building.jpg" /></p>
 								</div>
 								<div class="col-xs-12 col-sm-6 col-md-3">
-									<p class="courier-new-text hue-hover"><strong>.hue-hover</strong><br />
-									<img class="responsive" src="assets/images/brutal-building.jpg" /></p>
+									<p class="courier-new hue-hover"><strong>.hue-hover</strong><br />
+									<img class="responsive" src="files/images/brutal-building.jpg" /></p>
 								</div>
 								<div class="col-xs-12 col-sm-6 col-md-3">
-									<p class="courier-new-text grayscale"><strong>.grayscale .blur-hover</strong><br />
-									<img class="responsive blur-hover" src="assets/images/brutal-building.jpg" /></p>
+									<p class="courier-new grayscale"><strong>.grayscale .blur-hover</strong><br />
+									<img class="responsive blur-hover" src="files/images/brutal-building.jpg" /></p>
 								</div>
 								<div class="col-xs-12 col-sm-6 col-md-3">
-									<p class="courier-new-text"><strong>.invert-hover</strong><br />
-									<img class="responsive invert-hover" src="assets/images/brutal-building.jpg" /></p>
+									<p class="courier-new"><strong>.invert-hover</strong><br />
+									<img class="responsive invert-hover" src="files/images/brutal-building.jpg" /></p>
 								</div>
 							</div>
 						</div>
@@ -397,58 +453,58 @@
 					<hr class="thick tomato" />
 					
 				<!-- OPACITIES -->
-					<h3 class="red-text courier-new-text fittext-compress" id="opacities">Opacities</h3>
+					<h3 class="red-text lucida" id="opacities">Opacities</h3>
 					<div class="padding">
-						<p class="charcoal-text arial-text flow-text">Make elements have opacity, or force a transparent background (ideal for PNG images).</p>
+						<p class="charcoal-text courier-new flow-text">Make elements have opacity, or force a transparent background (ideal for PNG images).</p>
 						<div class="row charcoal-text">
 							<div class="col-xs-12 col-sm-6 col-md-3">
 								<h6 class="heavy lucida-text">.transparent</h6>
 								<p class="box-shadow-bottom grey lemon-text center">Applies a transparent background.<br />
-								<img src="assets/images/border.png" alt="Brutal Building" class="transparent large-thumb" />
+								<img src="files/images/border.png" alt="Brutal Building" class="transparent large-thumb" />
 								</p>
 							</div>
 							<div class="col-xs-12 col-sm-6 col-md-3">
-								<h6 class="heavy lucida-text">.semi-transparent</h6>
+								<h6 class="heavy lucida">.semi-transparent</h6>
 								<p class="box-shadow-bottom grey lemon-text center">Makes element 50% opaque.<br />
-								<img src="assets/images/brutal-building.jpg" alt="Brutal Building" class="semi-transparent large-thumb" />
+								<img src="files/images/brutal-building.jpg" alt="Brutal Building" class="semi-transparent large-thumb" />
 								</p>
 							</div>
 							<div class="col-xs-12 col-sm-6 col-md-3">
-								<h6 class="heavy lucida-text">.high-opacity</h6>
+								<h6 class="heavy lucida">.high-opacity</h6>
 								<p class="box-shadow-bottom grey lemon-text center">Makes element 75% opaque.<br />
-								<img src="assets/images/brutal-building.jpg" alt="Brutal Building" class="high-opacity large-thumb" />
+								<img src="files/images/brutal-building.jpg" alt="Brutal Building" class="high-opacity large-thumb" />
 								</p>
 							</div>
 							<div class="col-xs-12 col-sm-6 col-md-3">
-								<h6 class="heavy lucida-text">.low-opacity</h6>
+								<h6 class="heavy lucida">.low-opacity</h6>
 								<p class="box-shadow-bottom grey lemon-text center">Makes element 25% opaque.<br />
-								<img src="assets/images/brutal-building.jpg" alt="Brutal Building" class="low-opacity large-thumb" />
+								<img src="files/images/brutal-building.jpg" alt="Brutal Building" class="low-opacity large-thumb" />
 								</p>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-xs-12 col-sm-6 col-md-3">
-								<h6 class="heavy lucida-text">.transparent-hover</h6>
+								<h6 class="heavy lucida">.transparent-hover</h6>
 								<p class="box-shadow-bottom grey lemon-text center">Renders element invisible upon hover.<br />
-								<img src="assets/images/brutal-building.jpg" alt="Brutal Building" class="transparent-hover large-thumb" />
+								<img src="files/images/brutal-building.jpg" alt="Brutal Building" class="transparent-hover large-thumb" />
 								</p>
 							</div>
 							<div class="col-xs-12 col-sm-6 col-md-3">
-								<h6 class="heavy lucida-text">.semi-transparent-hover</h6>
+								<h6 class="heavy lucida">.semi-transparent-hover</h6>
 								<p class="box-shadow-bottom grey lemon-text center">Makes element 50% opaque upon hover.<br />
-								<img src="assets/images/brutal-building.jpg" alt="Brutal Building" class="semi-transparent-hover large-thumb" />
+								<img src="files/images/brutal-building.jpg" alt="Brutal Building" class="semi-transparent-hover large-thumb" />
 								</p>
 							</div>
 							<div class="col-xs-12 col-sm-6 col-md-3">
-								<h6 class="heavy lucida-text">.high-opacity-hover</h6>
+								<h6 class="heavy lucida">.high-opacity-hover</h6>
 								<p class="box-shadow-bottom grey lemon-text center">Makes element 75% opaque upon hover.<br />
-								<img src="assets/images/brutal-building.jpg" alt="Brutal Building" class="high-opacity-hover large-thumb" />
+								<img src="files/images/brutal-building.jpg" alt="Brutal Building" class="high-opacity-hover large-thumb" />
 								</p>
 							</div>
 							<div class="col-xs-12 col-sm-6 col-md-3">
-								<h6 class="heavy lucida-text">.low-opacity-hover</h6>
+								<h6 class="heavy lucida">.low-opacity-hover</h6>
 								<p class="box-shadow-bottom grey lemon-text center">Makes element 25% opaque upon hover.<br />
-								<img src="assets/images/brutal-building.jpg" alt="Brutal Building" class="low-opacity-hover large-thumb" />
+								<img src="files/images/brutal-building.jpg" alt="Brutal Building" class="low-opacity-hover large-thumb" />
 								</p>
 							</div>
 						</div>
@@ -457,31 +513,31 @@
 					<hr class="thick tomato" />
 					
 				<!-- BORDERS, SEPARATORS, SHAPES -->
-					<h3 class="tomato-text courier-new-text fittext-compress" id="borders">Borders & Separators</h3>
+					<h3 class="tomato-text lucida" id="borders">Borders & Separators</h3>
 					<div class="padding">
-						<p class="charcoal-text courier-new-text flow-text">Use these classes for borders and horizontal rule separators.</p>
-						<p class="white-text courier-new-text flow-text"><span class="charcoal allcaps"><strong>Basic Borders</strong></span></p>
-						<p class="charcoal-text arial-text">Basic borders can have flavors applied! Check out <em>Flavors</em> to see how to change the border color.<br /><br /></p>
-						<div class="row charcoal-text arial-text">
+						<p class="charcoal-text courier-new flow-text">Use these classes for borders and horizontal rule separators.</p>
+						<p class="white-text courier-new flow-text"><span class="charcoal allcaps"><strong>Basic Borders</strong></span></p>
+						<p class="charcoal-text arial">Basic borders can have flavors applied! Check out <em>Flavors</em> to see how to change the border color.<br /><br /></p>
+						<div class="row charcoal-text arial">
 							<div class="col-xs-12 col-sm-12 col-md-4">
-								<p class="flow-text border-solid-thin black-border" style="margin-bottom: 1em;"><strong>.border-solid-thin</strong></p>
-								<p class="flow-text border-solid-thick black-border" style="margin-bottom: 1em;"><strong>.border-solid-thick</strong></p>
-								<p class="flow-text border-solid-fat black-border" style="margin-bottom: 1em;"><strong>.border-solid-fat</strong></p>
+								<p class="border-solid-thin black-border" style="margin-bottom: 1em;"><strong>.border-solid-thin</strong></p>
+								<p class="border-solid-thick black-border" style="margin-bottom: 1em;"><strong>.border-solid-thick</strong></p>
+								<p class="border-solid-fat black-border" style="margin-bottom: 1em;"><strong>.border-solid-fat</strong></p>
 							</div>
 							<div class="col-xs-12 col-sm-12 col-md-4">
-								<p class="flow-text border-dotted-thin black-border" style="margin-bottom: 1em;"><strong>.border-dotted-thin</strong></p>
-								<p class="flow-text border-dotted-thick black-border" style="margin-bottom: 1em;"><strong>.border-dotted-thick</strong></p>
-								<p class="flow-text border-dotted-fat black-border" style="margin-bottom: 1em;"><strong>.border-dotted-fat</strong></p>
+								<p class="border-dotted-thin black-border" style="margin-bottom: 1em;"><strong>.border-dotted-thin</strong></p>
+								<p class="border-dotted-thick black-border" style="margin-bottom: 1em;"><strong>.border-dotted-thick</strong></p>
+								<p class="border-dotted-fat black-border" style="margin-bottom: 1em;"><strong>.border-dotted-fat</strong></p>
 							</div>
 							<div class="col-xs-12 col-sm-12 col-md-4">
-								<p class="flow-text border-dashed-thin black-border" style="margin-bottom: 1em;"><strong>.border-dashed-thin</strong></p>
-								<p class="flow-text border-dashed-thick black-border" style="margin-bottom: 1em;"><strong>.border-dashed-thick</strong></p>
-								<p class="flow-text border-dashed-fat black-border" style="margin-bottom: 1em;"><strong>.border-dashed-fat</strong></p>
+								<p class="border-dashed-thin black-border" style="margin-bottom: 1em;"><strong>.border-dashed-thin</strong></p>
+								<p class="border-dashed-thick black-border" style="margin-bottom: 1em;"><strong>.border-dashed-thick</strong></p>
+								<p class="border-dashed-fat black-border" style="margin-bottom: 1em;"><strong>.border-dashed-fat</strong></p>
 							</div>
 						</div>
-						<p class="white-text courier-new-text flow-text"><span class="charcoal allcaps"><strong>Outlines</strong></span></p>
-						<p class="charcoal-text arial-text">Add an outline border around any element. You can apply both borders and outlines to the same element. Similar to the border classes above, use outline in place of border. Below are some examples.</p>
-						<div class="row charcoal-text arial-text">
+						<p class="white-text courier-new flow-text"><span class="charcoal allcaps"><strong>Outlines</strong></span></p>
+						<p class="charcoal-text arial">Add an outline border around any element. You can apply both borders and outlines to the same element. Similar to the border classes above, use outline in place of border. Below are some examples.</p>
+						<div class="row charcoal-text arial">
 							<div class="col-xs-12 col-sm-12 col-md-4">
 								<p class="border-solid-thin outline-dashed-thick black-border red-outline" style="margin-bottom: 1.5em;"><strong>.border-solid-thin .outline-dashed-thick .red-outline</strong></p>
 								<p class="strawberry-banana outline-dotted-thick chocolate-outline os-5" style="margin-bottom: 1.75em;"><strong>.strawberry-banana .outline-dotted-thick .os-5</strong></p>
@@ -497,8 +553,8 @@
 								<strong>.os-2<br />.os-5<br />.os-10<br />.os-15<br />.os-20</strong></p>
 							</div>
 						</div>
-						<p class="white-text courier-new-text flow-text"><span class="charcoal allcaps"><strong>Horizontal Rules</strong></span></p>
-						<div class="row charcoal-text arial-text">
+						<p class="white-text courier-new flow-text"><span class="charcoal allcaps"><strong>Horizontal Rules</strong></span></p>
+						<div class="row charcoal-text arial">
 							<div class="col-xs-12 col-sm-12 col-md-4">
 								<p class="flow-text"><strong>hr.jagged-rule-dark</strong></p>
 								<hr class="jagged-rule-dark" />
@@ -519,42 +575,42 @@
 							</div>
 						</div>
 						<p class="padding"></p>
-						<p class="white-text courier-new-text flow-text"><span class="charcoal allcaps"><strong>Special Borders</strong></span></p>
+						<p class="white-text courier-new flow-text"><span class="charcoal allcaps"><strong>Special Borders</strong></span></p>
 						<div class="row">
 							<div class="col-xs-12 col-sm-12 col-md-6">
 								<div class="brutal-border-dark white">
-									<p class="fittext blue-text arial-text">.brutal-border-dark</p>
+									<p class="fittext blue-text arial">.brutal-border-dark</p>
 								</div>
 							</div>
 							<div class="col-xs-12 col-sm-12 col-md-6">
 								<div class="brutal-border-light white">
-									<p class="fittext blue-text arial-text">.brutal-border-light</p>
+									<p class="fittext blue-text arial">.brutal-border-light</p>
 								</div>
 							</div>
 						</div>
 						<div class="row" style="margin-top: 1em;">
 							<div class="col-xs-12 col-sm-12 col-md-6">
 								<div class="bevel white">
-									<p class="fittext blue-text arial-text">.bevel</p>
+									<p class="fittext blue-text arial">.bevel</p>
 								</div>
 							</div>
 							<div class="col-xs-12 col-sm-12 col-md-6">
 								<div class="emboss white">
-									<p class="fittext blue-text arial-text">.emboss</p>
+									<p class="fittext blue-text arial">.emboss</p>
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-xs-12 col-sm-12 col-md-6">
 								<div class="jagged white padding">
-									<p class="blue-text lucida-text fittext">.jagged</p>
-									<p class="grey-text arial-text">Creates a grey triangular border above and below an element.</p>
+									<p class="blue-text lucida fittext">.jagged</p>
+									<p class="grey-text arial">Creates a grey triangular border above and below an element.</p>
 								</div>
 							</div>
 							<div class="col-xs-12 col-sm-12 col-md-6">
 								<div class="jagged2 white padding">
-									<p class="blue-text lucida-text fittext">.jagged2</p>
-									<p class="grey-text arial-text">Jagged alternative</p>
+									<p class="blue-text lucida fittext">.jagged2</p>
+									<p class="grey-text arial">Jagged alternative</p>
 								</div>
 							</div>
 						</div>
@@ -568,7 +624,7 @@
 							</div>
 							<div class="col-xs-12 col-sm-12 col-md-4">
 								<div class="paranoid sketchbox silver grey-border border-dashed-thin">
-									<p class="flow-text blue-text center comic-sans-text">&nbsp;<br />.sketchbox<br />&nbsp;</p>
+									<p class="flow-text blue-text center comic-sans">&nbsp;<br />.sketchbox<br />&nbsp;</p>
 								</div>
 							</div>
 							<div class="col-xs-12 col-sm-12 col-md-4">
@@ -581,62 +637,63 @@
 					</div>
 					<p class="padding"></p>
 					<hr class="thick tomato" />
-				<!-- BOX SHADOWS -->
-				
-					<h3 class="red-text courier-new-text fittext-compress" id="boxes">Box Shadows</h3>
+					
+					<!-- BOX SHADOWS -->
+					<h3 class="red-text lucida" id="boxes">Box Shadows</h3>
 					<div class="padding">
-						<p class="charcoal-text arial-text" style="margin-bottom: 1.5em;">Apply these classes to add a box shadow. By default, box shadow colors are black, so to change the box shadow color, you will need to edit the colors in the core <strong><em>butch.css</em></strong> file.</p>
+						<p class="charcoal-text arial" style="margin-bottom: 1.5em;">Apply these classes to add a box shadow. By default, box shadow colors are black, so to change the box shadow color, you will need to edit the colors in the core <strong><em>butch.css</em></strong> file.</p>
 						<div class="row" style="margin-bottom: 1.5em;">
 							<div class="col-sm-12 col-md-3">
 								<div class="white box-shadow padded">
-									<p class="black-text lucida-text flow-text center"><strong>.box-shadow</strong></p>
+									<p class="black-text lucida center"><strong>.box-shadow</strong></p>
 								</div>
 							</div>
 							<div class="col-sm-12 col-md-3">
 								<div class="yellow box-shadow-thick padded">
-									<p class="black-text lucida-text flow-text center"><strong>.box-shadow-thick</strong></p>
+									<p class="black-text lucida center"><strong>.box-shadow-thick</strong></p>
 								</div>
 							</div>
 							<div class="col-sm-12 col-md-3">
 								<div class="lime box-shadow-fat padded">
-									<p class="black-text lucida-text flow-text center"><strong>.box-shadow-fat</strong></p>
+									<p class="black-text lucida center"><strong>.box-shadow-fat</strong></p>
 								</div>
 							</div>
 							<div class="col-sm-12 col-md-3">
 								<div class="blue box-shadow-double padded">
-									<p class="white-text lucida-text flow-text center"><strong>.box-shadow-double</strong></p>
+									<p class="white-text lucida center"><strong>.box-shadow-double</strong></p>
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-sm-12 col-md-3">
 								<div class="orange box-shadow-triple padded">
-									<p class="black-text lucida-text flow-text center"><strong>.box-shadow-triple</strong></p>
+									<p class="black-text lucida center"><strong>.box-shadow-triple</strong></p>
 								</div>
 							</div>
 							<div class="col-sm-12 col-md-3">
 								<div class="mint box-shadow-quad padded">
-									<p class="black-text lucida-text flow-text center"><strong>.box-shadow-quad</strong></p>
+									<p class="black-text lucida center"><strong>.box-shadow-quad</strong></p>
 								</div>
 							</div>
 							<div class="col-sm-12 col-md-3">
 								<div class="cotton-candy box-shadow-bottom padded">
-									<p class="black-text lucida-text flow-text center"><strong>.box-shadow-bottom</strong></p>
+									<p class="black-text lucida center"><strong>.box-shadow-bottom</strong></p>
 								</div>
 							</div>
 							<div class="col-sm-12 col-md-3">
 								<div class="peanut box-shadow-right padded">
-									<p class="white-text lucida-text flow-text center"><strong>.box-shadow-right</strong></p>
+									<p class="white-text lucida center"><strong>.box-shadow-right</strong></p>
 								</div>
 							</div>
 						</div>
 					</div>
-					<!-- TABLES -->
 				<p class="padding"></p>
 				<hr class="thick tomato"/>
+				
+				<!-- TABLES -->
 				<div class="padding">
-					<h3 class="red-text courier-new-text fittext-compress" id="tables">Tables</h3>
-					<p class="charcoal-text arial-text">Tables can be made responsive simply by applying the class <span class="heavy"><em>.responsive</em></span> directly to the <em>table</em> tag. On devices under 600px wide, each table row is displayed as a record. Re-size your browser window to see it in action.</p>
+					<h3 class="red-text lucida" id="tables">Tables</h3>
+					<p class="charcoal-text arial">Tables can be made responsive simply by applying the class <span class="heavy"><em>.responsive</em></span> directly to the <em>table</em> tag. On devices under 600px wide, each table row is displayed as a record. Re-size your browser window to see it in action.</p>
 					<div class="row">
 						<div class="col s12">
 						<table class="responsive">
@@ -679,53 +736,76 @@
 						</div>
 					</div>
 				</div>
-					<p class="padding"></p>
-					<hr class="thick tomato" />
+				<p class="padding"></p>
+				<hr class="thick tomato" />
+					
 				<!-- MEDIA -->
-					<h3 class="red-text courier-new-text fittext-compress" id="media">Media</h3>
-					<div class="padding">
-						<div class="row">
-							<div class="col-sm-12 col-md-6">
-								<h4 class="black white-text courier-new-text flow-text">Responsive Images</h4>
-								<p class="charcoal-text arial-text">To make an image fluid width so that it fits within any area, simply apply the class: <em><strong>.responsive</strong></em></p>
-								<div class="adaptor center" style="min-height: 200px; display: block;">
-									<img src="assets/images/bldg-drab.jpg" class="responsive" />
-								</div>
+				<h3 class="red-text lucida" id="media">Media</h3>
+				<div class="padding">
+					<div class="row">
+						<div class="col-sm-12 col-md-6">
+							<h4 class="black white-text courier-new flow-text">Responsive Images</h4>
+							<p class="charcoal-text arial">To make an image fluid width so that it fits within any area, simply apply the class: <em><strong>.responsive</strong></em></p>
+							<div class="adaptor center" style="min-height: 200px; display: block;">
+								<img src="files/images/bldg-drab.jpg" class="responsive" />
 							</div>
-							<div class="col-sm-12 col-md-6">
-								<h4 class="black white-text courier-new-text flow-text">Responsive Videos</h4>
-								<p class="charcoal-text arial-text">Use the <em>video</em> tag, and the video will be fluid-width. If embedding a YouTube, Vimeo, or any other third-party video that uses an iframe, simply wrap the <em>iframe</em> embed code within a div with class <strong><em>.video</em></strong>.</p>
-								<div class="video box-shadow">
-									<iframe src="https://www.youtube.com/embed/Dt7LZA1GutU?showinfo=0" frameborder="0" allowfullscreen></iframe>
-								</div>
+						</div>
+						<div class="col-sm-12 col-md-6">
+							<h4 class="black white-text courier-new flow-text">Responsive Videos</h4>
+							<p class="charcoal-text arial">Use the <em>video</em> tag, and the video will be fluid-width. If embedding a YouTube, Vimeo, or any other third-party video that uses an iframe, simply wrap the <em>iframe</em> embed code within a div with class <strong><em>.video</em></strong>.</p>
+							<div class="video box-shadow">
+								<iframe src="https://www.youtube.com/embed/Dt7LZA1GutU?showinfo=0" frameborder="0" allowfullscreen></iframe>
 							</div>
 						</div>
 					</div>
-			</div>
+				</div>
+			</div><!-- END Main Content -->
+			
+			<!-- Sidebar -->
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 no-padding black">
+				<img src="files/images/rupp-drive-brutalist.jpg" alt="BUTCH" class="responsive" style="margin-bottom: -6px;" />
+				<div class="glued">
+					<div class="row">
+						<div class="col-xs-12 no-padding">
+							<nav class="simple blue">
+								<ul class="courier-new flow-text lime-text">
+									<li class="invert-hover"><a href="#typog" class="lime-text">Typography</a></li>
+									<li class="invert-hover"><a href="#utils" class="lime-text">Utility Classes</a></li>
+									<li class="invert-hover"><a href="#filters" class="lime-text">Filters</a></li>
+									<li class="invert-hover"><a href="#opacities" class="lime-text">Opacities</a></li>
+									<li class="invert-hover"><a href="#borders" class="lime-text">Borders</a></li>
+									<li class="invert-hover"><a href="#boxes" class="lime-text">Box Shadows</a></li>
+									<li class="invert-hover"><a href="#tables" class="lime-text">Tables</a></li>
+									<li class="invert-hover"><a href="#media" class="lime-text">Media</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<a href="#scrolltop" class="lime invert-hover bold black-text scrolltop lucida">Back to Top &uarr;</a>
+				</div>
+			</div><!-- End Sidebar -->
 		</div>
 	</div>
-<footer class="black">
+</div>
+<footer>
+	<div class="container-1200 no-padding">
 	<div class="row">
 		<div class="col-sm-12">
-			<p class="courier-new-text black-text flow-text center">
-				<a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank"><span class="lime blue-text invert-hover">GITHUB PROJECT</span></a>&nbsp;
-				<a href="http://www.twitter.com/brutalistfwk" target="_blank">@brutalistfwk</a>
-			</p>
 			<div class="jagged gray">
 				<div class="row">
 					<div class="col-sm-12 col-md-12 col-lg-4">
-						<div class="padding flow-text vanilla-bean-text arial-text">
+						<div class="padding vanilla-bean-text arial-text">
 							<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="green yellow-text invert-hover">Pine Creative Labs</a> production</p>
 							<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-text invert-hover">Brad Fogelstrom</span></a></p>
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-12 col-lg-4">
-						<div class="padding flow-text vanilla-bean-text arial-text">
+						<div class="padding flow-text vanilla-bean-text arial">
 							<p>Interview on<br /><a href="http://www.brutalistwebsites.com/brutalistframework.com" target="_blank" class="white blue-text invert-hover">BrutalistWebsites.com</a>
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-12 col-lg-4">
-						<div class="padding arial-text vanilla-bean-text">
+						<div class="padding arial vanilla-bean-text">
 							<p class="flow-text">Contact us:</p>
 							<ul class="tags">
 								<li><a href="http://www.twitter.com/brutalistfwk" target="_blank" class="btn white-text blue-candy hue-hover"><strong>Twitter</strong></a></li>
@@ -735,35 +815,62 @@
 					</div>
 				</div>
 			</div>
-			<p class="center white-text lucida-text">&copy; 2019 <em>BrutalistFramework</em>. All rights reserved.</p>
+			<p class="center white-text lucida">&copy; 2020 <em>BrutalistFramework</em>. All rights reserved.</p>
 		</div>
+	</div>
 	</div>
 </footer>
 
 <!-- Sticky Download Box -->
-<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.9.zip" target="_blank">
-<div class="sticky-bottom-right stack-top padding red">
-	<div class="skew lemon-lime-gradient btn invert-hover">
-		<p class="flow-text black-text lucida-text skew-right"><strong>Download</strong></p>
+<a href="#download" data-modal-open>
+<div class="sticky-bottom-right stack-top red jagged" style="padding: 8px;">
+	<div class="skew sweden btn invert-hover">
+		<p class="flow-text lucida skew-right"><strong>Download</strong></p>
 	</div>
-	<p class="lime-text center">Version 1.9</p>
+	<p class="glitch bold yellow-text center">Version 2.0.2.0</p>
 </div></a>
-<!-- End Sticky -->
+<!-- Download Modal -->
+<div id="download" style="display:none;">
+	<div class="container monochrome" style="max-width: 760px;">
+		<div class="row">
+			<div class="col-sm-12 col-md-6 no-padding">
+				<div class="padded">
+					<h4 class="lucida">Download</h5>
+					<p>Released 2/20/2020</p>
+					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.0.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.0.2.0</a></p><hr class="jagged-rule-dark" />
+					<p><strong><span style="font-size: 1.4em;">Legacy Versions</span></strong><br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.9.zip" target="_blank">Brutalist Framework 1.9</a><br /><br /></p>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-6 no-padding">
+				<div class="sweden-gradient padded">
+					<h5 class="lucida white-text"><i class="bi bi-amp"></i>Brutal Blast /<span class="blink-182">/</span>/<span class="blink">/</span>/</h5>
+					<p class="bold">Subscribe to our e-newsletter and receive periodic updates.</p>
+				</div>
+				<div class="black padded">
+					<!-- Email signup form here -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Initiate and display modal itself -->
+<div class="modal">
+	<div class="modal-inner draggable"><!-- Remove "draggable" class to prevent modals from being moveable -->
+		<span data-modal-close>&times;</span>
+		<div class="modal-content"></div>
+	</div>
+</div>
 
-<!--  Scripts-->
-<script src="js/jquery.js"></script>
-<script src="js/brutalist.js"></script>
-<script src="js/start.brutalizing.js"></script>
+<!-- Core Scripts -->
+<script src="core/js/jquery.js"></script>
+<script src="core/js/brutalist.js"></script>
+<script src="core/js/start.brutalizing.js"></script>
+
+<!-- Plugin Scripts -->
+<script src="plugins/megamenu/view.js"></script>
 
 <!-- TRACKING -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-93046252-1', 'auto');
-  ga('send', 'pageview');
-</script>
 </body>
 </html>

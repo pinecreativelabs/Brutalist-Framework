@@ -1,0 +1,20 @@
+/* Brutalist Framework 2.0.2.0 CORE CSS */
+/* Load Default */
+@import url('default.css');
+/* Load Grids */
+@import url('grids/flexboxgrid.css');
+@import url('grids/b3grid.css');
+/* Load ReBAR */
+@import url('rebar.css');
+/* Load Flavors */
+@import url('flavors.css');
+/* Load BUTCH */
+@import url('butch.css');
+/* Load BUIX */
+@import url('buix.css');
+/* Load BFX */
+@import url('bfx.css');
+/* Load bIcons */
+@import url('bicons.css');
+/* Load Animations */
+@import url('animations.css');

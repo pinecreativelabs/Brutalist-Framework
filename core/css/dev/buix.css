@@ -1,0 +1,371 @@
+/*************************************************
+BUIX - Brutalist User Interface Experience
+**************************************************/
+
+/* BUTTONS
+**********************************/
+button, .button, .btn, input[type="submit"] {
+	text-align: center;
+	display: inline-block; cursor: pointer;
+	padding: 0.3em; margin: 0.3em;
+	line-height: 150%;
+}
+.blocked:hover { cursor: not-allowed !important; }
+.large-btn { padding: 2em; line-height: 180%; }
+.medium-btn { padding: 1.45em; line-height: 160%; }
+.small-btn { padding: 0.75em; line-height: 140%; }
+.full-btn { display: block; width: 100%; text-align: center; }
+
+/* NAVIGATION
+**********************************/
+/* Default Nav */
+nav a { display: block; }
+nav a.active { text-decoration: underline; }
+nav a:hover { text-decoration: underline; }
+nav ul li ul li a { padding-left: 0.5em; }
+nav ul li ul li ul li a { padding-left: 1em; }
+nav ul li ul li ul li ul li a { padding-left: 1.5em; }
+
+/* Simple Nav */
+ul.simple-nav, nav.simple ul {
+  display: block;
+  font-size: 1.2em;
+  width: 100%;
+  margin: 0 auto; padding: 0 !important;
+  list-style: none;
+  background: transparent; /* transparent by default. Use flavors to add color! */
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+ul.simple-nav li, nav.simple li { 
+	display: block; width: 100%;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	padding: 0.45em;
+}
+ul.simple-nav li a, nav.simple ul li a{
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  padding: 0;
+}
+ul.simple-nav li span, nav.simple ul li span {
+  display: none;
+}
+
+ul.simple-nav li a:hover span, nav.simple ul li a:hover span {
+  display: block;
+  font-size: 0.8em;
+  padding: 10px 0;
+}
+ul.simple-nav li.active, nav.simple ul li.active {
+	font-size: 140%; font-weight: 600;
+}
+
+ul.simple-nav li ul { list-style: none; padding: 0; margin: 0; }
+ul.simple-nav li ul li { list-style: none; padding-left: 0.8em; margin: 0;  }
+ul.simple-nav li ul li a { border: none; }
+ul.simple-nav li ul li a:hover { border-top: none; border-right: 3px solid #fff; border-left: 3px solid #fff; }
+
+.jagged nav { padding: 0; margin: 0; }
+
+/* SCROLLTOP: Scroll back to top
+**********************************/
+a.scrolltop { display: block; width: 100%; padding: 0.6em; font-size: 1.6em; text-align: center; }
+a.scrolltop:hover { text-decoration: line-through; }
+
+/* RESIZE: Make element resizeable (not supported in IE)
+**********************************/
+.resize { resize: both; -moz-resize: both; overflow: auto; }
+
+/* STACKS: create layers
+**********************************/
+.stack-auto { display: flex; }
+.stack-auto.draggable { position: absolute; }
+.stack-auto.draggable, .stack-auto.brick { display: inline-block !important; }
+.stack-base, .stack0 { z-index: 0 !important; }
+.stack1 { z-index: 1 !important; }
+.stack2 { z-index: 2 !important; }
+.stack3 { z-index: 3 !important; }
+.stack4 { z-index: 4 !important; }
+.stack5 { z-index: 5 !important; }
+.stack6 { z-index: 6 !important; }
+.stack7 { z-index: 7 !important; }
+.stack8 { z-index: 8 !important; }
+.stack9 { z-index: 9 !important; }
+.stack-middle { z-index: 29 !important; }
+.stack-high { z-index: 49 !important; }
+.stack-top { z-index: 99 !important; }
+
+/* StackSwitch 
+**********************************/
+.stackswitch-wrap { }
+.stackswitch { position: relative; }
+.stackswitch .layers { position: relative; }
+.stackswitch .layers div { width: 100%; display: none; }
+.stackswitch .layers div.active{ display: block; }
+
+/* STICKIES: fixed positions 
+**********************************/
+.glued { position: -webkit-sticky; position: sticky; top: 0px; }
+.sticky { position: fixed; }
+.sticky-bottom { position: fixed; bottom: 0; }
+.sticky-bottom-right { position: fixed; bottom: 0; right: 0; }
+.sticky-bottom-left { position: fixed; bottom: 0; left: 0; }
+.sticky-top { position: fixed; top: 0; }
+.sticky-top-right { position: fixed; top: 0; right: 0; }
+.sticky-top-left { position: fixed; top: 0; left: 0; }
+
+/* REVEAL (hover)
+**********************************/
+.reveal.hover { display: inline-block; transition: transform 2s; -webkit-transition: transform 2s; }
+.reveal.hover .secret { display: none; }
+.reveal.hover:hover, .reveal.hover:active, .reveal.hover:focus { 
+	cursor: pointer; 
+	-ms-transform: scale(1.5,1.5); /* IE 9 */
+	-webkit-transform: scale(1.5,1.5); /* Safari */
+	transform: scale(1.5,1.5); /* Standard syntax */
+}
+.reveal.hover:hover .secret, .reveal.hover:active .secret, .reveal.hover:focus .secret { display: block; }
+
+/* REVEAL (toggle)
+**********************************/
+.reveal.toggle {
+  margin-bottom: 1.2rem 0;
+}
+.reveal.toggle input[type='checkbox'].toggle { display: none; }
+.label-toggle {
+  display: block;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+.label-toggle:hover {}
+.label-toggle::before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateY(-2px);
+  transition: transform .2s ease-out;
+}
+.toggle:checked + .label-toggle::after { content: 'X'; position: relative; right: -20px; }
+.toggle:checked + .label-toggle::before { transform: rotate(90deg) translateX(-3px); }
+.toggle:checked + .label-toggle { padding-left: 1.25em; }
+.toggle-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+.toggle:checked + .label-toggle + .toggle-content {
+  max-height: 350px;
+}
+.toggle:checked + .label-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.toggle-content .content-inner { padding: 0.75rem; }
+
+/* THUMBNAILS
+**********************************/
+ul.thumbs-micro, ul.thumbs-tiny, ul.thumbs-small, ul.thumbs-medium, ul.thumbs-large, ul.thumbs-xlarge {
+	list-style: none; padding: 0; margin: 0; display: inline-block; width: 100%;
+}
+ul.thumbs-micro li, ul.thumbs-tiny li, ul.thumbs-small li, ul.thumbs-medium li, ul.thumbs-large li, ul.thumbs-xlarge li {
+	display: inline-block; float: left;
+}
+.thumbs-micro img, img.micro-thumb, picture.micro-thumb img { height: 40px; width: auto; }
+.thumbs-tiny img, img.tiny-thumb, picture.tiny-thumb img { height: 60px; width: auto; }
+.thumbs-small img, img.small-thumb, picture.small-thumb img { height: 90px; width: auto; }
+.thumbs-medium img, img.medium-thumb, picture.medium-thumb img { height: 120px; width: auto; }
+.thumbs-large img, img.large-thumb, picture.large-thumb img { height: 150px; width: auto; }
+.thumbs-xlarge img, img.xlarge-thumb, picture.xlarge-thumb img { height: 200px; width: auto; }
+
+/* MODALS
+**********************************/
+.modal { display: none; }
+.vanilla-modal .modal {
+  display: block; position: fixed;
+  content: "";
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1; opacity: 0;
+  transition: opacity 0.2s, z-index 0s 0.2s;
+  text-align: center;
+  overflow: hidden; overflow-y: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.vanilla-modal .modal > * {
+  display: inline-block;
+  white-space: normal;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.vanilla-modal .modal:before {
+  display: inline-block;
+  overflow: hidden;
+  width: 0; height: 100%;
+  vertical-align: middle;
+  content: "";
+}
+
+.vanilla-modal.modal-visible .modal {
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.modal-inner {
+  position: relative; overflow: hidden;
+  max-width: 90%; max-height: 90%;
+  overflow-x: hidden; overflow-y: auto;
+  background: #fff;
+  z-index: -1; opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.2s, transform 0.2s, z-index 0s 0.2s;
+}
+.modal-visible .modal-inner {
+  z-index: 10000; opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+[data-modal-close] {
+  position: absolute;
+  z-index: 2;
+  right: 0; top: 0;
+  width: 30px; height: 30px;
+  line-height: 30px;
+  font-size: 20px; font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  background: #fff; color: #000;
+  box-shadow: -1px 1px 2px rgba(0,0,0,0.2);
+}
+[data-modal-close]:hover { color: #fff; background: #000; }
+
+/* FORMS
+**********************************/
+form { display: block; }
+form .form-group { display: block; margin-top: 0.75em; margin-bottom: 0.75em; }
+form input[type="text"], form input[type="email"], form input[type="tel"], form input[type="url"], form input[type="number"] { 
+	padding: 0.4em; margin: 0.25em; display: block; width: 98.5%; 
+}
+form input[type="checkbox"] { width: 1.5em; height: 1.5em; margin: 0.25em; }
+form input[type="radio"] { width: 1.5em; height: 1.5em; margin: 0.25em; }
+label.radio, label.checkbox { line-height: 1.5em; font-size: 1.1em; margin: 0.25em; }
+form select { width: 98.5%; padding: 0.4em; margin: 0.25em; }
+form select option { background: #ccc; color: #333; font-size: 1.35em;}
+form textarea { width: 98.5%; min-height: 3em; padding: 0.4em; margin: 0.25em; }
+form input[type="text"]:active, form input[type="email"]:active, form input[type="tel"]:active, form input[type="url"]:active, form input[type="number"]:active, form textarea:active, 
+form input[type="text"]:focus, form input[type="email"]:focus, form input[type="tel"]:focus, form input[type="url"]:focus, form input[type="number"]:focus, form textarea:focus, form select:focus, form select:active { 
+	border: 3px solid #333; outline: none !important; 
+}
+form input[type="submit"] { padding: 0.75em; margin: 0.25em; }
+
+/* BASIC TABS 
+**********************************/
+.tabs {
+	display: flex;
+	flex-wrap: wrap;
+}
+.tabs label {
+	order: 1; /* Put the labels first */
+	display: block;
+	padding: 1rem 2rem;
+	margin-right: 0.2rem;
+	cursor: pointer;
+  transition: background ease 0.2s;
+}
+.tabs .tab {
+  order: 99; /* Put the tabs last */
+  flex-grow: 1;
+	width: 100%;
+	display: none;
+  padding: 1rem;
+}
+.tabs input[type="radio"] { display: none; }
+.tabs input[type="radio"]:checked + label { background: #fff; }
+.tabs input[type="radio"]:checked + label::after { content:""; display: block; height: 4px; background: #000; }
+.tabs input[type="radio"]:checked + label + .tab { display: block; }
+
+@media (max-width: 45em) {
+  .tabs .tab, .tabs label { order: initial; }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+
+.tab__header { display: block; clear: both; }
+.tab__header > div {
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  padding: 10px;
+  background: #333;
+  color: #FFF;
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+}
+
+.tab__header > div:hover { background: #0288D1; cursor: pointer; }
+.tab__header > div.tab__header--active { background: #0288D1; }
+.tab__content {
+  display: block;
+  clear: both;
+  background: #fafafa;
+  color: #212121;
+  width: 100%;
+  height: inherit;
+  overflow: auto;
+  padding: 0 0 20px 0;
+}
+.tab__content > div {
+  display: inline-block;
+  vertical-align: top;
+  float: left; display: none;
+}
+.tab__content > div.tab__content--active { display: block; }
+
+
+/* DRAGGABLE
+**********************************/
+.draggable { cursor: move; }
+
+/* SCROLLER
+**********************************/
+.scroller-wrap { display: block; width: 100%; overflow: hidden; }
+.scroll-left, .scroll-right, .scroll-up, .scroll-down { display: block; position: relative; overflow: hidden; }
+.scroll-left { animation: scroll-left 10s linear infinite; width: 200%; }
+.scroll-right { animation: scroll-right 10s linear infinite; width: 100%; }
+.scroll-up { animation: scroll-up 10s linear infinite; }
+.scroll-down { animation: scroll-down 10s linear infinite; }
+.scroll-left .scroll-item, .scroll-right .scroll-item { display: block; }
+.scroll-right .scroll-item { float: right; }
+.scroll-left .scroll-item { float: left; }
+.scroll-up .scroll-item, .scroll-down .scroll-item { display: block !important; }
+.scroll-left:hover, .scroll-right:hover, .scroll-up:hover, .scroll-down:hover {
+    animation-play-state: paused;
+}
+@keyframes scroll-left {
+	0% {left:100%;}
+	100% {left:-100%;}
+}
+@keyframes scroll-right {
+	0% {right:100%}
+	100% {right:-100%;}
+}
+@keyframes scroll-up {
+	0% {top:100%;}
+	100% {top:-250%;}
+}
+@keyframes scroll-down {
+	0% {bottom:220%;}
+	100% {bottom:-220%;}
+}

@@ -1,0 +1,80 @@
+/* B3GRID: BRUTAL BLOCKS 'n BRICKS GRID
+****************************************/
+.blocks, .block-wrap, .bricks, .brick-wrap, ul.tiles { /* Wrapper for blocks, bricks, tiles */
+	display: flex; display: -webkit-flex; display: -ms-flex; flex-wrap: wrap; -webkit-flex-wrap: wrap; 
+	box-sizing: border-box; align-items: baseline; 
+} 
+.blocks.row, .bricks.row, ul.tiles { flex-direction: row; -webkit-flex-direction: row; -moz-flex-direction: row; } /* Align items in a horizontal row */
+.blocks.col, .bricks.col { flex-direction: column; -webkit-flex-direction: column; -moz-flex-direction: column; } /* Align items in a vertical column */
+.blocks ul, .blocks ul li, .bricks ul, .bricks ul li, ul.bricks, ul.blocks { padding: 0; margin: 0; }
+.blocks p, .bricks p { display: block; width: 100%; }
+.blocks.center, .bricks.center { justify-content: center; align-content: center; align-items: center; } /* Center items within these containers */
+.blocks.around, .bricks.around { align-content: space-around; align-items: stretch;  }
+.blocks.stretch { align-items: stretch !important; } 
+.block { display: block; flex: 1; -ms-flex: 1; -webkit-flex: 1; flex-grow: 1; }
+.brick { display: inline-block; margin: 0; padding: 1em; }
+.brick.right { float: right; }
+.brick.left { float: left; }
+
+/* Tiles - Use with unordered lists */
+ul.tiles { list-style-type: none; width: 100%; padding: 0; margin: 0; flex-direction: row; flex-wrap: wrap; }
+ul.tiles li { align-self: stretch; -webkit-align-self: stretch; padding: 1em; max-width: 50%; }
+ul.tiles.thirds li { width: calc(100% / 3); }
+ul.tiles.fourths li { width: calc(100% / 4); }
+ul.tiles.fifths li { width: calc(100% / 5); }
+
+/* Alignments - vertically align individual blocks and bricks */
+.block.top, .brick.top { align-self: flex-start; -ms-flex-align: start; -webkit-box-align: start; align-items: flex-start; }
+.block.middle, .brick.middle { align-self: center; -ms-flex-align: center; -webkit-box-align: center; align-items: center; }
+.block.bottom, .brick.bottom { align-self: flex-end; -ms-flex-pack: end; -webkit-box-pack: end; justify-content: flex-end; }
+
+/* Directions */
+.blocks.reverse, .bricks.reverse { -webkit-flex-direction: row-reverse; flex-direction: row-reverse; }
+
+/* Widths - works with both blocks and bricks */
+.b20 { -webkit-flex-basis: 20%; flex-basis: 20%; width: 20%; max-width: 20%; }
+.b25 { -webkit-flex-basis: 25%; flex-basis: 25%; width: 25%; max-width: 25%; }
+.b30 { -webkit-flex-basis: 30%; flex-basis: 30%; width: 30%; max-width: 30%; }
+.b33 { -webkit-flex-basis: 33.33%; flex-basis: 33.33%; width: 33.33%; max-width: 33.33%; }
+.b40 { -webkit-flex-basis: 40%; flex-basis: 40%; width: 40%; max-width: 40%; }
+.b50 { -webkit-flex-basis: 50%; flex-basis: 50%; width: 50%; max-width: 50%; }
+.b60 { -webkit-flex-basis: 60%; flex-basis: 60%; width: 60%; max-width: 60%; }
+.b66 { -webkit-flex-basis: 66.66%; flex-basis: 66.66%; width: 66.66%; max-width: 66.66%; }
+.b70 { -webkit-flex-basis: 70%; flex-basis: 70%; width: 70%; max-width: 70%; }
+.b75 { -webkit-flex-basis: 75%; flex-basis: 75%; width: 75%; max-width: 75%; }
+.b80 { -webkit-flex-basis: 80%; flex-basis: 80%; width: 80%; max-width: 80%; }
+.b100 { -webkit-flex-basis: 100%; flex-basis: 100%; width: 100%; max-width: 100%; }
+
+/* Growth Rates */
+.block.g0, .block.no-grow { flex-grow: 0; -webkit-flex-grow: 0; -moz-flex-grow: 0; }
+.block.g1 { flex-grow: 1; -webkit-flex-grow: 1; -moz-flex-grow: 1; }
+.block.g2 { flex-grow: 2; -webkit-flex-grow: 2; -moz-flex-grow: 2; }
+.block.g3 { flex-grow: 3; -webkit-flex-grow: 3; -moz-flex-grow: 3; }
+.block.g4 { flex-grow: 4; -webkit-flex-grow: 4; -moz-flex-grow: 4; }
+.block.g5 { flex-grow: 5; -webkit-flex-grow: 5; -moz-flex-grow: 5; }
+
+/* Heights */
+.bh20 { height: 20vh; }
+.bh25 { height: 25vh; }
+.bh30 { height: 30vh; }
+.bh33 { height: 33vh; }
+.bh40 { height: 40vh; }
+.bh50 { height: 50vh; }
+.bh60 { height: 60vh; }
+.bh70 { height: 70vh; }
+.bh75 { height: 75vh; }
+.bh80 { height: 80vh; }
+.bh100 { height: 100vh; }
+
+/* Media Queries */
+@media only screen and (min-width:601px) and (max-width:960px) {}
+@media only screen and (min-width: 481px) and (max-width:600px) { 
+	ul.tiles.thirds li, ul.tiles.fourths li, ul.tiles.fifths li { width: calc(100% / 2); width: 50%; max-width: 50%; }
+}
+@media only screen and (min-width:320px) and (max-width:480px) {
+	.b20, .b33, ul.tiles.thirds li, ul.tiles.fourths li, ul.tiles.fifths li { width: 50%; max-width: 50%; flex-basis: 50%; -webkit-flex-basis: 50%; }
+}
+
+@media only screen and (max-width:320px) {
+	.b20, .b25, .b33, .b40, .b50, .b60, .b66, .b70, .b75, .b80, ul.tiles.thirds li, ul.tiles.fourths li, ul.tiles.fifths li { width: 100%; max-width: 100%; -webkit-flex-basis: 100%; flex-basis: 100%; }
+}

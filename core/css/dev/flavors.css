@@ -1,0 +1,571 @@
+/* FLAVORS Library
+======================== */
+
+/* Whites */
+.vanilla, .white { background-color: #fff !important; }
+.vanilla-text, .white-text { color: #fff !important; }
+.vanilla-text-shadow, .white-text-shadow { text-shadow: 2px 2px #fff !important; }
+.vanilla-border, .white-border { border-color: #fff !important; }
+.vanilla-outline, .white-outline { outline-color: #fff !important; }
+.vanilla-bean { background-color: #FBFBEF !important; }
+.vanilla-bean-text { color: #FBFBEF !important; }
+.vanilla-bean-text-shadow { text-shadow: 2px 2px #FBFBEF !important; }
+.vanilla-bean-border { border-color: #FBFBEF !important; }
+.vanilla-bean-outline { outline-color: #FBFBEF !important; }
+.coconut { background-color: #f7f9e0 !important; }
+.coconut-text { color: #f7f9e0 !important; }
+.coconut-text-shadow { text-shadow: 2px 2px #f7f9e0 !important; }
+.coconut-border { border-color: #f7f9e0 !important; }
+.coconut-outline { outline-color: #f7f9e0 !important; }
+.rice { background-color: #f4f1e4 !important; }
+.rice-text { color: #f4f1e4 !important; }
+.rice-text-shadow { text-shadow: 2px 2px #f4f1e4 !important; }
+.rice-border { border-color: #f4f1e4 !important; }
+.rice-outline { outline-color: #f4f1e4 !important; }
+
+/* Shades of Grey */
+.silver { background-color: #C0C0C0 !important; }
+.silver-text { color: #C0C0C0 !important; }
+.silver-text-shadow { text-shadow: 2px 2px #C0C0C0 !important; }
+.silver-border { border-color: #c0c0c0 !important; }
+.silver-outline { outline-color: #c0c0c0 !important; }
+.grey, .gray { background-color: #808080 !important; }
+.grey-text, .gray-text { color: #808080 !important; }
+.grey-text-shadow, .gray-text-shadow { text-shadow: 2px 2px #808080 !important; }
+.gray-border, .grey-border { border-color: #808080 !important; }
+.grey-outline, .gray-outline { outline-color: #808080 !important; }
+.black { background-color: #000 !important; }
+.black-text { color: #000 !important; }
+.black-text-shadow { text-shadow: 2px 2px #000 !important; }
+.black-border { border-color: #000 !important; }
+.black-outline { outline-color: #000 !important; }
+.charcoal { background-color: #2e2e2e !important; }
+.charcoal-text { color: #2e2e2e !important; }
+.charcoal-text-shadow { text-shadow: 2px 2px #2e2e2e !important; }
+.charcoal-border { border-color: #2e2e2e !important; }
+.charcoal-outline { outline-color: #2e2e2e !important; }
+.mushroom { background-color: #cfd8dc !important; }
+.mushroom-text { color: #cfd8dc !important; }
+.mushroom-text-shadow { text-shadow: 2px 2px #cfd8dc !important; }
+.mushroom-border { border-color: #cfd8dc !important; }
+.mushroom-outline { outline-color: #cfd8dc !important; }
+.platinum { background-color: #e6e6e6 !important; }
+.platinum-text { color: #e6e6e6 !important; }
+.platinum-text-shadow { text-shadow: 2px 2px #e6e6e6 !important; }
+.platinum-border { border-color: #e6e6e6 !important; }
+.platinum-outline { outline-color: #e6e6e6 !important; }
+
+/* Reds */
+.red, .tomato { background-color: #ff0000 !important; }
+.red-text, .tomato-text { color: #ff0000 !important; }
+.red-text-shadow, .tomato-text-shadow { text-shadow: 2px 2px #ff0000 !important; }
+.red-border, .tomato-border { border-color: #ff0000 !important; }
+.red-outline, .tomato-outline { outline-color: #ff0000 !important; }
+.strawberry { background-color: #FE2E2E !important; }
+.strawberry-text { color: #FE2E2E !important; }
+.strawberry-text-shadow { text-shadow: 2px 2px #fe2e2e !important; }
+.strawberry-border { border-color: #FE2E2E !important; }
+.strawberry-outline { outline-color: #FE2E2E !important; }
+.blood, .maroon { background-color: #800000 !important; }
+.blood-text, .maroon-text { color: #800000 !important; }
+.blood-text-shadow, .maroon-text-shadow { text-shadow: 2px 2px #800000 !important; }
+.blood-border, .maroon-border { border-color: #800000 !important; }
+.blood-outline, .maroon-outline { outline-color: #800000 !important; }
+.blood-orange { background-color: #dd2c00 !important; }
+.blood-orange-text { color: #dd2c00 !important; }
+.blood-orange-text-shadow { text-shadow: 2px 2px #dd2c00 !important; }
+.blood-orange-border { border-color: #dd2c00 !important; }
+.blood-orange-outline { outline-color: #dd2c00 !important; }
+.cherry { background-color: #b52026 !important; }
+.cherry-text { color: #b52026 !important; }
+.cherry-text-shadow { text-shadow: 2px 2px #b52026 !important; }
+.cherry-border { border-color: #b52026 !important; }
+.cherry-outline { outline-color: #b52026 !important; }
+.chilli, .chili { background-color: #c21807 !important; }
+.chili-text, .chilli-text { color: #c21807 !important; }
+.chilli-text-shadow, .chili-text-shadow { text-shadow: 2px 2px #c21807 !important; }
+.chilli-border, .chili-border { border-color: #c21807 !important; }
+.chili-outline, .chilli-outline { outline-color: #c21807 !important; }
+.sangria, .black-cherry { background-color: #5e1914 !important; }
+.sangria-text, .black-cherry-text { color: #5e1914 !important; }
+.sangria-text-shadow, .black-cherry-text-shadow { text-shadow: 2px 2px #5e1914 !important; }
+.sangria-border, .black-cherry-border { border-color: #5e1914 !important; }
+.sangria-outline, .black-cherry-outline { outline-color: #5e1914 !important; }
+.fruit-punch { background-color: #6f0215 !important; }
+.fruit-punch-text { color: #6f0215 !important; }
+.fruit-punch-text-shadow { text-shadow: 2px 2px #6f0215 !important; }
+.fruit-punch-border { border-color: #6f0215 !important; }
+.fruit-punch-outline { outline-color: #6f0215 !important; }
+.grapefruit { background-color: #f25f53 !important; }
+.grapefruit-text { color: #f25f53 !important; }
+.grapefruit-text-shadow { text-shadow: 2px 2px #f25f53 !important; }
+.grapefruit-border { border-color: #f25f53 !important; }
+.grapefruit-outline { outline-color: #f25f53 !important; }
+.mahogany { background-color: #420d09 !important; }
+.mahogany-text{ color: #420d09 !important; }
+.mahogany-text-shadow { text-shadow: 2px 2px #420d09 !important; }
+.mahogany-border { border-color: #420d09 !important; }
+.mahogany-outline { outline-color: #420d09 !important; }
+
+/* Oranges */
+.orange { background-color: #fc6600 !important; }
+.orange-text { color: #ff9800 !important; }
+.orange-text-shadow { text-shadow: 2px 2px #ff9800 !important; }
+.orange-border { border-color: #ff9800 !important; }
+.orange-outline { outline-color: #ff9800 !important; }
+.pumpkin, .pumpkin-spice { background-color: #e65100 !important; }
+.pumpkin-text, .pumpkin-spice-text { color: #e65100 !important; }
+.pumpkin-text-shadow, .pumpkin-spice-text-shadow { text-shadow: 2px 2px #e65100 !important; }
+.pumpkin-border, .pumpkin-spice-border { border-color: #e65100 !important; }
+.pumpkin-outline, .pumpkin-spice-outline { outline-color: #e65100 !important; }
+.mango { background-color: #ffab40 !important; }
+.mango-text { color: #ffab40 !important; }
+.mango-text-shadow { text-shadow: 2px 2px #ffab40 !important; }
+.mango-border { border-color: #ffab40 !important; }
+.mango-outline { outline-color: #ffab40 !important; }
+.tangerine { background-color: #f9812a !important; }
+.tangerine-text { color: #f9812a !important; }
+.tangerine-text-shadow { text-shadow: 2px 2px #f9812a !important; }
+.tangerine-border { border-color: #f9812a !important; }
+.tangerine-outline { outline-color: #f9812a !important; }
+.peach { background-color: #ffab91 !important; }
+.peach-text { color: #ffab91 !important; }
+.peach-text-shadow { text-shadow: 2px 2px #ffab91 !important; }
+.peach-border { border-color: #ffab91 !important; }
+.peach-outline { outline-color: #ffab91 !important; }
+.carrot { background-color: #ef6c00 !important; }
+.carrot-text { color: #ef6c00 !important; }
+.carrot-text-shadow { text-shadow: 2px 2px #ef6c00 !important; }
+.carrot-border { border-color: #ef6c00 !important; }
+.carrot-outline { outline-color: #ef6c00 !important; }
+.fire { background-color: #fda50f !important; }
+.fire-text { color: #fda50f !important; }
+.fire-text-shadow { text-shadow: 2px 2px #fda50f !important; }
+.fire-border { border-color: #fda50f !important; }
+.fire-outline { outline-color: #fda50f !important; }
+.squash { background-color: #c95c0a !important; }
+.squash-text { color: #c95c0a !important; }
+.squash-text-shadow { text-shadow: 2px 2px #c95c0a !important; }
+.squash-border { border-color: #c95c0a !important; }
+.squash-outline { outline-color: #c95c0a !important; }
+.rust { background-color: #B43104 !important; }
+.rust-text { color: #B43104 !important; }
+.rust-text-shadow { text-shadow: 2px 2px #b43104 !important; }
+.rust-border { border-color: #b43104 !important; }
+.rust-outline { outline-color: #b43104 !important; }
+.deep-orange { background-color: #ff4000 !important; }
+.deep-orange-text { color: #ff4000 !important; }
+.deep-orange-text-shadow { text-shadow: 2px 2px #ff4000 !important; }
+.deep-orange-border { border-color: #ff4000 !important; }
+.deep-orange-outline { outline-color: #ff4000 !important; }
+
+
+/* Pinks */ 
+.pink { background-color: #e91e63 !important; }
+.pink-text { color: #e91e63 !important; }
+.pink-text-shadow { text-shadow: 2px 2px #e91e63 !important; }
+.pink-border { border-color: #e91e63 !important; }
+.pink-outline { outline-color: #e91e63 !important; }
+.pink-champagne { background-color: #d986a2 !important; }
+.pink-champagne-text { color: #d986a2 !important; }
+.pink-champagne-text-shadow { text-shadow: 2px 2px #d986a2 !important; }
+.pink-champagne-border { border-color: #d986a2 !important; }
+.pink-champagne-outline { outline-color: #d986a2 !important; }
+.cotton-candy { background-color: #ff80ab !important; }
+.cotton-candy-text { color: #ff80ab !important; }
+.cotton-candy-text-shadow { text-shadow: 2px 2px #ff80ab !important; }
+.cotton-candy-border { border-color: #ff80ab !important; }
+.cotton-candy-outline { outline-color: #ff80ab !important; }
+.bubble-gum { background-color: #f8bbd0 !important; }
+.bubble-gum-text { color: #f8bbd0 !important; }
+.bubble-gum-text-shadow { text-shadow: 2px 2px #f8bbd0 !important; }
+.bubble-gum-border { border-color: #f8bbd0 !important; }
+.bubble-gum-outline { outline-color: #f8bbd0 !important; }
+.raspberry { background-color: #ad1457 !important; }
+.raspberry-text { color: #ad1457 !important; }
+.raspberry-text-shadow { text-shadow: 2px 2px #ad1457 !important; }
+.raspberry-border { border-color: #ad1457 !important; }
+.raspberry-outline { outline-color: #ad1457 !important; }
+.salmon { background-color: #fa8072 !important; }
+.salmon-text { color: #fa8072 !important; }
+.salmon-text-shadow { text-shadow: 2px 2px #fa8072 !important; }
+.salmon-border { border-color: #fa8072 !important; }
+.salmon-outline { outline-color: #fa8072 !important; }
+
+/* Purples */ 
+.purple, .plum { background-color: #800080 !important; }
+.purple-text, .plum-text { color: #800080 !important; }
+.purple-text-shadow, .plum-text-shadow { text-shadow: 2px 2px #800080 !important; }
+.purple-border, .plum-border { border-color: #800080 !important; }
+.purple-outline, .plum-outline { outline-color: #800080 !important; }
+.grape { background-color: #4a148c !important; }
+.grape-text { color: #4a148c !important; }
+.grape-text-shadow { text-shadow: 2px 2px #4a148c !important; }
+.grape-border { border-color: #4a148c !important; }
+.grape-outline { outline-color: #4a148c !important; }
+.eggplant { background-color: #7b1fa2 !important; }
+.eggplant-text { color: #7b1fa2 !important; }
+.eggplant-text-shadow { text-shadow: 2px 2px #7b1fa2 !important; }
+.eggplant-border { border-color: #7b1fa2 !important; }
+.eggplant-outline { outline-color: #7b1fa2 !important; }
+.light-purple, .lavender { background-color: #D0A9F5 !important; }
+.light-purple-text, .lavender-text { color: #D0A9F5 !important; }
+.light-purple-text-shadow, .lavender-text-shadow { text-shadow: 2px 2px #D0A9F5 !important; }
+.light-purple-border, .lavender-border { border-color: #D0A9F5 !important; }
+.light-purple-outline, .lavender-outline { outline-color: #d0a9f5 !important; }
+.deep-plum { background-color: #240B3B !important; }
+.deep-plum-text { color: #240B3B !important; }
+.deep-plum-text-shadow { text-shadow: 2px 2px #240B3B !important; }
+.deep-plum-border { border-color: #240B3B !important; }
+.deep-plum-outline { outline-color: #240b3b !important; }
+.blackberry { background-color: #200f1f !important; }
+.blackberry-text { color: #200f1f !important; }
+.blackberry-text-shadow { text-shadow: 2px 2px #200f1f !important; }
+.blackberry-border { border-color: #200f1f !important; }
+.blackberry-outline { outline-color: #200f1f !important; }
+.lilac { background-color: #E3CEF6 !important; }
+.lilac-text { color: #E3CEF6 !important; }
+.lilac-text-shadow { text-shadow: 2px 2px #E3CEF6 !important; }
+.lilac-border { border-color: #E3CEF6 !important; }
+.lilac-outline { outline-color: #E3CEF6 !important; }
+
+/* Blues */
+.blue { background-color: #0000FF !important; }
+.blue-text { color: #0000FF !important; }
+.blue-text-shadow { text-shadow: 2px 2px #0000ff !important; }
+.blue-border { border-color: #0000FF !important; }
+.blue-outline { outline-color: #0000ff !important; }
+.blue-candy { background-color: #2196f3 !important; }
+.blue-candy-text { color: #2196f3 !important; }
+.blue-candy-text-shadow { text-shadow: 2px 2px #2196f3 !important; }
+.blue-candy-border { border-color: #2196f3 !important; }
+.blue-candy-outline { outline-color: #2196f3 !important; }
+.blueberry { background-color: #485B88 !important; }
+.blueberry-text { color: #485B88 !important; }
+.blueberry-text-shadow { text-shadow: 2px 2px #485B88 !important; }
+.blueberry-border { border-color: #485b88 !important; }
+.blueberry-outline { outline-color: #485b88 !important; }
+.light-blue, .water { background-color: #ADD8E6 !important; }
+.light-blue-text, .water-text { color: #ADD8E6 !important; }
+.light-blue-text-shadow, .water-text-shadow { text-shadow: 2px 2px #ADD8E6 !important; }
+.light-blue-border, .water-border { border-color: #ADD8E6 !important; }
+.light-blue-outline, .water-outline { outline-color: #add8e6 !important; }
+.pool-water { background-color: #81d4fa !important; }
+.pool-water-text { color: #81d4fa !important; }
+.pool-water-text-shadow { text-shadow: 2px 2px #81d4fa !important; }
+.pool-water-border { border-color: #81d4fa !important; }
+.pool-water-outline { outline-color: #81d4fa !important; }
+.navy, .navy-blue { background-color: #000080 !important; }
+.navy-text, .navy-blue-text { color: #000080 !important; }
+.navy-text-shadow, .navy-blue-text-shadow { text-shadow: 2px 2px #000080 !important; }
+.navy-border, .navy-blue-border { border-color: #000080 !important; }
+.navy-outline, .navy-blue-outline { outline-color: #000080 !important; }
+.cornflower { background-color: #6693f5 !important; }
+.cornflower-text { color: #6693f5 !important; }
+.cornflower-text-shadow { text-shadow: 2px 2px #6693f5 !important; }
+.cornflower-border { border-color: #6693f5 !important; }
+.cornflower-outline { outline-color: #6693f5 !important; }
+.sky { background-color: #95c8d8 !important; }
+.sky-text { color: #95c8d8 !important; }
+.sky-text-shadow { text-shadow: 2px 2px #95c8d8 !important; }
+.sky-border { border-color: #95c8d8 !important; }
+.sky-outline { outline-color: #95c8d8 !important; }
+.midnight { background-color: #0B243B !important; }
+.midnight-text { color: #0B243B !important; }
+.midnight-text-shadow { text-shadow: 2px 2px #0B243B !important; }
+.midnight-border { border-color: #0B243B !important; }
+.midnight-outline { outline-color: #0b243b !important; }
+.pastel-blue { background-color: #A9BCF5 !important; }
+.pastel-blue-text { color: #A9BCF5 !important; }
+.pastel-blue-text-shadow { text-shadow: 2px 2px #A9BCF5 !important; }
+.pastel-blue-border { border-color: #a9bcf5 !important; }
+.pastel-blue-outline { outline-color: #a9bcf5 !important; }
+
+/* Browns */
+.brown { background-color: #795548 !important; }
+.brown-text { color: #795548 !important; }
+.brown-text-shadow { text-shadow: 2px 2px #795548 !important; }
+.brown-border { border-color: #795548 !important; }
+.brown-outline { outline-color: #795548 !important; }
+.bbq { background-color: #5a140c !important; }
+.bbq-text { color: #5a140c !important; }
+.bbq-border { border-color: #5a140c !important; }
+.bbq-outline { outline-color: #5a140c !important; }
+.chocolate { background-color: #4c3428 !important; }
+.chocolate-text { color: #4c3428 !important; }
+.chocolate-text-shadow { text-shadow: 2px 2px #4c3428 !important; }
+.chocolate-border { border-color: #4c3428 !important; }
+.chocolate-outline { outline-color: #4c3428 !important; }
+.dark-chocolate { background-color: #3e2723 !important; }
+.dark-chocolate-text { color: #3e2723 !important; }
+.dark-chocolate-text-shadow { text-shadow: 2px 2px #3e2723 !important; }
+.dark-chocolate-border { border-color: #3e2723 !important; }
+.dark-chocolate-outline { outline-color: #3e2723 !important; }
+.light-brown, .cappuccino { background-color: #be9b7b !important; }
+.light-brown-text, .cappuccino-text { color: #be9b7b !important; }
+.light-brown-text-shadow, .cappuccino-text-shadow { text-shadow: 2px 2px #be9b7b !important; }
+.light-brown-border { border-color: #be9b7b !important; }
+.light-brown-outline { outline-color : #be9b7b !important; }
+.wheat { background-color: #dac3a1 !important; }
+.wheat-text { color: #dac3a1 !important; }
+.wheat-text-shadow { text-shadow: 2px 2px #dac3a1 !important; }
+.wheat-border { border-color: #dac3a1 !important; }
+.wheat-outline { outline-color: #dac3a1 !important; }
+.peanut, .peanut-butter { background-color: #c29963 !important; }
+.peanut-text, .peanut-butter-text { color: #c29963 !important; }
+.peanut-text-shadow, .peanut-butter-text-shadow { text-shadow: 2px 2px #c29963 !important; }
+.peanut-border, .peanut-butter-border { border-color: #c29963 !important; }
+.peanut-outline, .peanut-butter-outline { outline-color: #c29963 !important; }
+.steak { background-color: #583722 !important; }
+.steak-text { color: #583722 !important; }
+.steak-border { border-color: #583722 !important; }
+.steak-outline { outline-color: #583722 !important; }
+
+/* Greens */
+.green, .cucumber { background-color: #008000 !important; } 
+.green-text, .cucumber-text { color: #008000 !important; }
+.green-text-shadow, .cucumber-text-shadow { text-shadow: 2px 2px #008000 !important; }
+.green-border, .cucumber-border { border-color: #008000 !important; }
+.green-outline, .cucumber-outline { outline-color: #008000 !important; }
+.green-apple { background-color:  #5BC236 !important; }
+.green-apple-text { color:  #5BC236 !important; }
+.green-apple-text-shadow { text-shadow: 2px 2px #5BC236 !important; }
+.green-apple-border { border-color: #5BC236 !important; }
+.green-apple-outline { outline-color: #5BC236 !important; }
+.lime { background-color: #00ff00 !important; }
+.lime-text { color: #00ff00 !important; }
+.lime-text-shadow { text-shadow: 2px 2px #00ff00 !important; }
+.lime-border { border-color: #00ff00 !important; }
+.lime-outline { outline-color: #00ff00 !important; }
+.kiwi { background-color: #58FA82 !important; }
+.kiwi-text { color: #58FA82 !important; }
+.kiwi-text-shadow { text-shadow: 2px 2px #f8fa82 !important; }
+.kiwi-border { border-color: #f8FA82 !important; }
+.kiwi-outline { outline-color: #f8fa82 !important; }
+.olive { background-color: #808000 !important; }
+.olive-text { color: #808000 !important; }
+.olive-text-shadow { text-shadow: 2px 2px #808000 !important; }
+.olive-border { border-color: #808000 !important; }
+.olive-outline { outline-color: #808000 !important; }
+.pistachio { background-color: #81c784 !important; }
+.pistachio-text { color: #81c784 !important; }
+.pistachio-text-shadow { text-shadow: 2px 2px #81c784 !important; }
+.pistachio-border { border-color: #81c784 !important; }
+.pistachio-outline { outline-color: #81c784 !important; }
+.mint { background-color: #a5d6a7 !important; }
+.mint-text { color: #a5d6a7 !important; }
+.mint-text-shadow { text-shadow: 2px 2px #a5d6a7 !important; }
+.mint-border { border-color: #a5d6a7 !important; }
+.mint-outline { outline-color: #a5d6a7 !important; }
+.spinach { background-color: #1b5e20 !important; }
+.spinach-text { color: #1b5e20 !important; }
+.spinach-text-shadow { text-shadow: 2px 2px #1b5e20 !important; }
+.spinach-border { border-color: #1b5e20 !important; }
+.spinach-outline { outline-color: #1b5e20 !important; }
+
+/* Yellows */ 
+.yellow, .lemon { background-color: #ffff00 !important; }
+.yellow-text, .lemon-text { color: #ffff00 !important; }
+.yellow-text-shadow, .lemon-text-shadow { text-shadow: 2px 2px #ffff00 !important; }
+.yellow-border, .lemon-border { border-color: #ffff00 !important; }
+.yellow-outline, .lemon-outline { outline-color: #ffff00 !important; }
+.banana { background-color: #F4FA58 !important; }
+.banana-text { color: #F4FA58 !important; }
+.banana-text-shadow { text-shadow: 2px 2px #F4FA58 !important; }
+.banana-border { border-color: #F4FA58 !important; }
+.banana-outline { outline-color: #F4FA58 !important; }
+.butter { background-color: #F2F5A9 !important; }
+.butter-text { color: #F2F5A9 !important; }
+.butter-text-shadow { text-shadow: 2px 2px #F2F5A9 !important; }
+.butter-border { border-color: #F2F5A9 !important; }
+.butter-outline { outline-color: #F2F5A9 !important; }
+.cheddar { background-color: #F7B92A !important; }
+.cheddar-text { color: #F7B92A !important; }
+.cheddar-text-shadow { text-shadow: 2px 2px #F7B92A !important; }
+.cheddar-border { border-color: #F7B92A !important; }
+.cheddar-outline { outline-color: #F7B92A !important; }
+.honey, .amber { background-color: #ffc107 !important; }
+.honey-text, .amber-text { color: #ffc107 !important; }
+.honey-text-shadow, .amber-text-shadow { text-shadow: 2px 2px #ffc107 !important; }
+.honey-border, .amber-border { border-color: #ffc107 !important; }
+.honey-outline, .amber-outline { outline-color: #ffc107 !important; }
+.pineapple { background-color: #FFE874 !important; }
+.pineapple-text { color: #FFE874 !important; }
+.pineabble-text-shadow { text-shadow: 2px 2px #FFE874 !important; }
+.pineapple-border { border-color: #FFE874 !important; }
+.pineapple-outline { outline-color: #ffe874 !important; }
+
+/* MIXED FLAVORS 
+======================== */
+.monochrome { background-color: #fff !important; color: #000 !important; }
+.spinach-carrot { background-color: #1b5e20 !important; color: #ef6c00 !important; }
+.strawberry-banana { background-color: #FE2E2E !important; color: #F4FA58 !important; }
+.orange-cream { background-color: #FFA500 !important; color: #fff !important; }
+.blueberry-pomegranate { background-color: #485B88 !important; color: #800000 !important; }
+.lemon-lime { background-color: #ffff00 !important; color: #00ff00 !important; }
+.honey-blueberry { color: #485B88 !important; background-color: #ffc107 !important; }
+.chocolate-strawberry { color: #FE2E2E !important; background-color: #4c3428 !important; }
+.bbq-fire { color: #fda50f !important; background-color: #5a140c !important; }
+.pumpkin-spice-butter { color: #F2F5A9 !important; background-color: #e65100 !important; }
+.vanilla-chocolate { background-color: #ffffff !important; color: #4c3428 !important; }
+.olive-mushroom { background-color: #808000 !important; color: #cfd8dc !important; }
+.raspberry-bubble-gum { background-color: #ad1457 !important; color: #f8bbd0 !important; }
+.mint-chocolate { background-color: #a5d6a7 !important; color: #4c3428 !important; }
+.peach-plum { background-color: #ffab91 !important; color: #800080 !important; }
+.cherry-vanilla { background-color: #b52026 !important; color: #fff !important; }
+.grape-pool-water { background-color: #4a148c !important; color: #81d4fa !important; }
+.chocolate-peanut-butter { background-color: #4c3428 !important; color: #c29963 !important; }
+.green-apple-blueberry { background-color: #5BC236 !important; color: #485B88 !important; }
+.silver-blood { background-color: #C0C0C0 !important; color: #800000 !important; }
+.mango-cherry { background-color: #ffab40 !important; color: #b52026 !important; }
+.sweden { background-color: #0000ff !important; color: #ffff00 !important; }
+.success { background-color: #a5d6a7 !important; color: #008000 !important; }
+.warning { background-color: #F2F5A9 !important; color: #b47000!important; }
+.alert { background-color: #FE2E2E !important; color: #800000 !important; }
+.info { background-color: #ADD8E6 !important; color: #2196f3 !important; }
+.disabled { background-color: #e6e6e6 !important; color: #808080 !important; }
+.ready { background-color: #ffab40 !important; color: #e65100 !important; }
+
+/* GRADIENTS
+======================== */
+.strawberry-banana-gradient {
+	background: #FE2E2E; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#FE2E2E, #F4FA58); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#FE2E2E, #F4FA58); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#FE2E2E, #F4FA58); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#FE2E2E, #F4FA58); /* Standard syntax */
+}
+.monochrome-gradient {
+	background: #FFFFFF; 
+	background: -webkit-linear-gradient(#FFFFFF, #000000); 
+	background: -o-linear-gradient(#FFFFFF, #000000); 
+	background: -moz-linear-gradient(#FFFFFF, #000000); 
+	background: linear-gradient(#FFFFFF, #000000); 
+}
+.sweden-gradient { 
+	background: #0000ff; 
+	background: -webkit-linear-gradient(#0000ff, #ffff00); 
+	background: -o-linear-gradient(#0000ff, #ffff00); 
+	background: -moz-linear-gradient(#0000ff, #ffff00); 
+	background: linear-gradient(#0000ff, #ffff00);
+}
+.vanilla-cherry-gradient {
+	background: #FFFFFF; 
+	background: -webkit-linear-gradient(#FFFFFF, #b52026); 
+	background: -o-linear-gradient(#FFFFFF, #b52026); 
+	background: -moz-linear-gradient(#FFFFFF, #b52026); 
+	background: linear-gradient(#FFFFFF, #b52026); 
+}
+.orange-cream-gradient {
+	background: #FFA500; 
+	background: -webkit-linear-gradient(#FFA500, #FFFFFF); 
+	background: -o-linear-gradient(#FFA500, #FFFFFF); 
+	background: -moz-linear-gradient(#FFA500, #FFFFFF); 
+	background: linear-gradient(#FFA500, #FFFFFF); 
+}
+.blueberry-pomegranate-gradient {
+	background: #485B88; 
+	background: -webkit-linear-gradient(#485B88, #800000); 
+	background: -o-linear-gradient(#485B88, #800000); 
+	background: -moz-linear-gradient(#485B88, #800000); 
+	background: linear-gradient(#485B88, #800000); 
+}
+.lemon-lime-gradient {
+	background: #ffff00; 
+	background: -webkit-linear-gradient(#ffff00, #00ff00); 
+	background: -o-linear-gradient(#ffff00, #00ff00); 
+	background: -moz-linear-gradient(#ffff00, #00ff00); 
+	background: linear-gradient(#ffff00, #00ff00); 
+}
+.vanilla-chocolate-gradient {
+	background: #ffffff; 
+	background: -webkit-linear-gradient(#ffffff, #4c3428); 
+	background: -o-linear-gradient(#ffffff, #4c3428); 
+	background: -moz-linear-gradient(#ffffff, #4c3428); 
+	background: linear-gradient(#ffffff, #4c3428); 
+}
+.water-blueberry-gradient {
+	background: #ADD8E6; 
+	background: -webkit-linear-gradient(#ADD8E6, #485B88); 
+	background: -o-linear-gradient(#ADD8E6, #485B88); 
+	background: -moz-linear-gradient(#ADD8E6, #485B88); 
+	background: linear-gradient(#ADD8E6, #485B88); 
+}
+.kiwi-cucumber-gradient {
+	background: #58FA82; 
+	background: -webkit-linear-gradient(#58FA82, #008000); 
+	background: -o-linear-gradient(#58FA82, #008000); 
+	background: -moz-linear-gradient(#58FA82, #008000); 
+	background: linear-gradient(#58FA82, #008000); 
+}
+.bubble-gum-grape-gradient {
+	background: #f8bbd0; 
+	background: -webkit-linear-gradient(#f8bbd0, #4a148c); 
+	background: -o-linear-gradient(#f8bbd0, #4a148c); 
+	background: -moz-linear-gradient(#f8bbd0, #4a148c); 
+	background: linear-gradient(#f8bbd0, #4a148c);
+}
+.neapolitan {
+	background: #4c3428; 
+	background: -webkit-linear-gradient(#4c3428, #FE2E2E, #ffffff); 
+	background: -o-linear-gradient(#4c3428, #FE2E2E, #ffffff); 
+	background: -moz-linear-gradient(#4c3428, #FE2E2E, #ffffff); 
+	background: linear-gradient(#4c3428, #FE2E2E, #ffffff);
+}
+.blood-black-gradient {
+	background: #800000; 
+	background: -webkit-linear-gradient(#800000, #000000); 
+	background: -o-linear-gradient(#800000, #000000); 
+	background: -moz-linear-gradient(#800000, #000000); 
+	background: linear-gradient(#800000, #000000);
+}
+.mint-chocolate-gradient {
+	background: #a5d6a7; 
+	background: -webkit-linear-gradient(#a5d6a7, #4c3428); 
+	background: -o-linear-gradient(#a5d6a7, #4c3428); 
+	background: -moz-linear-gradient(#a5d6a7, #4c3428); 
+	background: linear-gradient(#a5d6a7, #4c3428);
+}
+.pride-gradient, .rainbow {
+	background: #ff0000; 
+	/* To make this gradient vertical, remove the "to right" from the color array below */
+	background: -webkit-linear-gradient(to right, #ff0000, #ff9800, #ffff00, #008000, #0000FF, #800080); 
+	background: -o-linear-gradient(to right, #ff0000, #ff9800, #ffff00, #008000, #0000FF, #800080); 
+	background: -moz-linear-gradient(to right, #ff0000, #ff9800, #ffff00, #008000, #0000FF, #800080); 
+	background: linear-gradient(to right, #ff0000, #ff9800, #ffff00, #008000, #0000FF, #800080);
+}
+.watermelon { 
+	background: #d03b3b; 
+	background: -webkit-linear-gradient(#1c6123, #d5f3d8, #d03b3b, #d03b3b, #d5f3d8, #1c6123); 
+	background: -o-linear-gradient(#1c6123, #d5f3d8, #d03b3b, #d03b3b, #d5f3d8, #1c6123); 
+	background: -moz-linear-gradient(#1c6123, #d5f3d8, #d03b3b, #d03b3b, #d5f3d8, #1c6123); 
+	background: linear-gradient(#1c6123, #d5f3d8, #d03b3b, #d03b3b, #d5f3d8, #1c6123);
+}
+.dragonfruit {
+	background: #e0e0e0; 
+	background: -webkit-linear-gradient(#5eb81b, #d5036f, #e0e0e0, #e0e0e0, #e0e0e0, #e0e0e0, #d5036f, #5eb81b); 
+	background: -o-linear-gradient(#5eb81b, #d5036f, #e0e0e0, #e0e0e0, #e0e0e0, #e0e0e0, #d5036f, #5eb81b); 
+	background: -moz-linear-gradient(#5eb81b, #d5036f, #e0e0e0, #e0e0e0, #e0e0e0, #e0e0e0, #d5036f, #5eb81b); 
+	background: linear-gradient(#5eb81b, #d5036f, #e0e0e0, #e0e0e0, #e0e0e0, #e0e0e0, #d5036f, #5eb81b);
+}
+.oreo {
+	background: #271f13; 
+	background: -webkit-linear-gradient(#271f13, #271f13, #efefef, #efefef, #271f13, #271f13); 
+	background: -o-linear-gradient(#271f13, #271f13, #efefef, #efefef, #271f13, #271f13); 
+	background: -moz-linear-gradient(#271f13, #271f13, #efefef, #efefef, #271f13, #271f13); 
+	background: linear-gradient(#271f13, #271f13, #efefef, #efefef, #271f13, #271f13);
+}
+.peppermint {
+	background: #ffffff; 
+	background: -webkit-linear-gradient(#ff0000, #ffffff, #ffffff, #ff0000, #ffffff, #ffffff, #ff0000); 
+	background: -o-linear-gradient(#ff0000, #ffffff, #ffffff, #ff0000, #ffffff, #ffffff, #ff0000); 
+	background: -moz-linear-gradient(#ff0000, #ffffff, #ffffff, #ff0000, #ffffff, #ffffff, #ff0000); 
+	background: linear-gradient(#ff0000, #ffffff, #ffffff, #ff0000, #ffffff, #ffffff, #ff0000);
+}
+.bacon {
+	background: #bd8865; 
+	background: -webkit-linear-gradient(#3b1210, #bd8865, #bd8865, #761d1d, #761d1d, #bd8865, #bd8865, #3b1210); 
+	background: -o-linear-gradient(#3b1210, #bd8865, #bd8865, #761d1d, #761d1d, #bd8865, #bd8865, #3b1210); 
+	background: -moz-linear-gradient(#3b1210, #bd8865, #bd8865, #761d1d, #761d1d, #bd8865, #bd8865, #3b1210); 
+	background: linear-gradient(#3b1210, #bd8865, #bd8865, #761d1d, #761d1d, #bd8865, #bd8865, #3b1210);
+}

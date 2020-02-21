@@ -1,0 +1,45 @@
+Brutalist Framework Changelog
+Version: 2.0.2.0
+
+General:
++ New bIcons added to core
++ New plugins
++ New Starting Points added
+
+Plugins:
++ Megamenu
++ CurveText (formerly "Curve Text" removed from BFX)
++ Exit Intent
++ B-Slider
++ B-Gallery
+
+Flavors:
++ Chili
++ Sangria (formerly black-cherry)
++ Mahogany
++ Blackberry
++ Sweden (color combo)
++ bbq-fire (color combo)
++ Sweden-gradient 
+
+BFX:
++ New animated gradients: neon and earth
++ Clipbox removed 
++ New "rumble" effect
+
+BUIX:
++ Re-work of modals
++ Added "micro" thumbnail sizes
++ Added ability to apply thumbnail classes to all img tags within that element
++ Moved tags to BUTCH
+
+BUTCH
++ Shortened Font Family class names (dropped -text)
++ Re-work of Rotation classes
++ Added hover classes to flip (transformation)
++ Added "paranoid" and "isolated" to spacing classes
+
+Grid:
++ Added more width and height classes to B3Grid
++ Added "tiles" to B3Grid
++ Added 1200 and 960 container width limits to Flexbox Grid
