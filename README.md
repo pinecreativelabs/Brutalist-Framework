@@ -1,7 +1,7 @@
 # Brutalist-Framework
 A framework for the brutalist web design trend.
-Version: 2.0.2.0
-![BF Cover](http://www.brutalistframework.com/assets/images/bf-cover.jpg)
+Version: 2.1
+![BF Cover](http://www.brutalistframework.com/core/files/images/bf-cover-2-1.jpg)
 ## About
 _Brutalist Framework_ is a responsive framework exclusively for the popular brutalist web design trend. It is intended to be a boilerplate for creating simple brutalist websites.
 

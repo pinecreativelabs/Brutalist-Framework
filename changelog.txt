@@ -1,45 +1,59 @@
 Brutalist Framework Changelog
-Version: 2.0.2.0
+Version: 2.1
 
 General:
-+ New bIcons added to core
-+ New plugins
-+ New Starting Points added
++ Introducing BELL (formerly Plugins): Brutal Extension Element Library
++ New Boilerplates (formerly "Starting Points")
++ Upgrade to jquery 3
++ Various bug fixes 
 
-Plugins:
-+ Megamenu
-+ CurveText (formerly "Curve Text" removed from BFX)
-+ Exit Intent
-+ B-Slider
-+ B-Gallery
+BELL:
++ Introducing "BISCUIT" components: PageLock, Age Verify, and Cookie Consent
++ New Audio, GIF, and Video players 
++ New Timeline, Presenter, and PISS content elements 
++ Behavior improvements made to Megamenu 
++ Printer iframe bug fixes
++ New "Exit Intent" element 
 
 Flavors:
-+ Chili
-+ Sangria (formerly black-cherry)
-+ Mahogany
-+ Blackberry
-+ Sweden (color combo)
-+ bbq-fire (color combo)
-+ Sweden-gradient 
++ 11 new flavors: sand, seaweed, pickle, caramel, beer, ash, smoke, azure, mustard, mauve, cider
++ Renamed various classes
++ 8 new gradients: halloween, octoberfest, caramel-apple, ireland, autumn, winter, spring, summer
++ Shortened text-shadow, outline, and border class names
++ All classes with -text, -text-shadow, -outline, and -border are now considered deprecated
 
 BFX:
-+ New animated gradients: neon and earth
-+ Clipbox removed 
-+ New "rumble" effect
++ New "Spotlight" cursor effect
++ New "Blenders" classes 
++ New "infinitile" animated background class
++ Updated Fittext classes
++ Restored CurveText to BFX as a text effect 
 
 BUIX:
-+ Re-work of modals
-+ Added "micro" thumbnail sizes
-+ Added ability to apply thumbnail classes to all img tags within that element
-+ Moved tags to BUTCH
++ Updated button classes
++ Added new Cursor and Resizeable element classes
++ Added new image and video preview hover class
++ Added new "b-loader" (BETA)
++ Added new "CDP" (content display picker)
++ Complete re-work of thumbnails
 
-BUTCH
-+ Shortened Font Family class names (dropped -text)
-+ Re-work of Rotation classes
-+ Added hover classes to flip (transformation)
-+ Added "paranoid" and "isolated" to spacing classes
+BUTCH:
++ Updated text layout and some other typography classes with shorter names (former class names still supported)
++ New section headings counter
++ Shortened border class names (old ones now deprecated)
++ Added 9 new gradient borders
 
 Grid:
-+ Added more width and height classes to B3Grid
-+ Added "tiles" to B3Grid
-+ Added 1200 and 960 container width limits to Flexbox Grid
++ Added stretch class for blocks
++ Other minor updates
+
+bIcons:
++ Added 10 new icons: islam, umbrella, weather, fountain, sailboat, ferry, heat, medical, hash, flower
+
+Rebar:
++ Added support for devices with widths of 360px
+
+Boilerplates:
++ New templates: Vaporwave, Rated X, Horror, Social, Commerce Catalog, Microblog, and Media Gallery
++ Updated Leads template
++ Updated Email template

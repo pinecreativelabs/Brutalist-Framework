@@ -1,7 +1,19 @@
-The MIT License (MIT)
+BITCHY License
+// The Brutal Intent to Create Homage to Yourself License
+//
+// Brutalist Framework
+// Author: Brad Fogelstrom
+// Copyright Year: 2020
+// Software Version: 2.1
 
-Brutalist Framework
-author: Brad Fogelstrom
+Permission is granted, free of charge, to any person or organization obtaining a copy 
+of this software and all associated digital files, including all images and other 
+forms of media associated with Brutalist Framework, to revise, edit, manipulate, 
+brutalize, and otherwise redistribute in any method or medium. Create homage to yourself!
+
+All included source code is released under the MIT license, as stated as follows:
+
+The MIT License (MIT)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

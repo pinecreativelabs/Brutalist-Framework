@@ -4,39 +4,37 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 	<title>Brutalist Framework || BUIX</title>
-	<meta name="description" content="A simple framework for the brutalist web design trend." />
+	<meta name="description" content="A free open source CSS and javascript UI and UX library for the brutalist web design trend." />
 
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="@pinebuilder">
+	<meta name="twitter:site" content="@brutalistfwk">
 	<meta name="twitter:title" content="Brutalist Framework || BUIX">
-	<meta name="twitter:description" content="A simple framework for the brutalist web design trend.">
-	<meta name="twitter:creator" content="@pinebuilder">
+	<meta name="twitter:description" content="A free open source CSS and javascript UI and UX library for the brutalist web design trend.">
+	<meta name="twitter:creator" content="@brutalistfwk">
 	<!-- Twitter Summary card images must be at least 120x120px -->
-	<meta name="twitter:image" content="http://www.brutalistframework.com/files/images/brutalist-framework512.jpg">
+	<meta name="twitter:image" content="http://www.brutalistframework.com/core/files/images/bf21.jpg">
 
 	<!-- Open Graph data -->
 	<meta property="og:title" content="Brutalist Framework || BUIX" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://www.brutalistframework.com" />
-	<meta property="og:image" content="http://www.brutalistframework.com/files/images/brutalist-framework512.jpg" />
-	<meta property="og:description" content="A simple framework for the brutalist web design trend." /> 
+	<meta property="og:image" content="http://www.brutalistframework.com/core/files/images/bf21.jpg" />
+	<meta property="og:description" content="A free open source CSS and javascript UI and UX library for the brutalist web design trend." /> 
 	<meta property="og:site_name" content="Brutalist Framework" />
 
 	<!-- Icons -->
-	<link rel="shortcut icon" href="files/icons/bf44.png" type="image/x-icon" />
-	<link rel="icon" href="files/icons/bf15.ico" type="image/x-icon" />
-	<link rel="apple-touch-icon" href="files/icons/bf57.png" />
+	<link rel="shortcut icon" href="core/files/icons/bf44.png" type="image/x-icon" />
+	<link rel="icon" href="core/files/icons/bf15.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="core/files/icons/bf57.png" />
 	
 	<!-- CORE CSS  -->
-	<!--<link href="core/css/dev/core.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
-	<link href="core/css/brutalist.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-	
+	<!--<link href="core/css/dev/core.css" type="text/css" rel="stylesheet" media="all"/>-->
+	<link href="core/css/brutalist.min.css" type="text/css" rel="stylesheet" media="all"/>
+	<!-- BELL -->
+	<link href="core/bell/css/bell.css" type="text/css" rel="stylesheet" media="all" />
 	<!-- Theme CSS -->
-	<link href="theme/default/css/theme.css" type="text/css" rel="stylesheet" media="screen,projection" />
-	
-	<!-- Plugins -->
-	<link href="plugins/megamenu/view.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link href="theme/default/css/theme.css" type="text/css" rel="stylesheet" media="all" />
 
 </head>
 <body class="black">
@@ -44,12 +42,12 @@
 		<div class="row"><div class="col-sm-12"><div class="container-1200">
 			<div class="row no-padding stack1 content" id="scrolltop">
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 no-padding">
-					<a href="index.html" class="logo"><img class="responsive border-solid-fat red-border" src="files/images/brutalist-framework512.jpg" alt="Brutalist Framework" /></a>
+					<a href="index.html"><img class="large-thumb crop circle brdr-s-k red-border invert-hover" src="core/files/images/brutalist-framework.jpg" alt="Brutalist Framework" /></a>
 				</div>
-				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 no-padding lucida-text">
-					<h1 class="page-title border-solid-thick red-border courier-new-text fittext-h1 white-text baffle-prolonged">BUIX</h1>
-					<div class="page-desc border-solid-thick red-border rice-text">
-						<h2 class="flow-text baffle">Brutal User Interface Experience</h2><br />
+				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 no-padding lucida">
+					<h1 class="page-title border-solid-thick red-b courier-new fittext-h1 white-t baffle-prolonged">BUIX</h1>
+					<div class="page-desc border-solid-thick red-b rice-t">
+						<h2 class="flow-text baffle">Brutal User Interface &amp; Experience</h2><br />
 						<p>Elelments for a brutal user interface and experience.</p>
 					</div>
 				</div>
@@ -65,7 +63,7 @@
 					<div class="menu lucida bold">
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="#">CORE</a>
+							<li><a href="#core">CORE</a>
 								<ul>
 									<li><a href="flavors.html">Flavors</a></li>
 									<li><a href="butch.html">BUTCH</a></li>
@@ -76,37 +74,39 @@
 									<li><a href="bicons.html">bIcons</a></li>
 								</ul>
 							</li>
-							<li><a href="extensions.html">Plugins</a>
+							<li><a href="bell.html">BELL</a>
 								<ul>
-									<li><a href="extensions.html#megamenu">Megamenu</a></li>
-									<li><a href="extensions.html#printer">Printer</a></li>
-									<li><a href="extensions.html#curvetext">CurveText</a></li>
+									<li><a href="bell.html#me">Media Elements</a>
+										<ul>
+											<li><a href="bell.html#audio">Audio Player</a></li>
+											<li><a href="bell.html#gif">Gif Player</a></li>
+											<li><a href="bell.html#vp">Video Player</a></li>
+										</ul>
+									</li>
+									<li><a href="bell.html#ie">Interface Elements</a>
+										<ul>
+											<li><a href="bell.html#megamenu">Megamenu</a></li>
+											<li><a href="bell.html#printer">Printer</a></li>
+											<li><a href="bell.html#ei">Exit Intent</a></li>
+										</ul>
+									</li>
+									<li><a href="bell.html#ce">Content Elements</a>
+										<ul>
+											<li><a href="bell.html#timeline">Timeline</a></li>
+											<li><a href="bell.html#presenter">Presenter</a></li>
+											<li><a href="bell.html#piss">PISS</a></li>
+										</ul>
+									</li>
+									<li><a href="bell.html#biscuit">BISCUIT</a>
+										<ul>
+											<li><a href="bell.html#age">Age Verify</a></li>
+											<li><a href="bell.html#cc">Cookie Consent</a></li>
+											<li><a href="bell.html#pl">PageLock</a></li>
+										</ul>
+									</li>
 								</ul>
 							</li>
-							<li><a href="templates.html">Starting Points</a>
-								<ul>
-									<li><a href="templates.html#emailbp">Email</a>
-										<ul>
-											<li><a href="starting-points/email-boilerplate-01.html" target="_blank">Boilerplate 01</a></li>
-											<li><a href="starting-points/email-boilerplate-02.html" target="_blank">Boilerplate 02</a></li>
-											<li><a href="starting-points/email-boilerplate-03.html" target="_blank">Boilerplate 03</a></li>
-										</ul>
-									</li>
-									<li><a href="templates.html#landings">Landing Pages</a>
-										<ul>
-											<li><a href="starting-points/leads.html" target="_blank">Lead Capture</a></li>
-											<li><a href="starting-points/thank-you.html" target="_blank">Thank You</a></li>
-											<li><a href="starting-points/event.html" target="_blank">Event</a></li>
-										</ul>
-									</li>
-									<li><a href="templates.html#blogs">Blog / Media</a>
-										<ul>
-											<li><a href="statting-points/blog-post-list.html" target="_blank">Blog Post List</a></li>
-											<li><a href="starting-points/blog-post.html" target="_blank">Blog Post</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
+							<li><a href="boilerplates.html">Boilerplates</a></li>
 							<li><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki" target="_blank">About</a>
 								<ul>
 									<li><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank">Roadmap</a></li>
@@ -123,25 +123,15 @@
 					
 					<!-- BUTTONS -->
 					<h3 class="red-text lucida" id="buttforms">Buttons</h3>
-					<p class="charcoal-text arial" style="margin-bottom: 1.1em;">To create a button, simply use the <strong>button</strong> tag, or apply <strong>.btn</strong> or <strong>.button</strong> class to a link. Buttons are displayed as an inline block, by default.</p>
+					<p class="charcoal-text arial" style="margin-bottom: 1.1em;">To create a button, simply use the <strong>button</strong> tag, or apply <strong>.btn</strong> class to a link. Buttons are displayed as an inline block, by default.</p>
 					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-6">
+						<div class="col-xs-12 col-sm-12">
 							<div class="info padded bold center">
-								<button>Default Button</button><br /><br />
-								<button class="large-btn">.large-btn</button><br /><br />
-								<button class="medium-btn">.medium-btn</button>&nbsp;&nbsp;<button class="small-btn">.small-btn</button><br /><br />
+								<button>Default Button</button>&nbsp;&nbsp;<button class="jumbo-btn">.jumbo-btn</button><br /><br />
+								<button class="large-btn">.large-btn</button>&nbsp;&nbsp;<button class="md-btn">.medium-btn</button>&nbsp;&nbsp;
+								<button class="small-btn">.small-btn</button>&nbsp;&nbsp;<button class="tiny-btn">.tiny-btn</button><br /><br />
 								<p>To make a button take up the full width of a container, apply this class:</p>
 								<button class="btn full-btn">.full-btn</button>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-12 col-md-6">
-							<div class="ready padded">
-								<h4 class="lucida flow-text">Examples</h4>
-								<p>
-									<a href="#" class="button blocked disabled blur-hover">Blocked Button</a> - apply class <strong>.blocked</strong> to any button or link<br />
-									<a href="#" class="button glitch black yellow-text flow-text">Glitched Button</a><br /><br />
-									<a href="#" class="throb small-btn alert border-dashed-thick lemon-border"><strong>Small Throbbing Alert Button!</strong></a>
-								</p>
 							</div>
 						</div>
 					</div>
@@ -342,12 +332,14 @@
 				<p class="padding"></p>
 				<hr class="thick tomato" />
 					
-				<!-- REVEAL -->
+				<!-- Microinteractions -->
 				<div class="padding">
-					<h3 class="red-text lucida" id="reveal">Reveal</h3>
+					<h3 class="red-t lucida" id="interactions">Interactions</h3>
+					<!-- REVEAL -->
+					<h4 class="red-t lucida" id="reveal">Reveal</h4>
 					<div class="row">
 						<div class="col-sm-12 col-md-6">
-							<h4>Reveal.hover</h4>
+							<h5>Reveal.hover</h5>
 							<p class="charcoal-text arial"><em>Reveal.hover</em> reveals hidden content upon hovering over an element!</p>
 							<p class="arial charcoal-text">The reveal container starts at a maximum width of 50% of the container it is wrapped within, and enlarges to 100% width upon hover while also revealing a caption.</p>
 							<p class="info padded"><span class="heavy">.reveal</span> (wrap content within this class)<br />
@@ -359,31 +351,200 @@
 								</div>
 							</div><div class="col-sm-6">
 								<div class="reveal hover orange-cream">
-									<img src="files/images/brutal-building.jpg" class="medium-thumb" />
+									<img src="theme/default/files/images/brutal-building.jpg" class="medium-thumb" />
 									<p class="arial-text secret">SECRET - only visible upon hover!</p>
 								</div>
 							</div></div>
 						</div>
 						<div class="col-sm-12 col-md-6">
-							<h4>Reveal.toggle</h4>
-							<p class="charcoal-text arial-text"><em>Reveal.toggle</em> toggles content upon clicking on a label. </p>
+							<h5>Reveal.toggle</h5>
+							<p class="charcoal-t arial"><em>Reveal.toggle</em> toggles content upon clicking on a label. </p>
 							<div class="reveal toggle">
 								<input id="toggle1" class="toggle" type="checkbox"><!-- To have the toggle open by default, simply set the "checked" attribute -->
 								<label for="toggle1" class="label-toggle navy white-text tahoma-text heavy">Toggle Me!</label>
-								<div class="toggle-content">
-									<div class="content-inner grey navy-text">
-										<p>You will need a unique ID for each reveal toggle element. Clicking on the label either opens or closes the toggled content. Use the markup as follows:</p>
-										<code class="black lime-text lucida-text padding">
+								<div class="toggle-content grey navy-text">
+									<p>You will need a unique ID for each reveal toggle element. Clicking on the label either opens or closes the toggled content. Use the markup as follows:</p>
+									<code class="black lime-text lucida-text padding">
 											&lt;div class="reveal toggle"&gt;<br />
 											&lt;input id="unique-id-1" class="toggle" type="checkbox"&gt;<br />
 											&lt;label for="unique-id-1" class="label-toggle"&gt;<br />
 											&nbsp;&lt;div class="toggle-content"&gt;<br />
-											&nbsp;&nbsp;&lt;div class="content-inner"&gt;<br />
-											&nbsp;&nbsp;...content...<br />&nbsp;&nbsp;&lt;/div&gt;<br />
+											&nbsp;&nbsp;...content...<br />
 											&nbsp;&lt;/div&gt;<br />&lt;/div&gt;
-										</code>
+									</code>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p class="padded"></p>
+					<!-- DRAGGABLE ELEMENTS -->
+					<div class="padding">
+						<h4 class="red-t lucida" id="drag">Draggable</h4>
+						<p class="charcoal-t arial">Make any element draggable! Simply apply the class <span class="heavy bigger">.draggable</span> to any element.</p>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-6">
+							<h5 class="red-text tahoma flow-text">Example: Draggable Bricks</h5>
+							<p class="charcoal-text arial-text" style="margin-bottom: 0.9em;">Bricks are ideal as draggable elements. Simply apply class <em>draggable</em> to bricks: <strong>.brick.draggable</strong>.</p>
+							<!-- Draggable Bricks -->
+							<div class="padded maroon banana-t draggable brick">Drag Me</div>
+							<div class="padded pink lemon-t draggable brick">PSSHH... I'm such a <span class="blink-182">drag queen</span></div>
+							<div class="padded peanut chocolate-text draggable brick">Drag me through the mud</div>
+							<p class="info padded" style="margin-top: 2em;"><span class="bigger bold">Draggable Modals</span><br />Make a modal draggable just by adding the class <em>draggable</em> to the modal inner wrapper:<br /><span class="bold">.modal-inner.draggable</span></p>
+						</div>
+						<div class="col-sm-12 col-md-6">
+							<h4 class="red-text flow-text tahoma">Example: Stacked Draggable Bricks</h4>
+							<p class="charcoal-text arial-text" style="margin-bottom: 0.9em;">We could stack our bricks on top of each other using <em>stack-auto</em>, and make them draggable: <strong>.brick.stack-auto.draggable</strong>.</p>
+							<div class="silver padded" style="min-height: 15em; border-bottom: 3px solid #666; margin-bottom: 2em;">
+								<div class="lucida-text bigger silver grey-text text-right draggable border-solid-thin grey-border padded stack-top" style="float: right;">Draggable area!<br /><small>This whole container<br />can also be dragged!</small></div>
+								<!-- Stacked Draggable Bricks -->
+								<div class="stack-auto brick padded maroon lime-t draggable huge border-dotted-thick red-b">I'm on the<br /><span class="bold">bottom</span></div>
+								<div class="stack-auto brick padded plum peach-t draggable bigger peach-border border-dashed-thin">Brick #2:<br /><span class="blink">Drag me!</span></div>
+								<div class="stack-auto brick padded orange red-t draggable lucida border-solid-thin blue-b bold">Top Brick</div>
+							</div>
+						</div>
+					</div>
+					<p class="padded"></p>
+					<!-- CURSORS & RESIZEABLE ELEMENTS -->
+					<div class="padding">
+						<h4 class="red-text lucida">Cursors & Resizeable Elements</h4>
+						<p class="charcoal-text arial">Make any element have a specific cursor type, or make any element rezizeable by the user!</p>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-6">
+							<h5 class="red-text tahoma flow-text">Cursor Classes</h5>
+							<p>Apply these classes to any element. Hover for preview.</p>
+							<div class="disabled blocked padded"><span class="bold bigger">.blocked</span></div>
+							<div class="ready cell padded"><span class="bold bigger">.cell</span></div>
+							<div class="alert crosshair padded"><span class="bold bigger">.crosshair</span></div>
+							<div class="success grab padded"><span class="bold bigger">.grab</span></div>
+							<div class="info help padded"><span class="bold bigger">.help</span></div>
+							<div class="warning move padded"><span class="bold bigger">.move</span></div>
+							<div class="peach-plum pointer padded"><span class="bold bigger">.pointer</span></div>
+							<div class="monochrome wait padded"><span class="bold bigger">.wait</span></div>
+							<div class="mint-chocolate zoom-in padded"><span class="bold bigger">.zoom-in</span></div>
+							<div class="silver-blood zoom-out padded"><span class="bold bigger">.zoom-out</span></div>
+						</div>
+						<div class="col-sm-12 col-md-6">
+							<h5 class="red-text tahoma flow-text">Resize Elements</h5>
+							<p>Apply these classes to make any element resizeable by the user.</p>
+							<div class="padded info blue-border border-solid-thin resize-both"><span class="bold bigger">.resize-both</span><br />
+							Resize the element both vertically and horizontally.</div>
+							<div class="padded ready orange-border border-solid-thin resize-h"><span class="bold bigger">.resize-h</span><br />
+							Resize the element horizontally only.</div>
+							<div class="padded disabled grey-border border-solid-thin resize-v"><span class="bold bigger">.resize-v</span><br />
+							Resize the element vertically only.</div>
+						</div>
+					</div>
+					<p class="padded"></p>
+					<!-- Preview Hover -->
+					<div class="padding">
+						<h4 class="red-text lucida">Preview Hover</h4>
+						<p class="charcoal-text arial">Add hoverable video and image previews to any element.</p>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-7">
+							<h5 class="red-text tahoma flow-text">Markup</h5>
+							<p>Markup is simple! Simply apply the class <strong><em>.ph</em></strong> and a <em>data-src</em> attribute, like so:</p>
+							<code class="black lime-text lucida-text padding smaller">
+								&lt;element class="ph" data-src="./file-url"&gt;&lt;/element&gt;
+							</code>
+							<p class="padded info"><strong>Supported File Types:</strong> .jpg, .jpeg, .png, .ico, .gif, .svg, .bmp, .webp, .mp4, .webm</p>
+						</div>
+						<div class="col-sm-12 col-md-5">
+							<h5 class="red-text tahoma flow-text">Demo:</h5>
+							<button href="#" class="ph btn small-btn" data-src="theme/default/files/images/blinker-fluid.jpg">Blinker Fluid Button</button><br />
+							<img class="ph tiny-thumb" data-src="theme/default/files/images/blinker-fluid.jpg" alt="Blinker Fluid" src="theme/default/files/images/blinker-fluid.jpg" /><br />
+						</div>
+					</div>
+					<p class="padded"></p>
+					<!-- Content Display Picker -->
+					<div class="padding">
+						<h4 class="red-text lucida">CDP: Content Display Picker</h4>
+						<p class="charcoal-text arial">Display content when an option is selected.</p>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-6">
+							<h5 class="red-text tahoma flow-text">Markup</h5>
+							<code class="black lime-text lucida-text padding smaller">
+								&lt;div class="cdp-wrap" id="unique-id"&gt;<br />
+								&nbsp;&nbsp;&lt;select class="cdp_select"&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="0"&gt;Content 1&lt;/option&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="1"&gt;Content 2&lt;/option&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="2"&gt;Content 3&lt;/option&gt;...<br />
+								&nbsp;&nbsp;&lt;/select&gt;<br /><br />
+								&nbsp;&nbsp;&lt;div class="content"&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cdp-element" data-option="0"&gt;<br />...Option 1 Content...&lt;/div&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cdp-element" data-option="1"&gt;<br />...Option 2 Content...&lt;/div&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cdp-element" data-option="2"&gt;<br />...Option 3 Content...&lt;/div&gt;<br />
+								&nbsp;&nbsp;&lt;/div&gt;<br />
+								&lt;/div&gt;
+							</code>
+						</div>
+						<div class="col-sm-12 col-md-6">
+							<h5 class="red-text tahoma flow-text">Demo:</h5>
+							<div class="cdp-wrap" id="cdp1">
+								<select class="cdp_select flow-text">
+									<option value="0">Content 1</option>
+									<option value="1">Content 2</option>
+									<option value="2">Content 3</option>
+								</select>
+								<div class="content">
+									<div class="cdp_element" data-option="0">
+										<div class="padded ireland flow-text seaweed-text bold">Win a trip to Ireland!</div>
+									</div>
+									<div class="cdp_element" data-option="1">
+										<div class="padded sweden-gradient flow-text white-text bold">Win a trip to Sweden!</div>
+									</div>
+									<div class="cdp_element" data-option="2">
+										<div class="padded octoberfest flow-text black-text comic-sans bold">Win a Beer Party!</div>
 									</div>
 								</div>
+							</div>
+						</div>
+					</div>
+					<p class="padded"></p>
+					<!-- B-Loader -->
+					<div class="padding">
+						<h4 class="red-text lucida">B-Loader (BETA)</h4>
+						<p class="charcoal-text arial">Load more list items upon button press!</p>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-6">
+							<p class="padded info">Simply create a list of <strong>div</strong> or <strong>p</strong> elements , wrapped within a <strong><em>.b-loader</em></strong> class container!
+							<br /><br />By default, <em>b-loader</em> displays 5 items at a time. This can be modified in the <em>start.brutalizing.js</em> initialization script.
+							<br /><br />To display a counter within the "load more" button, change <em>counterInBtn</em> value to "true" in <em>start.brutalizing.js</em>.
+							</p>
+						</div>
+						<div class="col-sm-12 col-md-6">
+							<div class="b-loader">
+								<div>List Item 1</div>
+								<div>List Item 2</div>
+								<div>List Item 3</div>
+								<div>List Item 4</div>
+								<p>List Item 5 (Paragraph)</p>
+								<div>List Item 6</div>
+								<div>List Item 7</div>
+								<div>List Item 8</div>
+								<div>List Item 9</div>
+								<p>List Item 10 (Paragraph)</p>
+								<div>List Item 11</div>
+								<div>List Item 12</div>
+								<div>List Item 13</div>
+								<div>List Item 14</div>
+								<div>List Item 15</div>
+								<div>List Item 16</div>
+								<div>List Item 17</div>
+								<div>List Item 18</div>
+								<div>List Item 19</div>
+								<p>List Item 20 (Paragraph)</p>
+								<div>List Item 21</div>
+								<div>List Item 22</div>
+								<div>List Item 23</div>
+								<div>List Item 24</div>
+								<div>List Item 25</div>
+								<div>List Item 26</div>
+								<div>LAST List Item 27</div>
 							</div>
 						</div>
 					</div>
@@ -393,20 +554,16 @@
 					
 				<!-- SIMPLE MENU -->
 				<div class="padding">
-					<h3 class="red-text lucida" id="simplemenu">Simple Menu</h3>
-					<p class="charcoal-text arial-text"><em>Simple Menu</em> is a pure CSS menu that displays a description upon hover over each item.</p>
+					<h3 class="red-t lucida" id="simplemenu">Navigation</h3>
+					<h4 class="red-t lucida">Simple Menu</h4>
+					<p class="charcoal-t arial">A pure CSS menu that displays a description upon hover over each item.</p>
 					<div class="row">
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<h4 class="charcoal-text courier-new">Default View</h4>
-							<ul class="simple-nav lucida-text">
-								<li><a href="#">Link 1
-									<span>Description text for item 1.</span></a>
-								</li>
-								<li><a href="#">Link 2
-									<span>Description text for item 2.</span></a>
-								</li>
-								<li><a href="#">Link 3
-									<span>Description text for item 3.</span></a>
+							<h4 class="charcoal-t courier-new">Default View</h4>
+							<ul class="simple-nav lucida">
+								<li><a href="#">Link 1 <span>Description text for item 1.</span></a></li>
+								<li><a href="#">Link 2 <span>Description text for item 2.</span></a></li>
+								<li><a href="#">Link 3 <span>Description text for item 3.</span></a>
 									<ul>
 										<li><a href="#">Sub-Page 1</a>
 											<ul>
@@ -418,117 +575,127 @@
 										<li><a href="#">Sub-Page 3</a></li>
 									</ul>
 								</li>
-								<li><a href="#">Link 4
-									<span>Description text for item 4.</span></a>
-								</li>
-								<li><a href="#">Link 5
-								  <span>Description text for item 5.</span></a>
-								</li>
+								<li><a href="#">Link 4 <span>Description text for item 4.</span></a></li>
+								<li><a href="#">Link 5 <span>Description text for item 5.</span></a></li>
 							</ul>
 						</div>
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<h4 class="charcoal-text courier-new">Markup</h4>
-							<code class="black lime-text lucida padding">
+							<h4 class="charcoal-t courier-new">Markup</h4>
+							<code class="black lime-t lucida padded smaller">
 								&lt;ul class="simple-nav"&gt;<br />
 								&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;List Item<br />
 								&nbsp;&nbsp;&nbsp;&lt;span&gt;Description text&lt;/span&gt;&lt;/a&gt;<br />
 								&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br />
 								&lt;/ul&gt;
 							</code>
+							
 						</div>
 					</div>
+					
 				</div>	
 				<p class="padding"></p>
 				<hr class="thick tomato"/>
 				<!-- THUMBNAILS -->
 				<div class="padding">
-					<h3 class="red-text lucida" id="thumbs">Thumbnails</h3>
-					<p class="charcoal-text arial">Thumbnails allow you to display a list of images at a reduced size. Useful for galleries.</p>
+					<h3 class="red-t lucida" id="thumbs">Thumbnails</h3>
+					<p class="charcoal-t arial">Thumbnails allow you to display a list of images at a reduced size. Useful for galleries. Wrap <em>img</em> tags within a container with any of these classes:</p>
 					<div class="row">
 						<div class="col-sm-12 col-md-8">
-							<h4 class="arial charcoal-text"><strong>.thumbs-micro</strong></h4>
-							<ul class="thumbs-micro">
-								<li><img src="files/images/brutal-building.jpg"></li>
-								<li><img src="files/images/spomenik.jpg"></li>
-								<li><img src="files/images/rupp-drive-brutalism.jpg"></li>
-								<li><img src="files/images/county-bldg-brutalist.jpg"></li>
-							</ul>
-							<h4 class="arial charcoal-text"><strong>.thumbs-tiny</strong></h4>
-							<ul class="thumbs-tiny">
-								<li><img src="files/images/brutal-building.jpg"></li>
-								<li><img src="files/images/spomenik.jpg"></li>
-								<li><img src="files/images/rupp-drive-brutalism.jpg"></li>
-								<li><img src="files/images/county-bldg-brutalist.jpg"></li>
-							</ul>
-							<h4 class="arial charcoal-text"><strong>.thumbs-small</strong></h4>
-							<ul class="thumbs-small">
-								<li><img src="files/images/brutal-building.jpg"></li>
-								<li><img src="files/images/spomenik.jpg"></li>
-								<li><img src="files/images/rupp-drive-brutalism.jpg"></li>
-								<li><img src="files/images/county-bldg-brutalist.jpg"></li>
-							</ul>
-							<h4 class="arial charcoal-text"><strong>.thumbs-medium</strong></h4>
-							<ul class="thumbs-medium">
-								<li><img src="files/images/brutal-building.jpg"></li>
-								<li><img src="files/images/spomenik.jpg"></li>
-								<li><img src="files/images/rupp-drive-brutalism.jpg"></li>
-								<li><img src="files/images/county-bldg-brutalist.jpg"></li>
-							</ul>
-							<h4 class="arial charcoal-text"><strong>.thumbs-large</strong></h4>
-							<ul class="thumbs-large">
-								<li><img src="files/images/brutal-building.jpg"></li>
-								<li><img src="files/images/spomenik.jpg"></li>
-								<li><img src="files/images/rupp-drive-brutalism.jpg"></li>
-								<li><img src="files/images/county-bldg-brutalist.jpg"></li>
-							</ul>
-							<h4 class="arial charcoal-text"><strong>.thumbs-xlarge</strong></h4>
-							<ul class="thumbs-xlarge">
-								<li><img src="files/images/brutal-building.jpg"></li>
-								<li><img src="files/images/spomenik.jpg"></li>
-								<li><img src="files/images/rupp-drive-brutalism.jpg"></li>
-								<li><img src="files/images/county-bldg-brutalist.jpg"></li>
-							</ul>
+							<h4 class="arial charcoal-text"><strong>.micro-thumb</strong></h4>
+							<div class="micro-thumb">
+								<img src="theme/default/files/images/brutal-building.jpg" />
+								<img src="theme/default/files/images/spomenik.jpg" />
+								<img src="theme/default/files/images/rupp-drive-brutalism.jpg" />
+								<img src="theme/default/files/images/kitty/badasskat-xtreme.jpg" />
+							</div>
+							<h4 class="arial charcoal-text"><strong>.tiny-thumb</strong></h4>
+							<div class="tiny-thumb">
+								<img src="theme/default/files/images/brutal-building.jpg" />
+								<img src="theme/default/files/images/spomenik.jpg" />
+								<img src="theme/default/files/images/rupp-drive-brutalism.jpg" />
+								<img src="theme/default/files/images/kitty/badasskat-xtreme.jpg" />
+							</div>
+							<h4 class="arial charcoal-text"><strong>.small-thumb</strong></h4>
+							<div class="small-thumb crop">
+								<img src="theme/default/files/images/brutal-building.jpg" />
+								<img src="theme/default/files/images/spomenik.jpg" />
+								<img src="theme/default/files/images/rupp-drive-brutalism.jpg" />
+								<img src="theme/default/files/images/kitty/badasskat-xtreme.jpg" />
+							</div>
+							<h4 class="arial charcoal-text"><strong>.medium-thumb</strong></h4>
+							<div class="medium-thumb crop">
+								<img src="theme/default/files/images/brutal-building.jpg" />
+								<img src="theme/default/files/images/spomenik.jpg" />
+								<img src="theme/default/files/images/rupp-drive-brutalism.jpg" />
+								<img src="theme/default/files/images/kitty/badasskat-xtreme.jpg" />
+							</div>
+							<h4 class="arial charcoal-text"><strong>.large-thumb</strong></h4>
+							<div class="large-thumb crop">
+								<img src="theme/default/files/images/brutal-building.jpg" />
+								<img src="theme/default/files/images/spomenik.jpg" />
+								<img src="theme/default/files/images/rupp-drive-brutalism.jpg" />
+							</div>
+							<h4 class="arial charcoal-text"><strong>.xlarge-thumb</strong></h4>
+							<div class="xlarge-thumb">
+								<img src="theme/default/files/images/brutal-building.jpg" />
+								<img src="theme/default/files/images/spomenik.jpg" />
+								<img src="theme/default/files/images/kitty/badasskat-xtreme.jpg" />
+							</div>
+							<h4 class="arial charcoal-text"><strong>.jumbo-thumb</strong></h4>
+							<div class="jumbo-thumb">
+								<img src="theme/default/files/images/brutal-building.jpg" />
+								<img src="theme/default/files/images/spomenik.jpg" />
+							</div>
 						</div>
 						<div class="col-sm-12 col-md-4">
-							<h4 class="charcoal-text courier-new">Markup</h4>
-							<code class="black lime-text lucida padding smaller">
-								&lt;ul class="thumbs-size"&gt;<br />
-								&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;img src="URL" /&gt;&nbsp;&lt;/li&gt;<br />
-								&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;img src="URL" /&gt;&nbsp;&lt;/li&gt;<br />
-								&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;img src="URL" /&gt;&nbsp;&lt;/li&gt;<br />
-								&lt;/ul&gt;<br /><br />~ OR ~<br /><br />
-								&lt;element class="thumbs-size"&gt;<br />
+							<div class="info padded arial">
+								<p><span class="bigger bold">TIP:</span> These classes can also be applied directly to the <em><b>img</b></em> or <em><b>picture</b></em> tags.</p>
+							</div>
+							<h4 class="charcoal-t courier-new">Markup</h4>
+							<code class="black lime-t lucida padding smaller">
+								&lt;div class="size-thumb"&gt;<br />
 								&nbsp;&nbsp;&nbsp;&lt;img src="URL" /&gt;&nbsp;<br />
-								&nbsp;&nbsp;&nbsp;&lt;img src="URL" /&gt;&nbsp;<br />&lt;/element&gt;
+								&nbsp;&nbsp;&nbsp;&lt;img src="URL" /&gt;&nbsp;...<br />&lt;/div&gt;
 							</code>
 							<p>&nbsp;</p>
-							<div class="info padded arial">
-								<h4 class="lucida flow-text">Single Image Thumbnails</h4>
-								<p>Apply these classes directly to the <em><b>img</b></em> or <em><b>picture</b></em> tags for single images. Their sizes correspond to the above examples.</p>
-								<p class="bigger">.micro-thumb<br />.tiny-thumb<br />.small-thumb<br />.medium-thumb<br />.large-thumb<br />.xlarge-thumb</p>
+							<div class="ready padded arial">
+								<h4 class="lucida flow-text">Cropped Thumbnails</h4>
+								<p>Make all thumbnails into a square (regardless of their original dimensions) by applying the <span class="bigger bold">.crop</span> class in conjunction with any of the thumbnail classes!</p>
+							</div>
+							<p>&nbsp;</p>
+							<div class="warning padded arial">
+								<h4 class="lucida flow-text">Circle Thumbnails</h4>
+								<p>Make all thumbnails into a circle! Apply the <span class="bold bigger">.circle</span> class in conjunction with <em>.crop</em> and any thumbnail size class:<br />
+								<span class="bold">.size-thumb.crop.circle</span></p>
+								<div class="tiny-thumb crop circle">
+									<img src="theme/default/files/images/brutal-building.jpg" />
+									<img src="theme/default/files/images/spomenik.jpg" />
+									<img src="theme/default/files/images/rupp-drive-brutalism.jpg" />
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>	
+				<!-- MODALS -->
 				<p class="padding"></p>
 				<hr class="thick tomato"/>
 				<div class="padding">
-					<h3 class="red-text lucida" id="modals">Modals</h3>
-					<p class="charcoal-text arial">Display a modal with any type of content. Users can close the modal either by clicking anywhere outside of it, or the X in the top right corner. There are three components that are needed.</p>
+					<h3 class="red-t lucida" id="modals">Modals</h3>
+					<p class="charcoal-t arial">Display a modal with any type of content. Users can close the modal either by clicking anywhere outside of it, or the X in the top right corner. There are three components that are needed.</p>
 					<div class="row">
 						<div class="col-sm-12 col-md-4">
-							<h4 class="charcoal-text flow-text tahoma">Create Modal Content</h4>
-							<p class="arial-text grey-text">Wrap your content within this markup. This is what will be displayed within the modal.</p>
-							<code class="black lime-text lucida padding smaller">
+							<h4 class="charcoal-t flow-text tahoma">Create Modal Content</h4>
+							<p class="arial-text grey-t">Wrap your content within this markup. This is what will be displayed within the modal.</p>
+							<code class="black lime-t lucida padding smaller">
 							&lt;div id="unique-modal-id" style="display: none;"&gt;<br /><br />
 							&nbsp;...content...&nbsp;<br /><br />
 							&lt;/div&gt;
 							</code>
 						</div>
 						<div class="col-sm-12 col-md-4">
-							<h4 class="charcoal-text flow-text tahoma">Load Modal Box</h4>
+							<h4 class="charcoal-t flow-text tahoma">Load Modal Box</h4>
 							<p class="arial-text grey-text">This only needs to be included ONCE on the page. It loads the modal content within it.</p>
-							<code class="black lime-text lucida padding smaller">
+							<code class="black lime-t lucida padding smaller">
 							&lt;div class="modal"&gt;<br />
 							&nbsp;&lt;div class="modal-inner"&gt;<br />
 							&nbsp;&nbsp;&lt;span data-modal-close&gt;&times;&lt;/span&gt;<br />
@@ -540,7 +707,7 @@
 						<div class="col-sm-12 col-md-4">
 							<h4 class="charcoal-text flow-text tahoma">Launch Modal</h4>
 							<p class="arial-text grey-text">Simply create a link with a unique ID and <em>data-modal-open</em> attribute to launch the modal.</p>
-							<code class="black lime-text lucida padding smaller">
+							<code class="black lime-t lucida padded smaller">
 							&lt;a href="unique-modal-id" data-modal-open&gt;Open Modal&lt;/a&gt;
 							</code>
 						</div>
@@ -551,12 +718,18 @@
 							<!-- Links to launch modals -->
 							<p class="bigger lucida">
 								+ <a href="#modal-1" data-modal-open>Single Image</a><br />
+								+ <a href="#modal-yt" data-modal-open>YouTube Video</a><br />
 								+ <a href="#modal-2" data-modal-open>Basic Content</a><br />
 								+ <a href="#modal-3" data-modal-open>StackSwitch Modal</a>
 							</p>
 							<!-- Modal content -->
 							<div id="modal-1" style="display:none;">
-							  <img src="files/images/county-bldg-brutalist.jpg" style="max-width: 478px; height: auto !important;" alt="County Building" />
+							  <img src="theme/default/files/images/kitty/swedekat.jpg" style="max-width: 478px; height: auto !important;" alt="Swedish Kat" />
+							</div>
+							<div id="modal-yt" style="display:none;">
+							  <div class="container" style="max-width: 620px;"><div class="row"><div class="col-sm-12 no-padding">
+							  <iframe width="560" height="315" src="https://www.youtube.com/embed/StZcUAPRRac" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div></div></div>
 							</div>
 							<div id="modal-2" style="display:none;">
 								<div class="container" style="max-width: 620px;">
@@ -569,8 +742,8 @@
 										</div>
 										<div class="col-sm-12 col-md-6 no-padding">
 											<div class="sweden-gradient padded">
-												<h5 class="lucida white-text">Right Column</h5>
-												<p class="bold">Here is a thumbnail image for you stare at.<br /><img class="large-thumb" src="files/images/capsule-tower.jpg" alt="Capsule Tower" /></p>
+												<h5 class="lucida white-t">Right Column</h5>
+												<p class="bold">Here is a thumbnail image for you stare at.<br /><img class="large-thumb" src="theme/default/files/images/comprehend.jpg" alt="Think Brutalism" /></p>
 											</div>
 										</div>
 									</div>
@@ -607,13 +780,6 @@
 									</div>
 								</div>
 							</div>
-							<!-- Initiate and display modal itself -->
-							<div class="modal">
-							  <div class="modal-inner draggable"><!-- Remove "draggable" class to prevent modals from being moveable -->
-								<span data-modal-close>&times;</span>
-								<div class="modal-content"></div>
-							  </div>
-							</div>
 							
 						</div>
 						<div class="col-sm-12 col-md-6">
@@ -624,22 +790,68 @@
 						</div>
 					</div>
 				</div>
-					
+				
+				<!-- LITE MODALS -->
+				<p class="padding"></p>
+				<hr class="thick tomato"/>
+				<div class="padding">
+					<h3 class="red-t lucida" id="modals-lite">Lite Modals</h3>
+					<p class="charcoal-t arial">Pure CSS modals for simple and lightweight content!</p>
+					<div class="row">
+						<div class="col-sm-12 col-md-6">
+							<h4 class="charcoal-t flow-text tahoma">Create Modal Content</h4>
+							<p class="arial-text grey-t">Wrap your content within this markup.</p>
+							<code class="black lime-t lucida padding smaller">
+							&lt;div id="unique-id" class="modal-lite"&gt;<br />
+							&nbsp;&nbsp;&lt;div class="modal-content"&gt;<br />
+							&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="modal-head"&gt;..heading..&lt;/div&gt;<br />
+							&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="modal-content-body"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;..body content..<br />
+							&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+							&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="modal-footer"&gt;&lt;a href="#" class="btn"&gt;CLOSE&lt;/a&gt;&lt;/div&gt;<br />
+							&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;div class="overlay"&gt;&lt;/div&gt;<br />
+							&lt;/div&gt;
+							</code>
+							<h4 class="charcoal-t flow-text tahoma">Launch Modal</h4>
+							<p class="arial-text grey-t">Just link to the corresponding unique ID!</p>
+							<code class="black lime-t lucida padded smaller">
+							&lt;a href="#unique-id"&gt;Launch Modal&lt;/a&gt;
+							</code>
+							<a href="#kittykat" class="btn btn-large yellow blue-t invert-hover">Lite Modal</a>
+							<a href="#core" class="btn btn-large sweden invert-hover">Fullscreen Lite Modal</a>
+							<div id="kittykat" class="modal-lite">
+								<div class="modal-content white">
+									<div class="modal-head"><h5>Swedish Kat</h5></div>
+									<div class="modal-content-body"><img src="theme/default/files/images/kitty/swedekat.jpg" class="jumbo-thumb" alt="Swedish Kitty" /></div>
+									<div class="modal-footer"><a href="#modals-lite" class="btn">CLOSE</a></div><!-- We want to return to the Lite Modals section upon closing -->
+								</div>
+								<div class="overlay"></div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6">
+							<p class="padded info"><span class="flow-text bold">Customize</span><br />By default, no backgrounds or other colors are applied. Apply any flavors classes as necessary to any of the modal elements. <br /><br /><span class="flow-text bold">Closing Modals</span><br />
+								Optionally link the modal footer button to a unique ID within the page, so the user is returned to a specific point on the page.<br /><br />
+								<span class="flow-text bold">Fullscreen</span><br />To create a fullscreen modal, apply the class <b>.fullscreen</b> (<em>.modal-lite.fullscreen</em>).<br /><br />
+								<span class="flow-text bold">Scrollable</span><br />Ideal for fullscreen modals, make the modal body content vertically scrollable by applying the class <b>.scroll-y</b> (<em>.modal-body-content.scroll-y</em>).
+							</p>
+						</div>
+					</div>
+				</div>
+				
 				<!-- TABS -->
 				<p class="padding"></p>
 				<hr class="thick tomato"/>
 				<div class="padding">
-					<h3 class="red-text lucida" id="tabs">Tabs</h3>
-					<p class="charcoal-text arial-text">Tabs are purely CSS, so no javascript is required! Apply flavor classes to add color. You can add any type of content within a tab!<br /><br /></p>
+					<h3 class="red-t lucida" id="tabs">Tabs</h3>
+					<p class="charcoal-t arial">Tabs are purely CSS, so no javascript is required! Apply flavor classes to add color. You can add any type of content within a tab!<br /><br /></p>
 					<div class="row">
 						<div class="col-sm-12">
 							<div class="tabs">
 							  <input type="radio" name="tabs" id="tab1" checked="checked">
-							  <label for="tab1" class="blue-border border-solid-thin lucida-text">Welcome</label>
-							  <div class="tab anim-bg-hot blue-border border-solid-thin">
-								<h4 class="blue-text lucida-text black-text-shadow">Hot Tab!</h4>
-								<p class="bold tahoma-text charcoal-text">This tab has a <span class="blink">hot</span> animated background.</p>
-								<img src="files/images/capsule-tower.jpg" alt="Capsule Tower" class="right medium-thumb border-dashed-thick blue-border paranoid" />
+							  <label for="tab1" class="blue-b border-solid-thin lucida">Welcome</label>
+							  <div class="tab anim-bg-hot blue-b border-solid-thin">
+								<h4 class="blue-t lucida black-text-shadow">Hot Tab!</h4>
+								<p class="bold tahoma charcoal-t">This tab has a <span class="blink">hot</span> animated background.</p>
+								<img src="theme/default/files/images/comprehend.jpg" alt="Comprehend Brutalism" class="right xlarge-thumb brdr-a-k blue-b paranoid" />
 								<p class="double-col pad30 charcoal-text">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&nbsp;
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -647,29 +859,29 @@
 							  </div>
 							  
 							  <input type="radio" name="tabs" id="tab2">
-							  <label for="tab2" class="blue-border border-solid-thin lucida-text">Custom Layout</label>
-							  <div class="tab blue-border border-solid-thin anim-bg-water">
-								<h4 class="blue-text lucida-text black-text-shadow">Watery Tab with Custom Layout</h4>
+							  <label for="tab2" class="blue-b border-solid-thin lucida">Custom Layout</label>
+							  <div class="tab blue-b border-solid-thin anim-bg-water">
+								<h4 class="blue-text lucida black-text-shadow">Watery Tab with Custom Layout</h4>
 								<p class="bold tahoma-text">This tab has a nested 3-column grid layout!</p>
 								<div class="row" style="margin-top: 1em;">
-									<div class="col-xs-12 col-sm-4 border-dotted-thin navy-blue-border">
+									<div class="col-xs-12 col-sm-4 border-dotted-thin navy-b">
 										<div class="padded navy-blue">
-											<h4 class="lucida-text lime-text">Column 1</h4>
+											<h4 class="lucida lime-t">Column 1</h4>
 										</div>
 									</div>
-									<div class="col-xs-12 col-sm-4 border-dotted-thin blue-candy-border">
-										<div class="padded blue-candy"><h4 class="lucida-text pink-text">Column 2</h4></div>
+									<div class="col-xs-12 col-sm-4 border-dotted-thin blue-candy-b">
+										<div class="padded blue-candy"><h4 class="lucida pink-t">Column 2</h4></div>
 									</div>
-									<div class="col-xs-12 col-sm-4 border-dotted-thin navy-blue-border">
-										<div class="navy-blue padded"><h4 class="lucida-text lime-text">Column 3</h4></div>
+									<div class="col-xs-12 col-sm-4 border-dotted-thin navy-b">
+										<div class="navy padded"><h4 class="lucida lime-t">Column 3</h4></div>
 									</div>
 								</div>
 							  </div>
 							  
 							  <input type="radio" name="tabs" id="tab3">
-							  <label for="tab3" class="blue-border border-solid-thin lucida-text">Markup</label>
-							  <div class="tab blue-border border-solid-thin">
-								<h4 class="lucida-text">Markup</h4>
+							  <label for="tab3" class="blue-border border-solid-thin lucida">Markup</label>
+							  <div class="tab blue-b brdr-s-t">
+								<h4 class="lucida">Markup</h4>
 								<code class="padded">
 									&lt;div class="tabs"&gt; <span class="blue-candy-text">/* outer wrapper */</span><br />
 									<span class="blue-candy-text">/* Tab 1 */</span><br />
@@ -692,24 +904,24 @@
 					</div>
 				</div>
 				<!-- CONTENT SCROLLERS -->
-				<p class="padding"></p>
+				<p class="padded"></p>
 				<hr class="thick tomato"/>
 				<div class="padding">
-					<h3 class="red-text lucida" id="scrollers">Scrolling Content</h3>
-					<p class="charcoal-text arial">Create an infinitely scrolling content area. It is pure CSS, so no javascript is needed. There are four directions that content can be scrolled: left, right, up, and down. Hover over the scroller to pause it.<br /><br /></p>
+					<h3 class="red-t lucida" id="scrollers">Scrolling Content</h3>
+					<p class="charcoal-t arial">Create an infinitely scrolling content area. It is pure CSS, so no javascript is needed. There are four directions that content can be scrolled: left, right, up, and down. Hover over the scroller to pause it.<br /><br /></p>
 					<div class="row">
 						<div class="col-sm-12 col-md-6">
-							<p class="flow-text charcoal-text arial"><strong>.scroll-left</strong></p>
+							<p class="flow-text charcoal-t arial"><strong>.scroll-left</strong></p>
 							<div class="scroller-wrap black" style="height: 30px;">
 								<div class="scroll-left">
 									<div class="scroll-item">
 										<p class="sweden" style="font-size: 20px; line-height: 30px; padding-left: 8px; padding-right: 8px;"> I'm a scrolling text box! </p>
 									</div>
 									<div class="scroll-item">
-										<p class="pink grape-text" style="font-size: 20px; line-height: 30px; padding-left: 8px; padding-right: 8px;"> Create as many <span class="blink">scrolling</span> content items as you want! </p>
+										<p class="pink grape-t" style="font-size: 20px; line-height: 30px; padding-left: 8px; padding-right: 8px;"> Create as many <span class="blink">scrolling</span> content items as you want! </p>
 									</div>
 									<div class="scroll-item">
-										<p class="green banana-text" style="font-size: 20px; line-height: 30px; padding-left: 8px; padding-right: 8px;"> I scroll to the left... </p>
+										<p class="green banana-t" style="font-size: 20px; line-height: 30px; padding-left: 8px; padding-right: 8px;"> I scroll to the left... </p>
 									</div>
 								</div>
 							</div>
@@ -717,19 +929,19 @@
 							<div class="scroller-wrap gray" style="height: 120px;">
 								<div class="scroll-right">
 									<div class="scroll-item">
-										<img src="files/images/brutal-building.jpg" class="medium-thumb" />
+										<img src="theme/default/files/images/brutal-building.jpg" class="medium-thumb" />
 									</div>
 									<div class="scroll-item">
-										<img src="files/images/capsule-tower.jpg" class="medium-thumb" />
+										<img src="bp/fashion/coolkate.jpg" class="medium-thumb" />
 									</div>
 									<div class="scroll-item">
-										<img src="files/images/spomenik.jpg" class="medium-thumb" />
+										<img src="theme/default/files/images/spomenik.jpg" class="medium-thumb" />
 									</div>
 									<div class="scroll-item">
-										<img src="files/images/rupp-drive-brutalist.jpg" class="medium-thumb" />
+										<img src="theme/default/files/images/rupp-drive-brutalist.jpg" class="medium-thumb" />
 									</div>
 									<div class="scroll-item">
-										<img src="files/images/county-bldg-brutalist.jpg" class="medium-thumb" />
+										<img src="theme/default/files/images/kitty/badasskat-xtreme.jpg" class="medium-thumb" />
 									</div>
 								</div>
 							</div>
@@ -737,16 +949,16 @@
 							<div class="scroller-wrap white blue-border border-solid-thin" style="height: 250px;">
 								<div class="scroll-up">
 									<div class="scroll-item">
-										<p class="purple banana-text tahoma">This is a mixed content scroller with paragraphs and images.</p>
+										<p class="purple banana-t tahoma">This is a mixed content scroller with paragraphs and images.</p>
 									</div>
 									<div class="scroll-item">
-										<img src="files/images/angle1.jpg" class="responsive" />
+										<img src="theme/default/files/images/angle1.jpg" class="responsive" />
 									</div>
 									<div class="scroll-item">
-										<p class="water navy-blue-text flow-text arial">This could be used as a news feed!</p>
+										<p class="water navy-t flow-text arial">This could be used as a news feed!</p>
 									</div>
 									<div class="scroll-item">
-										<img src="files/images/rupp-drive-brutalism.jpg" class="responsive" />
+										<img src="theme/default/files/images/rupp-drive-brutalism.jpg" class="responsive" />
 									</div>
 								</div>
 							</div>
@@ -757,7 +969,7 @@
 										<p>This is the first paragraph of text.</p>
 									</div>
 									<div class="scroll-item">
-										<img src="files/images/angle1.jpg" class="small-thumb" />
+										<img src="theme/default/files/images/angle1.jpg" class="small-thumb" />
 									</div>
 									<div class="scroll-item">
 										<p class="blink-182">I'm blinking to get your attention!</p>
@@ -795,139 +1007,233 @@
 					</div>
 				</div>
 				
-				<!-- DRAGGABLE ELEMENTS -->
-				<p class="padding"></p>
-				<hr class="thick tomato"/>
-				<div class="padding">
-					<h3 class="red-text lucida" id="drag">Draggable</h3>
-					<p class="charcoal-text arial">Make any element draggable! Simply apply the class <span class="heavy bigger">.draggable</span> to any element.</p>
-				</div>
-				<div class="row">
-					<div class="col-sm-12 col-md-6">
-						<h4 class="red-text tahoma flow-text">Example: Draggable Bricks</h4>
-						<p class="charcoal-text arial-text" style="margin-bottom: 0.9em;">Bricks are ideal as draggable elements. Simply apply class <em>draggable</em> to bricks: <strong>.brick.draggable</strong>.</p>
-						<!-- Draggable Bricks -->
-						<div class="padded maroon banana-text draggable brick">Drag Me</div>
-						<div class="padded pink lemon-text draggable brick">PSSHH... I'm such a <span class="blink-182">drag queen</span></div>
-						<div class="padded peanut chocolate-text draggable brick">Drag me through the mud</div>
-						<p class="info padded" style="margin-top: 2em;"><span class="bigger bold">Draggable Modals</span><br />Make a modal draggable just by adding the class <em>draggable</em> to the modal wrapper:<br /><span class="bold">.modal.draggable</span></p>
-					</div>
-					<div class="col-sm-12 col-md-6">
-						<h4 class="red-text flow-text tahoma">Example: Stacked Draggable Bricks</h4>
-						<p class="charcoal-text arial-text" style="margin-bottom: 0.9em;">We could stack our bricks on top of each other using <em>stack-auto</em>, and make them draggable: <strong>.brick.stack-auto.draggable</strong>.</p>
-						<div class="silver padded" style="min-height: 15em; border-bottom: 3px solid #666; margin-bottom: 2em;">
-							<div class="lucida-text bigger silver grey-text text-right draggable border-solid-thin grey-border padded stack-top" style="float: right;">Draggable area!<br /><small>This whole container<br />can also be dragged!</small></div>
-							<!-- Stacked Draggable Bricks -->
-							<div class="stack-auto brick padded maroon lime-text draggable huge border-dotted-thick red-border">I'm on the<br /><span class="bold">bottom</span></div>
-							<div class="stack-auto brick padded plum peach-text draggable bigger peach-border border-dashed-thin">Brick #2:<br /><span class="blink">Drag me!</span></div>
-							<div class="stack-auto brick padded orange red-text draggable lucida-text border-solid-thin blue-border bold">Top Brick</div>
-						</div>
-					</div>
-				</div>
 				<p class="padding"></p>
 			</div>
 			<!-- Sidebar -->
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 no-padding black">
-				<img src="files/images/apocalypse-architecture.jpg" alt="BUIX" class="responsive" style="margin-bottom: -6px;" />
+				<img src="theme/default/files/images/gelora/backup-sq.jpg" alt="BUIX" class="responsive" style="margin-bottom: -6px;" />
 				<div class="glued">
 					<div class="row">
 						<div class="col-xs-12 no-padding">
 							<nav class="simple blue">
-								<ul class="courier-new-text flow-text lime-text">
+								<ul class="courier-new flow-text lime-t">
 									<li class="invert-hover"><a href="#buttforms" class="lime-text">Buttons &amp; Forms</a></li>
 									<li class="invert-hover"><a href="#stackies" class="lime-text">Stickies & Stacks</a></li>
-									<li class="invert-hover"><a href="#reveal" class="lime-text">Reveal</a></li>
-									<li class="invert-hover"><a href="#simplemenu" class="lime-text">Simple Menu</a></li>
+									<li class="invert-hover"><a href="#interactions" class="lime-text">Interactions</a></li>
+									<li class="invert-hover"><a href="#simplemenu" class="lime-text">Navigation</a></li>
 									<li class="invert-hover"><a href="#thumbs" class="lime-text">Thumbnails</a></li>
 									<li class="invert-hover"><a href="#modals" class="lime-text">Modals</a></li>
 									<li class="invert-hover"><a href="#tabs" class="lime-text">Tabs</a></li>
 									<li class="invert-hover"><a href="#scrollers" class="lime-text">Scrollers</a></li>
-									<li class="invert-hover"><a href="#drag" class="lime-text">Draggable</a></li>
 								</ul>
 							</nav>
 						</div>
 					</div>
-					<a href="#scrolltop" class="lime invert-hover bold black-text scrolltop lucida-text">Back to Top &uarr;</a>
+					<a href="#scrolltop" class="lime invert-hover bold black-t scrolltop lucida">Back to Top &uarr;</a>
+					<footer class="jagged gray">
+						<a href="http://eepurl.com/cEW1RX" target="_blank">
+							<div class="sweden-gradient padded invert-hover">
+								<h5 class="lucida white-text"><i class="bi bi-amp"></i>Brutal Blast /<span class="blink-182">/</span>/<span class="blink">/</span>/</h5>
+								<p class="bold">Subscribe to our e-newsletter. <span class="bigger">&raquo;</span></p>
+							</div>
+						</a>
+						<div class="padding vanilla-bean-text arial">
+							<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="green yellow-text invert-hover">Pine Creative Labs</a> production</p>
+							<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-text invert-hover">Brad Fogelstrom</span></a></p>
+							<ul class="tags">
+								<li><a href="http://www.twitter.com/brutalistfwk" target="_blank" class="btn white-text blue-candy hue-hover"><strong>Twitter</strong></a></li>
+								<li><a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank" class="btn black white-text invert-hover"><strong>GitHub</strong></a></li>
+							</ul>
+							<p class="white-t tahoma"><small>Brutalist Framework &copy; 2020</small></p>
+						</div>
+					</footer>
 				</div>
 			</div><!-- End Sidebar -->
 		</div>
 	</div>
 </div>
-<footer>
-<div class="container-1200 no-padding">
-	<div class="row">
-		<div class="col-sm-12">
-			<div class="jagged gray">
-				<div class="row">
-					<div class="col-sm-12 col-md-12 col-lg-4">
-						<div class="padding vanilla-bean-text arial">
-							<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="green yellow-text invert-hover">Pine Creative Labs</a> production</p>
-							<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-text invert-hover">Brad Fogelstrom</span></a></p>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-12 col-lg-4">
-						<div class="padding flow-text vanilla-bean-text arial">
-							<p>Interview on<br /><a href="http://www.brutalistwebsites.com/brutalistframework.com" target="_blank" class="white blue-text invert-hover">BrutalistWebsites.com</a>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-12 col-lg-4">
-						<div class="padding arial vanilla-bean-text">
-							<p class="flow-text">Contact us:</p>
-							<ul class="tags">
-								<li><a href="http://www.twitter.com/brutalistfwk" target="_blank" class="btn white-text blue-candy hue-hover"><strong>Twitter</strong></a></li>
-								<li><a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank" class="btn black white-text invert-hover"><strong>GitHub</strong></a></li>
-							</ul>
-						</div>
-					</div>
+
+<!-- Sticky Download Box -->
+<div class="sticky-cta sticky-bottom-right stack-middle virgin jagged2 center" style="padding: 8px; max-width: 180px;">
+	<nav class="simple bold">
+		<ul class="lucida flow-text">
+			<li class="invert-hover"><a href="#core"><i class="bi bi-heart"></i> CORE</a></li>
+			<li class="invert-hover"><a href="#bell"><i class="bi bi-amp"></i> BELL</a></li>
+			<li class="invert-hover"><a href="#boilers"><i class="bi bi-heat"></i> BP</a></li>
+			<li class="invert-hover"><a href="#moar">+ MORE</a></li>
+		</ul>
+	</nav>
+	<a href="#download" data-modal-open>
+	<div class="skew sweden btn invert-hover">
+		<p class="skew-right"><span class="flow-text impact">Download</span><br /><span class="lucida"><small>version 2.1</small></span></p>
+	</div></a>
+</div>
+<!-- Download Modal -->
+<div id="download" style="display:none;">
+	<div class="container monochrome infinitile" style="max-width: 468px;">
+		<div class="row">
+			<div class="col-sm-12 no-padding">
+				<div class="padded lucida">
+					<h4>Begin the <span class="blink red-t">Brutality</span></h5>
+					<p>Released <strong>10/13/2020</strong></p>
+					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.1.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.1</a></p><hr class="jagged-rule-dark" />
+					<p style="font-size: 1.15em;"><strong><span style="font-size: 1.3em;">Legacy Versions</span></strong><br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.0.zip" target="_blank">2.0.2.0</a> (released 2/20/2020)<br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.9.zip" target="_blank">1.9</a> (legacy)<br /><br /></p>
 				</div>
 			</div>
-			<p class="center white-text lucida-text">&copy; 2020 <em>BrutalistFramework</em>. All rights reserved.</p>
 		</div>
 	</div>
 </div>
-</footer>
-
-<!-- Sticky Download Box -->
-<a href="#download" data-modal-open>
-<div class="sticky-bottom-right stack-top red jagged" style="padding: 8px;">
-	<div class="skew sweden btn invert-hover">
-		<p class="flow-text lucida skew-right"><strong>Download</strong></p>
+<!-- Initiate and display modal itself -->
+<div class="modal">
+	<div class="modal-inner draggable"><!-- Remove "draggable" class to prevent modals from being moveable -->
+		<span data-modal-close>&times;</span>
+		<div class="modal-content"></div>
 	</div>
-	<p class="glitch bold yellow-text center">Version 2.0.2.0</p>
-</div></a>
-<!-- Download Modal -->
-<div id="download" style="display:none;">
-	<div class="container monochrome" style="max-width: 760px;">
-		<div class="row">
-			<div class="col-sm-12 col-md-6 no-padding">
-				<div class="padded">
-					<h4 class="lucida">Download</h5>
-					<p>Released 2/20/2020</p>
-					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.0.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.0.2.0</a></p><hr class="jagged-rule-dark" />
-					<p><strong><span style="font-size: 1.4em;">Legacy Versions</span></strong><br />
-					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.9.zip" target="_blank">Brutalist Framework 1.9</a><br /><br /></p>
-				</div>
-			</div>
-			<div class="col-sm-12 col-md-6 no-padding">
-				<div class="sweden-gradient padded">
-					<h5 class="lucida white-text"><i class="bi bi-amp"></i>Brutal Blast /<span class="blink-182">/</span>/<span class="blink">/</span>/</h5>
-					<p class="bold">Subscribe to our e-newsletter and receive periodic updates.</p>
-				</div>
-				<div class="black padded">
-					<!-- Email signup form here -->
-				</div>
+</div>
+
+<!-- Core Components Modal -->
+<div id="core" class="modal-lite fullscreen">
+	<div class="modal-content aboutbf infinitile">
+		<div class="modal-head center"><h2 class="red-t courier-new black-t-s bold">CORE Components</h2></div>
+		<div class="modal-content-body center">
+			<p class="flow-text black-t red-t-s lucida" style="margin-bottom: 1em;"></p>
+			<div class="block-wrap stretch">
+				<a href="butch.html" class="block b25 padded circle monogradient invert-hover box-shadow-double white-t">
+					<img src="theme/default/files/images/gelora/brutal-mood-4.jpg" class="crop circle small-thumb brdr-s-k blue-b" alt="BUTCH" />
+					<span class="red circle black-t white-t-s flow-text">BUTCH</span><br />
+					<small>Brutalist Utility &amp; Typography Class Helpers</small><br /><br />
+				</a>
+				<a href="bfx.html" class="block b25 padded circle monogradient invert-hover white-t box-shadow-double">
+					<img src="theme/default/files/images/kitty/bfx-kat.jpg" class="crop circle small-thumb brdr-s-k blue-b" alt="BFX" />
+					<span class="red circle white-t-s black-t flow-text">BFX</span><br />
+					<small>Brutal Effects</small><br /><br />
+				</a>
+				<a href="buix.html" class="block b25 padded circle monogradient invert-hover box-shadow-double white-t">
+					<img src="theme/default/files/images/gelora/backup-sq.jpg" class="crop circle small-thumb brdr-s-k blue-b" alt="BUIX" />
+					<span class="red circle white-t-s black-t flow-text">BUIX</span><br />
+					<small>Brutal User Interface &amp; Experience</small><br /><br />
+				</a>
+				<a href="grid.html" class="block b25 padded circle monogradient invert-hover box-shadow-double white-t">
+					<img src="theme/default/files/images/gelora/fenced.jpg" class="crop circle small-thumb brdr-s-k blue-b" alt="Grids" />
+					<span class="red circle white-t-s black-t flow-text">Grid</span><br />
+					<small>B3Grid &amp; Flexbox Grid</small><br /><br />
+				</a>
+				<a href="flavors.html" class="block b33 padded circle monogradient invert-hover box-shadow-double white-t">
+					<img src="theme/default/files/images/gelora/crazy-grin.jpg" class="crop circle small-thumb brdr-s-k blue-b" alt="Flavors" />
+					<span class="red circle white-t-s black-t flow-text">Flavors</span><br />
+					<small>Color Classes Library</small><br /><br />
+				</a>
+				<a href="rebar.html" class="block b33 padded circle monogradient invert-hover box-shadow-double white-t">
+					<img src="theme/default/files/images/gelora/rebar.jpg" class="crop circle small-thumb brdr-s-k blue-b" alt="Rebar" />
+					<span class="red circle white-t-s black-t flow-text">ReBAR</span><br />
+					<small>Responsive Breakpoint Assisstance Reference</small><br /><br />
+				</a>
+				<a href="bicons.html" class="block b33 padded circle monogradient invert-hover box-shadow-double white-t">
+					<img src="theme/default/files/images/kitty/anarchistkat-sq.jpg" class="crop circle small-thumb brdr-s-k blue-b" alt="bIcons" />
+					<span class="red circle white-t-s black-t flow-text">bIcons</span><br />
+					<small>Brutal Icons</small><br /><br />
+				</a>
 			</div>
 		</div>
+		<div class="modal-footer"><a href="#return1" class="btn large-btn black platinum-t">CLOSE</a></div>
 	</div>
+	<div class="overlay"></div>
+</div>
+
+<!-- BELL Modal -->
+<div id="bell" class="modal-lite fullscreen">
+	<div class="modal-content anim-bg-hot">
+		<div class="modal-head center"><h2 class="lemon-t courier-new black-t-s bold blue circle"><i class="bi bi-amp"></i> BELL</h2></div>
+		<div class="modal-content-body scroll-y center">
+			<div class="container"><div class="row"><div class="col-sm-12">
+				<h3 class="fittext-h3 blue-t black-t-s impact">Brutal Extension Element Library</h3>
+				<p class="flow-text lucida">A collection of javascript plugins to further enhance user experience.</p>
+				<div class="double-col align-left">
+					<h4 class="impact">Media Elements</h4>
+					<ul class="flow-text triangle">
+						<li><a href="bell.html#audio" class="link bold">Audio Player</a></li>
+						<li><a href="bell.html#gif" class="link bold">GIF Player</a></li>
+						<li><a href="bell.html#vp" class="link bold">Video Player</a></li>
+					</ul>
+					<h4 class="impact">Interface Elements</h4>
+					<ul class="flow-text triangle">
+						<li><a href="bell.html#megamenu" class="link bold">MegaMenu</a></li>
+						<li><a href="bell.html#printer" class="link bold">Printer</a></li>
+						<li><a href="bell.html#ei" class="link bold">Exit Intent</a></li>
+					</ul>
+					<h4 class="impact">Content Elements</h4>
+					<ul class="flow-text triangle">
+						<li><a href="bell.html#timeline" class="link bold">Timeline</a></li>
+						<li><a href="bell.html#presenter" class="link bold">Presenter</a></li>
+						<li><a href="bell.html#piss" class="link bold">PISS</a></li>
+					</ul>
+					<h4 class="impact">BISCUIT</h4>
+					<ul class="flow-text triangle">
+						<li><a href="bell.html#age" class="link bold">Age Verify</a></li>
+						<li><a href="bell.html#cc" class="link bold">Cookie Consent</a></li>
+						<li><a href="bell.html#pl" class="link bold">PageLock</a></li>
+					</ul>
+				</div>
+			</div></div></div>
+		</div>
+		<div class="modal-footer"><a href="#return1" class="btn large-btn black platinum-t">CLOSE</a></div>
+	</div>
+	<div class="overlay"></div>
+</div>
+
+<!-- Boilerplates Modal -->
+<div id="boilers" class="modal-lite fullscreen">
+	<div class="modal-content bpmodal">
+		<div class="modal-head center"><h2 class="deep-orange-t courier-new black-t-s bold"><i class="bi bi-heat"></i> Boilerplates</h2></div>
+		<div class="modal-content-body">
+			<div class="container-fluid"><div class="row"><div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+				<p class="fittext fire-t impact black-t-s">Starting point templates</p>
+				<ul class="flow-text brutal lucida white-t-s">
+					<li><a href="bp/email.html" target="_blank" class="link">Email Boilerplate</a></li>
+					<li><a href="bp/leads.html" target="_blank" class="link">Lead Capture</a></li>
+					<!--<li><a href="bp/catalog.html" target="_blank" class="link">Commerce Catalog</a></li>
+					<li><a href="bp/media-gallery.html" target="_blank" class="link">Media Gallery</a></li>-->
+					<li><a href="bp/microblog.html" target="_blank" class="link">Microblog</a></li>
+					<li><a href="bp/social.html" target="_blank" class="link">Social</a></li>
+					<li><a href="bp/horror.html" target="_blank" class="link">Horror</a></li>
+					<li><a href="bp/vaporwave.html" target="_blank" class="link">Vaporwave</a></li>
+					<li><a href="bp/ratedx.html" target="_blank" class="link">Rated X</a> <span class="red-t">(18+)</span></li>
+				</ul>
+			</div><div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div></div></div>
+		</div>
+		<div class="modal-footer"><a href="#return1" class="btn large-btn black platinum-t">CLOSE</a></div>
+	</div>
+	<div class="overlay"></div>
+</div>
+
+<!-- Moar Modal -->
+<div id="moar" class="modal-lite fullscreen">
+	<div class="modal-content shades">
+		<div class="modal-head center"><h2 class="red-t courier-new black-t-s bold">+ More</h2></div>
+		<div class="modal-content-body center">
+			<div class="container-1200"><div class="row"><div class="col-sm-12"><p class="padded"></p>
+				<p class="fittext helvetica black-t-s navy"><a href="http://eepurl.com/cEW1RX" target="_blank" class="orange-t invert-hover">Join <i class="bi bi-amp"></i> Brutal Blast &raquo;</a><br />
+				<small><span class="white-t">Subscribe to our e-Newsletter</span></small></p>
+				<p class="fittext lucida black-t-s"><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank" class="mono invert-hover">Roadmap</a></p>
+				<p class="fittext impact black-t-s"><a href="https://www.concrete5.org" target="_blank" class="charcoal smoke-t invert-hover">Concrete5 CMS</a></p>
+				<p class="fittext tahoma black-t-s"><a href="http://www.bradfogelstrom.com" target="_blank" class="sweden invert-hover">BradFogelstrom.com</a></p>
+				<p class="padded"></p>
+			</div></div></div>
+		</div>
+		<div class="modal-footer"><a href="#return1" class="btn large-btn black platinum-t allcaps">CLOSE</a></div>
+	</div>
+	<div class="overlay"></div>
 </div>
 
 <!--  Scripts-->
-<script src="core/js/jquery.js"></script>
+<script src="core/js/jquery.3.js"></script>
 <script src="core/js/brutalist.js"></script>
 <script src="core/js/start.brutalizing.js"></script>
 
-<!-- Plugin Scripts -->
-<script src="plugins/megamenu/view.js"></script>
+<!-- BELL -->
+<script src="core/bell/js/bell.js"></script>
 
 <!-- TRACKING -->
 

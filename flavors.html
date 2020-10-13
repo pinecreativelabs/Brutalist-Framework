@@ -4,50 +4,48 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 	<title>Brutalist Framework || Flavors</title>
-	<meta name="description" content="A simple framework for the brutalist web design trend." />
+	<meta name="description" content="Color CSS library for the brutalist web design trend." />
 
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="@pinebuilder">
+	<meta name="twitter:site" content="@brutalistfwk">
 	<meta name="twitter:title" content="Brutalist Framework || Flavors">
-	<meta name="twitter:description" content="A simple framework for the brutalist web design trend.">
-	<meta name="twitter:creator" content="@pinebuilder">
+	<meta name="twitter:description" content="Color CSS library for the brutalist web design trend.">
+	<meta name="twitter:creator" content="@brutalistfwk">
 	<!-- Twitter Summary card images must be at least 120x120px -->
-	<meta name="twitter:image" content="http://www.brutalistframework.com/files/images/brutalist-framework512.jpg">
+	<meta name="twitter:image" content="http://www.brutalistframework.com/core/files/images/bf21.jpg">
 
 	<!-- Open Graph data -->
 	<meta property="og:title" content="Brutalist Framework || Flavors" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://www.brutalistframework.com" />
-	<meta property="og:image" content="http://www.brutalistframework.com/files/images/brutalist-framework512.jpg" />
-	<meta property="og:description" content="A simple framework for the brutalist web design trend." /> 
+	<meta property="og:image" content="http://www.brutalistframework.com/core/files/images/bf21.jpg" />
+	<meta property="og:description" content="Color CSS library for the brutalist web design trend." /> 
 	<meta property="og:site_name" content="Brutalist Framework" />
 
 	<!-- Icons-->
-	<link rel="shortcut icon" href="files/icons/bf44.png" type="image/x-icon" />
-	<link rel="icon" href="files/icons/bf15.ico" type="image/x-icon" />
-	<link rel="apple-touch-icon" href="files/icons/bf57.png" />
+	<link rel="shortcut icon" href="core/files/icons/bf44.png" type="image/x-icon" />
+	<link rel="icon" href="core/files/icons/bf15.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="core/files/icons/bf57.png" />
 	
 	<!-- CORE CSS  -->
-	<!--<link href="core/css/dev/core.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
-	<link href="core/css/brutalist.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-	
+	<!--<link href="core/css/dev/core.css" type="text/css" rel="stylesheet" media="all"/>-->
+	<link href="core/css/brutalist.min.css" type="text/css" rel="stylesheet" media="all"/>
+	<!-- BELL -->
+	<link href="core/bell/css/bell.css" type="text/css" rel="stylesheet" media="all" />
 	<!-- Theme CSS -->
-	<link href="theme/default/css/theme.css" type="text/css" rel="stylesheet" media="screen,projection" />
-	
-	<!-- Plugins -->
-	<link href="plugins/megamenu/view.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link href="theme/default/css/theme.css" type="text/css" rel="stylesheet" media="all" />
 </head>
 <body class="black">
 	<header class="container-fluid triangle-light anim-bg-neon stack-base">
 		<div class="row"><div class="col-sm-12"><div class="container-1200">
 			<div class="row no-padding stack1 content" id="scrolltop">
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 no-padding">
-					<a href="index.html" class="logo"><img class="responsive border-solid-fat red-border" src="files/images/brutalist-framework512.jpg" alt="Brutalist Framework" /></a>
+				<div class="col-xs-12 col-sm-12 col-md-3 no-padding">
+					<a href="index.html"><img class="large-thumb crop circle brdr-s-k red-border invert-hover" src="core/files/images/brutalist-framework.jpg" alt="Brutalist Framework" /></a>
 				</div>
-				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 no-padding lucida">
-					<h1 class="page-title border-solid-thick red-border courier-new fittext-h1 white-text baffle-prolonged">Flavors</h1>
-					<div class="page-desc border-solid-thick red-border rice-text">
+				<div class="col-xs-12 col-sm-12 col-md-9 no-padding lucida">
+					<h1 class="page-title border-solid-thick red-border courier-new fittext-h1 white-t baffle-prolonged">Flavors</h1>
+					<div class="page-desc border-solid-thick red-border rice-t">
 						<h2 class="flow-text baffle">Color Classes Library</h2><br />
 						<p>Add a little flavor with these useful pre-defined color classes.</p>
 					</div>
@@ -64,7 +62,7 @@
 					<div class="menu lucida bold">
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="#">CORE</a>
+							<li><a href="#core">CORE</a>
 								<ul>
 									<li><a href="flavors.html">Flavors</a></li>
 									<li><a href="butch.html">BUTCH</a></li>
@@ -75,37 +73,39 @@
 									<li><a href="bicons.html">bIcons</a></li>
 								</ul>
 							</li>
-							<li><a href="extensions.html">Plugins</a>
+							<li><a href="bell.html">BELL</a>
 								<ul>
-									<li><a href="extensions.html#megamenu">Megamenu</a></li>
-									<li><a href="extensions.html#printer">Printer</a></li>
-									<li><a href="extensions.html#curvetext">CurveText</a></li>
+									<li><a href="bell.html#me">Media Elements</a>
+										<ul>
+											<li><a href="bell.html#audio">Audio Player</a></li>
+											<li><a href="bell.html#gif">Gif Player</a></li>
+											<li><a href="bell.html#vp">Video Player</a></li>
+										</ul>
+									</li>
+									<li><a href="bell.html#ie">Interface Elements</a>
+										<ul>
+											<li><a href="bell.html#megamenu">Megamenu</a></li>
+											<li><a href="bell.html#printer">Printer</a></li>
+											<li><a href="bell.html#ei">Exit Intent</a></li>
+										</ul>
+									</li>
+									<li><a href="bell.html#ce">Content Elements</a>
+										<ul>
+											<li><a href="bell.html#timeline">Timeline</a></li>
+											<li><a href="bell.html#presenter">Presenter</a></li>
+											<li><a href="bell.html#piss">PISS</a></li>
+										</ul>
+									</li>
+									<li><a href="bell.html#biscuit">BISCUIT</a>
+										<ul>
+											<li><a href="bell.html#age">Age Verify</a></li>
+											<li><a href="bell.html#cc">Cookie Consent</a></li>
+											<li><a href="bell.html#pl">PageLock</a></li>
+										</ul>
+									</li>
 								</ul>
 							</li>
-							<li><a href="templates.html">Starting Points</a>
-								<ul>
-									<li><a href="templates.html#emailbp">Email</a>
-										<ul>
-											<li><a href="starting-points/email-boilerplate-01.html" target="_blank">Boilerplate 01</a></li>
-											<li><a href="starting-points/email-boilerplate-02.html" target="_blank">Boilerplate 02</a></li>
-											<li><a href="starting-points/email-boilerplate-03.html" target="_blank">Boilerplate 03</a></li>
-										</ul>
-									</li>
-									<li><a href="templates.html#landings">Landing Pages</a>
-										<ul>
-											<li><a href="starting-points/leads.html" target="_blank">Lead Capture</a></li>
-											<li><a href="starting-points/thank-you.html" target="_blank">Thank You</a></li>
-											<li><a href="starting-points/event.html" target="_blank">Event</a></li>
-										</ul>
-									</li>
-									<li><a href="templates.html#blogs">Blog / Media</a>
-										<ul>
-											<li><a href="statting-points/blog-post-list.html" target="_blank">Blog Post List</a></li>
-											<li><a href="starting-points/blog-post.html" target="_blank">Blog Post</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
+							<li><a href="boilerplates.html">Boilerplates</a></li>
 							<li><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki" target="_blank">About</a>
 								<ul>
 									<li><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank">Roadmap</a></li>
@@ -129,9 +129,11 @@
 						<li class="coconut">.coconut</li>
 						<li class="rice">.rice</li>
 						<!-- Shades of Grey -->
-						<li class="silver">.silver</li>
-						<li class="mushroom">.mushroom</li>
 						<li class="platinum">.platinum</li>
+						<li class="mushroom">.mushroom</li>
+						<li class="silver">.silver</li>
+						<li class="ash">.ash</li>
+						<li class="smoke">.smoke</li>
 						<li class="grey">.grey / .gray</li>
 						<li class="charcoal white-text">.charcoal</li>
 						<li class="black white-text">.black</li>
@@ -155,22 +157,24 @@
 						<li class="raspberry">.raspberry</li>
 						<!-- PURPLES -->
 						<li class="lilac">.lilac</li>
-						<li class="purple">.purple / .plum</li>
-						<li class="lavender">.lavender / .light-purple</li>
-						<li class="grape">.grape</li>
+						<li class="lavender">.lavender</li>
+						<li class="mauve">.mauve</li>
+						<li class="purple">.purple</li>
 						<li class="eggplant">.eggplant</li>
-						<li class="deep-plum lavender-text">.deep-plum</li>
+						<li class="grape">.grape</li>
+						<li class="plum lavender-text">.plum</li>
 						<li class="blackberry lavender-text">.blackberry</li>
 						<!-- BLUES -->
-						<li class="water">.water / .light-blue</li>
+						<li class="water">.water</li>
 						<li class="pool-water">.pool-water</li>
+						<li class="pastel-blue">.pastel-blue</li>
 						<li class="blue-candy">.blue-candy</li>
 						<li class="blue">.blue</li>
 						<li class="sky">.sky</li>
 						<li class="cornflower">.cornflower</li>
+						<li class="azure">.azure</li>
 						<li class="blueberry">.blueberry</li>
 						<li class="navy sky-text">.navy</li>
-						<li class="pastel-blue">.pastel-blue</li>
 						<li class="midnight sky-text">.midnight</li>
 						<!-- ORANGES -->
 						<li class="orange">.orange</li>
@@ -181,210 +185,219 @@
 						<li class="squash">.squash</li>
 						<li class="peach">.peach</li>
 						<li class="carrot">.carrot</li>
-						<li class="rust">.rust</li>
 						<li class="deep-orange">.deep-orange</li>
+						<li class="rust">.rust</li>
+						<li class="bbq">.bbq</li>
 						<!-- BROWNS -->
 						<li class="wheat">.wheat</li>
-						<li class="peanut">.peanut / .peanut-butter</li>
-						<li class="light-brown">.light-brown / .cappuccino</li>
+						<li class="sand">.sand</li>
+						<li class="peanut">.peanut</li>
+						<li class="light-brown">.cappuccino</li>
+						<li class="coffee">.coffee</li>
 						<li class="brown">.brown</li>
 						<li class="steak">.steak</li>
-						<li class="bbq">.bbq</li>
+						<li class="cider">.cider</li>
+						<li class="spice">.spice</li>
 						<li class="chocolate">.chocolate</li>
 						<li class="dark-chocolate">.dark-chocolate</li>
 						<!-- GREENS -->
 						<li class="green">.green / .cucumber</li>
 						<li class="lime">.lime</li>
-						<li class="green-apple">.green-apple</li>
+						<li class="green-apple">.pear</li>
 						<li class="kiwi">.kiwi</li>
 						<li class="mint">.mint</li>
 						<li class="spinach">.spinach</li>
 						<li class="olive">.olive</li>
 						<li class="pistachio">.pistachio</li>
+						<li class="pickle">.pickle</li>
+						<li class="seaweed">.seaweed</li>
 						<!-- YELLOWS -->
 						<li class="butter">.butter</li>
 						<li class="yellow">.yellow / .lemon</li>
 						<li class="cheddar">.cheddar</li>
+						<li class="caramel">.caramel</li>
 						<li class="pineapple">.pineapple</li>
 						<li class="banana">.banana</li>
 						<li class="honey">.honey / .amber</li>
+						<li class="beer">.beer</li>
+						<li class="mustard">.mustard</li>
 					</ul>
 				</div>
 				<p class="padding"></p>
 				<hr class="thick tomato" />
 				<div class="padding">
-					<h3 class="red-text courier-new-text fittext-compress" id="textc">Text Color</h3>
-					<p class="charcoal-text arial-text">Simply apply <strong><em>-text</em></strong> after a core color class to change the text color.</p>
+					<h3 class="red-text courier-new fittext-compress" id="textc">Text Color</h3>
+					<p class="charcoal-text arial">Simply apply <strong><em>-t</em></strong> after a core color class to change the text color.</p>
 					<div class="disabled padded">
-						<p class="lucida-text flow-text bold">EXAMPLES:</p>
-						<p class="flow-text"><span class="lime-text">.lime-text</span> <span class="honey-text">.honey-text</span> <span class="blue-text">.blue-text</span> <span class="dark-chocolate-text">.dark-chocolate-text</span></p>
+						<p class="lucida flow-text bold">EXAMPLES:</p>
+						<p class="flow-text"><span class="green-text">.green-t</span> <span class="caramel-t">.caramel-t</span> <span class="blue-t">.blue-t</span> <span class="dark-chocolate-t">.dark-chocolate-t</span></p>
 					</div>
 				</div>
 				<p class="padding"></p>
 				<hr class="thick tomato" />
 				<div class="padding">
 					<h3 class="red-text courier-new-text fittext-compress" id="textsh">Text Shadow</h3>
-					<p class="charcoal-text arial-text">Simply apply <strong><em>-text-shadow</em></strong> after a core color class to change the text shadow color.</p>
+					<p class="charcoal-text arial-text">Simply apply <strong><em>-t-s</em></strong> (text-shadow) after a core color class to change the text shadow color.</p>
 					<div class="disabled padded">
 						<p class="lucida-text flow-text bold">EXAMPLES:</p>
-						<p class="flow-text charcoal-text heavy"><span class="lime-text-shadow">.lime-text-shadow</span> <span class="yellow-text-shadow">.yellow-text-shadow</span> <span class="blue-text-shadow">.blue-text-shadow</span> <span class="bubble-gum-text-shadow">.bubble-gum-text-shadow</span></p>
+						<p class="flow-text charcoal-text heavy"><span class="green-t-s">.green-t-s</span> <span class="yellow-t-s">.yellow-t-s</span> <span class="blue-t-s">.blue-t-s</span> <span class="blood-orange-t-s">.blood-orange-t-s</span></p>
 					</div>
 				</div>
 				<p class="padding"></p>
 				<hr class="thick tomato" />
 				<div class="padding">
 					<h3 class="red-text courier-new-text fittext-compress" id="borderc">Border &amp; Outline Color</h3>
-					<p class="charcoal-text arial-text">Simply apply <strong><em>-border</em></strong> or <strong><em>-outline</em></strong> after a core color class to change the border or outline color. See "Basic Borders" and "Outlines" under BUTCH on how to apply borders.</p>
+					<p class="charcoal-text arial-text">Simply apply <strong><em>-b</em></strong> (border) or <strong><em>-o</em></strong> (outline) after a core color class to change the border or outline color. See "Basic Borders" and "Outlines" under BUTCH on how to apply borders.</p>
 					<p class="white-text arial-text flow-text">EXAMPLES:</p>
 					<div class="row">
 						<div class="col-sm-12 col-md-4">
-							<p class="border-solid-thick water-border">Solid Thick Water Border<br /><span class="bold">.water-border</span></p>
-							<p class="outline-dashed-fat plum-outline green-border border-dashed-thick" style="margin-top: 1.8em;">Dashed Thick Green border with Fat Plum Outline<br /><span class="bold">.plum-outline .green-border</span></p>
+							<p class="border-solid-thick water-border">Solid Thick Water Border<br /><span class="bold">.water-b</span></p>
+							<p class="outline-dashed-fat plum-o green-b border-dashed-thick" style="margin-top: 1.8em;">Dashed Thick Green border with Fat Plum Outline<br /><span class="bold">.plum-o .green-b</span></p>
 						</div>
 						<div class="col-sm-12 col-md-4">
-							<p class="border-dotted-thick cheddar-border">Dotted Thick Cheddar Border<br /><span class="bold">.cheddar-border</span></p>
-							<p class="alert red-outline outline-dotted-thin os-5" style="margin-top: 1.8em;">.red-outline</p>
+							<p class="border-dotted-thick cheddar-b">Dotted Thick Cheddar Border<br /><span class="bold">.cheddar-b</span></p>
+							<p class="red-t red-o outline-dotted-thin os-5" style="margin-top: 1.8em;">.red-o</p>
 						</div>
 						<div class="col-sm-12 col-md-4">
-							<p class="border-dashed-thin maroon-border">Dashed Thin Black Cherry Border<br /><span class="bold">.black-cherry-border</span></p>
-							<p class="success green-border green-outline border-solid-thin outline-dashed-thick os-5" style="margin-top: 1.8em;">.green-border .green-outline</p>
+							<p class="border-dashed-thin maroon-b">Dashed Thin Black Cherry Border<br /><span class="bold">.black-cherry-b</span></p>
+							<p class="success green-b green-o border-solid-thin outline-dashed-thick os-5" style="margin-top: 1.8em;">.green-b .green-o</p>
 						</div>
 					</div>
 				</div>
 				<p class="padding"></p>
 				<hr class="thick tomato" />
 				<div class="padded">
-					<h3 class="red-text courier-new-text fittext-compress" id="combos">Color Combos: Mixed Flavors</h3>
-					<p class="charcoal-text arial-text flow-text">Mixed flavors are pre-defined color combinations. The first flavor is the background color, the 2nd is the text color. Use these classes to apply a color combo to any element.</p>
+					<h3 class="red-text courier-new fittext-compress" id="combos">Color Combos: Mixed Flavors</h3>
+					<p class="charcoal-text arial flow-text">Mixed flavors are pre-defined color combinations. The first flavor is the background color, the 2nd is the text color. Use these classes to apply a color combo to any element.</p>
 						<div class="row">
 							<div class="col-sm-12 col-md-6 col-lg-6 no-padding">
 								<div class="success">
-									<p class="flow-text arial-black-text">.success</p>
+									<p class="flow-text arial-black">.success</p>
 								</div>
 							</div>
 							<div class="col-sm-12 col-md-6 col-lg-6 no-padding">
 								<div class="info">
-									<p class="flow-text arial-black-text">.info</p>
+									<p class="flow-text arial-black">.info</p>
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-sm-12 col-md-6 col-lg-6 no-padding">
 								<div class="warning">
-									<p class="flow-text arial-black-text">.warning</p>
+									<p class="flow-text arial-black">.warning</p>
 								</div>
 							</div>
 							<div class="col-sm-12 col-md-6 col-lg-6 no-padding">
 								<div class="alert">
-									<p class="flow-text arial-black-text">.alert</p>
+									<p class="flow-text arial-black">.alert</p>
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-sm-12 col-md-6 col-lg-6 no-padding">
 								<div class="ready">
-									<p class="flow-text arial-black-text">.ready</p>
+									<p class="flow-text arial-black">.ready</p>
 								</div>
 							</div>
 							<div class="col-sm-12 col-md-6 col-lg-6 no-padding">
 								<div class="disabled">
-									<p class="flow-text arial-black-text">.disabled</p>
+									<p class="flow-text arial-black">.disabled</p>
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-sm-12 col-md-6 col-lg-6 no-padding">
-								<div class="monochrome">
-									<p class="flow-text arial-black-text">.monochrome</p>
+								<div class="mono">
+									<p class="flow-text arial-black">.mono</p>
 								</div>
 							</div>
 							<div class="col-sm-12 col-md-6 col-lg-6 no-padding">
 								<div class="sweden">
-									<p class="flow-text arial-black-text">.sweden</p>
+									<p class="flow-text arial-black">.sweden</p>
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-sm-12 col-md-6 col-lg-6 no-padding">
 								<div class="strawberry-banana">
-									<p class="flow-text arial-black-text">.strawberry-banana</p>
+									<p class="flow-text arial-black">.strawberry-banana</p>
 								</div>
 							</div>
 							<div class="col-sm-12 col-md-6 col-lg-6 no-padding">
 								<div class="orange-cream">
-									<p class="flow-text arial-black-text">.orange-cream</p>
+									<p class="flow-text arial-black">.orange-cream</p>
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-sm-12 col-md-6 col-lg-6 no-padding">
 								<div class="lemon-lime">
-									<p class="flow-text arial-black-text">.lemon-lime</p>
+									<p class="flow-text arial-black">.lemon-lime</p>
 								</div>
 							</div>
 							<div class="col-sm-12 col-md-6 col-lg-6 no-padding">
 								<div class="blueberry-pomegranate">
-									<p class="flow-text arial-black-text">.blueberry-pomegranate</p>
+									<p class="flow-text arial-black">.blueberry-pomegranate</p>
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-sm-12 col-md-6 col-lg-6 no-padding">
 								<div class="honey-blueberry">
-									<p class="flow-text arial-black-text">.honey-blueberry</p>
+									<p class="flow-text arial-black">.honey-blueberry</p>
 								</div>
 							</div>
 							<div class="col-sm-12 col-md-6 col-lg-6 no-padding">
 								<div class="chocolate-strawberry">
-									<p class="flow-text arial-black-text">.chocolate-strawberry</p>
+									<p class="flow-text arial-black">.chocolate-strawberry</p>
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-sm-12 col-md-6 col-lg-6 no-padding">
-								<div class="chocolate-peanut-butter">
-									<p class="flow-text arial-black-text">.chocolate-peanut-butter</p>
+								<div class="chocolate-peanut">
+									<p class="flow-text arial-black">.chocolate-peanut</p>
 								</div>
 							</div>
 							<div class="col-sm-12 col-md-6 col-lg-6 no-padding">
-								<div class="green-apple-blueberry">
-									<p class="flow-text arial-black-text">.green-apple-blueberry</p>
+								<div class="pear-blueberry">
+									<p class="flow-text arial-black">.pear-blueberry</p>
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-sm-12 col-md-6 col-lg-6 no-padding">
 								<div class="cherry-vanilla">
-									<p class="flow-text arial-black-text">.cherry-vanilla</p>
+									<p class="flow-text arial-black">.cherry-vanilla</p>
 								</div>
 							</div>
 							<div class="col-sm-12 col-md-6 col-lg-6 no-padding">
 								<div class="grape-pool-water">
-									<p class="flow-text arial-black-text">.grape-pool-water</p>
+									<p class="flow-text arial-black">.grape-pool-water</p>
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-sm-12 col-md-6 col-lg-6 no-padding">
-								<div class="pumpkin-spice-butter">
-									<p class="flow-text arial-black-text">.pumpkin-spice-butter</p>
+								<div class="pumpkin-butter">
+									<p class="flow-text arial-black">.pumpkin-butter</p>
 								</div>
 							</div>
 							<div class="col-sm-12 col-md-6 col-lg-6 no-padding">
 								<div class="vanilla-chocolate">
-									<p class="flow-text arial-black-text">.vanilla-chocolate</p>
+									<p class="flow-text arial-black">.vanilla-chocolate</p>
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-sm-12 col-md-6 col-lg-6 no-padding">
 								<div class="mint-chocolate">
-									<p class="flow-text arial-black-text">.mint-chocolate</p>
+									<p class="flow-text arial-black">.mint-chocolate</p>
 								</div>
 							</div>
 							<div class="col-sm-12 col-md-6 col-lg-6 no-padding">
 								<div class="peach-plum">
-									<p class="flow-text arial-black-text">.peach-plum</p>
+									<p class="flow-text arial-black">.peach-plum</p>
 								</div>
 							</div>
 						</div>
@@ -438,134 +451,159 @@
 					<p class="charcoal-text arial-text flow-text">Use these classes to apply a pre-defined gradient background to any element.</p>
 					<div class="row">
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<div class="monochrome-gradient equal-height">
-								<p class="arial-black padding">.monochrome-gradient</p>
-							</div>
+							<div class="monogradient"><p class="arial-black padded"> <br />.monogradient<br /><br /></p></div>
 						</div>
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<div class="vanilla-cherry-gradient equal-height">
-								<p class="arial-black padding">.vanilla-cherry-gradient</p>
-							</div>
+							<div class="cherry-delight"><p class="arial-black padded"> <br />.cherry-delight<br /><br /></p></div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<div class="strawberry-banana-gradient equal-height">
-								<p class="arial-black padding">.strawberry-banana-gradient</p>
-							</div>
+							<div class="happiness"><p class="arial-black padded"> <br />.happiness<br /><br /></p></div>
 						</div>
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<div class="orange-cream-gradient equal-height">
-								<p class="arial-black padding">.orange-cream-gradient</p>
-							</div>
+							<div class="pina-colada"><p class="arial-black padded"> <br />.pina-colada<br /><br /></p></div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<div class="blueberry-pomegranate-gradient equal-height">
-								<p class="arial-black padding">.blueberry-pomegranate-gradient</p>
-							</div>
+							<div class="deep-desire"><p class="arial-black padded"> <br />.deep-desire<br /><br /></p></div>
 						</div>
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<div class="lemon-lime-gradient equal-height">
-								<p class="arial-black padding">.lemon-lime-gradient</p>
-							</div>
+							<div class="sprite"><p class="arial-black padded"> <br />.sprite<br /><br /></p></div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<div class="water-blueberry-gradient equal-height">
-								<p class="arial-black padding">.water-blueberry-gradient</p>
-							</div>
+							<div class="aqua"><p class="arial-black padded"> <br />.aqua<br /><br /></p></div>
 						</div>
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<div class="kiwi-cucumber-gradient equal-height">
-								<p class="arial-black padding">.kiwi-cucumber-gradient</p>
-							</div>
+							<div class="fresh"><p class="arial-black padded"> <br />.fresh<br /><br /></p></div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<div class="vanilla-chocolate-gradient equal-height">
-								<p class="arial-black padding">.vanilla-chocolate-gradient</p>
-							</div>
+							<div class="vanilla-chip"><p class="arial-black padded"> <br />.vanilla-chip<br /><br /></p></div>
 						</div>
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<div class="bubble-gum-grape-gradient equal-height">
-								<p class="arial-black padding">.bubble-gum-grape-gradient</p>
-							</div>
+							<div class="mint-chip"><p class="arial-black padded"> <br />.mint-chip<br /><br /></p></div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<div class="blood-black-gradient equal-height">
-								<p class="arial-black padding">.blood-black-gradient</p>
-							</div>
+							<div class="vampire"><p class="arial-black padded"> <br />.vampire<br /><br /></p></div>
 						</div>
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<div class="mint-chocolate-gradient equal-height">
-								<p class="arial-black padding">.mint-chocolate-gradient</p>
-							</div>
+							<div class="passion"><p class="arial-black padded"> <br />.passion<br /><br /></p></div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<div class="neapolitan equal-height">
-								<p class="arial-black padding">.neapolitan</p>
-							</div>
+							<div class="neapolitan"><p class="arial-black padded"> <br />.neapolitan<br /><br /></p></div>
 						</div>
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<div class="pride-gradient equal-height">
-								<p class="arial-black padding">.pride-gradient / .rainbow</p>
-							</div>
+							<div class="pride"><p class="arial-black padded"> <br />.pride<br /><br /></p></div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<div class="watermelon equal-height">
-								<p class="arial-black padding"> <br />.watermelon<br /><br /></p>
-							</div>
+							<div class="watermelon"><p class="arial-black padded"> <br />.watermelon<br /><br /></p></div>
 						</div>
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<div class="dragonfruit equal-height">
-								<p class="arial-black padding"> <br />.dragonfruit<br /><br /></p>
-							</div>
+							<div class="dragonfruit"><p class="arial-black padded"> <br />.dragonfruit<br /><br /></p></div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<div class="oreo equal-height">
-								<p class="arial-black padding"> <br />.oreo<br /><br /></p>
-							</div>
+							<div class="oreo"><p class="arial-black padded"> <br />.oreo<br /><br /></p></div>
 						</div>
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<div class="peppermint equal-height">
-								<p class="arial-black padding"> <br />.peppermint<br /><br /></p>
-							</div>
+							<div class="peppermint"><p class="arial-black padded"> <br />.peppermint<br /><br /></p></div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<div class="bacon">
-								<p class="arial-black padding"> <br />.bacon<br /><br /></p>
-							</div>
+							<div class="bacon"><p class="arial-black padding"> <br />.bacon<br /><br /></p></div>
 						</div>
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<div class="sweden-gradient">
-								<p class="arial-black padding"> <br />.sweden-gradient<br /><br /></p>
-							</div>
+							<div class="swedish"><p class="arial-black padding"> <br />.swedish<br /><br /></p></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-6 col-lg-6">
+							<div class="octoberfest"><p class="arial-black padded"> <br />.octoberfest<br /><br /></p></div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-6">
+							<div class="halloween"><p class="arial-black padded"> <br />.halloween<br /><br /></p></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-6 col-lg-6">
+							<div class="caramel-apple"><p class="arial-black padded"> <br />.caramel-apple<br /><br /></p></div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-6">
+							<div class="ireland"><p class="arial-black padding"> <br />.ireland<br /><br /></p></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-6 col-lg-6">
+							<div class="autumn"><p class="arial-black padded"> <br />.autumn<br /><br /></p></div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-6">
+							<div class="winter"><p class="arial-black padding"> <br />.winter<br /><br /></p></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-6 col-lg-6">
+							<div class="spring"><p class="arial-black padding"> <br />.spring<br /><br /></p></div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-6">
+							<div class="summer"><p class="arial-black padding"> <br />.summer<br /><br /></p></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-6 col-lg-6">
+							<div class="lush"><p class="arial-black padding"> <br />.lush<br /><br /></p></div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-6">
+							<div class="hottie"><p class="arial-black padding"> <br />.hottie<br /><br /></p></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-6 col-lg-6">
+							<div class="river"><p class="arial-black padding"> <br />.river<br /><br /></p></div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-6">
+							<div class="sunset"><p class="arial-black padding"> <br />.sunset<br /><br /></p></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-6 col-lg-6">
+							<div class="dusk"><p class="arial-black padding"> <br />.dusk<br /><br /></p></div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-6">
+							<div class="virgin"><p class="arial-black padding"> <br />.virgin<br /><br /></p></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-6 col-lg-6">
+							<div class="shades"><p class="arial-black padding"> <br />.shades<br /><br /></p></div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-6">
+							<div class="liminal"><p class="arial-black padding"> <br />.liminal<br /><br /></p></div>
 						</div>
 					</div>
 				</div>
 				<p class="padding"></p>
 			</div>
+			<!-- Sidebar -->
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 no-padding black">
-				<img src="files/images/angle1.jpg" alt="bIcons" class="responsive" style="margin-bottom: -6px;" />
+				<img src="theme/default/files/images/gelora/crazy-grin.jpg" alt="Brutalist Flavors" class="responsive" style="margin-bottom: -6px;" />
 				<div class="glued">
 					<div class="row">
 						<div class="col-xs-12 no-padding">
 							<nav class="simple blue">
-								<ul class="courier-new-text flow-text lime-text">
+								<ul class="courier-new flow-text lime-t">
 									<li class="invert-hover"><a href="#corec" class="lime-text">Core Colors</a></li>
 									<li class="invert-hover"><a href="#textc" class="lime-text">Text Color</a></li>
 									<li class="invert-hover"><a href="#textsh" class="lime-text">Text Shadow</a></li>
@@ -576,74 +614,57 @@
 							</nav>
 						</div>
 					</div>
-					<a href="#scrolltop" class="lime invert-hover bold black-text scrolltop lucida-text">Back to Top &uarr;</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<footer>
-<div class="container-1200 no-padding">
-	<div class="row">
-		<div class="col-sm-12">
-			<div class="jagged gray">
-				<div class="row">
-					<div class="col-sm-12 col-md-12 col-lg-4">
+					<a href="#scrolltop" class="lime invert-hover bold black-t scrolltop lucida">Back to Top &uarr;</a>
+					<footer class="jagged gray">
+						<a href="http://eepurl.com/cEW1RX" target="_blank">
+							<div class="sweden-gradient padded invert-hover">
+								<h5 class="lucida white-text"><i class="bi bi-amp"></i>Brutal Blast /<span class="blink-182">/</span>/<span class="blink">/</span>/</h5>
+								<p class="bold">Subscribe to our e-newsletter. <span class="bigger">&raquo;</span></p>
+							</div>
+						</a>
 						<div class="padding vanilla-bean-text arial">
 							<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="green yellow-text invert-hover">Pine Creative Labs</a> production</p>
 							<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-text invert-hover">Brad Fogelstrom</span></a></p>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-12 col-lg-4">
-						<div class="padding flow-text vanilla-bean-text arial">
-							<p>Interview on<br /><a href="http://www.brutalistwebsites.com/brutalistframework.com" target="_blank" class="white blue-text invert-hover">BrutalistWebsites.com</a>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-12 col-lg-4">
-						<div class="padding arial vanilla-bean-text">
-							<p class="flow-text">Contact us:</p>
 							<ul class="tags">
 								<li><a href="http://www.twitter.com/brutalistfwk" target="_blank" class="btn white-text blue-candy hue-hover"><strong>Twitter</strong></a></li>
 								<li><a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank" class="btn black white-text invert-hover"><strong>GitHub</strong></a></li>
 							</ul>
+							<p class="white-t tahoma"><small>Brutalist Framework &copy; 2020</small></p>
 						</div>
-					</div>
+					</footer>
 				</div>
 			</div>
-			<p class="center white-text lucida-text">&copy; 2019 <em>BrutalistFramework</em>. All rights reserved.</p>
 		</div>
 	</div>
 </div>
-</footer>
 
 <!-- Sticky Download Box -->
-<a href="#download" data-modal-open>
-<div class="sticky-bottom-right stack-top red jagged" style="padding: 8px;">
+<div class="sticky-cta sticky-bottom-right stack-middle virgin jagged2 center" style="padding: 8px; max-width: 180px;">
+	<nav class="simple bold">
+		<ul class="lucida flow-text">
+			<li class="invert-hover"><a href="#core"><i class="bi bi-heart"></i> CORE</a></li>
+			<li class="invert-hover"><a href="#bell"><i class="bi bi-amp"></i> BELL</a></li>
+			<li class="invert-hover"><a href="#boilers"><i class="bi bi-heat"></i> BP</a></li>
+			<li class="invert-hover"><a href="#moar">+ MORE</a></li>
+		</ul>
+	</nav>
+	<a href="#download" data-modal-open>
 	<div class="skew sweden btn invert-hover">
-		<p class="flow-text lucida skew-right"><strong>Download</strong></p>
-	</div>
-	<p class="glitch bold yellow-text center">Version 2.0.2.0</p>
-</div></a>
+		<p class="skew-right"><span class="flow-text impact">Download</span><br /><span class="lucida"><small>version 2.1</small></span></p>
+	</div></a>
+</div>
 <!-- Download Modal -->
 <div id="download" style="display:none;">
-	<div class="container monochrome" style="max-width: 760px;">
+	<div class="container monochrome infinitile" style="max-width: 468px;">
 		<div class="row">
-			<div class="col-sm-12 col-md-6 no-padding">
-				<div class="padded">
-					<h4 class="lucida">Download</h5>
-					<p>Released 2/20/2020</p>
-					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.0.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.0.2.0</a></p><hr class="jagged-rule-dark" />
-					<p><strong><span style="font-size: 1.4em;">Legacy Versions</span></strong><br />
-					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.9.zip" target="_blank">Brutalist Framework 1.9</a><br /><br /></p>
-				</div>
-			</div>
-			<div class="col-sm-12 col-md-6 no-padding">
-				<div class="sweden-gradient padded">
-					<h5 class="lucida white-text"><i class="bi bi-amp"></i>Brutal Blast /<span class="blink-182">/</span>/<span class="blink">/</span>/</h5>
-					<p class="bold">Subscribe to our e-newsletter and receive periodic updates.</p>
-				</div>
-				<div class="black padded">
-					<!-- Email signup form here -->
+			<div class="col-sm-12 no-padding">
+				<div class="padded lucida">
+					<h4>Begin the <span class="blink red-t">Brutality</span></h5>
+					<p>Released <strong>10/13/2020</strong></p>
+					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.1.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.1</a></p><hr class="jagged-rule-dark" />
+					<p style="font-size: 1.15em;"><strong><span style="font-size: 1.3em;">Legacy Versions</span></strong><br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.0.zip" target="_blank">2.0.2.0</a> (released 2/20/2020)<br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.9.zip" target="_blank">1.9</a> (legacy)<br /><br /></p>
 				</div>
 			</div>
 		</div>
@@ -657,13 +678,147 @@
 	</div>
 </div>
 
+<!-- Core Components Modal -->
+<div id="core" class="modal-lite fullscreen">
+	<div class="modal-content aboutbf infinitile">
+		<div class="modal-head center"><h2 class="red-t courier-new black-t-s bold">CORE Components</h2></div>
+		<div class="modal-content-body center">
+			<p class="flow-text black-t red-t-s lucida" style="margin-bottom: 1em;"></p>
+			<div class="block-wrap stretch">
+				<a href="butch.html" class="block b25 padded circle monogradient invert-hover box-shadow-double white-t">
+					<img src="theme/default/files/images/gelora/brutal-mood-4.jpg" class="crop circle small-thumb brdr-s-k blue-b" alt="BUTCH" />
+					<span class="red circle black-t white-t-s flow-text">BUTCH</span><br />
+					<small>Brutalist Utility &amp; Typography Class Helpers</small><br /><br />
+				</a>
+				<a href="bfx.html" class="block b25 padded circle monogradient invert-hover white-t box-shadow-double">
+					<img src="theme/default/files/images/kitty/bfx-kat.jpg" class="crop circle small-thumb brdr-s-k blue-b" alt="BFX" />
+					<span class="red circle white-t-s black-t flow-text">BFX</span><br />
+					<small>Brutal Effects</small><br /><br />
+				</a>
+				<a href="buix.html" class="block b25 padded circle monogradient invert-hover box-shadow-double white-t">
+					<img src="theme/default/files/images/gelora/backup-sq.jpg" class="crop circle small-thumb brdr-s-k blue-b" alt="BUIX" />
+					<span class="red circle white-t-s black-t flow-text">BUIX</span><br />
+					<small>Brutal User Interface &amp; Experience</small><br /><br />
+				</a>
+				<a href="grid.html" class="block b25 padded circle monogradient invert-hover box-shadow-double white-t">
+					<img src="theme/default/files/images/gelora/fenced.jpg" class="crop circle small-thumb brdr-s-k blue-b" alt="Grids" />
+					<span class="red circle white-t-s black-t flow-text">Grid</span><br />
+					<small>B3Grid &amp; Flexbox Grid</small><br /><br />
+				</a>
+				<a href="flavors.html" class="block b33 padded circle monogradient invert-hover box-shadow-double white-t">
+					<img src="theme/default/files/images/gelora/crazy-grin.jpg" class="crop circle small-thumb brdr-s-k blue-b" alt="Flavors" />
+					<span class="red circle white-t-s black-t flow-text">Flavors</span><br />
+					<small>Color Classes Library</small><br /><br />
+				</a>
+				<a href="rebar.html" class="block b33 padded circle monogradient invert-hover box-shadow-double white-t">
+					<img src="theme/default/files/images/gelora/rebar.jpg" class="crop circle small-thumb brdr-s-k blue-b" alt="Rebar" />
+					<span class="red circle white-t-s black-t flow-text">ReBAR</span><br />
+					<small>Responsive Breakpoint Assisstance Reference</small><br /><br />
+				</a>
+				<a href="bicons.html" class="block b33 padded circle monogradient invert-hover box-shadow-double white-t">
+					<img src="theme/default/files/images/kitty/anarchistkat-sq.jpg" class="crop circle small-thumb brdr-s-k blue-b" alt="bIcons" />
+					<span class="red circle white-t-s black-t flow-text">bIcons</span><br />
+					<small>Brutal Icons</small><br /><br />
+				</a>
+			</div>
+		</div>
+		<div class="modal-footer"><a href="#return1" class="btn large-btn black platinum-t">CLOSE</a></div>
+	</div>
+	<div class="overlay"></div>
+</div>
+
+<!-- BELL Modal -->
+<div id="bell" class="modal-lite fullscreen">
+	<div class="modal-content anim-bg-hot">
+		<div class="modal-head center"><h2 class="lemon-t courier-new black-t-s bold blue circle"><i class="bi bi-amp"></i> BELL</h2></div>
+		<div class="modal-content-body scroll-y center">
+			<div class="container"><div class="row"><div class="col-sm-12">
+				<h3 class="fittext-h3 blue-t black-t-s impact">Brutal Extension Element Library</h3>
+				<p class="flow-text lucida">A collection of javascript plugins to further enhance user experience.</p>
+				<div class="double-col align-left">
+					<h4 class="impact">Media Elements</h4>
+					<ul class="flow-text triangle">
+						<li><a href="bell.html#audio" class="link bold">Audio Player</a></li>
+						<li><a href="bell.html#gif" class="link bold">GIF Player</a></li>
+						<li><a href="bell.html#vp" class="link bold">Video Player</a></li>
+					</ul>
+					<h4 class="impact">Interface Elements</h4>
+					<ul class="flow-text triangle">
+						<li><a href="bell.html#megamenu" class="link bold">MegaMenu</a></li>
+						<li><a href="bell.html#printer" class="link bold">Printer</a></li>
+						<li><a href="bell.html#ei" class="link bold">Exit Intent</a></li>
+					</ul>
+					<h4 class="impact">Content Elements</h4>
+					<ul class="flow-text triangle">
+						<li><a href="bell.html#timeline" class="link bold">Timeline</a></li>
+						<li><a href="bell.html#presenter" class="link bold">Presenter</a></li>
+						<li><a href="bell.html#piss" class="link bold">PISS</a></li>
+					</ul>
+					<h4 class="impact">BISCUIT</h4>
+					<ul class="flow-text triangle">
+						<li><a href="bell.html#age" class="link bold">Age Verify</a></li>
+						<li><a href="bell.html#cc" class="link bold">Cookie Consent</a></li>
+						<li><a href="bell.html#pl" class="link bold">PageLock</a></li>
+					</ul>
+				</div>
+			</div></div></div>
+		</div>
+		<div class="modal-footer"><a href="#return1" class="btn large-btn black platinum-t">CLOSE</a></div>
+	</div>
+	<div class="overlay"></div>
+</div>
+
+<!-- Boilerplates Modal -->
+<div id="boilers" class="modal-lite fullscreen">
+	<div class="modal-content bpmodal">
+		<div class="modal-head center"><h2 class="deep-orange-t courier-new black-t-s bold"><i class="bi bi-heat"></i> Boilerplates</h2></div>
+		<div class="modal-content-body">
+			<div class="container-fluid"><div class="row"><div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+				<p class="fittext fire-t impact black-t-s">Starting point templates</p>
+				<ul class="flow-text brutal lucida white-t-s">
+					<li><a href="bp/email.html" target="_blank" class="link">Email Boilerplate</a></li>
+					<li><a href="bp/leads.html" target="_blank" class="link">Lead Capture</a></li>
+					<!--<li><a href="bp/catalog.html" target="_blank" class="link">Commerce Catalog</a></li>
+					<li><a href="bp/media-gallery.html" target="_blank" class="link">Media Gallery</a></li>-->
+					<li><a href="bp/microblog.html" target="_blank" class="link">Microblog</a></li>
+					<li><a href="bp/social.html" target="_blank" class="link">Social</a></li>
+					<li><a href="bp/horror.html" target="_blank" class="link">Horror</a></li>
+					<li><a href="bp/vaporwave.html" target="_blank" class="link">Vaporwave</a></li>
+					<li><a href="bp/ratedx.html" target="_blank" class="link">Rated X</a> <span class="red-t">(18+)</span></li>
+				</ul>
+			</div><div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div></div></div>
+		</div>
+		<div class="modal-footer"><a href="#return1" class="btn large-btn black platinum-t">CLOSE</a></div>
+	</div>
+	<div class="overlay"></div>
+</div>
+
+<!-- Moar Modal -->
+<div id="moar" class="modal-lite fullscreen">
+	<div class="modal-content shades">
+		<div class="modal-head center"><h2 class="red-t courier-new black-t-s bold">+ More</h2></div>
+		<div class="modal-content-body center">
+			<div class="container-1200"><div class="row"><div class="col-sm-12"><p class="padded"></p>
+				<p class="fittext helvetica black-t-s navy"><a href="http://eepurl.com/cEW1RX" target="_blank" class="orange-t invert-hover">Join <i class="bi bi-amp"></i> Brutal Blast &raquo;</a><br />
+				<small><span class="white-t">Subscribe to our e-Newsletter</span></small></p>
+				<p class="fittext lucida black-t-s"><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank" class="mono invert-hover">Roadmap</a></p>
+				<p class="fittext impact black-t-s"><a href="https://www.concrete5.org" target="_blank" class="charcoal smoke-t invert-hover">Concrete5 CMS</a></p>
+				<p class="fittext tahoma black-t-s"><a href="http://www.bradfogelstrom.com" target="_blank" class="sweden invert-hover">BradFogelstrom.com</a></p>
+				<p class="padded"></p>
+			</div></div></div>
+		</div>
+		<div class="modal-footer"><a href="#return1" class="btn large-btn black platinum-t allcaps">CLOSE</a></div>
+	</div>
+	<div class="overlay"></div>
+</div>
+
 <!--  Scripts-->
-<script src="core/js/jquery.js"></script>
+<script src="core/js/jquery.3.js"></script>
 <script src="core/js/brutalist.js"></script>
 <script src="core/js/start.brutalizing.js"></script>
 
-<!-- Plugin Scripts -->
-<script src="plugins/megamenu/view.js"></script>
+<!-- BELL -->
+<script src="core/bell/js/bell.js"></script>
 
 <!-- TRACKING -->
 

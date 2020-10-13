@@ -4,52 +4,50 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 	<title>Brutalist Framework || ReBAR</title>
-	<meta name="description" content="A simple framework for the brutalist web design trend." />
+	<meta name="description" content="Responsive Breakpoint Assistance Reference. Open source CSS library for responsive behavior." />
 
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="@pinebuilder">
+	<meta name="twitter:site" content="@brutalistfwk">
 	<meta name="twitter:title" content="Brutalist Framework || ReBAR">
-	<meta name="twitter:description" content="A simple framework for the brutalist web design trend.">
-	<meta name="twitter:creator" content="@pinebuilder">
+	<meta name="twitter:description" content="Responsive Breakpoint Assistance Reference. Open source CSS library for responsive behavior.">
+	<meta name="twitter:creator" content="@brutalistfwk">
 	<!-- Twitter Summary card images must be at least 120x120px -->
-	<meta name="twitter:image" content="http://www.brutalistframework.com/files/images/brutalist-framework512.jpg">
+	<meta name="twitter:image" content="http://www.brutalistframework.com/core/files/images/bf21.jpg">
 
 	<!-- Open Graph data -->
 	<meta property="og:title" content="Brutalist Framework || ReBAR" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://www.brutalistframework.com" />
-	<meta property="og:image" content="http://www.brutalistframework.com/files/images/brutalist-framework512.jpg" />
-	<meta property="og:description" content="A simple framework for the brutalist web design trend." /> 
+	<meta property="og:image" content="http://www.brutalistframework.com/core/files/images/bf21.jpg" />
+	<meta property="og:description" content="Responsive Breakpoint Assistance Reference. Open source CSS library for responsive behavior." /> 
 	<meta property="og:site_name" content="Brutalist Framework" />
 
 	<!-- Icons -->
-	<link rel="shortcut icon" href="files/icons/bf44.png" type="image/x-icon" />
-	<link rel="icon" href="files/icons/bf15.ico" type="image/x-icon" />
-	<link rel="apple-touch-icon" href="files/icons/bf57.png" />
+	<link rel="shortcut icon" href="core/files/icons/bf44.png" type="image/x-icon" />
+	<link rel="icon" href="core/files/icons/bf15.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="core/files/icons/bf57.png" />
 	
 	<!-- CORE CSS  -->
-	<!--<link href="core/css/dev/core.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
-	<link href="core/css/brutalist.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-	
+	<!--<link href="core/css/dev/core.css" type="text/css" rel="stylesheet" media="all"/>-->
+	<link href="core/css/brutalist.min.css" type="text/css" rel="stylesheet" media="all"/>
+	<!-- BELL -->
+	<link href="core/bell/css/bell.css" type="text/css" rel="stylesheet" media="all" />
 	<!-- Theme CSS -->
-	<link href="theme/default/css/theme.css" type="text/css" rel="stylesheet" media="screen,projection" />
-	
-	<!-- Plugins -->
-	<link href="plugins/megamenu/view.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link href="theme/default/css/theme.css" type="text/css" rel="stylesheet" media="all" />
 </head>
 <body class="black">
 	<header class="container-fluid triangle-light anim-bg-neon stack-base">
 		<div class="row"><div class="col-sm-12"><div class="container-1200">
 			<div class="row no-padding stack1 content" id="scrolltop">
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 no-padding">
-					<a href="index.html" class="logo"><img class="responsive border-solid-fat red-border" src="files/images/brutalist-framework512.jpg" alt="Brutalist Framework" /></a>
+					<a href="index.html"><img class="large-thumb crop circle brdr-s-k red-border invert-hover" src="core/files/images/brutalist-framework.jpg" alt="Brutalist Framework" /></a>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 no-padding lucida-text">
 					<h1 class="page-title border-solid-thick red-border courier-new-text fittext-h1 white-text baffle-prolonged">ReBAR</h1>
 					<div class="page-desc border-solid-thick red-border rice-text">
 						<h2 class="flow-text baffle">Responsive Breakpoint Assistance Reference</h2><br />
-						<p>Library of responsive class helpers</p>
+						<p>Class helper library for improving responsive behavior</p>
 					</div>
 				</div>
 			</div>
@@ -65,7 +63,7 @@
 					<div class="menu lucida bold">
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="#">CORE</a>
+							<li><a href="#core">CORE</a>
 								<ul>
 									<li><a href="flavors.html">Flavors</a></li>
 									<li><a href="butch.html">BUTCH</a></li>
@@ -76,37 +74,39 @@
 									<li><a href="bicons.html">bIcons</a></li>
 								</ul>
 							</li>
-							<li><a href="extensions.html">Plugins</a>
+							<li><a href="bell.html">BELL</a>
 								<ul>
-									<li><a href="extensions.html#megamenu">Megamenu</a></li>
-									<li><a href="extensions.html#printer">Printer</a></li>
-									<li><a href="extensions.html#curvetext">CurveText</a></li>
+									<li><a href="bell.html#me">Media Elements</a>
+										<ul>
+											<li><a href="bell.html#audio">Audio Player</a></li>
+											<li><a href="bell.html#gif">Gif Player</a></li>
+											<li><a href="bell.html#vp">Video Player</a></li>
+										</ul>
+									</li>
+									<li><a href="bell.html#ie">Interface Elements</a>
+										<ul>
+											<li><a href="bell.html#megamenu">Megamenu</a></li>
+											<li><a href="bell.html#printer">Printer</a></li>
+											<li><a href="bell.html#ei">Exit Intent</a></li>
+										</ul>
+									</li>
+									<li><a href="bell.html#ce">Content Elements</a>
+										<ul>
+											<li><a href="bell.html#timeline">Timeline</a></li>
+											<li><a href="bell.html#presenter">Presenter</a></li>
+											<li><a href="bell.html#piss">PISS</a></li>
+										</ul>
+									</li>
+									<li><a href="bell.html#biscuit">BISCUIT</a>
+										<ul>
+											<li><a href="bell.html#age">Age Verify</a></li>
+											<li><a href="bell.html#cc">Cookie Consent</a></li>
+											<li><a href="bell.html#pl">PageLock</a></li>
+										</ul>
+									</li>
 								</ul>
 							</li>
-							<li><a href="templates.html">Starting Points</a>
-								<ul>
-									<li><a href="templates.html#emailbp">Email</a>
-										<ul>
-											<li><a href="starting-points/email-boilerplate-01.html" target="_blank">Boilerplate 01</a></li>
-											<li><a href="starting-points/email-boilerplate-02.html" target="_blank">Boilerplate 02</a></li>
-											<li><a href="starting-points/email-boilerplate-03.html" target="_blank">Boilerplate 03</a></li>
-										</ul>
-									</li>
-									<li><a href="templates.html#landings">Landing Pages</a>
-										<ul>
-											<li><a href="starting-points/leads.html" target="_blank">Lead Capture</a></li>
-											<li><a href="starting-points/thank-you.html" target="_blank">Thank You</a></li>
-											<li><a href="starting-points/event.html" target="_blank">Event</a></li>
-										</ul>
-									</li>
-									<li><a href="templates.html#blogs">Blog / Media</a>
-										<ul>
-											<li><a href="statting-points/blog-post-list.html" target="_blank">Blog Post List</a></li>
-											<li><a href="starting-points/blog-post.html" target="_blank">Blog Post</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
+							<li><a href="boilerplates.html">Boilerplates</a></li>
 							<li><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki" target="_blank">About</a>
 								<ul>
 									<li><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank">Roadmap</a></li>
@@ -143,6 +143,8 @@
 									<hr />
 									<p><b>.show-over-320</b> - display on screens 321px and up<br /><b>.hide-over-320</b> - hide on screens 321px and up</p>
 									<hr />
+									<p><b>.show-over-360</b> - display on screens 361px and up<br /><b>.hide-over-360</b> - hide on screens 361px and up</p>
+									<hr />
 									<p><b>.show-over-480</b> - display on screens 481px and up<br /><b>.hide-over-480</b> - hide on screens 481px and up</p>
 									<hr />
 									<p><b>.show-over-540</b> - display on screens 541px and up<br /><b>.hide-over-540</b> - hide on screens 541px and up</p>
@@ -169,6 +171,8 @@
 									<p><b>.show-under-240</b> - display on screens 240px and under<br /><b>.hide-under-240</b> - hide on screens 240px and under</p>
 									<hr />
 									<p><b>.show-under-320</b> - display on screens 320px and under<br /><b>.hide-under-320</b> - hide on screens 320px and under</p>
+									<hr />
+									<p><b>.show-under-360</b> - display on screens 360px and under<br /><b>.hide-under-360</b> - hide on screens 360px and under</p>
 									<hr />
 									<p><b>.show-under-480</b> - display on screens 480px and under<br /><b>.hide-under-480</b> - hide on screens 480px and under</p>
 									<hr />
@@ -227,6 +231,8 @@
 									<hr />
 									<p><b>.hide-320-480</b> - hide on screens between 320 and 479px<br /><b>.show-320-480</b> - display on screens between 320 and 479px</p>
 									<hr />
+									<p><b>.hide-360-480</b> - hide on screens between 360 and 479px<br /><b>.show-360-480</b> - display on screens between 360 and 479px</p>
+									<hr />
 									<p><b>.hide-480-540</b> - hide on screens between 480 and 539px<br /><b>.show-480-540</b> - display on screens between 480 and 539px</p>
 									<hr />
 									<p><b>.hide-540-640</b> - hide on screens between 540 and 639px<br /><b>.show-540-640</b> - display on screens between 540 and 639px</p>
@@ -269,9 +275,13 @@
 								<div class="info padded">
 									<p><b>.show-over-320h</b> - display on screens with a height of 321px or above<br /><b>.hide-over-320h</b> - hide on screens with a height of 321px or above</p>
 									<hr />
+									<p><b>.show-over-360h</b> - display on screens with a height of 361px or above<br /><b>.hide-over-360h</b> - hide on screens with a height of 361px or above</p>
+									<hr />
 									<p><b>.show-over-480h</b> - display on screens with a height of 481px or above<br /><b>.hide-over-480h</b> - hide on screens with a height of 481px or above</p>
 									<hr />
 									<p><b>.show-over-540h</b> - display on screens with a height of 541px or above<br /><b>.hide-over-540h</b> - hide on screens with a height of 541px or above</p>
+									<hr />
+									<p><b>.show-over-640h</b> - display on screens with a height of 641px or above<br /><b>.hide-over-640h</b> - hide on screens with a height of 641px or above</p>
 									<hr />
 									<p><b>.show-over-768h</b> - display on screens with a height of 769px or above<br /><b>.hide-over-768h</b> - hide on screens with a height of 769px or above</p>
 									<hr />
@@ -288,9 +298,13 @@
 								<div class="info padded">
 									<p><b>.show-under-320h</b> - display on screens with a height of 320px or above<br /><b>.hide-under-320h</b> - hide on screens with a height of 320px or less</p>
 									<hr />
+									<p><b>.show-under-360h</b> - display on screens with a height of 360px or above<br /><b>.hide-under-360h</b> - hide on screens with a height of 360px or less</p>
+									<hr />
 									<p><b>.show-under-480h</b> - display on screens with a height of 480px or above<br /><b>.hide-under-480h</b> - hide on screens with a height of 480px or less</p>
 									<hr />
 									<p><b>.show-under-540h</b> - display on screens with a height of 540px or above<br /><b>.hide-under-540h</b> - hide on screens with a height of 540px or less</p>
+									<hr />
+									<p><b>.show-under-640h</b> - display on screens with a height of 640px or above<br /><b>.hide-under-640h</b> - hide on screens with a height of 640px or less</p>
 									<hr />
 									<p><b>.show-under-768h</b> - display on screens with a height of 768px or above<br /><b>.hide-under-768h</b> - hide on screens with a height of 768px or less</p>
 									<hr />
@@ -374,15 +388,15 @@
 						<hr />
 						<p><b>.print-monochrome</b> - applied only to print view, all text is black, and images are rendered in grayscale</p>
 					</div>
-				</div>
+				</div><p class="padded"></p>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 no-padding black">
-				<img src="files/images/rough-concrete.jpg" alt="bIcons" class="responsive" style="margin-bottom: -6px;" />
+				<img src="theme/default/files/images/gelora/rebar.jpg" alt="Rebar" class="responsive" style="margin-bottom: -6px;" />
 				<div class="glued">
 					<div class="row">
 						<div class="col-xs-12 no-padding">
 							<nav class="simple blue">
-								<ul class="courier-new flow-text lime-text">
+								<ul class="courier-new flow-text lime-t">
 									<li class="invert-hover"><a href="#overview" class="lime-text">Overview</a></li>
 									<li class="invert-hover"><a href="#widths" class="lime-text">Width Breakpoints</a></li>
 									<li class="invert-hover"><a href="#wrange" class="lime-text">Width-Based Breakpoint Ranges</a></li>
@@ -394,73 +408,56 @@
 						</div>
 					</div>
 					<a href="#scrolltop" class="lime invert-hover bold black-text scrolltop lucida">Back to Top &uarr;</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<footer>
-<div class="container-1200 no-padding">
-	<div class="row">
-		<div class="col-sm-12">
-			<div class="jagged gray">
-				<div class="row">
-					<div class="col-sm-12 col-md-12 col-lg-4">
+					<footer class="jagged gray">
+						<a href="http://eepurl.com/cEW1RX" target="_blank">
+							<div class="sweden-gradient padded invert-hover">
+								<h5 class="lucida white-text"><i class="bi bi-amp"></i>Brutal Blast /<span class="blink-182">/</span>/<span class="blink">/</span>/</h5>
+								<p class="bold">Subscribe to our e-newsletter. <span class="bigger">&raquo;</span></p>
+							</div>
+						</a>
 						<div class="padding vanilla-bean-text arial">
 							<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="green yellow-text invert-hover">Pine Creative Labs</a> production</p>
 							<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-text invert-hover">Brad Fogelstrom</span></a></p>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-12 col-lg-4">
-						<div class="padding flow-text vanilla-bean-text arial">
-							<p>Interview on<br /><a href="http://www.brutalistwebsites.com/brutalistframework.com" target="_blank" class="white blue-text invert-hover">BrutalistWebsites.com</a>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-12 col-lg-4">
-						<div class="padding arial vanilla-bean-text">
-							<p class="flow-text">Contact us:</p>
 							<ul class="tags">
 								<li><a href="http://www.twitter.com/brutalistfwk" target="_blank" class="btn white-text blue-candy hue-hover"><strong>Twitter</strong></a></li>
 								<li><a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank" class="btn black white-text invert-hover"><strong>GitHub</strong></a></li>
 							</ul>
+							<p class="white-t tahoma"><small>Brutalist Framework &copy; 2020</small></p>
 						</div>
-					</div>
+					</footer>
 				</div>
 			</div>
-			<p class="center white-text lucida-text">&copy; 2020 <em>BrutalistFramework</em>. All rights reserved.</p>
 		</div>
 	</div>
 </div>
-</footer>
 
 <!-- Sticky Download Box -->
-<a href="#download" data-modal-open>
-<div class="sticky-bottom-right stack-top red jagged" style="padding: 8px;">
+<div class="sticky-cta sticky-bottom-right stack-middle virgin jagged2 center" style="padding: 8px; max-width: 180px;">
+	<nav class="simple bold">
+		<ul class="lucida flow-text">
+			<li class="invert-hover"><a href="#core"><i class="bi bi-heart"></i> CORE</a></li>
+			<li class="invert-hover"><a href="#bell"><i class="bi bi-amp"></i> BELL</a></li>
+			<li class="invert-hover"><a href="#boilers"><i class="bi bi-heat"></i> BP</a></li>
+			<li class="invert-hover"><a href="#moar">+ MORE</a></li>
+		</ul>
+	</nav>
+	<a href="#download" data-modal-open>
 	<div class="skew sweden btn invert-hover">
-		<p class="flow-text lucida skew-right"><strong>Download</strong></p>
-	</div>
-	<p class="glitch bold yellow-text center">Version 2.0.2.0</p>
-</div></a>
+		<p class="skew-right"><span class="flow-text impact">Download</span><br /><span class="lucida"><small>version 2.1</small></span></p>
+	</div></a>
+</div>
 <!-- Download Modal -->
 <div id="download" style="display:none;">
-	<div class="container monochrome" style="max-width: 760px;">
+	<div class="container monochrome infinitile" style="max-width: 468px;">
 		<div class="row">
-			<div class="col-sm-12 col-md-6 no-padding">
-				<div class="padded">
-					<h4 class="lucida">Download</h5>
-					<p>Released 2/20/2020</p>
-					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.0.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.0.2.0</a></p><hr class="jagged-rule-dark" />
-					<p><strong><span style="font-size: 1.4em;">Legacy Versions</span></strong><br />
-					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.9.zip" target="_blank">Brutalist Framework 1.9</a><br /><br /></p>
-				</div>
-			</div>
-			<div class="col-sm-12 col-md-6 no-padding">
-				<div class="sweden-gradient padded">
-					<h5 class="lucida white-text"><i class="bi bi-amp"></i>Brutal Blast /<span class="blink-182">/</span>/<span class="blink">/</span>/</h5>
-					<p class="bold">Subscribe to our e-newsletter and receive periodic updates.</p>
-				</div>
-				<div class="black padded">
-					<!-- Email signup form here -->
+			<div class="col-sm-12 no-padding">
+				<div class="padded lucida">
+					<h4>Begin the <span class="blink red-t">Brutality</span></h5>
+					<p>Released <strong>10/13/2020</strong></p>
+					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.1.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.1</a></p><hr class="jagged-rule-dark" />
+					<p style="font-size: 1.15em;"><strong><span style="font-size: 1.3em;">Legacy Versions</span></strong><br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.0.zip" target="_blank">2.0.2.0</a> (released 2/20/2020)<br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.9.zip" target="_blank">1.9</a> (legacy)<br /><br /></p>
 				</div>
 			</div>
 		</div>
@@ -474,13 +471,147 @@
 	</div>
 </div>
 
+<!-- Core Components Modal -->
+<div id="core" class="modal-lite fullscreen">
+	<div class="modal-content aboutbf infinitile">
+		<div class="modal-head center"><h2 class="red-t courier-new black-t-s bold">CORE Components</h2></div>
+		<div class="modal-content-body center">
+			<p class="flow-text black-t red-t-s lucida" style="margin-bottom: 1em;"></p>
+			<div class="block-wrap stretch">
+				<a href="butch.html" class="block b25 padded circle monogradient invert-hover box-shadow-double white-t">
+					<img src="theme/default/files/images/gelora/brutal-mood-4.jpg" class="crop circle small-thumb brdr-s-k blue-b" alt="BUTCH" />
+					<span class="red circle black-t white-t-s flow-text">BUTCH</span><br />
+					<small>Brutalist Utility &amp; Typography Class Helpers</small><br /><br />
+				</a>
+				<a href="bfx.html" class="block b25 padded circle monogradient invert-hover white-t box-shadow-double">
+					<img src="theme/default/files/images/kitty/bfx-kat.jpg" class="crop circle small-thumb brdr-s-k blue-b" alt="BFX" />
+					<span class="red circle white-t-s black-t flow-text">BFX</span><br />
+					<small>Brutal Effects</small><br /><br />
+				</a>
+				<a href="buix.html" class="block b25 padded circle monogradient invert-hover box-shadow-double white-t">
+					<img src="theme/default/files/images/gelora/backup-sq.jpg" class="crop circle small-thumb brdr-s-k blue-b" alt="BUIX" />
+					<span class="red circle white-t-s black-t flow-text">BUIX</span><br />
+					<small>Brutal User Interface &amp; Experience</small><br /><br />
+				</a>
+				<a href="grid.html" class="block b25 padded circle monogradient invert-hover box-shadow-double white-t">
+					<img src="theme/default/files/images/gelora/fenced.jpg" class="crop circle small-thumb brdr-s-k blue-b" alt="Grids" />
+					<span class="red circle white-t-s black-t flow-text">Grid</span><br />
+					<small>B3Grid &amp; Flexbox Grid</small><br /><br />
+				</a>
+				<a href="flavors.html" class="block b33 padded circle monogradient invert-hover box-shadow-double white-t">
+					<img src="theme/default/files/images/gelora/crazy-grin.jpg" class="crop circle small-thumb brdr-s-k blue-b" alt="Flavors" />
+					<span class="red circle white-t-s black-t flow-text">Flavors</span><br />
+					<small>Color Classes Library</small><br /><br />
+				</a>
+				<a href="rebar.html" class="block b33 padded circle monogradient invert-hover box-shadow-double white-t">
+					<img src="theme/default/files/images/gelora/rebar.jpg" class="crop circle small-thumb brdr-s-k blue-b" alt="Rebar" />
+					<span class="red circle white-t-s black-t flow-text">ReBAR</span><br />
+					<small>Responsive Breakpoint Assisstance Reference</small><br /><br />
+				</a>
+				<a href="bicons.html" class="block b33 padded circle monogradient invert-hover box-shadow-double white-t">
+					<img src="theme/default/files/images/kitty/anarchistkat-sq.jpg" class="crop circle small-thumb brdr-s-k blue-b" alt="bIcons" />
+					<span class="red circle white-t-s black-t flow-text">bIcons</span><br />
+					<small>Brutal Icons</small><br /><br />
+				</a>
+			</div>
+		</div>
+		<div class="modal-footer"><a href="#return1" class="btn large-btn black platinum-t">CLOSE</a></div>
+	</div>
+	<div class="overlay"></div>
+</div>
+
+<!-- BELL Modal -->
+<div id="bell" class="modal-lite fullscreen">
+	<div class="modal-content anim-bg-hot">
+		<div class="modal-head center"><h2 class="lemon-t courier-new black-t-s bold blue circle"><i class="bi bi-amp"></i> BELL</h2></div>
+		<div class="modal-content-body scroll-y center">
+			<div class="container"><div class="row"><div class="col-sm-12">
+				<h3 class="fittext-h3 blue-t black-t-s impact">Brutal Extension Element Library</h3>
+				<p class="flow-text lucida">A collection of javascript plugins to further enhance user experience.</p>
+				<div class="double-col align-left">
+					<h4 class="impact">Media Elements</h4>
+					<ul class="flow-text triangle">
+						<li><a href="bell.html#audio" class="link bold">Audio Player</a></li>
+						<li><a href="bell.html#gif" class="link bold">GIF Player</a></li>
+						<li><a href="bell.html#vp" class="link bold">Video Player</a></li>
+					</ul>
+					<h4 class="impact">Interface Elements</h4>
+					<ul class="flow-text triangle">
+						<li><a href="bell.html#megamenu" class="link bold">MegaMenu</a></li>
+						<li><a href="bell.html#printer" class="link bold">Printer</a></li>
+						<li><a href="bell.html#ei" class="link bold">Exit Intent</a></li>
+					</ul>
+					<h4 class="impact">Content Elements</h4>
+					<ul class="flow-text triangle">
+						<li><a href="bell.html#timeline" class="link bold">Timeline</a></li>
+						<li><a href="bell.html#presenter" class="link bold">Presenter</a></li>
+						<li><a href="bell.html#piss" class="link bold">PISS</a></li>
+					</ul>
+					<h4 class="impact">BISCUIT</h4>
+					<ul class="flow-text triangle">
+						<li><a href="bell.html#age" class="link bold">Age Verify</a></li>
+						<li><a href="bell.html#cc" class="link bold">Cookie Consent</a></li>
+						<li><a href="bell.html#pl" class="link bold">PageLock</a></li>
+					</ul>
+				</div>
+			</div></div></div>
+		</div>
+		<div class="modal-footer"><a href="#return1" class="btn large-btn black platinum-t">CLOSE</a></div>
+	</div>
+	<div class="overlay"></div>
+</div>
+
+<!-- Boilerplates Modal -->
+<div id="boilers" class="modal-lite fullscreen">
+	<div class="modal-content bpmodal">
+		<div class="modal-head center"><h2 class="deep-orange-t courier-new black-t-s bold"><i class="bi bi-heat"></i> Boilerplates</h2></div>
+		<div class="modal-content-body">
+			<div class="container-fluid"><div class="row"><div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+				<p class="fittext fire-t impact black-t-s">Starting point templates</p>
+				<ul class="flow-text brutal lucida white-t-s">
+					<li><a href="bp/email.html" target="_blank" class="link">Email Boilerplate</a></li>
+					<li><a href="bp/leads.html" target="_blank" class="link">Lead Capture</a></li>
+					<!--<li><a href="bp/catalog.html" target="_blank" class="link">Commerce Catalog</a></li>
+					<li><a href="bp/media-gallery.html" target="_blank" class="link">Media Gallery</a></li>-->
+					<li><a href="bp/microblog.html" target="_blank" class="link">Microblog</a></li>
+					<li><a href="bp/social.html" target="_blank" class="link">Social</a></li>
+					<li><a href="bp/horror.html" target="_blank" class="link">Horror</a></li>
+					<li><a href="bp/vaporwave.html" target="_blank" class="link">Vaporwave</a></li>
+					<li><a href="bp/ratedx.html" target="_blank" class="link">Rated X</a> <span class="red-t">(18+)</span></li>
+				</ul>
+			</div><div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div></div></div>
+		</div>
+		<div class="modal-footer"><a href="#return1" class="btn large-btn black platinum-t">CLOSE</a></div>
+	</div>
+	<div class="overlay"></div>
+</div>
+
+<!-- Moar Modal -->
+<div id="moar" class="modal-lite fullscreen">
+	<div class="modal-content shades">
+		<div class="modal-head center"><h2 class="red-t courier-new black-t-s bold">+ More</h2></div>
+		<div class="modal-content-body center">
+			<div class="container-1200"><div class="row"><div class="col-sm-12"><p class="padded"></p>
+				<p class="fittext helvetica black-t-s navy"><a href="http://eepurl.com/cEW1RX" target="_blank" class="orange-t invert-hover">Join <i class="bi bi-amp"></i> Brutal Blast &raquo;</a><br />
+				<small><span class="white-t">Subscribe to our e-Newsletter</span></small></p>
+				<p class="fittext lucida black-t-s"><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank" class="mono invert-hover">Roadmap</a></p>
+				<p class="fittext impact black-t-s"><a href="https://www.concrete5.org" target="_blank" class="charcoal smoke-t invert-hover">Concrete5 CMS</a></p>
+				<p class="fittext tahoma black-t-s"><a href="http://www.bradfogelstrom.com" target="_blank" class="sweden invert-hover">BradFogelstrom.com</a></p>
+				<p class="padded"></p>
+			</div></div></div>
+		</div>
+		<div class="modal-footer"><a href="#return1" class="btn large-btn black platinum-t allcaps">CLOSE</a></div>
+	</div>
+	<div class="overlay"></div>
+</div>
+
 <!-- Core Scripts-->
-<script src="core/js/jquery.js"></script>
+<script src="core/js/jquery.3.js"></script>
 <script src="core/js/brutalist.js"></script>
 <script src="core/js/start.brutalizing.js"></script>
 
-<!-- Plugin Scripts -->
-<script src="plugins/megamenu/view.js"></script>
+<!-- BELL -->
+<script src="core/bell/js/bell.js"></script>
 
 <!-- TRACKING -->
 
