@@ -4,13 +4,13 @@
 	display: flex; display: -webkit-flex; display: -ms-flex; flex-wrap: wrap; -webkit-flex-wrap: wrap; 
 	box-sizing: border-box; align-items: baseline; 
 } 
-.blocks.row, .bricks.row, ul.tiles { flex-direction: row; -webkit-flex-direction: row; -moz-flex-direction: row; } /* Align items in a horizontal row */
-.blocks.col, .bricks.col { flex-direction: column; -webkit-flex-direction: column; -moz-flex-direction: column; } /* Align items in a vertical column */
+.blocks.row, .bricks.row, ul.tiles, .block-wrap.row, .brick-wrap.row { flex-direction: row; -webkit-flex-direction: row; -moz-flex-direction: row; } /* Align items in a horizontal row */
+.blocks.col, .bricks.col, .brick-wrap.col, .block-wrap.col { flex-direction: column; -webkit-flex-direction: column; -moz-flex-direction: column; } /* Align items in a vertical column */
 .blocks ul, .blocks ul li, .bricks ul, .bricks ul li, ul.bricks, ul.blocks { padding: 0; margin: 0; }
-.blocks p, .bricks p { display: block; width: 100%; }
-.blocks.center, .bricks.center { justify-content: center; align-content: center; align-items: center; } /* Center items within these containers */
-.blocks.around, .bricks.around { align-content: space-around; align-items: stretch;  }
-.blocks.stretch { align-items: stretch !important; } 
+.blocks p, .bricks p, .block-wrap p, .brick-wrap p { display: block; width: 100%; }
+.blocks.center, .block-wrap.center, .bricks.center, .brick-wrap.center { justify-content: center; align-content: center; align-items: center; } /* Center items within these containers */
+.blocks.around, .bricks.around, .block-wrap.around, .brick-wrap.around { align-content: space-around; align-items: stretch;  }
+.blocks.stretch, .block-wrap.stretch { align-items: stretch !important; } 
 .block { display: block; flex: 1; -ms-flex: 1; -webkit-flex: 1; flex-grow: 1; }
 .brick { display: inline-block; margin: 0; padding: 1em; }
 .brick.right { float: right; }
@@ -29,7 +29,7 @@ ul.tiles.fifths li { width: calc(100% / 5); }
 .block.bottom, .brick.bottom { align-self: flex-end; -ms-flex-pack: end; -webkit-box-pack: end; justify-content: flex-end; }
 
 /* Directions */
-.blocks.reverse, .bricks.reverse { -webkit-flex-direction: row-reverse; flex-direction: row-reverse; }
+.blocks.reverse, .bricks.reverse, .block-wrap.reverse, .brick-wrap.reverse { -webkit-flex-direction: row-reverse; flex-direction: row-reverse; }
 
 /* Widths - works with both blocks and bricks */
 .b20 { -webkit-flex-basis: 20%; flex-basis: 20%; width: 20%; max-width: 20%; }
@@ -61,6 +61,7 @@ ul.tiles.fifths li { width: calc(100% / 5); }
 .bh40 { height: 40vh; }
 .bh50 { height: 50vh; }
 .bh60 { height: 60vh; }
+.bh66 { height: 66vh; }
 .bh70 { height: 70vh; }
 .bh75 { height: 75vh; }
 .bh80 { height: 80vh; }
@@ -69,12 +70,11 @@ ul.tiles.fifths li { width: calc(100% / 5); }
 /* Media Queries */
 @media only screen and (min-width:601px) and (max-width:960px) {}
 @media only screen and (min-width: 481px) and (max-width:600px) { 
-	ul.tiles.thirds li, ul.tiles.fourths li, ul.tiles.fifths li { width: calc(100% / 2); width: 50%; max-width: 50%; }
+	.b20, .b25, .b30, ul.tiles.thirds li, ul.tiles.fourths li, ul.tiles.fifths li { width: calc(100% / 3); width: 33.33%; max-width: 33.33%; -webkit-flex-basis: 33.33%; }
 }
 @media only screen and (min-width:320px) and (max-width:480px) {
-	.b20, .b33, ul.tiles.thirds li, ul.tiles.fourths li, ul.tiles.fifths li { width: 50%; max-width: 50%; flex-basis: 50%; -webkit-flex-basis: 50%; }
+	.b20, .b25, .b30, .b33, .b40, ul.tiles.thirds li, ul.tiles.fourths li, ul.tiles.fifths li { width: 50%; max-width: 50%; flex-basis: 50%; -webkit-flex-basis: 50%; }
 }
-
 @media only screen and (max-width:320px) {
-	.b20, .b25, .b33, .b40, .b50, .b60, .b66, .b70, .b75, .b80, ul.tiles.thirds li, ul.tiles.fourths li, ul.tiles.fifths li { width: 100%; max-width: 100%; -webkit-flex-basis: 100%; flex-basis: 100%; }
+	.b20, .b25, .b30, .b33, .b40, .b50, .b60, .b66, .b70, .b75, .b80, ul.tiles.thirds li, ul.tiles.fourths li, ul.tiles.fifths li { width: 100%; max-width: 100%; -webkit-flex-basis: 100%; flex-basis: 100%; }
 }

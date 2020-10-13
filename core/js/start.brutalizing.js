@@ -6,13 +6,13 @@ $(document).ready(function(){
 /* FITTEXT */
 $('.fittext').fitText();
 $('.fittext-compress').fitText(2.2); /* Increases compression */
-$('.fittext-uncompress').fitText(0.8); /* Reduces compression */
-$('.fittext-h1').fitText(0.7, { minFontSize: '50px', maxFontSize: '88px' }); /* Fittext for H1 tag */
-$('.fittext-h2').fitText(0.9, { minFontSize: '42px', maxFontSize: '76px' }); /* Fittext for H2 tag */
-$('.fittext-h3').fitText(1.0, { minFontSize: '38px', maxFontSize: '64px' }); /* Fittext for H3 tag */
-$('.fittext-h4').fitText(1.0, { minFontSize: '24px', maxFontSize: '42px' }); /* Fittext for H4 tag */
-$('.fittext-h5').fitText(1.0, { minFontSize: '16px', maxFontSize: '30px' }); /* Fittext for H5 tag */
-$('.fittext-h6').fitText(1.0, { minFontSize: '12px', maxFontSize: '24px' }); /* Fittext for H6 tag */
+$('.fittext-uncompress').fitText(0.75); /* Reduces compression */
+$('.fittext-h1').fitText(0.5, { minFontSize: '50px', maxFontSize: '90px' }); /* Fittext for H1 tag */
+$('.fittext-h2').fitText(0.7, { minFontSize: '42px', maxFontSize: '72px' }); /* Fittext for H2 tag */
+$('.fittext-h3').fitText(0.8, { minFontSize: '34px', maxFontSize: '64px' }); /* Fittext for H3 tag */
+$('.fittext-h4').fitText(0.9, { minFontSize: '26px', maxFontSize: '46px' }); /* Fittext for H4 tag */
+$('.fittext-h5').fitText(1.0, { minFontSize: '18px', maxFontSize: '28px' }); /* Fittext for H5 tag */
+$('.fittext-h6').fitText(1.1, { minFontSize: '14px', maxFontSize: '24px' }); /* Fittext for H6 tag */
 
 /* STACKS */
 $('.stack-auto').each(function(index) { $(this).css("z-index", index); });
@@ -50,14 +50,18 @@ $(".triangle-light").trianglarize({
     spacingV: 6, spacingH: 8
 });
 
-/* StackSwitch */
-$().switchinglayers({});
+/* B-Loader (BETA) */
+$('.b-loader').simpleLoadMore({
+    item: 'div, p',
+    count: 5,
+    btnText: '+ Load More {showing}/{total}',
+});
 
-/* Modals */
-window.onload=function(){ var modal = new VanillaModal.default(); }
-
-/* Rotate Text */
-$('.rotator').rotator();
+/* CDP */
+$('.cdp-wrap').selectShow({ShowElement: 0});
+/* for multiple instances of CDP on a single page, use unique IDs:
+$('#cdp1, #cdp2, #cdp3').selectShow({ShowElement: 0});
+*/
 
 /* RUMBLER */
 $('.rumble, .hrumble, .crumble, .strumble, .sthrumble, .mdrumble, .trumble, .prumble').jrumble();

@@ -7,27 +7,31 @@
 
 /* MAX-WIDTH BREAKPOINTS */
 @media screen and (max-width: 240px) {
-	.show-under-240 { display: flex; visibility: visible; }
+	.show-under-240 { display: flex; display: -webkit-flex; visibility: visible; }
 	.hide-under-240 { display: none; visibility: hidden; }
 }
 @media screen and (max-width: 320px) {
-	.show-under-320 { display: flex; visibility: visible; }
+	.show-under-320 { display: flex; display: -webkit-flex; visibility: visible; }
 	.hide-under-320 { display: none; visibility: hidden; }
 }
+@media screen and (max-width: 360px) {
+	.show-under-360 { display: flex; display: -webkit-flex; visibility: visible; }
+	.hide-under-360 { display: none; visibility: hidden; }
+}
 @media screen and (max-width: 480px) {
-	.show-under-480 { display: flex; visibility: visible; }
+	.show-under-480 { display: flex; display: -webkit-flex; visibility: visible; }
 	.hide-under-480 { display: none; visibility: hidden; }
 }
 @media screen and (max-width: 540px) {
-	.show-under-540 { display: flex; visibility: visible; }
+	.show-under-540 { display: flex; display: -webkit-flex; visibility: visible; }
 	.hide-under-540 { display: none; visibility: hidden; }
 }
 @media screen and (max-width: 640px) {
-	.show-under-640 { display: flex; visibility: visibible; }
+	.show-under-640 { display: flex; display: -webkit-flex; visibility: visibible; }
 	.hide-under-640 { display: none; visibility: hidden; }
 }
 @media screen and (max-width: 768px) {
-	.show-under-768 { display: flex; visibility: visible; }
+	.show-under-768 { display: flex; display: -webkit-flex; visibility: visible; }
 	.hide-under-768 { display: none; visibility: hidden; }
 }
 @media screen and (max-width: 960px) {
@@ -35,57 +39,61 @@
 	.hide-under-960 { display: none; visibility: hidden; }
 }
 @media screen and (max-width: 1024px) {
-	.show-under-1024 { display: flex; visibility: visible; }
+	.show-under-1024 { display: flex; display: -webkit-flex; visibility: visible; }
 	.hide-under-1024 { display: none; visibility: hidden; }
 }
 @media screen and (max-width: 1280px) {
-	.show-under-1280 { display: flex; visibility: visible; }
+	.show-under-1280 { display: flex; display: -webkit-flex; visibility: visible; }
 	.hide-under-1280 { display: none; visibility: hidden; }
 }
 @media screen and (max-width: 1366px) {
-	.show-under-1366 { display: flex; visibility: visible; }
+	.show-under-1366 { display: flex; display: -webkit-flex; visibility: visible; }
 	.hide-under-1366 { display: none; visibility: hidden; }
 }
 
 /* MIN-WIDTH BREAKPOINTS */
 @media screen and (min-width: 241px) {
-	.show-over-240 { display: flex; visibility: visible; }
+	.show-over-240 { display: flex; display: -webkit-flex; visibility: visible; }
 	.hide-over-240 { display: none; visibility: hidden; }
 }
 @media screen and (min-width: 321px) {
-	.show-over-320 { display: flex; visibility: visible; }
+	.show-over-320 { display: flex; display: -webkit-flex; visibility: visible; }
 	.hide-over-320 { display: none; visibility: hidden; }
 }
+@media screen and (min-width: 361px) {
+	.show-over-360 { display: flex; display: -webkit-flex; visibility: visible; }
+	.hide-over-360 { display: none; visibility: hidden; }
+}
 @media screen and (min-width: 481px) {
-	.show-over-480 { display: flex; visibility: visible; }
+	.show-over-480 { display: flex; display: -webkit-flex; visibility: visible; }
 	.hide-over-480 { display: none; visibility: hidden; }
 }
 @media screen and (min-width: 541px) {
-	.show-over-540 { display: flex; visibility: visible; }
+	.show-over-540 { display: flex; display: -webkit-flex; visibility: visible; }
 	.hide-over-540 { display: none; visibility: hidden; }
 }
 @media screen and (min-width: 641px) {
-	.show-over-640 { display: flex; visibility: visibible; }
+	.show-over-640 { display: flex; display: -webkit-flex; visibility: visibible; }
 	.hide-over-640 { display: none; visibility: hidden; }
 }
 @media screen and (min-width: 769px) {
-	.show-over-768 { display: flex; visibility: visible; }
+	.show-over-768 { display: flex; display: -webkit-flex; visibility: visible; }
 	.hide-over-768 { display: none; visibility: hidden; }
 }
 @media screen and (min-width: 961px) {
-	.show-over-960 { display: flex; visibility: visible; }
+	.show-over-960 { display: flex; display: -webkit-flex; visibility: visible; }
 	.hide-over-960 { display: none; visibility: hidden; }
 }
 @media screen and (min-width: 1025px) {
-	.show-over-1024 { display: flex; visibility: visible; }
+	.show-over-1024 { display: flex; display: -webkit-flex; visibility: visible; }
 	.hide-over-1024 { display: none; visibility: hidden; }
 }
 @media screen and (min-width: 1281px) {
-	.show-over-1280 { display: flex; visibility: visible; }
+	.show-over-1280 { display: flex; display: -webkit-flex; visibility: visible; }
 	.hide-over-1280 { display: none; visibility: hidden; }
 }
 @media screen and (min-width: 1367px) {
-	.show-over-1366 { display: flex; visibility: visible; }
+	.show-over-1366 { display: flex; display: -webkit-flex; visibility: visible; }
 	.hide-over-1366 { display: none; visibility: hidden; }
 }
 
@@ -97,6 +105,10 @@
 @media screen and (min-width: 320px) and (max-width: 479px) {
 	.hide-320-480 { display: none; visibility: hidden; }
 	.show-320-480 { display: flex; display: -webkit-flex; visibility: visible; }
+}
+@media screen and (min-width: 360px) and (max-width: 479px) {
+	.hide-360-480 { display: none; visibility: hidden; }
+	.show-360-480 { display: flex; display: -webkit-flex; visibility: visible; }
 }
 @media screen and (min-width: 480px) and (max-width: 539px) {
 	.hide-480-540 { display: none; visibility: hidden; }
@@ -140,6 +152,10 @@
 	.hide-under-540h { display: none; visibility: hidden; }
 	.show-under-540h { display: flex; display: -webkit-flex; visibility: visible; }
 }
+@media screen and (max-height: 640px) {
+	.hide-under-640h { display: none; visibility: hidden; }
+	.show-under-640h { display: flex; display: -webkit-flex; visibility: visible; }
+}
 @media screen and (max-height: 768px) {
 	.hide-under-768h { display: none; visibility: hidden; }
 	.show-under-768h { display: flex; display: -webkit-flex; visibility: visible; }
@@ -152,7 +168,6 @@
 	.hide-under-1024h { display: none; visibility: hidden; }
 	.show-under-1024h { display: flex; display: -webkit-flex; visibility: visible; }
 }
-
 @media screen and (min-height: 321px) {
 	.hide-over-320h { display: none; visibility: hidden; }
 	.show-over-320h { display: flex; display: -webkit-flex; visibility: visible; }
@@ -164,6 +179,10 @@
 @media screen and (min-height: 541px) {
 	.hide-over-540h { display: none; visibility: hidden; }
 	.show-over-540h { display: flex; display: -webkit-flex; visibility: visible; }
+}
+@media screen and (min-height: 641px) {
+	.hide-over-640h { display: none; visibility: hidden; }
+	.show-over-640h { display: flex; display: -webkit-flex; visibility: visible; }
 }
 @media screen and (min-height: 769px) {
 	.hide-over-768h { display: none; visibility: hidden; }

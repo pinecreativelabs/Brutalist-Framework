@@ -39,6 +39,7 @@ body {
   max-width: 100% !important;
   -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+	counter-reset: section;
   /*overflow-x: hidden;*/
 }
 
@@ -69,25 +70,12 @@ aside, nav { padding: 0; margin: 0; }
 a { background-color: transparent; text-decoration: none; -webkit-tap-highlight-color: transparent; }
 a:active, a:hover { outline: 0; }
 
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-b, strong {
-  font-weight: 700 !important;
-}
-dfn {
-  font-style: italic;
-}
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-mark {
-  background: #ff0;
-  color: #000;
-}
+abbr[title] {border-bottom: 1px dotted;}
+b, strong {font-weight: 700 !important;}
+dfn {font-style: italic;}
+h1 {font-size: 2em;margin: 0.67em 0;}
+mark {background: #ff0;color: #000;}
 small { font-size: 80%; }
-
 sub, sup {
   font-size: 75%;
   line-height: 0;
@@ -96,20 +84,17 @@ sub, sup {
 }
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
-
-img, a img { border: 0; }
+img, a img { border: 0; padding: 0; margin: 0; }
 svg:not(:root) { overflow: hidden; }
 
 /* Grouping content
 ========================================================================== */
-
-figure { margin: 1em 40px; }
+figure { margin: 0; }
 hr { box-sizing: content-box; height: 0; }
 pre { overflow: auto; }
 code, kbd, pre, samp {
   font-family: monospace, monospace;
-  font-size: 1em;
-  display: block;
+  font-size: 1em; display: block;
 }
 code { background: #000; color: #00ff00; }
 
@@ -137,12 +122,7 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
+fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em;}
 legend { border: 0; padding: 0; }
 textarea { overflow: auto; }
 optgroup { font-weight: bold; }
@@ -198,3 +178,4 @@ blockquote { padding: 0.4em; font-weight: 600; display: block; line-height: 160%
 blockquote::before{ content: "\201C"; font-size: 200%; padding: 0.3em; float: left; }
 .row:after { clear: both !important; }
 .arc-text, .circle-text, .spiral-text, .wave-text, .bezier-text { overflow: hidden; }
+.fittext, .fittext-compress, .fittext-uncompress, .fittext-h1, .fittext-h2, .fittext-h3, .fittext-h4, .fittext-h5, .fittext-h6 { line-height: 1; }
