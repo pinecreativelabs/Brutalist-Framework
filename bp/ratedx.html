@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>Brutalist Framework || Rated X</title>
+	<meta name="description" content="A boilerplate responsive HTML age verification template." />
+
+	<!-- Icons -->
+	<link rel="shortcut icon" href="../core/files/icons/bf44.png" type="image/x-icon" />
+	<link rel="icon" href="../core/files/icons/bf15.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="../core/files/icons/bf57.png" />
+	<!-- CORE CSS  -->
+	<link href="../core/css/brutalist.min.css" type="text/css" rel="stylesheet" media="all"/>
+
+	<!-- BELL BISCUIT CSS -->
+	<link href="../core/bell/css/bell-biscuit.css" type="text/css" rel="stylesheet" media="all"/>
+	
+	<link href="theme.css" type="text/css" rel="stylesheet" media="all" />
+</head>
+<body>
+<div class="container-fluid"><div class="row"><div class="col-xs-12 no-padding">
+<div class="block-wrap bh100 b100 ratedx center">
+	<div class="block b100">
+		<h1 class="fittext red-t lucida blink-182">RATED X</h1>
+		<div style="max-width: 500px; margin: 3em auto 3em;">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/10JDA8SvwX8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<footer class="black padded">
+			<p class="flow-text lucida red-t">This page has been rated X by the MPAA.</p>
+		</footer>
+	</div>
+</div>
+</div></div></div>
+
+<!-- Core Scripts-->
+<script src="../core/js/jquery.3.js"></script>
+<script src="../core/js/brutalist.js"></script>
+<script src="../core/js/start.brutalizing.js"></script>
+
+<!-- BELL -->
+<script src="../core/bell/js/biscuit/age.js"></script>
+<script>
+ $(document).ready(function(){
+  $.ageCheck({
+    minAge: 18,
+    title: 'Age Verify',
+    copy:'Must be 18 or older',
+    redirectTo:'',
+    redirectOnFail:'http://www.brutalistframework.com',
+    underAgeMsg:'Not old enough!'
+ });
+});
+</script>
+
+</body>
+</html>

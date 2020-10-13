@@ -1,0 +1,36 @@
+/* BOILERPLATES 2.1
+==========================================*/ 
+
+/* EMAIL BOILERPLATE */
+.email-body { width: 600px; margin: 0 auto !important; }
+@media only screen and (max-width: 620px) {
+	.email-body { width: 100%; }
+}
+
+/* SOCIAL */
+.timeline-date { font-size: 1.1em; line-height: 140%; background: #eee; padding: 6px; font-weight: 600; color: #333; border-radius: 4px !important; -webkit-border-radius: 2px; }
+.social-cover { background-image: url('exotic/paradise.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; }
+.upost { padding: 0.75em; background-color: #eee; }
+.post-body { width: 100%; border-bottom: 2px solid #000; padding: 0.33em; }
+.postedby { padding: 0.33em; text-align: right; }
+.postedby .flagpost, .postedby .likepost { font-size: 1.5em; padding-left: 0.5em; padding-right: 0.5em;}
+
+/* MicroBlog */
+#intro { background-image: url('exotic/paradise.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; }
+.blogcats .block h5 { border-bottom: 2px solid #fff; }
+.blogcats .block:hover { opacity: 0.5; }
+
+/* HORROR */
+.fear { background-image: url('fear/nightmare.jpg'); background-repeat: no-repeat; background-size: cover; }
+.poison-picker .cdp_select { max-width: 300px; padding: 6px; }
+.poison-picker .content { max-width: 300px; margin: 0 auto;}
+
+/* VAPORWAVE */
+.emily-exotic { background-image: url('exotic/emily-exotic.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; }
+.sunset .ph { display: block; }
+@media only screen and (max-width: 767px) { 
+	.center { text-align: center !important; }
+}
+
+/* RatedX */
+.ratedx { background-image: url('exotic/boobs.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center; }

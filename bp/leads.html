@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>Brutalist Framework || Lead Capture</title>
+	<meta name="description" content="A simple framework for the brutalist web design trend." />
+
+	<!-- Icons -->
+	<link rel="shortcut icon" href="../core/files/icons/bf44.png" type="image/x-icon" />
+	<link rel="icon" href="../core/files/icons/bf15.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="../core/files/icons/bf57.png" />
+	<!-- CORE CSS  -->
+	<link href="../core/css/brutalist.min.css" type="text/css" rel="stylesheet" media="all"/>
+	<!-- BELL -->
+	<link href="../core/bell/css/bell.css" type="text/css" rel="stylesheet" media="all"/>
+	<!-- BELL BISCUIT CSS -->
+	<link href="../core/bell/css/bell-biscuit.css" type="text/css" rel="stylesheet" media="all"/>
+	
+	<link href="theme.css" type="text/css" rel="stylesheet" media="all" />
+</head>
+<body class="liminal">
+<div style="padding-top: 20px;">
+	<div class="container">
+		<div class="row" style="margin-bottom: 20px;">
+			<div class="col-xs-12 center"><a href="#"><img src="../core/files/images/brutalist-framework.jpg" alt="BF Logo" class="red-b brdr-s-t small-thumb circle box-shadow" style="margin: 0 auto;" /></a></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-6">
+				<div class="padded white navy-t">
+					<h1 class="lucida" style="font-size: 2.25em; margin-top: 20px;">Lead Capture</h1>
+					<hr class="river thin" />
+					<h2 class="verdana flow-text">Blinker Fluid Sale!</h2>
+					<p class="tahoma white padded grey-t" style="margin-top: 1em;">
+					<img src="../theme/default/files/images/blinker-fluid.jpg" class="circle large-thumb left box-shadow" alt="Blinker Fluid" style="margin-right: 1.25em;" />
+				Do you find yourself flipping off other drivers because they didn't have a turn signal? It is likely they have run out of blinker fluid. Don't become a flipped-off statistic. Keep your blinker fluid topped off!
+					</p>
+					<p class="padded"></p>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-6">
+				<form class="white grey-text brutal-border-dark box-shadow-thick padding" name="demoform" action="" method="post" id="form">
+					<div class="row">
+						<div class="col-sm-12">
+							<h3 style="font-size: 1.75em;">Request Quote</h3>
+							<div class="form-group">
+								<label class="heavy">Name</label>
+								<input type="text" name="name" placeholder="First Last" />
+							</div>
+							<div class="form-group">
+								<label class="heavy">Email</label>
+								<input type="email" name="name" placeholder="email@address.net" class="strawberry-border border-dashed-thin blue-text banana bigger" />
+							</div>
+							<div class="form-group">
+								<label class="heavy">Phone</label>
+								<input type="tel" name="name" placeholder="" />
+							</div>
+							<div class="form-group flow-text">
+								<input type="submit" value="Submit" class="btn squared full-btn">
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<hr class="jagged-rule-light padded" />
+		<div class="blocks stretch">
+			<div class="vanilla block b66 padded">
+				<h4 class="lucida">More Info</h4>
+				<p>
+				Lorem ipsum no facer prompta vim, movet ubique qui ei. Per no regione aliquid, ea mei nulla scribentur liberavisse. Vim cu tale ludus possit, discere suavitate nam ad. Qui feugait apeirian ut, ne virtute numquam mandamus mea. Eos et enim dicant deterruisset.
+				</p>
+			</div>
+			<div class="vanilla block b33">
+				<p class="center padded"><span class="orange bigger bold">$1,998.98</span><br /><span class="smaller">12oz bottle.<br />FREE overnight shipping</p>
+				<p class="center bold padded"><a href="#form" class="btn medium-btn throb ready">ORDER NOW!</a></p>
+			</div>
+		</div>
+	</div>
+	<footer class="center padding" style="margin-bottom: 3em; margin-top: 2em;">
+		<p class="lucida">&copy; 2020 <em>Brutalist Framework</em>. All rights reserved.<br /><br /></p>
+	</footer>
+</div>
+
+<!-- EXIT INTENT -->
+<div id="dontgo" class="ei-popup" style="display: none; max-width: 500px;">
+  <div class="ei-close" onclick="$.stick_close()">X</div>
+  <div class="ei-content center ready padded">
+	<h4 class="verdana bold black-t-s">Don't Go!</h4>
+	<p class="flow-text arial">Blinker Fluid Sale ends in 2 hours!</p>
+	<a href="#" class="btn btn-large success box-shadow bold">Buy Now &raquo;</a>
+  </div>
+</div>
+
+<!-- Cookie Consent Bar -->
+<div class="cookie-consent ready">
+  <p>We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you accept and understand our <a href="#">Privacy Policy</a>, and our <a href="#">Terms of Service</a>.</p>
+  <span class="cookie-btn">ACCEPT</span>
+</div>
+
+<!-- Core Scripts-->
+<script src="../core/js/jquery.3.js"></script>
+<script src="../core/js/brutalist.js"></script>
+<script src="../core/js/start.brutalizing.js"></script>
+
+<!-- BELL -->
+<script src="../core/bell/js/bell.js"></script>
+<script>
+ $(document).ready(function(){
+  $.stickToMe({
+   layer: '#dontgo'
+ });
+});
+</script>
+<!-- BELL BISCUIT COOKIE CONSENT -->
+<script src="../core/bell/js/biscuit/cookie.js"></script>
+
+</body>
+</html>

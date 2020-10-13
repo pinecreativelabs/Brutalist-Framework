@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>Brutalist Framework || Horror</title>
+	<meta name="description" content="A horror Halloween boilerplate responsive HTML event page template." />
+
+	<!-- Icons -->
+	<link rel="shortcut icon" href="../core/files/icons/bf44.png" type="image/x-icon" />
+	<link rel="icon" href="../core/files/icons/bf15.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="../core/files/icons/bf57.png" />
+	<!-- CORE CSS  -->
+	<link href="../core/css/brutalist.min.css" type="text/css" rel="stylesheet" media="all"/>
+	<!-- BELL -->
+	<link href="../core/bell/css/bell.css" type="text/css" rel="stylesheet" media="all"/>
+	<!-- BELL BISCUIT CSS -->
+	<link href="../core/bell/css/bell-biscuit.css" type="text/css" rel="stylesheet" media="all"/>
+	
+	<link href="theme.css" type="text/css" rel="stylesheet" media="all" />
+</head>
+<body class="black">
+<div class="block-wrap bh100 b100 fear center">
+	<div class="block b60">
+		<p class="fittext blood-t spin black-t-s"><i class="bi bi-dead"></i></p>
+		<h3 class="blood-t black-t-s">Pick your poison</h3>
+		
+		<div class="cdp-wrap poison-picker" id="cdp1">
+			<select class="cdp_select flow-text blood white-t">
+				<option value="0">Death by Vampire</option>
+				<option value="1">Death by Wolfsbane</option>
+				<option value="2">Halloween Party</option>
+			</select>
+			<div class="content">
+				<div class="cdp_element" data-option="0">
+					<div class="vampire padded"><img src="fear/vampire-glitch.jpg" class="brdr-s-f blood-b responsive" alt="Vampire" /></div>
+				</div>
+				<div class="cdp_element" data-option="1">
+					<div class="padded flow-text blood-t black"><img src="fear/wolfsbane-prowl.jpg" class="responsive brdr-s-f blood-b" alt="Wolfsbane" /></div>
+				</div>
+				<div class="cdp_element halloween" data-option="2">
+					<div class="halloween padded black-t comic-sans">
+						<p class="flow-text bold">Halloween Party!</p>
+						<p>October 31<br />9pm - ?</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+<div style="padding-top: 20px;">
+	<div class="container">
+		<div class="row" style="margin-bottom: 20px;">
+			<div class="col-xs-12 center"><a href="#"><img src="../core/files/images/brutalist-framework.jpg" alt="BF Logo" class="spin-reverse red-b brdr-s-t small-thumb circle box-shadow" style="margin: 0 auto;" /></a></div>
+		</div>
+
+		<div class="blocks stretch">
+			<div class="block b60 padded">
+				<div class="vampire padded rounded">
+					<h4 class="lucida">Event Info</h4>
+					<p class="center"><span class="orange huge bold">$666 / person*</span><br /><span class="smaller red-t">BYOB, Concessions cost extra</p>
+					<p class="flow-text blood-t-s">Lorem ipsum no facer prompta vim, movet ubique qui ei. Per no regione aliquid, ea mei nulla scribentur liberavisse. Vim cu tale ludus possit, discere suavitate nam ad. Qui feugait apeirian ut, ne virtute numquam mandamus mea. Eos et enim dicant deterruisset.</p>
+					<p class="blood-t bold">* Human sacrifices may be required.</p>
+					<a href="#event-rsvp" class="btn btn-small full-btn flow-text comic-sans halloween invert-hover">RSVP Now!</a>
+				</div>
+			</div>
+			<div class="block b33 padded">
+				<div class="padded">
+					<img class="responsive" src="fear/wolfbane.jpg" alt="Wolfsbane" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="center padding" style="margin-bottom: 3em; margin-top: 2em;">
+		<p class="tahoma blood-t">&copy; 2020 <em><a href="http://www.brutalistframework.com">Brutalist Framework</a></em>. All rights reserved.<br /><br /></p>
+	</footer>
+</div>
+
+<!-- Event Registration Modal -->
+<div id="event-rsvp" class="modal-lite fullscreen">
+	<div class="modal-content halloween">
+		<div class="modal-head center vampire"><h4 class="blood-t comic-sans orange-t-s">Event Registration</h5></div>
+		<div class="modal-content-body">
+			<div class="container-960">
+			<div class="col-sm-12 no-padding">
+				<div class="padded tahoma">
+					<p class="black-t"></p>
+					<form class="white grey-t blood-b brdr-s-k padding" name="rsvpform" action="" method="post" enctype="multipart/form-data">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<label class="heavy">Name</label>
+									<input type="text" name="name" placeholder="First Last" />
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<label class="heavy">Email</label>
+									<input type="email" name="name" placeholder="email@address.net" />
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12 col-md-6">
+								<div class="form-group">
+									<label class="heavy">I'm looking for:</label><br>
+									<input type="checkbox" name="check1" value="singles"><label class="radio">Singles</label><br>
+									<input type="checkbox" name="check2" value="couples"><label class="radio">Couples</label>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-6">
+								<div class="form-group">
+									<label class="heavy">Payment</label><br />
+									<input type="radio" name="radio-group" value="now"><label class="radio">Pay Now</label><br />
+									<input type="radio" name="radio-group" value="later"><label class="radio">Pat at event</label>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12 col-md-6">
+								<div class="form-group">
+									<label class="heavy">Status</label><br />
+									<input type="radio" name="status-group" value="single"><label class="radio">Single</label><br />
+									<input type="radio" name="status-group" value="iar"><label class="radio">In a relationship</label><br />
+									<input type="radio" name="status-group" value="married"><label class="radio">Married</label>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-6">
+								<label class="heavy"># of Guests</label>
+								<input type="number" name="quantity" min="1" max="50">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<input type="submit" value="Submit" class="squared btn full-btn">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="modal-footer vampire"><a href="#return1" class="btn large-btn black platinum-t allcaps">CANCEL</a></div>
+	</div>
+	<div class="overlay"></div>
+</div>
+
+<!-- EXIT INTENT -->
+<div id="dontgo" class="ei-popup" style="display: none; max-width: 500px;">
+  <div class="ei-close" onclick="$.stick_close()">X</div>
+  <div class="ei-content center vampire padded">
+	<h4 class="courier-new bold blood-t-s">NO ESCAPE!</h4>
+	<img src="fear/vampire-brutal.jpg" class="responsive brdr-s-f blood-b" />
+	<p class="flow-text arial blood-t">Not until you've let me suck you dry!</p>
+	<a href="#event-rsvp" class="btn btn-medium box-shadow blood black-t bold">RSVP &raquo;</a>
+  </div>
+</div>
+
+
+<!-- Core Scripts-->
+<script src="../core/js/jquery.3.js"></script>
+<script src="../core/js/brutalist.js"></script>
+<script src="../core/js/start.brutalizing.js"></script>
+
+<!-- BELL -->
+<script src="../core/bell/js/bell.js"></script>
+<script>
+$(document).ready(function(){
+  $.stickToMe({ layer: '#dontgo'});
+});
+</script>
+
+</body>
+</html>
