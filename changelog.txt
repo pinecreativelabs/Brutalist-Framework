@@ -1,59 +1,50 @@
 Brutalist Framework Changelog
-Version: 2.1
+Version: 2.2
 
 General:
-+ Introducing BELL (formerly Plugins): Brutal Extension Element Library
-+ New Boilerplates (formerly "Starting Points")
-+ Upgrade to jquery 3
-+ Various bug fixes 
++ Reduced size of some images to reduce package size
 
 BELL:
-+ Introducing "BISCUIT" components: PageLock, Age Verify, and Cookie Consent
-+ New Audio, GIF, and Video players 
-+ New Timeline, Presenter, and PISS content elements 
-+ Behavior improvements made to Megamenu 
-+ Printer iframe bug fixes
-+ New "Exit Intent" element 
++ (no changes)
 
 Flavors:
-+ 11 new flavors: sand, seaweed, pickle, caramel, beer, ash, smoke, azure, mustard, mauve, cider
-+ Renamed various classes
-+ 8 new gradients: halloween, octoberfest, caramel-apple, ireland, autumn, winter, spring, summer
-+ Shortened text-shadow, outline, and border class names
-+ All classes with -text, -text-shadow, -outline, and -border are now considered deprecated
++ Flavors: cinnamon, cranberry, scarlet, rose, sapphire, taffy, yam
++ Combos: plush, mono-inv, pb-pickle, navy-fire
++ Added ability to change flavor background color upon hover
 
 BFX:
-+ New "Spotlight" cursor effect
-+ New "Blenders" classes 
-+ New "infinitile" animated background class
-+ Updated Fittext classes
-+ Restored CurveText to BFX as a text effect 
++ Reworked Fittext - removed jQuery dependency and added new classes
++ Updated Blink effect - removed jQuery dependency (purely CSS now) and added "strobe" 
++ New "throb-throw" animation
++ Updated spin animations
 
 BUIX:
-+ Updated button classes
-+ Added new Cursor and Resizeable element classes
-+ Added new image and video preview hover class
-+ Added new "b-loader" (BETA)
-+ Added new "CDP" (content display picker)
-+ Complete re-work of thumbnails
++ New "highlight" class
++ Updated B-Loader
++ Added "LoopScroll"
++ New date/time picker for form input
++ Form fieldset duplicator
++ Credit card input with validation
++ Account creation form with validation
 
 BUTCH:
-+ Updated text layout and some other typography classes with shorter names (former class names still supported)
-+ New section headings counter
-+ Shortened border class names (old ones now deprecated)
-+ Added 9 new gradient borders
++ Updated box shadows
++ Updated ul classes
++ Updated Filters and Opacity
++ Updated spacing classes
++ Added fluid-text class
 
 Grid:
-+ Added stretch class for blocks
-+ Other minor updates
++ New basic width and height classes
++ Improved responsive behavior
++ Various other improvements
 
 bIcons:
-+ Added 10 new icons: islam, umbrella, weather, fountain, sailboat, ferry, heat, medical, hash, flower
++ New icon sizes!
++ 8 new icons: fill, grid, pinwheel, sparkle, core, lozenge, above, below
 
 Rebar:
-+ Added support for devices with widths of 360px
++ New device type visibility classes
 
 Boilerplates:
-+ New templates: Vaporwave, Rated X, Horror, Social, Commerce Catalog, Microblog, and Media Gallery
-+ Updated Leads template
-+ Updated Email template
++ (no changes)

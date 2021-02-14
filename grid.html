@@ -13,13 +13,13 @@
 	<meta name="twitter:description" content="Free open source CSS responsive grid for the brutalist web design trend.">
 	<meta name="twitter:creator" content="@brutalistfwk">
 	<!-- Twitter Summary card images must be at least 120x120px -->
-	<meta name="twitter:image" content="http://www.brutalistframework.com/core/files/images/bf21.jpg">
+	<meta name="twitter:image" content="http://www.brutalistframework.com/core/files/images/bf22.jpg">
 
 	<!-- Open Graph data -->
 	<meta property="og:title" content="Brutalist Framework || Grid" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://www.brutalistframework.com" />
-	<meta property="og:image" content="http://www.brutalistframework.com/core/files/images/bf21.jpg" />
+	<meta property="og:image" content="http://www.brutalistframework.com/core/files/images/bf22.jpg" />
 	<meta property="og:description" content="Free open source CSS responsive grid for the brutalist web design trend." /> 
 	<meta property="og:site_name" content="Brutalist Framework" />
 
@@ -37,15 +37,15 @@
 	<link href="theme/default/css/theme.css" type="text/css" rel="stylesheet" media="all" />
 </head>
 <body class="black">
-	<header class="container-fluid triangle-light anim-bg-neon stack-base">
+	<header class="container-fluid triangle-light anim-bg-neon stack-base" id="uptop">
 		<div class="row"><div class="col-sm-12"><div class="container-1200">
 			<div class="row no-padding stack1 content" id="scrolltop">
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 no-padding">
-					<a href="index.html"><img class="large-thumb crop circle brdr-s-k red-border invert-hover" src="core/files/images/brutalist-framework.jpg" alt="Brutalist Framework" /></a>
+					<a href="index.html"><img class="large-thumb crop circle brdr-s-k red-b invert-hover" src="core/files/images/brutalist-framework.jpg" alt="Brutalist Framework" /></a>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 no-padding lucida-text">
-					<h1 class="page-title border-solid-thick red-border courier-new-text fittext-h1 white-text baffle-prolonged">Grid</h1>
-					<div class="page-desc border-solid-thick red-border rice-text">
+					<h1 class="page-title brdr-s-k red-b courier white-t"><i class="bi bi-grid"></i><span class="baffle-prolonged">Grid</span></h1>
+					<div class="page-desc brdr-s-k red-b rice-text">
 						<h2 class="flow-text baffle">Responsive grid framework</h2><br />
 						<p>Flexbox grid &amp; B3Grid (Brutal Blocks 'n Bricks)</p>
 					</div>
@@ -62,15 +62,15 @@
 					<div class="menu lucida bold">
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="#core">CORE</a>
+							<li><a href="#core"><i class="bi bi-fisheye"></i> CORE</a>
 								<ul>
-									<li><a href="flavors.html">Flavors</a></li>
-									<li><a href="butch.html">BUTCH</a></li>
-									<li><a href="buix.html">BUIX</a></li>
-									<li><a href="bfx.html">BFX</a></li>
-									<li><a href="grid.html">Grid</a></li>
-									<li><a href="rebar.html">ReBAR</a></li>
-									<li><a href="bicons.html">bIcons</a></li>
+									<li><a href="flavors.html"><i class="bi bi-cone"></i> Flavors</a></li>
+									<li><a href="butch.html"><i class="bi bi-communist"></i> BUTCH</a></li>
+									<li><a href="buix.html"><i class="bi bi-navigate"></i> BUIX</a></li>
+									<li><a href="bfx.html"><i class="bi bi-sparkle"></i> BFX</a></li>
+									<li><a href="grid.html"><i class="bi bi-grid"></i> Grid</a></li>
+									<li><a href="rebar.html"><i class="bi bi-converge-left"></i> ReBAR</a></li>
+									<li><a href="bicons.html"><i class="bi bi-flag"></i> bIcons</a></li>
 								</ul>
 							</li>
 							<li><a href="bell.html">BELL</a>
@@ -79,7 +79,7 @@
 										<ul>
 											<li><a href="bell.html#audio">Audio Player</a></li>
 											<li><a href="bell.html#gif">Gif Player</a></li>
-											<<li><a href="bell.html#vp">Video Player</a></li>
+											<li><a href="bell.html#vp">Video Player</a></li>
 										</ul>
 									</li>
 									<li><a href="bell.html#ie">Interface Elements</a>
@@ -161,236 +161,418 @@
 				<hr class="thick tomato" />
 				<!-- B3GRID -->
 				<div class="padded">
-					<h3 class="fittext-h3 red-text courier-new" id="b3grid">B3Grid</h3>
-					<h4 class="bold charcoal-text lucida">Brutal Blocks 'n Bricks Grid</h4>
-					<p class="charcoal-text lucida flow-text">A grid for when you don't want rows!</p>
-					<div class="blocks stretch">
-						<div class="silver block b50 padded">
-							<h5 class="red-text lucida">Blocks vs. Bricks</h5>
-							<p class="charcoal-text arial"><strong>Blocks</strong> are flex containers that can be specified by both width and height.</p>
-							<p class="charcoal-text arial"><strong>Bricks</strong> are inline blocks that can only be specified by width.</p>
-							<div class="info padded">
-								<h5 class="red-text lucida">Structure</h5>
-								<p><strong>.block-wrap</strong> - required outer wrapper for blocks<br />
-								<strong>.block</strong> - supports both widths and heights<br /><br />
-								<strong>.brick-wrap</strong> - optional outer wrapper for bricks<br />
-								<strong>.brick</strong> - supports only widths; can be contained within blocks</p>
+					<h3 class="red-t courier bold" id="b3grid">B3Grid</h3>
+					<h4 class="bold charcoal-t lucida">Brutal Blocks 'n Bricks Grid</h4>
+					<p class="charcoal-t arial flow-text">A grid for when you don't want rows! <em>B3Grid</em> allows you to create a flex layout without being restricted by rows. This is ideal for long lists of repeating content blocks. <em>B3Grid</em> can be used within a Flexbox grid layout, or independently.</p>
+					<div class="row">
+						<div class="col-xs-12 col-sm-6">
+							<div class="padded disabled">
+								<h5 class="red-t lucida">Blocks vs. Bricks</h5>
+								<p><strong>Blocks</strong> = flexible blocks that evenly fill up the entire width of an area.<br /><br />
+								<strong>Bricks</strong> = inline blocks that <em>don't</em> evenly fill up an area's width.</p>
+								<hr />
+								<p><span class="bigger bold">.block-wrap</span> - blocks outer wrapper<br />
+								<span class="bigger bold">.block</span> - individual blocks<br /><br />
+								<span class="bigger bold">.brick-wrap</span> - bricks outer wrapper<br />
+								<span class="bigger bold">.brick</span> - individual bricks</p>
 							</div>
 						</div>
-						
-						<div class="platinum block b50 padded">
-							<div class="info padded">
-								<h5 class="red-text lucida">Widths</h5>
-								<p class="arial">Can be applied to both block and brick classes.</p>
-								<p><strong>.b20</strong> - 20% (one fifth) width<br />
-								<strong>.b25</strong> - 25% (quarter) width<br />
-								<strong>.b30</strong> - 30% width<br />
-								<strong>.b33</strong> - 33% (one-third) width<br />
-								<strong>.b40</strong> - 40% width<br />
-								<strong>.b50</strong> - 50% (half) width<br />
-								<strong>.b60</strong> - 60% width<br />
-								<strong>.b66</strong> - 66% (two-thirds) width<br />
-								<strong>.b70</strong> - 70% width<br />
-								<strong>.b75</strong> - 75% (three-fourths) width<br />
-								<strong>.b80</strong> - 80% width<br />
-								<strong>.b100</strong> - 100% (full) width
-								</p>
+						<div class="col-xs-12 col-sm-6">
+							<div class="padded disabled">
+								<h5 class="red-t lucida">Basic Markup</h5>
+								<p>Create a 3-column flex layout:</p>
+								<code class="padding smaller">
+								&lt;div class="<strong>block-wrap</strong>"&gt;<br />
+								&nbsp;&nbsp;&lt;div class="<strong>block</strong>"&gt;...&lt;/div&gt;<br />
+								&nbsp;&nbsp;&lt;div class="<strong>block</strong>"&gt;...&lt;/div&gt;<br />
+								&nbsp;&nbsp;&lt;div class="<strong>block</strong>"&gt;...&lt;/div&gt;<br />
+								&lt;/div&gt;
+								</code><hr />
+								<p>Create 3 inline bricks:</p>
+								<code class="padding smaller">
+								&lt;div class="<strong>brick-wrap</strong>"&gt;<br />
+								&nbsp;&nbsp;&lt;div class="<strong>brick</strong>"&gt;...&lt;/div&gt;<br />
+								&nbsp;&nbsp;&lt;div class="<strong>brick</strong>"&gt;...&lt;/div&gt;<br />
+								&nbsp;&nbsp;&lt;div class="<strong>brick</strong>"&gt;...&lt;/div&gt;<br />
+								&lt;/div&gt;
+								</code>
 							</div>
 						</div>
-						<div class="platinum block b33 padded">
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<h5 class="charcoal-t lucida">Blocks Example</h5>
+							<div class="block-wrap flow-text vanilla-bean-t">
+								<div class="block blueberry padded">
+									<p>Block 1</p>
+								</div>
+								<div class="block strawberry padded">
+									<p>Block 2</p>
+								</div>
+								<div class="block raspberry padded">
+									<p>Block 3</p>
+								</div>
+							</div>
+							<h5 class="charcoal-t lucida">Bricks Example</h5>
+							<div class="block-wrap flow-text charcoal-t">
+								<div class="brick smoke padded">
+									<p>Brick 1</p>
+								</div>
+								<div class="brick sand padded">
+									<p>Brick 2</p>
+								</div>
+								<div class="brick silver padded">
+									<p>Brick 3</p>
+								</div>
+							</div>
+						</div>
+					</div><p class="padded"></p>
+					<div class="row">
+						<div class="col-xs-12 col-sm-6">
+							<div class="padded info">
+								<h4 class="flow-text red-t lucida">Specify Widths</h4>
+								<p class="charcoal-t">Block and brick widths are determined by the percentage width of it's container.</p>
+								<p><strong>.b10</strong> - 10%<br /><strong>.b20</strong> - 20% (one fifth)<br />
+								<strong>.b25</strong> - 25% (one-quarter)<br />
+								<strong>.b30</strong> - 30%<br />
+								<strong>.b33</strong> - 33.33% (one-third)<br />
+								<strong>.b40</strong> - 40%<br />
+								<strong>.b50</strong> - 50% (half)<br />
+								<strong>.b60</strong> - 60%<br />
+								<strong>.b66</strong> - 66.66% (two-thirds)<br />
+								<strong>.b70</strong> - 70%<br />
+								<strong>.b75</strong> - 75% (three-quarters)<br />
+								<strong>.b80</strong> - 80%<br /><strong>.b90</strong> - 90%<br />
+								<strong>.b100</strong> - 100% (full)</p>
+								<hr />
+								<p>Create a two-column layout with a two-thirds and one-third column.</p>
+								<code class="padding smaller">
+								&lt;div class="<strong>block-wrap</strong>"&gt;<br />
+								&nbsp;&nbsp;&lt;div class="<strong>block b33</strong>"&gt;...&lt;/div&gt;<br />
+								&nbsp;&nbsp;&lt;div class="<strong>block b66</strong>"&gt;...&lt;/div&gt;<br />
+								&lt;/div&gt;
+								</code>
+
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6">
 							<div class="info padded">
-								<h5 class="red-text lucida">Heights</h5>
-								<p class="arial">Applies ONLY to the <em>block</em> class. Height is relative to the window size.</p>
-								<p><strong>.bh20</strong> - 20% (one fifth) height<br />
-								<strong>.bh25</strong> - 25% (quarter) height<br />
-								<strong>.bh30</strong> - 30% height<br />
-								<strong>.bh33</strong> - 33% (one-third) height<br />
-								<strong>.bh40</strong> - 40% height<br />
-								<strong>.bh50</strong> - 50% (half) height<br />
-								<strong>.bh60</strong> - 60% height<br />
-								<strong>.bh66</strong> - 66% (two-thirds) height<br />
+								<h4 class="flow-text red-t lucida">Heights</h5>
+								<p class="charcoal-t">Block heights are determined by the height percentage relative to the window height.</p>
+								<p><strong>.bh20</strong> - 20% (one fifth)<br />
+								<strong>.bh25</strong> - 25% (one-quarter)<br />
+								<strong>.bh30</strong> - 30%<br />
+								<strong>.bh33</strong> - 33% (one-third)<br />
+								<strong>.bh40</strong> - 40%<br />
+								<strong>.bh50</strong> - 50% (half)<br />
+								<strong>.bh60</strong> - 60%<br />
+								<strong>.bh66</strong> - 66% (two-thirds)<br />
 								<strong>.bh70</strong> - 70% height<br />
-								<strong>.bh75</strong> - 75% (three-fourths) height<br />
-								<strong>.bh80</strong> - 80% height<br />
-								<strong>.bh100</strong> - 100% (full) height
+								<strong>.bh75</strong> - 75% (three-quarters)<br />
+								<strong>.bh80</strong> - 80%<br />
+								<strong>.bh100</strong> - 100% (full)</p>
+								<hr />
+								<p class="charcoal-t">General heights are determined by the height percentage relative to it's container.</p>
+								<p><strong>.h25</strong> - 25% (one-quarter)<br /><strong>.h33</strong> - 33% (one-third)<br />
+								<strong>.h50</strong> - 50% (half)<br /><strong>.h66</strong> - 66% (two-thirds)<br /><strong>.h75</strong> - 75% (three-quarters)<br />
+								<strong>.h100</strong> - 100% (full)</p>
+							</div>
+						</div>
+					</div>
+					<div class="row"><div class="col-xs-12 no-padding">
+						<p class="flow-text red-t lucida"><strong>Grid Widths Demo</strong></p>
+						<div class="bricks vanilla-t black-cherry center">
+							<p class="brick b100 cherry-b brdr-s-t flow-text">.b100</p>
+							<div class="brick b50 cherry-b brdr-s-t">.b50</div>
+							<div class="brick b50 cherry-b brdr-s-t">.b50</div>
+							<div class="brick b25 cherry-b brdr-s-t">.b25</div>
+							<div class="brick b25 cherry-b brdr-s-t">.b25</div>
+							<div class="brick b25 cherry-b brdr-s-t">.b25</div>
+							<div class="brick b25 cherry-b brdr-s-t">.b25</div>
+							<div class="brick b33 cherry-b brdr-s-t">.b33</div>
+							<div class="brick b33 cherry-b brdr-s-t">.b33</div>
+							<div class="brick b33 cherry-b brdr-s-t">.b33</div>
+							<div class="brick b66 cherry-b brdr-s-t">.b66</div>
+							<div class="brick b33 cherry-b brdr-s-t">.b33</div>
+							<div class="brick b75 cherry-b brdr-s-t">.b75</div>
+							<div class="brick b25 cherry-b brdr-s-t">.b25</div>
+							<div class="brick b40 cherry-b brdr-s-t">.b40</div>
+							<div class="brick b60 cherry-b brdr-s-t">.b60</div>
+							<div class="brick b20 cherry-b brdr-s-t">.b20</div>
+							<div class="brick b80 cherry-b brdr-s-t">.b80</div>
+							<div class="brick b10 cherry-b brdr-s-t">.b10</div>
+							<div class="brick b90 cherry-b brdr-s-t">.b90</div>
+							<div class="brick b20 cherry-b brdr-s-t">.b20</div>
+							<div class="brick b20 cherry-b brdr-s-t">.b20</div>
+							<div class="brick b20 cherry-b brdr-s-t">.b20</div>
+							<div class="brick b20 cherry-b brdr-s-t">.b20</div>
+							<div class="brick b20 cherry-b brdr-s-t">.b20</div>
+						</div><p class="padding"></p>
+					</div></div>
+					<p class="padded"></p>
+					<div class="row silver"><div class="col-xs-12">
+						<h5 class="red-t lucida">Quick Widths</h5>
+						<p><em>Quick Widths</em> are a simple way to evenly divide up the widths of blocks or bricks. Instead of assigning a specific width to each individual block or brick, you can just apply a class to the block- or brick-wrap container.<br /><br /></p>
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-6">
+								<h5 class="charcoal-t">Markup</h5>
+								<code class="smaller padding">
+									&lt;div class="brick-wrap <em>thirds</em>"&gt;<br />
+									&nbsp;&nbsp;&lt;div class="brick"&gt;...&lt;/div&gt;<br />
+									&nbsp;&nbsp;&lt;div class="brick"&gt;...&lt;/div&gt;<br />
+									&nbsp;&nbsp;&lt;div class="brick"&gt;...&lt;/div&gt;<br />
+									&lt;/div&gt;
+								</code>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-6">
+								<p class="padded info">
+									<span class="flow-text">Classes</span><br /><strong>.full</strong> - 100% width<br />
+									<strong>.halves</strong> - 1/2 (50%) width<br />
+									<strong>.thirds</strong> - 1/3 (33%) width<br />
+									<strong>.quarters</strong> - 1/4 (25%) width<br />
+									<strong>.fifths</strong> - 1/5 (20%) width<br />
+									<strong>.sixths</strong> - 1/6 (17%) width
 								</p>
 							</div>
 						</div>
-						<div class="silver block b33 padded">
-							<h5 class="red-text lucida">Blocks Markup</h5>
-							<code class="padding smaller">
-								&lt;div class="<strong>blocks</strong>"&gt;<br />
-								&nbsp;&nbsp;&lt;div class="<strong>block b25 bh50</strong>"&gt;<br />
-								&nbsp;&nbsp;...<br />
-								&nbsp;&nbsp;&lt;/div&gt;<br />
-								&nbsp;&nbsp;&lt;div class="<strong>block b75 bh50</strong>"&gt;<br />
-								&nbsp;&nbsp;...<br />
-								&nbsp;&nbsp;&lt;/div&gt;<br />
-								&lt;/div&gt;
-							</code>
-							<h5 class="red-text lucida">Bricks Markup</h5>
-							<code class="padding smaller">
-								&lt;div class="<strong>bricks</strong>"&gt;<br />
-								&nbsp;&nbsp;&lt;div class="<strong>brick b33</strong>"&gt;<br />
-								&nbsp;&nbsp;...<br />
-								&nbsp;&nbsp;&lt;/div&gt;<br />
-								&nbsp;&nbsp;&lt;div class="<strong>brick b33</strong>"&gt;<br />
-								&nbsp;&nbsp;...<br />
-								&nbsp;&nbsp;&lt;/div&gt;<br />
-								&nbsp;&nbsp;&lt;div class="<strong>brick b33</strong>"&gt;<br />
-								&nbsp;&nbsp;...<br />
-								&nbsp;&nbsp;&lt;/div&gt;<br />
-								&lt;/div&gt;
-							</code>
+						<h5 class="lucida charcoal-t"><strong>EXAMPLE:</strong> .brick-wrap.quarters</h5>
+						<div class="brick-wrap quarters flow-text">
+							<div class="brick mono">Brick 1</div>
+							<div class="brick sweden">Brick 2</div>
+							<div class="brick plush">Brick 3</div>
+							<div class="brick orange-cream">Brick 4</div>
+							<div class="brick cherry-vanilla">Brick 5</div>
+							<div class="brick pool-party">Brick 6</div>
+							<div class="brick navy-fire">Brick 7</div>
+							<div class="brick bbq-fire">Brick 8</div>
+							<div class="brick peach-plum">Brick 9</div>
 						</div>
-						<div class="silver block b33 padded">
-							<h5 class="red-text lucida">Nested Blocks Markup</h5>
-							<p class="arial charcoal-text">Three blocks within a two-block area.</p>
+						<p class="padded"></p>
+					</div></div>
+					<hr class="thick tomato" />
+					<p class="padded"></p>
+					<div class="row silver">
+						<div class="col-xs-12">
+							<h5 class="red-t lucida">Nesting</h5>
+							<p class="arial charcoal-t">Blocks and bricks can be nested within each other. In this example, we'll add 3 bricks set to a one-third width each, nested within a two-thirds width block.</p>
+							
 							<code class="padding smaller">
-								&lt;div class="<strong>blocks</strong>"&gt;<br />
-								&nbsp;&lt;div class="<strong>block b50 bh50</strong>"&gt;<br />
-								&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<strong>blocks</strong>"&gt;<br />
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<strong>block b33</strong>"&gt;<br />
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt/div&gt;<br />
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<strong>block b33</strong>"&gt;<br />
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt/div&gt;<br />
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<strong>block b33</strong>"&gt;<br />
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt/div&gt;<br />
+								&lt;div class="<strong>block-wrap</strong>"&gt;<br />
+								&nbsp;&lt;div class="<strong>block b66</strong>"&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<strong>brick-wrap</strong>"&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<strong>brick b33</strong>"&gt;...&lt/div&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<strong>brick b33</strong>"&gt;...&lt/div&gt;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<strong>brick b33</strong>"&gt;...&lt/div&gt;<br />
 								&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
 								&nbsp;&lt;/div&gt;<br />
-								&nbsp;&lt;div class="<strong>block b50 bh50</strong>"&gt;<br />
-								&nbsp;...<br />
-								&nbsp;&lt;/div&gt;<br />
+								&nbsp;&lt;div class="<strong>block b33</strong>"&gt;...&lt;/div&gt;<br />
 								&lt;/div&gt;
 							</code>
+							<p class="flow-text bold charcoal-t">Output:</p>
+							<div class="block-wrap sand">
+								<div class="block b66">
+									<p class="flow-text charcoal-t">Block 1, two-thirds width</p>
+									<div class="brick-wrap black-cherry flow-text vanilla-t">
+									  <div class="brick b33 cherry-b brdr-s-t">Brick 1</div>
+									  <div class="brick b33 cherry-b brdr-s-t">Brick 2</div>
+									  <div class="brick b33 cherry-b brdr-s-t">Brick 3</div>
+									</div>
+									<p class="flow-text charcoal-t">Block 1, more content!</p>
+								</div>
+								<div class="block b33"><p class="flow-text charcoal-t">Block 2<br />one-third width</p></div>
+							</div>
+							<p class="padded"></p>
 						</div>
 					</div>
 					<hr class="thick tomato" />
-					<div class="blocks stretch">
-						<div class="block b50 silver">
-							<div class="bricks strawberry-text">
-								<p class="brick b100 flow-text red-text lucida"><strong>Bricks Example</strong></p>
-								<p class="brick b100 center black-cherry cherry-border border-solid-thin flow-text">.b100</p>
-								<div class="brick b50 center black-cherry cherry-border border-solid-thin">.b50</div>
-								<div class="brick b50 center black-cherry cherry-border border-solid-thin">.b50</div>
-								<div class="brick b25 center black-cherry cherry-border border-solid-thin">.b25</div>
-								<div class="brick b25 center black-cherry cherry-border border-solid-thin">.b25</div>
-								<div class="brick b25 center black-cherry cherry-border border-solid-thin">.b25</div>
-								<div class="brick b25 center black-cherry cherry-border border-solid-thin">.b25</div>
-								<div class="brick b33 center black-cherry cherry-border border-solid-thin">.b33</div>
-								<div class="brick b33 center black-cherry cherry-border border-solid-thin">.b33</div>
-								<div class="brick b33 center black-cherry cherry-border border-solid-thin">.b33</div>
-								<div class="brick b75 center black-cherry cherry-border border-solid-thin">.b75</div>
-								<div class="brick b25 center black-cherry cherry-border border-solid-thin">.b25</div>
-								<div class="brick b40 center black-cherry cherry-border border-solid-thin">.b40</div>
-								<div class="brick b60 center black-cherry cherry-border border-solid-thin">.b60</div>
-								<div class="brick b20 center black-cherry cherry-border border-solid-thin">.b20</div>
-								<div class="brick b20 center black-cherry cherry-border border-solid-thin">.b20</div>
-								<div class="brick b20 center black-cherry cherry-border border-solid-thin">.b20</div>
-								<div class="brick b20 center black-cherry cherry-border border-solid-thin">.b20</div>
-								<div class="brick b20 center black-cherry cherry-border border-solid-thin">.b20</div>
+					<p class="padded"></p>
+					<div class="row" id="align">
+						<div class="col-xs-12">
+							<h4 class="red-t lucida"><strong>Alignments</strong></h4>
+							<p>Blocks and bricks can be aligned within their wrappers in various ways. Apply these classes to the block- or brick-wrap container.<br /><br /></p>
+							<p><span class="flow-text bold red-t lucida">.around</span> - Even spacing <em>around</em> blocks.</p>
+							<div class="block-wrap around sand flow-text yellow-t">
+								<div class="block blue b25">.b25</div>
+								<div class="block green b25">.b25</div>
+								<div class="block red b25">.b25</div>
 							</div>
-						</div>
-						<div class="block b50 silver">
-							<div class="blocks">
-								<p class="block b100 flow-text red-text lucida"><strong>Bricks Within Blocks Example</strong></p>
-								<div class="block b25 charcoal strawberry-text">
-									<p class="center flow-text white-text"><strong>Block 1</strong></p>
-									<div class="brick b100 maroon black-cherry-border border-solid-thin">
-										<p class="white-text">Single Brick<br />.b100</p>
-									</div>
-									<div class="brick b50 maroon black-cherry-border border-solid-thin">
-										<p class="smaller white-text">Half Brick</p>
-									</div>
-								</div>
-								<div class="block b75 grey strawberry-text">
-									<p class="center flow-text white-text"><strong>Block 2</strong> - Block with Bricks</p>
-									<div class="bricks">
-										<div class="brick b33 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.b33</span></div>
-										<div class="brick b33 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.b33</span></div>
-										<div class="brick b33 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.b33</span></div>
-										<div class="brick b50 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.b50</span></div>
-										<div class="brick b50 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.b50</span></div>
-									</div>
-								</div>
-								<!-- Block / Brick Heights -->
-								<p class="center flow-text red-text lucida" style="margin-top: 1.3em;"><strong>Block Height with Bricks</strong></p>
-								<div class="block b100 bh25 strawberry white-text">
-									<p class="center lucida" style="margin-top: 1.5em;"><strong>.b100 .bh25</strong><br />This block is one-fourth the height of the screen.</p>
-									<div class="bricks" style="margin-top: 15px;">
-										<div class="brick b25 center black-cherry cherry-border border-solid-thin">.b25</div>
-										<div class="brick b25 center black-cherry cherry-border border-solid-thin">.b25</div>
-										<div class="brick b25 center black-cherry cherry-border border-solid-thin">.b25</div>
-										<div class="brick b25 center black-cherry cherry-border border-solid-thin">.b25</div>
-									</div>
-								</div>
+							<p style="margin-top: 1em;"><span class="flow-text bold red-t lucida">.evenly</span> - Even spacing <em>between</em> blocks.</p>
+							<div class="block-wrap evenly sand flow-text yellow-t">
+								<div class="block blue b25">.b25</div>
+								<div class="block green b25">.b25</div>
+								<div class="block red b25">.b25</div>
 							</div>
-						</div>
-						<p class="center flow-text red-text lucida"><strong>Center a Block or Brick</strong></p>
-						<p>To center a brick or block, simply apply the class <em>CENTER</em> to a bricks / blocks wrapper.</p>
-						<div class="bricks bh33 b100 center grey">
-							<div class="brick black-cherry b25"><p class="flow-text lemon-text arial-text">Centered Brick</p></div>
-						</div>
-					</div>
-					<div class="blocks" style="margin-top: 1em;">
-						<div class="block b100">
-							<p class="center flow-text red-text lucida"><strong>Grow Blocks</strong></p>
-							<p>Increase the width of a block in proportion to the others. In the example below, we want to make one block 3 times wider than the rest, but keep another block set to 25% of width of the container. Class <strong>.g3</strong> is used to grow the block width. Classes <strong>g1 - g5</strong> are supported. Use <strong>g0</strong> or <strong>no-grow</strong> to prevent a block from growing in proportion to the width of the contianer.<br /><br /></p>
-							<div class="blocks white-text">
-								<div class="block b25 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.block.b25</span></div>
-								<div class="block center black-cherry cherry-border border-solid-thin"><span class="flow-text">.block</span></div>
-								<div class="block g3 center black-cherry cherry-border border-solid-thin"><span class="flow-text">.block.g3</span></div>
-								<div class="block center black-cherry cherry-border border-solid-thin"><span class="flow-text">.block</span></div>
-								<div class="block center black-cherry cherry-border border-solid-thin"><span class="flow-text">.block</span></div>
+							<p style="margin-top: 1em;"><span class="flow-text bold red-t lucida">.between</span> - Even spacing <em>between</em> blocks, with no left or right edge spacing.</p>
+							<div class="block-wrap between sand flow-text yellow-t">
+								<div class="block blue b25">.b25</div>
+								<div class="block green b25">.b25</div>
+								<div class="block red b25">.b25</div>
 							</div>
-						</div>
-					</div>
-					<div class="blocks" style="margin-top: 1em;">
-						<div class="block b100">
-							<p class="center flow-text red-text lucida"><strong>Stretch Blocks</strong></p>
-							<p>By default, blocks do not have the same height if they appear on the same row. To stretch blocks so that they have the same height, simply apply the class <b><em>.stretch</em></b> to the <em>block-wrap</em> container.<br /><br /><strong>NOT Stretched</strong></p>
-							<div class="blocks white-text">
-								<div class="block center black-cherry cherry-border border-solid-thin">Line 1</div>
-								<div class="block center black-cherry cherry-border border-solid-thin">Line 1<br />Line 2</div>
-								<div class="block center black-cherry cherry-border border-solid-thin">Line 1<br />Line 2<br />Line 3</div>
-								<div class="block center black-cherry cherry-border border-solid-thin">Line 1<br />Line 2<br />Line 3</div>
-								<div class="block center black-cherry cherry-border border-solid-thin">Line 1</div>
+							<p style="margin-top: 1em;"><span class="flow-text bold red-t lucida">.center</span> - Centers everything horizontally and vertically.</p>
+							<div class="bricks bh20 b100 center sand">
+								<div class="brick black-cherry b30"><p class="flow-text lemon-t arial">Centered Brick</p></div>
 							</div>
-							<p><strong>Stretched</strong></p>
-							<div class="blocks white-text stretch">
-								<div class="block center black-cherry cherry-border border-solid-thin">Line 1</div>
-								<div class="block center black-cherry cherry-border border-solid-thin">Line 1<br />Line 2</div>
-								<div class="block center black-cherry cherry-border border-solid-thin">Line 1<br />Line 2<br />Line 3</div>
-								<div class="block center black-cherry cherry-border border-solid-thin">Line 1<br />Line 2<br />Line 3</div>
-								<div class="block center black-cherry cherry-border border-solid-thin">Line 1</div>
+							<p style="margin-top: 1em;"><span class="flow-text bold red-t lucida">.start</span> - Aligns at start of container (top left).</p>
+							<div class="bricks bh20 b100 start sand lemon-t arial">
+								<div class="brick black-cherry">Brick</div>
+								<div class="brick scarlet">Brick</div>
+								<div class="brick sangria">Brick</div>
+								<div class="brick mahogany">Brick</div>
+							</div>
+							<p style="margin-top: 1em;"><span class="flow-text bold red-t lucida">.end</span> - Align at end of container (bottom right).</p>
+							<div class="bricks bh20 b100 end sand lemon-t arial">
+								<div class="brick black-cherry">Brick</div>
+								<div class="brick scarlet">Brick</div>
+								<div class="brick sangria">Brick</div>
+								<div class="brick mahogany">Brick</div>
+							</div>
+							<p style="margin-top: 1em;"><span class="flow-text bold red-t lucida">.baseline</span> - (DEFAULT VIEW) - Aligns along baseline.<br />
+							<span class="green-t"><strong>DEMO:</strong> Below, we <em>center</em> all blocks within the block-wrap, but override the 3rd block to be aligned on the <em>baseline</em>.</span></p>
+							<div class="blocks bh20 b100 center sand lemon-t arial">
+								<div class="block black-cherry">Block<br />line 2<br />line 3</div>
+								<div class="block scarlet">Block<br />line 2</div>
+								<div class="block sangria baseline">.baseline<br />line 2</div>
+								<div class="block mahogany">Block<br />line 2</div>
+								<div class="block scarlet">Block<br />line 2<br />line 3</div>
+							</div>
+							<p style="margin-top: 1em;"><span class="flow-text bold red-t lucida">.stretch</span> - Stretches all items to be the same height <em>and</em> fill up the height of the container.</p>
+							<p class="green-t"><strong>DEMO:</strong> Below, we have blocks with varying lengths of content, which would create unequal heights.</p>
+							<div class="blocks b100 stretch sand lemon-t arial">
+								<div class="block black-cherry">Block<br />line 2<br />line 3</div>
+								<div class="block scarlet">Block<br />line 2</div>
+								<div class="block sangria flow-text">Block</div>
+								<div class="block mahogany">Block<br />line 2</div>
+								<div class="block scarlet">Block<br />line 2<br />line 3<br />line 4</div>
+							</div>
+							<p class="green-t" style="margin-top: 1em;"><strong>STRETCH HEIGHT DEMO:</strong> Same as above, but now we would like to specify the block-wrap height as being 20% of the window height.</p>
+							<div class="blocks b100 bh20 stretch sand lemon-t arial">
+								<div class="block black-cherry">Block<br />line 2<br />line 3</div>
+								<div class="block scarlet">Block<br />line 2</div>
+								<div class="block sangria flow-text">Block</div>
+								<div class="block mahogany">Block<br />line 2</div>
+								<div class="block scarlet">Block<br />line 2<br />line 3<br />line 4</div>
 							</div>
 						</div>
 					</div>
 					<p class="padded"></p>
-					<h4 class="bold charcoal-text lucida" id="b3grid-tiles">Tiles</h4>
-					<p>Tiles are a simple way to make unordered lists into evenly divided inline blocks. Simply apply class <strong><em>tiles</em></strong> to any ul tag! By default, <em>li</em> items maxes out at 50% width. You can additionally apply classes <strong><em>thirds, fourths</em> or <em> fifths</em></strong> for even widths.</p> 
-					<h5 class="charcoal-text lucida">Markup</h5>
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-6">
-							<code class="padding">
-								&lt;ul class="<strong>tiles thirds</strong>"&gt;<br />
-								&nbsp;&nbsp;&lt;li&gt;&nbsp;&nbsp;...&nbsp;&nbsp;&lt;/li&gt;<br />
-								&nbsp;&nbsp;&lt;li&gt;&nbsp;&nbsp;...&nbsp;&nbsp;&lt;/li&gt;<br />
-								&nbsp;&nbsp;&lt;li&gt;&nbsp;&nbsp;...&nbsp;&nbsp;&lt;/li&gt;<br />
-								&lt;/ul&gt;
-							</code>
-						</div>
-						<div class="col-xs-12 col-sm-12 col-md-6">
-							<p class="info padded">
-								<strong>.thirds</strong> - 1/3 (33%) li width<br />
-								<strong>.fourths</strong> - 1/4 (25%) li width<br />
-								<strong>.fifths</strong> - 1/5 (20%) li width
-							</p>
+					<div class="row silver">
+						<div class="col-xs-12">
+							<h5 class="red-t lucida"><strong>Grow Blocks</strong></h5>
+							<p>Increase the width of a block in proportion to the others on the same line. In the example below, we want to make one block 3 times wider than the rest.</p>
+							<p class="indent">Class <strong>.g3</strong> is used to grow the block width. Classes <strong>g1 - g6</strong> are supported. Use <strong>g0</strong> or <strong>no-grow</strong> to prevent a block from growing in proportion to the width of the contianer. <span class="red-t"><strong>NOTE:</strong> Growth classes ONLY works with blocks.</span>
+							<br /><br /></p>
+							<div class="blocks white-t center">
+								<div class="block g3 black-cherry cherry-b brdr-s-t"><span class="flow-text">.block.g3</span></div>
+								<div class="block black-cherry cherry-b brdr-s-t"><span class="flow-text">.block</span></div>
+								<div class="block black-cherry cherry-b brdr-s-t"><span class="flow-text">.block</span></div>
+								<div class="block black-cherry cherry-b brdr-s-t"><span class="flow-text">.block</span></div>
+							</div>
+							<p class="padded"></p>
 						</div>
 					</div>
+					<hr class="thick tomato" />
+					<p class="padded"></p>
+					<div class="row" id="dirs">
+						<div class="col-xs-12">
+							<h4 class="red-t lucida"><strong>Directions &amp; Ordering</strong></h4>
+							<p>By default, B3Grid lays out block and brick elements into a horizontal row, arranged in chronological order. We can change the direction and ordering by adding these classes to the <em>block-wrap</em> wrapper class.</p>
+							<p style="margin-top: 1em;"><span class="flow-text bold red-t lucida">.row-rev</span> - Row in reverse order.</p>
+							<div class="block-wrap row-rev flow-text">
+								<div class="block black white-t">Block 1</div>
+								<div class="block charcoal white-t">Block 2</div>
+								<div class="block grey charcoal-t">Block 3</div>
+								<div class="block smoke grey-t">Block 4</div>
+							</div>
+							<div class="row"><div class="col-xs-12 col-sm-6">
+								<p style="margin-top: 1em;"><span class="flow-text bold red-t lucida">.col</span> - Arranges blocks into vertical columns.</p>
+								<div class="block-wrap col flow-text">
+									<div class="block black white-t">Block 1</div>
+									<div class="block charcoal white-t">Block 2</div>
+									<div class="block grey charcoal-t">Block 3</div>
+									<div class="block smoke grey-t">Block 4</div>
+								</div>
+							</div><div class="col-xs-12 col-sm-6">
+								<p style="margin-top: 1em;"><span class="flow-text bold red-t lucida">.col-rev</span> - Column in reverse order.</p>
+								<div class="block-wrap col-rev flow-text">
+									<div class="block black white-t">Block 1</div>
+									<div class="block charcoal white-t">Block 2</div>
+									<div class="block grey charcoal-t">Block 3</div>
+									<div class="block smoke grey-t">Block 4</div>
+								</div>
+							</div></div>
+							<p class="padded"></p>
+							<div class="row"><div class="col-xs-12 col-sm-6">
+								<p class="padded info"><span class="flow-text bold">TIP for Columns:</span><br />On column blocks, apply the <em>stretch</em> class to the block-wrapper to make them the same width. Alternatively, specifiy a width by applying a width class to each block.</p>
+								<p class="padded info" style="margin-top: 1em;"><span class="flow-text bold">First in Order</span><br />To make a block or brick always appear at the beginning of a list of items, simply apply either of these two classes directly to a block or brick: <br /><span class="bigger bold">.first<br />.featured</span><br />
+								If more than one item is placed at the beginning, they will appear in their chronological order (but placed before the remaining items).</p>
+							</div><div class="col-xs-12 col-sm-6">
+								<p class="padded info"><span class="flow-text bold">EXAMPLE:</span> Stretched blocks in a reversed column order with two "first-ordered" blocks.</p>
+								<div class="block-wrap col-rev flow-text stretch" style="margin-top: 1em;">
+									<div class="block black white-t">Block 1</div>
+									<div class="block charcoal white-t">Block 2</div>
+									<div class="block grey charcoal-t">Block 3</div>
+									<div class="block smoke charcoal-t">Block 4</div>
+									<div class="block rice charcoal-t">Block 5</div>
+									<!-- appear AFTER .first block due to reverse order -->
+									<div class="block green lemon-t">.featured</div>
+									<!-- appear BEFORE .feature block due to reverse order -->
+									<div class="block midnight orange-t">.first</div>
+								</div>
+							</div></div>
+						</div>
+					</div>
+					<p class="padded"></p>
+					<hr class="thick tomato" />
+					<p class="padded"></p>
+					<div class="row" id="tiles"><div class="col-xs-12">
+						<h4 class="bold red-t lucida">Tiles</h4>
+						<p>Tiles are a simple way to make unordered lists into evenly divided inline blocks. Simply apply class <strong><em>tiles</em></strong> to any ul tag! By default, <em>li</em> tile items maxes out at 50% width. Tiles self-stretch to be the same height as other tiles on the same line.</p> 
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-6">
+								<h5 class="charcoal-t lucida">Markup</h5>
+								<code class="padding">
+									&lt;ul class="<strong>tiles thirds</strong>"&gt;<br />
+									&nbsp;&nbsp;&lt;li&gt;&nbsp;&nbsp;...&nbsp;&nbsp;&lt;/li&gt;<br />
+									&nbsp;&nbsp;&lt;li&gt;&nbsp;&nbsp;...&nbsp;&nbsp;&lt;/li&gt;<br />
+									&nbsp;&nbsp;&lt;li&gt;&nbsp;&nbsp;...&nbsp;&nbsp;&lt;/li&gt;<br />
+									&lt;/ul&gt;
+								</code>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-6">
+								<p class="info padded"><span class="flow-text bold">Quick-Width Classes</span><br />
+									<strong>.halves</strong> - 1/2 (50%) li width<br />
+									<strong>.thirds</strong> - 1/3 (33%) li width<br />
+									<strong>.quarters</strong> - 1/4 (25%) li width<br />
+									<strong>.fifths</strong> - 1/5 (20%) li width<br />
+									<strong>.sixths</strong> - 1/6 (17%) li width
+								</p>
+								<p class="warning padded"><span class="flow-text bold">Pad Tiles</span><br />
+									Tiles have no padding by default. Add padding to all tiles automatically by applying the class <strong><em>.padded</em></strong> to a <em>tiles</em> wrapper:<br />
+									<strong><em>ul.tiles.padded</em></strong>
+								</p>
+							</div>
+						</div>
+						<div class="row"><div class="col-xs-12">
+							<h5 class="charcoal-t lucida"><strong>Example:</strong> Fifths</h5>
+							<ul class="tiles fifths flow-text center">
+								<li class="lemon blueberry-t">Tile 1</li>
+								<li class="blueberry lemon-t">Tile 2</li>
+								<li class="strawberry rice-t">Tile 3</li>
+								<li class="orange spinach-t">Tile 4</li>
+								<li class="spinach orange-t">Tile 5</li>
+								<li class="lemon blueberry-t">Tile 6</li>
+								<li class="blueberry lemon-t">Tile 7</li>
+								<li class="strawberry rice-t">Tile 8</li>
+								<li class="orange spinach-t">Tile 9</li>
+								<li class="spinach orange-t">Tile 10</li>
+								<li class="lemon blueberry-t">Tile 11</li>
+								<li class="blueberry lemon-t">Tile 12</li>
+								<li class="strawberry rice-t">Tile 13</li>
+								<li class="orange spinach-t">Tile 14</li>
+								<li class="spinach orange-t">Tile 15</li>
+							</ul>
+						</div></div>
+					</div></div>
 				</div>
 				<p class="padded"></p>
 			</div>
@@ -400,31 +582,33 @@
 				<div class="glued">
 					<div class="row">
 						<div class="col-xs-12 no-padding">
-							<nav class="simple blue">
-								<ul class="courier-new flow-text lime-t">
-									<li class="invert-hover"><a href="#flexbox" class="lime-text">Flexbox Grid</a></li>
-									<li class="invert-hover"><a href="#b3grid" class="lime-text">B3Grid</a></li>
-									<li class="invert-hover"><a href="#b3grid-tiles" class="lime-text">B3Grid Tiles</a></li>
+							<nav class="simple">
+								<ul class="courier flow-text">
+									<li class="invert-h blue"><a href="#flexbox" class="lime-t">Flexbox Grid</a></li>
+									<li class="invert-h blue"><a href="#b3grid" class="lime-t">B3Grid</a></li>
+									<li class="invert-h blue"><a href="#align" class="lime-t">-- Alignments</a></li>
+									<li class="invert-h blue"><a href="#dirs" class="lime-t">-- Directions</a></li>
+									<li class="invert-h blue"><a href="#tiles" class="lime-t">-- Tiles</a></li>
 								</ul>
 							</nav>
 						</div>
 					</div>
-					<a href="#scrolltop" class="lime invert-hover bold black-t scrolltop lucida">Back to Top &uarr;</a>
+					<a href="#scrolltop" class="lime invert-h bold black-t scrolltop lucida">Back to Top &uarr;</a>
 					<footer class="jagged gray">
 						<a href="http://eepurl.com/cEW1RX" target="_blank">
-							<div class="sweden-gradient padded invert-hover">
-								<h5 class="lucida white-text"><i class="bi bi-amp"></i>Brutal Blast /<span class="blink-182">/</span>/<span class="blink">/</span>/</h5>
+							<div class="sweden-gradient padded invert-h">
+								<h5 class="lucida white-t"><i class="bi bi-amp"></i>Brutal Blast /<span class="blink-182">/</span>/<span class="blink">/</span>/</h5>
 								<p class="bold">Subscribe to our e-newsletter. <span class="bigger">&raquo;</span></p>
 							</div>
 						</a>
-						<div class="padding vanilla-bean-text arial">
-							<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="green yellow-text invert-hover">Pine Creative Labs</a> production</p>
-							<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-text invert-hover">Brad Fogelstrom</span></a></p>
+						<div class="padding vanilla-bean-t arial">
+							<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="green yellow-t invert-h">Pine Creative Labs</a> production</p>
+							<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="sweden invert-h">Brad Fogelstrom</span></a></p>
 							<ul class="tags">
-								<li><a href="http://www.twitter.com/brutalistfwk" target="_blank" class="btn white-text blue-candy hue-hover"><strong>Twitter</strong></a></li>
-								<li><a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank" class="btn black white-text invert-hover"><strong>GitHub</strong></a></li>
+								<li><a href="http://www.twitter.com/brutalistfwk" target="_blank" class="btn white-t blue-candy hue-h"><strong>Twitter</strong></a></li>
+								<li><a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank" class="btn black white-t invert-h"><strong>GitHub</strong></a></li>
 							</ul>
-							<p class="white-t tahoma"><small>Brutalist Framework &copy; 2020</small></p>
+							<p class="white-t tahoma"><small>Brutalist Framework &copy; 2021</small></p>
 						</div>
 					</footer>
 				</div>
@@ -434,18 +618,16 @@
 </div>
 
 <!-- Sticky Download Box -->
-<div class="sticky-cta sticky-bottom-right stack-middle virgin jagged2 center" style="padding: 8px; max-width: 180px;">
-	<nav class="simple bold">
+<div class="sticky-cta sticky-bottom-right stack-top red jagged2 center draggable" style="padding: 8px 10px 8px 8px; max-width: 180px;">
+	<nav class="simple heavy" style="margin-bottom: 4px;">
 		<ul class="lucida flow-text">
-			<li class="invert-hover"><a href="#core"><i class="bi bi-heart"></i> CORE</a></li>
-			<li class="invert-hover"><a href="#bell"><i class="bi bi-amp"></i> BELL</a></li>
-			<li class="invert-hover"><a href="#boilers"><i class="bi bi-heat"></i> BP</a></li>
-			<li class="invert-hover"><a href="#moar">+ MORE</a></li>
+			<li class="black invert-h"><a href="#uptop" class="white-t red-t-s">&uarr; TOP</a></li>
+			<li class="black invert-h"><a href="#moar" class="white-t red-t-s">+ MORE</a></li>
 		</ul>
 	</nav>
 	<a href="#download" data-modal-open>
-	<div class="skew sweden btn invert-hover">
-		<p class="skew-right"><span class="flow-text impact">Download</span><br /><span class="lucida"><small>version 2.1</small></span></p>
+	<div class="skew sweden btn invert-h">
+		<p class="skew-right"><span class="flow-text impact">Download</span><br /><span class="lucida"><small>version 2.2</small></span></p>
 	</div></a>
 </div>
 <!-- Download Modal -->
@@ -455,11 +637,13 @@
 			<div class="col-sm-12 no-padding">
 				<div class="padded lucida">
 					<h4>Begin the <span class="blink red-t">Brutality</span></h5>
-					<p>Released <strong>10/13/2020</strong></p>
-					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.1.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.1</a></p><hr class="jagged-rule-dark" />
-					<p style="font-size: 1.15em;"><strong><span style="font-size: 1.3em;">Legacy Versions</span></strong><br />
-					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.0.zip" target="_blank">2.0.2.0</a> (released 2/20/2020)<br />
-					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.9.zip" target="_blank">1.9</a> (legacy)<br /><br /></p>
+					<p>Released <strong>2/14/2021</strong></p>
+					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.2.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.2</a></p><hr class="jagged-rule-dark" />
+					<p style="font-size: 1.15em;"><strong><span style="font-size: 1.3em;">Archived Versions</span></strong><br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.1.zip" target="_blank">2.1</a> <small>(10/23/2020), 19mb</small><br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.0.zip" target="_blank">2.0.2.0</a> <small>(2/20/2020), 9.3mb</small><br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.9.zip" target="_blank">1.9</a> <small>(5/29/2019), 3.7mb</small><br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.0.zip" target="_blank">1.0</a> <small>(4/12/2017), 1.5mb</small><br /><br /></p>
 				</div>
 			</div>
 		</div>
@@ -522,87 +706,28 @@
 	<div class="overlay"></div>
 </div>
 
-<!-- BELL Modal -->
-<div id="bell" class="modal-lite fullscreen">
-	<div class="modal-content anim-bg-hot">
-		<div class="modal-head center"><h2 class="lemon-t courier-new black-t-s bold blue circle"><i class="bi bi-amp"></i> BELL</h2></div>
-		<div class="modal-content-body scroll-y center">
-			<div class="container"><div class="row"><div class="col-sm-12">
-				<h3 class="fittext-h3 blue-t black-t-s impact">Brutal Extension Element Library</h3>
-				<p class="flow-text lucida">A collection of javascript plugins to further enhance user experience.</p>
-				<div class="double-col align-left">
-					<h4 class="impact">Media Elements</h4>
-					<ul class="flow-text triangle">
-						<li><a href="bell.html#audio" class="link bold">Audio Player</a></li>
-						<li><a href="bell.html#gif" class="link bold">GIF Player</a></li>
-						<li><a href="bell.html#vp" class="link bold">Video Player</a></li>
-					</ul>
-					<h4 class="impact">Interface Elements</h4>
-					<ul class="flow-text triangle">
-						<li><a href="bell.html#megamenu" class="link bold">MegaMenu</a></li>
-						<li><a href="bell.html#printer" class="link bold">Printer</a></li>
-						<li><a href="bell.html#ei" class="link bold">Exit Intent</a></li>
-					</ul>
-					<h4 class="impact">Content Elements</h4>
-					<ul class="flow-text triangle">
-						<li><a href="bell.html#timeline" class="link bold">Timeline</a></li>
-						<li><a href="bell.html#presenter" class="link bold">Presenter</a></li>
-						<li><a href="bell.html#piss" class="link bold">PISS</a></li>
-					</ul>
-					<h4 class="impact">BISCUIT</h4>
-					<ul class="flow-text triangle">
-						<li><a href="bell.html#age" class="link bold">Age Verify</a></li>
-						<li><a href="bell.html#cc" class="link bold">Cookie Consent</a></li>
-						<li><a href="bell.html#pl" class="link bold">PageLock</a></li>
-					</ul>
-				</div>
-			</div></div></div>
-		</div>
-		<div class="modal-footer"><a href="#return1" class="btn large-btn black platinum-t">CLOSE</a></div>
-	</div>
-	<div class="overlay"></div>
-</div>
-
-<!-- Boilerplates Modal -->
-<div id="boilers" class="modal-lite fullscreen">
-	<div class="modal-content bpmodal">
-		<div class="modal-head center"><h2 class="deep-orange-t courier-new black-t-s bold"><i class="bi bi-heat"></i> Boilerplates</h2></div>
-		<div class="modal-content-body">
-			<div class="container-fluid"><div class="row"><div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-				<p class="fittext fire-t impact black-t-s">Starting point templates</p>
-				<ul class="flow-text brutal lucida white-t-s">
-					<li><a href="bp/email.html" target="_blank" class="link">Email Boilerplate</a></li>
-					<li><a href="bp/leads.html" target="_blank" class="link">Lead Capture</a></li>
-					<!--<li><a href="bp/catalog.html" target="_blank" class="link">Commerce Catalog</a></li>
-					<li><a href="bp/media-gallery.html" target="_blank" class="link">Media Gallery</a></li>-->
-					<li><a href="bp/microblog.html" target="_blank" class="link">Microblog</a></li>
-					<li><a href="bp/social.html" target="_blank" class="link">Social</a></li>
-					<li><a href="bp/horror.html" target="_blank" class="link">Horror</a></li>
-					<li><a href="bp/vaporwave.html" target="_blank" class="link">Vaporwave</a></li>
-					<li><a href="bp/ratedx.html" target="_blank" class="link">Rated X</a> <span class="red-t">(18+)</span></li>
-				</ul>
-			</div><div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div></div></div>
-		</div>
-		<div class="modal-footer"><a href="#return1" class="btn large-btn black platinum-t">CLOSE</a></div>
-	</div>
-	<div class="overlay"></div>
-</div>
-
 <!-- Moar Modal -->
 <div id="moar" class="modal-lite fullscreen">
 	<div class="modal-content shades">
 		<div class="modal-head center"><h2 class="red-t courier-new black-t-s bold">+ More</h2></div>
 		<div class="modal-content-body center">
-			<div class="container-1200"><div class="row"><div class="col-sm-12"><p class="padded"></p>
-				<p class="fittext helvetica black-t-s navy"><a href="http://eepurl.com/cEW1RX" target="_blank" class="orange-t invert-hover">Join <i class="bi bi-amp"></i> Brutal Blast &raquo;</a><br />
-				<small><span class="white-t">Subscribe to our e-Newsletter</span></small></p>
-				<p class="fittext lucida black-t-s"><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank" class="mono invert-hover">Roadmap</a></p>
-				<p class="fittext impact black-t-s"><a href="https://www.concrete5.org" target="_blank" class="charcoal smoke-t invert-hover">Concrete5 CMS</a></p>
-				<p class="fittext tahoma black-t-s"><a href="http://www.bradfogelstrom.com" target="_blank" class="sweden invert-hover">BradFogelstrom.com</a></p>
+			<div class="container-1200"><div class="row"><div class="col-xs-12 col-sm-12"><p class="padded"></p>
+				<ul class="tiles thirds flow-text">
+					<li class="fire times hue-h bold"><a href="http://eepurl.com/cEW1RX" target="_blank" class="navy-t"><i class="bi bi-amp"></i> Brutal Blast<br />
+						<small>Subscribe to our newsletter</small></a></li>
+					<li class="lime invert-h arial"><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank" class="black-t">Roadmap<br />
+						<small>What's next?</small></a></li>
+					<li class="impact charcoal invert-h"><a href="https://www.concrete5.org" target="_blank" class="smoke-t">Concrete5 CMS<br />
+						<small>Build complex websites</small></a></li>
+					<li class="sweden comic invert-h"><a href="http://www.bradfogelstrom" target="_blank" class="yellow-t">BradFogelstrom.com<br /><small>Meet the Developer</small></a></li>
+					<li class="black invert-h lucida"><a href="https://github.com/pinecreativelabs/Brutalist-Framework/" target="_blank" class="white-t">GitHub<br />
+						<small>Repository</small></a></li>
+					<li class="blue-candy hue-h tahoma"><a href="http://www.twitter.com/brutalistfwk" target="_blank" class="white-t">Twitter<br /><small>Follow Us</small></a></li>
+				</ul>
 				<p class="padded"></p>
 			</div></div></div>
 		</div>
-		<div class="modal-footer"><a href="#return1" class="btn large-btn black platinum-t allcaps">CLOSE</a></div>
+		<div class="modal-footer"><a href="#starthere" class="btn large-btn black platinum-t allcaps">CLOSE</a></div>
 	</div>
 	<div class="overlay"></div>
 </div>

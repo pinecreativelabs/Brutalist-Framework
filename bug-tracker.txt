@@ -1,7 +1,7 @@
 Bug Tracker
 /\|>>&%.>>>>>>>>
 
-Known issues as of version 2.1:
+Known issues as of version 2.2:
 
 ~ Forms do not properly function within standard js modals 
 ~ Console errors are thrown when no js modal is present on page 

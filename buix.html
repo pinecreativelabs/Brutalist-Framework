@@ -13,13 +13,13 @@
 	<meta name="twitter:description" content="A free open source CSS and javascript UI and UX library for the brutalist web design trend.">
 	<meta name="twitter:creator" content="@brutalistfwk">
 	<!-- Twitter Summary card images must be at least 120x120px -->
-	<meta name="twitter:image" content="http://www.brutalistframework.com/core/files/images/bf21.jpg">
+	<meta name="twitter:image" content="http://www.brutalistframework.com/core/files/images/bf22.jpg">
 
 	<!-- Open Graph data -->
 	<meta property="og:title" content="Brutalist Framework || BUIX" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://www.brutalistframework.com" />
-	<meta property="og:image" content="http://www.brutalistframework.com/core/files/images/bf21.jpg" />
+	<meta property="og:image" content="http://www.brutalistframework.com/core/files/images/bf22.jpg" />
 	<meta property="og:description" content="A free open source CSS and javascript UI and UX library for the brutalist web design trend." /> 
 	<meta property="og:site_name" content="Brutalist Framework" />
 
@@ -38,15 +38,15 @@
 
 </head>
 <body class="black">
-	<header class="container-fluid triangle-light anim-bg-neon stack-base">
+	<header class="container-fluid triangle-light anim-bg-neon stack-base" id="uptop">
 		<div class="row"><div class="col-sm-12"><div class="container-1200">
 			<div class="row no-padding stack1 content" id="scrolltop">
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 no-padding">
-					<a href="index.html"><img class="large-thumb crop circle brdr-s-k red-border invert-hover" src="core/files/images/brutalist-framework.jpg" alt="Brutalist Framework" /></a>
+					<a href="index.html"><img class="large-thumb crop circle brdr-s-k red-b invert-h" src="core/files/images/brutalist-framework.jpg" alt="Brutalist Framework" /></a>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 no-padding lucida">
-					<h1 class="page-title border-solid-thick red-b courier-new fittext-h1 white-t baffle-prolonged">BUIX</h1>
-					<div class="page-desc border-solid-thick red-b rice-t">
+					<h1 class="page-title brdr-s-k red-b courier fittext-h1 white-t"><i class="bi bi-navigate"></i><span class="baffle-prolonged">BUIX</span></h1>
+					<div class="page-desc brdr-s-k red-b rice-t">
 						<h2 class="flow-text baffle">Brutal User Interface &amp; Experience</h2><br />
 						<p>Elelments for a brutal user interface and experience.</p>
 					</div>
@@ -63,15 +63,15 @@
 					<div class="menu lucida bold">
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="#core">CORE</a>
+							<li><a href="#core"><i class="bi bi-fisheye"></i> CORE</a>
 								<ul>
-									<li><a href="flavors.html">Flavors</a></li>
-									<li><a href="butch.html">BUTCH</a></li>
-									<li><a href="buix.html">BUIX</a></li>
-									<li><a href="bfx.html">BFX</a></li>
-									<li><a href="grid.html">Grid</a></li>
-									<li><a href="rebar.html">ReBAR</a></li>
-									<li><a href="bicons.html">bIcons</a></li>
+									<li><a href="flavors.html"><i class="bi bi-cone"></i> Flavors</a></li>
+									<li><a href="butch.html"><i class="bi bi-communist"></i> BUTCH</a></li>
+									<li><a href="buix.html"><i class="bi bi-navigate"></i> BUIX</a></li>
+									<li><a href="bfx.html"><i class="bi bi-sparkle"></i> BFX</a></li>
+									<li><a href="grid.html"><i class="bi bi-grid"></i> Grid</a></li>
+									<li><a href="rebar.html"><i class="bi bi-converge-left"></i> ReBAR</a></li>
+									<li><a href="bicons.html"><i class="bi bi-flag"></i> bIcons</a></li>
 								</ul>
 							</li>
 							<li><a href="bell.html">BELL</a>
@@ -119,11 +119,332 @@
 				</div>
 				<!-- END MEGAMENU -->
 				
+				<!-- FORMS -->
 				<div class="padding">
+					<h3 class="red-t lucida" id="formputs">Forms</h3>
+					<div class="row">
+						<div class="col-sm-12 col-md-4">
+							<p class="charcoal-t arial">Basic forms are supported. It is possible to apply classes from other components, such as Flavors and BUTCH classes.<br /><br /></p>
+							<p class="info padded"><span class="heavy">Layouts</span><br />You can use the <a href="grid.html" class="yellow invert-hover">grid</a> to create a custom layout for your form. This can be done within the <em>form</em> tag, and it is possible to nest layouts.<br /><br />
+							<span class="heavy">.form-group</span><br />Use this class to add vertical spacing above and below a group of form elements.</p>
+							<p class="padded warning"><span class="heavy">.highlight</span><br />An input or entire form can be "highlighted" when the user focuses on (interacts with) an input. Simply apply the <em><b>.highlight</b></em> class to the area that is to be highlighted.</p>
+						</div>
+						<div class="col-sm-12 col-md-8">
+							<form class="white grey-t brutal-border-dark box-s-k padded" name="demoform" action="" method="post">
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="form-group">
+											<label class="heavy">Text Label</label>
+											<input type="text" name="name" placeholder="Text Input" />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="form-group">
+											<label class="heavy">Email Input</label>
+											<input type="email" name="name" placeholder="email@address.net" class="" />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12 col-md-6">
+										<div class="form-group">
+											<label class="heavy">Checkbox</label><br />
+											<input type="checkbox" name="check1" value="True"><label class="radio">True</label><br>
+											<input type="checkbox" name="check2" value="False"><label class="radio">False</label>
+										</div>
+									</div>
+									<div class="col-sm-12 col-md-6">
+										<div class="form-group">
+											<label class="heavy">Radio</label><br />
+											<input type="radio" name="radio-group" value="responsive"><label class="radio">Responsive</label><br />
+											<input type="radio" name="radio-group" value="nonresponsive"><label class="radio">Non-Responsive</label>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12 col-md-6">
+										<div class="form-group">
+											<label class="heavy">Select Dropdown</label>
+											<select name="optionlist">
+												<option value="mobile">Mobile</option>
+												<option value="tablet">Tablet</option>
+												<option value="desktop">Desktop</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-sm-12 col-md-6">
+										<div class="form-group">
+											<label class="heavy">Number</label>
+											<input type="number" name="quantity" min="1" max="50">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="form-group">
+											<label class="heavy">Text Area</label>
+											<textarea name="comments" placeholder="Text area comments"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="form-group highlight">
+											<label class="heavy">HIGHLIGHTED Text Area</label>
+											<textarea name="highlighted" placeholder="I am a highlighted message."></textarea>
+										</div>
+										<div class="form-group">
+											<input type="submit" value="Submit" class="squared full-btn">
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<p class="padded"></p>
+					<h4 class="red-t lucida">Duplicate Fieldset Input</h4>
+					<div class="row">
+						<div class="col-sm-12 col-md-4">
+							<p>Copy all input fields (including select options) from one fieldset to another when a checkbox is checked.</p>
+							<p class="red-t"><strong>NOTE:</strong> This feature uses unique IDs, so it can only be used once per page.</p>
+							<p class="padded info"><span class="bigger bold">Setup:</span><br />
+							<strong>fieldset id="copyFrom"<br />fieldset id="pasteTo"</strong><br /><br />Checkbox input with<br /><strong>id="field-copy"</strong></p>
+							<p class="padded success"><span class="bigger bold">TIP:</span><br />Use this method to copy inputs to hidden fields!</p>
+						</div>
+						<div class="col-sm-12 col-md-8">
+							<form class="white grey-t brutal-border-dark box-s-k padded" name="demoform" action="" method="post">
+								<!-- All inputs in this fieldset will get copied -->
+								<fieldset id="copyFrom">
+									<legend>Billing Address</legend>
+									<label for="billFName">First Name</label>
+									<input id="billFName" name="BillingFirstName" type="text" required="required" />
+									<label for="billStreet">Street Address</label>
+									<input id="billStreet" name="BillingStreet" type="text" required="required" />
+									<label for="billCity">City</label>
+									<input id="billCity" name="BillingCity" type="text" required="required" />
+									<label for="billState">State</label>
+									<select id="billState" name="BillingState" required="required">
+									   <option value="IN">IN</option>
+									   <option value="OH">OH</option>
+									   <option value="MI">MI</option>
+									</select>
+									<label for="billZip">Zip</label>
+									<input id="billZip" name="BillingZip" type="number" required="required" />
+								</fieldset>
+								<fieldset id="pasteTo">
+									<legend>Shipping Address</legend>
+									<div class="form-group">
+									   <input id="field-copy" name="SameAddress" type="checkbox" />
+									   <label for="field-copy">same as billing</label>
+									</div>
+									<label for="delivFName">First Name</label>
+									<input id="delivFName" name="DeliveryFirstName" type="text" required="required" />
+									<label for="delivStreet">Street Address</label>
+									<input id="delivStreet" name="DeliveryStreet" type="text" required="required" />
+									<label for="delivCity">City</label>
+									<input id="delivCity" name="DeliveryCity" type="text" required="required" />
+									<label for="shiptoState">State</label>
+									<select id="shiptoState" name="ShiptoState" required="required">
+									   <option value="IN">IN</option>
+									   <option value="OH">OH</option>
+									   <option value="MI">MI</option>
+									</select>
+									<label for="shipZip">Zip</label>
+									<input id="shipZip" name="ShipZip" type="number" required="required" />
+								</fieldset>
+								<input type="submit" value="Submit" class="squared full-btn">
+							</form>
+						</div>
 					
-					<!-- BUTTONS -->
-					<h3 class="red-text lucida" id="buttforms">Buttons</h3>
-					<p class="charcoal-text arial" style="margin-bottom: 1.1em;">To create a button, simply use the <strong>button</strong> tag, or apply <strong>.btn</strong> class to a link. Buttons are displayed as an inline block, by default.</p>
+					</div>
+					
+					<p class="padded"></p>
+					<h4 class="red-t lucida">Date / Time Pickers</h4>
+					<div class="row">
+						<div class="col-sm-12 col-md-4">
+							<p class="charcoal-t arial">A date / time picker can be added simply by applying a class to a text input field!</p>
+							<div class="info padded"><p><span class="bigger bold">Classes</span><br />Add a text input and apply any of these classes:<br />
+							<strong>.datepick</strong> - m/d/y<br />
+							<strong>.datetime</strong> - m/d/y h:m am/pm<br />
+							<strong>.datepick-euro</strong> - d-m-y<br />
+							<strong>.datetime-euro</strong> - d-m-y h:m am/pm<br />
+							<strong>.datepick-full</strong> - Day, Month XX, YYYY<br />
+							<strong>.datetime-full</strong> - Day, Month XX, YYYY h:m am/pm</p><hr />
+							<p><span class="bigger bold">Inline Picker</span><br />To display the picker inline (beneath the text input), simply apply the following data-attribute to the text input tag: <br /><strong>data-inline="true"</strong></p>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-8">
+							<form class="white grey-t brutal-border-dark box-s-k padded" name="demoform" action="" method="post">
+
+								<div class="row">
+									<div class="col-sm-12 col-md-6">
+										<div class="form-group">
+											<label class="heavy">Date Only</label>
+											<input type="text" class="datepick" placeholder="Pick a Date" />
+										</div>
+										<div class="form-group">
+											<label class="heavy">Date / Time</label>
+											<input type="text" class="datetime" placeholder="Pick a Date &amp; Time" />
+										</div>
+									</div>
+									<div class="col-sm-12 col-md-6">
+										<div class="form-group">
+											<label class="heavy">Inline Date / Time</label>
+											<input type="text" class="datetime" placeholder="Select Date / Time" data-inline="true"/>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="form-group">
+											<label class="heavy">Select Day</label>
+											<input type="text" class="datepick-full" placeholder="Pick a Day" />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="form-group">
+											<label class="heavy">Select Day &amp; Time</label>
+											<input type="text" class="datetime-full" placeholder="Pick a Day / Time" />
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<p class="padded"></p>
+					
+					<!-- CREDIT CARD INPUT -->
+					<h4 class="red-t lucida">Credit Card Input</h4>
+					<p>The credit card input validates the type of card number the user inputs. AMEX, Discover, MasterCard, and Visa is supported. The expiration date input is automatically formatted.<br /><br /></p>
+					<div class="row">
+						<div class="col-sm-12 col-md-4">
+							<p class="padded info">
+								<span class="bigger bold">Card Examples</span><br /><strong>AMEX</strong><br />3400 0000 0000 009<br />
+								<strong>Discover</strong><br />6011 0000 0000 0004<br />
+								<strong>MasterCard</strong><br />5500 0000 0000 0004<br />
+								<strong>Visa</strong><br />4111 1111 1111 1111
+							</p>
+						</div>
+						<div class="col-sm-12 col-md-8">
+							<div class="lush padded">
+								<!-- CREDIT CARD FORM -->
+								<form class="brick-wrap">
+									<div class="brick b100">
+										<h5 class="flow-text">Card Number:</h5>
+										<div class="card-input">
+										  <div class="card-type"></div>
+										  <input placeholder="0000 0000 0000 0000" onkeyup="$cc.validate(event)" />
+										  <div class="card-valid">&#xea10;</div>
+										</div>
+									</div>
+									<div class="brick b50 card-exp">
+										<label>Expiration Date</label><br />
+										<input onkeyup="$cc.expiry.call(this,event)" maxlength="7" placeholder="mm/yyyy" />
+									</div>
+									<div class="brick b50 card-cvv">
+										<label>CVV</label><br />
+										<input placeholder="XXX"/>
+									</div>
+									<div class="brick 100">
+										<input type="submit" value="Submit Payment" class="squared">
+									</div>
+								</form>
+								<!-- END CARD INPUT FORM -->
+							</div>
+						</div>
+					</div>
+					<p class="padded"></p>
+					
+					<!-- CREATE ACCOUNT FORM -->
+					<div class="row"><div class="col-sm-12">
+						<h4 class="red-t lucida">Create Account Form</h4>
+						<p>The account creation form includes validation for username, password, and email. As the user fills out the form, the results are displayed in the Profile box on the right.</p>
+						<p class="padded"></p>
+						<div class="row">
+							<div class="col-sm-12 col-md-3">
+								<div class="padded info"><span class="bigger bold">Conditions</span><br />
+								<span class="smaller">Below are the conditions that must be met.</span><br /><br />
+								<strong>USERNAME:</strong><br /><span class="smaller">At least 4 characters</span><br /><br />
+								<strong>PASSWORD:</strong><br />
+								<ul class="disc smaller">
+									<li>At least 8 characters</li>
+									<li>At least 1 number</li>
+									<li>At least one of these characters: <strong>! @ $ % * _</strong></li>
+									<li>Passwords must match</li>
+								</ul>
+								<strong>EMAIL:</strong><br /><span class="smaller">Checks for valid email address</span>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-9">
+								
+								<!-- CREATE ACCOUNT FORM -->
+								<div class="row">
+									<div class="col-sm-6 col-md-8 smoke">
+										<form class="padded lucida">
+										 <fieldset class="text">
+											<label for="uname">Username</label>
+											<input type="text" id="uname" />
+											<p id="unameError" class="errorMsg"></p>
+											<label for="pw1">Password</label>
+											<input type="password" id="pw1" />
+											<label for="pw2">Password (confirm)</label>
+											<input type="password" id="pw2" />
+											<p id="passwordError" class="errorMsg"></p>
+											<label for="email">Email Address</label>
+											<input type="email" id="emailbox" />
+											<p id="emailError" class="errorMsg"></p>
+										 </fieldset>
+										 <fieldset class="checks">
+											<legend><span>Preferences</span></legend>
+											<input type="checkbox" id="pacct" value="Private Account" name="prefs" />
+											<label for="pacct">Private Account</label><br />
+											
+											<input type="checkbox" id="msg" value="Messaging" name="prefs" />
+											<label for="msg">Messaging</label><br />
+	
+											<input type="checkbox" id="egeol" value="Enable Geolocation" name="prefs" />
+											<label for="egeol">Enable Geolocation</label><br />
+											
+											<input type="checkbox" id="primemem" value="Premium Member" name="prefs" />
+											<label for="primemem">Premium Member</label><br />
+										 </fieldset>
+										 <input type="button" id="createAcct" value="Create Account" class="btn full-btn" />
+										</form>
+									</div>
+									<div class="col-sm-6 col-md-4 grey">
+										<section id="profile">
+											 <h4 class="flow-text impact smoke-t-s">Profile</h4>
+											 <div id="unameSection">
+												<p><span class="bold">Username</span><br />
+												<span id="profileUname"></span><br /><br /></p>
+											 </div>
+											 <div id="emailSection">
+												<p><span class="bold">Email</span><br />
+												<span id="profileEmail"></span><br /><br /></p>
+											 </div>
+											 <div id="acctPrefs">
+												<p class="bold">Preferences:</p>
+												<ul class="check" id="preferences"></ul>
+											 </div>
+										</section>
+									</div>
+								</div>
+								<!-- END CREATE ACCOUNT FORM -->
+								
+							</div>
+						</div>
+					</div></div>
+				</div>	
+				<p class="padding"></p>
+				<hr class="thick tomato" />
+				<!-- BUTTONS -->
+				<div class="padding">
+					<h3 class="red-t lucida">Buttons</h3>
+					<p class="charcoal-t arial" style="margin-bottom: 1.1em;">To create a button, simply use the <strong>button</strong> tag, or apply <strong>.btn</strong> class to a link. Buttons are displayed as an inline block, by default.</p>
 					<div class="row">
 						<div class="col-xs-12 col-sm-12">
 							<div class="info padded bold center">
@@ -138,85 +459,11 @@
 				</div>
 				<p class="padding"></p>
 				<hr class="thick tomato" />
-				<!-- FORMS -->
-				<div class="padding">
-					<h3 class="red-text lucida" id="forms">Forms</h3>
-					<div class="row">
-						<div class="col-sm-12 col-md-5">
-							<p class="charcoal-text arial-text">Basic forms are supported. It is possible to apply classes from other components, such as Flavors and BUTCH classes.<br /><br />
-							In this example, we apply some Flavors to the email input, and have made the text larger by applying the class <em>.bigger</em>.<br /><br /></p>
-							<p class="charcoal-text arial-text"><span class="heavy">Layouts</span><br />You can use the <a href="grid.html" class="yellow invert-hover">grid</a> to create a custom layout for your form. This can be done within the <em>form</em> tag, and it is possible to nest layouts.<br /><br />
-							<span class="heavy">.form-group</span><br />Use this class to add vertical spacing above and below a group of form elements.</p>
-						</div>
-						<div class="col-sm-12 col-md-7">
-							<form class="white grey-text brutal-border-dark box-shadow-thick padding" name="demoform" action="" method="post">
-								<div class="row">
-									<div class="col-sm-12">
-										<div class="form-group">
-											<label class="heavy">Text Label</label>
-											<input type="text" name="name" placeholder="Text Input" />
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-sm-12">
-										<div class="form-group">
-											<label class="heavy">Email Input</label>
-											<input type="email" name="name" placeholder="email@address.net" class="strawberry-border border-dashed-thin blue-text banana bigger" />
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-sm-12 col-md-6">
-										<div class="form-group">
-											<input type="checkbox" name="check1" value="True"><label class="radio">True</label><br>
-											<input type="checkbox" name="check2" value="False"><label class="radio">False</label>
-										</div>
-									</div>
-									<div class="col-sm-12 col-md-6">
-										<div class="form-group">
-											<input type="radio" name="radio-group" value="responsive"><label class="radio">Responsive</label><br />
-											<input type="radio" name="radio-group" value="nonresponsive"><label class="radio">Non-Responsive</label>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-sm-12 col-md-6">
-										<label class="heavy">Select Dropdown</label>
-										<select name="optionlist">
-											<option value="">Choose</option>
-											<option value="mobile">Mobile</option>
-											<option value="tablet">Tablet</option>
-											<option value="desktop">Desktop</option>
-										</select>
-									</div>
-									<div class="col-sm-12 col-md-6">
-										<label class="heavy">Number</label>
-										<input type="number" name="quantity" min="1" max="50">
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-sm-12">
-										<div class="form-group">
-											<label class="heavy">Text Area</label>
-											<textarea name="comments" placeholder="Text area comments"></textarea>
-										</div>
-										<div class="form-group">
-											<input type="submit" value="Submit" class="squared full-btn">
-										</div>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>	
-				<p class="padding"></p>
-				<hr class="thick tomato" />
 				<!-- STICKIES -->
 				<div class="padding">
-					<h3 class="red-text lucida" id="stackies">Stickies</h3>
-					<p class="charcoal-text courier-new-text flow-text">Make any element fixed positioned. Apply these classes:</p>
-					<div class="info padded arial-text">
+					<h3 class="red-t lucida" id="stackies">Stickies</h3>
+					<p class="charcoal-t courier flow-text">Make any element fixed positioned. Apply these classes:</p>
+					<div class="info padded arial">
 						<p><strong>.sticky</strong> - Makes any element fixed positioned.<br />
 							<strong>.sticky-bottom</strong> - Fixes element at bottom<br />
 							<strong>.sticky-bottom-right</strong> - Fixes element to bottom right corner of display<br />
@@ -227,17 +474,17 @@
 						</p>
 					</div>
 					<div class="disabled padded">
-						<p class="charcoal-text arial-text"><span class="flow-text courier-new-text heavy">.glued</span><br />Apply this class to make an element stay visible while scrolling. Best used within a sidebar.</p>
+						<p class="charcoal-t arial"><span class="flow-text courier heavy">.glued</span><br />Apply this class to make an element stay visible while scrolling. Best used within a sidebar.</p>
 					</div>
 				</div>
 				<!-- Stacks -->
 				<div class="padding">
-					<h3 class="red-text lucida">Stacks</h3>
-					<p class="charcoal-text flow-text">Stack an element behind or on top of others. Apply these classes:</p>
+					<h3 class="red-t lucida">Stacks</h3>
+					<p class="charcoal-t flow-text">Stack an element behind or on top of others. Apply these classes:</p>
 					<div class="row">
 						<div class="col-sm-12 col-md-6">
 							<div class="info padded">
-								<p class="arial-text">
+								<p class="arial">
 									<strong>.stack-base</strong> - Forces layer to 0.<br />
 									<strong>.stack1</strong> - Layer 1.<br />
 									<strong>.stack2</strong> - Layer 2.<br />
@@ -256,30 +503,30 @@
 						</div>
 						<div class="col-sm-12 col-md-6">
 							<div class="ready padded">
-								<p class="charcoal-text arial-text"><span class="flow-text courier-new-text heavy">.stack-auto</span><br />
+								<p class="charcoal-t arial"><span class="flow-text courier-new-text heavy">.stack-auto</span><br />
 								Apply this class to automatically increment the z-index value - starting at 0 - for every element that uses this class. <span class="lemon-text">Requires <em>start.brutalizing.js</em>.</span></p>
-								<p class="charcoal-text arial-text"><strong>EXAMPLE:</strong> 2-layer box, using nested divs. The outermost div acts as the base layer, as the z-index is at 0.</p>
+								<p class="charcoal-t arial"><strong>EXAMPLE:</strong> 2-layer box, using nested divs. The outermost div acts as the base layer, as the z-index is at 0.</p>
 							</div>
 							<div class="water stack-auto" style="display: block; width: 100%; padding: 0.4em;">
-								<h4 class="blueberry-text">Base Layer</h4>
-								<p class="white-text">z-index = 0</p>
+								<h4 class="blueberry-t">Base Layer</h4>
+								<p class="white-t">z-index = 0</p>
 								<div class="blueberry stack-auto" style="display: block; width: 100%; padding: 0.4em;">
-									<h4 class="lemon-text">Layer 1</h4>
-									<p class="white-text">z-index = 1</p>
+									<h4 class="lemon-t">Layer 1</h4>
+									<p class="white-t">z-index = 1</p>
 									<div class="stack-auto navy-blue" style="display: block; width: 100%; padding: 0.4em;">
-										<h4 class="water-text">Layer 2</h4>
-										<p class="white-text">z-index = 2</p>
+										<h4 class="water-t">Layer 2</h4>
+										<p class="white-t">z-index = 2</p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 					<p class="padding"></p>
-					<h4 class="red-text lucida">StackSwitch</h4>
-					<p class="charcoal-text flow-text">StackSwitch automatically displays a new layer every 3 seconds, on an endless loop.</p>
+					<h4 class="red-t lucida">StackSwitch</h4>
+					<p class="charcoal-t flow-text">StackSwitch automatically displays a new layer every 3 seconds, on an endless loop.</p>
 					<div class="row">
 						<div class="col-sm-12 col-md-6">
-							<h5 class="courier-new">Markup</h5>
+							<h5 class="courier">Markup</h5>
 							<code class="padding smaller">
 								&lt;div class="stackswitch-wrap" data-switch="container"&gt;<br />
 								&nbsp;&nbsp;&lt;div class="stackswitch" data-switch="main-layer"&gt;<br />
@@ -293,7 +540,7 @@
 							</code>
 						</div>
 						<div class="col-sm-12 col-md-6">
-							<h5 class="courier-new">Example</h5>
+							<h5 class="courier">Example</h5>
 							<div class="stackswitch-wrap" data-switch="container">
 								<div class="stackswitch" data-switch="main-layer">
 									<div class="layers padded" data-switch="switch-parent">
@@ -332,7 +579,7 @@
 				<p class="padding"></p>
 				<hr class="thick tomato" />
 					
-				<!-- Microinteractions -->
+				<!-- INTERACTIONS -->
 				<div class="padding">
 					<h3 class="red-t lucida" id="interactions">Interactions</h3>
 					<!-- REVEAL -->
@@ -340,19 +587,19 @@
 					<div class="row">
 						<div class="col-sm-12 col-md-6">
 							<h5>Reveal.hover</h5>
-							<p class="charcoal-text arial"><em>Reveal.hover</em> reveals hidden content upon hovering over an element!</p>
-							<p class="arial charcoal-text">The reveal container starts at a maximum width of 50% of the container it is wrapped within, and enlarges to 100% width upon hover while also revealing a caption.</p>
+							<p class="charcoal-t arial"><em>Reveal.hover</em> reveals hidden content upon hovering over an element!</p>
+							<p class="arial charcoal-t">The reveal container starts at a maximum width of 50% of the container it is wrapped within, and enlarges to 100% width upon hover while also revealing a caption.</p>
 							<p class="info padded"><span class="heavy">.reveal</span> (wrap content within this class)<br />
 								&nbsp;&nbsp;&nbsp;<span class="heavy">.secret</span> (hidden content to be revealed upon hover)</p>
 							<div class="row" style="margin-top: 2em;"><div class="col-sm-6">
 								<div class="reveal hover orange-cream">
-									<p class="lucida-text heavy flow-text center">Hover Over Me!</p>
-									<p class="arial-text secret center">I'm a <span class="heavy">SECRET</span>!</p>
+									<p class="lucida heavy flow-text center">Hover Over Me!</p>
+									<p class="arial secret center">I'm a <span class="heavy">SECRET</span>!</p>
 								</div>
 							</div><div class="col-sm-6">
 								<div class="reveal hover orange-cream">
 									<img src="theme/default/files/images/brutal-building.jpg" class="medium-thumb" />
-									<p class="arial-text secret">SECRET - only visible upon hover!</p>
+									<p class="arial secret">SECRET - only visible upon hover!</p>
 								</div>
 							</div></div>
 						</div>
@@ -361,10 +608,10 @@
 							<p class="charcoal-t arial"><em>Reveal.toggle</em> toggles content upon clicking on a label. </p>
 							<div class="reveal toggle">
 								<input id="toggle1" class="toggle" type="checkbox"><!-- To have the toggle open by default, simply set the "checked" attribute -->
-								<label for="toggle1" class="label-toggle navy white-text tahoma-text heavy">Toggle Me!</label>
-								<div class="toggle-content grey navy-text">
+								<label for="toggle1" class="label-toggle navy white-t tahoma heavy">Toggle Me!</label>
+								<div class="toggle-content grey navy-t">
 									<p>You will need a unique ID for each reveal toggle element. Clicking on the label either opens or closes the toggled content. Use the markup as follows:</p>
-									<code class="black lime-text lucida-text padding">
+									<code class="black lime-t lucida padding">
 											&lt;div class="reveal toggle"&gt;<br />
 											&lt;input id="unique-id-1" class="toggle" type="checkbox"&gt;<br />
 											&lt;label for="unique-id-1" class="label-toggle"&gt;<br />
@@ -385,18 +632,18 @@
 					<div class="row">
 						<div class="col-sm-12 col-md-6">
 							<h5 class="red-text tahoma flow-text">Example: Draggable Bricks</h5>
-							<p class="charcoal-text arial-text" style="margin-bottom: 0.9em;">Bricks are ideal as draggable elements. Simply apply class <em>draggable</em> to bricks: <strong>.brick.draggable</strong>.</p>
+							<p class="charcoal-t arial" style="margin-bottom: 0.9em;">Bricks are ideal as draggable elements. Simply apply class <em>draggable</em> to bricks: <strong>.brick.draggable</strong>.</p>
 							<!-- Draggable Bricks -->
 							<div class="padded maroon banana-t draggable brick">Drag Me</div>
 							<div class="padded pink lemon-t draggable brick">PSSHH... I'm such a <span class="blink-182">drag queen</span></div>
-							<div class="padded peanut chocolate-text draggable brick">Drag me through the mud</div>
+							<div class="padded peanut chocolate-t draggable brick">Drag me through the mud</div>
 							<p class="info padded" style="margin-top: 2em;"><span class="bigger bold">Draggable Modals</span><br />Make a modal draggable just by adding the class <em>draggable</em> to the modal inner wrapper:<br /><span class="bold">.modal-inner.draggable</span></p>
 						</div>
 						<div class="col-sm-12 col-md-6">
-							<h4 class="red-text flow-text tahoma">Example: Stacked Draggable Bricks</h4>
-							<p class="charcoal-text arial-text" style="margin-bottom: 0.9em;">We could stack our bricks on top of each other using <em>stack-auto</em>, and make them draggable: <strong>.brick.stack-auto.draggable</strong>.</p>
+							<h4 class="red-t flow-text tahoma">Example: Stacked Draggable Bricks</h4>
+							<p class="charcoal-t arial" style="margin-bottom: 0.9em;">We could stack our bricks on top of each other using <em>stack-auto</em>, and make them draggable: <strong>.brick.stack-auto.draggable</strong>.</p>
 							<div class="silver padded" style="min-height: 15em; border-bottom: 3px solid #666; margin-bottom: 2em;">
-								<div class="lucida-text bigger silver grey-text text-right draggable border-solid-thin grey-border padded stack-top" style="float: right;">Draggable area!<br /><small>This whole container<br />can also be dragged!</small></div>
+								<div class="lucida bigger silver grey-t text-right draggable brdr-s-t grey-b padded stack-top" style="float: right;">Draggable area!<br /><small>This whole container<br />can also be dragged!</small></div>
 								<!-- Stacked Draggable Bricks -->
 								<div class="stack-auto brick padded maroon lime-t draggable huge border-dotted-thick red-b">I'm on the<br /><span class="bold">bottom</span></div>
 								<div class="stack-auto brick padded plum peach-t draggable bigger peach-border border-dashed-thin">Brick #2:<br /><span class="blink">Drag me!</span></div>
@@ -407,12 +654,12 @@
 					<p class="padded"></p>
 					<!-- CURSORS & RESIZEABLE ELEMENTS -->
 					<div class="padding">
-						<h4 class="red-text lucida">Cursors & Resizeable Elements</h4>
-						<p class="charcoal-text arial">Make any element have a specific cursor type, or make any element rezizeable by the user!</p>
+						<h4 class="red-t lucida">Cursors & Resizeable Elements</h4>
+						<p class="charcoal-t arial">Make any element have a specific cursor type, or make any element rezizeable by the user!</p>
 					</div>
 					<div class="row">
 						<div class="col-sm-12 col-md-6">
-							<h5 class="red-text tahoma flow-text">Cursor Classes</h5>
+							<h5 class="red-t tahoma flow-text">Cursor Classes</h5>
 							<p>Apply these classes to any element. Hover for preview.</p>
 							<div class="disabled blocked padded"><span class="bold bigger">.blocked</span></div>
 							<div class="ready cell padded"><span class="bold bigger">.cell</span></div>
@@ -428,31 +675,31 @@
 						<div class="col-sm-12 col-md-6">
 							<h5 class="red-text tahoma flow-text">Resize Elements</h5>
 							<p>Apply these classes to make any element resizeable by the user.</p>
-							<div class="padded info blue-border border-solid-thin resize-both"><span class="bold bigger">.resize-both</span><br />
+							<div class="padded info blue-b brdr-s-t resize-both"><span class="bold bigger">.resize-both</span><br />
 							Resize the element both vertically and horizontally.</div>
-							<div class="padded ready orange-border border-solid-thin resize-h"><span class="bold bigger">.resize-h</span><br />
+							<div class="padded ready orange-b brdr-s-t resize-h"><span class="bold bigger">.resize-h</span><br />
 							Resize the element horizontally only.</div>
-							<div class="padded disabled grey-border border-solid-thin resize-v"><span class="bold bigger">.resize-v</span><br />
+							<div class="padded disabled grey-b brdr-s-t resize-v"><span class="bold bigger">.resize-v</span><br />
 							Resize the element vertically only.</div>
 						</div>
 					</div>
 					<p class="padded"></p>
 					<!-- Preview Hover -->
 					<div class="padding">
-						<h4 class="red-text lucida">Preview Hover</h4>
-						<p class="charcoal-text arial">Add hoverable video and image previews to any element.</p>
+						<h4 class="red-t lucida">Preview Hover</h4>
+						<p class="charcoal-t arial">Add hoverable video and image previews to any element.</p>
 					</div>
 					<div class="row">
 						<div class="col-sm-12 col-md-7">
 							<h5 class="red-text tahoma flow-text">Markup</h5>
 							<p>Markup is simple! Simply apply the class <strong><em>.ph</em></strong> and a <em>data-src</em> attribute, like so:</p>
-							<code class="black lime-text lucida-text padding smaller">
+							<code class="black lime-t lucida padding smaller">
 								&lt;element class="ph" data-src="./file-url"&gt;&lt;/element&gt;
 							</code>
 							<p class="padded info"><strong>Supported File Types:</strong> .jpg, .jpeg, .png, .ico, .gif, .svg, .bmp, .webp, .mp4, .webm</p>
 						</div>
 						<div class="col-sm-12 col-md-5">
-							<h5 class="red-text tahoma flow-text">Demo:</h5>
+							<h5 class="red-t tahoma flow-text">Demo:</h5>
 							<button href="#" class="ph btn small-btn" data-src="theme/default/files/images/blinker-fluid.jpg">Blinker Fluid Button</button><br />
 							<img class="ph tiny-thumb" data-src="theme/default/files/images/blinker-fluid.jpg" alt="Blinker Fluid" src="theme/default/files/images/blinker-fluid.jpg" /><br />
 						</div>
@@ -460,13 +707,13 @@
 					<p class="padded"></p>
 					<!-- Content Display Picker -->
 					<div class="padding">
-						<h4 class="red-text lucida">CDP: Content Display Picker</h4>
-						<p class="charcoal-text arial">Display content when an option is selected.</p>
+						<h4 class="red-t lucida">CDP: Content Display Picker</h4>
+						<p class="charcoal-t arial">Display content when an option is selected.</p>
 					</div>
 					<div class="row">
 						<div class="col-sm-12 col-md-6">
-							<h5 class="red-text tahoma flow-text">Markup</h5>
-							<code class="black lime-text lucida-text padding smaller">
+							<h5 class="red-t tahoma flow-text">Markup</h5>
+							<code class="black lime-t lucida-t padding smaller">
 								&lt;div class="cdp-wrap" id="unique-id"&gt;<br />
 								&nbsp;&nbsp;&lt;select class="cdp_select"&gt;<br />
 								&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="0"&gt;Content 1&lt;/option&gt;<br />
@@ -482,7 +729,7 @@
 							</code>
 						</div>
 						<div class="col-sm-12 col-md-6">
-							<h5 class="red-text tahoma flow-text">Demo:</h5>
+							<h5 class="red-t tahoma flow-text">Demo:</h5>
 							<div class="cdp-wrap" id="cdp1">
 								<select class="cdp_select flow-text">
 									<option value="0">Content 1</option>
@@ -506,14 +753,14 @@
 					<p class="padded"></p>
 					<!-- B-Loader -->
 					<div class="padding">
-						<h4 class="red-text lucida">B-Loader (BETA)</h4>
-						<p class="charcoal-text arial">Load more list items upon button press!</p>
+						<h4 class="red-t lucida">B-Loader</h4>
+						<p class="charcoal-t arial">Load more list items upon button press!</p>
 					</div>
 					<div class="row">
 						<div class="col-sm-12 col-md-6">
-							<p class="padded info">Simply create a list of <strong>div</strong> or <strong>p</strong> elements , wrapped within a <strong><em>.b-loader</em></strong> class container!
+							<p class="padded info">Simply create a list of <strong>div, p, li</strong> or <strong>article</strong> elements, wrapped within a <strong><em>.b-loader</em></strong> class container!
 							<br /><br />By default, <em>b-loader</em> displays 5 items at a time. This can be modified in the <em>start.brutalizing.js</em> initialization script.
-							<br /><br />To display a counter within the "load more" button, change <em>counterInBtn</em> value to "true" in <em>start.brutalizing.js</em>.
+							<br /><br />To <em>hide</em> the counter within the "load more" button, add the class <em><strong>no-counter</strong></em> to the <em>b-loader</em> wrapper.
 							</p>
 						</div>
 						<div class="col-sm-12 col-md-6">
@@ -556,10 +803,10 @@
 				<div class="padding">
 					<h3 class="red-t lucida" id="simplemenu">Navigation</h3>
 					<h4 class="red-t lucida">Simple Menu</h4>
-					<p class="charcoal-t arial">A pure CSS menu that displays a description upon hover over each item.</p>
+					<p class="charcoal-t arial">A pure CSS menu that displays an optional description upon hover over each item.</p>
 					<div class="row">
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<h4 class="charcoal-t courier-new">Default View</h4>
+							<h4 class="charcoal-t courier">Default View</h4>
 							<ul class="simple-nav lucida">
 								<li><a href="#">Link 1 <span>Description text for item 1.</span></a></li>
 								<li><a href="#">Link 2 <span>Description text for item 2.</span></a></li>
@@ -580,7 +827,7 @@
 							</ul>
 						</div>
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<h4 class="charcoal-t courier-new">Markup</h4>
+							<h4 class="charcoal-t courier">Markup</h4>
 							<code class="black lime-t lucida padded smaller">
 								&lt;ul class="simple-nav"&gt;<br />
 								&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;List Item<br />
@@ -601,35 +848,35 @@
 					<p class="charcoal-t arial">Thumbnails allow you to display a list of images at a reduced size. Useful for galleries. Wrap <em>img</em> tags within a container with any of these classes:</p>
 					<div class="row">
 						<div class="col-sm-12 col-md-8">
-							<h4 class="arial charcoal-text"><strong>.micro-thumb</strong></h4>
+							<h4 class="arial charcoal-t"><strong>.micro-thumb</strong></h4>
 							<div class="micro-thumb">
 								<img src="theme/default/files/images/brutal-building.jpg" />
 								<img src="theme/default/files/images/spomenik.jpg" />
 								<img src="theme/default/files/images/rupp-drive-brutalism.jpg" />
 								<img src="theme/default/files/images/kitty/badasskat-xtreme.jpg" />
 							</div>
-							<h4 class="arial charcoal-text"><strong>.tiny-thumb</strong></h4>
+							<h4 class="arial charcoal-t"><strong>.tiny-thumb</strong></h4>
 							<div class="tiny-thumb">
 								<img src="theme/default/files/images/brutal-building.jpg" />
 								<img src="theme/default/files/images/spomenik.jpg" />
 								<img src="theme/default/files/images/rupp-drive-brutalism.jpg" />
 								<img src="theme/default/files/images/kitty/badasskat-xtreme.jpg" />
 							</div>
-							<h4 class="arial charcoal-text"><strong>.small-thumb</strong></h4>
+							<h4 class="arial charcoal-t"><strong>.small-thumb</strong></h4>
 							<div class="small-thumb crop">
 								<img src="theme/default/files/images/brutal-building.jpg" />
 								<img src="theme/default/files/images/spomenik.jpg" />
 								<img src="theme/default/files/images/rupp-drive-brutalism.jpg" />
 								<img src="theme/default/files/images/kitty/badasskat-xtreme.jpg" />
 							</div>
-							<h4 class="arial charcoal-text"><strong>.medium-thumb</strong></h4>
+							<h4 class="arial charcoal-t"><strong>.medium-thumb</strong></h4>
 							<div class="medium-thumb crop">
 								<img src="theme/default/files/images/brutal-building.jpg" />
 								<img src="theme/default/files/images/spomenik.jpg" />
 								<img src="theme/default/files/images/rupp-drive-brutalism.jpg" />
 								<img src="theme/default/files/images/kitty/badasskat-xtreme.jpg" />
 							</div>
-							<h4 class="arial charcoal-text"><strong>.large-thumb</strong></h4>
+							<h4 class="arial charcoal-t"><strong>.large-thumb</strong></h4>
 							<div class="large-thumb crop">
 								<img src="theme/default/files/images/brutal-building.jpg" />
 								<img src="theme/default/files/images/spomenik.jpg" />
@@ -641,7 +888,7 @@
 								<img src="theme/default/files/images/spomenik.jpg" />
 								<img src="theme/default/files/images/kitty/badasskat-xtreme.jpg" />
 							</div>
-							<h4 class="arial charcoal-text"><strong>.jumbo-thumb</strong></h4>
+							<h4 class="arial charcoal-t"><strong>.jumbo-thumb</strong></h4>
 							<div class="jumbo-thumb">
 								<img src="theme/default/files/images/brutal-building.jpg" />
 								<img src="theme/default/files/images/spomenik.jpg" />
@@ -685,7 +932,7 @@
 					<div class="row">
 						<div class="col-sm-12 col-md-4">
 							<h4 class="charcoal-t flow-text tahoma">Create Modal Content</h4>
-							<p class="arial-text grey-t">Wrap your content within this markup. This is what will be displayed within the modal.</p>
+							<p class="arial grey-t">Wrap your content within this markup. This is what will be displayed within the modal.</p>
 							<code class="black lime-t lucida padding smaller">
 							&lt;div id="unique-modal-id" style="display: none;"&gt;<br /><br />
 							&nbsp;...content...&nbsp;<br /><br />
@@ -694,7 +941,7 @@
 						</div>
 						<div class="col-sm-12 col-md-4">
 							<h4 class="charcoal-t flow-text tahoma">Load Modal Box</h4>
-							<p class="arial-text grey-text">This only needs to be included ONCE on the page. It loads the modal content within it.</p>
+							<p class="arial grey-t">This only needs to be included ONCE on the page. It loads the modal content within it.</p>
 							<code class="black lime-t lucida padding smaller">
 							&lt;div class="modal"&gt;<br />
 							&nbsp;&lt;div class="modal-inner"&gt;<br />
@@ -705,8 +952,8 @@
 							</code>
 						</div>
 						<div class="col-sm-12 col-md-4">
-							<h4 class="charcoal-text flow-text tahoma">Launch Modal</h4>
-							<p class="arial-text grey-text">Simply create a link with a unique ID and <em>data-modal-open</em> attribute to launch the modal.</p>
+							<h4 class="charcoal-t flow-text tahoma">Launch Modal</h4>
+							<p class="arial-text grey-t">Simply create a link with a unique ID and <em>data-modal-open</em> attribute to launch the modal.</p>
 							<code class="black lime-t lucida padded smaller">
 							&lt;a href="unique-modal-id" data-modal-open&gt;Open Modal&lt;/a&gt;
 							</code>
@@ -714,7 +961,7 @@
 					</div>
 					<div class="row">
 						<div class="col-sm-12 col-md-6">
-							<h4 class="charcoal-text courier-new">Examples</h4>
+							<h4 class="charcoal-t courier">Examples</h4>
 							<!-- Links to launch modals -->
 							<p class="bigger lucida">
 								+ <a href="#modal-1" data-modal-open>Single Image</a><br />
@@ -753,7 +1000,7 @@
 								<div class="container" style="max-width: 620px;">
 									<div class="row">
 										<div class="col-sm-12 col-md-4 no-padding anim-bg-hot">
-											<div class="padded red-text">
+											<div class="padded red-t">
 												<h5 class="lucida">StackSwitch Modal</h5>
 											</div>
 										</div>
@@ -816,8 +1063,8 @@
 							<code class="black lime-t lucida padded smaller">
 							&lt;a href="#unique-id"&gt;Launch Modal&lt;/a&gt;
 							</code>
-							<a href="#kittykat" class="btn btn-large yellow blue-t invert-hover">Lite Modal</a>
-							<a href="#core" class="btn btn-large sweden invert-hover">Fullscreen Lite Modal</a>
+							<a href="#kittykat" class="btn btn-large yellow blue-t invert-h">Lite Modal</a>
+							<a href="#core" class="btn btn-large sweden invert-h">Fullscreen Lite Modal</a>
 							<div id="kittykat" class="modal-lite">
 								<div class="modal-content white">
 									<div class="modal-head"><h5>Swedish Kat</h5></div>
@@ -849,7 +1096,7 @@
 							  <input type="radio" name="tabs" id="tab1" checked="checked">
 							  <label for="tab1" class="blue-b border-solid-thin lucida">Welcome</label>
 							  <div class="tab anim-bg-hot blue-b border-solid-thin">
-								<h4 class="blue-t lucida black-text-shadow">Hot Tab!</h4>
+								<h4 class="blue-t lucida black-t-s">Hot Tab!</h4>
 								<p class="bold tahoma charcoal-t">This tab has a <span class="blink">hot</span> animated background.</p>
 								<img src="theme/default/files/images/comprehend.jpg" alt="Comprehend Brutalism" class="right xlarge-thumb brdr-a-k blue-b paranoid" />
 								<p class="double-col pad30 charcoal-text">
@@ -859,38 +1106,38 @@
 							  </div>
 							  
 							  <input type="radio" name="tabs" id="tab2">
-							  <label for="tab2" class="blue-b border-solid-thin lucida">Custom Layout</label>
-							  <div class="tab blue-b border-solid-thin anim-bg-water">
-								<h4 class="blue-text lucida black-text-shadow">Watery Tab with Custom Layout</h4>
-								<p class="bold tahoma-text">This tab has a nested 3-column grid layout!</p>
+							  <label for="tab2" class="blue-b brdr-s-t lucida">Custom Layout</label>
+							  <div class="tab blue-b brdr-s-t anim-bg-water">
+								<h4 class="blue-t lucida black-t-s">Watery Tab with Custom Layout</h4>
+								<p class="bold tahoma-t">This tab has a nested 3-column grid layout!</p>
 								<div class="row" style="margin-top: 1em;">
-									<div class="col-xs-12 col-sm-4 border-dotted-thin navy-b">
+									<div class="col-xs-12 col-sm-4 brdr-d-t navy-b">
 										<div class="padded navy-blue">
 											<h4 class="lucida lime-t">Column 1</h4>
 										</div>
 									</div>
-									<div class="col-xs-12 col-sm-4 border-dotted-thin blue-candy-b">
+									<div class="col-xs-12 col-sm-4 brdr-d-t blue-candy-b">
 										<div class="padded blue-candy"><h4 class="lucida pink-t">Column 2</h4></div>
 									</div>
-									<div class="col-xs-12 col-sm-4 border-dotted-thin navy-b">
+									<div class="col-xs-12 col-sm-4 brdr-d-t navy-b">
 										<div class="navy padded"><h4 class="lucida lime-t">Column 3</h4></div>
 									</div>
 								</div>
 							  </div>
 							  
 							  <input type="radio" name="tabs" id="tab3">
-							  <label for="tab3" class="blue-border border-solid-thin lucida">Markup</label>
+							  <label for="tab3" class="blue-b brdr-s-t lucida">Markup</label>
 							  <div class="tab blue-b brdr-s-t">
 								<h4 class="lucida">Markup</h4>
 								<code class="padded">
 									&lt;div class="tabs"&gt; <span class="blue-candy-text">/* outer wrapper */</span><br />
-									<span class="blue-candy-text">/* Tab 1 */</span><br />
+									<span class="blue-candy-t">/* Tab 1 */</span><br />
 									&nbsp;&nbsp;&nbsp;&lt;input type="radio" name="tabs" id="tab1" checked="checked"&gt;<br />
 									&nbsp;&nbsp;&nbsp;&lt;label for="tab1" class=""&gt;Tab One&lt;/label&gt;<br />
 									&nbsp;&nbsp;&nbsp;&lt;div class="tab"&gt;<br />
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...content...<br />
 									&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
-									<span class="blue-candy-text">/* Tab 2 */</span><br />
+									<span class="blue-candy-t">/* Tab 2 */</span><br />
 									&nbsp;&nbsp;&nbsp;&lt;input type="radio" name="tabs" id="tab2" checked="checked"&gt;<br />
 									&nbsp;&nbsp;&nbsp;&lt;label for="tab2" class=""&gt;Tab One&lt;/label&gt;<br />
 									&nbsp;&nbsp;&nbsp;&lt;div class="tab"&gt;<br />
@@ -925,7 +1172,7 @@
 									</div>
 								</div>
 							</div>
-							<p class="flow-text charcoal-text arial"><strong>.scroll-right</strong></p>
+							<p class="flow-text charcoal-t arial"><strong>.scroll-right</strong></p>
 							<div class="scroller-wrap gray" style="height: 120px;">
 								<div class="scroll-right">
 									<div class="scroll-item">
@@ -946,7 +1193,7 @@
 								</div>
 							</div>
 							<p class="flow-text charcoal-text arial"><strong>.scroll-up</strong></p>
-							<div class="scroller-wrap white blue-border border-solid-thin" style="height: 250px;">
+							<div class="scroller-wrap white blue-b brdr-s-t" style="height: 250px;">
 								<div class="scroll-up">
 									<div class="scroll-item">
 										<p class="purple banana-t tahoma">This is a mixed content scroller with paragraphs and images.</p>
@@ -962,8 +1209,8 @@
 									</div>
 								</div>
 							</div>
-							<p class="flow-text charcoal-text arial"><strong>.scroll-down</strong></p>
-							<div class="scroller-wrap blue lemon-text lucida-text blue-border border-solid-thin" style="height: 180px;">
+							<p class="flow-text charcoal-t arial"><strong>.scroll-down</strong></p>
+							<div class="scroller-wrap blue lemon-t lucida blue-b brdr-s-t" style="height: 180px;">
 								<div class="scroll-down">
 									<div class="scroll-item">
 										<p>This is the first paragraph of text.</p>
@@ -981,11 +1228,11 @@
 							</div>
 						</div>
 						<div class="col-sm-12 col-md-6">
-							<p class="charcoal-text arial flow-text"><strong>Define the Height</strong></p>
-							<p class="charcoal-text arial">The height of the scroller will need to be defined. When using a horizontal (left or right) scroller, the wrapped content will also need to have the same height. A vertical scroller (up or down) only needs the height defined for the wrapper.</p>
+							<p class="charcoal-t arial flow-text"><strong>Define the Height</strong></p>
+							<p class="charcoal-t arial">The height of the scroller will need to be defined. When using a horizontal (left or right) scroller, the wrapped content will also need to have the same height. A vertical scroller (up or down) only needs the height defined for the wrapper.</p>
 							
-							<h4 class="charcoal-text courier-new">Markup</h4>
-							<p class="charcoal-text arial">This is the markup for creating a scroller. Note that the scroller-wrap needs a specific height defined.</p>
+							<h4 class="charcoal-t courier">Markup</h4>
+							<p class="charcoal-t arial">This is the markup for creating a scroller. Note that the scroller-wrap needs a specific height defined.</p>
 							<code class="padding smaller">
 								&lt;div class="scroller-wrap" style="height: 200px;" &gt;<br />
 								&nbsp;&nbsp;&lt;div class="scroll-direction"&gt;<br />
@@ -1005,6 +1252,42 @@
 							</div>
 						</div>
 					</div>
+					<p class="padded"></p>
+					<h3 class="red-t lucida" id="loopyscroll">LoopScroll</h3>
+					<p><em>LoopScroll</em> allows you to create an element with a touch-enabled infinitely looping scroll! Ideal for creative navigation menus or any other type of content! Add as many items as you wish. No scrollbars are displayed by default. Recommended for mobile applications.</p>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6">
+							<h4 class="charcoal-t lucida bold">Markup</h4>
+							<p>Wrap <em>loop-item</em> elements within a <em>loopscroll</em> wrapper.</p>
+							<code class="padding smaller">
+								&lt;div class="loopscroll"&gt;<br />
+								&nbsp;&nbsp;&lt;div class="loop-item"&gt;<br />
+								&nbsp;&nbsp;&nbsp;...content...<br />
+								&nbsp;&nbsp;&lt;/div&gt;<br />
+								&lt;/div&gt;
+							</code>
+							<p class="padded info"><span class="bigger bold">Limit Height</span><br />The height of the <em>loopscroll</em> wrapper needs to be specified in some way. For example, to limit the height to one-third of the screen height, apply the <a href="grid.html" class="link">grid</a> height class <strong><em>bh33</em></strong> to the <em>loopscroll</em> wrapper.<br /><br /><span class="flow-text bold">.loopscroll.bh33</span><br /></p>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6">
+							<h4 class="charcoal-t lucida bold">DEMO</h4>
+							<div class="loopscroll bh50 lush fittext">
+								<div class="loop-item green lemon-t"><a class="link bold">FIRST ITEM</a></div>
+								<div class="loop-item hottie lucida"><a class="link">Delightful Dance</a></div>
+								<div class="loop-item sunset times"><a class="link">Rebel Fantasies</a></div>
+								<div class="loop-item passion georgia"><a class="link"><em>Passionate Love</em></a></div>
+								<div class="loop-item deep-desire impact"><a class="link">Henry and June</a></div>
+								<div class="loop-item winter tahoma"><a class="link">Frozen Blitz</a></div>
+								<div class="loop-item vampire times red-t"><a class="link">Horror Show</a></div>
+								<div class="loop-item autumn courier"><a class="link">Fall Finale</a></div>
+								<div class="loop-item dusk arial"><a class="link">After Dark</a></div>
+								<div class="loop-item river georgia"><a class="link">Strong Stream</a></div>
+								<div class="loop-item"><img src="theme/default/files/images/kitty/swedekat.jpg" alt="swedekat" class="responsive" /></div>
+								<div class="loop-item"><img src="theme/default/files/images/gelora/crazy-grin.jpg" alt="crazy" class="responsive" /></div>
+								<div class="loop-item shades lucida"><a class="link">Shady Secrets</a></div>
+								<div class="loop-item red yellow-t"><a class="link bold">LAST ITEM</a></div>
+							</div>
+						</div>
+					</div>
 				</div>
 				
 				<p class="padding"></p>
@@ -1016,15 +1299,15 @@
 					<div class="row">
 						<div class="col-xs-12 no-padding">
 							<nav class="simple blue">
-								<ul class="courier-new flow-text lime-t">
-									<li class="invert-hover"><a href="#buttforms" class="lime-text">Buttons &amp; Forms</a></li>
-									<li class="invert-hover"><a href="#stackies" class="lime-text">Stickies & Stacks</a></li>
-									<li class="invert-hover"><a href="#interactions" class="lime-text">Interactions</a></li>
-									<li class="invert-hover"><a href="#simplemenu" class="lime-text">Navigation</a></li>
-									<li class="invert-hover"><a href="#thumbs" class="lime-text">Thumbnails</a></li>
-									<li class="invert-hover"><a href="#modals" class="lime-text">Modals</a></li>
-									<li class="invert-hover"><a href="#tabs" class="lime-text">Tabs</a></li>
-									<li class="invert-hover"><a href="#scrollers" class="lime-text">Scrollers</a></li>
+								<ul class="courier flow-text">
+									<li class="invert-h blue"><a href="#formputs" class="lime-t">Forms &amp; Input</a></li>
+									<li class="invert-h blue"><a href="#stackies" class="lime-t">Stickies & Stacks</a></li>
+									<li class="invert-h blue"><a href="#interactions" class="lime-t">Interactions</a></li>
+									<li class="invert-h blue"><a href="#simplemenu" class="lime-t">Navigation</a></li>
+									<li class="invert-h blue"><a href="#thumbs" class="lime-t">Thumbnails</a></li>
+									<li class="invert-h blue"><a href="#modals" class="lime-t">Modals</a></li>
+									<li class="invert-h blue"><a href="#tabs" class="lime-t">Tabs</a></li>
+									<li class="invert-h blue"><a href="#scrollers" class="lime-t">Scrollers</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -1033,18 +1316,18 @@
 					<footer class="jagged gray">
 						<a href="http://eepurl.com/cEW1RX" target="_blank">
 							<div class="sweden-gradient padded invert-hover">
-								<h5 class="lucida white-text"><i class="bi bi-amp"></i>Brutal Blast /<span class="blink-182">/</span>/<span class="blink">/</span>/</h5>
+								<h5 class="lucida white-t"><i class="bi bi-amp"></i>Brutal Blast /<span class="blink-182">/</span>/<span class="blink">/</span>/</h5>
 								<p class="bold">Subscribe to our e-newsletter. <span class="bigger">&raquo;</span></p>
 							</div>
 						</a>
-						<div class="padding vanilla-bean-text arial">
+						<div class="padding vanilla-bean-t arial">
 							<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="green yellow-text invert-hover">Pine Creative Labs</a> production</p>
 							<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-text invert-hover">Brad Fogelstrom</span></a></p>
 							<ul class="tags">
 								<li><a href="http://www.twitter.com/brutalistfwk" target="_blank" class="btn white-text blue-candy hue-hover"><strong>Twitter</strong></a></li>
 								<li><a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank" class="btn black white-text invert-hover"><strong>GitHub</strong></a></li>
 							</ul>
-							<p class="white-t tahoma"><small>Brutalist Framework &copy; 2020</small></p>
+							<p class="white-t tahoma"><small>Brutalist Framework &copy; 2021</small></p>
 						</div>
 					</footer>
 				</div>
@@ -1054,20 +1337,19 @@
 </div>
 
 <!-- Sticky Download Box -->
-<div class="sticky-cta sticky-bottom-right stack-middle virgin jagged2 center" style="padding: 8px; max-width: 180px;">
-	<nav class="simple bold">
+<div class="sticky-cta sticky-bottom-right stack-top red jagged2 center draggable" style="padding: 8px 10px 8px 8px; max-width: 180px;">
+	<nav class="simple heavy" style="margin-bottom: 4px;">
 		<ul class="lucida flow-text">
-			<li class="invert-hover"><a href="#core"><i class="bi bi-heart"></i> CORE</a></li>
-			<li class="invert-hover"><a href="#bell"><i class="bi bi-amp"></i> BELL</a></li>
-			<li class="invert-hover"><a href="#boilers"><i class="bi bi-heat"></i> BP</a></li>
-			<li class="invert-hover"><a href="#moar">+ MORE</a></li>
+			<li class="black invert-h"><a href="#uptop" class="white-t red-t-s">&uarr; TOP</a></li>
+			<li class="black invert-h"><a href="#moar" class="white-t red-t-s">+ MORE</a></li>
 		</ul>
 	</nav>
 	<a href="#download" data-modal-open>
-	<div class="skew sweden btn invert-hover">
-		<p class="skew-right"><span class="flow-text impact">Download</span><br /><span class="lucida"><small>version 2.1</small></span></p>
+	<div class="skew sweden btn invert-h">
+		<p class="skew-right"><span class="flow-text impact">Download</span><br /><span class="lucida"><small>version 2.2</small></span></p>
 	</div></a>
 </div>
+
 <!-- Download Modal -->
 <div id="download" style="display:none;">
 	<div class="container monochrome infinitile" style="max-width: 468px;">
@@ -1075,11 +1357,13 @@
 			<div class="col-sm-12 no-padding">
 				<div class="padded lucida">
 					<h4>Begin the <span class="blink red-t">Brutality</span></h5>
-					<p>Released <strong>10/13/2020</strong></p>
-					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.1.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.1</a></p><hr class="jagged-rule-dark" />
-					<p style="font-size: 1.15em;"><strong><span style="font-size: 1.3em;">Legacy Versions</span></strong><br />
-					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.0.zip" target="_blank">2.0.2.0</a> (released 2/20/2020)<br />
-					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.9.zip" target="_blank">1.9</a> (legacy)<br /><br /></p>
+					<p>Released <strong>2/14/2021</strong></p>
+					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.2.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.2</a></p><hr class="jagged-rule-dark" />
+					<p style="font-size: 1.15em;"><strong><span style="font-size: 1.3em;">Archived Versions</span></strong><br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.1.zip" target="_blank">2.1</a> <small>(10/23/2020), 19mb</small><br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.0.zip" target="_blank">2.0.2.0</a> <small>(2/20/2020), 9.3mb</small><br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.9.zip" target="_blank">1.9</a> <small>(5/29/2019), 3.7mb</small><br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.0.zip" target="_blank">1.0</a> <small>(4/12/2017), 1.5mb</small><br /><br /></p>
 				</div>
 			</div>
 		</div>
@@ -1142,87 +1426,28 @@
 	<div class="overlay"></div>
 </div>
 
-<!-- BELL Modal -->
-<div id="bell" class="modal-lite fullscreen">
-	<div class="modal-content anim-bg-hot">
-		<div class="modal-head center"><h2 class="lemon-t courier-new black-t-s bold blue circle"><i class="bi bi-amp"></i> BELL</h2></div>
-		<div class="modal-content-body scroll-y center">
-			<div class="container"><div class="row"><div class="col-sm-12">
-				<h3 class="fittext-h3 blue-t black-t-s impact">Brutal Extension Element Library</h3>
-				<p class="flow-text lucida">A collection of javascript plugins to further enhance user experience.</p>
-				<div class="double-col align-left">
-					<h4 class="impact">Media Elements</h4>
-					<ul class="flow-text triangle">
-						<li><a href="bell.html#audio" class="link bold">Audio Player</a></li>
-						<li><a href="bell.html#gif" class="link bold">GIF Player</a></li>
-						<li><a href="bell.html#vp" class="link bold">Video Player</a></li>
-					</ul>
-					<h4 class="impact">Interface Elements</h4>
-					<ul class="flow-text triangle">
-						<li><a href="bell.html#megamenu" class="link bold">MegaMenu</a></li>
-						<li><a href="bell.html#printer" class="link bold">Printer</a></li>
-						<li><a href="bell.html#ei" class="link bold">Exit Intent</a></li>
-					</ul>
-					<h4 class="impact">Content Elements</h4>
-					<ul class="flow-text triangle">
-						<li><a href="bell.html#timeline" class="link bold">Timeline</a></li>
-						<li><a href="bell.html#presenter" class="link bold">Presenter</a></li>
-						<li><a href="bell.html#piss" class="link bold">PISS</a></li>
-					</ul>
-					<h4 class="impact">BISCUIT</h4>
-					<ul class="flow-text triangle">
-						<li><a href="bell.html#age" class="link bold">Age Verify</a></li>
-						<li><a href="bell.html#cc" class="link bold">Cookie Consent</a></li>
-						<li><a href="bell.html#pl" class="link bold">PageLock</a></li>
-					</ul>
-				</div>
-			</div></div></div>
-		</div>
-		<div class="modal-footer"><a href="#return1" class="btn large-btn black platinum-t">CLOSE</a></div>
-	</div>
-	<div class="overlay"></div>
-</div>
-
-<!-- Boilerplates Modal -->
-<div id="boilers" class="modal-lite fullscreen">
-	<div class="modal-content bpmodal">
-		<div class="modal-head center"><h2 class="deep-orange-t courier-new black-t-s bold"><i class="bi bi-heat"></i> Boilerplates</h2></div>
-		<div class="modal-content-body">
-			<div class="container-fluid"><div class="row"><div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-				<p class="fittext fire-t impact black-t-s">Starting point templates</p>
-				<ul class="flow-text brutal lucida white-t-s">
-					<li><a href="bp/email.html" target="_blank" class="link">Email Boilerplate</a></li>
-					<li><a href="bp/leads.html" target="_blank" class="link">Lead Capture</a></li>
-					<!--<li><a href="bp/catalog.html" target="_blank" class="link">Commerce Catalog</a></li>
-					<li><a href="bp/media-gallery.html" target="_blank" class="link">Media Gallery</a></li>-->
-					<li><a href="bp/microblog.html" target="_blank" class="link">Microblog</a></li>
-					<li><a href="bp/social.html" target="_blank" class="link">Social</a></li>
-					<li><a href="bp/horror.html" target="_blank" class="link">Horror</a></li>
-					<li><a href="bp/vaporwave.html" target="_blank" class="link">Vaporwave</a></li>
-					<li><a href="bp/ratedx.html" target="_blank" class="link">Rated X</a> <span class="red-t">(18+)</span></li>
-				</ul>
-			</div><div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div></div></div>
-		</div>
-		<div class="modal-footer"><a href="#return1" class="btn large-btn black platinum-t">CLOSE</a></div>
-	</div>
-	<div class="overlay"></div>
-</div>
-
 <!-- Moar Modal -->
 <div id="moar" class="modal-lite fullscreen">
 	<div class="modal-content shades">
 		<div class="modal-head center"><h2 class="red-t courier-new black-t-s bold">+ More</h2></div>
 		<div class="modal-content-body center">
-			<div class="container-1200"><div class="row"><div class="col-sm-12"><p class="padded"></p>
-				<p class="fittext helvetica black-t-s navy"><a href="http://eepurl.com/cEW1RX" target="_blank" class="orange-t invert-hover">Join <i class="bi bi-amp"></i> Brutal Blast &raquo;</a><br />
-				<small><span class="white-t">Subscribe to our e-Newsletter</span></small></p>
-				<p class="fittext lucida black-t-s"><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank" class="mono invert-hover">Roadmap</a></p>
-				<p class="fittext impact black-t-s"><a href="https://www.concrete5.org" target="_blank" class="charcoal smoke-t invert-hover">Concrete5 CMS</a></p>
-				<p class="fittext tahoma black-t-s"><a href="http://www.bradfogelstrom.com" target="_blank" class="sweden invert-hover">BradFogelstrom.com</a></p>
+			<div class="container-1200"><div class="row"><div class="col-xs-12 col-sm-12"><p class="padded"></p>
+				<ul class="tiles thirds flow-text">
+					<li class="fire times hue-h bold"><a href="http://eepurl.com/cEW1RX" target="_blank" class="navy-t"><i class="bi bi-amp"></i> Brutal Blast<br />
+						<small>Subscribe to our newsletter</small></a></li>
+					<li class="lime invert-h arial"><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank" class="black-t">Roadmap<br />
+						<small>What's next?</small></a></li>
+					<li class="impact charcoal invert-h"><a href="https://www.concrete5.org" target="_blank" class="smoke-t">Concrete5 CMS<br />
+						<small>Build complex websites</small></a></li>
+					<li class="sweden comic invert-h"><a href="http://www.bradfogelstrom" target="_blank" class="yellow-t">BradFogelstrom.com<br /><small>Meet the Developer</small></a></li>
+					<li class="black invert-h lucida"><a href="https://github.com/pinecreativelabs/Brutalist-Framework/" target="_blank" class="white-t">GitHub<br />
+						<small>Repository</small></a></li>
+					<li class="blue-candy hue-h tahoma"><a href="http://www.twitter.com/brutalistfwk" target="_blank" class="white-t">Twitter<br /><small>Follow Us</small></a></li>
+				</ul>
 				<p class="padded"></p>
 			</div></div></div>
 		</div>
-		<div class="modal-footer"><a href="#return1" class="btn large-btn black platinum-t allcaps">CLOSE</a></div>
+		<div class="modal-footer"><a href="#starthere" class="btn large-btn black platinum-t allcaps">CLOSE</a></div>
 	</div>
 	<div class="overlay"></div>
 </div>

@@ -13,13 +13,13 @@
 	<meta name="twitter:description" content="A free open source native icon CSS classes library for the brutalist web design trend.">
 	<meta name="twitter:creator" content="@brutalistfwk">
 	<!-- Twitter Summary card images must be at least 120x120px -->
-	<meta name="twitter:image" content="http://www.brutalistframework.com/core/files/images/bf21.jpg">
+	<meta name="twitter:image" content="http://www.brutalistframework.com/core/files/images/bf22.jpg">
 
 	<!-- Open Graph data -->
 	<meta property="og:title" content="Brutalist Framework || bIcons" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://www.brutalistframework.com" />
-	<meta property="og:image" content="http://www.brutalistframework.com/core/files/images/bf21.jpg" />
+	<meta property="og:image" content="http://www.brutalistframework.com/core/files/images/bf22.jpg" />
 	<meta property="og:description" content="A free open source native icon CSS classes library for the brutalist web design trend." /> 
 	<meta property="og:site_name" content="Brutalist Framework" />
 
@@ -37,15 +37,15 @@
 	<link href="theme/default/css/theme.css" type="text/css" rel="stylesheet" media="all" />
 </head>
 <body class="black">
-	<header class="container-fluid triangle-light anim-bg-neon stack-base">
+	<header class="container-fluid triangle-light anim-bg-neon stack-base" id="uptop">
 		<div class="row"><div class="col-sm-12"><div class="container-1200">
 			<div class="row no-padding stack1 content" id="scrolltop">
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 no-padding">
-					<a href="index.html"><img class="large-thumb crop circle brdr-s-k red-border invert-hover" src="core/files/images/brutalist-framework.jpg" alt="Brutalist Framework" /></a>
+					<a href="index.html"><img class="large-thumb crop circle brdr-s-k red-b invert-h" src="core/files/images/brutalist-framework.jpg" alt="Brutalist Framework" /></a>
 				</div>
-				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 no-padding lucida-text">
-					<h1 class="page-title border-solid-thick red-border courier-new-text fittext-h1 white-text baffle-prolonged">bIcons</h1>
-					<div class="page-desc border-solid-thick red-border rice-text">
+				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 no-padding lucida">
+					<h1 class="page-title brdr-s-k red-b courier white-t"><i class="bi bi-flag"></i><span class="baffle-prolonged">bIcons</span></h1>
+					<div class="page-desc brdr-s-k red-b rice-t">
 						<h2 class="flow-text baffle">Brutal Icons</h2><br />
 						<p>Native UTF-8 symbols in the form of icon classes</p>
 					</div>
@@ -62,15 +62,15 @@
 					<div class="menu lucida bold">
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="#core">CORE</a>
+							<li><a href="#core"><i class="bi bi-fisheye"></i> CORE</a>
 								<ul>
-									<li><a href="flavors.html">Flavors</a></li>
-									<li><a href="butch.html">BUTCH</a></li>
-									<li><a href="buix.html">BUIX</a></li>
-									<li><a href="bfx.html">BFX</a></li>
-									<li><a href="grid.html">Grid</a></li>
-									<li><a href="rebar.html">ReBAR</a></li>
-									<li><a href="bicons.html">bIcons</a></li>
+									<li><a href="flavors.html"><i class="bi bi-cone"></i> Flavors</a></li>
+									<li><a href="butch.html"><i class="bi bi-communist"></i> BUTCH</a></li>
+									<li><a href="buix.html"><i class="bi bi-navigate"></i> BUIX</a></li>
+									<li><a href="bfx.html"><i class="bi bi-sparkle"></i> BFX</a></li>
+									<li><a href="grid.html"><i class="bi bi-grid"></i> Grid</a></li>
+									<li><a href="rebar.html"><i class="bi bi-converge-left"></i> ReBAR</a></li>
+									<li><a href="bicons.html"><i class="bi bi-flag"></i> bIcons</a></li>
 								</ul>
 							</li>
 							<li><a href="bell.html">BELL</a>
@@ -121,8 +121,18 @@
 				<p class="padding"></p>
 				<div class="padded">
 					<h4 class="lucida" id="getstarted">Getting Started</h4>
-					<p>Most browsers support some basic symbols, with no dependencies. <em>bIcons</em> allows you to render them by applying classes! Keep in mind that various browsers may render symbols differently. Simply use the following markup, where "icon-name" is any of the below class names.</p>
+					<p>Most browsers support some basic symbols, with no dependencies. <em>bIcons</em> allows you to render native icons and symbols by applying classes! Keep in mind that various browsers may render symbols differently. Simply use the following markup, where "<em>icon-name</em>" is any of the below class names.</p>
 					<code class="padded bold bigger lucida">&lt;i class="bi bi-<em>icon-name</em>"&gt;&lt;/&gt;</code>
+					<h4 class="lucida">Icon Sizes</h4>
+					<p>Apply these classes to change the icon size. The <em><strong>.bi-fi</strong></em> class is fluid and resizes in proportion to the screen size.</p>
+					<ul class="tags">
+						<li><i class="bi bi-2x bi-explode"></i><br />.bi-2x</li>
+						<li><i class="bi bi-3x bi-explode"></i><br />.bi-3x</li>
+						<li><i class="bi bi-4x bi-explode"></i><br />.bi-4x</li>
+						<li><i class="bi bi-5x bi-explode"></i><br />.bi-5x</li>
+						<li><i class="bi bi-6x bi-explode"></i><br />.bi-6x</li>
+						<li><i class="bi bi-fi bi-explode"></i><br />.bi-fi</li>
+					</ul>
 				</div>
 				<hr class="thick tomato" />
 				<div class="padding">
@@ -143,6 +153,7 @@
 					<i class="bi bi-converge-right"></i> converge-right<br /><i class="bi bi-converge-left"></i> converge-left<br />
 					<i class="bi bi-charrow"></i> charrow<br /><i class="bi bi-farrow"></i> farrow<br />
 					<i class="bi bi-left"></i> left<br /><i class="bi bi-right"></i> right<br /><i class="bi bi-up"></i> up<br /><i class="bi bi-down"></i> down<br />
+					<i class="bi bi-above"></i> above<br /><i class="bi bi-below"></i> below<br />
 					<i class="bi bi-point-left"></i> point-left<br /><i class="bi bi-point-right"></i> point-right<br />
 					<i class="bi bi-two-way"></i> two-way<br /><i class="bi bi-two-way-o"></i> two-way-o<br />
 					</p>
@@ -168,12 +179,12 @@
 					<p class="double-col flow-text" style="margin-bottom: 1em;">
 					<i class="bi bi-amp"></i> amp<br /><i class="bi bi-audio"></i> audio<br /><i class="bi bi-awareness"></i> awareness<br /><i class="bi bi-balance"></i> balance<br />
 					<i class="bi bi-bitcoin"></i> bitcoin<br /><i class="bi bi-bowtie"></i> bowtie<br />
-					<i class="bi bi-comet"></i> comet<br /><i class="bi bi-communist"></i> communist<br /><i class="bi bi-cross"></i> cross<br />
+					<i class="bi bi-comet"></i> comet<br /><i class="bi bi-communist"></i> communist<br /><i class="bi bi-core"></i> core / fisheye<br /><i class="bi bi-cross"></i> cross<br />
 					<i class="bi bi-euro"></i> euro<br /><i class="bi bi-faith"></i> faith<br /><i class="bi bi-global"></i> global<br />
 					<i class="bi bi-happy"></i> happy<br /><i class="bi bi-handicap"></i> handicap<br /><i class="bi bi-heat"></i> heat<br />
 					<i class="bi bi-heart"></i> heart<br /><i class="bi bi-love-o"></i> heart-o<br /><i class="bi bi-history"></i> history<br />
 					<i class="bi bi-infinity"></i> infinity<br /><i class="bi bi-islam"></i> islam<br />
-					<i class="bi bi-jew"></i> jew<br /><i class="bi bi-lira"></i> lira<br />
+					<i class="bi bi-jew"></i> jew<br /><i class="bi bi-lira"></i> lira<br /><i class="bi bi-loz"></i> loz<br />
 					<i class="bi bi-medical"></i> medical<br /><i class="bi bi-music"></i> music<br /><i class="bi bi-no-smoking"></i> no-smoking<br />
 					<i class="bi bi-peace"></i> peace<br /><i class="bi bi-pentagram"></i> pentagram<br /><i class="bi bi-pentagram-i"></i> pentagram-i<br />
 					<i class="bi bi-prescribe"></i> prescribe<br /><i class="bi bi-temperature"></i> temperature<br />
@@ -182,7 +193,7 @@
 					<i class="bi bi-marriage"></i> marriage<br /><i class="bi bi-partners"></i> partners<br />
 					<i class="bi bi-men"></i> men<br /><i class="bi bi-women"></i> women<br /><i class="bi bi-unisex"></i> unisex<br />
 					<i class="bi bi-new"></i> new<br /><i class="bi bi-free"></i> free<br /><i class="bi bi-ohm"></i> ohm<br />
-					<i class="bi bi-peso"></i> peso<br /><i class="bi bi-recycle"></i> recycle<br />
+					<i class="bi bi-peso"></i> peso<br /><i class="bi bi-pinwheel"></i> pinwheel<br /><i class="bi bi-recycle"></i> recycle<br /><i class="bi bi-sparkle"></i> sparkle<br />
 					<i class="bi bi-reference"></i> reference<br /><i class="bi bi-sad"></i> sad<br /><i class="bi bi-sleep"></i> sleep<br />
 					<i class="bi bi-superstar"></i> superstar<br /><i class="bi bi-tel"></i> tel<br /><i class="bi bi-underage"></i> underage<br />
 					<i class="bi bi-wait"></i> wait<br /><i class="bi bi-wonder"></i> wonder / magic<br /><i class="bi bi-yin-yang"></i> yin-yang<br />
@@ -231,7 +242,7 @@
 						<i class="bi bi-check"></i> check<br /><i class="bi bi-cut"></i> cut<br />
 						<i class="bi bi-phone"></i> phone<br /><i class="bi bi-phone-o"></i> phone-o<br /><i class="bi bi-email"></i> email<br />
 						<i class="bi bi-announce"></i> announce<br /><i class="bi bi-broadcast"></i> broadcast<br />
-						<i class="bi bi-flag"></i> flag<br /><i class="bi bi-flag-o"></i> flag-o<br />
+						<i class="bi bi-fill"></i> fill<br /><i class="bi bi-flag"></i> flag<br /><i class="bi bi-flag-o"></i> flag-o<br /><i class="bi bi-grid"></i> grid<br />
 						<i class="bi bi-compress"></i> compress<br /><i class="bi bi-directory"></i> directory / folder<br />
 						<i class="bi bi-notify"></i> notify<br /><i class="bi bi-unnotify"></i> unnotify<br />
 						<i class="bi bi-lock"></i> lock<br /><i class="bi bi-unlock"></i> unlock<br /><i class="bi bi-download"></i> download<br /><i class="bi bi-upload"></i> upload<br />
@@ -240,8 +251,7 @@
 						<i class="bi bi-attach"></i> attach<br /><i class="bi bi-clipboard"></i> clipboard<br /><i class="bi bi-file"></i> file<br />
 						<i class="bi bi-control"></i> control<br /><i class="bi bi-gear"></i> gear<br /><i class="bi bi-navigate"></i> navigate<br />
 						<i class="bi bi-bar-graph"></i> bar-graph<br /><i class="bi bi-compose"></i> compose<br /><i class="bi bi-pencil"></i> pencil / edit<br />
-						<i class="bi bi-pin"></i> pin<br /><i class="bi bi-pinpoint"></i> pinpoint<br />
-						<i class="bi bi-save"></i> save<br />
+						<i class="bi bi-pin"></i> pin<br /><i class="bi bi-pinpoint"></i> pinpoint<br /><i class="bi bi-save"></i> save<br />
 						<i class="bi bi-star"></i> star<br /><i class="bi bi-star-o"></i> star-o<br /><i class="bi bi-tools"></i> tools<br />
 						<i class="bi bi-launch"></i> launch<br /><i class="bi bi-time"></i> time<br />
 						<i class="bi bi-look"></i> look<br /><i class="bi bi-speak"></i> speak<br />
@@ -302,13 +312,13 @@
 					<div class="row">
 						<div class="col-xs-12 no-padding">
 							<nav class="simple blue">
-								<ul class="courier-new flow-text lime-t">
-									<li class="invert-hover"><a href="#getstarted" class="lime-text">Getting Started</a></li>
-									<li class="invert-hover"><a href="#genicons" class="lime-text">General</a></li>
-									<li class="invert-hover"><a href="#ui" class="lime-text">UI &amp; Actions</a></li>
-									<li class="invert-hover"><a href="#natural" class="lime-text">Nature</a></li>
-									<li class="invert-hover"><a href="#food" class="lime-text">Food</a></li>
-									<li class="invert-hover"><a href="#horoscopes" class="lime-text">Horoscopes</a></li>
+								<ul class="courier flow-text">
+									<li class="invert-h blue"><a href="#getstarted" class="lime-t">Getting Started</a></li>
+									<li class="invert-h blue"><a href="#genicons" class="lime-t">General</a></li>
+									<li class="invert-h blue"><a href="#ui" class="lime-t">UI &amp; Actions</a></li>
+									<li class="invert-h blue"><a href="#natural" class="lime-t">Nature</a></li>
+									<li class="invert-h blue"><a href="#food" class="lime-t">Food</a></li>
+									<li class="invert-h blue"><a href="#horoscopes" class="lime-t">Horoscopes</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -328,7 +338,7 @@
 								<li><a href="http://www.twitter.com/brutalistfwk" target="_blank" class="btn white-text blue-candy hue-hover"><strong>Twitter</strong></a></li>
 								<li><a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank" class="btn black white-text invert-hover"><strong>GitHub</strong></a></li>
 							</ul>
-							<p class="white-t tahoma"><small>Brutalist Framework &copy; 2020</small></p>
+							<p class="white-t tahoma"><small>Brutalist Framework &copy; 2021</small></p>
 						</div>
 					</footer>
 				</div>
@@ -338,18 +348,16 @@
 </div>
 
 <!-- Sticky Download Box -->
-<div class="sticky-cta sticky-bottom-right stack-middle virgin jagged2 center" style="padding: 8px; max-width: 180px;">
-	<nav class="simple bold">
+<div class="sticky-cta sticky-bottom-right stack-top red jagged2 center draggable" style="padding: 8px 10px 8px 8px; max-width: 180px;">
+	<nav class="simple heavy" style="margin-bottom: 4px;">
 		<ul class="lucida flow-text">
-			<li class="invert-hover"><a href="#core"><i class="bi bi-heart"></i> CORE</a></li>
-			<li class="invert-hover"><a href="#bell"><i class="bi bi-amp"></i> BELL</a></li>
-			<li class="invert-hover"><a href="#boilers"><i class="bi bi-heat"></i> BP</a></li>
-			<li class="invert-hover"><a href="#moar">+ MORE</a></li>
+			<li class="black invert-h"><a href="#uptop" class="white-t red-t-s">&uarr; TOP</a></li>
+			<li class="black invert-h"><a href="#moar" class="white-t red-t-s">+ MORE</a></li>
 		</ul>
 	</nav>
 	<a href="#download" data-modal-open>
-	<div class="skew sweden btn invert-hover">
-		<p class="skew-right"><span class="flow-text impact">Download</span><br /><span class="lucida"><small>version 2.1</small></span></p>
+	<div class="skew sweden btn invert-h">
+		<p class="skew-right"><span class="flow-text impact">Download</span><br /><span class="lucida"><small>version 2.2</small></span></p>
 	</div></a>
 </div>
 <!-- Download Modal -->
@@ -359,11 +367,13 @@
 			<div class="col-sm-12 no-padding">
 				<div class="padded lucida">
 					<h4>Begin the <span class="blink red-t">Brutality</span></h5>
-					<p>Released <strong>10/13/2020</strong></p>
-					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.1.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.1</a></p><hr class="jagged-rule-dark" />
-					<p style="font-size: 1.15em;"><strong><span style="font-size: 1.3em;">Legacy Versions</span></strong><br />
-					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.0.zip" target="_blank">2.0.2.0</a> (released 2/20/2020)<br />
-					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.9.zip" target="_blank">1.9</a> (legacy)<br /><br /></p>
+					<p>Released <strong>2/14/2021</strong></p>
+					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.2.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.2</a></p><hr class="jagged-rule-dark" />
+					<p style="font-size: 1.15em;"><strong><span style="font-size: 1.3em;">Archived Versions</span></strong><br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.1.zip" target="_blank">2.1</a> <small>(10/23/2020), 19mb</small><br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.0.zip" target="_blank">2.0.2.0</a> <small>(2/20/2020), 9.3mb</small><br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.9.zip" target="_blank">1.9</a> <small>(5/29/2019), 3.7mb</small><br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.0.zip" target="_blank">1.0</a> <small>(4/12/2017), 1.5mb</small><br /><br /></p>
 				</div>
 			</div>
 		</div>
@@ -426,87 +436,28 @@
 	<div class="overlay"></div>
 </div>
 
-<!-- BELL Modal -->
-<div id="bell" class="modal-lite fullscreen">
-	<div class="modal-content anim-bg-hot">
-		<div class="modal-head center"><h2 class="lemon-t courier-new black-t-s bold blue circle"><i class="bi bi-amp"></i> BELL</h2></div>
-		<div class="modal-content-body scroll-y center">
-			<div class="container"><div class="row"><div class="col-sm-12">
-				<h3 class="fittext-h3 blue-t black-t-s impact">Brutal Extension Element Library</h3>
-				<p class="flow-text lucida">A collection of javascript plugins to further enhance user experience.</p>
-				<div class="double-col align-left">
-					<h4 class="impact">Media Elements</h4>
-					<ul class="flow-text triangle">
-						<li><a href="bell.html#audio" class="link bold">Audio Player</a></li>
-						<li><a href="bell.html#gif" class="link bold">GIF Player</a></li>
-						<li><a href="bell.html#vp" class="link bold">Video Player</a></li>
-					</ul>
-					<h4 class="impact">Interface Elements</h4>
-					<ul class="flow-text triangle">
-						<li><a href="bell.html#megamenu" class="link bold">MegaMenu</a></li>
-						<li><a href="bell.html#printer" class="link bold">Printer</a></li>
-						<li><a href="bell.html#ei" class="link bold">Exit Intent</a></li>
-					</ul>
-					<h4 class="impact">Content Elements</h4>
-					<ul class="flow-text triangle">
-						<li><a href="bell.html#timeline" class="link bold">Timeline</a></li>
-						<li><a href="bell.html#presenter" class="link bold">Presenter</a></li>
-						<li><a href="bell.html#piss" class="link bold">PISS</a></li>
-					</ul>
-					<h4 class="impact">BISCUIT</h4>
-					<ul class="flow-text triangle">
-						<li><a href="bell.html#age" class="link bold">Age Verify</a></li>
-						<li><a href="bell.html#cc" class="link bold">Cookie Consent</a></li>
-						<li><a href="bell.html#pl" class="link bold">PageLock</a></li>
-					</ul>
-				</div>
-			</div></div></div>
-		</div>
-		<div class="modal-footer"><a href="#return1" class="btn large-btn black platinum-t">CLOSE</a></div>
-	</div>
-	<div class="overlay"></div>
-</div>
-
-<!-- Boilerplates Modal -->
-<div id="boilers" class="modal-lite fullscreen">
-	<div class="modal-content bpmodal">
-		<div class="modal-head center"><h2 class="deep-orange-t courier-new black-t-s bold"><i class="bi bi-heat"></i> Boilerplates</h2></div>
-		<div class="modal-content-body">
-			<div class="container-fluid"><div class="row"><div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-				<p class="fittext fire-t impact black-t-s">Starting point templates</p>
-				<ul class="flow-text brutal lucida white-t-s">
-					<li><a href="bp/email.html" target="_blank" class="link">Email Boilerplate</a></li>
-					<li><a href="bp/leads.html" target="_blank" class="link">Lead Capture</a></li>
-					<!--<li><a href="bp/catalog.html" target="_blank" class="link">Commerce Catalog</a></li>
-					<li><a href="bp/media-gallery.html" target="_blank" class="link">Media Gallery</a></li>-->
-					<li><a href="bp/microblog.html" target="_blank" class="link">Microblog</a></li>
-					<li><a href="bp/social.html" target="_blank" class="link">Social</a></li>
-					<li><a href="bp/horror.html" target="_blank" class="link">Horror</a></li>
-					<li><a href="bp/vaporwave.html" target="_blank" class="link">Vaporwave</a></li>
-					<li><a href="bp/ratedx.html" target="_blank" class="link">Rated X</a> <span class="red-t">(18+)</span></li>
-				</ul>
-			</div><div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div></div></div>
-		</div>
-		<div class="modal-footer"><a href="#return1" class="btn large-btn black platinum-t">CLOSE</a></div>
-	</div>
-	<div class="overlay"></div>
-</div>
-
 <!-- Moar Modal -->
 <div id="moar" class="modal-lite fullscreen">
 	<div class="modal-content shades">
 		<div class="modal-head center"><h2 class="red-t courier-new black-t-s bold">+ More</h2></div>
 		<div class="modal-content-body center">
-			<div class="container-1200"><div class="row"><div class="col-sm-12"><p class="padded"></p>
-				<p class="fittext helvetica black-t-s navy"><a href="http://eepurl.com/cEW1RX" target="_blank" class="orange-t invert-hover">Join <i class="bi bi-amp"></i> Brutal Blast &raquo;</a><br />
-				<small><span class="white-t">Subscribe to our e-Newsletter</span></small></p>
-				<p class="fittext lucida black-t-s"><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank" class="mono invert-hover">Roadmap</a></p>
-				<p class="fittext impact black-t-s"><a href="https://www.concrete5.org" target="_blank" class="charcoal smoke-t invert-hover">Concrete5 CMS</a></p>
-				<p class="fittext tahoma black-t-s"><a href="http://www.bradfogelstrom.com" target="_blank" class="sweden invert-hover">BradFogelstrom.com</a></p>
+			<div class="container-1200"><div class="row"><div class="col-xs-12 col-sm-12"><p class="padded"></p>
+				<ul class="tiles thirds flow-text">
+					<li class="fire times hue-h bold"><a href="http://eepurl.com/cEW1RX" target="_blank" class="navy-t"><i class="bi bi-amp"></i> Brutal Blast<br />
+						<small>Subscribe to our newsletter</small></a></li>
+					<li class="lime invert-h arial"><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank" class="black-t">Roadmap<br />
+						<small>What's next?</small></a></li>
+					<li class="impact charcoal invert-h"><a href="https://www.concrete5.org" target="_blank" class="smoke-t">Concrete5 CMS<br />
+						<small>Build complex websites</small></a></li>
+					<li class="sweden comic invert-h"><a href="http://www.bradfogelstrom" target="_blank" class="yellow-t">BradFogelstrom.com<br /><small>Meet the Developer</small></a></li>
+					<li class="black invert-h lucida"><a href="https://github.com/pinecreativelabs/Brutalist-Framework/" target="_blank" class="white-t">GitHub<br />
+						<small>Repository</small></a></li>
+					<li class="blue-candy hue-h tahoma"><a href="http://www.twitter.com/brutalistfwk" target="_blank" class="white-t">Twitter<br /><small>Follow Us</small></a></li>
+				</ul>
 				<p class="padded"></p>
 			</div></div></div>
 		</div>
-		<div class="modal-footer"><a href="#return1" class="btn large-btn black platinum-t allcaps">CLOSE</a></div>
+		<div class="modal-footer"><a href="#starthere" class="btn large-btn black platinum-t allcaps">CLOSE</a></div>
 	</div>
 	<div class="overlay"></div>
 </div>
