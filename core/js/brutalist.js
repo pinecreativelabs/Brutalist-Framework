@@ -120,7 +120,7 @@ var objectString,arrayString,profile={},lodging=[];function validateUsername(){v
 
 /* Form Functions */
 // remove default values and formatting from selection lists 
-function removeSelectDefaults(){var emptyBoxes=document.getElementsByTagName("select");for(var i=0;i<emptyBoxes.length;i++){emptyBoxes[i].selectedIndex = -1;}}
+function removeSelectDefaults(){var emptyBoxes=document.querySelectorAll("select.no-default");for(var i=0;i<emptyBoxes.length;i++){emptyBoxes[i].selectedIndex = -1;}}
 // copy all input and select fields from one fieldset to another
 function copyFields(){var copyInputElements=document.querySelectorAll("#copyFrom input");var pasteInputElements=document.querySelectorAll("#pasteTo input");if(document.getElementById("field-copy").checked){for(var i=0;i<copyInputElements.length; i++){pasteInputElements[i+1].value=copyInputElements[i].value;}document.querySelector("#pasteTo select").value=document.querySelector("#copyFrom select").value;}else{for(var i=0;i<copyInputElements.length; i++){pasteInputElements[i+1].value="";}document.querySelector("#copyFrom select").selectedIndex=1;}}
 /* create event listeners */
