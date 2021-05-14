@@ -24,8 +24,7 @@ $(".triangle-light").trianglarize({
 
 /* B-Loader */
 $('.b-loader').simpleLoadMore({
-    item: 'div, p, li, article',
-    count: 5,
+    item: 'div, p, li, article', count: 5,
     btnText: '+ Show More {showing} / {total}',
 });
 
