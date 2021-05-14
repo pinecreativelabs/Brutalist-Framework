@@ -1,25 +1,29 @@
-/* ReBAR - Responsive Breakpoint Assistance Reference
+/* ReBAR 2.3 - Responsive Breakpoint Assistance Reference
 =========================================================== */
 
 /* VISIBLITY CLASSES (General usage) */
 .visible { display: flex; visibility: visible; } 
 .hidden { display: none; visibility: hidden; }
-/* DEVICE TYPE VISIBILITY */
-@media screen and (min-width: 1441px) {
-	.show-on-desktop {display: flex; display: -webkit-flex; visibility: visible;}
-	.hide-on-desktop {display: none; visibility: hidden;}
+/* DEVICE SIZE TYPE VISIBILITY */
+@media screen and (min-width: 1201px) {
+	.show-on-tv, .show-on-xlarge {display: flex; display: -webkit-flex; visibility: visible;}
+	.hide-on-tv, .hide-on-xlarge {display: none; visibility: hidden;}
 }
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
-	.show-on-laptop {display: flex; display: -webkit-flex; visibility: visible;}
-	.hide-on-laptop {display: none; visibility: hidden;}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+	.show-on-desktop, .show-on-large {display: flex; display: -webkit-flex; visibility: visible;}
+	.hide-on-desktop, .hide-on-large {display: none; visibility: hidden;}
 }
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-	.show-on-tablet {display: flex; display: -webkit-flex; visibility: visible;}
-	.hide-on-tablet {display: none; visibility: hidden;}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	.show-on-laptop, .show-on-medium {display: flex; display: -webkit-flex; visibility: visible;}
+	.hide-on-laptop, .hide-on-medium {display: none; visibility: hidden;}
 }
-@media screen and (max-width: 600px) {
-	.show-on-phone {display: flex; display: -webkit-flex; visibility: visible;}
-	.hide-on-phone {display: none; visibility: hidden;}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.show-on-tablet, .show-on-small {display: flex; display: -webkit-flex; visibility: visible;}
+	.hide-on-tablet, .hide-on-small {display: none; visibility: hidden;}
+}
+@media screen and (max-width: 480px) {
+	.show-on-mobile, .show-on-phone, .show-on-xsmall {display: flex; display: -webkit-flex; visibility: visible;}
+	.hide-on-mobile, .hide-on-phone, .hide-on-xsmall {display: none; visibility: hidden;}
 }
 /* MAX-WIDTH BREAKPOINTS */
 @media screen and (max-width: 240px) {

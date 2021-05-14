@@ -1,5 +1,5 @@
 /*************************************************
-BFX - Brutal Effects v.2.2
+BFX - Brutal Effects v.2.3
 **************************************************/
 
 /* BLINKER FLUID */
@@ -14,19 +14,19 @@ BFX - Brutal Effects v.2.2
   100% {opacity: 1;}
 }
 
-/* BRUTAL TEXT EFFECT */
+/* BRUTAL TEXT FX */
+.cellophane-text, .bitshadow {letter-spacing: 0.1em;}
 .brutal-text {
-    letter-spacing: .15em;
-    text-shadow:  0.35rem -0.35rem rgba(178, 217, 35, 0.75), -0.35rem -0.35rem rgba(39, 172, 227, 0.75), 0 0.5rem rgba(255, 213, 25, 0.75);
+    text-shadow: 0.35rem -0.35rem rgba(178, 217, 35, 0.75), -0.3rem -0.3rem rgba(39, 172, 227, 0.75), 0 0.5rem rgba(255, 213, 25, 0.75);
 }
 .brutal-text-mono {
-    letter-spacing: .15em;
-    text-shadow:  0.35rem -0.35rem rgba(100, 100, 100, 0.75), -0.35rem -0.35rem rgba(150, 150, 150, 0.75), 0 0.5rem rgba(200, 200, 200, 0.75);
+    text-shadow: 0.35rem -0.35rem rgba(100, 100, 100, 0.75), -0.3rem -0.3rem rgba(150, 150, 150, 0.75), 0 0.5rem rgba(200, 200, 200, 0.75);
 }
-.brutal-text-neon {
-    letter-spacing: .15em;
-    text-shadow:  0.35rem -0.35rem rgba(255, 105, 180, 0.9), -0.25rem -0.25rem rgba(251, 167, 58, 0.9), -0.25rem 0.35rem rgba(72, 222, 252, 0.9);
+.neon-text, .brutal-text-neon {
+    text-shadow: 0.4rem -0.4rem 2px rgba(255, 105, 180, 0.9), -0.4rem -0.2rem 2px rgba(251, 167, 58, 0.9), -0.2rem 0.3rem 2px rgba(72, 222, 252, 0.9), -0.5rem 0.5rem 2px #3EFF28;
 }
+.cellophane {text-shadow: 0px 0px 2px #eee, 4px 4px 2px teal, -4px -2px 2px maroon; }
+.bitshadow{text-shadow: 0.256rem 0.128rem 0 #E79C10, -0.128rem -0.256rem 0 #D53A33;}
 
 /* FITTEXT */
 .fittext, .fittext-c, .fittext-cc, .fittext-x, .fittext-xx { line-height: 100%; }
@@ -34,6 +34,23 @@ BFX - Brutal Effects v.2.2
 
 /* ROTATE TEXT */
 .rotate-arena { display: inline-block; }
+
+/* TumbleText */
+.tumbletext span {
+	display: inline-block; position: relative;
+}
+.tumbletext.backwards > span {animation: tumbleBackwards 1s ease-in-out forwards;}
+.tumbletext.forwards > span {animation: tumbleForwards 1s ease-in-out forwards;}
+.tumbletext.mixed > span:nth-child(even){animation: tumbleBackwards 1s ease-in-out forwards;}
+.tumbletext.mixed > span:nth-child(odd){animation: tumbleForwards 1s ease-in-out forwards;}
+@keyframes tumbleForwards {
+	from { top: 0; transform: rotate(0deg); }
+	to { top: .9em; transform: rotate(-15deg); }
+}
+@keyframes tumbleBackwards {
+	from { top: 0; transform: rotate(0deg); }
+	to { top: 1em; transform: rotate(25deg); }
+}
 
 /* RUMBLER */
 .rumble, .crumble, .strumble, .trumble, .caffeinated {cursor: pointer;}
@@ -106,6 +123,70 @@ span.glitch { -webkit-animation: glitch2 1.25s infinite; animation: glitch2 1.25
   80% { -webkit-transform: none; transform: none; opacity: 1; }
   100% { -webkit-transform: none; transform: none; opacity: 1; }
 }
+.shift-glitch {
+	-moz-animation: shift 4s ease-in-out infinite alternate;
+  -webkit-animation: shift 4s ease-in-out infinite alternate;
+  animation: shift 4s ease-in-out infinite alternate;
+}
+@-moz-keyframes shift {
+  0%,40%, 44%, 58%, 61%, 65%,69%,73%,100% {
+    -moz-transform: skewX(0deg);transform: skewX(0deg);
+  }
+  41% {-moz-transform: skewX(10deg);transform: skewX(10deg);}
+  42% {-moz-transform: skewX(-10deg);transform: skewX(-10deg);}
+  59% {-moz-transform: skewX(40deg) skewY(10deg);transform: skewX(40deg) skewY(10deg);}
+  60% {-moz-transform: skewX(-40deg) skewY(-10deg);transform: skewX(-40deg) skewY(-10deg);}
+  63% {-moz-transform: skewX(10deg) skewY(-5deg);transform: skewX(10deg) skewY(-5deg);}
+  70% {-moz-transform: skewX(-50deg) skewY(-20deg);transform: skewX(-50deg) skewY(-20deg);}
+  71% {-moz-transform: skewX(10deg) skewY(-10deg);transform: skewX(10deg) skewY(-10deg);}
+}
+@-webkit-keyframes shift {
+  0%,40%, 44%, 58%, 61%, 65%,69%,73%,100% {
+    -webkit-transform: skewX(0deg);transform: skewX(0deg);
+  }
+  41% {-webkit-transform: skewX(10deg);transform: skewX(10deg);}
+  42% {-webkit-transform: skewX(-10deg);transform: skewX(-10deg);}
+  59% {-webkit-transform: skewX(40deg) skewY(10deg);transform: skewX(40deg) skewY(10deg);}
+  60% {-webkit-transform: skewX(-40deg) skewY(-10deg);transform: skewX(-40deg) skewY(-10deg);}
+  63% {-webkit-transform: skewX(10deg) skewY(-5deg);transform: skewX(10deg) skewY(-5deg);}
+  70% {-webkit-transform: skewX(-50deg) skewY(-20deg);transform: skewX(-50deg) skewY(-20deg);}
+  71% {-webkit-transform: skewX(10deg) skewY(-10deg);transform: skewX(10deg) skewY(-10deg);}
+}
+@keyframes shift {
+  0%,40%, 44%, 58%, 61%, 65%,69%,73%,100% {
+    -moz-transform: skewX(0deg);-ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);transform: skewX(0deg);
+  }
+  41% {
+    -moz-transform: skewX(10deg);-ms-transform: skewX(10deg);
+    -webkit-transform: skewX(10deg);transform: skewX(10deg);
+  }
+  42% {
+    -moz-transform: skewX(-10deg);-ms-transform: skewX(-10deg);
+    -webkit-transform: skewX(-10deg);transform: skewX(-10deg);
+  }
+  59% {
+    -moz-transform: skewX(40deg) skewY(10deg);-ms-transform: skewX(40deg) skewY(10deg);
+    -webkit-transform: skewX(40deg) skewY(10deg);transform: skewX(40deg) skewY(10deg);
+  }
+  60% {
+    -moz-transform: skewX(-40deg) skewY(-10deg);-ms-transform: skewX(-40deg) skewY(-10deg);
+    -webkit-transform: skewX(-40deg) skewY(-10deg);transform: skewX(-40deg) skewY(-10deg);
+  }
+  63% {
+    -moz-transform: skewX(10deg) skewY(-5deg);-ms-transform: skewX(10deg) skewY(-5deg);
+    -webkit-transform: skewX(10deg) skewY(-5deg);transform: skewX(10deg) skewY(-5deg);
+  }
+  70% {
+    -moz-transform: skewX(-50deg) skewY(-20deg);-ms-transform: skewX(-50deg) skewY(-20deg);
+    -webkit-transform: skewX(-50deg) skewY(-20deg);transform: skewX(-50deg) skewY(-20deg);
+  }
+  71% {
+    -moz-transform: skewX(10deg) skewY(-10deg);-ms-transform: skewX(10deg) skewY(-10deg);
+    -webkit-transform: skewX(10deg) skewY(-10deg);transform: skewX(10deg) skewY(-10deg);
+  }
+}
+
 
 /* THROB */
 .throb {
@@ -166,29 +247,7 @@ span.glitch { -webkit-animation: glitch2 1.25s infinite; animation: glitch2 1.25
 }
 
 /* ANIMATED GRADIENT BACKGROUNDS */
-.anim-bg-brutal {
-background: linear-gradient(-11deg, #1C1C1C, #808080, #2e2e2e, #1C1C1C, #1C1C1C, #808080, #2e2e2e, #1C1C1C, #1C1C1C, #808080, #2e2e2e, #1C1C1C, #1C1C1C, #808080, #2e2e2e, #1C1C1C, #1C1C1C, #808080, #2e2e2e, #1C1C1C, #1C1C1C, #808080, #2e2e2e);
-	background-size: 400% 400%;
-	-webkit-animation: Brutal 18s linear infinite;
-	-moz-animation: Brutal 18s linear infinite;
-	animation: Brutal 18s linear infinite;
-}
-@-webkit-keyframes Brutal {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-@-moz-keyframes Brutal {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-@keyframes Brutal {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-.anim-bg-plain {
+.gathering, .anim-bg-plain {
 background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
@@ -210,12 +269,14 @@ background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 	50% { background-position: 100% 50% }
 	100% { background-position: 0% 50% }
 }
-.anim-bg-vampire { color: #000;
-background: linear-gradient(-69deg, #8A0808, #610B0B, #3B0B0B, #610B0B, #8A0808, #610B0B, #3B0B0B);
-	background-size: 400% 400%;
-	-webkit-animation: Vampire 16s ease infinite;
-	-moz-animation: Vampire 16s ease infinite;
-	animation: Vampire 16s ease infinite;
+
+.fright-night, .anim-bg-vampire { 
+background: rgb(134,0,0);
+background: radial-gradient(circle, rgba(134,0,0,1) 0%, rgba(97,11,11,1) 50%, rgba(0,0,0,1) 100%);
+	background-size: 500% 500%;
+	-webkit-animation: Vampire 23s ease infinite;
+	-moz-animation: Vampire 23s ease infinite;
+	animation: Vampire 23s ease infinite;
 }
 @-webkit-keyframes Vampire {
 	0% { background-position: 0% 50% }
@@ -232,7 +293,8 @@ background: linear-gradient(-69deg, #8A0808, #610B0B, #3B0B0B, #610B0B, #8A0808,
 	50% { background-position: 100% 50% }
 	100% { background-position: 0% 50% }
 }
-.anim-bg-pastel { color: #000;
+
+.pastelize, .anim-bg-pastel { 
 background: linear-gradient(217deg, rgba(255,0,0,1), rgba(255,0,0,0) 70.71%),
       linear-gradient(127deg, rgba(0,255,0,1), rgba(0,255,0,0) 70.71%),
       linear-gradient(336deg, rgba(0,0,255,1), rgba(0,0,255,0) 70.71%);
@@ -256,7 +318,8 @@ background: linear-gradient(217deg, rgba(255,0,0,1), rgba(255,0,0,0) 70.71%),
 	50% { background-position: 100% 50% }
 	100% { background-position: 0% 50% }
 }
-.anim-bg-hot { color: #000;
+
+.heat, .anim-bg-hot { color: #000;
 background: linear-gradient(98deg, #ff0000, #ffab40, #ff9800, #F4FA58);
 	background-size: 400% 400%;
 	-webkit-animation: Hot 12s ease infinite;
@@ -273,17 +336,23 @@ background: linear-gradient(98deg, #ff0000, #ffab40, #ff9800, #F4FA58);
 	50% { background-position: 100% 50% }
 	100% { background-position: 0% 50% }
 }
+@-o-keyframes Hot {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
 @keyframes Hot {
 	0% { background-position: 0% 50% }
 	50% { background-position: 100% 50% }
 	100% { background-position: 0% 50% }
 }
-.anim-bg-water { color: #fff;
-background: linear-gradient(45deg, #ADD8E6, #81d4fa, #2196f3, #2196f3, #ADD8E6, #81d4fa, #2196f3, #2196f3, #ADD8E6, #81d4fa, #2196f3, #2196f3);
-	background-size: 400% 400%;
-	-webkit-animation: Water 14s ease-in-out infinite;
-	-moz-animation: Water 14s ease-in-out infinite;
-	animation: Water 14s ease-in-out infinite;
+
+.flood, .anim-bg-water { color: #fff;
+background-image: radial-gradient(circle, #add8e6, #81d4fa, #2196f3, #81d4fa, #add8e6);
+	background-size: 500% 500%;
+	-webkit-animation: Water 22s ease-in-out infinite;
+	-moz-animation: Water 22s ease-in-out infinite;
+	animation: Water 22s ease-in-out infinite;
 }
 @-webkit-keyframes Water {
 	0% { background-position: 0% 50% }
@@ -295,12 +364,18 @@ background: linear-gradient(45deg, #ADD8E6, #81d4fa, #2196f3, #2196f3, #ADD8E6, 
 	50% { background-position: 100% 50% }
 	100% { background-position: 0% 50% }
 }
+@-o-keyframes Water {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
 @keyframes Water {
 	0% { background-position: 0% 50% }
 	50% { background-position: 100% 50% }
 	100% { background-position: 0% 50% }
 }
-.anim-bg-shine { color: #000;
+
+.shine, .anim-bg-shine { color: #000;
 background: linear-gradient(-45deg, #808080, #808080, #e6e6e6, #808080, #808080, #e6e6e6, #808080, #808080, #e6e6e6);
 	background-size: 400% 400%;
 	-webkit-animation: Shine 9s ease-in-out infinite;
@@ -322,12 +397,13 @@ background: linear-gradient(-45deg, #808080, #808080, #e6e6e6, #808080, #808080,
 	50% { background-position: 100% 50% }
 	100% { background-position: 0% 50% }
 }
-.anim-bg-neon { color: #000;
-background: linear-gradient(-45deg, #000000, #00ff00, #00ccff, #ff3399, #cc66ff, #000000, #83ff17, #fffb21, #000000, #ff1c27, #ff1c27, #000000, #ff1c8a, #ff1c8a, #ff1c27, #ff1c27);
-	background-size: 450% 450%;
-	-webkit-animation: Neon 12s ease-in-out infinite;
-	-moz-animation: Neon 12s ease-in-out infinite;
-	animation: Neon 12s ease-in-out infinite;
+
+.neon, .anim-bg-neon { color: #000;
+background: linear-gradient(-60deg, #000000, #00ff00, #00ccff, #ff3399, #cc66ff, #000000, #83ff17, #fffb21, #000000, #ff1c27, #ff1c27, #000000, #ff1c8a, #ff1c8a, #ff1c27, #ff1c27);
+	background-size: 500% 500%;
+	-webkit-animation: Neon 14s ease-in-out infinite;
+	-moz-animation: Neon 14s ease-in-out infinite;
+	animation: Neon 14s ease-in-out infinite;
 }
 @-webkit-keyframes Neon {
 	0% { background-position: 0% 50% }
@@ -339,12 +415,18 @@ background: linear-gradient(-45deg, #000000, #00ff00, #00ccff, #ff3399, #cc66ff,
 	50% { background-position: 100% 50% }
 	100% { background-position: 0% 50% }
 }
+@-o-keyframes Neon {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
 @keyframes Neon {
 	0% { background-position: 0% 50% }
 	50% { background-position: 100% 50% }
 	100% { background-position: 0% 50% }
 }
-.anim-bg-earth { color: #fff;
+
+.earthly, .anim-bg-earth { color: #fff;
 background: linear-gradient(55deg, #305ca8, #2f673b, #2f673b, #2f673b, #305ca8, #305ca8, #305ca8, #5a4f2f, #5a4f2f, #5a4f2f, #2f673b, #2f673b, #2f673b, #305ca8, #305ca8, #305ca8);
 	background-size: 450% 450%;
 	-webkit-animation: Earth 24s ease-in-out infinite;
@@ -361,6 +443,11 @@ background: linear-gradient(55deg, #305ca8, #2f673b, #2f673b, #2f673b, #305ca8, 
 	50% { background-position: 100% 50% }
 	100% { background-position: 0% 50% }
 }
+@-o-keyframes Earth {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
 @keyframes Earth {
 	0% { background-position: 0% 50% }
 	50% { background-position: 100% 50% }
@@ -369,44 +456,28 @@ background: linear-gradient(55deg, #305ca8, #2f673b, #2f673b, #2f673b, #305ca8, 
 
 /* Infinity (light) */
 @-webkit-keyframes bg-scrolling-reverse {
-  100% {
-    background-position: 50px 50px;
-  }
+  100% {background-position: 50px 50px;}
 }
 @-moz-keyframes bg-scrolling-reverse {
-  100% {
-    background-position: 50px 50px;
-  }
+  100% {background-position: 50px 50px;}
 }
 @-o-keyframes bg-scrolling-reverse {
-  100% {
-    background-position: 50px 50px;
-  }
+  100% {background-position: 50px 50px;}
 }
 @keyframes bg-scrolling-reverse {
-  100% {
-    background-position: 50px 50px;
-  }
+  100% {background-position: 50px 50px;}
 }
 @-webkit-keyframes bg-scrolling {
-  0% {
-    background-position: 50px 50px;
-  }
+  0% {background-position: 50px 50px;}
 }
 @-moz-keyframes bg-scrolling {
-  0% {
-    background-position: 50px 50px;
-  }
+  0% {background-position: 50px 50px;}
 }
 @-o-keyframes bg-scrolling {
-  0% {
-    background-position: 50px 50px;
-  }
+  0% {background-position: 50px 50px;}
 }
 @keyframes bg-scrolling {
-  0% {
-    background-position: 50px 50px;
-  }
+  0% {background-position: 50px 50px;}
 }
 
 .infinitile {
@@ -429,8 +500,7 @@ background: linear-gradient(55deg, #305ca8, #2f673b, #2f673b, #2f673b, #305ca8, 
 .psychedelic {
   background: linear-gradient(233deg, #e56420, #c22525, #3d9c31, #37bbde);
   background-blend-mode: hard-light;
-  -webkit-animation: hue-rotate 3s linear infinite;
-        animation: hue-rotate 3s linear infinite;
+  -webkit-animation: hue-rotate 3s linear infinite; animation: hue-rotate 3s linear infinite;
 }
 @-webkit-keyframes hue-rotate {
   from {
@@ -446,7 +516,6 @@ background: linear-gradient(55deg, #305ca8, #2f673b, #2f673b, #2f673b, #305ca8, 
     filter: hue-rotate(360deg);
   }
 }
-
 @keyframes hue-rotate {
   from {
     -webkit-filter: hue-rotate(0);
@@ -460,34 +529,6 @@ background: linear-gradient(55deg, #305ca8, #2f673b, #2f673b, #2f673b, #305ca8, 
     -ms-filter: hue-rotate(360deg);
     filter: hue-rotate(360deg);
   }
-}
-
-
-/* Animated Gradient Ring */
-.outer-ring {
-  position: absolute;
-  left: calc(50% - 150px);
-  height: 300px;
-  width: 300px;
-  background-image: linear-gradient(135deg, #FEED07 0%, #FE6A50 5%, #ED00AA 15%, #2FE3FE 50%, #8900FF 100%);
-  border-radius: 50%; -webkit-border-radius: 50%;
-  
-  /*  Rotate  */
-  animation-duration: 2s;
-  animation-name: ring;
-  animation-iteration-count: infinite;
-}
-.inner-ring {
-  position: absolute;
-  left: calc(50% - 140px);
-  height: 280px;
-  width: 280px;
-  background-image: linear-gradient(0deg, #36295e, #1c1045);
-  border-radius: 50%; -webkit-border-radius: 50%;
-}
-@keyframes ring {
-    0% {transform:rotate(0deg);}
-    100% {transform:rotate(360deg);}
 }
 
 /* TRIANGLIFY */
@@ -516,10 +557,11 @@ background: linear-gradient(55deg, #305ca8, #2f673b, #2f673b, #2f673b, #305ca8, 
 .isolate-blend { mix-blend-mode: isolate; }
 .unblend { mix-blend-mode: unset !important; }
 
+/* ========= BETA ELEMENTS ======== */
+
 /* SPOTLIGHT Cursor Effect */
 .spotlight {
-  position: fixed;
-  top: 0; left: 0;
+  position: fixed; top: 0; left: 0;
   width: 100%; height: 100%;
   pointer-events: none;
   background: radial-gradient(50px 50px at center center, transparent, transparent 100px, rgba(0, 0, 0, 0.6) 150px);
@@ -528,4 +570,94 @@ background: linear-gradient(55deg, #305ca8, #2f673b, #2f673b, #2f673b, #305ca8, 
 @keyframes fadein {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+.swede-split {
+  --s: 20vmin;
+  --p: calc(var(--s) / 2);
+  --c1: yellow;
+  --c2: blue;
+  --c3: white;
+  --bg: var(--c3);
+  --d: 6000ms;
+  --e: cubic-bezier(0.76, 0, 0.24, 1);
+  
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(45deg, var(--c1) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--c1) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--c2) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--c2) 75%);
+  background-size: var(--s) var(--s);
+  background-position: 
+    calc(var(--p) *  1) calc(var(--p) *  0), 
+    calc(var(--p) * -1) calc(var(--p) *  1), 
+    calc(var(--p) *  1) calc(var(--p) * -1), 
+    calc(var(--p) * -1) calc(var(--p) *  0);
+  animation: 
+    color var(--d) var(--e) infinite,
+    position var(--d) var(--e) infinite;
+}
+
+@keyframes color {
+  0%, 25% {
+    --bg: var(--c3);
+  }
+  26%, 50% {
+    --bg: var(--c1);
+  }
+  51%, 75% {
+    --bg: var(--c3);
+  }
+  76%, 100% {
+    --bg: var(--c2);
+  }
+}
+
+@keyframes position {
+  0% {
+    background-position: 
+      calc(var(--p) *  1) calc(var(--p) *  0), 
+      calc(var(--p) * -1) calc(var(--p) *  1), 
+      calc(var(--p) *  1) calc(var(--p) * -1), 
+      calc(var(--p) * -1) calc(var(--p) *  0);
+  }
+  25% {
+    background-position: 
+      calc(var(--p) *  1) calc(var(--p) *  4), 
+      calc(var(--p) * -1) calc(var(--p) *  5), 
+      calc(var(--p) *  1) calc(var(--p) *  3), 
+      calc(var(--p) * -1) calc(var(--p) *  4);
+  }
+  50% {
+    background-position: 
+      calc(var(--p) *  3) calc(var(--p) * 8), 
+      calc(var(--p) * -3) calc(var(--p) * 9), 
+      calc(var(--p) *  2) calc(var(--p) * 7), 
+      calc(var(--p) * -2) calc(var(--p) * 8);
+  }
+  75% {
+    background-position: 
+      calc(var(--p) *  3) calc(var(--p) * 12), 
+      calc(var(--p) * -3) calc(var(--p) * 13), 
+      calc(var(--p) *  2) calc(var(--p) * 11), 
+      calc(var(--p) * -2) calc(var(--p) * 12);
+  }
+  100% {    
+    background-position: 
+      calc(var(--p) *  5) calc(var(--p) * 16), 
+      calc(var(--p) * -5) calc(var(--p) * 17), 
+      calc(var(--p) *  5) calc(var(--p) * 15), 
+      calc(var(--p) * -5) calc(var(--p) * 16);
+  }
+}
+@media (prefers-reduced-motion) {
+  .swedesplit {animation: none;}
+}
+
+.gradient-text {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

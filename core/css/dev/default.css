@@ -43,9 +43,6 @@ body {
   /*overflow-x: hidden;*/
 }
 
-/* HTML5 display definitions
-========================================================================== */
-
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav,
 section, summary {
   display: block;
@@ -64,17 +61,16 @@ audio:not([controls]) {
 [hidden], template {
   display: none;
 }
-
 aside, nav { padding: 0; margin: 0; }
 
 a { background-color: transparent; text-decoration: none; -webkit-tap-highlight-color: transparent; }
 a:active, a:hover { outline: 0; }
 
 abbr[title] {border-bottom: 1px dotted;}
-b, strong {font-weight: 700 !important;}
-dfn {font-style: italic;}
+b, strong {font-weight: 700;}
+cite, dfn, em {font-style: italic;}
 h1 {font-size: 2em;margin: 0.67em 0;}
-mark {background: #ff0;color: #000;}
+mark {background: #ff0000;color: #000;}
 small { font-size: 80%; }
 sub, sup {
   font-size: 75%;
@@ -99,7 +95,7 @@ code, kbd, pre, samp {
 code { background: #000; color: #00ff00; }
 
 /* Forms
-   ========================================================================== */
+========================================================================== */
 button, input, optgroup, select,
 textarea {
   color: inherit;
@@ -129,18 +125,7 @@ optgroup { font-weight: bold; }
 table { border-collapse: collapse; border-spacing: 0; }
 td,th { padding: 0; }
 *, *:before, *:after { box-sizing: inherit; }
-ul.browser-default,
-ul.browser-default li { list-style-type: initial; }
 ul, ol { list-style-position: inside; }
-.valign-wrapper {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-        align-items: center;
-}
-.valign-wrapper .valign { display: block; }
 .clearfix { clear: both; }
 h1, h2, h3, h4, h5, h6 { font-weight: 400; line-height: 1.1; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
@@ -169,12 +154,9 @@ h6 {
   font-size: 1rem; line-height: 110%;
   margin: 0.5rem 0 0.4rem 0;
 }
-em { font-style: italic; }
-strong { font-weight: 500; }
-small { font-size: 75%; }
 p { margin: 0; padding: 0; }
-address { padding: 0.3em; font-style: italic; font-weight: 600; }
-blockquote { padding: 0.4em; font-weight: 600; display: block; line-height: 160%; margin-left: 0.5em; }
+address { padding: 0.3em; font-style: italic; font-weight: normal; }
+blockquote { padding: 0.4em; font-weight: normal; display: block; line-height: 160%; margin-left: 0.5em; }
 blockquote::before{ content: "\201C"; font-size: 200%; padding: 0.3em; float: left; }
 .row:after { clear: both !important; }
 .arc-text, .circle-text, .spiral-text, .wave-text, .bezier-text { overflow: hidden; }

@@ -1,5 +1,5 @@
 /*************************************************
-BUIX - Brutalist User Interface Experience
+BUIX 2.3 - Brutalist User Interface Experience
 **************************************************/
 
 @font-face {
@@ -49,8 +49,8 @@ ul.simple-nav li a, nav.simple ul li a{
   display: block; text-decoration: none;
   width: 100%; padding: 0;
 }
-ul.simple-nav li span, nav.simple ul li span { display: none; }
-ul.simple-nav li a:hover span, nav.simple ul li a:hover span {
+ul.simple-nav li span.des, nav.simple ul li span.des { display: none; }
+ul.simple-nav li a:hover span.des, nav.simple ul li a:hover span.des {
   display: block; font-size: 0.8em;
   padding: 10px 0;
 }
@@ -60,6 +60,29 @@ ul.simple-nav li ul li { list-style: none; padding-left: 0.8em; margin: 0;  }
 ul.simple-nav li ul li a { border: none; }
 ul.simple-nav li ul li a:hover { border-top: none; border-right: 3px solid #fff; border-left: 3px solid #fff; }
 .jagged nav { padding: 0; margin: 0; }
+
+/* Tree List */
+ul.tree-list { list-style-type: none; margin: 0; padding: 0;}
+ul.tree-list ul { padding: 0 0 0 1.2em; margin: 0; list-style-type: none; }
+.tree-list .parent {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+.tree-list .parent::before {
+  content: "\25B6";
+  display: inline-block;
+  margin-right: 6px;
+}
+.tree-list .parent-down::before {
+  -ms-transform: rotate(90deg); 
+  -webkit-transform: rotate(90deg); 
+  transform: rotate(90deg);  
+}
+.tree-list .nested {display: none;}
+.tree-list .active {display: block;}
 
 /* PicProtect */
 .picprotect{position:relative; display:none;left:0;bottom:30%;width:100%;margin:auto;z-index:500;text-align:center;}
