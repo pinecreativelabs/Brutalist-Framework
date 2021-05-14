@@ -13,13 +13,13 @@
 	<meta name="twitter:description" content="Free open source CSS responsive grid for the brutalist web design trend.">
 	<meta name="twitter:creator" content="@brutalistfwk">
 	<!-- Twitter Summary card images must be at least 120x120px -->
-	<meta name="twitter:image" content="http://www.brutalistframework.com/core/files/images/bf22.jpg">
+	<meta name="twitter:image" content="http://www.brutalistframework.com/core/files/images/bf23.jpg">
 
 	<!-- Open Graph data -->
 	<meta property="og:title" content="Brutalist Framework || Grid" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://www.brutalistframework.com" />
-	<meta property="og:image" content="http://www.brutalistframework.com/core/files/images/bf22.jpg" />
+	<meta property="og:image" content="http://www.brutalistframework.com/core/files/images/bf23.jpg" />
 	<meta property="og:description" content="Free open source CSS responsive grid for the brutalist web design trend." /> 
 	<meta property="og:site_name" content="Brutalist Framework" />
 
@@ -526,7 +526,7 @@
 					<p class="padded"></p>
 					<div class="row" id="tiles"><div class="col-xs-12">
 						<h4 class="bold red-t lucida">Tiles</h4>
-						<p>Tiles are a simple way to make unordered lists into evenly divided inline blocks. Simply apply class <strong><em>tiles</em></strong> to any ul tag! By default, <em>li</em> tile items maxes out at 50% width. Tiles self-stretch to be the same height as other tiles on the same line.</p> 
+						<p style="margin-bottom: 1em;">Tiles are a simple way to make unordered lists into evenly divided inline blocks. Simply apply class <strong><em>tiles</em></strong> to any ul tag! By default, <em>li</em> tile items maxes out at 50% width. Tiles self-stretch to be the same height as other tiles on the same line.</p> 
 						<div class="row">
 							<div class="col-xs-12 col-sm-12 col-md-6">
 								<h5 class="charcoal-t lucida">Markup</h5>
@@ -573,6 +573,87 @@
 							</ul>
 						</div></div>
 					</div></div>
+					<p class="padded"></p>
+					<hr class="thick tomato" />
+					<p class="padded"></p>
+					<div class="row" id="grid"><div class="col-xs-12">
+						<h4 class="bold red-t lucida">CSS Grids</h4>
+						<p style="margin-bottom: 1em;">As an alternate method for creating layouts, we've included support for CSS grids. By default, items are inserted by row and have no gap.</p>
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-6">
+								<p class="info padded"><span class="flow-text bold">Grid</span><br />
+									<strong>.grid</strong> - REQUIRED wrapper for CSS grid layout<br />
+									<strong>.columns</strong> - insert items by column<br />
+									<strong>.gap</strong> - adds a 1em spacing gap between items<br /><br />
+									<span class="flow-text bold">Column Widths</span><br />
+									<strong>.col2</strong> - 2-column layout<br />
+									<strong>.col3</strong> - 3-column layout<br />
+									<strong>.col4</strong> - 4-column layout<br />
+									<strong>.col5</strong> - 5-column layout<br />
+									<strong>.col6</strong> - 6-column layout<br /><br />
+									<span class="flow-text bold">Row Heights</span><br />
+									<strong>.rh25</strong> - one quarter height of screen<br />
+									<strong>.rh33</strong> - one-third height of screen<br />
+									<strong>.rh50</strong> - half the height of screen<br />
+									<strong>.rh66</strong> - two-thirds height of screen<br />
+									<strong>.rh75</strong> - three-fourths height of screen<br />
+									<strong>.rh100</strong> - full height of screen<br />
+								</p>
+								<h5 class="charcoal-t lucida">Example Markup</h5>
+								<p>The below code will create a 3-column layout with rows occupying one-third of the height of the screen, with gap spacing added between items.</p>
+								<code class="padding smaller">
+									&lt;div class="<strong>grid col3 rh33 gap</strong>"&gt;<br />
+									&nbsp;&nbsp;&lt;div&gt;&nbsp;&nbsp;Item 1&nbsp;&nbsp;&lt;/div&gt;<br />
+									&nbsp;&nbsp;&lt;div&gt;&nbsp;&nbsp;Item 2&nbsp;&nbsp;&lt;/div&gt;<br />
+									&nbsp;&nbsp;&lt;div&gt;&nbsp;&nbsp;Item 3&nbsp;&nbsp;&lt;/div&gt;<br />
+									&lt;/div&gt;
+								</code>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-6">
+								<p class="warning padded"><span class="flow-text bold">Item Column Span</span><br />Span individual items across columns:<br />
+									<strong>.span2</strong> - span 2 columns<br />
+									<strong>.span3</strong> - span 3 columns<br />
+									<strong>.span4</strong> - span 4 columns<br />
+									<strong>.span5</strong> - span 5 columns<br /><br />
+									<span class="flow-text bold">Item Row Span</span><br />Span individual items across rows:<br />
+									<strong>.r-span2</strong> - span 2 rows<br />
+									<strong>.r-span3</strong> - span 3 rows<br />
+									<strong>.r-span4</strong> - span 4 rows<br />
+									<strong>.r-span5</strong> - span 5 rows<br /><br />
+									<span class="flow-text bold">Item Start</span><br />Determine which column the first item will start on:<br />
+									<strong>.start2</strong> - start on 2nd column<br />
+									<strong>.start3</strong> - start on 3rd column<br />
+									<strong>.start4</strong> - start on 4th column<br />
+									<strong>.start5</strong> - start on 5th column<br />
+								</p>
+								<h5 class="charcoal-t lucida">Example Markup</h5>
+								<p>The below code will create a 4-column layout, with the first item spanning two columns and starting on the 2nd colun.</p>
+								<code class="padding smaller">
+									&lt;div class="<strong>grid col4</strong>"&gt;<br />
+									&nbsp;&nbsp;&lt;div class="<strong>start2 span2</strong>"&gt;&nbsp;&nbsp;Item 1&nbsp;&nbsp;&lt;/div&gt;<br />
+									&nbsp;&nbsp;&lt;div&gt;&nbsp;&nbsp;Item 2&nbsp;&nbsp;&lt;/div&gt;<br />
+									&nbsp;&nbsp;&lt;div&gt;&nbsp;&nbsp;Item 3&nbsp;&nbsp;&lt;/div&gt;<br />
+									&nbsp;&nbsp;&lt;div&gt;&nbsp;&nbsp;Item 4&nbsp;&nbsp;&lt;/div&gt;<br />
+									&nbsp;&nbsp;&lt;div&gt;&nbsp;&nbsp;Item 5&nbsp;&nbsp;&lt;/div&gt;<br />
+									&lt;/div&gt;
+								</code>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-sm-12">
+								<h5 class="lucida charcoal-t">Grid Example</h5>
+								<div class="grid col4 empty">
+									<div class="sweden span2 start2"><strong>ITEM 1</strong><br />This item spans 2 columns, and starts on the 2nd one.</div>
+									<div class="yellow"><strong>Item 2</strong><br />Column heights are not defined in this example.</div>
+									<div class="orange"><strong>Item 3</strong><br />No gaps here, either.</div>
+									<div class="brown r-span2"><strong>Item 4</strong><br /><i class="bi bi-poop"></i> Poop box is so heavy with shit that it spans 2 rows. <i class="bi bi-poop"></i></div>
+									<div class="olive"><strong>Item 5</strong><br />Olive oil</div>
+									<div class="sand"><strong>Item 6</strong><br />Sandbox</div>
+									<div class="fire"><strong>Item 7</strong><br />This is the last item ever.</div>
+								</div>
+							</div>
+						</div>
+					</div></div>
 				</div>
 				<p class="padded"></p>
 			</div>
@@ -589,6 +670,7 @@
 									<li class="invert-h blue"><a href="#align" class="lime-t">-- Alignments</a></li>
 									<li class="invert-h blue"><a href="#dirs" class="lime-t">-- Directions</a></li>
 									<li class="invert-h blue"><a href="#tiles" class="lime-t">-- Tiles</a></li>
+									<li class="invert-h blue"><a href="#grid" class="lime-t">-- CSS Grid</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -601,11 +683,11 @@
 								<p class="bold">Subscribe to our e-newsletter. <span class="bigger">&raquo;</span></p>
 							</div>
 						</a>
-						<div class="padding vanilla-bean-t arial">
+						<div class="padding vanilla-t arial">
 							<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="green yellow-t invert-h">Pine Creative Labs</a> production</p>
 							<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="sweden invert-h">Brad Fogelstrom</span></a></p>
 							<ul class="tags">
-								<li><a href="http://www.twitter.com/brutalistfwk" target="_blank" class="btn white-t blue-candy hue-h"><strong>Twitter</strong></a></li>
+								<li><a href="http://www.twitter.com/brutalistfwk" target="_blank" class="btn white-t olympic hue-h"><strong>Twitter</strong></a></li>
 								<li><a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank" class="btn black white-t invert-h"><strong>GitHub</strong></a></li>
 							</ul>
 							<p class="white-t tahoma"><small>Brutalist Framework &copy; 2021</small></p>
@@ -627,7 +709,7 @@
 	</nav>
 	<a href="#download" data-modal-open>
 	<div class="skew sweden btn invert-h">
-		<p class="skew-right"><span class="flow-text impact">Download</span><br /><span class="lucida"><small>version 2.2</small></span></p>
+		<p class="skew-right"><span class="flow-text impact">Download</span><br /><span class="lucida"><small>version 2.3</small></span></p>
 	</div></a>
 </div>
 <!-- Download Modal -->
@@ -637,9 +719,10 @@
 			<div class="col-sm-12 no-padding">
 				<div class="padded lucida">
 					<h4>Begin the <span class="blink red-t">Brutality</span></h5>
-					<p>Released <strong>2/14/2021</strong></p>
-					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.2.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.2</a></p><hr class="jagged-rule-dark" />
+					<p>Released <strong>5/14/2021</strong></p>
+					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.3.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.3</a></p><hr class="jagged-rule-dark" />
 					<p style="font-size: 1.15em;"><strong><span style="font-size: 1.3em;">Archived Versions</span></strong><br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.2.zip" target="_blank">2.2</a> <small>(2/14/2021), 17mb</small><br />
 					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.1.zip" target="_blank">2.1</a> <small>(10/23/2020), 19mb</small><br />
 					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.0.zip" target="_blank">2.0.2.0</a> <small>(2/20/2020), 9.3mb</small><br />
 					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.9.zip" target="_blank">1.9</a> <small>(5/29/2019), 3.7mb</small><br />

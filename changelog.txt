@@ -1,50 +1,39 @@
 Brutalist Framework Changelog
-Version: 2.2
+Version: 2.3
 
 General:
-+ Reduced size of some images to reduce package size
++ Added browserconfig.xml to root directory for Microsoft icon support
 
 BELL:
 + (no changes)
 
 Flavors:
-+ Flavors: cinnamon, cranberry, scarlet, rose, sapphire, taffy, yam
-+ Combos: plush, mono-inv, pb-pickle, navy-fire
-+ Added ability to change flavor background color upon hover
++ New Flavors: sage, slime, fuchsia, apple, indigo, denim, flaxen, dijon
++ New Color Combos: seaweed-slime, steak-beer, sapphire-sky, midnight-sky, greek, blueprint
++ New Gradients: violence, viking, socialize, emptiness, clean, evergreen
++ Deprecated: blueberry-pomegranate, olive-mushroom
 
 BFX:
-+ Reworked Fittext - removed jQuery dependency and added new classes
-+ Updated Blink effect - removed jQuery dependency (purely CSS now) and added "strobe" 
-+ New "throb-throw" animation
-+ Updated spin animations
++ New TumbleText effect
++ New shift-glitch effect
++ Updated animated gradient classes
 
 BUIX:
-+ New "highlight" class
-+ Updated B-Loader
-+ Added "LoopScroll"
-+ New date/time picker for form input
-+ Form fieldset duplicator
-+ Credit card input with validation
-+ Account creation form with validation
++ New Tree List navigation element
 
 BUTCH:
-+ Updated box shadows
-+ Updated ul classes
-+ Updated Filters and Opacity
-+ Updated spacing classes
-+ Added fluid-text class
++ Added support for double borders & outlines
++ Added description lists support
++ Updated unordered lists
 
 Grid:
-+ New basic width and height classes
-+ Improved responsive behavior
-+ Various other improvements
++ Added CSS grid support
 
 bIcons:
-+ New icon sizes!
-+ 8 new icons: fill, grid, pinwheel, sparkle, core, lozenge, above, below
++ Over 30 new icons added
 
 Rebar:
-+ New device type visibility classes
++ Updated Device Type Visibility classes
 
 Boilerplates:
 + (no changes)

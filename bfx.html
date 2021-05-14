@@ -13,13 +13,13 @@
 	<meta name="twitter:description" content="A free open source CSS animations and effects library for the brutalist web design trend.">
 	<meta name="twitter:creator" content="@brutalistfwk">
 	<!-- Twitter Summary card images must be at least 120x120px -->
-	<meta name="twitter:image" content="http://www.brutalistframework.com/core/files/images/bf22.jpg">
+	<meta name="twitter:image" content="http://www.brutalistframework.com/core/files/images/bf23.jpg">
 
 	<!-- Open Graph data -->
 	<meta property="og:title" content="Brutalist Framework || BFX" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://www.brutalistframework.com" />
-	<meta property="og:image" content="http://www.brutalistframework.com/core/files/images/bf22.jpg" />
+	<meta property="og:image" content="http://www.brutalistframework.com/core/files/images/bf23.jpg" />
 	<meta property="og:description" content="A free open source CSS animations and effects library for the brutalist web design trend." /> 
 	<meta property="og:site_name" content="Brutalist Framework" />
 
@@ -120,34 +120,63 @@
 				<!-- END MEGAMENU -->
 				<div class="padding">
 					<h3 class="red-text courier-new fittext-compress" id="textfx">Text Effects</h3>
-					
 					<div class="row">
 						<div class="col-sm-12 col-md-6">
 							<!-- BAFFLE -->
-							<h4 class="red-text courier-new heavy">BAFFLE Text</h4>
-							<p class="charcoal-text arial brdr relay"><em>Baffle</em> adds an animated obfuscation effect to any text. <span class="heavy">Reload page to see effect.</span> Apply these baffling classes!</p>
-							<p class="lucida"><span class="baffle red-text bold">.baffle</span><span class="charcoal-text arial"> - Baffles once upon page load.</span></p>
-							<p class="lucida"><span class="baffle-longer red-text bold">.baffle-longer</span><span class="charcoal-text arial"> - Baffles once, but for a longer duration (3 seconds).</span></p>
-							<p class="lucida"><span class="baffle-prolonged bold red-text">.baffle-prolonged</span><span class="charcoal-text arial"> - Baffles for a prolonged period.</span></p>
-							<p class="lucidat"><span class="baffle-forever red-text bold">.baffle-forever</span><span class="charcoal-text arial"> - <em><strong>.baffle-forever</strong></em> - Baffles endlessly.</span></p>
+							<h4 class="red-t courier heavy">BAFFLE Text</h4>
+							<p class="charcoal-t arial"><em>Baffle</em> adds an animated obfuscation effect to any text. <span class="heavy">Reload page to see effect.</span> Apply these baffling classes!</p>
+							<div class="emptiness box-shadow padded center lucida">
+								<h4 class="baffle flow-text red-t">.baffle</h4>
+								<p class="grey-t">Baffles once upon page load</p>
+							</div>
+							<div class="emptiness box-shadow padded center lucida">
+								<h4 class="baffle-longer flow-text red-t">.baffle-longer</h4>
+								<p class="grey-t">Baffles once, but for a longer duration (3 seconds)</p>
+							</div>
+							<div class="emptiness box-shadow padded center lucida">
+								<h4 class="baffle-prolonged flow-text red-t">.baffle-prolonged</h4>
+								<p class="grey-t">Baffles for a prolonged period</p>
+							</div>
+							<div class="emptiness box-shadow padded center lucida">
+								<h4 class="flow-text red-t"><span class="baffle-forever">.baffle-forever</span><br />.baffle-forever</h4>
+								<p class="grey-t">Baffles endlessly</p>
+							</div>
 						</div>
 						<div class="col-sm-12 col-md-6">
-							<!-- BrutalText -->
-							<h4 class="red-text courier-new heavy">Brutal Text Effect</h4>
-							<p class="charcoal-text arial">Apply these classes to any text for a brutal text effect!</p>
-							<div class="charcoal box-shadow padding center">
-								<h4 class="brutal-text black-text">.brutal-text</h4>
-								<p class="grey-text heavy">Default brutal (black) text</p>
+							<h4 class="red-t courier heavy">TumbleText</h4>
+							<p class="charcoal-t arial">Tumble text characters either forward, backwards, or both! The tumble animation starts upon page load.</p>
+							<div class="padded passion center comic flow-text" style="padding-bottom: 1em; line-height: 100%;">
+								<span class="tumbletext forwards mauve-t" style="margin: 0; padding: 0;">M A U V E</span><br />
+								<span class="tumbletext backwards plum-t" style="margin: 0; padding: 0;">P L U M S</span><br />
+								<span class="tumbletext mixed grape-t" style="margin: 0; padding: 0;">G R A P E S</span>
 							</div>
-							<div class="charcoal box-shadow padding center">
-								<h4 class="brutal-text-mono blue-text">.brutal-text-mono</h4>
-								<p class="grey-text heavy">Brutal monochrome (blue) text</p>
+							<p class="padded info"><span class="flow-text bold">Classes</span><br /><strong>.tumbletext</strong> - apply to any text element<br />
+								<strong>.forwards</strong> - tumbles all characters forward<br /><strong>.backwards</strong> - tumbles all characters backward<br />
+								<strong>.mixed</strong> - combines both forward and backwards, alternating characters<br /><br />EXAMPLE: <strong>.tumbletext.mixed</strong>
+							</p>
+							<p class="padded warning"><strong>TIP: </strong>Make sure there is at least 1em of padding on the bottom of any parent element that contains tumbled text.</p>
+						</div>
+					</div>
+					<h4 class="red-t courier-new heavy">Text Shadow Effects</h4>
+					<div class="row">
+						<div class="col-sm-12 col-md-6">
+							<div class="emptiness box-shadow padded center">
+								<h4 class="brutal-text vanilla-t">.brutal-text</h4>
 							</div>
-							<div class="charcoal box-shadow padding center">
-								<h4 class="brutal-text-neon lime-text">.brutal-text-neon</h4>
-								<p class="vanilla-bean-text heavy">Brutal neon (lime) text</p>
+							<div class="padded emptiness box-shadow center">
+								<h4 class="brutal-text-mono vanilla-t">.brutal-text-mono</h4>
 							</div>
-
+							<div class="padded box-shadow emptiness center">
+								<h4 class="impact fittext neon-text white-t">.neon-text</h4>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6">
+							<div class="padded box-shadow emptiness center">
+								<h4 class="impact fittext cellophane white-t">.cellophane</h4>
+							</div>
+							<div class="padded box-shadow emptiness center">
+								<h4 class="impact fittext bitshadow white-t">.bitshadow</h4>
+							</div>
 						</div>
 					</div>
 					<!-- Chop Text -->
@@ -176,29 +205,29 @@
 						</div>
 					</div>
 					<!-- FITTEXT -->
-					<h4 class="red-t courier-new heavy">FITTEXT</h4>
+					<h4 class="red-t courier heavy">FITTEXT</h4>
 					<p class="charcoal-t arial"><em>Fittext</em> makes any text aggressively responsive, and scales the text in proportion to the window width.</p>
 					<div class="row">
 						<div class="col-sm-12 no-padding">
 							<div class="disabled padded">
 								<p class="lucida"><strong><span class="red-text">.fittext</span></strong> - Best scales text to fit within container.</p>
-								<p class="arial fittext blood-t-s">Brutalist Framework 2.2</p>
+								<p class="arial fittext blood-t-s">Brutalist Framework 2.3</p>
 							</div>
 							<div class="disabled padded" style="margin-top: 0.5em;">
 								<p class="lucida"><strong><span class="red-text">.fittext-c</span></strong> - Compress scaling of text size.</p>
-								<p class="arial fittext-c blood-t-s">Brutalist Framework 2.2</p>
+								<p class="arial fittext-c blood-t-s">Brutalist Framework 2.3</p>
 							</div>
 							<div class="disabled padded" style="margin-top: 0.5em;">
 								<p class="lucida"><strong><span class="red-text">.fittext-cc</span></strong> - Conservative compression of scaling text.</p>
-								<p class="arial fittext-cc blood-t-s">Brutalist Framework 2.2</p>
+								<p class="arial fittext-cc blood-t-s">Brutalist Framework 2.3</p>
 							</div>
 							<div class="disabled padded" style="margin-top: 0.5em;">
 								<p class="lucida"><strong><span class="red-text">.fittext-x</span></strong> - Expands scaling text aggressively.</p>
-								<p class="arial fittext-x blood-t-s">Brutalist Framework 2.2</p>
+								<p class="arial fittext-x blood-t-s">Brutalist Framework 2.3</p>
 							</div>
 							<div class="disabled padded" style="margin-top: 0.5em;">
 								<p class="lucida"><strong><span class="red-text">.fittext-xx</span></strong> - Extreme expansion of scaling text!!</p>
-								<p class="arial fittext-xx blood-t-s">Brutalist Framework 2.2</p>
+								<p class="arial fittext-xx blood-t-s">Brutalist Framework 2.3</p>
 							</div>
 						</div>
 					</div>
@@ -238,14 +267,19 @@
 					<div class="row">
 						<!-- Glitch -->
 						<div class="col-sm-12 col-md-6">
-							<h4 class="red-t courier heavy glitch">Glitch</h4>
-							<p class="charcoal-t arial">Add a glitch effect to any element! Works on images and text, or even entire areas! It is entirely CSS-based. Apply <strong><span class="blue-text">.glitch</span></strong> class to any element.</p>
+							<h4 class="red-t courier heavy emptiness glitch">.glitch</h4>
+							<p class="charcoal-t arial">Add a glitch effect to any element! Works on images and text, or even entire areas!</p>
 							<p class="flow-text lucida center"><strong><span class="glitch">Glitched</span> Circle Image</strong>
-								<img class="circle xlarge-thumb glitch border-dotted-thick blue-border" src="theme/default/files/images/brutal-building.jpg" alt="Original" />
+								<img class="circle xlarge-thumb glitch b-d-k blue-b" src="theme/default/files/images/brutal-building.jpg" alt="Original" />
 							</p>
 							<p class="flow-text charcoal-t courier"><strong>Glitched Paragraph</strong></p>
 							<p class="charcoal-t glitch arial">This is a rather glitchy paragraph. You could even baffle all your <span class="baffle-forever">firking</span> enemies!</p>
-							<p class="charcoal-t tahoma">This paragraph has just one <span class="glitch"><strong>glitched</strong></span> word, using the span tag.</p>
+
+							<h4 class="red-t courier heavy emptiness shift-glitch">.shift-glitch</h4>
+							<p class="charcoal-t arial">A more aggressive glitch effect than the above.</p>
+							<p class="flow-text center">
+								<img class="circle xlarge-thumb shift-glitch b-d-k blue-b" src="theme/default/files/images/brutal-building.jpg" alt="Original" />
+							</p>
 						</div>
 						
 						<!-- Blink -->
@@ -372,55 +406,62 @@
 				
 				<!-- ANIMATED BACKGROUNDS -->
 				<div class="padding">
-					<h3 class="red-text courier-new fittext-compress" id="animbg">Animated Backgrounds</h3>
+					<h3 class="red-t courier fittext-compress" id="animbg">Animated Backgrounds</h3>
 					<p class="charcoal-text arial" style="margin-bottom: 1.1em;">Apply these classes to add an animated gradient background to any element!</p>
 					<div class="row">
-						<div class="col-xs-12 col-sm-6 col-md-6 anim-bg-plain">
-							<div class="comfortable"><h4 class="lucida lime-text">.anim-bg-plain</h4></div>
+						<div class="col-xs-12 col-sm-6 col-md-6 gathering">
+							<div class="comfortable"><h4 class="lucida lime-t">.gathering</h4></div>
 						</div>
-						<div class="col-xs-12 col-sm-6 col-md-6 anim-bg-vampire">
-							<div class="comfortable"><h4 class="lucida black-text">.anim-bg-vampire</h4></div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12 col-sm-6 col-md-6 anim-bg-hot">
-							<div class="comfortable"><h4 class="lucida black-text">.anim-bg-hot</h4></div>
-						</div>
-						<div class="col-xs-12 col-sm-6 anim-bg-pastel">
-							<div class="comfortable"><h4 class="lucida black-text">.anim-bg-pastel</h4></div>
+						<div class="col-xs-12 col-sm-6 col-md-6 fright-night">
+							<div class="comfortable"><h4 class="lucida black-t">.fright-night</h4></div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-12 col-sm-6 col-md-6 anim-bg-water">
-							<div class="comfortable"><h4 class="lucida navy-blue-text">.anim-bg-water</h4></div>
+						<div class="col-xs-12 col-sm-6 col-md-6 heat">
+							<div class="comfortable"><h4 class="lucida black-t">.heat</h4></div>
 						</div>
-						<div class="col-xs-12 col-sm-6 col-md-6 anim-bg-shine">
-							<div class="comfortable"><h4 class="lucida black-text">.anim-bg-shine</h4></div>
+						<div class="col-xs-12 col-sm-6 pastelize">
+							<div class="comfortable"><h4 class="lucida black-t">.pastelize</h4></div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-12 col-sm-6 col-md-6 anim-bg-neon">
-							<div class="comfortable"><h4 class="lucida black-text">.anim-bg-neon</h4></div>
+						<div class="col-xs-12 col-sm-6 col-md-6 flood">
+							<div class="comfortable"><h4 class="lucida navy-t">.flood</h4></div>
 						</div>
-						<div class="col-xs-12 col-sm-6 col-md-6 anim-bg-earth">
-							<div class="comfortable"><h4 class="lucida black-text">.anim-bg-earth</h4></div>
+						<div class="col-xs-12 col-sm-6 col-md-6 shine">
+							<div class="comfortable"><h4 class="lucida black-t">.shine</h4></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-6 neon">
+							<div class="comfortable"><h4 class="lucida black-t">.neon</h4></div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 earthly">
+							<div class="comfortable"><h4 class="lucida black-t">.earthly</h4></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-6 psychedelic">
+							<div class="comfortable"><h4 class="lucida black-t">.psychedelic</h4></div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 infinitile">
+							<div class="comfortable"><h4 class="lucida blueberry-t">.infinitile</h4></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 no-padding">
+							<div class="brick-wrap swede-split bh50 center">
+								<h3 class="sweden lucida brick padded yellow-b b-b-k">.swede-split</h3>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="padding">
-					<div class="row infinitile">
-						<div class="col-sm-12">
-							<h4 class="lucida blueberry-text" style="margin-top: 2em;">.infinitile</h4>
-						</div>
-					</div>
-				</div>
-				
 				<p class="padding"></p>
 				<hr class="thick tomato" />
 				
 				<!-- RUMBLER -->
 				<div class="padding">
-					<h3 class="red-text courier-new rumble" id="rumbler">Rumbler</h3>
+					<h3 class="red-t courier rumble" id="rumbler">Rumbler</h3>
 					<div class="row">
 						<div class="col-sm-12 col-md-6">
 							<p class="rumble flow-text throb silver-blood bold tahoma allcaps">Let's get ready to rumble!</p>
@@ -430,15 +471,15 @@
 							<h4 class="lucida charcoal-t">Classes</h4>
 							<p class="rumble padded lime blue-t"><span class="bigger bold">.rumble</span><br />Constant rumbling!</p>
 							<p class="prumble padded blue lime-t" style="margin-top: 1em;"><span class="bigger bold">.prumble</span><br />Pulse rumble, constantly</p>
-							<p class="drunk padded grape-pool-water" style="margin-top: 1em;"><span class="bigger bold">.drunk</span><br />Aggressive constant rumble</p>
-							<p class="hyper padded blood banana-text" style="margin-top: 1em;"><span class="bigger bold">.hyper</span><br />Extra aggressive constant rumble</p>
+							<p class="drunk padded pool-party" style="margin-top: 1em;"><span class="bigger bold">.drunk</span><br />Aggressive constant rumble</p>
+							<p class="hyper padded blood banana-t" style="margin-top: 1em;"><span class="bigger bold">.hyper</span><br />Extra aggressive constant rumble</p>
 						</div>
 						<div class="col-sm-12 col-md-6">
 							<p class="crumble padded orange navy-t" style="margin-top: 1em;"><span class="bigger bold">.crumble</span><br />Rumble constantly on click</p>
 							<p class="trumble padded black red-t" style="margin-top: 1em;"><span class="bigger bold">.trumble</span><br />Triggered rumble on click for only 1.5 sec</p>
 							<p class="hrumble padded plum peach-t" style="margin-top: 1em;"><span class="bigger bold">.hrumble</span><br />Rumble upon hover</p>
 							<p class="mdrumble padded spinach-carrot" style="margin-top: 1em;"><span class="bigger bold">.mdrumble</span><br />Rumble on mousedown</p>
-							<p class="caffeinated padded coffee vanilla-bean-t" style="margin-top: 1em;"><span class="bigger bold">.caffeinated</span><br />Aggressive rumble on hover</p>
+							<p class="caffeinated padded coffee vanilla-t" style="margin-top: 1em;"><span class="bigger bold">.caffeinated</span><br />Aggressive rumble on hover</p>
 						</div>
 					</div>
 				</div>
@@ -448,7 +489,7 @@
 				
 				<!-- Blenders -->
 				<div class="padding">
-					<h3 class="red-text courier-new" id="blendr">Blenders</h3>
+					<h3 class="red-t courier" id="blendr">Blenders</h3>
 					<div class="row"><div class="col-sm-12 col-md-6">
 							<p class="padded">Blenders allow text or any other element to blend with its background.<br />
 							<span class="red-t">NOTE: Apply only one class per element. Combining multple classes together isn't possible (except <em>unblend</em>).</span><br />
@@ -536,7 +577,7 @@
 	</nav>
 	<a href="#download" data-modal-open>
 	<div class="skew sweden btn invert-h">
-		<p class="skew-right"><span class="flow-text impact">Download</span><br /><span class="lucida"><small>version 2.2</small></span></p>
+		<p class="skew-right"><span class="flow-text impact">Download</span><br /><span class="lucida"><small>version 2.3</small></span></p>
 	</div></a>
 </div>
 <!-- Download Modal -->
@@ -546,9 +587,10 @@
 			<div class="col-sm-12 no-padding">
 				<div class="padded lucida">
 					<h4>Begin the <span class="blink red-t">Brutality</span></h5>
-					<p>Released <strong>2/14/2021</strong></p>
-					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.2.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.2</a></p><hr class="jagged-rule-dark" />
+					<p>Released <strong>5/14/2021</strong></p>
+					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.3.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.3</a></p><hr class="jagged-rule-dark" />
 					<p style="font-size: 1.15em;"><strong><span style="font-size: 1.3em;">Archived Versions</span></strong><br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.2.zip" target="_blank">2.2</a> <small>(2/14/2021), 17mb</small><br />
 					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.1.zip" target="_blank">2.1</a> <small>(10/23/2020), 19mb</small><br />
 					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.0.zip" target="_blank">2.0.2.0</a> <small>(2/20/2020), 9.3mb</small><br />
 					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.9.zip" target="_blank">1.9</a> <small>(5/29/2019), 3.7mb</small><br />

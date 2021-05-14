@@ -13,13 +13,13 @@
 	<meta name="twitter:description" content="A free open source CSS library for the brutalist web design trend.">
 	<meta name="twitter:creator" content="@brutalistfwk">
 	<!-- Twitter Summary card images must be at least 120x120px -->
-	<meta name="twitter:image" content="http://www.brutalistframework.com/core/files/images/bf22.jpg">
+	<meta name="twitter:image" content="http://www.brutalistframework.com/core/files/images/bf23.jpg">
 
 	<!-- Open Graph data -->
 	<meta property="og:title" content="Brutalist Framework || BUTCH" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://www.brutalistframework.com" />
-	<meta property="og:image" content="http://www.brutalistframework.com/core/files/images/bf22.jpg" />
+	<meta property="og:image" content="http://www.brutalistframework.com/core/files/images/bf23.jpg" />
 	<meta property="og:description" content="A free open source CSS library for the brutalist web design trend." /> 
 	<meta property="og:site_name" content="Brutalist Framework" />
 
@@ -125,7 +125,7 @@
 						<div class="row">
 							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 charcoal-t">
 								<!-- Font Families -->
-								<h4 class="white-t courier flow-text charcoal">Font Family Classes</h4>
+								<h4 class="white-t courier charcoal flow-text">Font Family Classes</h4>
 								<p class="arial">.arial</p>
 								<p class="arial-black">.arial-black</p>
 								<p class="comic">.comic</p>
@@ -213,6 +213,13 @@
 								<blockquote>
 									New brutalism, inevitably, in global dissemination, degenerated into a rough concrete style.
 								</blockquote>
+								<p class="white-t flow-text charcoal courier">Description Lists</p>
+								<dl>
+									<dt>Term</dt>
+									<dd>Description</dd>
+									<dt>Concrete</dt>
+									<dd>Cement, air, water, gravel, sand</dd>
+								</dl>
 							</div>
 							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 								<p class="white-t flow-text charcoal courier">Unordered Lists</p>
@@ -232,6 +239,12 @@
 										</ul>
 										<p><strong>ul.fisheye</strong></p>
 										<ul class="fisheye">
+											<li>Item 1</li>
+											<li>Item 2</li>
+											<li>Item 3</li>
+										</ul>
+										<p><strong>ul.check</strong></p>
+										<ul class="check">
 											<li>Item 1</li>
 											<li>Item 2</li>
 											<li>Item 3</li>
@@ -256,6 +269,12 @@
 											<li>Item 2</li>
 											<li>Item 3</li>
 										</ul>
+										<p><strong>ul.xmark</strong></p>
+										<ul class="xmark">
+											<li>Item 1</li>
+											<li>Item 2</li>
+											<li>Item 3</li>
+										</ul>
 									</div>
 									<div class="col-xs-12 col-sm-4 col-md-4">
 										<p><strong>ul.square</strong></p>
@@ -272,6 +291,12 @@
 										</ul>
 										<p><strong>ul.lozenge</strong></p>
 										<ul class="lozenge">
+											<li>Item 1</li>
+											<li>Item 2</li>
+											<li>Item 3</li>
+										</ul>
+										<p><strong>ul.arrow</strong></p>
+										<ul class="arrow">
 											<li>Item 1</li>
 											<li>Item 2</li>
 											<li>Item 3</li>
@@ -296,6 +321,13 @@
 										</ul>
 										<p><span class="bigger bold">ul.tags-check</span> - prepends a checkmark to tags</p>
 										<ul class="tags-check">
+											<li>Brutalism</li>
+											<li>Concrete</li>
+											<li>Architecture</li>
+											<li>Structures</li>
+										</ul>
+										<p><span class="bigger bold">ul.tags-xmark</span> - prepends an x-mark to tags</p>
+										<ul class="tags-xmark">
 											<li>Brutalism</li>
 											<li>Concrete</li>
 											<li>Architecture</li>
@@ -409,23 +441,23 @@
 						</div><div class="spacer"></div>
 						<div class="row">
 							<div class="col-xs-12 col-sm-12 col-md-4">
-								<div class="disabled padding">
+								<div class="disabled padded">
 									<p><span class="bigger">More Column Classes</span><br />
 									<strong>.col5</strong> - 5 columns<br /><strong>.col6</strong> - 6 columns<br /><strong>.col7</strong> - 7 columns<br /><strong>.col8</strong> - 8 columns<br /><strong>.col9</strong> - 9 columns</p>
 								</div>
 							</div>
 							<div class="col-xs-12 col-sm-12 col-md-4">
-								<div class="info padding">
-									<p><strong>Column Padding</strong> - Add 10, 20, 30, 40, 50, or 60px of padding between columns</p>
-									<p class="bold">.pad10<br />.pad20<br />.pad30<br />.pad40<br />.pad50<br />.pad60</p>
+								<div class="info padded">
+									<p><strong>Column Gaps</strong> - Add 10, 20, 30, 40, 50, or 60px gaps between columns</p>
+									<p class="bold">.gap10<br />.gap20<br />.gap30<br />.gap40<br />.gap50<br />.gap60</p>
 								</div>
 							</div>
 							<div class="col-xs-12 col-sm-12 col-md-4">
-								<div class="ready padding">
-									<p><strong>EXAMPLE:</strong> White justified arial text within a 3-column layout with 30px padding between columns, with double spacing and an indent.</p>
-									<p class="black-t"><strong>&lt;p class="white-text justify arial-text triple-col pad30 dbl-spaced indent"&gt;...&lt;/p&gt;</strong></p>
+								<div class="ready padded">
+									<p><strong>EXAMPLE:</strong> White justified arial text within a 3-column layout with 30px gaps between columns, with double spacing and an indent.</p>
+									<p class="black-t"><strong>&lt;p class="white-t justify arial triple-col gap30 dbl-spaced indent"&gt;...&lt;/p&gt;</strong></p>
 								</div>
-								<p class="padding"></p>
+								<p class="padded"></p>
 							</div>
 						</div>
 					</div>
@@ -649,33 +681,38 @@
 						<p class="white-t courier flow-text"><span class="charcoal allcaps"><strong>Basic Borders</strong></span></p>
 						<p class="charcoal-t arial">Basic borders can have flavors applied! Check out <em>Flavors</em> to see how to change the border color.<br /><br /></p>
 						<div class="row charcoal-t arial">
-							<div class="col-xs-12 col-sm-12 col-md-4">
-								<p class="brdr-s-t black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.brdr-s-t</strong><br /><small>Solid thin border</small></p>
-								<p class="brdr-s-k black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.brdr-s-k</strong><br /><small>Solid thick border</small></p>
-								<p class="brdr-s-f black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.brdr-s-f</strong><br /><small>Solid fat border</small></p>
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<p class="b-s-t black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-s-t</strong><br /><small>Solid thin border</small></p>
+								<p class="b-s-k black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-s-k</strong><br /><small>Solid thick border</small></p>
+								<p class="b-s-f black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-s-f</strong><br /><small>Solid fat border</small></p>
 							</div>
-							<div class="col-xs-12 col-sm-12 col-md-4">
-								<p class="brdr-d-t black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.brdr-d-t</strong><br /><small>Dotted thin border</small></p>
-								<p class="brdr-d-k black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.brdr-d-k</strong><br /><small>Dotted thick border</small></p>
-								<p class="brdr-d-f black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.brdr-d-f</strong><br /><small>Dotted fat border</small></p>
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<p class="b-d-t black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-d-t</strong><br /><small>Dotted thin border</small></p>
+								<p class="b-d-k black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-d-k</strong><br /><small>Dotted thick border</small></p>
+								<p class="b-d-f black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-d-f</strong><br /><small>Dotted fat border</small></p>
 							</div>
-							<div class="col-xs-12 col-sm-12 col-md-4">
-								<p class="brdr-a-t black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.brdr-a-t</strong><br /><small>Dashed thin border</small></p>
-								<p class="brdr-a-k black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.brdr-a-k</strong><br /><small>Dashed thick border</small></p>
-								<p class="brdr-a-f black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.brdr-a-f</strong><br /><small>Dashed fat border</small></p>
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<p class="b-a-t black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-a-t</strong><br /><small>Dashed thin border</small></p>
+								<p class="b-a-k black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-a-k</strong><br /><small>Dashed thick border</small></p>
+								<p class="b-a-f black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-a-f</strong><br /><small>Dashed fat border</small></p>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<p class="b-b-t black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-b-t</strong><br /><small>Double thin border</small></p>
+								<p class="b-b-k black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-b-k</strong><br /><small>Double thick border</small></p>
+								<p class="b-b-f black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-b-f</strong><br /><small>Double fat border</small></p>
 							</div>
 						</div>
 						<p class="white-t courier flow-text"><span class="charcoal allcaps"><strong>Outlines</strong></span></p>
-						<p class="charcoal-text arial" style="margin-bottom: 1em;">Add an outline border around any element. You can apply both borders and outlines to the same element. Similar to the border classes above, use <em>ol</em> in place of <em>brdr</em>. Below are some examples.</p>
+						<p class="charcoal-t arial" style="margin-bottom: 1em;">Add an outline border around any element. You can apply both borders and outlines to the same element. Similar to the border classes above, use <strong><em>o</em></strong> in place of <strong><em>b</em></strong>. Below are some examples.</p>
 						<div class="row charcoal-t arial">
 							<div class="col-xs-12 col-sm-12 col-md-4">
-								<p class="brdr-s-t ol-a-k red-b blue-o" style="margin-bottom: 1.5em; padding: 0.5em;"><strong>.brdr-s-t .ol-a-k</strong><br /><small>Solid thin red border with thick dashed blue outline</small></p>
-								<p class="strawberry-banana ol-d-k chocolate-o os-5" style="margin-bottom: 1.75em; padding: 0.5em;"><strong>.ol-d-k .os-5</strong><br /><small>Strawberry banana box with chocolate outline, offset by 5px</small></p>
+								<p class="b-s-t o-a-k red-b blue-o" style="margin-bottom: 1.5em; padding: 0.5em;"><strong>.b-s-t .o-a-k</strong><br /><small>Solid thin red border with thick dashed blue outline</small></p>
+								<p class="strawberry-banana o-d-k chocolate-o os-5" style="margin-bottom: 1.75em; padding: 0.5em;"><strong>.o-d-k .os-5</strong><br /><small>Strawberry banana box with chocolate outline, offset by 5px</small></p>
 							</div>
 							<div class="col-xs-12 col-sm-12 col-md-4">
-								<p class="ol-d-t red-o blue-b brdr-s-t" style="margin-bottom: 1.5em; padding: 0.5em;"><strong>.ol-d-t .brdr-s-t</strong></p>
-								<p class="brdr-a-k purple-b red-o ol-s-t os-5 rounded" style="margin-bottom: 1.5em; padding: 0.5em;"><strong>.brdr-a-k .ol-s-t .os-5 .rounded</strong></p>
-								<p class="brdr-a-t black-b ol-a-t black-o os-2" style="margin-bottom: 1em; padding: 0.5em;"><strong>.brdr-a-t .ol-a-t .os-2</strong></p>
+								<p class="o-d-t red-o blue-b b-s-t" style="margin-bottom: 1.5em; padding: 0.5em;"><strong>.o-d-t .b-s-t</strong></p>
+								<p class="b-a-k purple-b red-o o-s-t os-5 rounded" style="margin-bottom: 1.5em; padding: 0.5em;"><strong>.b-a-k .o-s-t .os-5 .rounded</strong></p>
+								<p class="b-a-t black-b o-a-t black-o os-2" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-a-t .o-a-t .os-2</strong></p>
 							</div>
 							<div class="col-xs-12 col-sm-12 col-md-4">
 								<p class="info padded"><strong>Offset Outlines</strong><br />Offset outline borders by 2, 5, 10, 15, or 20px. Use these classes:<br />
@@ -1003,7 +1040,7 @@
 							<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="green yellow-t invert-h">Pine Creative Labs</a> production</p>
 							<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-t invert-h">Brad Fogelstrom</span></a></p>
 							<ul class="tags">
-								<li><a href="http://www.twitter.com/brutalistfwk" target="_blank" class="btn white-t blue-candy hue-h"><strong>Twitter</strong></a></li>
+								<li><a href="http://www.twitter.com/brutalistfwk" target="_blank" class="btn white-t olympic hue-h"><strong>Twitter</strong></a></li>
 								<li><a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank" class="btn black white-t invert-h"><strong>GitHub</strong></a></li>
 							</ul>
 							<p class="white-t tahoma"><small>Brutalist Framework &copy; 2021</small></p>
@@ -1026,7 +1063,7 @@
 	</nav>
 	<a href="#download" data-modal-open>
 	<div class="skew sweden btn invert-h">
-		<p class="skew-right"><span class="flow-text impact">Download</span><br /><span class="lucida"><small>version 2.2</small></span></p>
+		<p class="skew-right"><span class="flow-text impact">Download</span><br /><span class="lucida"><small>version 2.3</small></span></p>
 	</div></a>
 </div>
 
@@ -1037,9 +1074,10 @@
 			<div class="col-sm-12 no-padding">
 				<div class="padded lucida">
 					<h4>Begin the <span class="blink red-t">Brutality</span></h5>
-					<p>Released <strong>2/14/2021</strong></p>
-					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.2.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.2</a></p><hr class="jagged-rule-dark" />
+					<p>Released <strong>5/14/2021</strong></p>
+					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.3.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.3</a></p><hr class="jagged-rule-dark" />
 					<p style="font-size: 1.15em;"><strong><span style="font-size: 1.3em;">Archived Versions</span></strong><br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.2.zip" target="_blank">2.2</a> <small>(2/14/2021), 17mb</small><br />
 					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.1.zip" target="_blank">2.1</a> <small>(10/23/2020), 19mb</small><br />
 					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.0.zip" target="_blank">2.0.2.0</a> <small>(2/20/2020), 9.3mb</small><br />
 					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.9.zip" target="_blank">1.9</a> <small>(5/29/2019), 3.7mb</small><br />

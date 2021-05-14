@@ -13,13 +13,13 @@
 	<meta name="twitter:description" content="Responsive Breakpoint Assistance Reference. Open source CSS library for responsive behavior.">
 	<meta name="twitter:creator" content="@brutalistfwk">
 	<!-- Twitter Summary card images must be at least 120x120px -->
-	<meta name="twitter:image" content="http://www.brutalistframework.com/core/files/images/bf22.jpg">
+	<meta name="twitter:image" content="http://www.brutalistframework.com/core/files/images/bf23.jpg">
 
 	<!-- Open Graph data -->
 	<meta property="og:title" content="Brutalist Framework || ReBAR" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://www.brutalistframework.com" />
-	<meta property="og:image" content="http://www.brutalistframework.com/core/files/images/bf22.jpg" />
+	<meta property="og:image" content="http://www.brutalistframework.com/core/files/images/bf23.jpg" />
 	<meta property="og:description" content="Responsive Breakpoint Assistance Reference. Open source CSS library for responsive behavior." /> 
 	<meta property="og:site_name" content="Brutalist Framework" />
 
@@ -223,30 +223,31 @@
 				<!-- Width-Based Breakpoint Ranges -->
 				<div class="padded">
 					<h3 class="tomato-t courier" id="wrange">Width-Based Breakpoint Ranges</h3>
-					
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-6 no-padding">
-							<p class="charcoal-t lucida">Use these classes to show or hide elements within a specific range of screen size, where the first number is the min-width, and the 2nd number is the max-width.</p>
-							<div class="info padded bold">
-								<p>.hide-240-320<br />.show-240-320</p>
-								<hr />
-								<p>.hide-320-480<br />.show-320-480</p>
-								<hr />
-								<p>.hide-360-480<br />.show-360-480</p>
-								<hr />
-								<p>.hide-480-540<br />.show-480-540</p>
-								<hr />
-								<p>.hide-540-640<br />.show-540-640</p>
-								<hr />
-								<p>.hide-640-768<br />.show-640-768</p>
-								<hr />
-								<p>.hide-768-960<br />.show-768-960</p>
-								<hr />
-								<p>.hide-960-1024<br />.show-960-1024</p>
-								<hr />
-								<p>.hide-1024-1280<br />.show-1024-1280</p>
-								<hr />
-								<p>.hide-1280-1366<br />.show-1280-1366</p>
+							<div class="padded">
+								<p class="charcoal-t lucida">Use these classes to show or hide elements within a specific range of screen size, where the first number is the min-width, and the 2nd number is the max-width.</p>
+								<div class="info padded bold">
+									<p>.hide-240-320<br />.show-240-320</p>
+									<hr />
+									<p>.hide-320-480<br />.show-320-480</p>
+									<hr />
+									<p>.hide-360-480<br />.show-360-480</p>
+									<hr />
+									<p>.hide-480-540<br />.show-480-540</p>
+									<hr />
+									<p>.hide-540-640<br />.show-540-640</p>
+									<hr />
+									<p>.hide-640-768<br />.show-640-768</p>
+									<hr />
+									<p>.hide-768-960<br />.show-768-960</p>
+									<hr />
+									<p>.hide-960-1024<br />.show-960-1024</p>
+									<hr />
+									<p>.hide-1024-1280<br />.show-1024-1280</p>
+									<hr />
+									<p>.hide-1280-1366<br />.show-1280-1366</p>
+								</div>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-6 no-padding">
@@ -254,22 +255,32 @@
 								<h4 class="lucida red-t flow-text">Device Type Visibility</h4>
 								<p class="charcoal-t lucida">Show or hide elements based on the type of device size range.</p>
 								<div class="info padded">
-									<p><b>.hide-on-desktop</b> - Hide on screens 1441px and up<br /><b>.show-on-desktop</b> - Show on screens 1441px and up</p>
+									<p><b>.hide-on-tv / .hide-on-xlarge</b><br /><small>Hide on screens 1201px and up</small><br />
+									<b>.show-on-tv / .show-on-xlarge</b><br /><small>Show on screens 1201px and up</small></p>
 									<hr />
-									<p><b>.hide-on-laptop</b> - Hide on screens 1025 - 1440px<br /><b>.show-on-laptop</b> - Show on screens 1025 - 1440px</p>
+									<p><b>.hide-on-desktop / .hide-on-large</b><br /><small>Hide on screens 1025 - 1200px</small><br />
+									<b>.show-on-desktop / .show-on-large</b><br /><small>Show on screens 1025 - 1200px</small></p>
 									<hr />
-									<p><b>.hide-on-tablet</b> - Hide on screens 601 - 1024px<br /><b>.show-on-tablet</b> - Show on screens 601 - 1024px</p>
+									<p><b>.hide-on-laptop / .hide-on-medium</b><br /><small>Hide on screens 769 - 1024px</small><br />
+									<b>.show-on-laptop / .show-on-medium</b><br /><small>Show on screens 769 - 1024px</small></p>
 									<hr />
-									<p><b>.hide-on-phone</b> - Hide on screens 600px and down<br /><b>.show-on-phone</b> - Show on screens 600px and down</p>
+									<p><b>.hide-on-tablet / .hide-on-small</b><br /><small>Hide on screens 481 - 768px</small><br />
+									<b>.show-on-tablet / .show-on-small</b><br /><small>Show on screens 481 - 768px</small></p>
+									<hr />
+									<p><b>.hide-on-mobile / .hide-on-xsmall</b><br /><small>Hide on screens 480px and down</small><br />
+									<b>.show-on-mobile / .show-on-xsmall</b><br /><small>Show on screens 480px and down</small></p>
 								</div>
-								<p class="padded"></p>
-								<h4 class="lucida red-t flow-text">Example</h4>
-								<p class="charcoal-t lucida">We may wish to hide a block only on screens that are between 320 and 480px, as well as between 768 and 1024px. At all other sizes, the block will be always visible. To do this, we just need to use these classes:</p>
-								<div class="ready padded heavy">.hide-320-480 .hide-768-960 .hide-960-1024</div>
-								<!-- Hide this box at various screen size ranges -->
-								<div class="padded success hide-320-480 hide-768-960 hide-960-1024">
-									<p class="center">This box is hidden when the screen width is between 320 and 480px, <em>as well as</em> between 960 and 1024px.</p>
-								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<h4 class="lucida red-t flow-text">Example</h4>
+							<p class="charcoal-t lucida">We may wish to hide a block only on screens that are between 320 and 480px, as well as between 768 and 1024px. At all other sizes, the block will be always visible. To do this, we just need to use these classes:</p>
+							<div class="ready padded heavy">.hide-320-480 .hide-768-960 .hide-960-1024</div>
+							<!-- Hide this box at various screen size ranges -->
+							<div class="padded success hide-320-480 hide-768-960 hide-960-1024">
+								<p class="center">This box is hidden when the screen width is between 320 and 480px, <em>as well as</em> between 960 and 1024px.</p>
 							</div>
 						</div>
 					</div>
@@ -428,12 +439,12 @@
 								<p class="bold">Subscribe to our e-newsletter. <span class="bigger">&raquo;</span></p>
 							</div>
 						</a>
-						<div class="padding vanilla-bean-text arial">
+						<div class="padding vanilla-t arial">
 							<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="green yellow-text invert-hover">Pine Creative Labs</a> production</p>
-							<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-text invert-hover">Brad Fogelstrom</span></a></p>
+							<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-t invert-hover">Brad Fogelstrom</span></a></p>
 							<ul class="tags">
-								<li><a href="http://www.twitter.com/brutalistfwk" target="_blank" class="btn white-text blue-candy hue-hover"><strong>Twitter</strong></a></li>
-								<li><a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank" class="btn black white-text invert-hover"><strong>GitHub</strong></a></li>
+								<li><a href="http://www.twitter.com/brutalistfwk" target="_blank" class="btn white-text olympic hue-hover"><strong>Twitter</strong></a></li>
+								<li><a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank" class="btn black white-t invert-hover"><strong>GitHub</strong></a></li>
 							</ul>
 							<p class="white-t tahoma"><small>Brutalist Framework &copy; 2021</small></p>
 						</div>
@@ -454,7 +465,7 @@
 	</nav>
 	<a href="#download" data-modal-open>
 	<div class="skew sweden btn invert-h">
-		<p class="skew-right"><span class="flow-text impact">Download</span><br /><span class="lucida"><small>version 2.2</small></span></p>
+		<p class="skew-right"><span class="flow-text impact">Download</span><br /><span class="lucida"><small>version 2.3</small></span></p>
 	</div></a>
 </div>
 <!-- Download Modal -->
@@ -464,9 +475,10 @@
 			<div class="col-sm-12 no-padding">
 				<div class="padded lucida">
 					<h4>Begin the <span class="blink red-t">Brutality</span></h5>
-					<p>Released <strong>2/14/2021</strong></p>
-					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.2.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.2</a></p><hr class="jagged-rule-dark" />
+					<p>Released <strong>5/14/2021</strong></p>
+					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.3.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.3</a></p><hr class="jagged-rule-dark" />
 					<p style="font-size: 1.15em;"><strong><span style="font-size: 1.3em;">Archived Versions</span></strong><br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.2.zip" target="_blank">2.2</a> <small>(2/14/2021), 17mb</small><br />
 					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.1.zip" target="_blank">2.1</a> <small>(10/23/2020), 19mb</small><br />
 					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.0.zip" target="_blank">2.0.2.0</a> <small>(2/20/2020), 9.3mb</small><br />
 					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.9.zip" target="_blank">1.9</a> <small>(5/29/2019), 3.7mb</small><br />

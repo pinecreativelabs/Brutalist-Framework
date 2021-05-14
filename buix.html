@@ -13,13 +13,13 @@
 	<meta name="twitter:description" content="A free open source CSS and javascript UI and UX library for the brutalist web design trend.">
 	<meta name="twitter:creator" content="@brutalistfwk">
 	<!-- Twitter Summary card images must be at least 120x120px -->
-	<meta name="twitter:image" content="http://www.brutalistframework.com/core/files/images/bf22.jpg">
+	<meta name="twitter:image" content="http://www.brutalistframework.com/core/files/images/bf23.jpg">
 
 	<!-- Open Graph data -->
 	<meta property="og:title" content="Brutalist Framework || BUIX" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://www.brutalistframework.com" />
-	<meta property="og:image" content="http://www.brutalistframework.com/core/files/images/bf22.jpg" />
+	<meta property="og:image" content="http://www.brutalistframework.com/core/files/images/bf23.jpg" />
 	<meta property="og:description" content="A free open source CSS and javascript UI and UX library for the brutalist web design trend." /> 
 	<meta property="og:site_name" content="Brutalist Framework" />
 
@@ -802,15 +802,15 @@
 				<!-- SIMPLE MENU -->
 				<div class="padding">
 					<h3 class="red-t lucida" id="simplemenu">Navigation</h3>
-					<h4 class="red-t lucida">Simple Menu</h4>
-					<p class="charcoal-t arial">A pure CSS menu that displays an optional description upon hover over each item.</p>
 					<div class="row">
 						<div class="col-sm-12 col-md-6 col-lg-6">
+							<h4 class="red-t lucida">Simple Menu</h4>
+							<p class="charcoal-t arial">A pure CSS menu that displays an optional description upon hover over each item.</p>
 							<h4 class="charcoal-t courier">Default View</h4>
 							<ul class="simple-nav lucida">
-								<li><a href="#">Link 1 <span>Description text for item 1.</span></a></li>
-								<li><a href="#">Link 2 <span>Description text for item 2.</span></a></li>
-								<li><a href="#">Link 3 <span>Description text for item 3.</span></a>
+								<li><a href="#">Link 1 <span class="des">Description text for item 1.</span></a></li>
+								<li><a href="#">Link 2 <span class="des">Description text for item 2.</span></a></li>
+								<li><a href="#">Link 3 <span class="des">Description text for item 3.</span></a>
 									<ul>
 										<li><a href="#">Sub-Page 1</a>
 											<ul>
@@ -822,24 +822,62 @@
 										<li><a href="#">Sub-Page 3</a></li>
 									</ul>
 								</li>
-								<li><a href="#">Link 4 <span>Description text for item 4.</span></a></li>
-								<li><a href="#">Link 5 <span>Description text for item 5.</span></a></li>
+								<li><a href="#">Link 4 <span class="des">Description text for item 4.</span></a></li>
+								<li><a href="#">Link 5 <span class="des">Description text for item 5.</span></a></li>
 							</ul>
-						</div>
-						<div class="col-sm-12 col-md-6 col-lg-6">
 							<h4 class="charcoal-t courier">Markup</h4>
 							<code class="black lime-t lucida padded smaller">
 								&lt;ul class="simple-nav"&gt;<br />
 								&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;List Item<br />
-								&nbsp;&nbsp;&nbsp;&lt;span&gt;Description text&lt;/span&gt;&lt;/a&gt;<br />
+								&nbsp;&nbsp;&nbsp;&lt;span class="desc"&gt;Description text&lt;/span&gt;&lt;/a&gt;<br />
 								&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br />
 								&lt;/ul&gt;
 							</code>
-							
+						</div>
+						<!-- TREE LIST -->
+						<div class="col-sm-12 col-md-6 col-lg-6">
+							<h4 class="red-t lucida">Tree List</h4>
+							<p class="charcoal-t arial">Create a nested tree list menu for unordered lists. Child items can be toggled. Each parent item will need to be wrapped in a span with class of <strong><em>parent</em></strong>. Unlimited child levels are supported.</p>
+							<h4 class="charcoal-t courier">Default View</h4>
+							<ul class="tree-list">
+								<li><span class="parent">Category 1</span>
+									<ul class="nested">
+									  <li>Child 1</li>
+									  <li>Child 2</li>
+									  <li><span class="parent">Child 3</span>
+										<ul class="nested">
+										  <li>Grandchild 1</li>
+										  <li>Grandchild 2</li>
+										  <li><span class="parent">Grandchild 3</span>
+											<ul class="nested">
+											  <li>Descendant 1</li>
+											  <li>Descendant 2</li>
+											  <li>Descendant 3</li>
+											</ul>
+										  </li>
+										</ul>
+									  </li>  
+									</ul>
+								</li>
+								<li><span class="parent">Category 2</span>
+									<ul class="nested">
+										<li>Sub-Category 1</li><li>Sub-Category 2</li>
+									</ul>
+								</li>
+								<li>Category 3 <em>(no children)</em></li>
+							</ul>
+							<h4 class="charcoal-t courier">Markup</h4>
+							<code class="black lime-t lucida padded smaller">
+								&lt;ul class="tree-list"&gt;<br />
+								&nbsp;&nbsp;&lt;li&gt;&lt;span class="parent"&gt;Parent Item&lt;/span&gt;<br />
+								&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;child item&lt;/li&gt;<br />
+								&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br />
+								&nbsp;&nbsp;&lt;/li&gt;<br />&lt;/ul&gt;
+							</code>
 						</div>
 					</div>
-					
 				</div>	
+				
 				<p class="padding"></p>
 				<hr class="thick tomato"/>
 				<!-- THUMBNAILS -->
@@ -1322,10 +1360,10 @@
 						</a>
 						<div class="padding vanilla-bean-t arial">
 							<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="green yellow-text invert-hover">Pine Creative Labs</a> production</p>
-							<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-text invert-hover">Brad Fogelstrom</span></a></p>
+							<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-t invert-hover">Brad Fogelstrom</span></a></p>
 							<ul class="tags">
-								<li><a href="http://www.twitter.com/brutalistfwk" target="_blank" class="btn white-text blue-candy hue-hover"><strong>Twitter</strong></a></li>
-								<li><a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank" class="btn black white-text invert-hover"><strong>GitHub</strong></a></li>
+								<li><a href="http://www.twitter.com/brutalistfwk" target="_blank" class="btn white-t olympic hue-hover"><strong>Twitter</strong></a></li>
+								<li><a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank" class="btn black white-t invert-hover"><strong>GitHub</strong></a></li>
 							</ul>
 							<p class="white-t tahoma"><small>Brutalist Framework &copy; 2021</small></p>
 						</div>
@@ -1346,7 +1384,7 @@
 	</nav>
 	<a href="#download" data-modal-open>
 	<div class="skew sweden btn invert-h">
-		<p class="skew-right"><span class="flow-text impact">Download</span><br /><span class="lucida"><small>version 2.2</small></span></p>
+		<p class="skew-right"><span class="flow-text impact">Download</span><br /><span class="lucida"><small>version 2.3</small></span></p>
 	</div></a>
 </div>
 
@@ -1357,9 +1395,10 @@
 			<div class="col-sm-12 no-padding">
 				<div class="padded lucida">
 					<h4>Begin the <span class="blink red-t">Brutality</span></h5>
-					<p>Released <strong>2/14/2021</strong></p>
-					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.2.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.2</a></p><hr class="jagged-rule-dark" />
+					<p>Released <strong>5/14/2021</strong></p>
+					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.3.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.3</a></p><hr class="jagged-rule-dark" />
 					<p style="font-size: 1.15em;"><strong><span style="font-size: 1.3em;">Archived Versions</span></strong><br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.2.zip" target="_blank">2.2</a> <small>(2/14/2021), 17mb</small><br />
 					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.1.zip" target="_blank">2.1</a> <small>(10/23/2020), 19mb</small><br />
 					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.0.zip" target="_blank">2.0.2.0</a> <small>(2/20/2020), 9.3mb</small><br />
 					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.9.zip" target="_blank">1.9</a> <small>(5/29/2019), 3.7mb</small><br />
