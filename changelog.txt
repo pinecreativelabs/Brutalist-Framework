@@ -1,6 +1,8 @@
 Brutalist Framework Changelog
-Version: 2.3
+Version: 2.3.1 Update
+Grid system is replaced with Blueprint Grid (http://www.blueprintgrid.com) 
 
+Version 2.3
 General:
 + Added browserconfig.xml to root directory for Microsoft icon support
 
@@ -25,9 +27,6 @@ BUTCH:
 + Added support for double borders & outlines
 + Added description lists support
 + Updated unordered lists
-
-Grid:
-+ Added CSS grid support
 
 bIcons:
 + Over 30 new icons added
