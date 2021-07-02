@@ -1,9 +1,9 @@
-/* Brutalist Framework 2.0.2.0 CORE CSS */
+/* Brutalist Framework 2.3.1 CORE CSS */
 /* Load Default */
 @import url('default.css');
 /* Load Grids */
-@import url('grids/flexboxgrid.css');
-@import url('grids/b3grid.css');
+@import url('blueprintgrid.css');
+@import url('blueprintgrid_polygrids.css');
 /* Load ReBAR */
 @import url('rebar.css');
 /* Load Flavors */
