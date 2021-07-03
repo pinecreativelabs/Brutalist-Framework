@@ -31,6 +31,7 @@
 	<!-- CORE CSS  -->
 	<!--<link href="core/css/dev/core.css" type="text/css" rel="stylesheet" media="all"/>-->
 	<link href="core/css/brutalist.min.css" type="text/css" rel="stylesheet" media="all"/>
+	<link href="core/css/blueprintgrid.min.css" type="text/css" rel="stylesheet" media="all"/>
 	<!-- BELL -->
 	<link href="core/bell/css/bell.css" type="text/css" rel="stylesheet" media="all" />
 	<!-- Theme CSS -->
@@ -119,543 +120,64 @@
 				<!-- END MEGAMENU -->
 				<!-- FLEXBOX GRID -->
 				<div class="padding">
-					<h3 class="fittext-h3 red-text courier-new" id="flexbox">Flexbox Grid</h3>
-					<p class="charcoal-text lucida">BF includes <a href="http://flexboxgrid.com" target="_blank" class="blue invert-hover yellow-text">Flexbox Grid</a> as part of the core! If you're familiar with the <a href="https://getbootstrap.com/docs/4.0/layout/grid/" target="_blank" class="invert-hover blueberry-text">Bootstrap grid</a>, this will be easy for you to use!</p>
+					<h3 class="red-t courier bold" id="introbpg">Introducing Blueprint Grid</h3>
+					<a href="http://www.blueprintgrid.com" target="_blank"><img src="http://blueprintgrid.com/core/files/images/bpg_social.jpg" alt="Blueprint Grid" class="blur-hover responsive" /></a>
 					
-					<div class="row">
-						<div class="col-xs-12 col-md-6 no-padding">
-							<div class="padded">
-								<h4 class="charcoal-text lucida">Markup</h4>
-								<code class="padding">
-									&lt;div class="<strong>container</strong>"&gt;<br />
-									&nbsp;&nbsp;&lt;div class="<strong>row</strong>"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<strong>col-xs-12 col-sm-12 col-md-12 col-lg-12</strong>"&gt;<br />
-									&nbsp;&nbsp;&nbsp;&nbsp;...<br />
-									&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-								</code>
-								<p class="padded warning"><span class="bold">NOTE:</span> The outer <em>container</em> class is optional.</p>
-								<div class="info padded">
-									<p>
-										<span class="bold">.col-xs-12</span> - 12 columns (full-width) on extra small device<br />
-										<span class="bold">.col-sm-6</span> - 6 columns (half-width) on small device<br />
-										<span class="bold">.col-md-4</span> - 4 columns (one-third width) on tablets<br />
-										<span class="bold">.col-lg-3</span> - 3 columns (one-fourth width) on desktops
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-md-6 no-padding">
-							<div class="padded">
-								<p class="padded disabled arial"><span class="flow-text bold lucida">Container Classes</span><br />
-								<strong>.container</strong> - standard width<br />
-								<strong>.container-fluid</strong> - full-width (100%)<br />
-								<strong>.container-1200</strong> - 1200px max width<br />
-								<strong>.container-960</strong> - 960px max width
-								</p>
-								<a href="http://flexboxgrid.com" target="_blank" class="blue-border border-solid-thick center flow-text small-btn full-btn yellow invert-hover"><span class="blue-text lucida-text bold allcaps">Learn the Grid &raquo;</span></a>
-							</div>
-						</div>
-					</div>
-					
+					<p class="charcoal-t lucida flow-text ">Blueprint Grid is a multimethod grid library built with flexbox and CSS grid. It is the groundwork for creating layouts in all future versions of Brutalist Framework, versions 3 and up. It is pure CSS, so there are no javascript dependencies.</p>
+					<p class="padded warning courier"><strong>NOTE:</strong> <span class="red-t blink">The old grids are still supported!</span></p>
+					<p class="charcoal-t lucida flow-text ">There are four methods for creating layouts with Blueprint Grid:</p>
+					<ol class="flow-text bold courier">
+						<li>B3Grid <em>(flexbox-based)</em></li>
+						<li>CSS Grid</li>
+						<li>Print Grid</li>
+						<li>PolyGrids</li>
+					</ol>
 				</div>
 				<p class="padding"></p>
 				<hr class="thick tomato" />
-				<!-- B3GRID -->
-				<div class="padded">
-					<h3 class="red-t courier bold" id="b3grid">B3Grid</h3>
-					<h4 class="bold charcoal-t lucida">Brutal Blocks 'n Bricks Grid</h4>
-					<p class="charcoal-t arial flow-text">A grid for when you don't want rows! <em>B3Grid</em> allows you to create a flex layout without being restricted by rows. This is ideal for long lists of repeating content blocks. <em>B3Grid</em> can be used within a Flexbox grid layout, or independently.</p>
-					<div class="row">
-						<div class="col-xs-12 col-sm-6">
-							<div class="padded disabled">
-								<h5 class="red-t lucida">Blocks vs. Bricks</h5>
-								<p><strong>Blocks</strong> = flexible blocks that evenly fill up the entire width of an area.<br /><br />
-								<strong>Bricks</strong> = inline blocks that <em>don't</em> evenly fill up an area's width.</p>
-								<hr />
-								<p><span class="bigger bold">.block-wrap</span> - blocks outer wrapper<br />
-								<span class="bigger bold">.block</span> - individual blocks<br /><br />
-								<span class="bigger bold">.brick-wrap</span> - bricks outer wrapper<br />
-								<span class="bigger bold">.brick</span> - individual bricks</p>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-6">
-							<div class="padded disabled">
-								<h5 class="red-t lucida">Basic Markup</h5>
-								<p>Create a 3-column flex layout:</p>
-								<code class="padding smaller">
-								&lt;div class="<strong>block-wrap</strong>"&gt;<br />
-								&nbsp;&nbsp;&lt;div class="<strong>block</strong>"&gt;...&lt;/div&gt;<br />
-								&nbsp;&nbsp;&lt;div class="<strong>block</strong>"&gt;...&lt;/div&gt;<br />
-								&nbsp;&nbsp;&lt;div class="<strong>block</strong>"&gt;...&lt;/div&gt;<br />
-								&lt;/div&gt;
-								</code><hr />
-								<p>Create 3 inline bricks:</p>
-								<code class="padding smaller">
-								&lt;div class="<strong>brick-wrap</strong>"&gt;<br />
-								&nbsp;&nbsp;&lt;div class="<strong>brick</strong>"&gt;...&lt;/div&gt;<br />
-								&nbsp;&nbsp;&lt;div class="<strong>brick</strong>"&gt;...&lt;/div&gt;<br />
-								&nbsp;&nbsp;&lt;div class="<strong>brick</strong>"&gt;...&lt;/div&gt;<br />
-								&lt;/div&gt;
-								</code>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12">
-							<h5 class="charcoal-t lucida">Blocks Example</h5>
-							<div class="block-wrap flow-text vanilla-bean-t">
-								<div class="block blueberry padded">
-									<p>Block 1</p>
-								</div>
-								<div class="block strawberry padded">
-									<p>Block 2</p>
-								</div>
-								<div class="block raspberry padded">
-									<p>Block 3</p>
-								</div>
-							</div>
-							<h5 class="charcoal-t lucida">Bricks Example</h5>
-							<div class="block-wrap flow-text charcoal-t">
-								<div class="brick smoke padded">
-									<p>Brick 1</p>
-								</div>
-								<div class="brick sand padded">
-									<p>Brick 2</p>
-								</div>
-								<div class="brick silver padded">
-									<p>Brick 3</p>
-								</div>
-							</div>
-						</div>
-					</div><p class="padded"></p>
-					<div class="row">
-						<div class="col-xs-12 col-sm-6">
-							<div class="padded info">
-								<h4 class="flow-text red-t lucida">Specify Widths</h4>
-								<p class="charcoal-t">Block and brick widths are determined by the percentage width of it's container.</p>
-								<p><strong>.b10</strong> - 10%<br /><strong>.b20</strong> - 20% (one fifth)<br />
-								<strong>.b25</strong> - 25% (one-quarter)<br />
-								<strong>.b30</strong> - 30%<br />
-								<strong>.b33</strong> - 33.33% (one-third)<br />
-								<strong>.b40</strong> - 40%<br />
-								<strong>.b50</strong> - 50% (half)<br />
-								<strong>.b60</strong> - 60%<br />
-								<strong>.b66</strong> - 66.66% (two-thirds)<br />
-								<strong>.b70</strong> - 70%<br />
-								<strong>.b75</strong> - 75% (three-quarters)<br />
-								<strong>.b80</strong> - 80%<br /><strong>.b90</strong> - 90%<br />
-								<strong>.b100</strong> - 100% (full)</p>
-								<hr />
-								<p>Create a two-column layout with a two-thirds and one-third column.</p>
-								<code class="padding smaller">
-								&lt;div class="<strong>block-wrap</strong>"&gt;<br />
-								&nbsp;&nbsp;&lt;div class="<strong>block b33</strong>"&gt;...&lt;/div&gt;<br />
-								&nbsp;&nbsp;&lt;div class="<strong>block b66</strong>"&gt;...&lt;/div&gt;<br />
-								&lt;/div&gt;
-								</code>
-
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-6">
-							<div class="info padded">
-								<h4 class="flow-text red-t lucida">Heights</h5>
-								<p class="charcoal-t">Block heights are determined by the height percentage relative to the window height.</p>
-								<p><strong>.bh20</strong> - 20% (one fifth)<br />
-								<strong>.bh25</strong> - 25% (one-quarter)<br />
-								<strong>.bh30</strong> - 30%<br />
-								<strong>.bh33</strong> - 33% (one-third)<br />
-								<strong>.bh40</strong> - 40%<br />
-								<strong>.bh50</strong> - 50% (half)<br />
-								<strong>.bh60</strong> - 60%<br />
-								<strong>.bh66</strong> - 66% (two-thirds)<br />
-								<strong>.bh70</strong> - 70% height<br />
-								<strong>.bh75</strong> - 75% (three-quarters)<br />
-								<strong>.bh80</strong> - 80%<br />
-								<strong>.bh100</strong> - 100% (full)</p>
-								<hr />
-								<p class="charcoal-t">General heights are determined by the height percentage relative to it's container.</p>
-								<p><strong>.h25</strong> - 25% (one-quarter)<br /><strong>.h33</strong> - 33% (one-third)<br />
-								<strong>.h50</strong> - 50% (half)<br /><strong>.h66</strong> - 66% (two-thirds)<br /><strong>.h75</strong> - 75% (three-quarters)<br />
-								<strong>.h100</strong> - 100% (full)</p>
-							</div>
-						</div>
-					</div>
-					<div class="row"><div class="col-xs-12 no-padding">
-						<p class="flow-text red-t lucida"><strong>Grid Widths Demo</strong></p>
-						<div class="bricks vanilla-t black-cherry center">
-							<p class="brick b100 cherry-b brdr-s-t flow-text">.b100</p>
-							<div class="brick b50 cherry-b brdr-s-t">.b50</div>
-							<div class="brick b50 cherry-b brdr-s-t">.b50</div>
-							<div class="brick b25 cherry-b brdr-s-t">.b25</div>
-							<div class="brick b25 cherry-b brdr-s-t">.b25</div>
-							<div class="brick b25 cherry-b brdr-s-t">.b25</div>
-							<div class="brick b25 cherry-b brdr-s-t">.b25</div>
-							<div class="brick b33 cherry-b brdr-s-t">.b33</div>
-							<div class="brick b33 cherry-b brdr-s-t">.b33</div>
-							<div class="brick b33 cherry-b brdr-s-t">.b33</div>
-							<div class="brick b66 cherry-b brdr-s-t">.b66</div>
-							<div class="brick b33 cherry-b brdr-s-t">.b33</div>
-							<div class="brick b75 cherry-b brdr-s-t">.b75</div>
-							<div class="brick b25 cherry-b brdr-s-t">.b25</div>
-							<div class="brick b40 cherry-b brdr-s-t">.b40</div>
-							<div class="brick b60 cherry-b brdr-s-t">.b60</div>
-							<div class="brick b20 cherry-b brdr-s-t">.b20</div>
-							<div class="brick b80 cherry-b brdr-s-t">.b80</div>
-							<div class="brick b10 cherry-b brdr-s-t">.b10</div>
-							<div class="brick b90 cherry-b brdr-s-t">.b90</div>
-							<div class="brick b20 cherry-b brdr-s-t">.b20</div>
-							<div class="brick b20 cherry-b brdr-s-t">.b20</div>
-							<div class="brick b20 cherry-b brdr-s-t">.b20</div>
-							<div class="brick b20 cherry-b brdr-s-t">.b20</div>
-							<div class="brick b20 cherry-b brdr-s-t">.b20</div>
-						</div><p class="padding"></p>
-					</div></div>
-					<p class="padded"></p>
-					<div class="row silver"><div class="col-xs-12">
-						<h5 class="red-t lucida">Quick Widths</h5>
-						<p><em>Quick Widths</em> are a simple way to evenly divide up the widths of blocks or bricks. Instead of assigning a specific width to each individual block or brick, you can just apply a class to the block- or brick-wrap container.<br /><br /></p>
-						<div class="row">
-							<div class="col-xs-12 col-sm-12 col-md-6">
-								<h5 class="charcoal-t">Markup</h5>
-								<code class="smaller padding">
-									&lt;div class="brick-wrap <em>thirds</em>"&gt;<br />
-									&nbsp;&nbsp;&lt;div class="brick"&gt;...&lt;/div&gt;<br />
-									&nbsp;&nbsp;&lt;div class="brick"&gt;...&lt;/div&gt;<br />
-									&nbsp;&nbsp;&lt;div class="brick"&gt;...&lt;/div&gt;<br />
-									&lt;/div&gt;
-								</code>
-							</div>
-							<div class="col-xs-12 col-sm-12 col-md-6">
-								<p class="padded info">
-									<span class="flow-text">Classes</span><br /><strong>.full</strong> - 100% width<br />
-									<strong>.halves</strong> - 1/2 (50%) width<br />
-									<strong>.thirds</strong> - 1/3 (33%) width<br />
-									<strong>.quarters</strong> - 1/4 (25%) width<br />
-									<strong>.fifths</strong> - 1/5 (20%) width<br />
-									<strong>.sixths</strong> - 1/6 (17%) width
-								</p>
-							</div>
-						</div>
-						<h5 class="lucida charcoal-t"><strong>EXAMPLE:</strong> .brick-wrap.quarters</h5>
-						<div class="brick-wrap quarters flow-text">
-							<div class="brick mono">Brick 1</div>
-							<div class="brick sweden">Brick 2</div>
-							<div class="brick plush">Brick 3</div>
-							<div class="brick orange-cream">Brick 4</div>
-							<div class="brick cherry-vanilla">Brick 5</div>
-							<div class="brick pool-party">Brick 6</div>
-							<div class="brick navy-fire">Brick 7</div>
-							<div class="brick bbq-fire">Brick 8</div>
-							<div class="brick peach-plum">Brick 9</div>
-						</div>
-						<p class="padded"></p>
-					</div></div>
-					<hr class="thick tomato" />
-					<p class="padded"></p>
-					<div class="row silver">
-						<div class="col-xs-12">
-							<h5 class="red-t lucida">Nesting</h5>
-							<p class="arial charcoal-t">Blocks and bricks can be nested within each other. In this example, we'll add 3 bricks set to a one-third width each, nested within a two-thirds width block.</p>
-							
-							<code class="padding smaller">
-								&lt;div class="<strong>block-wrap</strong>"&gt;<br />
-								&nbsp;&lt;div class="<strong>block b66</strong>"&gt;<br />
-								&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<strong>brick-wrap</strong>"&gt;<br />
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<strong>brick b33</strong>"&gt;...&lt/div&gt;<br />
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<strong>brick b33</strong>"&gt;...&lt/div&gt;<br />
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<strong>brick b33</strong>"&gt;...&lt/div&gt;<br />
-								&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
-								&nbsp;&lt;/div&gt;<br />
-								&nbsp;&lt;div class="<strong>block b33</strong>"&gt;...&lt;/div&gt;<br />
-								&lt;/div&gt;
-							</code>
-							<p class="flow-text bold charcoal-t">Output:</p>
-							<div class="block-wrap sand">
-								<div class="block b66">
-									<p class="flow-text charcoal-t">Block 1, two-thirds width</p>
-									<div class="brick-wrap black-cherry flow-text vanilla-t">
-									  <div class="brick b33 cherry-b brdr-s-t">Brick 1</div>
-									  <div class="brick b33 cherry-b brdr-s-t">Brick 2</div>
-									  <div class="brick b33 cherry-b brdr-s-t">Brick 3</div>
-									</div>
-									<p class="flow-text charcoal-t">Block 1, more content!</p>
-								</div>
-								<div class="block b33"><p class="flow-text charcoal-t">Block 2<br />one-third width</p></div>
-							</div>
-							<p class="padded"></p>
-						</div>
-					</div>
-					<hr class="thick tomato" />
-					<p class="padded"></p>
-					<div class="row" id="align">
-						<div class="col-xs-12">
-							<h4 class="red-t lucida"><strong>Alignments</strong></h4>
-							<p>Blocks and bricks can be aligned within their wrappers in various ways. Apply these classes to the block- or brick-wrap container.<br /><br /></p>
-							<p><span class="flow-text bold red-t lucida">.around</span> - Even spacing <em>around</em> blocks.</p>
-							<div class="block-wrap around sand flow-text yellow-t">
-								<div class="block blue b25">.b25</div>
-								<div class="block green b25">.b25</div>
-								<div class="block red b25">.b25</div>
-							</div>
-							<p style="margin-top: 1em;"><span class="flow-text bold red-t lucida">.evenly</span> - Even spacing <em>between</em> blocks.</p>
-							<div class="block-wrap evenly sand flow-text yellow-t">
-								<div class="block blue b25">.b25</div>
-								<div class="block green b25">.b25</div>
-								<div class="block red b25">.b25</div>
-							</div>
-							<p style="margin-top: 1em;"><span class="flow-text bold red-t lucida">.between</span> - Even spacing <em>between</em> blocks, with no left or right edge spacing.</p>
-							<div class="block-wrap between sand flow-text yellow-t">
-								<div class="block blue b25">.b25</div>
-								<div class="block green b25">.b25</div>
-								<div class="block red b25">.b25</div>
-							</div>
-							<p style="margin-top: 1em;"><span class="flow-text bold red-t lucida">.center</span> - Centers everything horizontally and vertically.</p>
-							<div class="bricks bh20 b100 center sand">
-								<div class="brick black-cherry b30"><p class="flow-text lemon-t arial">Centered Brick</p></div>
-							</div>
-							<p style="margin-top: 1em;"><span class="flow-text bold red-t lucida">.start</span> - Aligns at start of container (top left).</p>
-							<div class="bricks bh20 b100 start sand lemon-t arial">
-								<div class="brick black-cherry">Brick</div>
-								<div class="brick scarlet">Brick</div>
-								<div class="brick sangria">Brick</div>
-								<div class="brick mahogany">Brick</div>
-							</div>
-							<p style="margin-top: 1em;"><span class="flow-text bold red-t lucida">.end</span> - Align at end of container (bottom right).</p>
-							<div class="bricks bh20 b100 end sand lemon-t arial">
-								<div class="brick black-cherry">Brick</div>
-								<div class="brick scarlet">Brick</div>
-								<div class="brick sangria">Brick</div>
-								<div class="brick mahogany">Brick</div>
-							</div>
-							<p style="margin-top: 1em;"><span class="flow-text bold red-t lucida">.baseline</span> - (DEFAULT VIEW) - Aligns along baseline.<br />
-							<span class="green-t"><strong>DEMO:</strong> Below, we <em>center</em> all blocks within the block-wrap, but override the 3rd block to be aligned on the <em>baseline</em>.</span></p>
-							<div class="blocks bh20 b100 center sand lemon-t arial">
-								<div class="block black-cherry">Block<br />line 2<br />line 3</div>
-								<div class="block scarlet">Block<br />line 2</div>
-								<div class="block sangria baseline">.baseline<br />line 2</div>
-								<div class="block mahogany">Block<br />line 2</div>
-								<div class="block scarlet">Block<br />line 2<br />line 3</div>
-							</div>
-							<p style="margin-top: 1em;"><span class="flow-text bold red-t lucida">.stretch</span> - Stretches all items to be the same height <em>and</em> fill up the height of the container.</p>
-							<p class="green-t"><strong>DEMO:</strong> Below, we have blocks with varying lengths of content, which would create unequal heights.</p>
-							<div class="blocks b100 stretch sand lemon-t arial">
-								<div class="block black-cherry">Block<br />line 2<br />line 3</div>
-								<div class="block scarlet">Block<br />line 2</div>
-								<div class="block sangria flow-text">Block</div>
-								<div class="block mahogany">Block<br />line 2</div>
-								<div class="block scarlet">Block<br />line 2<br />line 3<br />line 4</div>
-							</div>
-							<p class="green-t" style="margin-top: 1em;"><strong>STRETCH HEIGHT DEMO:</strong> Same as above, but now we would like to specify the block-wrap height as being 20% of the window height.</p>
-							<div class="blocks b100 bh20 stretch sand lemon-t arial">
-								<div class="block black-cherry">Block<br />line 2<br />line 3</div>
-								<div class="block scarlet">Block<br />line 2</div>
-								<div class="block sangria flow-text">Block</div>
-								<div class="block mahogany">Block<br />line 2</div>
-								<div class="block scarlet">Block<br />line 2<br />line 3<br />line 4</div>
-							</div>
-						</div>
-					</div>
-					<p class="padded"></p>
-					<div class="row silver">
-						<div class="col-xs-12">
-							<h5 class="red-t lucida"><strong>Grow Blocks</strong></h5>
-							<p>Increase the width of a block in proportion to the others on the same line. In the example below, we want to make one block 3 times wider than the rest.</p>
-							<p class="indent">Class <strong>.g3</strong> is used to grow the block width. Classes <strong>g1 - g6</strong> are supported. Use <strong>g0</strong> or <strong>no-grow</strong> to prevent a block from growing in proportion to the width of the contianer. <span class="red-t"><strong>NOTE:</strong> Growth classes ONLY works with blocks.</span>
-							<br /><br /></p>
-							<div class="blocks white-t center">
-								<div class="block g3 black-cherry cherry-b brdr-s-t"><span class="flow-text">.block.g3</span></div>
-								<div class="block black-cherry cherry-b brdr-s-t"><span class="flow-text">.block</span></div>
-								<div class="block black-cherry cherry-b brdr-s-t"><span class="flow-text">.block</span></div>
-								<div class="block black-cherry cherry-b brdr-s-t"><span class="flow-text">.block</span></div>
-							</div>
-							<p class="padded"></p>
-						</div>
-					</div>
-					<hr class="thick tomato" />
-					<p class="padded"></p>
-					<div class="row" id="dirs">
-						<div class="col-xs-12">
-							<h4 class="red-t lucida"><strong>Directions &amp; Ordering</strong></h4>
-							<p>By default, B3Grid lays out block and brick elements into a horizontal row, arranged in chronological order. We can change the direction and ordering by adding these classes to the <em>block-wrap</em> wrapper class.</p>
-							<p style="margin-top: 1em;"><span class="flow-text bold red-t lucida">.row-rev</span> - Row in reverse order.</p>
-							<div class="block-wrap row-rev flow-text">
-								<div class="block black white-t">Block 1</div>
-								<div class="block charcoal white-t">Block 2</div>
-								<div class="block grey charcoal-t">Block 3</div>
-								<div class="block smoke grey-t">Block 4</div>
-							</div>
-							<div class="row"><div class="col-xs-12 col-sm-6">
-								<p style="margin-top: 1em;"><span class="flow-text bold red-t lucida">.col</span> - Arranges blocks into vertical columns.</p>
-								<div class="block-wrap col flow-text">
-									<div class="block black white-t">Block 1</div>
-									<div class="block charcoal white-t">Block 2</div>
-									<div class="block grey charcoal-t">Block 3</div>
-									<div class="block smoke grey-t">Block 4</div>
-								</div>
-							</div><div class="col-xs-12 col-sm-6">
-								<p style="margin-top: 1em;"><span class="flow-text bold red-t lucida">.col-rev</span> - Column in reverse order.</p>
-								<div class="block-wrap col-rev flow-text">
-									<div class="block black white-t">Block 1</div>
-									<div class="block charcoal white-t">Block 2</div>
-									<div class="block grey charcoal-t">Block 3</div>
-									<div class="block smoke grey-t">Block 4</div>
-								</div>
-							</div></div>
-							<p class="padded"></p>
-							<div class="row"><div class="col-xs-12 col-sm-6">
-								<p class="padded info"><span class="flow-text bold">TIP for Columns:</span><br />On column blocks, apply the <em>stretch</em> class to the block-wrapper to make them the same width. Alternatively, specifiy a width by applying a width class to each block.</p>
-								<p class="padded info" style="margin-top: 1em;"><span class="flow-text bold">First in Order</span><br />To make a block or brick always appear at the beginning of a list of items, simply apply either of these two classes directly to a block or brick: <br /><span class="bigger bold">.first<br />.featured</span><br />
-								If more than one item is placed at the beginning, they will appear in their chronological order (but placed before the remaining items).</p>
-							</div><div class="col-xs-12 col-sm-6">
-								<p class="padded info"><span class="flow-text bold">EXAMPLE:</span> Stretched blocks in a reversed column order with two "first-ordered" blocks.</p>
-								<div class="block-wrap col-rev flow-text stretch" style="margin-top: 1em;">
-									<div class="block black white-t">Block 1</div>
-									<div class="block charcoal white-t">Block 2</div>
-									<div class="block grey charcoal-t">Block 3</div>
-									<div class="block smoke charcoal-t">Block 4</div>
-									<div class="block rice charcoal-t">Block 5</div>
-									<!-- appear AFTER .first block due to reverse order -->
-									<div class="block green lemon-t">.featured</div>
-									<!-- appear BEFORE .feature block due to reverse order -->
-									<div class="block midnight orange-t">.first</div>
-								</div>
-							</div></div>
-						</div>
-					</div>
-					<p class="padded"></p>
-					<hr class="thick tomato" />
-					<p class="padded"></p>
-					<div class="row" id="tiles"><div class="col-xs-12">
-						<h4 class="bold red-t lucida">Tiles</h4>
-						<p style="margin-bottom: 1em;">Tiles are a simple way to make unordered lists into evenly divided inline blocks. Simply apply class <strong><em>tiles</em></strong> to any ul tag! By default, <em>li</em> tile items maxes out at 50% width. Tiles self-stretch to be the same height as other tiles on the same line.</p> 
-						<div class="row">
-							<div class="col-xs-12 col-sm-12 col-md-6">
-								<h5 class="charcoal-t lucida">Markup</h5>
-								<code class="padding">
-									&lt;ul class="<strong>tiles thirds</strong>"&gt;<br />
-									&nbsp;&nbsp;&lt;li&gt;&nbsp;&nbsp;...&nbsp;&nbsp;&lt;/li&gt;<br />
-									&nbsp;&nbsp;&lt;li&gt;&nbsp;&nbsp;...&nbsp;&nbsp;&lt;/li&gt;<br />
-									&nbsp;&nbsp;&lt;li&gt;&nbsp;&nbsp;...&nbsp;&nbsp;&lt;/li&gt;<br />
-									&lt;/ul&gt;
-								</code>
-							</div>
-							<div class="col-xs-12 col-sm-12 col-md-6">
-								<p class="info padded"><span class="flow-text bold">Quick-Width Classes</span><br />
-									<strong>.halves</strong> - 1/2 (50%) li width<br />
-									<strong>.thirds</strong> - 1/3 (33%) li width<br />
-									<strong>.quarters</strong> - 1/4 (25%) li width<br />
-									<strong>.fifths</strong> - 1/5 (20%) li width<br />
-									<strong>.sixths</strong> - 1/6 (17%) li width
-								</p>
-								<p class="warning padded"><span class="flow-text bold">Pad Tiles</span><br />
-									Tiles have no padding by default. Add padding to all tiles automatically by applying the class <strong><em>.padded</em></strong> to a <em>tiles</em> wrapper:<br />
-									<strong><em>ul.tiles.padded</em></strong>
-								</p>
-							</div>
-						</div>
-						<div class="row"><div class="col-xs-12">
-							<h5 class="charcoal-t lucida"><strong>Example:</strong> Fifths</h5>
-							<ul class="tiles fifths flow-text center">
-								<li class="lemon blueberry-t">Tile 1</li>
-								<li class="blueberry lemon-t">Tile 2</li>
-								<li class="strawberry rice-t">Tile 3</li>
-								<li class="orange spinach-t">Tile 4</li>
-								<li class="spinach orange-t">Tile 5</li>
-								<li class="lemon blueberry-t">Tile 6</li>
-								<li class="blueberry lemon-t">Tile 7</li>
-								<li class="strawberry rice-t">Tile 8</li>
-								<li class="orange spinach-t">Tile 9</li>
-								<li class="spinach orange-t">Tile 10</li>
-								<li class="lemon blueberry-t">Tile 11</li>
-								<li class="blueberry lemon-t">Tile 12</li>
-								<li class="strawberry rice-t">Tile 13</li>
-								<li class="orange spinach-t">Tile 14</li>
-								<li class="spinach orange-t">Tile 15</li>
-							</ul>
-						</div></div>
-					</div></div>
-					<p class="padded"></p>
-					<hr class="thick tomato" />
-					<p class="padded"></p>
-					<div class="row" id="grid"><div class="col-xs-12">
-						<h4 class="bold red-t lucida">CSS Grids</h4>
-						<p style="margin-bottom: 1em;">As an alternate method for creating layouts, we've included support for CSS grids. By default, items are inserted by row and have no gap.</p>
-						<div class="row">
-							<div class="col-xs-12 col-sm-12 col-md-6">
-								<p class="info padded"><span class="flow-text bold">Grid</span><br />
-									<strong>.grid</strong> - REQUIRED wrapper for CSS grid layout<br />
-									<strong>.columns</strong> - insert items by column<br />
-									<strong>.gap</strong> - adds a 1em spacing gap between items<br /><br />
-									<span class="flow-text bold">Column Widths</span><br />
-									<strong>.col2</strong> - 2-column layout<br />
-									<strong>.col3</strong> - 3-column layout<br />
-									<strong>.col4</strong> - 4-column layout<br />
-									<strong>.col5</strong> - 5-column layout<br />
-									<strong>.col6</strong> - 6-column layout<br /><br />
-									<span class="flow-text bold">Row Heights</span><br />
-									<strong>.rh25</strong> - one quarter height of screen<br />
-									<strong>.rh33</strong> - one-third height of screen<br />
-									<strong>.rh50</strong> - half the height of screen<br />
-									<strong>.rh66</strong> - two-thirds height of screen<br />
-									<strong>.rh75</strong> - three-fourths height of screen<br />
-									<strong>.rh100</strong> - full height of screen<br />
-								</p>
-								<h5 class="charcoal-t lucida">Example Markup</h5>
-								<p>The below code will create a 3-column layout with rows occupying one-third of the height of the screen, with gap spacing added between items.</p>
-								<code class="padding smaller">
-									&lt;div class="<strong>grid col3 rh33 gap</strong>"&gt;<br />
-									&nbsp;&nbsp;&lt;div&gt;&nbsp;&nbsp;Item 1&nbsp;&nbsp;&lt;/div&gt;<br />
-									&nbsp;&nbsp;&lt;div&gt;&nbsp;&nbsp;Item 2&nbsp;&nbsp;&lt;/div&gt;<br />
-									&nbsp;&nbsp;&lt;div&gt;&nbsp;&nbsp;Item 3&nbsp;&nbsp;&lt;/div&gt;<br />
-									&lt;/div&gt;
-								</code>
-							</div>
-							<div class="col-xs-12 col-sm-12 col-md-6">
-								<p class="warning padded"><span class="flow-text bold">Item Column Span</span><br />Span individual items across columns:<br />
-									<strong>.span2</strong> - span 2 columns<br />
-									<strong>.span3</strong> - span 3 columns<br />
-									<strong>.span4</strong> - span 4 columns<br />
-									<strong>.span5</strong> - span 5 columns<br /><br />
-									<span class="flow-text bold">Item Row Span</span><br />Span individual items across rows:<br />
-									<strong>.r-span2</strong> - span 2 rows<br />
-									<strong>.r-span3</strong> - span 3 rows<br />
-									<strong>.r-span4</strong> - span 4 rows<br />
-									<strong>.r-span5</strong> - span 5 rows<br /><br />
-									<span class="flow-text bold">Item Start</span><br />Determine which column the first item will start on:<br />
-									<strong>.start2</strong> - start on 2nd column<br />
-									<strong>.start3</strong> - start on 3rd column<br />
-									<strong>.start4</strong> - start on 4th column<br />
-									<strong>.start5</strong> - start on 5th column<br />
-								</p>
-								<h5 class="charcoal-t lucida">Example Markup</h5>
-								<p>The below code will create a 4-column layout, with the first item spanning two columns and starting on the 2nd colun.</p>
-								<code class="padding smaller">
-									&lt;div class="<strong>grid col4</strong>"&gt;<br />
-									&nbsp;&nbsp;&lt;div class="<strong>start2 span2</strong>"&gt;&nbsp;&nbsp;Item 1&nbsp;&nbsp;&lt;/div&gt;<br />
-									&nbsp;&nbsp;&lt;div&gt;&nbsp;&nbsp;Item 2&nbsp;&nbsp;&lt;/div&gt;<br />
-									&nbsp;&nbsp;&lt;div&gt;&nbsp;&nbsp;Item 3&nbsp;&nbsp;&lt;/div&gt;<br />
-									&nbsp;&nbsp;&lt;div&gt;&nbsp;&nbsp;Item 4&nbsp;&nbsp;&lt;/div&gt;<br />
-									&nbsp;&nbsp;&lt;div&gt;&nbsp;&nbsp;Item 5&nbsp;&nbsp;&lt;/div&gt;<br />
-									&lt;/div&gt;
-								</code>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-12 col-sm-12">
-								<h5 class="lucida charcoal-t">Grid Example</h5>
-								<div class="grid col4 empty">
-									<div class="sweden span2 start2"><strong>ITEM 1</strong><br />This item spans 2 columns, and starts on the 2nd one.</div>
-									<div class="yellow"><strong>Item 2</strong><br />Column heights are not defined in this example.</div>
-									<div class="orange"><strong>Item 3</strong><br />No gaps here, either.</div>
-									<div class="brown r-span2"><strong>Item 4</strong><br /><i class="bi bi-poop"></i> Poop box is so heavy with shit that it spans 2 rows. <i class="bi bi-poop"></i></div>
-									<div class="olive"><strong>Item 5</strong><br />Olive oil</div>
-									<div class="sand"><strong>Item 6</strong><br />Sandbox</div>
-									<div class="fire"><strong>Item 7</strong><br />This is the last item ever.</div>
-								</div>
-							</div>
-						</div>
-					</div></div>
+				<!-- Get Started -->
+				<div class="padded" id="getstarted">
+					<h3 class="red-t courier bold">Get Started</h3>
+					<p class="charcoal-t arial flow-text">Blueprint Grid is included with Brutalist Framework, version 2.3.1 and up. It is included as part of the development core. However, it is NOT included as part of the minified package (<em>brutalist.min.css</em>).</p>
+					
+					<p class="flow-text arial charcoal-t"><span class="bigger bold">Development:</span><br />
+						If using the core development files, you'll only need to load the core CSS file:<br /><br />
+						<strong>/core/css/dev/core.css</strong><br /><br />
+						<span class="bigger bold">Minified:</span><br />
+						In addition to loading <em>brutalist.min.css</em>, you'll also need:<br /><br />
+						<strong>/core/css/blueprintgrid.min.css<br />/core/css/blueprintgrid_polygrids.min.css</strong> (optional)
+					</p>
 				</div>
-				<p class="padded"></p>
+				<p class="padding"></p>
+				<hr class="thick tomato" />
+				<!-- Docs -->
+				<div class="padded" id="docs">
+					<h3 class="red-t courier bold">Documentation</h3>
+					<p class="charcoal-t arial flow-text">Learn more about Blueprint Grid at <a href="http://www.blueprintgrid.com" target="_blank"><strong><em>BlueprintGrid.com</em></strong></a>. Below are some shortcuts to more detailed documentation:</p>
+					<ul class="none bold flow-text courier">
+						<li><a href="https://github.com/pinecreativelabs/Blueprint-Grid/wiki/B3Grid" target="_blank" class="link">B3Grid Documentation</a></li>
+						<li><a href="https://github.com/pinecreativelabs/Blueprint-Grid/wiki/CSS-Grid" target="_blank" class="link">CSS Grid Documentation</a></li>
+						<li><a href="https://github.com/pinecreativelabs/Blueprint-Grid/wiki/Print-Grid" target="_blank" class="link">Print Grid Documentation</a></li>
+						<li><a href="https://github.com/pinecreativelabs/Blueprint-Grid/wiki/PolyGrids" target="_blank" class="link">PolyGrids Documentation</a></li>
+					</ul>
+				</div>
+				<p class="padding"></p>
+				<hr class="thick tomato" />
+				<!-- Demos -->
+				<div class="padded" id="demos">
+					<h3 class="red-t courier bold">Demos</h3>
+					<p class="charcoal-t arial flow-text">Some Blueprint Grid examples:</p>
+					<ul class="none bold flow-text courier">
+						<li><a href="http://www.blueprintgrid.com/b3grid" target="_blank" class="link">B3Grid Demo</a></li>
+						<li><a href="http://www.blueprintgrid.com/css-grid" target="_blank" class="link">CSS Grid Demo</a></li>
+						<li><a href="http://www.blueprintgrid.com/papers" target="_blank" class="link">Print Grid Demo</a></li>
+						<li><a href="http://www.blueprintgrid.com/polygrids" target="_blank" class="link">PolyGrids Demo</a></li>
+						<li><a href="http://www.blueprintgrid.com/nesting" target="_blank" class="link">Nesting Demo</a></li>
+						<li><a href="http://www.blueprintgrid.com/responsive" target="_blank" class="link">Responsive Demo</a></li>
+					</ul>
+				</div>
+				<p class="padding"></p>
+				<p class="spacer"></p>
 			</div>
 			<!-- Sidebar -->
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 no-padding black">
@@ -665,12 +187,10 @@
 						<div class="col-xs-12 no-padding">
 							<nav class="simple">
 								<ul class="courier flow-text">
-									<li class="invert-h blue"><a href="#flexbox" class="lime-t">Flexbox Grid</a></li>
-									<li class="invert-h blue"><a href="#b3grid" class="lime-t">B3Grid</a></li>
-									<li class="invert-h blue"><a href="#align" class="lime-t">-- Alignments</a></li>
-									<li class="invert-h blue"><a href="#dirs" class="lime-t">-- Directions</a></li>
-									<li class="invert-h blue"><a href="#tiles" class="lime-t">-- Tiles</a></li>
-									<li class="invert-h blue"><a href="#grid" class="lime-t">-- CSS Grid</a></li>
+									<li class="invert-h blue"><a href="#introbpg" class="lime-t">Intro</a></li>
+									<li class="invert-h blue"><a href="#getstarted" class="lime-t">Get Started</a></li>
+									<li class="invert-h blue"><a href="#docs" class="lime-t">Documentation</a></li>
+									<li class="invert-h blue"><a href="#demos" class="lime-t">Demos</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -709,7 +229,7 @@
 	</nav>
 	<a href="#download" data-modal-open>
 	<div class="skew sweden btn invert-h">
-		<p class="skew-right"><span class="flow-text impact">Download</span><br /><span class="lucida"><small>version 2.3</small></span></p>
+		<p class="skew-right"><span class="flow-text impact">Download</span><br /><span class="lucida"><small>version 2.3.1</small></span></p>
 	</div></a>
 </div>
 <!-- Download Modal -->
@@ -719,9 +239,10 @@
 			<div class="col-sm-12 no-padding">
 				<div class="padded lucida">
 					<h4>Begin the <span class="blink red-t">Brutality</span></h5>
-					<p>Released <strong>5/14/2021</strong></p>
-					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.3.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.3</a></p><hr class="jagged-rule-dark" />
+					<p>Released <strong>7/2/2021</strong></p>
+					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.3.1.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.3.1</a></p><hr class="jagged-rule-dark" />
 					<p style="font-size: 1.15em;"><strong><span style="font-size: 1.3em;">Archived Versions</span></strong><br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.3.zip" target="_blank">2.3</a> <small>(5/14/2021), 17mb</small><br />
 					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.2.zip" target="_blank">2.2</a> <small>(2/14/2021), 17mb</small><br />
 					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.1.zip" target="_blank">2.1</a> <small>(10/23/2020), 19mb</small><br />
 					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.0.zip" target="_blank">2.0.2.0</a> <small>(2/20/2020), 9.3mb</small><br />
