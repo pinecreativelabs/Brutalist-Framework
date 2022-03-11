@@ -1,6 +1,10 @@
 Brutalist Framework Changelog
-Version: 2.3.1 Update
-Grid system is replaced with Blueprint Grid (http://www.blueprintgrid.com) 
+
+Version 2.3.3 Update
+Updates to bIcons library; added new filetypes file icons CSS library to core
+
+Version 2.3.2 Update
+Grid system is replaced with Blueprint Grid 1.1 (http://www.blueprintgrid.com) 
 
 Version 2.3
 General:
