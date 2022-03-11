@@ -1,17 +1,16 @@
 /* Default Theme Style
 ===================================================*/ 
 header { padding: 1em 0 1em 0; }
-
+.coming-soon { background-image: url('../files/images/concrete-room.jpg');
+	background-position: center center; background-size: cover; background-attachment: fixed; 
+}
 .homepage { background-color: #000;
 	background-position: right; background-repeat: repeat-y;
 	background-image: url('../files/images/brutal-tiles.jpg'); background-attachment: fixed;
 	background-size: 30% auto;
 }
-.home-head { background-image: url('../files/images/kitty/brutalmoodykat.jpg'); 
-	background-size: 70% auto; background-position: right top; background-repeat: no-repeat;
-	border-right: 5px solid #ff0000; padding: 0; border-top: 4px solid #ff0000;
-}
-.darkangel { background-image: url('../files/images/gelora/darkangel-gelora.jpg'); background-attachment: fixed; background-size: 25% auto; 
+.home-head { border-right: 5px solid #ff0000; padding: 0; border-top: 4px solid #ff0000;}
+.darkangel { background-image: url('../files/images/kitty/spikat.jpg'); background-attachment: fixed; background-size: 25% auto; 
 	background-position: left top; background-repeat: no-repeat;
 }
 /*.home-head:hover { background-image: url('../files/images/kitty/bfx-kat.jpg'); cursor: default;}*/
@@ -19,7 +18,7 @@ header { padding: 1em 0 1em 0; }
 .sliced-corner { -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
   clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
 }
-.pageintro { display: inline-block; width: 35%; position: relative; padding: 1.1em; margin-top: 2.5em; background: rgba(0,0,0,0.6); font-size: 1.1em; line-height: 150%;}
+.pageintro { display: inline-block; max-width: 75%; position: relative; padding: 1.1em; margin-top: 4.5em; background: rgba(74,74,74,0.6); font-size: 1.1em; line-height: 150%;}
 .link-block { text-align: left; background-size: contain; background-position: center center; background-repeat: no-repeat; padding-top: 2.25em; }
 .link-block h3, .link-block p { background: rgba(0,0,0,0.8); color: #fff; text-shadow: 2px 2px #ff0000; text-align: left;}
 .link-block h3 { border-radius: 45%; -webkit-border-radius: 45%; font-size: 2.5em; display: inline-block; border-bottom: 3px solid #ff0000; padding: 0.3em 0.5em 0.3em 0; }
