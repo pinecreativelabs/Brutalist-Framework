@@ -1,4 +1,4 @@
-$(document).ready(function(){
+document.addEventListener('DOMContentLoaded',() => {
 window.onload = function() {
     document.addEventListener("contextmenu", function(e){e.preventDefault();},false);
     document.addEventListener("keydown", function(e) {
