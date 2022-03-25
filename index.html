@@ -13,13 +13,13 @@
 	<meta name="twitter:description" content="An open source responsive HTML framework template for the brutalist web design trend, built with CSS and javascript.">
 	<meta name="twitter:creator" content="@brutalistfwk">
 	<!-- Twitter Summary card images must be at least 120x120px -->
-	<meta name="twitter:image" content="http://www.brutalistframework.com/core/files/images/bf23.jpg">
+	<meta name="twitter:image" content="http://www.brutalistframework.com/core/files/images/bf-social-tile.jpg">
 
 	<!-- Open Graph data -->
 	<meta property="og:title" content="Brutalist Framework" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://www.brutalistframework.com" />
-	<meta property="og:image" content="http://www.brutalistframework.com/core/files/images/bf23.jpg" />
+	<meta property="og:image" content="http://www.brutalistframework.com/core/files/images/bf-social-tile.jpg" />
 	<meta property="og:description" content="An open source responsive HTML framework template for the brutalist web design trend, built with CSS and javascript." /> 
 	<meta property="og:site_name" content="Brutalist Framework" />
 
@@ -46,7 +46,7 @@
 				<div class="padded">
 				<a href="index.html"><img class="xlarge-thumb brdr-s-k crop circle red-b" src="core/files/images/brutalist-framework.jpg" alt="Brutalist Framework" /></a>
 				<div class="brick-wrap lucida bold">
-					<a href="#download" data-modal-open class="brick b100 red invert-h flow-text white-t black-t-s heavy"><span class="blink">DOWNLOAD v.2.3.3</span></a>
+					<a href="#download" data-modal-open class="brick b100 red invert-h flow-text white-t black-t-s heavy"><span class="blink">DOWNLOAD v.2.4</span></a>
 					<a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank" class="black white-t brick b50 red-b brdr-s-k invert-h">Github</a>
 					<a href="http://www.twitter.com/brutalistfwk" target="_blank" class="brick b50 red-b brdr-s-k olympic-t black invert-h">Twitter</a>
 				</div></div>
@@ -68,7 +68,6 @@
 				</div>
 				<p class="align-right padded lucida bold">
 					<a href="#aboutbf" class="black-t btn small-btn black white-h red-t red-b brdr-s-t">About</a>
-					<a href="#pr" class="btn small-btn black white-h red-t red-b brdr-s-t">Press</a>
 					<a href="#bp-tab" class="btn small-btn black white-h red-t red-b brdr-s-t"><i class="bi bi-heat"></i> Boilerplates</a>
 				</p>
 			</div>
@@ -111,7 +110,7 @@
 				<div class="col-xs-10 col-sm-9 col-md-5 col-lg-6 no-padding">
 					<div class="bh60 left">
 						<div class="sliced-corner pageintro">
-							<p class="glitch impact fluid-text white-t red-t-s">version<br /><span class="bigger">&nbsp;2.3.2&nbsp;</span></p>
+							<p class="glitch impact fluid-text white-t red-t-s">version<br /><span class="bigger">&nbsp;2.4&nbsp;</span></p>
 							<p class="lucida white-t red-t-s" style="border-top: 2px solid #000; margin: 8px 0 6px 0; padding-top: 6px;"><strong>BF</strong> is a <em>FREE</em> HTML template that can be used for rapid prototyping of responsive web designs and native app UI/UX.</p>
 							<a href="#starthere" class="red btn full-btn white-t black-t-s invert-h lucida bold box-shadow">Get Started</a>
 						</div>
@@ -251,15 +250,21 @@
 							</ul>
 							<hr />
 							<h3 class="flow-text">Loading BF</h3>
-							<p>You'll need to load:</p>
+							<p>You'll need to load following CSS file:</p>
 							<ul class="lime-t triangle">
 								<li>/core/css/brutalist.min.css <span class="lemon-t">- OR -</span> /core/css/dev/core.css</li>
+							</ul>
+							<p style="margin-bottom: 1em;">The <em>brutalist.min.css</em> file is a minified CSS file that contains all core components found in <em>/core/css/dev</em> directory.</p>
+							<p>As of version 2.4 and up, you will need the following javascript files:</p>
+							<ul class="lime-t triangle">
+								<li>/core/js/jab.js</li>
+								<li>/core/js/jquery.3.js</li>
 								<li>/core/js/brutalist.js</li>
 								<li>/core/js/start.brutalizing.js</li>
 							</ul>
-							<p>The <em>brutalist.min.css</em> file is a minified CSS file that contains all core components found in <em>/core/css/dev</em> directory.</p>
-							<p class="indent">The <em>brutalist.js</em> javascript file contains all functionality needed for core elements. Some variables can be customized in the <em>start.brutalizing.js</em> initialization script.</p>
-							<p class="indent">You'll also need to include jQuery. BF includes all 3 versions of jQuery in the <em>/core/js</em> directory:</p>
+							<p class="indent" style="margin-bottom: 0.5em;">The <em>brutalist.js</em> javascript file contains all functionality that is dependent on jQuery. Some variables can be customized in the <em>start.brutalizing.js</em> initialization script.</p>
+							<p class="indent" style="margin-bottom: 0.5em;">The <em>jab.js</em> file is for all pure vanilla javascript functions. JAB (javascript application base) contains functions that are NOT dependent on jQuery.</p>
+							<p class="indent">If you are using jQuery, BF includes all 3 versions of jQuery in the <em>/core/js</em> directory:</p>
 							<ul class="mint-t triangle">
 								<li>/core/js/jquery.1.js</li>
 								<li>/core/js/jquery.2.js</li>
@@ -272,40 +277,27 @@
 					<input type="radio" name="tabs" id="tab2">
 					<label for="tab2" class="red-b brdr-s-t lucida platinum"><span class="red-text heavy">Changelog</span></label>
 					<div class="tab red-b brdr-s-t glassmorph">
-						<h4 class="courier-new red-t white-t-s bold">2.3.3 UPDATE</h4>
-						<p>Updates to bIcons library; added new <em>filetypes</em> file icons CSS library to core</p>
-						<hr />
-						<h4 class="courier-new red-t white-t-s bold">2.3.2 UPDATE</h4>
-						<p>The grid system has been replaced with <a href="http://www.blueprintgrid.com" target="_blank" class="link">Blueprint Grid</a>.</p>
-						<hr />
-						<h4 class="courier-new red-t white-t-s bold">What's New in 2.3?</h4>
+						<h4 class="courier-new red-t white-t-s bold">What's New in 2.4?</h4>
 						<p><b>General:</b><br />
-						+ Added browserconfig.xml to root directory for Microsoft icon support<br /><br />
+						+ New jab.js file which contains all vanilla javascript functions<br />
+						+ Added tags to specify which elements are CSS, vanilla js, or jquery-based<br /><br />
 						<b>BELL:</b><br />
-						+ (no changes)<br /><br />
+						+ Pagelock script is 100% vanilla<br /><br />
 						<b>Flavors:</b><br />
-						+ New Flavors: sage, slime, fuchsia, apple, indigo, denim, flaxen, dijon<br />
-						+ New Color Combos: seaweed-slime, steak-beer, sapphire-sky, midnight-sky, greek, blueprint<br />
-						+ New Gradients: violence, viking, socialize, emptiness, clean, evergreen<br />
-						+ Deprecated: blueberry-pomegranate, olive-mushroom<br /><br />
+						+ New Flavors: green-tea, grass, fog, fossil<br />
+						+ Removed old legacy classes<br /><br />
 						<b>BFX:</b><br />
-						+ New TumbleText effect<br />
-						+ New shift-glitch effect<br />
-						+ Updated animated gradient classes<br /><br />
+						+ Updated and vanilla-ized Chop Text so that text is now truncated by word count<br /><br />
 						<b>BUIX:</b><br />
-						+ New Tree List navigation element<br /><br />
+						+ New pagination interface (found under Navigation)<br /><br />
 						<b>BUTCH</b><br />
-						+ Added support for double borders & outlines<br />
-						+ Added description lists support<br />
-						+ Updated unordered lists<br /><br />
-						<b>Grid:</b><br />
-						+ Added CSS grid support<br /><br />
+						+ New ul lists: heart, sparkle, burst<br />
+						+ Updated scale classes<br /><br />
 						<b>bIcons:</b><br />
-						+ Over 30 new icons added<br /><br />
+						+ New Animals category and other icons added<br />
+						+ Other improvements<br /><br />
 						<b>ReBAR:</b><br />
-						+ Updated Device Type Visibility classes<br /><br />
-						<b>Boilerplates:</b><br />
-						+ (no changes)
+						+ Added width support for devices up to 1600px<br /><br />
 						</p>
 						
 						<p>&nbsp;</p>
@@ -347,7 +339,7 @@
 						</div>
 					</a>
 					<div class="padded vanilla-bean-t arial">
-						<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="green yellow-text invert-h">Pine Creative Labs</a> production</p>
+						<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="green yellow-t invert-h">Pine Creative Labs</a> production</p>
 						<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-t invert-h">Brad Fogelstrom</span></a></p>
 						<ul class="tags">
 							<li><a href="http://www.twitter.com/brutalistfwk" target="_blank" class="btn white-t olympic hue-h"><strong>Twitter</strong></a></li>
@@ -374,7 +366,7 @@
 	</nav>
 	<a href="#download" data-modal-open>
 	<div class="skew sweden btn invert-h">
-		<p class="skew-right"><span class="flow-text impact">Download</span><br /><span class="lucida"><small>version 2.3.3</small></span></p>
+		<p class="skew-right"><span class="flow-text impact">Download</span><br /><span class="lucida"><small>version 2.4</small></span></p>
 	</div></a>
 </div>
 <!-- Download Modal -->
@@ -384,9 +376,10 @@
 			<div class="col-sm-12 no-padding">
 				<div class="padded lucida">
 					<h4>Begin the <span class="blink red-t">Brutality</span></h5>
-					<p>Released <strong>3/11/2022</strong></p>
-					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.3.3.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.3.3</a></p><hr class="jagged-rule-dark" />
+					<p>Released <strong>3/24/2022</strong></p>
+					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.4.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.4</a></p><hr class="jagged-rule-dark" />
 					<p style="font-size: 1.15em;"><strong><span style="font-size: 1.3em;">Archived Versions</span></strong><br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.3.3.zip" target="_blank">2.3.3</a> <small>(3/11/2022), 17mb</small><br />
 					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.3.zip" target="_blank">2.3</a> <small>(5/14/2021), 17mb</small><br />
 					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.2.zip" target="_blank">2.2</a> <small>(2/14/2021), 17mb</small><br />
 					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.1.zip" target="_blank">2.1</a> <small>(10/23/2020), 19mb</small><br />
@@ -463,10 +456,12 @@
 	<div class="overlay"></div>
 </div>
 
-<!--  Core Scripts -->
-<script type="text/javascript" src="core/js/jquery.3.js"></script>
-<script type="text/javascript" src="core/js/brutalist.js"></script>
-<script type="text/javascript" src="core/js/start.brutalizing.js"></script>
+<!-- Core Scripts -->
+<script src="core/js/jab.js"></script>
+<script src="core/js/jquery.3.js"></script>
+<script src="core/js/brutalist.js"></script>
+<script src="core/js/start.brutalizing.js"></script>
+
 <!-- Theme Scripts -->
 <script type="text/javascript" src="theme/default/js/raphael.min.js"></script>
 <script type="text/javascript" src="theme/default/js/raphael.icons.js"></script>

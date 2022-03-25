@@ -1,42 +1,30 @@
 Brutalist Framework Changelog
 
-Version 2.3.3 Update
-Updates to bIcons library; added new filetypes file icons CSS library to core
-
-Version 2.3.2 Update
-Grid system is replaced with Blueprint Grid 1.1 (http://www.blueprintgrid.com) 
-
-Version 2.3
+Version 2.4
 General:
-+ Added browserconfig.xml to root directory for Microsoft icon support
++ New jab.js file which contains all vanilla javascript functions
++ Added tags to specify which elements are CSS, vanilla js, or jquery-based 
 
 BELL:
-+ (no changes)
++ Pagelock script is 100% vanilla
 
 Flavors:
-+ New Flavors: sage, slime, fuchsia, apple, indigo, denim, flaxen, dijon
-+ New Color Combos: seaweed-slime, steak-beer, sapphire-sky, midnight-sky, greek, blueprint
-+ New Gradients: violence, viking, socialize, emptiness, clean, evergreen
-+ Deprecated: blueberry-pomegranate, olive-mushroom
++ Removed old legacy classes
++ New Flavors: green-tea, grass, fog, fossil
 
 BFX:
-+ New TumbleText effect
-+ New shift-glitch effect
-+ Updated animated gradient classes
++ Updated and vanilla-ized Chop Text so that text is now truncated by word count
 
 BUIX:
-+ New Tree List navigation element
++ New pagination interface (found under Navigation)
 
 BUTCH:
-+ Added support for double borders & outlines
-+ Added description lists support
-+ Updated unordered lists
++ New ul lists: heart, sparkle, burst
++ Updated scale classes
 
 bIcons:
-+ Over 30 new icons added
++ New Animals category and other icons added
++ Other updates
 
 Rebar:
-+ Updated Device Type Visibility classes
-
-Boilerplates:
-+ (no changes)
++ Added width support for devices up to 1600px

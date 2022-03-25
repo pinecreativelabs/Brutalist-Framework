@@ -13,13 +13,13 @@
 	<meta name="twitter:description" content="A free open source CSS library for the brutalist web design trend.">
 	<meta name="twitter:creator" content="@brutalistfwk">
 	<!-- Twitter Summary card images must be at least 120x120px -->
-	<meta name="twitter:image" content="http://www.brutalistframework.com/core/files/images/bf23.jpg">
+	<meta name="twitter:image" content="http://www.brutalistframework.com/core/files/images/bf-social-tile.jpg">
 
 	<!-- Open Graph data -->
 	<meta property="og:title" content="Brutalist Framework || BUTCH" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://www.brutalistframework.com" />
-	<meta property="og:image" content="http://www.brutalistframework.com/core/files/images/bf23.jpg" />
+	<meta property="og:image" content="http://www.brutalistframework.com/core/files/images/bf-social-tile.jpg" />
 	<meta property="og:description" content="A free open source CSS library for the brutalist web design trend." /> 
 	<meta property="og:site_name" content="Brutalist Framework" />
 
@@ -42,11 +42,11 @@
 		<div class="row"><div class="col-sm-12"><div class="container-1200">
 			<div class="row no-padding stack1 content" id="scrolltop">
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 no-padding">
-					<a href="index.html"><img class="large-thumb crop circle brdr-s-k red-border invert-hover" src="core/files/images/brutalist-framework.jpg" alt="Brutalist Framework" /></a>
+					<a href="index.html"><img class="large-thumb crop circle brdr-s-k red-b invert-h" src="core/files/images/brutalist-framework.jpg" alt="Brutalist Framework" /></a>
 				</div>
-				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 no-padding lucida-text">
+				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 no-padding lucida">
 					<h1 class="page-title brdr-s-k red-b courier white-t"><i class="bi bi-communist"></i><span class="baffle-prolonged">BUTCH</span></h1>
-					<div class="page-desc brdr-s-k red-b rice-text">
+					<div class="page-desc brdr-s-k red-b rice-t">
 						<h2 class="flow-text baffle">Brutalist Utility & Typography Class Helpers</h2><br />
 						<p>General-use classes for typography style, layouts, and page elements.</p>
 					</div>
@@ -250,6 +250,12 @@
 											<li>Item 2</li>
 											<li>Item 3</li>
 										</ul>
+										<p><strong>ul.heart</strong></p>
+										<ul class="heart">
+											<li>Item 1</li>
+											<li>Item 2</li>
+											<li>Item 3</li>
+										</ul>
 									</div>
 									<div class="col-xs-12 col-sm-4 col-md-4">
 										<p><strong>ul.circle</strong></p>
@@ -276,6 +282,12 @@
 											<li>Item 2</li>
 											<li>Item 3</li>
 										</ul>
+										<p><strong>ul.sparkle</strong></p>
+										<ul class="sparkle">
+											<li>Item 1</li>
+											<li>Item 2</li>
+											<li>Item 3</li>
+										</ul>
 									</div>
 									<div class="col-xs-12 col-sm-4 col-md-4">
 										<p><strong>ul.square</strong></p>
@@ -298,6 +310,12 @@
 										</ul>
 										<p><strong>ul.arrow</strong></p>
 										<ul class="arrow">
+											<li>Item 1</li>
+											<li>Item 2</li>
+											<li>Item 3</li>
+										</ul>
+										<p><strong>ul.burst</strong></p>
+										<ul class="burst">
 											<li>Item 1</li>
 											<li>Item 2</li>
 											<li>Item 3</li>
@@ -373,7 +391,7 @@
 								</div>
 							</div>
 						</div>
-						<p class="white-text flow-text charcoal courier-new" style="margin-top: 1em;">Section Header Counter</p>
+						<p class="white-t flow-text charcoal courier" style="margin-top: 1em;">Section Header Counter</p>
 						<div class="row">
 							<div class="col-xs-12 col-sm-12 col-md-6">
 								<p>The section header counter allows you to create auto-incremented section headers and sub-headers. </p>
@@ -472,13 +490,15 @@
 							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 								<p class="white-t courier flow-text"><span class="charcoal allcaps"><strong>Scale Classes</strong></span></p>
 								<p><strong>.enlarge</strong> - Enlarges container size by 50%<br />
-									<strong>.double-size</strong> - Doubles size of container<br />
-									<strong>.triple-size</strong> - Triples size of container<br />
+									<strong>.scale-2x</strong> - Doubles size of container<br />
+									<strong>.scale-3x</strong> - Enlarges container 3x<br />
+									<strong>.scale-4x</strong> - Enlarges container 4x<br />
 									<strong>.shrink</strong> - Reduces container size by 25%<br />
 									<strong>.half-size</strong> - Reduces container to half it's original size<br />
-									<strong>.quarter-size</strong> - Reduces container to 25% of original size<br /><br />
+									<strong>.quarter-size</strong> - Reduces container to 25% of original size
 								</p>
-								<p class="white-t courier flow-text"><span class="charcoal allcaps"><strong>Skew Classes</strong></span></p>
+								<p class="info"><strong>Scale on hover:</strong> append a <em><strong>-h</strong></em> to any of the above scale classes. (ex. <strong>.scale-3x-h</strong>)</p>
+								<p class="white-t courier flow-text" style="margin-top: 1em;"><span class="charcoal allcaps"><strong>Skew Classes</strong></span></p>
 								<p><strong>.skew</strong> - Skews container to left<br />
 									<strong>.skew-right</strong> - Skews container to right<br />
 									<strong>.perspective</strong> - Angles container to the left<br />
@@ -1064,7 +1084,7 @@
 	</nav>
 	<a href="#download" data-modal-open>
 	<div class="skew sweden btn invert-h">
-		<p class="skew-right"><span class="flow-text impact">Download</span><br /><span class="lucida"><small>version 2.3.3</small></span></p>
+		<p class="skew-right"><span class="flow-text impact">Download</span><br /><span class="lucida"><small>version 2.4</small></span></p>
 	</div></a>
 </div>
 
@@ -1075,9 +1095,10 @@
 			<div class="col-sm-12 no-padding">
 				<div class="padded lucida">
 					<h4>Begin the <span class="blink red-t">Brutality</span></h5>
-					<p>Released <strong>3/11/2022</strong></p>
-					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.3.3.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.3.3</a></p><hr class="jagged-rule-dark" />
+					<p>Released <strong>3/24/2022</strong></p>
+					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.4.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.4</a></p><hr class="jagged-rule-dark" />
 					<p style="font-size: 1.15em;"><strong><span style="font-size: 1.3em;">Archived Versions</span></strong><br />
+					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.3.3.zip" target="_blank">2.3.3</a> <small>(3/11/2022), 17mb</small><br />
 					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.3.zip" target="_blank">2.3</a> <small>(5/14/2021), 17mb</small><br />
 					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.2.zip" target="_blank">2.2</a> <small>(2/14/2021), 17mb</small><br />
 					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.1.zip" target="_blank">2.1</a> <small>(10/23/2020), 19mb</small><br />
@@ -1173,10 +1194,10 @@
 </div>
 
 <!-- Core Scripts -->
+<script src="core/js/jab.js"></script>
 <script src="core/js/jquery.3.js"></script>
 <script src="core/js/brutalist.js"></script>
 <script src="core/js/start.brutalizing.js"></script>
-
 <!-- BELL -->
 <script src="core/bell/js/bell.js"></script>
 
