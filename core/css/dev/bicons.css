@@ -1,5 +1,4 @@
-/* bIcons - Brutalist Icons 2.3.3
-NOTE: not all text editors support all symbols, so some symbols may appear as boxes. */
+/* bIcons - Brutalist Icons 2.4 */
 .bi:before { 
 	display: inline-block;
   font: normal normal normal 14px/1 arial;
@@ -35,23 +34,23 @@ NOTE: not all text editors support all symbols, so some symbols may appear as bo
 .bi-red-light::before{content:"\1F6A8";}
 .bi-restricted::before{content:"\26D4";}
 .bi-sos::before{content:"\1F198";}
-.bi-warning::before{content:"\⚠";}
+.bi-warning::before{content:"\26A0";}
 .bi-wrong::before{content:"\274C";}
-.bi-yield::before{content:"\⛛";}
+.bi-yield::before{content:"\26DB";}
 
 /* Directional */
 .bi-converge-right::before{content:"\269E";}
 .bi-converge-left::before{content:"\269F";}
-.bi-left::before{content:"\⬅";}
-.bi-right::before{content:"\➡";}
+.bi-left::before{content:"\2794";-webkit-transform: scaleX(-1); transform: scaleX(-1);}
+.bi-right::before{content:"\2794";}
 .bi-up::before{content:"\25B4";}
 .bi-down::before{content:"\25BE";}
-.bi-charrow::before{content:"\➲";}
-.bi-farrow::before{content:"\➠";}
-.bi-point-left::before{content:"\☚";}
-.bi-point-right::before{content:"\☛";}
-.bi-two-way::before{content:"\⛖";}
-.bi-two-way-o::before{content:"\⛗";}
+.bi-charrow::before{content:"\27B2";}
+.bi-farrow::before{content:"\27A0";}
+.bi-point-left::before{content:"\261A";}
+.bi-point-right::before{content:"\261B";}
+.bi-two-way::before{content:"\26D6";}
+.bi-two-way-o::before{content:"\26D7";}
 .bi-down-right::before{content:"\27A5";}
 .bi-up-right::before{content:"\27A6";}
 .bi-next::before{content:"\2771";}
@@ -61,7 +60,7 @@ NOTE: not all text editors support all symbols, so some symbols may appear as bo
 .bi-archery::before{content:"\1F3F9";}
 .bi-baseball::before{content:"\26BE";}
 .bi-basketball::before{content:"\1F3C0";}
-.bi-beach::before{content:"\⛱";}
+.bi-beach::before{content:"\26F1";}
 .bi-bicycle::before{content:"\1F6B4";}
 .bi-billiards::before{content:"\1F3B1";}
 .bi-birthday::before{content:"\1F382";}
@@ -86,13 +85,13 @@ NOTE: not all text editors support all symbols, so some symbols may appear as bo
 .bi-soccer::before{content:"\26BD";}
 .bi-surf::before{content:"\1F3C4";}
 .bi-swim::before{content:"\1F3CA";}
-.bi-tennis::before{content:"\🎾";}
+.bi-tennis::before{content:"\1F3BE";}
 .bi-volleyball::before{content:"\1F3D0";}
 .bi-walk::before{content:"\1F6B6";}
 
 /* Objects */
 .bi-airplane::before{content:"\2708";}
-.bi-alarm::before{content:"\⏰";}
+.bi-alarm::before{content:"\23F0";}
 .bi-anchor::before{content:"\2693";}
 .bi-article::before{content:"\1F4F0";}
 .bi-atm::before{content:"\1F3E7";}
@@ -101,6 +100,7 @@ NOTE: not all text editors support all symbols, so some symbols may appear as bo
 .bi-balloon::before{content:"\1F388";}
 .bi-battery::before{content:"\1F50B";}
 .bi-bike::before{content:"\1F6B2";}
+.bi-bolt::before{content:"\1F529";}
 .bi-books::before{content:"\1F4DA";}
 .bi-book-open::before{content:"\1F4D6";}
 .bi-book-red::before{content:"\1F4D5";}
@@ -110,9 +110,11 @@ NOTE: not all text editors support all symbols, so some symbols may appear as bo
 .bi-briefcase::before{content:"\1F4BC";}
 .bi-bulb::before,.idea::before{content:"\1F4A1";}
 .bi-camera::before{content:"\1F4F7";}
-.bi-candle::before{content:"\🕯";}
+.bi-candle::before{content:"\1F56F";}
 .bi-card::before{content:"\1F4B3";}
+.bi-cart::before,.bi-shop::before{content:"\1F6D2";}
 .bi-castle::before{content:"\1F3F0";}
+.bi-cd::before{content:"\1F4BD";}
 .bi-chains::before{content:"\26D3";}
 .bi-church::before{content:"\26EA";}
 .bi-computer::before{content:"\1F4BB";}
@@ -120,6 +122,7 @@ NOTE: not all text editors support all symbols, so some symbols may appear as bo
 .bi-diamond::before{content:"\1F48E";}
 .bi-dice::before{content:"\1F3B2";}
 .bi-door::before{content:"\1F6AA";}
+.bi-dress::before{content:"\1F457";}
 .bi-factory::before{content:"\1F3ED";}
 .bi-flashlight::before{content:"\1F526";}
 .bi-fountain::before{content:"\26F2";}
@@ -131,16 +134,20 @@ NOTE: not all text editors support all symbols, so some symbols may appear as bo
 .bi-home::before,.bi-house::before{content:"\1F3E0";}
 .bi-key::before{content:"\1F511";}
 .bi-knife::before{content:"\1F52A";}
+.bi-mailbox::before{content:"\1F4EA";}
 .bi-map::before, .bi-world::before{content:"\1F5FA";}
 .bi-mic::before{content:"\1F3A4";}
+.bi-microscope::before{content:"\1F52C";}
 .bi-notepad::before{content:"\1F5D2";}
 .bi-palette::before{content:"\1F3A8";}
+.bi-pants::before{content:"\1F456";}
 .bi-piano::before{content:"\1F3B9";}
 .bi-pick::before{content:"\26CF";}
 .bi-plug::before,.bi-plugin::before{content:"\1F50C";}
 .bi-poop::before,.bi-shit::before{content:"\1F4A9";}
 .bi-radio::before{content:"\1F4FB";}
 .bi-robot::before{content:"\1F916";}
+.bi-roller-coaster::before{content:"\1F3A2";}
 .bi-ruler::before{content:"\1F4CF";}
 .bi-saxaphone::before{content:"\1F3B7";}
 .bi-school::before{content:"\1F3EB";}
@@ -149,6 +156,7 @@ NOTE: not all text editors support all symbols, so some symbols may appear as bo
 .bi-skull::before{content:"\1F480";}
 .bi-tag::before{content:"\1F516";}
 .bi-target::before{content:"\1F3AF";}
+.bi-telescope::before{content:"\1F52D";}
 .bi-ticket::before{content:"\1F3AB";}
 .bi-toilet::before{content:"\1F6BD";}
 .bi-trophy::before{content:"\1F3C6";}
@@ -200,20 +208,23 @@ NOTE: not all text editors support all symbols, so some symbols may appear as bo
 
 /* Misc Symbols */
 .bi-amp::before{content:"\26A1";}
+.bi-angle::before{content:"\2220";}
 .bi-alternate::before{content:"\26D5";}
 .bi-atomic::before{content:"\269B";}
 .bi-audio::before{content:"\1F3A7";}
 .bi-awareness::before{content:"\1F397";}
 .bi-balance::before,.bi-justice::before{content:"\2696";}
 .bi-heart-black::before{content:"\1F5A4";}
-.bi-bowtie::before{content:"\⋈";}
+.bi-bowtie::before{content:"\22C8";}
 .bi-celsius::before{content:"\2103";}
 .bi-farenheit::before{content:"\2109";}
 .bi-comet::before{content:"\1F320";}
 .bi-core::before,.bi-fisheye::before{content:"\25C9";}
+.bi-deploy::before,.bi-trident::before{content:"\1F531";}
 .bi-divorce::before{content:"\26AE";}
 .bi-family::before{content:"\1F46A";}
 .bi-female::before{content:"\♀";}
+.bi-finish-line::before{content:"\1F3C1";}
 .bi-fleur::before{content:"\269C";}
 .bi-free::before{content:"\1F193";}
 .bi-gay::before{content:"\26A3";}
@@ -228,8 +239,8 @@ NOTE: not all text editors support all symbols, so some symbols may appear as bo
 .bi-heart-green::before{content:"\1F49A";}
 .bi-heart-purple::before {content:"\1F49C";}
 .bi-history::before{content:"\210D";}
-.bi-infinity::before{content:"\∞";}
-.bi-king::before{content:"\♚";}
+.bi-infinity::before{content:"\221E";}
+.bi-king::before{content:"\265A";}
 .bi-launch::before,.bi-rocket::before{content:"\1F680";}
 .bi-lesbian::before{content:"\26A2";}
 .bi-loz::before{content:"\25C8";}
@@ -238,29 +249,36 @@ NOTE: not all text editors support all symbols, so some symbols may appear as bo
 .bi-medical::before{content:"\☤";}
 .bi-men::before{content:"\1F6B9";}
 .bi-music::before{content:"\♫";}
+.bi-musical::before{content:"\1F3B6";}
 .bi-new::before{content:"\1F195";}
 .bi-no-smoking::before{content:"\1F6AD";}
 .bi-smoking::before{content:"\1F6AC";}
 .bi-numero::before{content:"\2116";}
-.bi-ohm::before{content:"\Ω";}
+.bi-ohm::before{content:"\2126";}
 .bi-real::before,.bi-100::before{content:"\1F4AF";}
+.bi-paper-recycle::before{content:"\267C";}
 .bi-partners::before{content:"\26AF";}
+.bi-paws::before{content:"\1F43E";}
 .bi-per::before{content:"\214C";}
 .bi-pinwheel::before{content:"\2735";}
 .bi-prescribe::before{content:"\211E";}
-.bi-queen::before{content:"\♛";}
-.bi-recycle::before{content:"\♻";}
+.bi-queen::before{content:"\265B";}
+.bi-recycle::before{content:"\267B";}
 .bi-reference::before{content:"\203B";}
 .bi-sleep::before{content:"\1F4A4";}
 .bi-sol::before{content:"\1F506";}
 .bi-sparkle::before{content:"\2734";}
-.bi-speak::before{content:"\🗣";}
+.bi-speak::before{content:"\1F5E3";}
+.bi-strong::before,.bi-strength::before{content:"\1F4AA";}
 .bi-superstar::before{content:"\1F31F";}
-.bi-tel::before{content:"\℡";}
+.bi-spy::before{content:"\1F575";}
+.bi-symphony::before{content:"\1F3BC";}
+.bi-tel::before{content:"\2121";}
 .bi-temperature::before{content:"\🌡";}
 .bi-underage::before{content:"\1F51E";}
+.bi-unequal::before{content:"\2260";}
 .bi-unisex::before{content:"\1F6BB";}
-.bi-wait::before{content:"\⏳";}
+.bi-wait::before{content:"\231B";}
 .bi-women::before{content:"\1F6BA";}
 .bi-wonder::before,.bi-magic::before{content:"\2728";}
 
@@ -282,14 +300,10 @@ NOTE: not all text editors support all symbols, so some symbols may appear as bo
 .bi-repeat::before{content:"\1F501";}
 .bi-repeat-once::before{content:"\1F502";}
 .bi-sync::before,.bi-refresh::before{content:"\1F504";}
-.bi-increase::before{content:"\1F53C";}
-.bi-decrease::before{content:"\1F53D";}
-.bi-top::before{content:"\1F51D";}
-.bi-back::before{content:"\1F519";}
 .bi-verify::before{content:"\2705";}
-.bi-box::before{content:"\☐";}
-.bi-box-check::before{content:"\☑";}
-.bi-box-x::before{content:"\☒";}
+.bi-box::before{content:"\2610";}
+.bi-box-check::before{content:"\2611";}
+.bi-box-x::before{content:"\2612";}
 .bi-check::before{content:"\2714";}
 .bi-create::before{content:"\1F4AB";}
 .bi-add::before{content:"\271A";}
@@ -299,42 +313,46 @@ NOTE: not all text editors support all symbols, so some symbols may appear as bo
 .bi-phone-o::before{content:"\260F";}
 .bi-call::before{content:"\1F4DE";}
 .bi-email::before{content:"\2709";}
-.bi-mailbox::before{content:"\1F4EA";}
 .bi-clear::before{content:"\❎";}
 .bi-close::before,.bi-exit::before{content:"\2716";}
+.bi-close-o::before,.bi-exit-o::before{content:"\2297";}
 .bi-announce::before,.bi-megaphone::before{content:"\1F4E2";}
+.bi-app-install::before{content:"\1F4F2";}
 .bi-broadcast::before{content:"\1F4E1";}
 .bi-compress::before{content:"\1F5DC";}
 .bi-directory::before,.bi-folder::before{content:"\1F4C2";}
-.bi-navigate::before{content:"\26EF";}
+.bi-navigate::before,.bi-sitemap::before,.bi-nav::before{content:"\26EF";}
 .bi-notify::before,.bi-bell::before{content:"\1F514";}
 .bi-unnotify::before{content:"\1F515";}
 .bi-fill::before{content:"\25CD";}
+.bi-filter::before{content:"\1F4F6";}
 .bi-flag::before{content: "\2691"; }
 .bi-flag-o::before{content: "\2690";}
 .bi-grid::before{content:"\25A6";}
-.bi-time::before{content:"\⏱";}
+.bi-time::before{content:"\231A";}
+.bi-database::before{content:"\1F6E2";}
 .bi-lock::before{content:"\1F512";}
 .bi-unlock::before{content:"\1F513";}
 .bi-encrypt::before{content:"\1F510";}
-.bi-download::before{content:"\1F4E5";}
-.bi-upload::before{content:"\1F4E4";}
 .bi-mute::before{content:"\1F507";}
 .bi-vol-l::before{content:"\1F508";}
 .bi-vol-m::before{content:"\1F509";}
 .bi-vol-h::before{content:"\1F50A";}
 .bi-watch::before{content:"\1F441";}
+.bi-help::before{content:"\2753";}
+.bi-help-o::before{content:"\2754";}
 .bi-calendar::before{content:"\1F4C5";}
 .bi-date::before{content:"\1F4C6";}
 .bi-package::before{content:"\1F4E6";}
-.bi-attach::before{content:"\1F4CE";}
+.bi-attachment::before{content:"\1F4CE";}
+.bi-image::before{content:"\1F3B4";}
 .bi-clipboard::before{content:"\1F4CB";}
 .bi-control::before{content:"\26EE";}
 .bi-corners::before{content:"\26F6";}
 .bi-hub::before,.bi-network::before{content:"\2749";}
 .bi-pk::before,.bi-primary-key::before{content:"\26BF";}
 .bi-look::before{content:"\1F440";}
-.bi-thought::before{content:"\1F4AD";}
+.bi-think::before,.bi-thought::before{content:"\1F4AD";}
 .bi-isolate::before,.bi-conjunction::before{content:"\260C";}
 .bi-join::before,.bi-opposition::before{content:"\260D";}
 .bi-pencil::before,.bi-edit::before{content:"\270E";}
@@ -342,9 +360,11 @@ NOTE: not all text editors support all symbols, so some symbols may appear as bo
 .bi-sign::before{content:"\2712";}
 .bi-compose::before{content:"\270D";}
 .bi-forum::before{content:"\1F5E8";}
-.bi-gear::before{content:"\26ED";}
-.bi-file::before{content:"\1F4C4";}
-.bi-file-edit::before{content:"\1F4DD";}
+.bi-settings::before,.bi-gear::before{content:"\26ED";}
+.bi-data-disk::before{content:"\1F4BF";}
+.bi-data-disk-gold::before{content:"\1F4C0";}
+.bi-file::before,.bi-document::before{content:"\1F4C4";}
+.bi-file-edit::before,.bi-doc-edit::before{content:"\1F4DD";}
 .bi-script::before{content:"\1F4C3";}
 .bi-read::before{content:"\1F4DC";}
 .bi-pin::before{content:"\1F4CC";}
@@ -356,23 +376,40 @@ NOTE: not all text editors support all symbols, so some symbols may appear as bo
 .bi-tools::before{content:"\1F6E0";}
 .bi-bar-graph::before,.bi-stats::before{content:"\1F4CA";}
 .bi-charts::before,.bi-analytics::before{content:"\1F4C8";}
-.bi-cart::before,.bi-shop::before{content:"\1F6D2";}
 .bi-chat::before{content:"\1F4AC";}
 .bi-approve::before{content:"\1F44D";}
 .bi-disapprove::before{content:"\1F44E";}
-.bi-wave::before{content:"\👋";}
+.bi-wave::before{content:"\1F44B";}
 .bi-f-off::before{content:"\1F595";}
 .bi-halt::before{content:"\270B";}
 .bi-video::before{content:"\1F3A6";}
+
+/* directional ui */
+.bi-download::before{content:"\1F4E5";}
+.bi-upload::before{content:"\1F4E4";}
+.bi-increase::before{content:"\1F53C";}
+.bi-decrease::before{content:"\1F53D";}
+.bi-top::before{content:"\1F51D";}
+.bi-back::before{content:"\1F519";}
+.bi-migrate::before{content:"\21B9";}
+.bi-pull-left::before{content:"\219A";}
+.bi-push-right::before{content:"\219B";}
+.bi-scale-up::before,.bi-expand::before{content:"\21F1";-webkit-transform: scaleX(-1); transform: scaleX(-1);}
+.bi-scale-down::before,.bi-condense::before{content:"\21F2";}
+.bi-undo::before{content:"\21B6";}
+.bi-redo::before{content:"\21B7";}
+.bi-up-down::before{content:"\21F3";}
 .bi-zoom-left::before{content:"\1F50D";}
 .bi-zoom-right::before{content:"\1F50E";}
 
 /* layout */
 .bi-columns::before,.bi-cols::before{content:"\2637";}
-.bi-rows::before{content:"\2630";}
+.bi-rows::before,.bi-menu::before{content:"\2630";}
 .bi-cols-over-rows::before{content:"\2631";}
 .bi-cols-between-rows::before{content:"\2632";}
 .bi-cols-under-rows::before{content:"\2634";}
+.bi-quadrant::before,.bi-panes::before{content:"\229E";}
+.bi-half-panes::before{content:"\229F";}
 .bi-row-over-cols::before{content:"\2636";}
 .bi-row-between-cols::before{content:"\2635";}
 .bi-row-under-cols::before{content:"\2633";}
@@ -381,43 +418,79 @@ NOTE: not all text editors support all symbols, so some symbols may appear as bo
 .bi-autumn::before,.bi-fall::before{content:"\1F342";}
 .bi-cactus::before{content:"\1F335";}
 .bi-camp::before,.bi-camping::before{content:"\26FA";}
-.bi-cloud::before{content:"\☁";}
-.bi-clover::before{content:"\🍀";}
+.bi-cloud::before{content:"\2601";}
+.bi-clover::before{content:"\1F340";}
 .bi-eggplant::before,.bi-dick::before{content:"\1F346";}
 .bi-daisy::before{content:"\1F33C";}
-.bi-eagle::before{content:"\1F985";}
 .bi-earth::before{content:"\1F30E";}
-.bi-exotic::before{content:"\🌺";}
+.bi-exotic::before{content:"\1F33A";}
 .bi-fire::before,.bi-hot::before{content:"\1F525";}
-.bi-flower::before{content:"\✿";}
+.bi-flower::before{content:"\273F";}
 .bi-galaxy::before{content:"\1F30C";}
 .bi-hurricane::before{content:"\1F300";}
-.bi-leaf::before{content:"\🍁";}
+.bi-leaf::before{content:"\1F341";}
 .bi-mountain::before{content:"\1F5FB";}
 .bi-ocean::before{content:"\1F30A";}
 .bi-palm::before{content:"\1F334";}
 .bi-pine::before{content:"\1F332";}
 .bi-peach::before,.bi-ass::before,.bi-butt::before{content:"\1F351";}
-.bi-rain::before{content: "\⛆";}
+.bi-rain::before{content: "\26C6";}
 .bi-rainbow::before{content:"\1F308";}
 .bi-rose::before{content:"\1F339";}
-.bi-snake::before{content:"\🐍";}
 .bi-snowflake::before{content:"\2744";}
-.bi-shamrock::before{content: "\☘";}
-.bi-shooting-star::before{content:"\🌠";}
+.bi-shamrock::before{content: "\2618";}
+.bi-shooting-star::before{content:"\1F320";}
 .bi-sprout::before{content:"\1F331";}
-.bi-sun::before{content: "\☀";}
-.bi-weather::before{content: "\⛅";}
+.bi-sun::before{content: "\2600";}
+.bi-weather::before{content: "\26C5";}
 .bi-sunflower::before{content:"\1F33B";}
 .bi-sunset-land::before{content:"\1F304";}
 .bi-sunset-sea::before{content:"\1F305";}
-.bi-thunderstorm::before,.bi-t-storm::before{content: "\⛈";}
+.bi-thunderstorm::before,.bi-t-storm::before{content: "\26C8";}
 .bi-tornado::before{content:"\1F32A";}
 .bi-tree::before{content:"\1F333";}
 .bi-tulip::before{content:"\1F337";}
 .bi-volcano::before{content:"\1F30B";}
 .bi-water::before{content:"\1F4A7";}
-.bi-wet::before{content:"\1F4A6";}
+.bi-wet::before,.bi-moist::before{content:"\1F4A6";}
+
+/* Animals */
+.bi-alligator::before,.bi-gator::before{content:"\1F40A";}
+.bi-bird::before, .bi-parrot::before{content:"\1F426";}
+.bi-butterfly::before{content:"\1F98B";}
+.bi-camel::before{content:"\1F42B";}
+.bi-cat::before{content:"\1F408";}
+.bi-cow::before{content:"\1F404";}
+.bi-crab::before{content:"\1F980";}
+.bi-deer::before{content:"\1F98C";}
+.bi-dog::before{content:"\1F415";}
+.bi-dragon::before{content:"\1F409";}
+.bi-duck::before{content:"\1F986";}
+.bi-eagle::before{content:"\1F985";}
+.bi-elephant::before{content:"\1F418";}
+.bi-fish::before{content:"\1F41F";}
+.bi-frog::before{content:"\1F438";}
+.bi-horse::before{content:"\1F434";}
+.bi-ladybug::before{content:"\1F41E";}
+.bi-lion::before{content:"\1F981";}
+.bi-monkey::before{content:"\1F412";}
+.bi-octopus::before{content:"\1F419";}
+.bi-owl::before{content:"\1F989";}
+.bi-panda::before{content:"\1F43C";}
+.bi-penguin::before{content:"\1F427";}
+.bi-pig::before{content:"\1F416";}
+.bi-poodle::before{content:"\1F429";}
+.bi-rabbit::before{content:"\1F407";}
+.bi-rat::before{content:"\1F400";}
+.bi-rhino::before{content:"\1F98F";}
+.bi-shark::before{content:"\1F988";}
+.bi-sheep::before{content:"\1F411";}
+.bi-shrimp::before{content:"\1F990";}
+.bi-snail::before{content:"\1F40C";}
+.bi-snake::before{content:"\1F40D";}
+.bi-turkey::before{content:"\1F983";}
+.bi-turtle::before{content:"\1F422";}
+.bi-whale::before{content:"\1F433";}
 
 /* Food */
 .bi-apple::before{content:"\1F34E";}

@@ -1,4 +1,4 @@
-/* BUTCH 2.2
+/* BUTCH 2.4
 *************************/
 
 /* SPACING */
@@ -37,16 +37,17 @@
 }
 
 /* SCALE CLASSES */
-.enlarge, .enlarged {
+.enlarge, .enlarged, .enlarge-h:hover, .enlarged-h:hover {
 	-ms-transform: scale(1.5,1.5); /* IE 9 */
 	-webkit-transform: scale(1.5,1.5); /* Safari */
 	transform: scale(1.5,1.5); /* Standard syntax */
 }
-.double-size { -ms-transform: scale(2,2); -webkit-transform: scale(2,2); transform: scale(2,2); }
-.triple-size { -ms-transform: scale(3,3); -webkit-transform: scale(3,3); transform: scale(3,3); }
-.shrink, .shrunk { -ms-transform: scale(0.75, 0.75); -webkit-transform: scale(0.75, 0.75); transform: scale(0.75, 0.75); }
-.half-size { -ms-transform: scale(0.5, 0.5); -webkit-transform: scale(0.5, 0.5); transform: scale(0.5, 0.5); }
-.quarter-size { -ms-transform: scale(0.25, 0.25); -webkit-transform: scale(0.25, 0.25); transform: scale(0.25, 0.25); }
+.scale-2x, .double-size, .scale-2x-h:hover { -ms-transform: scale(2,2); -webkit-transform: scale(2,2); transform: scale(2,2); }
+.scale-3x, .triple-size, .scale-3x-h:hover { -ms-transform: scale(3,3); -webkit-transform: scale(3,3); transform: scale(3,3); }
+.scale-4x, .scale-4x-h:hover { -ms-transform: scale(4,4); -webkit-transform: scale(4,4); transform: scale(4,4); }
+.shrink, .shrunk, .shrink-h:hover, .shrunk-h:hover { -ms-transform: scale(0.75, 0.75); -webkit-transform: scale(0.75, 0.75); transform: scale(0.75, 0.75); }
+.half-size, .half-size-h:hover { -ms-transform: scale(0.5, 0.5); -webkit-transform: scale(0.5, 0.5); transform: scale(0.5, 0.5); }
+.quarter-size, .quarter-size-h:hover { -ms-transform: scale(0.25, 0.25); -webkit-transform: scale(0.25, 0.25); transform: scale(0.25, 0.25); }
 
 /* SKEW CLASSES */
 .skew, .skew-left, .skew-h:hover, .skew-left-h:hover, .skew-hover:hover, .skew-left-hover:hover {
@@ -531,21 +532,26 @@ ul.disc {list-style-type: disc;}
 ul.square{list-style-type: square;}
 ul.circle {list-style-type: circle;}
 ul.disc, ul.square, ul.circle {padding:0;}
-ul.diamond, ul.diamond ul, ul.triangle, ul.triangle ul, ul.brutal, ul.brutal ul, ul.check, ul.xmark,
-ul.arrow, ul.fisheye, ul.fisheye ul, ul.bullseye, ul.bullseye ul, ul.lozenge, ul.lozenge ul{ 
+ul.diamond, ul.diamond ul, ul.triangle, ul.triangle ul, ul.brutal, ul.brutal ul, ul.check, ul.xmark, ul.xmark ul,
+ul.heart, ul.heart ul, ul.sparkle, ul.sparkle ul, ul.burst, ul.burst ul,
+ul.arrow, ul.fisheye, ul.fisheye ul, ul.bullseye, ul.bullseye ul, ul.lozenge, ul.lozenge ul { 
 	list-style-type: none; padding: 0;
 }
 ul.diamond li, ul.triangle li {list-style-position: outside;}
 ul.diamond li:before, ul.triangle li:before, ul.brutal li:before, ul.check li:before, ul.arrow li:before,
+ul.heart li:before, ul.sparkle li:before, ul.burst li:before,
 ul.fisheye li:before, ul.bullseye li:before, ul.lozenge li:before, ul.xmark li:before { 
 	margin-right: 0.5em; 
 }
 ul.diamond li:before { content: '\25C6'; }
+ul.heart li:before {content:'\2764';}
 ul.lozenge li:before { content: '\25C8';}
+ul.sparkle li:before {content:'\2748';}
 ul.triangle li:before { content: '\25B6'; }
 ul.brutal li { list-style-position: outside; }
 ul.brutal li:before { content: '\25B0'; }
 ul.bullseye li:before { content: '\25CE';}
+ul.burst li:before { content:'\2738';}
 ul.fisheye li:before { content: '\25C9'; }
 ul.arrow li:before { content: '\27A4';}
 /* Unordered Lists - Tags: display ul list as inline */

@@ -1,5 +1,5 @@
 /*************************************************
-BUIX 2.3 - Brutalist User Interface Experience
+BUIX 2.4 - Brutalist User Interface Experience
 **************************************************/
 
 @font-face {
@@ -83,6 +83,26 @@ ul.tree-list ul { padding: 0 0 0 1.2em; margin: 0; list-style-type: none; }
 }
 .tree-list .nested {display: none;}
 .tree-list .active {display: block;}
+
+/* Pagination (default) */
+.items div {
+	border: 1px solid gray;
+	margin: 5px; padding: 10px;
+}
+.pager div {
+	float: left;
+	border: 1px solid gray;
+	margin: 5px; padding: 10px;
+}
+.pager div.disabled{opacity: 0.25;}
+.pager .pageNumbers a{
+	display: inline-block;
+	padding: 0 10px; color: gray;
+}
+.pager .pageNumbers a.active{color: orange;}
+.pager {overflow: hidden;}
+.pager .firstPage, .pager .lastPage, .pager .previousPage, .pager .nextPage {cursor: pointer;}
+.paginate-no-scroll .items div{height: 250px;}
 
 /* PicProtect */
 .picprotect{position:relative; display:none;left:0;bottom:30%;width:100%;margin:auto;z-index:500;text-align:center;}

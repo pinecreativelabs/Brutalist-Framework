@@ -1,4 +1,5 @@
-/* ReBAR 2.3 - Responsive Breakpoint Assistance Reference
+/* ReBAR 2.4
+Responsive Breakpoint Assistance Reference
 =========================================================== */
 
 /* VISIBLITY CLASSES (General usage) */
@@ -70,6 +71,10 @@
 	.show-under-1366 { display: flex; display: -webkit-flex; visibility: visible; }
 	.hide-under-1366 { display: none; visibility: hidden; }
 }
+@media screen and (max-width: 1600px) {
+	.show-under-1600 { display: flex; display: -webkit-flex; visibility: visible; }
+	.hide-under-1600 { display: none; visibility: hidden; }
+}
 
 /* MIN-WIDTH BREAKPOINTS */
 @media screen and (min-width: 241px) {
@@ -116,6 +121,10 @@
 	.show-over-1366 { display: flex; display: -webkit-flex; visibility: visible; }
 	.hide-over-1366 { display: none; visibility: hidden; }
 }
+@media screen and (min-width: 1601px) {
+	.show-over-1600 { display: flex; display: -webkit-flex; visibility: visible; }
+	.hide-over-1600 { display: none; visibility: hidden; }
+}
 
 /* WIDTH-BASED VISIBILITY BREAKPOINT RANGES */
 @media screen and (min-width: 240px) and (max-width: 319px) {
@@ -157,6 +166,10 @@
 @media screen and (min-width: 1280px) and (max-width: 1365px) {
 	.hide-1280-1366 { display: none; visibility: hidden; }
 	.show-1280-1366 { display: flex; display: -webkit-flex; visibility: visible; }
+}
+@media screen and (min-width: 1366px) and (max-width: 1600px) {
+	.hide-1366-1600 { display: none; visibility: hidden; }
+	.show-1366-1600 { display: flex; display: -webkit-flex; visibility: visible; }
 }
 
 /* HEIGHT-BASED VISIBILITY BREAKPOINTS */
