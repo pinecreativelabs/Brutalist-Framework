@@ -1,14 +1,6 @@
 ﻿/* Let the Brutalization Begin */
-/* NOTE: This script must be UTF-8 encoded, so as to ensure obfuscated character rendering on Baffle */
 
 $(document).ready(function(){
-
-/* CHOP Text */
-$('.chop-32').limitText({length:32, ellipsisText: '[...]'});
-$('.chop-64').limitText({length:64, ellipsisText: '[...]'});
-$('.chop-128').limitText({length:128, ellipsisText: '[...]'});
-$('.chop-256').limitText({length:256, ellipsisText: '[...]'});
-$('.chop-512').limitText({length:512, ellipsisText: '[...]'});
 
 /* Trianglify */
 $(".triangle-dark").trianglarize({
@@ -55,12 +47,5 @@ $('.trumble').click(function(){
 var demoStart = function(){$('.prumble').trigger('startRumble'); setTimeout(demoStop, 300);};
 var demoStop = function(){$('.prumble').trigger('stopRumble'); setTimeout(demoStart, 300);};
 demoStart();
-
-/* BAFFLE */
-/* Animation speed value can be increased or decreased. Same with duration */
-var b = baffle('.baffle', { characters: '█▓▒░', speed: 150 }).reveal(2500); /* Runs animation only once, upon page load */
-var bl = baffle('.baffle-longer', { characters: '█▓▒░', speed: 150, duration: 3000 }).reveal(3000); /* Animation duration set to 3 seconds */
-var bp = baffle('.baffle-prolonged', { characters:'█▓▒░', speed: 300, duration: 10000 }).reveal(10000); /* Animation duration set to 10 seconds */
-var bf = baffle('.baffle-forever', {characters: '█▓▒░', speed: 150}).start(); /* Animation continues on an endless loop */
 
 });
