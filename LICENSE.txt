@@ -4,7 +4,7 @@ BITCHY License
 // Brutalist Framework
 // Author: Brad Fogelstrom
 // Copyright Year: 2022
-// Software Version: 2.3.3
+// Software Version: 2.4
 
 Permission is granted, free of charge, to any person or organization obtaining a copy 
 of this software and all associated digital files, including all images and other 
