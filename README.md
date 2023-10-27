@@ -44,7 +44,7 @@ The _/core_ directory contains CSS libraries, javascript plugins, PHP scripts, a
 The core contains additional (optional) resources called _MOLDS_ which provide additional functionality for your app. 
 
 ### MOLDS
-_MOLDS_ (Makeable Object Layout & Design Source) CSS are automatically loaded in the header, but these can be enabled / disabled via the _/core/molds/config.php_ file. See _molds.php_ for full documentation. 
+_MOLDS_ (Makeable Object Layout & Design Source) resources (CSS only) are automatically loaded in the header, but these can be enabled / disabled via the _/core/molds/config.php_ file. See _molds.php_ for full documentation. 
 
 There are three types of MOLDS:
 * Tiles
@@ -52,3 +52,13 @@ There are three types of MOLDS:
 * Panels
 
 #### Tiles
+_Tiles_ use only CSS and javascript, so they are ideal for static HTML projects. 
+
+#### Boards
+_Boards_ use PHP and CSV or XML data to create groups of content. Data files for Boards should be stored in the _/app/data_ directory. 
+
+#### Panels
+_Panels_ will be available in 3.1+, and will also use PHP and CSV or XML data. These are more complex than Boards in that they use more complex PHP and their integration may require additional steps. 
+***
+### Core CSS
+Core CSS libraries are found in the _/core/css_ directory. 
