@@ -100,10 +100,33 @@ if (($tz_handle = fopen($get_tz_data, "r")) !== FALSE) {
 			}
 			$timezone_table.='<tr><td>'.$tzdata[0].'</td><td>'.$tzdata[1].'</td><td>'.$tzdata[2].'</td></tr>'.PHP_EOL;
 		}
-	} fclose($provs_handle);	
+	} fclose($tz_handle);	
 }
 $timezone_select.='</select>'.PHP_EOL;
 $timezone_select_offset.='</select>'.PHP_EOL;
 $timezone_table.='</table>'.PHP_EOL;
+
+// Languages
+$get_lang_data = $bdir.'core/data/csv/language-codes.csv';
+$language_select = '<select name="language">'.PHP_EOL;
+$language_table = '<table><tr><th>alpha3-b</th><th>alpha2</th><th>Language</th></tr>'.PHP_EOL;
+$row=0;
+$skip_row_number = array("1");
+if (($lang_handle = fopen($get_lang_data, "r")) !== FALSE) {
+	while (($langdata = fgetcsv($lang_handle, 1000, ",")) !== FALSE) {
+		$row++;
+		if (in_array($row, $skip_row_number)){continue;} else {
+			if(strtolower($user_cc)==$langdata[1]){
+				$language_select.='<option value="'.$langdata[1].'" selected>'.$langdata[2].'</option>'.PHP_EOL;
+			}else{
+				$language_select.='<option value="'.$langdata[1].'">'.$langdata[2].'</option>'.PHP_EOL;
+			}
+			$language_table.='<tr><td>'.$langdata[0].'</td><td>'.$langdata[1].'</td><td>'.$langdata[2].'</td></tr>'.PHP_EOL;
+		}
+	} fclose($lang_handle);	
+}
+$language_select.='</select>'.PHP_EOL;
+$language_table.='</table>'.PHP_EOL;
+
 
 ?>
