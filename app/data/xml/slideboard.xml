@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<slides>
+	<slide id="" active="true" classes="earthly sand-t times">
+		<title classes="fluid-text">Welcome to SlideBoard</title>
+		<text classes="flow-text">This is the slidiest slider that ever slided.&lt;br /&gt;This is an earthy slide.</text>
+		<figure classes="" src=""/>
+		<linkto url="#" target="_blank">CTA Button</linkto>
+	</slide>
+	<slide id="" active="true" classes="dusk plum-t">
+		<title classes="fluid-text">Dreamtree</title>
+		<text classes="flow-text">Dream of a path beyond the stars.</text>
+		<figure classes="" src="https://brutalistframework.com/assets/files/images/dreamtree.jpg">Dreamtree</figure>
+		<linkto url="" target="_blank"></linkto>
+	</slide>
+	<slide id="" active="true" classes="summer navy-t">
+		<title classes="fluid-text">Summer Slide</title>
+		<text classes="flow-text">Summertime sadness is for the birds.</text>
+		<figure classes="" src="https://brutalistframework.com/assets/files/images/steven-seagull.jpg"/>
+		<linkto url="" target="_blank"></linkto>
+	</slide>
+</slides>

@@ -1,0 +1,59 @@
+
+/* Default Theme */
+body {overflow-x:hidden;}
+.homeblock {z-index: 3;  position: absolute; top: 0; left: 0; height: 90vh; width: 100vw;}
+.requiresbox{display: inline-block; border: 3px solid #ff0000; color: #ff0000; background: #F3F781;padding: 1em; font-weight: 600;}
+.brix-demo>div{background: #8A0808; color: #FBFBEF; font-weight: 600;}
+.lemonlink,.lemonlink:visited {border-bottom: 4px dotted #ffff00; color: #ffff00;}
+.lemonlink:hover{background: #000;}
+.sliced-corner { 
+	-webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+	clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+}
+
+/* blonky blonks */
+.blonk-wrap{position: fixed; z-index: 99; right: 0; top: 0; }
+.blonk-wrap .label-toggle {padding: 0; text-align: center; margin-right: -1em;}
+.blonk-tr {width: 5rem; height: 5rem; right: 0; position: fixed;}
+.blonk-br, .blonk-cr {width: 6rem; height: 6rem; right: 0; position: fixed; z-index: 97; font-weight: 600; text-align: right;}
+.blonk-br {bottom: 0; font-size: 18px; padding: 10px 8px 0 0; text-transform: uppercase;}
+.blonk-cr {line-height: 100%; top: 48%; font-size: 18px; padding-top: 1.2em; letter-spacing: 2px; padding-right: 6px;}
+.blonk-cr i {margin-right: -10px;}
+.blonk-wrap .toggle:checked + .label-toggle{color: #fff; font-weight: 600;}
+.blonk-wrap .toggle:checked + .label-toggle::before {display: none;}
+.blonk-wrap .toggle:checked + .label-toggle + .toggle-content{max-height: 75vh;}
+.blonk-wrap .home img {width: auto !important; height: 60px; padding: 0;}
+.blonk-wrap .toggle:checked + .toggle-content .simple-nav {width: 100%;}
+.blonk-wrap .simple-nav li,.blonk-wrap .simple-nav {border-top: none; border-bottom: none;}
+.blonk-wrap .simple-nav li a:link, .blonk-wrap .simple-nav li a:visited {color: #00ff00; }
+.blonk-wrap .simple-nav li.home {background: #ff0000; font-weight:900;}
+.blonk-wrap .simple-nav li.home a:link, .blonk-wrap .simple-nav li.home a:visited {color: #fff;}
+.blonk-wrap .simple-nav li.home:hover {background: #000;}
+.blonk-wrap .simple-nav li.home:hover a {color: #ff0000;}
+.blonk-wrap .simple-nav li a:hover {border-bottom: 1px solid #00ff00; border-left: 3px solid #00ff00; padding-left: 6px;}
+.blonk-wrap .simple-nav li.home a:hover {border-bottom: none; border-left: none;}
+
+.bloxlist>div{display:inline-block; padding: 1rem;}
+.brixlist {list-style-type:none; padding: 0; margin: 0; font-weight: 600;}
+.brixlist li{display: inline-block; padding: 1rem; margin: 0.5rem 0.5rem;}
+
+/* navs */
+.simple.nav3 ul {border-top: 3px solid #8a2be2; font-weight: 600;}
+.simple.nav3 ul li{ border-bottom: 1px solid #8a2be2; background: #0000ff;}
+.simple.nav3 ul li a{color: #ffff00;}
+.simple.nav3 ul li:hover {border-left: 5px solid #8a2be2; border-bottom: 2px solid #8a2be2; background: #ffff00;}
+.simple.nav3 ul li a:hover {color: #0000ff;}
+
+@media screen and (min-width: 1200px){
+	.blonk-wrap .toggle-content .padded {width: 33vw;}
+	.blonk-wrap .simple-nav.two-col li {display: inline-block; width: 48%;}
+}
+@media screen and (min-width: 700px) and (max-width: 1199px) {
+	.blonk-wrap .toggle-content .padded {width: 66vw;}
+	.blonk-wrap .simple-nav.two-col li {display: inline-block; width: 48%;}
+}
+@media screen and (max-width: 699px){
+	.blonk-wrap .toggle-content .padded {width: 80vw;}
+	.blonk-wrap .simple-nav.two-col li {display: inline-block; width: 48%;}
+	.blonk-wrap .toggle:checked + .label-toggle + .toggle-content{max-height: 90vh;}
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<blog>
+	<post id="001" author="Pine Creative Labs" postdate="June 8, 2049" category="News" active="true">
+		<title>Alien Buttplug Found on Uranus</title>
+		<content>
+			A mysterious concrete buttplug was recently discovered deep within Uranus' atmosphere. SpaceX astronauts extracted the alien buttplug from Uranus, and brought it home for closer study and examination.
+		</content>
+		<cover src="https://www.brutalistframework.com/assets/files/images/buttplug.jpg" />
+	</post>
+	<post id="002" author="" postdate="May 26, 2026" category="Art &amp; Culture" active="true">
+		<title>Dildo's Statue Erected</title>
+		<content>
+			Mr. Bradley Dildo, a local artist, has erected and revealed his latest masterpiece: a 40-foot concrete penis. Provocatively exposed to the world, Dildo says his latest creation symbolizes the giant ego falsely erected by many men in order to make up for their insecurities and small-mindedness.
+		</content>
+		<cover src="" />
+	</post>
+	<post id="003" author="" postdate="April 9, 2029" category="Fairyland News" active="true">
+		<title>Water Fairy is Freed</title>
+		<content>
+			After many years of living in captivity at a conservative conservatory, a water fairy has been freed and let loose into the wild wetlands of Wildwood.
+			&lt;br /&gt;&lt;br /&gt;
+			"She can't be controlled" says local veterinarian Kat. "I believe in her potential via her newfound freedom. It's time for her to spread her wings and fly."
+		</content>
+		<cover src="https://www.brutalistframework.com/assets/files/images/ilayda.jpg" />
+	</post>
+</blog>

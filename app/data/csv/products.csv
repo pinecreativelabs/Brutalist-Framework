@@ -1,0 +1,4 @@
+pid,active,title,price,sale,description,img_src,link_url
+001,true,"Brutal Butt Plug","7.99",true,"A concrete clog.","https://www.brutalistframework.com/assets/files/images/buttplug.jpg",""
+002,true,"Blinker Fluid","74.95",false,"8oz bottle of blinker fluid.","https://www.brutalistframework.com/assets/files/images/blinker-fluid.jpg","/blinker-fluid"
+003,true,"Cubik Modular","18.95",false,"Concrete modular puzzle.","https://www.brutalistframework.com/assets/files/images/cubik-modular.jpg",""
