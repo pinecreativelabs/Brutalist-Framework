@@ -34,3 +34,21 @@ If you plan to develop your project in a specific folder (directory), you'll nee
 There are two primary folders: _/app_ and _/core_. The app directory is for files and folders that you plan to regularly modify, whereas the core directory is for the static (unchanging) files and folders. 
 
 For your convenience, more detailed documentation and examples are provided in the root directory. These include both HTML and PHP pages. 
+
+### App Directory
+The _/app_ directory is ideal for storing application content files, data, and media. Out-of-the-box, it includes some example files that are used throughout _BF_. 
+
+### Core Directory
+The _/core_ directory contains CSS libraries, javascript plugins, PHP scripts, and data files that can be used across your whole application.
+
+The core contains additional (optional) resources called _MOLDS_ which provide additional functionality for your app. 
+
+### MOLDS
+_MOLDS_ (Makeable Object Layout & Design Source) CSS are automatically loaded in the header, but these can be enabled / disabled via the _/core/molds/config.php_ file. See _molds.php_ for full documentation. 
+
+There are three types of MOLDS:
+* Tiles
+* Boards
+* Panels
+
+#### Tiles
