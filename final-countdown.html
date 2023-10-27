@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>Brutalist Framework</title>
+	<meta name="description" content="" />
+	
+	<!-- CORE CSS  -->
+	<link href="core/css/construct.css" type="text/css" rel="stylesheet" media="all"/>
+	<link href="app/themes/default/theme.css" type="text/css" rel="stylesheet" media="all" />
+	<style>
+	body {background-image: url('app/files/images/concrete-room.jpg');
+		background-position: center center; background-repeat: no-repeat;
+		background-size: cover; background-attachment: fixed;
+	}
+	.countdown-wrap{padding-top: 2.5rem;}
+	.countdown {
+	  color: #fff; text-shadow: 2px 2px #ff0000;
+	  display: inline-block;
+	  text-align: center; font-size: 36px;
+	}
+	.countdown-number, .countdown-time {background-repeat: no-repeat;}
+	.countdown-number {
+	  padding: 12px; min-width: 100px; font-weight: 600;
+	  border-radius: 3px; -webkit-border-radius: 3px;
+	  background-image: url('app/themes/default/images/concrete_tile001.jpg');
+	  background-size: contain;
+	  display: inline-block;
+	}
+	.countdown-time {
+	  padding: 15px; width: 100%; font-weight: normal;
+	  border-radius: 3px; -webkit-border-radius: 3px; border: 1px solid #000;
+	  background-image: url('app/themes/default/images/concrete_tile005.jpg');
+	  display: inline-block;
+	  background-size: cover;
+	}
+	.countdown-text {
+	  display: block;
+	  padding-top: 5px;
+	  font-size: 1.5rem;
+	}
+	.deadline-message{display: none;}
+	.visible{display: block;}
+	.hidden{display: none;}
+	@media only screen and (min-width:1340px){
+		.countdown {font-size: 72px;}
+		.countdown-number{min-width: 160px;}
+		.countdown-text {font-size: 2.5rem;}
+	}
+	@media only screen and (max-width:600px){
+		.countdown {font-size: 24px;}
+		.countdown-number{min-width: 80px;}
+		.countdown-text {font-size: 1.15rem;}
+	}
+	</style>
+	
+</head>
+<body>
+
+
+<!-- PAGE -->
+<header class="padded flex middle" id="uptop" style="margin: 1.5rem 0 1.5rem 0;">
+	<h1 class="fluid-text monolisk black-t red-t-s center" style="padding: 0; margin: 0;">Final Countdown</h1>
+</header>
+<div class="wrap-1200 padded" style="margin-top: -20px;">
+	<div class="center">
+		
+		<!-- COUNTDOWN -->
+		<div class="countdown-wrap emptiness padded rounded">
+			<h2 class="rice-t red-t-s flow-text monolisk spread" style="margin: 0 0 1.5rem 0; padding: 0;">Wait 17 Seconds...</h2>
+			
+			<!-- DISPLAY UPON TIMER END -->
+			<div id="deadline-message" class="deadline-message">
+				<div class="padded checkerboard bitstream rounded center flow-text">
+					<div class="padded sweden">
+						<h3><strong>Time's Up!</strong></h3>
+						<p><strong>It's worth waiting 17 seconds!</strong></p>
+						<p style="margin-top: 1rem;">We can put whatever content we want in here.</p>
+						<p style="margin-top: 1rem;">We can also set the countdown to end on a specific date and time:</p>
+						<code>var deadline = "June 8 2024 00:00:00 GMT-05:00";</code>
+						<p class="spacer"></p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- COUNTDOWN TIMER -->
+			<div id="countdown" class="countdown monolisk">
+				<!-- days -->
+				<div class="countdown-number">
+					<span class="days countdown-time"></span>
+					<span class="countdown-text">Days</span>
+				</div>
+				<!-- hours -->
+				<div class="countdown-number">
+					<span class="hours countdown-time"></span>
+					<span class="countdown-text">Hours</span>
+				</div>
+				<!-- minutes -->
+				<div class="countdown-number">
+					<span class="minutes countdown-time"></span>
+					<span class="countdown-text">Minutes</span>
+				</div>
+				<!-- seconds -->
+				<div class="countdown-number">
+					<span class="seconds countdown-time"></span>
+					<span class="countdown-text">Seconds</span>
+				</div>
+			</div>
+		</div>
+		<!-- END COUNTDOWN -->
+		
+	</div>
+</div>
+
+
+<!-- Vanilla Modal -->
+<div id="vanilla" style="display:none;">
+	<div class="wrap-960 info padded" style="max-width: 468px;">
+		<h4 class="flow-text lucida"><i class="bi bi-cone bi-4x"></i> <strong>Vanilla Modal</strong></h4>
+		<hr class="charlie" />
+		<p class="flow-text courier">I am a simple vanilla modal that requires <em>buix.js</em> to function.</p>
+	</div>
+</div>
+<!-- Initiate and display modal itself -->
+<div class="modal">
+	<div class="modal-inner draggable"><!-- Remove "draggable" class to prevent modals from being moveable -->
+		<span data-modal-close>&times;</span>
+		<div class="modal-content"></div>
+	</div>
+</div>
+
+
+<!-- Core Scripts -->
+<script src="core/jab/buix.js"></script>
+<script src="core/jab/bfx.js"></script>
+
+<!-- Plugins -->
+<script src="core/jab/jquery.3.js"></script>
+  
+<!-- COUNTDOWN SCRIPT -->
+<script>
+function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    total: t, days: days, hours: hours, minutes: minutes, seconds: seconds
+  };
+}
+
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector(".days");
+  var hoursSpan = clock.querySelector(".hours");
+  var minutesSpan = clock.querySelector(".minutes");
+  var secondsSpan = clock.querySelector(".seconds");
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+
+    if (t.total <= 0) {
+      document.getElementById("countdown").className = "hidden";
+      document.getElementById("deadline-message").className = "visible";
+      clearInterval(timeinterval);
+      return true;
+    }
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ("0" + t.hours).slice(-2);
+    minutesSpan.innerHTML = ("0" + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ("0" + t.seconds).slice(-2);
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+// countdown 17 seconds
+var deadline = new Date(Date.parse(new Date()) + 17 * 1000); 
+
+// set specific date and time with GMT offset
+//var deadline = "June 8 2024 00:00:00 GMT-05:00"; 
+
+initializeClock("countdown", deadline);
+</script>
+
+</body>
+</html>
