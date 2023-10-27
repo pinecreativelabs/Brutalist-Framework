@@ -18,25 +18,25 @@ bam,bm,Bambara
 baq,eu,Basque
 bel,be,Belarusian
 ben,bn,Bengali
-bih,bh,Bihari languages
+bih,bh,Bihari
 bis,bi,Bislama
 bos,bs,Bosnian
 bre,br,Breton
 bul,bg,Bulgarian
 bur,my,Burmese
-cat,ca,Catalan; Valencian
+cat,ca,Catalan
 cha,ch,Chamorro
 che,ce,Chechen
 chi,zh,Chinese
-chu,cu,Church Slavic; Old Slavonic; Church Slavonic; Old Bulgarian; Old Church Slavonic
+chu,cu,Church Slavic
 chv,cv,Chuvash
 cor,kw,Cornish
 cos,co,Corsican
 cre,cr,Cree
 cze,cs,Czech
 dan,da,Danish
-div,dv,Divehi; Dhivehi; Maldivian
-dut,nl,Dutch; Flemish
+div,dv,Divehi
+dut,nl,Dutch
 dzo,dz,Dzongkha
 eng,en,English
 epo,eo,Esperanto
@@ -50,14 +50,14 @@ fry,fy,Western Frisian
 ful,ff,Fulah
 geo,ka,Georgian
 ger,de,German
-gla,gd,Gaelic; Scottish Gaelic
+gla,gd,Gaelic
 gle,ga,Irish
 glg,gl,Galician
 glv,gv,Manx
-gre,el,"Greek, Modern (1453-)"
+gre,el,Greek
 grn,gn,Guarani
 guj,gu,Gujarati
-hat,ht,Haitian; Haitian Creole
+hat,ht,Haitian
 hau,ha,Hausa
 heb,he,Hebrew
 her,hz,Herero
@@ -68,36 +68,36 @@ hun,hu,Hungarian
 ibo,ig,Igbo
 ice,is,Icelandic
 ido,io,Ido
-iii,ii,Sichuan Yi; Nuosu
+iii,ii,Sichuan Yi
 iku,iu,Inuktitut
-ile,ie,Interlingue; Occidental
-ina,ia,Interlingua (International Auxiliary Language Association)
+ile,ie,Interlingue
+ina,ia,Interlingua
 ind,id,Indonesian
 ipk,ik,Inupiaq
 ita,it,Italian
 jav,jv,Javanese
 jpn,ja,Japanese
-kal,kl,Kalaallisut; Greenlandic
+kal,kl,Kalaallisut
 kan,kn,Kannada
 kas,ks,Kashmiri
 kau,kr,Kanuri
 kaz,kk,Kazakh
 khm,km,Central Khmer
-kik,ki,Kikuyu; Gikuyu
+kik,ki,Kikuyu
 kin,rw,Kinyarwanda
-kir,ky,Kirghiz; Kyrgyz
+kir,ky,Kirghiz
 kom,kv,Komi
 kon,kg,Kongo
 kor,ko,Korean
-kua,kj,Kuanyama; Kwanyama
+kua,kj,Kuanyama
 kur,ku,Kurdish
 lao,lo,Lao
 lat,la,Latin
 lav,lv,Latvian
-lim,li,Limburgan; Limburger; Limburgish
+lim,li,Limburgan
 lin,ln,Lingala
 lit,lt,Lithuanian
-ltz,lb,Luxembourgish; Letzeburgesch
+ltz,lb,Luxembourgish
 lub,lu,Luba-Katanga
 lug,lg,Ganda
 mac,mk,Macedonian
@@ -110,34 +110,34 @@ mlg,mg,Malagasy
 mlt,mt,Maltese
 mon,mn,Mongolian
 nau,na,Nauru
-nav,nv,Navajo; Navaho
-nbl,nr,"Ndebele, South; South Ndebele"
-nde,nd,"Ndebele, North; North Ndebele"
+nav,nv,Navajo
+nbl,nr,Ndebele, South
+nde,nd,Ndebele, North
 ndo,ng,Ndonga
 nep,ne,Nepali
-nno,nn,"Norwegian Nynorsk; Nynorsk, Norwegian"
-nob,nb,"Bokmål, Norwegian; Norwegian Bokmål"
+nno,nn,Norwegian Nynorsk
+nob,nb,Norwegian Bokmål
 nor,no,Norwegian
-nya,ny,Chichewa; Chewa; Nyanja
+nya,ny,Chichewa (Nyanja)
 oci,oc,Occitan (post 1500)
 oji,oj,Ojibwa
 ori,or,Oriya
 orm,om,Oromo
-oss,os,Ossetian; Ossetic
-pan,pa,Panjabi; Punjabi
+oss,os,Ossetian
+pan,pa,Panjabi
 per,fa,Persian
 pli,pi,Pali
 pol,pl,Polish
 por,pt,Portuguese
-pus,ps,Pushto; Pashto
+pus,ps,Pushto
 que,qu,Quechua
 roh,rm,Romansh
-rum,ro,Romanian; Moldavian; Moldovan
+rum,ro,Romanian
 run,rn,Rundi
 rus,ru,Russian
 sag,sg,Sango
 san,sa,Sanskrit
-sin,si,Sinhala; Sinhalese
+sin,si,Sinhala
 slo,sk,Slovak
 slv,sl,Slovenian
 sme,se,Northern Sami
@@ -145,8 +145,8 @@ smo,sm,Samoan
 sna,sn,Shona
 snd,sd,Sindhi
 som,so,Somali
-sot,st,"Sotho, Southern"
-spa,es,Spanish; Castilian
+sot,st,Sotho
+spa,es,Spanish
 srd,sc,Sardinian
 srp,sr,Serbian
 ssw,ss,Swati
@@ -162,13 +162,13 @@ tgl,tl,Tagalog
 tha,th,Thai
 tib,bo,Tibetan
 tir,ti,Tigrinya
-ton,to,Tonga (Tonga Islands)
+ton,to,Tonga
 tsn,tn,Tswana
 tso,ts,Tsonga
 tuk,tk,Turkmen
 tur,tr,Turkish
 twi,tw,Twi
-uig,ug,Uighur; Uyghur
+uig,ug,Uighur
 ukr,uk,Ukrainian
 urd,ur,Urdu
 uzb,uz,Uzbek
@@ -181,5 +181,5 @@ wol,wo,Wolof
 xho,xh,Xhosa
 yid,yi,Yiddish
 yor,yo,Yoruba
-zha,za,Zhuang; Chuang
+zha,za,Zhuang
 zul,zu,Zulu
