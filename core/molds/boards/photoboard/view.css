@@ -1,0 +1,26 @@
+/* PhotoBoard 
+ * ==========
+ */
+ 
+.photoboard {}
+
+/* Lite Gallery */
+.gallery-lite-wrap {display: flex; flex-wrap: wrap; -moz-flex-wrap: wrap; -webkit-flex-wrap: wrap;}
+.gallery-lite-wrap .figure {margin: 2px 2px 0px 2px; display: inline-block; }
+.gallery-lite-wrap .figure img{margin: 0; padding: 0;}
+.gallery-lite-wrap.tiny-size .figure img{height: 60px; width: auto;}
+.gallery-lite-wrap.small-size .figure img{height: 90px; width: auto;}
+.gallery-lite-wrap.medium-size .figure img {height: 180px; width: auto;}
+.gallery-lite-wrap.large-size .figure img{height: 360px; width: auto;}
+.gallery-lite-wrap.tiny-size.cropped .figure img{height: 60px; width: 60px; object-fit: cover;}
+.gallery-lite-wrap.small-size.cropped .figure img{height: 90px; width: 90px; object-fit: cover;}
+.gallery-lite-wrap.medium-size.cropped .figure img{height: 180px; width: 180px; object-fit: cover;}
+.gallery-lite-wrap.large-size.cropped .figure img{height: 360px; width: 360px; object-fit: cover;}
+.fullview{background: #fff; color: #333;}
+.fullview .caption {padding: 4px 12px 12px 12px; display: block;}
+.fullview .caption>.title{font-size: 22px; font-weight: 600;}
+.fullview .caption>.description {font-size: 14px; font-weight: 400;}
+
+/* Pro Gallery */
+.gallery-pro-wrap {display: flex;}
+

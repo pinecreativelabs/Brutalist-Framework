@@ -1,0 +1,32 @@
+/* Construct CORE CSS 
+ * 3.0
+ */
+/* Load Defaults (REQUIRED) */
+@import url('default.css');
+
+/* Load BUTCH */
+@import url('butch.css');
+
+/* Load Flavors */
+@import url('flavors.css');
+
+/* Load ReBAR */
+@import url('rebar.css');
+
+/* Load BUIX */
+@import url('buix.css');
+
+/* Load BFX */
+@import url('bfx.css');
+
+/* Load bIcons */
+@import url('bicons.css');
+
+/* Load Filetype Icons */
+@import url('filetypes.css');
+
+/* Load Font Packs */
+@import url('fonts/construct-fonts.css');
+
+/* Load Animate.css Library (OPTIONAL) */
+@import url('animate.css');

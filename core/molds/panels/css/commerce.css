@@ -1,0 +1,43 @@
+/* Credit Card Input */
+.card-input {
+  width: 100%; background-color: #fff;
+  padding-left: 66px;
+  padding-right: 40px;
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+}
+.card-input input {
+  width: 100%;
+  letter-spacing: 1px;
+  font-size: 20px;
+  padding: 15px 15px 15px 25px;
+  border: 0; outline: none;
+  box-sizing: border-box;
+}
+.card-type {
+ width: 60px; height: 40px;
+  background-repeat: no-repeat; background-size: contain;
+  background-position: center center;
+  background: url('images/card.png');
+  position: absolute; top: 4px; left: 4px;
+}
+.card-type.mastercard { background: url('images/mastercard.png');}
+.card-type.visa { background: url('images/visa.png');}
+.card-type.amex { background: url('images/amex.png');}
+.card-type.discover { background: url('images/discover.png');}
+.card-valid {
+  position: absolute;
+  top: 0; right: 15px; line-height: 60px;
+  font-size: 1.5em; font-family: 'bicons'; color: #ccc;
+}
+.card-valid.active {color: #42ca7c;}
+.card-exp input, .card-cvv input {
+  font-size: 20px; padding: 15px;
+  box-sizing: border-box; max-width: 75%;
+}
+.card-exp input.error, .card-cvv input.error {
+  border: 1px solid #c2313c; outline: none;
+  box-shadow: 0 4px 8px 0 rgba(238,76,87,0.3);
+}

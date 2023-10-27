@@ -1,0 +1,36 @@
+/* DePixel Font */
+@font-face {
+    font-family: 'DePixel Narrow';
+    src: url('depixelschmal-webfont.woff2') format('woff2'),
+         url('depixelschmal-webfont.woff') format('woff');
+    font-weight: normal; font-style: normal;
+}
+@font-face {
+    font-family: 'DePixel';
+    src: url('depixelbreit-webfont.woff2') format('woff2'),
+         url('depixelbreit-webfont.woff') format('woff');
+    font-weight: normal; font-style: normal;
+}
+@font-face {
+    font-family: 'DePixel Wide';
+    src: url('depixelbreitfett-webfont.woff2') format('woff2'),
+         url('depixelbreitfett-webfont.woff') format('woff');
+    font-weight: normal; font-style: normal;
+}
+@font-face {
+    font-family: 'DePixel Bold';
+    src: url('depixelhalbfett-webfont.woff2') format('woff2'),
+         url('depixelhalbfett-webfont.woff') format('woff');
+    font-weight: normal; font-style: normal;
+}
+@font-face {
+    font-family: 'DePixel Small';
+    src: url('depixelklein-webfont.woff2') format('woff2'),
+         url('depixelklein-webfont.woff') format('woff');
+    font-weight: normal; font-style: normal;
+}
+.depixel{font-family: 'DePixel';}
+.depixel.narrow, .depixel .narrow{font-family: 'DePixel Narrow';}
+.depixel.bold, .depixel .bold, .depixel b, .depixel strong{font-family: 'DePixel Bold';}
+.depixel.wide, .depixel .wide {font-family: 'DePixel Wide';}
+.depixel.small, .depixel small {font-family: 'DePixel Small';}

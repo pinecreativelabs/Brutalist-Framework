@@ -1,0 +1,3 @@
+/* CDP: Content Display Picker */
+!function(t,e,n,i){t.selectShow=function(e,n){var i=e,o=t.extend({ShowElement:null,SelectOption:".cdp_select",ListElement:".cdp_element"},n);t(i).each((function(){var e=t(this);null==o.ShowElement?e.find(o.ListElement).hide():e.find(o.ListElement+'[data-option="'+o.ShowElement+'"]').show(),e.find(o.SelectOption).change((function(){var n=t(this).val(),i=e.find(o.ListElement+'[data-option="'+n+'"]');e.find(o.ListElement).hide(),t(i).show()}))}))},t.fn.selectShow=function(e){return this.each((function(){if(null==t(this).data("selectShow")){var n=new t.selectShow(this,e);t(this).data("selectShow",n)}}))}}(window.jQuery,window,document);
+$(document).ready(function(){$('.cdp-wrap').selectShow({ShowElement: 0});});

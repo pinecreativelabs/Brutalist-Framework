@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Monolisk';
+    src: url('Monolisk-SemiBold.eot');
+    src: local('Monolisk SemiBold'), local('Monolisk-SemiBold'),
+        url('Monolisk-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Monolisk-SemiBold.woff2') format('woff2'),
+        url('Monolisk-SemiBold.woff') format('woff'),
+        url('Monolisk-SemiBold.ttf') format('truetype');
+    font-weight: 600; font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monolisk';
+    src: url('Monolisk-Bold.eot');
+    src: local('Monolisk Bold'), local('Monolisk-Bold'),
+        url('Monolisk-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Monolisk-Bold.woff2') format('woff2'),
+        url('Monolisk-Bold.woff') format('woff'),
+        url('Monolisk-Bold.ttf') format('truetype');
+    font-weight: bold; font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monolisk';
+    src: url('Monolisk-LightItalic.eot');
+    src: local('Monolisk Light Italic'), local('Monolisk-LightItalic'),
+        url('Monolisk-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Monolisk-LightItalic.woff2') format('woff2'),
+        url('Monolisk-LightItalic.woff') format('woff'),
+        url('Monolisk-LightItalic.ttf') format('truetype');
+    font-weight: 300; font-style: italic;
+}
+
+@font-face {
+    font-family: 'Monolisk';
+    src: url('Monolisk-BoldItalic.eot');
+    src: local('Monolisk Bold Italic'), local('Monolisk-BoldItalic'),
+        url('Monolisk-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Monolisk-BoldItalic.woff2') format('woff2'),
+        url('Monolisk-BoldItalic.woff') format('woff'),
+        url('Monolisk-BoldItalic.ttf') format('truetype');
+    font-weight: bold; font-style: italic;
+}
+
+@font-face {
+    font-family: 'Monolisk';
+    src: url('Monolisk-SemiBoldItalic.eot');
+    src: local('Monolisk SemiBold Italic'), local('Monolisk-SemiBoldItalic'),
+        url('Monolisk-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Monolisk-SemiBoldItalic.woff2') format('woff2'),
+        url('Monolisk-SemiBoldItalic.woff') format('woff'),
+        url('Monolisk-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600; font-style: italic;
+}
+
+@font-face {
+    font-family: 'Monolisk';
+    src: url('Monolisk-BlackItalic.eot');
+    src: local('Monolisk Black Italic'), local('Monolisk-BlackItalic'),
+        url('Monolisk-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('Monolisk-BlackItalic.woff2') format('woff2'),
+        url('Monolisk-BlackItalic.woff') format('woff'),
+        url('Monolisk-BlackItalic.ttf') format('truetype');
+    font-weight: 900; font-style: italic;
+}
+
+@font-face {
+    font-family: 'Monolisk';
+    src: url('Monolisk-Black.eot');
+    src: local('Monolisk Black'), local('Monolisk-Black'),
+        url('Monolisk-Black.eot?#iefix') format('embedded-opentype'),
+        url('Monolisk-Black.woff2') format('woff2'),
+        url('Monolisk-Black.woff') format('woff'),
+        url('Monolisk-Black.ttf') format('truetype');
+    font-weight: 900; font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monolisk';
+    src: url('Monolisk-Regular.eot');
+    src: local('Monolisk Regular'), local('Monolisk-Regular'),
+        url('Monolisk-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Monolisk-Regular.woff2') format('woff2'),
+        url('Monolisk-Regular.woff') format('woff'),
+        url('Monolisk-Regular.ttf') format('truetype');
+    font-weight: normal; font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monolisk';
+    src: url('Monolisk-Light.eot');
+    src: local('Monolisk Light'), local('Monolisk-Light'),
+        url('Monolisk-Light.eot?#iefix') format('embedded-opentype'),
+        url('Monolisk-Light.woff2') format('woff2'),
+        url('Monolisk-Light.woff') format('woff'),
+        url('Monolisk-Light.ttf') format('truetype');
+    font-weight: 300; font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monolisk';
+    src: url('Monolisk-RegularItalic.eot');
+    src: local('Monolisk Regular Italic'), local('Monolisk-RegularItalic'),
+        url('Monolisk-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('Monolisk-RegularItalic.woff2') format('woff2'),
+        url('Monolisk-RegularItalic.woff') format('woff'),
+        url('Monolisk-RegularItalic.ttf') format('truetype');
+    font-weight: normal; font-style: italic;
+}
+
+.monolisk{font-family: 'Monolisk';}

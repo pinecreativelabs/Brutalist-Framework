@@ -1,0 +1,24 @@
+/* Construct BOARD MOLDS 
+ * 3.0
+ */
+ 
+/* Load AudioBoard */
+@import url('audioboard/view.css');
+
+/* Load BlogBoard */
+@import url('blogboard/view.css');
+
+/* Load DataBoard */
+@import url('databoard/view.css');
+
+/* Load PhotoBoard */
+@import url('photoboard/view.css');
+
+/* Load ProductBoard */
+@import url('productboard/view.css');
+
+/* Load SlideBoard */
+@import url('slideboard/view.css');
+
+/* Load VideoBoard */
+@import url('videoboard/view.css');
