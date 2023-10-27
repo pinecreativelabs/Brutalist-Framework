@@ -75,10 +75,11 @@ echo '<hr /><p><strong>Country Code List</strong></p>'.PHP_EOL.$countries_table.
 echo '<p><strong>Country, State / Province Selectors</strong></p>'.PHP_EOL;
 echo '<form><label>Country</label><br />'.$country_select.'<br /><br /><label>Country Currency</label><br />'.$country_select_cur.'<br /><br />'.PHP_EOL;
 echo '<label>Country Code</label><br />'.$country_select_code.'<br /><br /><label>Timezone</label><br />'.$timezone_select.'<br /><br />'.PHP_EOL;
-echo '<label>Timezone (offset)</label><br />'.$timezone_select_offset.'<br /><br />'.PHP_EOL;
+echo '<label>Timezone (offset)</label><br />'.$timezone_select_offset.'<br /><br /><label>Language</label><br />'.$language_select.'<br /><br />'.PHP_EOL;
 echo '<label>State</label><br />'.$state_select.'<br /><br /><label>Province / Territory</label><br />'.$province_select.'</form><br /><br /><hr />'.PHP_EOL;
 echo '<p><strong>States Table</strong></p>'.PHP_EOL.$states_table.'<hr /><p><strong>Province Table</strong></p>'.PHP_EOL.$provinces_table;
-echo '<p><strong>Timezone Table</strong></p>'.PHP_EOL.$timezone_table;
+echo '<p><strong>Timezone Table</strong></p>'.PHP_EOL.$timezone_table.PHP_EOL;
+echo '<p><strong>Languages Table</strong></p>'.PHP_EOL.$language_table.PHP_EOL;
 ?>
 </body>
 </html>
