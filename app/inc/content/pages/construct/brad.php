@@ -14,19 +14,21 @@
 	<p class="padded disabled" style="margin-top: 1rem;">
 		<strong>$country_select</strong><br /><small>country selector</small><br /><br />
 		<strong>$country_select_cur</strong><br /><small>country selector with currency code as the option value</small><br /><br />
-		<strong>$country_select_code</strong><br /><small>country selector with alpha 2 code as the option value</small><br /><br />
+		<strong>$country_select_code</strong><br /><small>country selector with alpha2 code as the option value</small><br /><br />
 		<strong>$country_select_uncode</strong><br /><small>country selector with UN code as the option value</small><br /><br />
 		<strong>$state_select</strong><br /><small>US state selector with abbreviations as the option value</small><br /><br />
 		<strong>$province_select</strong><br /><small>Canadian province / territory selector with abbreviations as the option value</small><br /><br />
 		<strong>$timezone_select</strong><br /><small>timezone selector</small><br /><br />
-		<strong>$timezone_select_offset</strong><br /><small>timezone selector with UTC offset as the option value</small>
+		<strong>$timezone_select_offset</strong><br /><small>timezone selector with UTC offset as the option value</small><br /><br />
+		<strong>$language_select</strong><br /><small>language selector with alpha2 code as the option value</small>
 	</p>
 	<p class="padded disabled" style="margin-top: 1rem;">
 	Additionally, the following data tables can be rendered:<br /><br />
 		<strong>$countries_table</strong><br /><small>table of countries, and their alpha 2 codes, currencies, and UN codes</small><br /><br />
 		<strong>$states_table</strong><br /><small>table of states and their abbreviations</small><br /><br />
 		<strong>$provinces_table</strong><br /><small>table of Canadian provinces / territories, and their alpha codes, geo codes, and regions</small><br /><br />
-		<strong>$timzezone_table</strong><br /><small>table of timezones and their UTC offsets and names</small>
+		<strong>$timzezone_table</strong><br /><small>table of timezones and their UTC offsets and names</small><br /><br />
+		<strong>$language_table</strong><br /><small>table of languages with their alpha codes</small>
 	</p>
 </div><div class="padded half">
 	<div class="padded info bitstream">
@@ -53,6 +55,9 @@
 			<br /><br />
 			<label>Timezone</label>
 			<?php echo $timezone_select;?>
+			<br /><br />
+			<label>Language</label>
+			<?php echo $language_select;?>
 		</form>
 	</div>
 </div></div>
