@@ -116,7 +116,7 @@ if (($lang_handle = fopen($get_lang_data, "r")) !== FALSE) {
 	while (($langdata = fgetcsv($lang_handle, 1000, ",")) !== FALSE) {
 		$row++;
 		if (in_array($row, $skip_row_number)){continue;} else {
-			if(strtolower($user_cc)==$langdata[1]){
+			if(strtolower($browser_lang)==$langdata[1]){
 				$language_select.='<option value="'.$langdata[1].'" selected>'.$langdata[2].'</option>'.PHP_EOL;
 			}else{
 				$language_select.='<option value="'.$langdata[1].'">'.$langdata[2].'</option>'.PHP_EOL;
