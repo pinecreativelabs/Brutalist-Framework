@@ -3,11 +3,17 @@ A framework for the brutalist web design trend.
 Version: 3.0
 ![BF Cover](https://www.brutalistframework.com/app/files/images/bf-social-tile.jpg)
 ## About
-_Brutalist Framework_ is a responsive framework exclusively for the popular brutalist web design trend. It is intended to be a boilerplate for creating simple brutalist websites.
+_Brutalist Framework_ is a free and open source collection of PHP & HTML templates, CSS libraries, and javascript resources specifically for the brutalist web design style. 
 
-When dealing with brutalism, we like to think of it as being CRUDE:
-* Cynically confrontational
-* Roughly raw and rugged
-* Uncomfortably ugly and unpolished
-* Deliberately daring and damaging
-* Extremely exasperated and embittered
+Ideal for:
+* Beginner & novice web designers and developers
+* Building lightweight and portable applications or small websites
+* Brutalizing your web presence
+
+Technologies Used: 
+* HTML5 / CSS3
+* Vanilla javascript & jquery
+* PHP
+* CSV, XML
+
+## Getting Started
