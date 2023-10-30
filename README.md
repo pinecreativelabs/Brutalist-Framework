@@ -91,3 +91,11 @@ _BRAD_ works core data to construct variables that render prepopulated form inpu
 
 #### CORE.PHP
 The _core.php_ script includes KAT, BEKAH, and BRAD, as well as the _/core/molds/config.php_ file. The core script is the only required script that needs to be included in your page header. 
+
+***
+### Clean URLs & Other Bonus Stuff
+For SEO purposes, you may wish to have "clean URLs" for your web application pages (ex: _yourwebsite.com/clean-url_). There is an example _htaccess_ code included as a TXT file. Simply rename this to _.htaccess_ on a live site. NOTE: this may not work on all servers, as some may be configured differently, in which case you'll need to consult your web host provider on this. 
+
+Additionally, there is also an example 404 (_NOT FOUND_) HTML template included, as well as a static HTML countdown template (useful for a "coming soon" landing page). 
+
+/// BUILD BRUTALITY ///
