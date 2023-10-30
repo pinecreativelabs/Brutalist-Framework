@@ -1,4 +1,4 @@
-# Brutalist-Framework 3.0
+# Brutalist Framework 3.0
 A framework for the brutalist web design trend.
 
 ![BF Cover](https://www.brutalistframework.com/app/files/images/bf-social-tile.jpg)
