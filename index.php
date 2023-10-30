@@ -46,7 +46,7 @@ require 'core/core.php';
 	<a href="#build" class="jumpbtn shape quadrant top-right monolisk"><i class="throb bi bi-down bi-3x"></i><br /><strong>BUILD</strong></a>
 	<a href="#core" class="brik monolisk"><i class="bi bi-core-block"></i><br />CORE</a>
 	<a href="#molds" class="brik monolisk"><i class="bi bi-corners"></i><br />MOLDS</a>
-	<a href="#news" class="brik monolisk"><span class="throb-throw"><i class="bi bi-announce"></i></span><br />News</a>
+	<!--<a href="#news" class="brik monolisk"><span class="throb-throw"><i class="bi bi-announce"></i></span><br />News</a>-->
 </div>
 
 <!-- CUBESEA -->
@@ -312,7 +312,7 @@ require 'core/core.php';
 	</div>
 	<div class="vh10"></div>
 </div>
-<!-- NEWS REEL -->
+<!-- NEWS REEL 
 <div class="black" style="border-top: 3px solid #ff0000; border-bottom: 3px solid #ff0000;">
 	<div class="clear-block jagged" id="news"><p class="checkerboard padding"></p></div>
 </div>
@@ -323,7 +323,7 @@ require 'core/core.php';
 		<p class="flow-text rice-t bitstream" style="margin: 0 0 1.5em 0;"><strong>What's new in the brutal universe?</strong></p>
 	</div>
 	<div class="vh10"></div>
-</div>
+</div>-->
 <div class="black" style="border-top: 3px solid #ff0000; border-bottom: 3px solid #ff0000;">
 	<div class="clear-block jagged" id="news"><p class="checkerboard padding"></p></div>
 </div>
