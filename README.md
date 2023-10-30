@@ -1,9 +1,6 @@
-# Brutalist-Framework
+# Brutalist-Framework 3.0
 A framework for the brutalist web design trend.
 
-Version: 3.0
-
-Released: Oct. 31, 2023
 ![BF Cover](https://www.brutalistframework.com/app/files/images/bf-social-tile.jpg)
 ## About
 _Brutalist Framework_ is a free and open source collection of PHP & HTML templates, CSS libraries, and javascript resources specifically for the brutalist web design style.
