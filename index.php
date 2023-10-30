@@ -8,13 +8,13 @@ require 'core/core.php';
 <head>
 	<?php echo $global_meta_header;?>
 	<title>Brutalist Framework</title>
-	<meta name="description" content="A free open source native icon CSS classes library for the brutalist web design trend." />
+	<meta name="description" content="A free and open source framework for brutalist web design & application projects using PHP, HTML, CSS and javascript. Build Brutality." />
 	<?php if($tc==true){?>
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@brutalistfwk">
 	<meta name="twitter:title" content="Brutalist Framework">
-	<meta name="twitter:description" content="A free open source native icon CSS classes library for the brutalist web design trend.">
+	<meta name="twitter:description" content="A free and open source framework for brutalist web design & application projects using PHP, HTML, CSS and javascript. Build Brutality.">
 	<meta name="twitter:creator" content="@brutalistfwk">
 	<!-- Twitter Summary card images must be at least 120x120px -->
 	<meta name="twitter:image" content="https://www.brutalistframework.com/core/files/images/bf-social-tile.jpg">
@@ -25,7 +25,7 @@ require 'core/core.php';
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://www.brutalistframework.com" />
 	<meta property="og:image" content="https://www.brutalistframework.com/core/files/images/bf-social-tile.jpg" />
-	<meta property="og:description" content="A free open source native icon CSS classes library for the brutalist web design trend." /> 
+	<meta property="og:description" content="A free and open source framework for brutalist web design & application projects using PHP, HTML, CSS and javascript. Build Brutality." /> 
 	<meta property="og:site_name" content="Brutalist Framework" />
 	<?php } ?>
 	<?php echo $global_header;?>
