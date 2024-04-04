@@ -233,7 +233,7 @@ $user_curs = $ipdat->geoplugin_currencySymbol;
 
 // get browser language
 function get_browser_language( $available = [], $default = 'en') {
-	if (isset( $_SERVER['HTTP_ACCEPT_LANGUAGE' )) {
+	if (isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
 		$langs = explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']);
 		if (empty($available)) {return empty($langs) ? $default : $langs[0];}
 		foreach ($langs as $lang){
