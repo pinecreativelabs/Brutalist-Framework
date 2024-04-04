@@ -232,18 +232,15 @@ $user_curc = $ipdat->geoplugin_currencyCode;
 $user_curs = $ipdat->geoplugin_currencySymbol;
 
 // get browser language
-function get_browser_language( $available = [], $default = 'en' ) {
-	if ( isset( $_SERVER[ 'HTTP_ACCEPT_LANGUAGE' ] ) ) {
-		$langs = explode( ',', $_SERVER['HTTP_ACCEPT_LANGUAGE'] );
-		if ( empty( $available ) ) {
-		  return empty( $langs ) ? $default : $langs[ 0 ];
+function get_browser_language( $available = [], $default = 'en') {
+	if (isset( $_SERVER['HTTP_ACCEPT_LANGUAGE' )) {
+		$langs = explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']);
+		if (empty($available)) {return empty($langs) ? $default : $langs[0];}
+		foreach ($langs as $lang){
+			$lang = substr($lang, 0, 2);
+			if(in_array($lang, $available )) {return $lang;}
 		}
-		foreach ( $langs as $lang ){
-			$lang = substr( $lang, 0, 2 );
-			if( in_array( $lang, $available ) ) {return $lang;}
-		}
-	}
-	return $default;
+	} return $default;
 }
 $browser_lang = get_browser_language();
 
