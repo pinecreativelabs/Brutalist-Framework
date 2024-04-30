@@ -80,3 +80,32 @@
 				</div><div class="padded half">
 					<p class="info padded"><span class="flow-text bold">Transform on Hover</span><br />To apply a transformation class upon hover, simply append a <strong><em>-h</em></strong> to a rotation, skew, or scale class. Examples:<br /><strong>.scale-h<br />.skew-y-r-h<br />.rl-y-h</strong></p>
 				</div></div>
+				<!-- Opacities -->
+				<p class="white-t courier flow-text"><span class="charcoal allcaps"><strong>OPACITIES</strong></span></p>
+				<p>Make elements have opacity, or force a transparent background (ideal for PNG images).</p>
+				<div class="flex">
+					<div class="padded">
+						<h6 class="heavy">.transparent</h6>
+						<p class="box-shadow-bottom grey lemon-t center">Transparent background.<br />
+							<img src="core/files/images/border.png" alt="Brutal Border" class="transparent large-thumb" />
+						</p>
+					</div>
+					<div class="padded">
+						<h6 class="heavy">.hi-opacity</h6>
+						<p class="box-shadow-bottom grey lemon-t center">75% opacity.<br />
+							<img src="app/files/images/brutal-building.jpg" alt="Brutal Building" class="hi-opacity large-thumb" />
+						</p>
+					</div>
+					<div class="padded">
+						<h6 class="heavy">.opacity</h6>
+						<p class="box-shadow-bottom grey lemon-t center">50% opacity.<br />
+							<img src="app/files/images/brutal-building.jpg" alt="Brutal Building" class="opacity large-thumb" />
+						</p>
+					</div>
+					<div class="padded">
+						<h6 class="heavy lucida">.lo-opacity</h6>
+							<p class="box-shadow-bottom grey lemon-t center">25% opacity.<br />
+							<img src="app/files/images/brutal-building.jpg" alt="Brutal Building" class="lo-opacity large-thumb" />
+						</p>
+					</div>
+				</div>

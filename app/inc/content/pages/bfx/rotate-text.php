@@ -1,7 +1,7 @@
 				<h3 class="fluid-text monolisk" id="rotatetext">Rotate Text</h3>
 				<div class="flex"><div class="padded half">
 					<p style="margin-bottom: 1em;">Rotate Text is a jQuery plugin that rotates text within an element.</p>
-					<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/jquery.3.js<br />core/jab/plugins/rotate-text.js</em></span></p>
+					<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>bos/core/jab/jquery.3.js<br />bos/core/jab/plugins/rotate-text.js</em></p>
 					<h5 class="flow-text">Markup</h5>
 					<p class="padded info">Rotate Text uses data attributes to configure the settings. You will need to apply a unique ID to each individual Rotate Text element. The markup is as follows:</p>
 					<code class="smaller padded">

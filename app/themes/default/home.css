@@ -18,6 +18,8 @@
 }
 *,*:before,*:after {box-sizing: border-box;}
 
+/* INTRO SLIDER */
+.dune10191 { background-image: url('images/dune10191_web.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;}
 /* general items */
 .bflogo {display: block; position: absolute; top: 0; padding: 1em 0 0 0; z-index: 96; text-align: center; width: 100vw;}
 .bflogo img{ max-width: 300px; margin: 0 auto;}
@@ -179,4 +181,60 @@
 	.panel,.panel:before,.panel:after {
 		box-shadow: 0px 0px 5px 2px #ff0000;
 	}
+}
+
+/* Crossfade */
+@-webkit-keyframes bxfade {
+  0% {opacity: 1;}
+  19.6666666667% {opacity: 1;}
+  33.3333333333% {opacity: 0;}
+  86.3333333333% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-moz-keyframes bxfade {
+  0% {opacity: 1;}
+  19.6666666667% {opacity: 1;}
+  33.3333333333% {opacity: 0;}
+  86.3333333333% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-o-keyframes bxfade {
+  0% {opacity: 1;}
+  19.6666666667% {opacity: 1;}
+  33.3333333333% {opacity: 0;}
+  86.3333333333% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes bxfade {
+  0% {opacity: 1;}
+  19.6666666667% {opacity: 1;}
+  33.3333333333% {opacity: 0;}
+  86.3333333333% {opacity: 0;}
+  100% { opacity: 1; }
+}
+.bxfade { position: relative; width: 100vw; height: 100vh;}
+.bxfade>.element { display: flex; justify-content: center; align-items: center;
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  -webkit-animation-name: bxfade; -moz-animation-name: bxfade; -o-animation-name: bxfade; animation-name: bxfade;
+  -webkit-animation-timing-function: ease-in-out; -moz-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite; -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite; animation-iteration-count: infinite;
+  -webkit-animation-duration: 12s; -moz-animation-duration: 12s; -o-animation-duration: 12s; animation-duration: 12s;
+  background-size: cover; background-position: center center; background-repeat: no-repeat;
+}
+.bxfade>.element:nth-child(1) {
+  -webkit-animation-delay: -8s; -moz-animation-delay: -8s;
+  -o-animation-delay: -8s; animation-delay: -8s;
+  background-image: url('images/hexbrut-base-sand.png');
+}
+.bxfade>.element:nth-child(2) {
+  -webkit-animation-delay: -4s; -moz-animation-delay: -4s;
+  -o-animation-delay: -4s; animation-delay: -4s;
+  background-image: url('images/hexbrut-base-blood.png');
+}
+.bxfade>.element:nth-child(3) {
+  -webkit-animation-delay: 0s; -moz-animation-delay: 0s;
+  -o-animation-delay: 0s; animation-delay: 0s;
+  background-image: url('images/hexbrut-base.png');
 }

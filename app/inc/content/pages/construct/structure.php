@@ -3,84 +3,39 @@
 	<div class="flex bitstream"><div class="padded half">
 		<h4 class="flow-text charcoal">File Structure</h4>
 		<ul class="none files">
+			<li><i class="folder-plain-open"></i> /app
+				<ul class="indent none">
+					<li><i class="folder-plain-open"></i> /data</li>
+					<li><i class="folder-plain-open"></i> /files</li>
+					<li><i class="folder-plain-open"></i> /inc</li>
+					<li><i class="folder-plain-open"></i> /themes</li>
+				</ul>
+			</li>
+			<li><i class="folder-plain-open"></i> /bos
+				<ul class="none indent">
+					<li><i class="folder-plain-open"></i> /build
+						<ul class="none indent">
+							<li><i class="folder-plain"></i> /constructors</li>
+							<li><i class="folder-plain"></i> /data</li>
+							<li><i class="folder-plain"></i> /helpers</li>
+						</ul>
+					</li>
+					<li><i class="folder-plain-open"></i> /core
+						<ul class="none indent">
+							<li><i class="folder-plain"></i> /css</li>
+							<li><i class="folder-plain"></i> /data</li>
+							<li><i class="folder-plain"></i> /files</li>
+							<li><i class="folder-plain"></i> /jab</li>
+						</ul>
+					</li>
+					<li><i class="folder-plain"></i> /molds</li>
+				</ul>
+			</li>
 			<li><i class="php"></i> index.php</li>
 			<li><i class="php"></i> php_boilerplate.php</li>
 			<li><i class="html"></i> boilerplate.html</li>
-			<li><i class="folder-plain-open"></i> /app
-				<ul class="indent none">
-					<li><i class="folder-plain-open"></i> /data
-						<ul class="none indent">
-							<li><i class="folder-plain"></i> /csv</li>
-							<li><i class="folder-plain"></i> /json</li>
-							<li><i class="folder-plain"></i> /sql</li>
-							<li><i class="folder-plain"></i> /xml</li>
-						</ul>
-					</li>
-					<li><i class="folder-plain-open"></i> /files
-						<ul class="none indent">
-							<li><i class="folder-plain"></i> /audio</li>
-							<li><i class="folder-plain"></i> /docs</li>
-							<li><i class="folder-plain"></i> /images</li>
-							<li><i class="folder-plain"></i> /video</li>
-						</ul>
-					</li>
-					<li><i class="folder-plain-open"></i> /inc
-						<ul class="none indent">
-							<li><i class="folder-plain-open"></i> /content
-								<ul class="none indent">
-									<li><i class="folder-plain"></i> /ajax</li>
-									<li><i class="folder-plain"></i> /pages</li>
-									<li><i class="folder-plain"></i> /ui</li>
-								</ul>
-							</li>
-							<li><i class="folder-plain"></i> /functions</li>
-						</ul>
-					</li>
-					<li><i class="folder-plain-open"></i> /themes
-						<ul class="none indent">
-							<li><i class="folder-plain"></i> /default</li>
-						</ul>
-					</li>
-				</ul>
-			</li>
-			<li><i class="folder-plain-open"></i> /core
-				<ul class="indent none">
-					<li><i class="php"></i> bekah.php</li>
-					<li><i class="php"></i> brad.php</li>
-					<li><i class="php"></i> core.php</li>
-					<li><i class="php"></i> kat.php</li>
-					<li><i class="folder-plain-open"></i> /css
-						<ul class="indent none">
-							<li><i class="folder-plain"></i> /fonts</li>
-							<li><i class="folder-plain"></i> /icons</li>
-							<li><i class="folder-plain"></i> /images</li>
-						</ul>
-					</li>
-					<li><i class="folder-plain-open"></i> /data
-						<ul class="indent none">
-							<li><i class="folder-plain"></i> /csv</li>
-							<li><i class="folder-plain"></i> /json</li>
-							<li><i class="folder-plain"></i> /sql</li>
-							<li><i class="folder-plain"></i> /xml</li>
-						</ul>
-					</li>
-					<li><i class="folder-plain"></i> /files</li>
-					<li><i class="folder-plain-open"></i> /jab
-						<ul class="none indent">
-							<li><i class="folder-plain"></i> /plugins</li>
-						</ul>
-					</li>
-					<li><i class="folder-plain-open"></i> /molds
-						<ul class="indent none">
-							<li><i class="folder-plain"></i> /boards</li>
-							<li><i class="folder-plain"></i> /panels</li>
-							<li><i class="folder-plain"></i> /tiles</li>
-							<li><i class="php"></i> config.php</li>
-						</ul>
-					</li>
-				</ul>
-			</li>
 		</ul>
+		
 	</div><div class="padded half">
 		<h4 class="flow-text charcoal">App Directory</h4>
 		<p class="bitstream">The <em>app</em> directory contains theme files, custom data, additional files, and PHP content to be included on pages. Some example files are included as part of the downloaded package.</p>

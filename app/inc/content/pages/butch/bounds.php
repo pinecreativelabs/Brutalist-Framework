@@ -153,7 +153,7 @@
 						</div>
 					</div>
 					<div class="padded half">
-						<p class="padded info"><span class="flow-text bold">Additional Shapes</span><br />There are more shapes available via MOLDS. These additional molded shapes allow for content to wrap around them.<br /><a href="tiles.html"><strong>Learn More &raquo;</a></p>
+						<p class="padded info"><span class="flow-text bold">Additional Shapes</span><br />There are more shapes available via MOLDS. These additional molded shapes allow for content to wrap around them.<br /><a href="tiles.html"><strong>Learn More &raquo;</strong></a></p>
 					</div>
 				</div>
 				<p class="spacer"></p>

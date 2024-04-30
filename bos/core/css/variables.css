@@ -1,0 +1,83 @@
+/* Core Global Variables */
+
+:root {
+	/* Font Sizes */
+	--fontsize: 16px;
+	--heading1: 2.5rem;  /* 40px */
+	--heading2: 2.25rem; /* 36px */
+	--heading3: 2rem;    /* 32px */
+	--heading4: 1.75rem; /* 28px */
+	--heading5: 1.5rem;  /* 24px */
+	--heading6: 1.25rem; /* 20px; */
+	
+	/* Global Color Scheme */
+	--primary: #fff;
+	--secondary: #000;
+	--tertiary: #ff0000;
+	--accent: #0000ff;
+	--auxiliary: #ffff00;
+	--other: #333;
+	
+	/* Miscellaneous Colors */
+	--color1: #333;
+	--color2: #000;
+	--color3: #fff;
+	--color4: #ff0000;
+	--color5: #ffff00;
+	--color6: #0000ff;
+	
+	/* Text Shadow Behavior (tsb) */
+	--tsb: 2px 2px 2px;
+	
+	/* Padding & Spacing */
+	--padding: 1rem;		/* default padding */
+	--margins: 1rem;		/* default margins */
+	--pushpad: 3.33rem;		/* positive padding */
+	--pullpad: -2.25rem;	/* negative padding */
+	--pushmargin: 3.33rem;	/* positive margins */
+	--pullmargin: -2.25rem;	/* negative margins */
+	--spacer: 2rem;			/* spacer height */
+	
+	/* Border & Outline Thickness */
+	--thin: 1px;	/* thin borders */
+	--thick: 3px;	/* thick borders */
+	
+	/* Character & Word Spacing */
+	--charspace: 3px;
+	--wordspace: 0.33rem;
+	
+	/* Transformations */
+	--origin: 50% 50%;
+	--perspective: 100px;
+	--scalex: 1.5;
+	--scaley: 1.5;
+	--scalez: 1.5;
+	--skewx: 20deg;
+	--skewy: 20deg;
+	--rotatex: 45deg;
+	--rotatey: 45deg;
+	--rotatez: 45deg;
+	
+	/* bIcon Sizes */
+	--bi2x: 2rem;
+	--bi3x: 3rem;
+	--bi4x: 4rem;
+	--bi5x: 5rem;
+	--bi6x: 6rem;
+	
+	/* Animation Speeds */
+	--slowest: 5000ms;	/* 5s */
+	--slower: 3000ms;	/* 3s */
+	--slow: 2000ms;		/* 2s */
+	--speed: 800ms;		/* 0.8s */
+	--fast: 500ms;		/* 0.5s */
+	--faster: 300ms;	/* 0.3s */
+	--fastest: 200ms;	/* 0.2s */
+	
+	/* Z-Index (Layering / Stacking) */
+	--base: 1;
+	--low: 3;
+	--mid: 5;
+	--high: 7;
+	
+}

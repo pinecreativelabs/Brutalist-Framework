@@ -34,6 +34,7 @@
 	<div class="padded info bitstream">
 		<h4 class="flow-text">Form Select Demo</h4>
 		<p>Depending on your current location, all country and timezone selectors should be pre-selected to correspond to your current location. The same applies to state / province selectors if you're in the US or Canada.</p><hr />
+		<p><?php echo $get_tz.'<br />'.$tz.'<br />'; ?></p>
 		<form>
 			<label>Country</label><br />
 			<?php echo $country_select;?>
@@ -53,11 +54,15 @@
 			<label>Province / Territory</label><br />
 			<?php echo $province_select;?>
 			<br /><br />
-			<label>Timezone</label>
-			<?php echo $timezone_select;?>
+			<label>Timezone (<?php echo $timezone;?>)</label>
+			<?php echo $timezone_select_user;?>
 			<br /><br />
 			<label>Language</label>
 			<?php echo $language_select;?>
+			<br /><br />
+			<label>User Country</label><br />
+			<?php echo $country_select_user;?><br /><br />
+			
 		</form>
 	</div>
 </div></div>

@@ -1,0 +1,35 @@
+/* Blueprint Variables */
+
+:root {
+  /* B3GRID VARIABLES */
+  --tilepad: 1rem;
+  
+  /* CSS GRID VARIABLES */
+  --gridgap: 1.25rem;
+  --gridcolgap: 1.25rem;
+  --gridrowgap: 1.25rem;
+  --gridcols: 33.33%;
+  --gridrows: 200px;
+  
+  /* PRINT GRID VARIABLES */
+  --colcount: 2;
+  --colgap: 1rem;
+  --colwidth: 3cm;
+  
+  /* cHaOs GrId VARIABLES */
+  --pull-right: -1em;
+  --push-right: 1em;
+  --pull-left: -1em;
+  --push-left: 1em;
+  --pull-up: -1em;
+  --push-up: 1em;
+  --pull-down: -1em;
+  --push-down: 1em;
+  
+  /* bento grid element border-radius */
+  --rounding: 1rem;
+  
+  /* isogrid variable */
+  --isocols: 3;
+  
+}

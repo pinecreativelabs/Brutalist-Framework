@@ -2,7 +2,7 @@
 <div class="flex"><div class="half padded">
 	<!-- BAFFLE -->
 	<h4 class="flow-text white-t charcoal">BAFFLE Text</h4>
-	<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/bfx.js</em></span></p>
+	<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>bos/core/jab/bfx/baffle.js</em><br /><small><span class="echo">$baffle_js</span></small></p>
 	<p><em>Baffle</em> adds an animated obfuscation effect to any text. <span class="heavy">Reload page to see effect.</span> Apply these baffling classes!</p>
 	<div class="emptiness box-shadow padded center lucida">
 		<h4 class="baffle flow-text red-t">.baffle</h4>
@@ -23,7 +23,9 @@
 </div><div class="padded half">
 	<!-- Tumble Text -->
 	<h4 class="charcoal white-t flow-text">TumbleText</h4>
-	<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/jquery.3.js<br />core/jab/plugins/tumbletext.js</em></span></p>
+	<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>bos/core/jab/jquery.3.js<br />
+	<small><span class="echo">$jquery3</span></small><br />
+	bos/core/jab/plugins/tumbletext.js</em><br /><small><span class="echo">$tumbletext_js</span></small></p>
 	<p>Tumble text characters either forward, backwards, or both! The tumble animation starts upon page load.<br /><br /></p>
 	<div class="shades center monolisk" style="padding-bottom: 1em; line-height: 85%; font-size: 3em; font-weight: 900;">
 		<!-- tumble text characters forwards -->
@@ -65,7 +67,7 @@
 <!-- Chop Text -->
 <h4 class="charcoal white-t flow-text">Chop Text</h4>
 <div class="flex"><div class="half padded">
-	<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/bfx.js</em></span></p>
+	<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>bos/core/jab/bfx/choptext.js</em></span><br /><small><span class="echo">$choptext_js</span></small></p>
 	<p>Truncate a paragraph of text to a preset number of words. Even if there are a fewer number of words, an elipsis (...) will be appended to the end of the truncated text. Apply any of these classes to any text to truncate it:</p>
 	<p class="padded disabled"><strong>.chop-8<br />.chop-16<br />.chop-32<br />.chop-64<br />.chop-128</strong></p>
 </div><div class="half padded">
@@ -82,9 +84,63 @@
 </div></div>
 <p class="spacer"></p>
 
+<!-- DIVISIVE TEXT -->
+<h4 class="charcoal white-t flow-text">Divisive Text</h4>
+<div class="flex"><div class="half padded">
+	<p class="requiresbox" style="margin-top: 1rem;"><span class="flow-text">REQUIRES:</span><br /><em>bos/core/jab/jquery.3.js</em><br /><small><span class="echo">$jquery3</span></small><br />
+	bos/core/jab/plugins/divisive-text.js</em><br /><small><span class="echo">$divisive_text_js</span></small></p>
+	<p>Divide text elements in half, such as paragraphs and headings. Using the <em>br</em> tag, lines of text can alternate between two columns. This is a unique text layout effect for creating a distinctive typography block.</p>
+	<p class="indent" style="margin: 1rem 0 1rem 0;">By default, the division gap is set in the middle of the parent element, so that each column is 50% wide. Division <em>minority</em> makes the first column 25% wide, and the second 75% wide. Division <em>majority</em> switches these values. The division gap has a default of 20px wide, which can be expanded to 96px (1 inch).</p>
+	<div class="disabled padded box-s">
+		<p class="flow-text charcoal-t"><strong>Classes</strong></p>
+		<p><strong>.divisive-text<br />.divisive-text-minority<br />.divisive-text-majority<br />.divisive-text-gap<br />.divisive-text-gap-minority<br />.divisive-text-gap-majority</strong></p>
+	</div>
+</div><div class="padded half">
+	<div class="disabled padded box-s">
+		<p class="flow-text charcoal-t"><strong>Markup</strong></p>
+		<code style="line-height:110%;"><small>
+			&lt;p class="<em>divisive-text</em>"&gt;Line 1&lt;br /&gt;Line 2&lt;br /&gt;Line 3&lt/p&gt;
+		</small></code>
+		<p>The above markup will output:</p>
+		<p class="divisive-text red-t">Line 1<br />Line 2<br />Line 3</p>
+		<p>Divisive Text works with any text element, such as blockquotes, paragraphs, and <em>h</em> tags. </p>
+		<hr />
+		<p class="flow-text charcoal-t"><strong>Styling</strong></p>
+		<p>Divisive Text divides up text into <em>div</em> elements. Below is an example of custom CSS for the rendered element:</p>
+		<code style="line-height:110%;"><small>
+			.divisive_right .divisive_line {<br />
+			&nbsp;&nbsp;background: #0000ff; color: #fff;<br />}<br />
+			.divisive_left .divisive_line {<br />
+			&nbsp;&nbsp;background: #ff0000; color: #fff;<br />
+			&nbsp;&nbsp;border-right: 4px solid #8000ff;<br />}
+		</small></code>
+		<p>In the following examples, we'll use the above custom CSS. We'll also apply various other classes to demonstrate some options.</p>
+	</div>
+</div></div>
+<!-- divisive text demo CSS -->
+	<style>
+	.divisive_right .divisive_line {background: #0000ff; color: #fff;}
+	.divisive_left .divisive_line {background: #ff0000; color: #fff;border-right: 4px solid #8000ff;}
+	</style>
+	<p class="flow-text"><strong>.divisive-text</strong></p>
+	<h4 class="divisive-text fluid-text communist"><em>Divisive Text</em> is a brutal way to<br />cause chaos and confusion<br />and bring disharmony to the republic</h4>
+	<p class="flow-text"><strong>.divisive-text-minority</strong></p>
+	<p class="divisive-text-minority equal-height fluid-text-h5 communist">The minority<br /> will never be supported nor accepted by the majority!!</p>
+	<p class="flow-text"><strong>.divisive-text-majority</strong></p>
+	<p class="divisive-text-majority fluid-text-h5 communist">The majority rules are often rejected by<br />the minority!!<br /><strong><em>REVOLUTION!</em></strong></p>
+	<p class="flow-text"><strong>.divisive-text-gap</strong></p>
+	<p class="divisive-text-gap flow-text communist">Divisiveness only causes hatred and disunity<br />which creates an ever-growing<br />
+	<span class="fluid-text-h5"><strong>G A P</strong></span></p>
+	<p class="flow-text"><strong>.divisive-text-gap-minority</strong></p>
+	<p class="divisive-text-gap-minority communist flow-text">Minorities<br />are perceived as <em>inappropriate</em> by the majority.</p>
+	<p class="flow-text"><strong>.divisive-text-gap-majority</strong></p>
+	<p class="divisive-text-gap-majority communist flow-text">The majority will always <em>cancel</em> and reject<br />the minority.</p>
+
+<p class="spacer"></p>
+
 <!-- FITTEXT -->
 <h4 class="white-t charcoal flow-text">FITTEXT</h4>
-<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/bfx.js</em></span></p>
+<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>bos/core/jab/bfx/fittext.js</em></span><br /><small><span class="echo">$fittext_js</span></small></p>
 <p><em>Fittext</em> makes any text aggressively responsive, and scales the text in proportion to the window width.<br /><br /></p>
 <div class="disabled padded">
 	<p><strong><span class="red-t">.fittext</span></strong> - Best scales text to fit within container.</p>
@@ -110,7 +166,8 @@
 				
 <!-- CurveText -->
 <h4 class="white-t flow-text charcoal">CurveText</h4>
-<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/jquery.3.js<br />core/jab/plugins/curvetext.js</em></span></p>
+<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>bos/core/jab/jquery.3.js<br /><small><span class="echo">$jquery3</span></small><br />
+bos/core/jab/plugins/curvetext.js</em><br /><small><span class="echo">$curvetext_js</span></small></p>
 <p>Warp your text into curves, spirals, circles, and waves! Works best on paragraphs. All are fully responsive. Apply these classes for these effects:</p>
 <div class="flex"><div class="padded half">
 	<p class="flow-text">.arc-text</p>

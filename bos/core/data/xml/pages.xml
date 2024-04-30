@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<pages>
+	<link>
+		<title>About BF</title>
+		<keywords>about brutalist framework history</keywords>
+		<url>https://www.brutalistframework.com/about.php</url>
+		<target>_self</target>
+	</link>
+	<link>
+		<title>CORE</title>
+		<keywords>CSS javascript jquery PHP app construct</keywords>
+		<url>https://www.brutalistframework.com/construct.php</url>
+		<target>_self</target>
+	</link>
+	<link>
+		<title>bIcons</title>
+		<keywords>icon symbols utf</keywords>
+		<url>https://www.brutalistframework.com/bicons.php</url>
+		<target>_self</target>
+	</link>
+	<link>
+		<title>BUTCH</title>
+		<keywords>basic typography</keywords>
+		<url>https://www.brutalistframework.com/butch.php</url>
+		<target>_self</target>
+	</link>
+	<link>
+		<title>ReBAR</title>
+		<keywords>responsive breakpoint reference</keywords>
+		<url>https://www.brutalistframework.com/rebar.php</url>
+		<target>_self</target>
+	</link>
+	<link>
+		<title>Flavors</title>
+		<keywords>color classes CSS library</keywords>
+		<url>https://www.brutalistframework.com/flavors.php</url>
+		<target>_self</target>
+	</link>
+	<link>
+		<title>BUIX</title>
+		<keywords>ui user interface elements</keywords>
+		<url>https://www.brutalistframework.com/buix.php</url>
+		<target>_self</target>
+	</link>
+	<link>
+		<title>BFX</title>
+		<keywords>animated effects</keywords>
+		<url>https://www.brutalistframework.com/bfx.php</url>
+		<target>_self</target>
+	</link>
+	<link>
+		<title>MOLDS</title>
+		<keywords>module object layout design source</keywords>
+		<url>https://www.brutalistframework.com/molds.php</url>
+		<target/>
+	</link>
+	<link>
+		<title>Boards</title>
+		<keywords>content group element templates</keywords>
+		<url>https://www.brutalistframework.com/boards.php</url>
+		<target/>
+	</link>
+	<link>
+		<title>Panels</title>
+		<keywords>php page templates</keywords>
+		<url>https://www.brutalistframework.com/panels.php</url>
+		<target/>
+	</link>
+	<link>
+		<title>Tiles</title>
+		<keywords>css javascript jquery plugins</keywords>
+		<url>https://www.brutalistframework.com/tiles.php</url>
+		<target/>
+	</link>
+	<link>
+		<title>BOS Portal</title>
+		<keywords>cms content management portal login user administration dashboard app</keywords>
+		<url>https://www.brutalistframework.com/bos-portal.php</url>
+		<target>_self</target>
+	</link>
+	<link>
+		<title>Github</title>
+		<keywords>repository source code</keywords>
+		<url>https://github.com/pinecreativelabs/Brutalist-Framework</url>
+		<target>_blank</target>
+	</link>
+</pages>

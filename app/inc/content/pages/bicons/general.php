@@ -3,7 +3,8 @@
 				<p class="col3 gap20" style="margin-bottom: 1em;">
 					<i class="bi bi-alert"></i> alert<br /><i class="bi bi-biohazard"></i> biohazard<br /><i class="bi bi-black-flag"></i> black-flag<br />
 					<i class="bi bi-bomb"></i> bomb<br /><i class="bi bi-danger"></i> danger<br /><i class="bi bi-dead"></i> dead<br /><i class="bi bi-explode"></i> explode<br />
-					<i class="bi bi-radioactive"></i> radioactive<br /><i class="bi bi-red-alert"></i> red-alert<br />
+					<i class="bi bi-dynamite"></i> dynamite / firecracker<br />
+					<i class="bi bi-poison"></i> poison<br /><i class="bi bi-radioactive"></i> radioactive<br /><i class="bi bi-red-alert"></i> red-alert<br />
 					<i class="bi bi-red-flag"></i> red-flag<br /><i class="bi bi-red-light"></i> red-light<br /><i class="bi bi-restricted"></i> restricted<br />
 					<i class="bi bi-sos"></i> sos<br /><i class="bi bi-warning"></i> warning<br /><i class="bi bi-wrong"></i> wrong<br /><i class="bi bi-yield"></i> yield<br />
 				</p>
@@ -27,13 +28,16 @@
 					<i class="bi bi-archery"></i> archery<br /><i class="bi bi-baseball"></i> baseball<br /><i class="bi bi-basketball"></i> basketball<br />
 					<i class="bi bi-beach"></i> beach<br /><i class="bi bi-billiards"></i> billiards<br /><i class="bi bi-bicycle"></i> bicycle<br />
 					<i class="bi bi-birthday"></i> birthday<br /><i class="bi bi-bowling"></i> bowling<br /><i class="bi bi-canoe"></i> canoe<br />
-					<i class="bi bi-celebrate"></i> celebrate<br /><i class="bi bi-christmas"></i> christmas<br /><i class="bi bi-dating"></i> dating<br />
-					<i class="bi bi-dining"></i> dining<br /><i class="bi bi-football"></i> football<br />
-					<i class="bi bi-gaming"></i> gaming<br /><i class="bi bi-golf"></i> golf<br /><i class="bi bi-halloween"></i> halloween<br /><i class="bi bi-lift"></i> lift<br />
-					<i class="bi bi-model"></i> model<br /><i class="bi bi-movies"></i> movies<br />
-					<i class="bi bi-party"></i> party<br /><i class="bi bi-rowing"></i> rowing<br />
-					<i class="bi bi-run"></i> run<br /><i class="bi bi-sailboat"></i> sailboat<br />
-					<i class="bi bi-soccer"></i> soccer<br /><i class="bi bi-surf"></i> surf<br /><i class="bi bi-swim"></i> swim<br />
+					<i class="bi bi-celebrate"></i> celebrate<br /><i class="bi bi-christmas"></i> christmas<br /><i class="bi bi-circus"></i> circus<br />
+					<i class="bi bi-climbing"></i> climbing / climber<br />
+					<i class="bi bi-dating"></i> dating<br /><i class="bi bi-dining"></i> dining<br /><i class="bi bi-diving"></i> diving / snorkel<br />
+					<i class="bi bi-fencing"></i> fencing / fencer<br /><i class="bi bi-fishing"></i> fishing<br /><i class="bi bi-football"></i> football<br />
+					<i class="bi bi-gambling"></i> gambling / slots<br /><i class="bi bi-gaming"></i> gaming<br /><i class="bi bi-golf"></i> golf<br />
+					<i class="bi bi-halloween"></i> halloween<br /><i class="bi bi-horse-racing"></i> horse-racing<br />
+					<i class="bi bi-lift"></i> lift<br /><i class="bi bi-model"></i> model<br /><i class="bi bi-movies"></i> movies<br />
+					<i class="bi bi-party"></i> party<br /><i class="bi bi-ping-pong"></i> ping-pong<br /><i class="bi bi-rowing"></i> rowing<br />
+					<i class="bi bi-rugby"></i> rugby<br /><i class="bi bi-run"></i> run<br /><i class="bi bi-sailboat"></i> sailboat<br />
+					<i class="bi bi-soccer"></i> soccer<br /><i class="bi bi-softball"></i> softball<br /><i class="bi bi-surf"></i> surf<br /><i class="bi bi-swim"></i> swim<br />
 					<i class="bi bi-tennis"></i> tennis<br /><i class="bi bi-volleyball"></i> volleyball<br /><i class="bi bi-walk"></i> walk<br />
 				</p>
 					
@@ -47,8 +51,8 @@
 				<!-- Religion and Philosophy -->
 				<p class="bold flow-text">Religion &amp; Philosophy</p>
 				<p class="col3 gap20" style="margin-bottom: 1em;">
-					<i class="bi bi-communist"></i> communist<br /><i class="bi bi-cross"></i> cross<br /><i class="bi bi-faith"></i> faith<br />
-					<i class="bi bi-islam"></i> islam<br /><i class="bi bi-jew"></i> jew<br />
+					<i class="bi bi-celtic"></i> celtic<br /><i class="bi bi-communist"></i> communist<br /><i class="bi bi-cross"></i> cross<br />
+					<i class="bi bi-faith"></i> faith<br /><i class="bi bi-islam"></i> islam<br /><i class="bi bi-jew"></i> jew<br />
 					<i class="bi bi-khanda"></i> khanda<br /><i class="bi bi-peace"></i> peace<br /><i class="bi bi-pentagram"></i> pentagram<br /><i class="bi bi-pentagram-i"></i> pentagram-i<br />
 					<i class="bi bi-yin-yang"></i> yin-yang<br />
 				</p>
@@ -62,8 +66,8 @@
 					<i class="bi bi-comet"></i> comet<br /><i class="bi bi-core"></i> core / fisheye<br /><i class="bi bi-core-block"></i> core-block<br />
 					<i class="bi bi-deploy"></i> deploy / trident<br /><i class="bi bi-finish-line"></i> finish-line<br /><i class="bi bi-fleur"></i> fleur<br />
 					<i class="bi bi-global"></i> global<br /><i class="bi bi-numero"></i> numero<br /><i class="bi bi-per"></i> per<br />
-					<i class="bi bi-handicap"></i> handicap<br /><i class="bi bi-heat"></i> heat<br />
-					<i class="bi bi-heart"></i> heart / love<br /><i class="bi bi-love-o"></i> heart-o / love-o<br />
+					<i class="bi bi-handicap"></i> handicap<br /><i class="bi bi-heat"></i> heat<br /><i class="bi bi-dna"></i> dna<br /><i class="bi bi-evil-eye"></i> evil-eye<br />
+					<i class="bi bi-heart"></i> heart / love<br /><i class="bi bi-love-o"></i> heart-o / love-o<br /><i class="bi bi-heart-brown"></i> heart-brown<br />
 					<i class="bi bi-heart-black"></i> heart-black<br /><i class="bi bi-heart-red"></i> heart-red<br /><i class="bi bi-heart-yellow"></i> heart-yellow<br />
 					<i class="bi bi-heart-blue"></i> heart-blue<br /><i class="bi bi-heart-green"></i> heart-green<br /><i class="bi bi-heart-purple"></i> heart-purple<br />
 					<i class="bi bi-history"></i> history<br /><i class="bi bi-infinity"></i> infinity<br /><i class="bi bi-info"></i> info<br />
@@ -80,9 +84,12 @@
 					<i class="bi bi-men"></i> men<br /><i class="bi bi-women"></i> women<br /><i class="bi bi-unisex"></i> unisex<br />
 					<i class="bi bi-new"></i> new<br /><i class="bi bi-free"></i> free<br /><i class="bi bi-ohm"></i> ohm<br /><i class="bi bi-pi"></i> pi<br />
 					<i class="bi bi-pinwheel"></i> pinwheel<br /><i class="bi bi-paper-recycle"></i> paper-recycle<br />
-					<i class="bi bi-recycle"></i> recycle<br /><i class="bi bi-trash"></i> trash<br /><i class="bi bi-sparkle"></i> sparkle<br />
-					<i class="bi bi-reference"></i> reference<br /><i class="bi bi-sleep"></i> sleep<br /><i class="bi bi-sol"></i> sol<br /><i class="bi bi-spy"></i> spy<br />
+					<i class="bi bi-recycle"></i> recycle<br /><i class="bi bi-trash"></i> trash<br />
+					<i class="bi bi-puzzle"></i> puzzle<br /><i class="bi bi-sparkle"></i> sparkle<br />
+					<i class="bi bi-reference"></i> reference<br /><i class="bi bi-sleep"></i> sleep<br /><i class="bi bi-sol"></i> sol / solar<br /><i class="bi bi-spy"></i> spy<br />
+					<i class="bi bi-sunshine"></i> sunshine<br />
 					<i class="bi bi-superstar"></i> superstar<br /><i class="bi bi-tel"></i> tel<br /><i class="bi bi-underage"></i> underage<br /><i class="bi bi-unequal"></i> unequal<br />
+					<i class="bi bi-place-of-interest"></i> place-of-interest<br /><i class="bi bi-viewdata"></i> viewdata<br />
 					<i class="bi bi-wait"></i> wait<br /><i class="bi bi-wonder"></i> wonder / magic<br /><i class="bi bi-fortune"></i> fortune
 				</p>
 					
@@ -92,33 +99,50 @@
 					<i class="bi bi-airplane"></i> airplane<br /><i class="bi bi-alarm"></i> alarm<br /><i class="bi bi-anchor"></i> anchor<br />
 					<i class="bi bi-article"></i> article<br /><i class="bi bi-atm"></i> atm<br /><i class="bi bi-award"></i> award<br />
 					<i class="bi bi-badge"></i> badge<br /><i class="bi bi-balloon"></i> balloon<br /><i class="bi bi-battery"></i> battery<br /><i class="bi bi-bike"></i> bike<br />
-					<i class="bi bi-bolt"></i> bolt<br />
-					<i class="bi bi-books"></i> books<br /><i class="bi bi-book-open"></i> book-open<br /><i class="bi bi-book-red"></i> book-red<br />
+					<i class="bi bi-bolt"></i> bolt / screw<br /><i class="bi bi-broom"></i> broom / sweep<br />
+					<i class="bi bi-books"></i> books<br /><i class="bi bi-book-open"></i> book-open<br /><i class="bi bi-book-open-o"></i> book-open-o<br />
+					<i class="bi bi-book-red"></i> book-red<br />
 					<i class="bi bi-book-blue"></i> book-blue<br /><i class="bi bi-book-green"></i> book-green<br /><i class="bi bi-book-yellow"></i> book-yellow<br />
-					<i class="bi bi-bouquet"></i> bouquet<br /><i class="bi bi-briefcase"></i> briefcase<br /><i class="bi bi-bulb"></i> bulb / idea<br />
+					<i class="bi bi-bouquet"></i> bouquet<br /><i class="bi bi-bricks"></i> bricks<br />
+					<i class="bi bi-briefcase"></i> briefcase<br /><i class="bi bi-bulb"></i> bulb / idea<br />
 					<i class="bi bi-camera"></i> camera<br /><i class="bi bi-candle"></i> candle<br /><i class="bi bi-car"></i> car<br /><i class="bi bi-card"></i> card<br />
 					<i class="bi bi-cart"></i> cart / shop<br /><i class="bi bi-cd"></i> cd<br />
-					<i class="bi bi-chains"></i> chains<br /><i class="bi bi-church"></i> church<br /><i class="bi bi-coinbag"></i> coinbag<br />
-					<i class="bi bi-computer"></i> computer<br /><i class="bi bi-cosmetic"></i> cosmetic<br />
-					<i class="bi bi-diamond"></i> diamond<br /><i class="bi bi-dice"></i> dice<br /><i class="bi bi-door"></i> door<br /><i class="bi bi-dress"></i> dress<br />
-					<i class="bi bi-factory"></i> factory<br />
+					<i class="bi bi-chains"></i> chains<br /><i class="bi bi-coinbag"></i> coinbag<br />
+					<i class="bi bi-compass"></i> compass<br /><i class="bi bi-computer"></i> computer<br /><i class="bi bi-cosmetic"></i> cosmetic / lipstick<br />
+					<i class="bi bi-diamond"></i> diamond / gem<br /><i class="bi bi-dice"></i> dice<br /><i class="bi bi-door"></i> door<br /><i class="bi bi-dress"></i> dress<br />
 					<i class="bi bi-flashlight"></i> flashlight<br /><i class="bi bi-fountain"></i> fountain<br /><i class="bi bi-fuel"></i> fuel<br />
-					<i class="bi bi-gift"></i> gift<br /><i class="bi bi-cap"></i> grad / cap / edu<br /><i class="bi bi-guitar"></i> guitar<br />
+					<i class="bi bi-gift"></i> gift<br /><i class="bi bi-cap"></i> grad / edu / cap<br /><i class="bi bi-guitar"></i> guitar<br />
 					<i class="bi bi-hammer"></i> hammer<br /><i class="bi bi-home"></i> home<br />
-					<i class="bi bi-key"></i> key<br /><i class="bi bi-knife"></i> knife<br /><i class="bi bi-love-letter"></i> love-letter<br />
-					<i class="bi bi-mailbox"></i> mailbox<br /><i class="bi bi-map"></i> map / world<br /><i class="bi bi-mic"></i> mic<br />
-					<i class="bi bi-microscope"></i> microscope<br /><i class="bi bi-notepad"></i> notepad<br /><i class="bi bi-office"></i> office<br />
-					<i class="bi bi-palette"></i> palette<br /><i class="bi bi-pants"></i> pants<br /><i class="bi bi-piano"></i> piano<br /><i class="bi bi-pick"></i> pick<br />
-					<i class="bi bi-plug"></i> plug / plugin<br />
-					<i class="bi-poop"></i> poop / shit<br /><i class="bi bi-radio"></i> radio<br /><i class="bi bi-robot"></i> robot<br />
+					<i class="bi bi-key"></i> key<br /><i class="bi bi-keyboard"></i> keyboard<br /><i class="bi bi-knife"></i> knife<br />
+					<i class="bi bi-lotion"></i> lotion / bottle<br /><i class="bi bi-love-letter"></i> love-letter<br /><i class="bi bi-luggage"></i> luggage / baggage<br />
+					<i class="bi bi-magnet"></i> magnet<br /><i class="bi bi-mailbox"></i> mailbox<br /><i class="bi bi-map"></i> map / world<br /><i class="bi bi-mic"></i> mic<br />
+					<i class="bi bi-microscope"></i> microscope<br /><i class="bi bi-mobile"></i> mobile<br /><i class="bi bi-notebook"></i> notebook / journal<br />
+					<i class="bi bi-notepad"></i> notepad<br />
+					<i class="bi bi-palette"></i> palette<br /><i class="bi bi-pants"></i> pants<br /><i class="bi bi-pennant"></i> pennant<br /><i class="bi bi-pennant-o"></i> pennant-o<br />
+					<i class="bi bi-piano"></i> piano<br /><i class="bi bi-pick"></i> pick<br /><i class="bi bi-plug"></i> plug / plugin<br />
+					<i class="bi-poop"></i> poop / shit<br /><i class="bi bi-radio"></i> radio<br /><i class="bi bi-receipt"></i> receipt<br /><i class="bi bi-robot"></i> robot<br />
 					<i class="bi bi-roller-coaster"></i> roller-coaster<br /><i class="bi bi-ruler"></i> ruler<br />
-					<i class="bi bi-saxaphone"></i> saxaphone<br /><i class="bi bi-school"></i> school<br /><i class="bi bi-ship"></i> ship<br />
-					<i class="bi bi-shower"></i> shower<br /><i class="bi bi-skull"></i> skull<br /><i class="bi bi-socks"></i> socks<br />
-					<i class="bi bi-tag"></i> tag<br /><i class="bi bi-target"></i> target<br /><i class="bi bi-telescope"></i> telescope<br /><i class="bi bi-ticket"></i> ticket<br />
-					<i class="bi bi-toilet"></i> toilet<br /><i class="bi bi-trophy"></i> trophy<br />
+					<i class="bi bi-saxophone"></i> saxophone<br /><i class="bi bi-ship"></i> ship<br />
+					<i class="bi bi-shower"></i> shower<br /><i class="bi bi-skull"></i> skull<br /><i class="bi bi-soap"></i> soap<br /><i class="bi bi-socks"></i> socks<br />
+					<i class="bi bi-fork-knife"></i> fork-knife / cutlery<br /><i class="bi bi-spoon"></i> spoon<br />
+					<i class="bi bi-tag"></i> tag<br /><i class="bi bi-target"></i> target<br /><i class="bi bi-taxi"></i> taxi<br />
+					<i class="bi bi-teddy-bear"></i> teddy / teddy-bear<br /><i class="bi bi-telescope"></i> telescope<br />
+					<i class="bi bi-test-tube"></i> test-tube<br /><i class="bi bi-ticket"></i> ticket<br /><i class="bi bi-toilet"></i> toilet<br /><i class="bi bi-tp"></i> tp<br />
+					<i class="bi bi-toolbox"></i> toolbox<br /><i class="bi bi-tractor"></i> tractor<br /><i class="bi bi-trophy"></i> trophy<br />
 					<i class="bi bi-train"></i> train<br /><i class="bi bi-truck"></i> truck<br /><i class="bi bi-trumpet"></i> trumpet<br />
 					<i class="bi bi-tv"></i> tv<br /><i class="bi bi-umbrella"></i> umbrella<br /><i class="bi bi-vhs"></i> vhs<br />
 					<i class="bi bi-violin"></i> violin<br /><i class="bi bi-wrench"></i> wrench<br />
+				</p>
+				
+				<!-- Places -->
+				<p class="bold flow-text">Places</p>
+				<p class="col3 gap20" style="margin-bottom: 1em;">
+					<i class="bi bi-castle"></i> castle<br /><i class="bi bi-church"></i> church<br />
+					<i class="bi bi-factory"></i> factory / industrial<br />
+					<i class="bi bi-hospital"></i> hospital<br /><i class="bi bi-hotel"></i> hotel<br /><i class="bi bi-house"></i> house<br />
+					<i class="bi bi-mosque"></i> mosque<br /><i class="bi bi-office"></i> office<br />
+					<i class="bi bi-school"></i> school<br /><i class="bi bi-store"></i> store / retail<br /><i class="bi bi-synagogue"></i> synagogue<br />
+					<i class="bi bi-temple"></i> temple<br />
 				</p>
 					
 				<!-- FREAK show -->
@@ -129,4 +153,14 @@
 					<i class="bi bi-genie"></i> genie<br /><i class="bi bi-ghost"></i> ghost<br /><i class="bi bi-mermaid"></i> mermaid<br /><i class="bi bi-sick"></i> sick<br />
 					<i class="bi bi-spider"></i> spider<br /><i class="bi bi-unicorn"></i> unicorn<br /><i class="bi bi-web"></i> web<br /><i class="bi bi-wizard"></i> wizard<br />
 					<i class="bi bi-vampire"></i> vampire<br /><i class="bi bi-zombie"></i> zombie<br />
+				</p>
+				
+				<!-- Emoticons -->
+				<p class="bold flow-text">Emoticons</p>
+				<p class="col3 gap20" style="margin-bottom: 1em;">
+					<i class="bi bi-happy"></i> happy / smile<br /><i class="bi bi-unhappy"></i> unhappy / frown<br />
+					<i class="bi bi-censored"></i> censored / cuss<br /><i class="bi bi-cowboy"></i> cowboy / howdy<br />
+					<i class="bi bi-cool"></i> cool / famous<br /><i class="bi bi-grimace"></i> grimace / stressed<br /><i class="bi bi-loved"></i> loved / cherished<br />
+					<i class="bi bi-mind-blown"></i> mind-blown<br /><i class="bi bi-nerdy"></i> nerdy / geeky<br />
+					<i class="bi bi-rich"></i> rich / greedy<br /><i class="bi bi-sad"></i> sad / cry<br /><i class="bi bi-star-struck"></i> star-struck<br />
 				</p>

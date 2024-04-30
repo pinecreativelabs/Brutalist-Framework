@@ -1,7 +1,7 @@
 <h3 class="fluid-text monolisk" id="rumbler">Rumbler</h3>
 <div class="flex"><div class="half padded">
 	<p class="rumble flow-text hottie padded rounded b-d-k mauve-b center throb bold allcaps">Let's get ready to rumble!</p>
-	<p class="requiresbox" style="margin-top: 1em;"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/jquery.3.js<br />core/jab/plugins/rumbler.js</em></span></p>
+	<p class="requiresbox" style="margin-top: 1em;"><span class="flow-text">REQUIRES:</span><br /><em>bos/core/jab/jquery.3.js<br />bos/core/jab/plugins/rumbler.js</em></p>
 	<p style="margin-top: 1em;">Brutalize any element by making it <em>rumble</em>! Simply apply the following classes to any element.<br /><br /></p>
 	<p class="info padded"><span class="bigger">Stop Constant Rumble</span><br /><em>By applying these classes together, users can stop a constantly rumbling element:</em><br />
 	<strong>.rumble.strumble</strong> - rumble constantly, stop upon click<br /><strong>.rumble.sthrumble</strong> - rumble constantly, stop upon hover</p>
