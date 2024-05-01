@@ -47,6 +47,6 @@
 		</p>
 		<p style="margin-top: 1rem;">It is up to you how you organize the <strong><em>app</em></strong> directory. The idea is to store files here that will likely be frequently changed or updated.</p>
 		<p class="spacer"></p>
-		<h4 class="flow-text charcoal">Core Directory</h4>
-		<p class="bitstream">The <em>core</em> directory contains all core CSS, javascript, files, data, and PHP scripts. Files in this directory are for static (unchanging) reference. More details are provided in the following sections.</p>
+		<h4 class="flow-text charcoal">BOS Directory</h4>
+		<p class="bitstream">The <em>bos</em> directory contains all core CSS, javascript, files, data, and PHP scripts. Files in this directory are for static (unchanging) reference. More details are provided in the following sections.</p>
 	</div></div>
