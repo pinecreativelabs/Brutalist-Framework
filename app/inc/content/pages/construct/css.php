@@ -54,8 +54,8 @@
 	<p class="spacer"></p>
 	<h4 class="charcoal white-t flow-text bitstream">Custom Fonts</h4>
 	<div class="flex"><div class="padded half bitstream">
-		<p>Sometimes, <a href="https://fonts.google.com/" target="_blank" class="lemonlink">Google Fonts</a> may not have a specific font, so you may need to create and host your own custom font. Custom font packages are in the <span class="red white-t">core/css/fonts</span> directory. Within this directory is a <span class="red white-t">construct-fonts.css</span> file, which imports all <em>font.css</em> files from their respective directories. The <em>construct-fonts</em> file is imported into the core <em>construct.css</em> file.</p>
-		<p style="margin-top: 1em;">Explore the <em>core/css/fonts</em> directory to see how it's all set up. There are six custom font styles included as examples.</p>
+		<p>Sometimes, <a href="https://fonts.google.com/" target="_blank" class="lemonlink">Google Fonts</a> may not have a specific font, so you may need to create and host your own custom font. Custom font packages are in the <span class="red white-t">bos/core/css/fonts</span> directory. Within this directory is a <span class="red white-t">construct-fonts.css</span> file, which imports all <em>font.css</em> files from their respective directories. The <em>construct-fonts</em> file is imported into the core <em>construct.css</em> file.</p>
+		<p style="margin-top: 1em;">Explore the <em>bos/core/css/fonts</em> directory to see how it's all set up. There are six custom font styles included as examples.</p>
 		<p style="margin-top: 1em;">To create a custom font package, you'll need to first convert them into a webfont. The Font Squirrel <a href="https://www.fontsquirrel.com/tools/webfont-generator" target="_blank" class="lemonlink">Webfont Generator</a> is an ideal tool for this.</p>
 	</div><div class="padded half">
 		<h5 class="flow-text bitstream"><strong>Included Fonts:</strong></h5>
