@@ -1,8 +1,6 @@
 <?php 
 $bos_editor_css = $bosdir.'core/css/construct-bosui.css';
-$core_construct_css = '<link href="bos/core/css/construct.css" type="text/css" rel="stylesheet" media="all" />'.PHP_EOL;
-$molds_css .= '<link href="bos/core/css/molds/construct.css" type="text/css" rel="stylesheet" media="all" />'.PHP_EOL;
-$core_css = $core_construct_css . $molds_css;
+$core_css = '<link href="bos/core/css/construct.css" type="text/css" rel="stylesheet" media="all" />'.PHP_EOL;
 
 /* CORE COMPONENTS */
 $default_css = '<link href="bos/core/css/default.css" type="text/css" rel="stylesheet" media="all" />'.PHP_EOL;
