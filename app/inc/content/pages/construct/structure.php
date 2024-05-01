@@ -1,5 +1,5 @@
 	<h3 class="fluid-text monolisk" id="structure"><strong>Structure</strong></h3>
-	<p class="bitstream">There are two primary directories that make up the framework structure: <em>app</em> and <em>core</em>. The <em>app</em> directory is for files that will be frequently modified, whereas the <em>core</em> is for files that are static and unchanging. Below is an overview of the file structure.</p>
+	<p class="bitstream">There are two primary directories that make up the framework structure: <em>app</em> and <em>bos</em>. The <em>app</em> directory is for files that will be frequently modified, whereas <em>bos</em> is for files that are static and unchanging. Below is an overview of the file structure.</p>
 	<div class="flex bitstream"><div class="padded half">
 		<h4 class="flow-text charcoal">File Structure</h4>
 		<ul class="none files">
