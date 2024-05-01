@@ -7,22 +7,22 @@ require 'bos/build/constructor.php';
 <html lang="en">
 <head>
 	<?php echo $global_meta_header;?>
-	<title>Brutalist Framework || CORE</title>
-	<meta name="description" content="Construct a brutal web page or application using a deconstructive approach." />
+	<title>Groundwork</title>
+	<meta name="description" content="Getting started guide for planning and building with Brutalist Framework." />
 	<?php echo $favicon_list;?>
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@brutalistfwk">
-	<meta name="twitter:title" content="Brutalist Framework || CORE">
-	<meta name="twitter:description" content="Construct a brutal web page or application using a deconstructive approach.">
+	<meta name="twitter:title" content="Groundwork">
+	<meta name="twitter:description" content="Getting started guide for planning and building with Brutalist Framework.">
 	<meta name="twitter:creator" content="@brutalistfwk">
 	<meta name="twitter:image" content="https://www.brutalistframework.com/core/files/images/bf-social-tile.jpg">
 	<!-- Open Graph data -->
-	<meta property="og:title" content="Brutalist Framework || CORE" />
+	<meta property="og:title" content="Groundwork" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://www.brutalistframework.com" />
 	<meta property="og:image" content="https://www.brutalistframework.com/core/files/images/bf-social-tile.jpg" />
-	<meta property="og:description" content="Construct a brutal web page or application using a deconstructive approach." /> 
+	<meta property="og:description" content="Getting started guide for planning and building with Brutalist Framework." /> 
 	<meta property="og:site_name" content="Brutalist Framework" />
 
 	<?php echo $core_css; ?>
