@@ -29,7 +29,14 @@ require 'bos/build/constructor.php';
 	
 	<!-- Theme CSS -->
 	<link href="app/themes/default/theme.css" type="text/css" rel="stylesheet" media="all" />
-
+	<style>
+		.groundwork-head { background-size: cover; background-position: center center; 
+			background-image: url('app/files/images/groundwork.jpg'); background-repeat: no-repeat;
+		}
+		.groundwork-head h3, .groundwork-head p {background: rgba(0,0,0,0.5); margin-top: 2rem; padding: 1.25rem;}
+		.groundwork-head h3 {display:inline-block;}
+		.groundwork-head p {margin-bottom: 2rem;}
+	</style>
 </head>
 <body>
 <!-- Sticky Nav -->
@@ -51,8 +58,11 @@ require 'bos/build/constructor.php';
 	
 <div class="fossil padded smoke-t">
 	<div class="wrap-1200">
+		<div class="padded rounded groundwork-head bitstream charcoal-t-s">
+			<h3 class="fluid-text monolisk heavy rounded">Laying the Groundwork</h3>
+			<p class="flow-text">Preliminary planning and preparation work is necessary for project propulsion. Let's lay the "groundwork" by looking at what is needed before you build your next <em>Brutalist Framework</em> project.</p>
+		</div>
 		<p class="spacer"></p>
-		
 		<nav class="sandbar sand monolisk flow-text">
 			<ul>
 				<li><a href="#quiktour">Quick Tour</a></li>
