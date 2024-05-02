@@ -143,7 +143,7 @@
 .files a[href$=".csv"]:before, .files a[href$=".tsv"]:before, .files i.csv {content: url("icons/ft/csv.svg");}
 /* database files */
 .files a[href$=".db"]:before, .files a[href$=".dbf"]:before, .files a[href$=".pdb"]:before, .files a[href$=".sdf"]:before,
-.files a[href$=".sql"]:before, .files i.db { 
+.files a[href$=".sql"]:before, .files i.db, .files i.sql { 
 	content: url("icons/ft/db.svg");
 }
 .files a[href$=".md"]:before, .files i.md {content: url("icons/ft/md.svg");}
