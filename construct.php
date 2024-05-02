@@ -53,7 +53,6 @@ require 'bos/build/constructor.php';
 	<div class="wrap-1200">
 		<p class="flow-text bitstream">The core of BF is composed of CSS, javascript, data files, and PHP scripts that can be used to construct and render elements on an HTML page or application.</p>
 		<p class="spacer"></p>
-		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
 		
 		<nav class="sandbar sand monolisk flow-text">
 			<ul>
@@ -80,23 +79,13 @@ require 'bos/build/constructor.php';
 		<p class="spacer"></p>
 		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
 		
-		<!-- PHP CORE -->
-		<?php include 'app/inc/content/pages/construct/php-core.php';?>
-		<p class="spacer"></p>
-		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
-			
-		<!-- KAT & BEKAH-->
-		<h3 class="fluid-text monolisk" id="kat-bekah" style="margin-bottom: 0;"><strong>KAT & BEKAH</strong></h3>
-		<p class="bitstream">KAT and BEKAH are the two primary "sister" scripts, which support the CORE script. Both scripts are included in the <em>core.php</em> script.</p>
-		<p class="spacer"></p>
-		<?php include 'app/inc/content/pages/construct/kat.php';?>
-		<p class="spacer"></p>
-		<?php include 'app/inc/content/pages/construct/bekah.php';?>
+		<!-- Data -->
+		<?php include 'app/inc/content/pages/construct/data.php';?>
 		<p class="spacer"></p>
 		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
 		
-		<!-- BRAD -->
-		<?php include 'app/inc/content/pages/construct/brad.php';?>
+		<!-- PHP CORE -->
+		<?php include 'app/inc/content/pages/construct/php-core.php';?>
 		<p class="spacer"></p>
 
 	</div>
@@ -116,16 +105,10 @@ require 'bos/build/constructor.php';
 </div>
 
 <?php 
+echo $baffle_js;
 echo $modal_js;
-echo $bfx_js;
-echo $buix_js;
 echo $jquery3;
 ?>
-<!-- jQuery Plugins -->
-<script src="core/jab/plugins/draggable.js"></script>
-<script src="core/jab/plugins/cdp.js"></script>
-<script src="core/jab/plugins/pagination.js"></script>
-<script src="core/jab/plugins/b-loader.js"></script>
 
 </body>
 </html>
