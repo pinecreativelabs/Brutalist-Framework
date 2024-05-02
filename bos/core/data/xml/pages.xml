@@ -2,44 +2,8 @@
 <pages>
 	<link>
 		<title>About BF</title>
-		<keywords>about brutalist framework history</keywords>
+		<keywords>about brutalist framework purpose history</keywords>
 		<url>https://www.brutalistframework.com/about.php</url>
-		<target>_self</target>
-	</link>
-	<link>
-		<title>CORE</title>
-		<keywords>CSS javascript jquery PHP app construct</keywords>
-		<url>https://www.brutalistframework.com/construct.php</url>
-		<target>_self</target>
-	</link>
-	<link>
-		<title>bIcons</title>
-		<keywords>icon symbols utf</keywords>
-		<url>https://www.brutalistframework.com/bicons.php</url>
-		<target>_self</target>
-	</link>
-	<link>
-		<title>BUTCH</title>
-		<keywords>basic typography</keywords>
-		<url>https://www.brutalistframework.com/butch.php</url>
-		<target>_self</target>
-	</link>
-	<link>
-		<title>ReBAR</title>
-		<keywords>responsive breakpoint reference</keywords>
-		<url>https://www.brutalistframework.com/rebar.php</url>
-		<target>_self</target>
-	</link>
-	<link>
-		<title>Flavors</title>
-		<keywords>color classes CSS library</keywords>
-		<url>https://www.brutalistframework.com/flavors.php</url>
-		<target>_self</target>
-	</link>
-	<link>
-		<title>BUIX</title>
-		<keywords>ui user interface elements</keywords>
-		<url>https://www.brutalistframework.com/buix.php</url>
 		<target>_self</target>
 	</link>
 	<link>
@@ -49,28 +13,70 @@
 		<target>_self</target>
 	</link>
 	<link>
+		<title>bIcons</title>
+		<keywords>icon symbols utf</keywords>
+		<url>https://www.brutalistframework.com/bicons.php</url>
+		<target>_self</target>
+	</link>
+	<link>
+		<title>BUFF</title>
+		<keywords>blender utility css filter</keywords>
+		<url>https://www.brutalistframework.com/buff.php</url>
+		<target>_self</target>
+	</link>
+	<link>
+		<title>BUIX</title>
+		<keywords>ui user interface elements</keywords>
+		<url>https://www.brutalistframework.com/buix.php</url>
+		<target>_self</target>
+	</link>
+	<link>
+		<title>BUTCH</title>
+		<keywords>basic typography shapes borders utility helper</keywords>
+		<url>https://www.brutalistframework.com/butch.php</url>
+		<target>_self</target>
+	</link>
+	<link>
+		<title>CORE</title>
+		<keywords>css javascript jquery data PHP app construct</keywords>
+		<url>https://www.brutalistframework.com/construct.php</url>
+		<target>_self</target>
+	</link>
+	<link>
+		<title>Flavors</title>
+		<keywords>color classes css library</keywords>
+		<url>https://www.brutalistframework.com/flavors.php</url>
+		<target>_self</target>
+	</link>
+	<link>
+		<title>FUX</title>
+		<keywords>form utility ux ui user experience</keywords>
+		<url>https://www.brutalistframework.com/fux.php</url>
+		<target>_self</target>
+	</link>
+	<link>
+		<title>Grids</title>
+		<keywords>grid layout method bento css flex responsive chaos</keywords>
+		<url>https://www.brutalistframework.com/grids.php</url>
+		<target>_self</target>
+	</link>
+	<link>
+		<title>Groundwork</title>
+		<keywords>get started guide plan design build prepare</keywords>
+		<url>https://www.brutalistframework.com/groundwork.php</url>
+		<target>_self</target>
+	</link>
+	<link>
 		<title>MOLDS</title>
-		<keywords>module object layout design source</keywords>
+		<keywords>module object layout linked design data source</keywords>
 		<url>https://www.brutalistframework.com/molds.php</url>
-		<target/>
+		<target>_self</target>
 	</link>
 	<link>
-		<title>Boards</title>
-		<keywords>content group element templates</keywords>
-		<url>https://www.brutalistframework.com/boards.php</url>
-		<target/>
-	</link>
-	<link>
-		<title>Panels</title>
-		<keywords>php page templates</keywords>
-		<url>https://www.brutalistframework.com/panels.php</url>
-		<target/>
-	</link>
-	<link>
-		<title>Tiles</title>
-		<keywords>css javascript jquery plugins</keywords>
-		<url>https://www.brutalistframework.com/tiles.php</url>
-		<target/>
+		<title>ReBAR</title>
+		<keywords>responsive breakpoint reference</keywords>
+		<url>https://www.brutalistframework.com/rebar.php</url>
+		<target>_self</target>
 	</link>
 	<link>
 		<title>BOS Portal</title>
