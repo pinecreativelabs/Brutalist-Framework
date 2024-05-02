@@ -1,8 +1,18 @@
 <h3 class="fluid-text monolisk" id="php"><strong>PHP Core</strong></h3>
-<p class="bitstream">PHP elements are written in plain, basic PHP. <span class="bold red">Using PHP is purely optional.</span></p>
-<p class="bitstream" style="margin-top: 1rem;">If using PHP, you'll only need to load the following file at the beginning of any page:</p>
-<p class="flow-text bitstream"><span class="mauve white-t"><strong>bos/build/construct.php</strong></span></p>
-<p class="bitstream" style="margin-top: 1rem;">This script includes all other necessary PHP functions, constructors, and helpers that will be needed to help you build and construct a dynamic page.</p>
+<div class="flex bitstream"><div class="padded half">
+	<p>PHP elements are written in plain, basic PHP. <span class="bold red">Using PHP is purely optional.</span></p>
+	<p style="margin-top: 1rem;">If using PHP, you'll only need to load the following file at the beginning of any page:</p>
+	<p class="flow-text"><span class="mauve white-t"><strong>bos/build/construct.php</strong></span></p>
+	<p style="margin-top: 1rem;">This script includes all other necessary PHP functions, constructors, and helpers that will be needed to help you build and construct a dynamic page.</p>
+</div><div class="padded half">
+	<div class="padded warning">
+		<h4 class="flow-text"><strong>Running BF in a Subdirectory</strong></h4>
+		<p>If you plan to run the PHP version of BF in a subdirectory (ex: <em>brutalistframework.com/sub-directory</em>), you will need to specify the directory in the following file:<br />
+		<span class="red white-t"><strong><em>/bos/build/sysconfig.php</em></strong></span></p>
+		<p style="margin-top: 1rem;">The line with <em>BASE_DIR</em> should have an empty value. Enter the name of the folder that <em>BF</em> will run in, like so:<br />
+		<span class="terminal">define('BASE_DIR', '<strong>sub-directory</strong>');</span></p>
+	</div>
+</div></div>
 <div class="flex bitstream"><div class="padded half">
 	<h4 class="flow-text charcoal padded">PHP Architecture</h4>
 	<p style="margin-top: 1rem;">How does the PHP build constructor all fit together? The diagram below illustrates the overall structure.</p>
@@ -125,7 +135,7 @@
 </div></div>
 <p class="spacer"></p>
 
-<h4 class="flow-text charcoal padded">Form Selects</h4>
+<h4 class="flow-text charcoal padded bitstream">Form Selects</h4>
 <div class="flex"><div class="padded half bitstream">
 	<p>There are several form select (dropdown) inputs available that all use CSV data to prepopulate them. The CSV data files are located in the <strong><em>/bos/core/data/csv/</em></strong> directory. Within your form, simply echo any of the below PHP variables to render it.</p>
 	<p class="padded disabled" style="margin-top: 1rem;">
