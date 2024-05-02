@@ -61,7 +61,8 @@ require 'bos/build/constructor.php';
 				<li><a href="#type">Typography</a></li>
 				<li><a href="#layout">Layout &amp; Layering</a></li>
 				<li><a href="#utils">Utility Classes</a></li>
-				<li><a href="#bounds">Boundaries &amp; Shapes</a></li>
+				<li><a href="#bounds">Boundaries</a></li>
+				<li><a href="#shapes">Shapes</a></li>
 				<li><a href="#tables">Tables &amp; Media</a></li>
 			</ul>
 		</nav>
