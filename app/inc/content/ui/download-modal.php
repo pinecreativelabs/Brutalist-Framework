@@ -4,7 +4,7 @@
 		<p class="bigger bold" style="margin-bottom: 0.75em; margin-top: 1em;">
 			<a href="https://www.brutalistframework.com/versions/Brutalist_Framework_3.0.3.zip" target="_blank" class="box-s btn full-btn sweden invert-h rounded">Download 3.0.3</a>
 		</p>
-		<p style="margin-bottom: 1em; text-align: center;">Released <strong>4/30/2024</strong></p>
+		<p style="margin-bottom: 1em; text-align: center;">Released <strong>5/3/2024</strong></p>
 		<hr class="charlie" />
 		<p style="font-size: 1.15em; margin-top: 0.75em;"><strong><span style="font-size: 1.3em;">Archived Versions</span></strong><br />
 			<a href="https://www.brutalistframework.com/versions/Brutalist_Framework_3.0.zip" target="_blank">3.0</a> <small>(10/31/2023), 12mb</small><br />
