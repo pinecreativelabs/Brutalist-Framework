@@ -32,8 +32,10 @@ require 'bos/build/constructor.php';
 	<link href="app/themes/default/theme.css" type="text/css" rel="stylesheet" media="all" />
 	<link href="app/themes/default/home.css" type="text/css" rel="stylesheet" media="all" />
 	<link href="app/themes/default/deconstructor.css" type="text/css" rel="stylesheet" media="all" />
-	
-	<style>
+	<!-- mailchimp -->
+	<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
 		.tabs label {border-radius: 14px 14px 0 0; -webkit-border-radius: 14px 14px 0 0; font-weight: 900;}
 		.tabs .tab {border-radius: 0 14px 14px 14px; -webkit-border-radius: 0 14px 14px 14px;}
 		.tabs input[type="radio"]:checked + label {background-color: #dac3a1 !important;}
@@ -94,7 +96,7 @@ require 'bos/build/constructor.php';
 		</div></div>
 		</div>
 
-	<div class="container-1200" id="build" style="margin-top: 15vh;">
+	<div class="container-1200" id="build" style="margin-top: 10vh;">
 		<div class="bentogrid">
 			<!-- INTRO -->
 			<div data-bento="3x2"><div class="padded">
@@ -190,6 +192,8 @@ require 'bos/build/constructor.php';
 						</ul>
 					</div>
 					<div class="padded">
+						<img src="app/files/images/brutal-cms-beta.jpg" class="responsive box-s" alt="Brutal CMS" />
+						<!--
 						<h4 class="flow-text depixel" style="margin: 0 0 14px 0; font-weight: 900;">Preview BOS</h4>
 						<div class="cdp-wrap" id="cdp1">
 						  <select class="cdp_select depixel">
@@ -202,14 +206,14 @@ require 'bos/build/constructor.php';
 						  </select>
 
 						  <div class="content">
-							<div class="cdp_element" data-option="0">BOS Home Dashboard</div>
+							<div class="cdp_element" data-option="0"><img src="app/files/images/brutal-cms-beta.jpg" class="responsive box-s" alt="Brutal CMS" /></div>
 							<div class="cdp_element" data-option="1">BOS Backdoor</div>
 							<div class="cdp_element" data-option="2">User Management</div>
 							<div class="cdp_element" data-option="3">File Management</div>
 							<div class="cdp_element" data-option="4">Data Management</div>
 							<div class="cdp_element" data-option="5">Other Features</div>
 						  </div>
-						</div>
+						</div>-->
 					</div>
 				</div>
 				<!--
@@ -296,11 +300,11 @@ require 'bos/build/constructor.php';
 				</div>
 			</div></div>
 			
-			
+			<!-- Brutal Blast -->
 			<div class="block bw50"><div class="padded">
 				<div class="sand sliced-corner charcoal-t sandtitle"><h4 class="flow-text monolisk"><i class="bi bi-amp charcoal-t-s"></i> Brutal Blast</h4></div>
 				<div class="sand-b b-s-k padded terminal flow-text" style="margin-top: -2px; border-radius: 0 1rem 2rem 3rem;">
-					<p>sign-up form here</p>
+					<?php include 'app/inc/content/pages/index/mailchimp-form.php';?>
 				</div>
 			</div></div>
 			
@@ -313,50 +317,10 @@ require 'bos/build/constructor.php';
 	<div class="black sepia" style="border-top: 3px solid #ff0000; border-bottom: 3px solid #ff0000;">
 		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
 	</div>
-
+	
 	<!-- CUBESEA -->
-	<div style="width: 100vw; height: 90vh; position: relative;">
-		<header class="homeblock flex middle monolisk" style="margin: -3em 0 0 0; padding: 0;">
-			<div class="xfade center sand-t black-t-s">
-				<div class="element"><p class="fluid-text-h2 rumble"><strong>BE A REBEL</strong></p></div>
-				<div class="element"><p class="fluid-text-h2"><strong>USE BF TO CREATE ANTI-DESIGNS</strong></p></div>
-				<div class="element"><p class="fluid-text-h2 rumble"><strong>CAUSE CHAOS</strong></p></div>
-			</div>
-		</header>
-		<div class="grid-mask">
-			<div class="main">
-				<div><div class="panel">&#9947;</div><div class="panel">&#9947;</div></div>
-				<div><div class="panel">&#9947;</div><div class="panel">&#9947;</div></div>
-				<div><div class="panel">&#9947;</div><div class="panel">&#9947;</div></div>
-				<div><div class="panel">&#9947;</div><div class="panel">&#9947;</div></div>
-				<div><div class="panel">&#9947;</div><div class="panel">&#9947;</div></div>
-
-				<div><div class="panel">&#9947;</div><div class="panel">&#9947;</div></div>
-				<div class="special"><div class="panel">&#9947;</div><div class="panel">&#9947;</div></div>
-				<div><div class="panel">&#9947;</div><div class="panel">&#9947;</div></div>
-				<div><div class="panel">&#9947;</div><div class="panel">&#9947;</div></div>
-				<div><div class="panel">&#9947;</div><div class="panel">&#9947;</div></div>
-
-				<div><div class="panel">&#9947;</div><div class="panel">&#9947;</div></div>
-				<div><div class="panel">&#9947;</div><div class="panel">&#9947;</div></div>
-				<div><div class="panel">&#9947;</div><div class="panel">&#9947;</div></div>
-				<div><div class="panel">&#9947;</div><div class="panel">&#9947;</div></div>
-				<div><div class="panel">&#9947;</div><div class="panel">&#9947;</div></div>
-
-				<div><div class="panel">&#9947;</div><div class="panel">&#9947;</div></div>
-				<div><div class="panel">&#9947;</div><div class="panel">&#9947;</div></div>
-				<div><div class="panel">&#9947;</div><div class="panel">&#9947;</div></div>
-				<div><div class="panel">&#9947;</div><div class="panel">&#9947;</div></div>
-				<div><div class="panel">&#9947;</div><div class="panel">&#9947;</div></div>
-
-				<div><div class="panel">&#9947;</div><div class="panel">&#9947;</div></div>
-				<div><div class="panel">&#9947;</div><div class="panel">&#9947;</div></div>
-				<div><div class="panel">&#9947;</div><div class="panel">&#9947;</div></div>
-				<div><div class="panel">&#9947;</div><div class="panel">&#9947;</div></div>
-				<div><div class="panel">&#9947;</div><div class="panel">&#9947;</div></div>
-			</div>
-		</div>
-	</div>
+	<?php include 'app/inc/content/pages/index/cubesea.php';?>
+	
 	<!-- CORE Components -->
 	<div class="black sepia" style="border-top: 3px solid #ff0000; border-bottom: 3px solid #ff0000;">
 		<div class="clear-block jagged" id="core"><p class="checkerboard padding"></p></div>
@@ -388,7 +352,7 @@ require 'bos/build/constructor.php';
 			<div class="flex"><div class="padded half">
 				<h4 class="flow-text charcoal-t bitstream" style="margin: 0 0 1.5em 0;"><strong>Modular Objects Linked Data Source</strong></h4>
 				<p class="bitstream padded sand-b b-s-k dune rounded box-s-k">
-					MOLDS are PHP-based content objects constructed from XML or CSV data that is managed via the<br /><a href="bos-portal.php" class="sandlink">BOS Portal</a>.
+					MOLDS are PHP-based content objects constructed from XML or CSV data that is managed via the<br /><a href="#lockedout" data-modal-open class="sandlink">BOS Portal</a>.
 				</p>
 			</div><div class="half center">
 				<p class="flow-text monolisk shape point-right charcoal inline-block scale-h sepia" style="margin-top: 4rem; padding: 8px;">
@@ -397,97 +361,6 @@ require 'bos/build/constructor.php';
 			</div></div>
 		</div></div></div></div>
 	</div><div class="vh10"></div>
-
-
-<div class="checkerboard" style="width: 100vw; border-top: 6px solid #ff0000; border-bottom: 6px solid #ff0000;">
-	<p class="spacer"></p>
-	<div class="wrap-1200 padded">
-		<div class="flex"><div class="padded half">
-				<div class="sliced-corner black" style="padding: 6px;"><div class="padded lemon sliced-corner">
-					<h4 class="monolisk fluid-text red-t black-t-s" style="margin: 0; padding: 0;">Brutalist<br />Deconstructivist<br />Design Approach</h4>
-					<p class="black-t bitstream" style="margin-top: 1rem; margin-bottom: 1rem;"><strong>Read about our unique design approach to planning, designing, and constructing brutalist websites &amp; applications.</strong></p>
-					<p class="center monolisk scale-h" style="margin-bottom: 1.5rem; font-weight:900;">
-						<a href="#" target="_blank" class="b-s-k red-b btn btn-medium flow-text hue-h black lemon-t"><strong>Download eBook <em>FREE</em></strong></a>
-					</p>
-				</div></div>
-			</div><div class="padded half">
-				<div style="margin: 1rem auto 4.5rem auto;">
-					<div id="deconstructor">
-						<div class="albers1 red"></div><div class="albers2 red"></div><div class="albers3 red"></div>
-						<div class="albers4 black"></div><div class="albers5 black"></div>
-						<div class="albers6 red"></div><div class="albers7 black"></div>
-						<div class="albers8 red"></div><div class="albers9 black"></div>
-						<div class="albers10 red"></div><div class="albers11 black"></div>
-						<div class="albers12 red"></div><div class="albers13 black"></div>
-						<div class="albers14 red"></div><div class="albers15 black"></div>
-						<div class="albers16 black"></div><div class="albers17 red"></div>
-						<div class="albers18 black"></div><div class="albers19 red"></div>
-						<div class="albers20 black"></div><div class="albers21 red"></div>
-						<div class="albers22 black"></div><div class="albers23 red"></div>
-						<div class="albers24 black"></div><div class="albers25 black"></div><div class="albers26 black"></div>
-						<div class="albers27 red"></div><div class="albers28 black"></div>
-						<div class="albers29 red"></div><div class="albers30 black"></div>
-						<div class="albers31 red"></div><div class="albers32 black"></div>
-						<div class="albers33 red"></div><div class="albers34 black"></div>
-						<div class="albers35 black"></div><div class="albers36 black"></div>
-						<div class="albers37 red"></div><div class="albers38 black"></div>
-						<div class="albers39 red"></div><div class="albers40 black"></div>
-						<div class="albers41 red"></div><div class="albers42 black"></div>
-						<div class="albers43 red"></div><div class="albers44 black"></div>
-						<div class="albers45 black"></div><div class="albers46 black"></div>
-						<div class="albers47 red"></div><div class="albers48 black"></div>
-						<div class="albers49 red"></div><div class="albers50 black"></div>
-						<div class="albers51 red"></div><div class="albers52 black"></div>
-						<div class="albers53 red"></div><div class="albers54 black"></div>
-						<div class="albers55 black"></div><div class="albers56 red"></div>
-						<div class="albers57 black"></div><div class="albers58 red"></div>
-						<div class="albers59 black"></div><div class="albers60 red"></div>
-						<div class="albers61 black"></div><div class="albers62 red"></div>
-						<div class="albers63 black"></div><div class="albers64 black"></div>
-						<div class="albers65 red"></div><div class="albers66 black"></div>
-						<div class="albers67 red"></div><div class="albers68 black"></div>
-						<div class="albers69 red"></div><div class="albers70 black"></div>
-						<div class="albers71 black"></div><div class="albers72 black"></div><div class="albers73 black"></div>
-						<div class="albers74 red"></div><div class="albers75 black"></div>
-						<div class="albers76 red"></div><div class="albers77 red"></div><div class="albers78 red"></div>
-						<div class="albers79 black"></div><div class="albers80 black"></div><div class="albers81 black"></div>
-						<div class="albers82 black"></div><div class="albers83 black"></div>
-						<div class="albers84 red"></div><div class="albers85 black"></div>
-						<div class="albers86 red"></div><div class="albers87 red"></div><div class="albers88 red"></div>
-						<div class="albers89 black"></div><div class="albers90 black"></div><div class="albers91 black"></div>
-						<div class="albers92 red"></div><div class="albers93 red"></div><div class="albers94 red"></div>
-						<div class="albers95 black"></div><div class="albers96 black"></div><div class="albers97 black"></div>
-						<div class="albers98 red"></div><div class="albers99 red"></div><div class="albers100 red"></div>
-						<div class="albers101 black"></div><div class="albers102 black"></div>
-						<div class="albers103 red"></div><div class="albers104 red"></div>
-						<div class="albers105 black"></div><div class="albers106 black"></div>
-						<div class="albers107 red"></div><div class="albers108 red"></div>
-						<div class="albers109 black"></div><div class="albers110 red"></div>
-						<div class="albers111 black"></div><div class="albers112 red"></div>
-						<div class="albers113 red"></div><div class="albers114 black"></div>
-						<div class="albers115 black"></div><div class="albers116 black"></div>
-						<div class="albers117 red"></div><div class="albers118 black"></div>
-						<div class="albers119 red"></div><div class="albers120 black"></div>
-						<div class="albers121 red"></div><div class="albers122 black"></div>
-						<div class="albers123 black"></div><div class="albers124 black"></div>
-						<div class="albers125 red"></div><div class="albers126 black"></div>
-						<div class="albers127 red"></div><div class="albers128 black"></div>
-						<div class="albers129 red"></div><div class="albers130 black"></div>
-						<div class="albers131 black"></div><div class="albers132 black"></div>
-						<div class="albers133 red"></div><div class="albers134 black"></div>
-						<div class="albers135 red"></div><div class="albers136 black"></div>
-						<div class="albers137 red"></div><div class="albers138 black"></div>
-						<div class="albers139 black"></div><div class="albers140 black"></div>
-						<div class="albers141 red"></div><div class="albers142 black"></div>
-						<div class="albers143 red"></div><div class="albers144 black"></div>
-						<div class="albers145 black"></div><div class="albers146 black"></div>
-						<div class="albers147 red"></div><div class="albers148 black"></div><div class="albers149 red"></div>
-					</div>
-				</div>
-		</div></div>
-	</div>
-	<p class="spacer"></p>
-</div>
 
 <div class="black" style="border-top: 3px solid #ff0000; border-bottom: 3px solid #ff0000;">
 	<div class="clear-block jagged" id="news"><p class="checkerboard padding"></p></div>
