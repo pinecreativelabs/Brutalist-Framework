@@ -1,6 +1,7 @@
 <h3 class="fluid-text monolisk" id="php"><strong>PHP Core</strong></h3>
 <div class="flex bitstream"><div class="padded half">
-	<p>PHP elements are written in plain, basic PHP. <span class="bold red">Using PHP is purely optional.</span></p>
+	<p>PHP elements are written in plain, basic PHP.<br /><span class="bold red">Using PHP is purely optional.</span><br /><br /></p>
+	<p class="center flow-text heavy padded info b-b-k rounded">minimum requirement:<br /><span class="huge">PHP 7.0</span></p>
 	<p style="margin-top: 1rem;">If using PHP, you'll only need to load the following file at the beginning of any page:</p>
 	<p class="flow-text"><span class="mauve white-t"><strong>bos/build/construct.php</strong></span></p>
 	<p style="margin-top: 1rem;">This script includes all other necessary PHP functions, constructors, and helpers that will be needed to help you build and construct a dynamic page.</p>
