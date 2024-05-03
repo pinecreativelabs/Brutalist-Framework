@@ -1,5 +1,4 @@
 <?php 
-$bos_editor_css = $bosdir.'core/css/construct-bosui.css';
 $core_css = '<link href="bos/core/css/construct.css" type="text/css" rel="stylesheet" media="all" />'.PHP_EOL;
 
 /* CORE COMPONENTS */
@@ -31,12 +30,10 @@ $polygrids_css = '<link href="bos/core/css/grids/polygrids.css" type="text/css" 
 $shapes_css = '<link href="bos/core/css/molds/shapes.css" type="text/css" rel="stylesheet" media="all" />'.PHP_EOL;
 $presenter_css = '<link href="bos/core/css/molds/presenter.css" type="text/css" rel="stylesheet" media="all" />'.PHP_EOL;
 $multimedia_css = '<link href="bos/core/css/molds/multimedia.css" type="text/css" rel="stylesheet" media="all" />'.PHP_EOL;
-$navigation_css = '<link href="bos/core/css/grids/navigation.css" type="text/css" rel="stylesheet" media="all" />'.PHP_EOL;
 $uiux_css = '<link href="bos/core/css/grids/uiux.css" type="text/css" rel="stylesheet" media="all" />'.PHP_EOL;
 
 /* Deconstruct Mode */
 $grids_css = $b3grid_css . $bootstrapgrid_css . $cssgrid_css . $printgrid_css . $bentogrid_css . $chaosgrid_css . $polygrids_css;
-$deconstruct_core_css = $default_css . $grids_css . $bfx_css . $bicons_css . $buff_css . $buix_css . $butch_css . $flavors_css . $fux_css . $rebar_css;
-$deconstruct_core_css .= $animate_css . $filetypes_css. $fonts_css;
-$deconstruct_molds_css = $shapes_css . $presenter_css . $multimedia_css . $navigation_css . $uiux_css;
+$deconstruct_css = $default_css . $grids_css . $bfx_css . $bicons_css . $buff_css . $buix_css . $butch_css . $flavors_css . $fux_css . $rebar_css;
+$deconstruct_css .= $animate_css . $filetypes_css. $fonts_css . $shapes_css . $presenter_css . $multimedia_css . $uiux_css;
 ?>
