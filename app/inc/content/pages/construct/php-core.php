@@ -124,14 +124,20 @@
 </div></div>
 <p class="spacer"></p>
 
-<h4 class="flow-text charcoal padded bitstream">Basic Constructor Variables</h4>
+<h4 class="flow-text charcoal padded bitstream">Basic Constructors</h4>
 <div class="flex bitstream"><div class="padded half">
 	<p class="padded disabled"><span class="flow-text heavy">Heading Tags</span><br />
 		<strong>$faviconlist</strong><br /><small>renders favicon meta data (place in page header)</small><br /><br />
 		<strong>$global_meta_header</strong><br /><small>renders necessary meta tags (place in page header)</small>
 	</p>
 </div><div class="padded half">
-	
+	<div class="padded disabled">
+		<h5>CSS Link Tags</h5>
+		<p>The only variable needed for loading CSS is:<br /><br /><strong>$core_css</strong> <small>[loads <em>bos/core/css/construct.css</em>]</small><br /><br />
+		This CSS file imports all needed CSS files. Alternatively, all CSS files can be loaded separately by using the variable:<br /><br />
+		<strong>$deconstruct_css</strong><br /><br />
+		</p>
+	</div>
 </div></div>
 <p class="spacer"></p>
 
@@ -194,3 +200,21 @@
 		</form>
 	</div>
 </div></div>
+<p class="spacer"></p>
+
+<h4 class="flow-text charcoal padded bitstream">PHP Boilerplate</h4>
+<div class="flex bitstream"><div class="padded half">
+	<p>Constructing a PHP page is very basic. The code below is the barebones anatomy of a PHP page:</p>
+	<p style="margin-top: 1rem;" class="terminal padded">
+		<small><span class="lavender-t">&lt;?php require_once 'bos/build/constructor.php'; ?&gt;</span><br />
+		&lt;!DOCTYPE html&gt;<br />&lt;html lang="en"&gt;<br />&lt;head&gt;<br /><span class="lavender-t">&lt;?php echo $global_meta_header;?&gt;</span><br />
+		&lt;title&gt;Page Title&lt;/title&gt;<br /><span class="lavender-t">&lt;?php echo $core_css; ?&gt;</span><br />&lt;/head&gt;<br />&lt;body&gt;<br />
+		...body content...<br /><span class="lavender-t">&lt;?php echo $jquery3; ?&gt;</span><br />&lt;/body&gt;<br />&lt;/html&gt;
+		</small>
+	</p>
+</div><div class="padded half">
+	<h5>Boilerplate</h5>
+	<p>The <em>BF</em> package includes a <em>php_boilerplate.php</em> file. Use this as a starting point for constructing something solid.<br /><br />
+	<a href="php_boilerplate.php" target="_blank" class="nb-btn  pill">PHP Boilerplate &raquo;</a></p>
+</div></div>
+<p class="spacer"></p>
