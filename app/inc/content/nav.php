@@ -37,7 +37,7 @@
 		</ul>
 		<ul class="flex flow-text" style="width: 100%; border-top: 2px solid #fff; padding-top: 8px;">
 			<li class="half"><a href="https://www.blueprintgrid.com" target="_blank"><i class="blueprint bi bi-grid"></i> Blueprint Grid</a></li>
-			<li class="half"><a href="https://www.brutalistwebdesign.com" target="_blank"><i class="bi bi-reference lemon black-t"></i> Reference Guides <span class="red white-t badge">1 NEW</span></a></li>
+			<li class="half"><a href="https://www.brutalistwebdesign.com" target="_blank"><i class="bi bi-reference lemon black-t"></i> Reference Guides <!--<span class="red white-t badge">1 NEW</span>--></a></li>
 		</ul>
 		<ul class="flex flow-text" style="width: 100%; border-top: 2px solid #fff; padding-top: 8px;">
 			<li class="half"><a href="#bblast" data-modal-open><i class="bi bi-amp"></i> Brutal Blast</a></li>
