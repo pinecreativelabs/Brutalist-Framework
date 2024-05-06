@@ -174,7 +174,7 @@ require 'bos/build/constructor.php';
 		</div>
 		<div class="block-wrap">
 			<!-- BOS PORTAL -->
-			<div class="block bw50"><div class="padded">
+			<div class="block bw50 xs-100 sm-100 md-100"><div class="padded">
 				
 				<div class="sand sliced-corner charcoal-t sand-t-s monolisk sandtitle"><h4 class="flow-text">BOS Portal</h4></div>
 				<div class="sand-b b-s-k dune" style="margin-top: -2px; border-radius: 0 1rem 2rem 3rem;">
@@ -223,7 +223,7 @@ require 'bos/build/constructor.php';
 				
 			</div></div>
 			<!-- What's New Box -->
-			<div class="block bw50"><div class="padded">
+			<div class="block bw50 xs-100 sm-100 md-100"><div class="padded">
 				<div class="sand sliced-corner charcoal-t sandtitle"><h4 class="flow-text monolisk">What's New</h4></div>
 				<div class="sand-b b-s-k padded dotgrid-throb" style="margin-top: -2px; border-radius: 0 1rem 2rem 3rem;">
 					<div class="tabs">
@@ -271,7 +271,7 @@ require 'bos/build/constructor.php';
 			</div></div>
 			
 			<!-- Blueprint Grid Box -->
-			<div class="block bw50"><div class="padded">
+			<div class="block bw50 xs-100 sm-100 md-100"><div class="padded">
 				<div class="sliced-corner blueberry hue-h" style="padding: 6px;">
 					<a href="https://www.blueprintgrid.com" target="_blank"><div class="blueprint sliced-corner padded">
 						<h4 class="fluid-text monolisk"><i class="bi bi-grid"></i> Blueprint Grid</h4>
@@ -280,7 +280,7 @@ require 'bos/build/constructor.php';
 				</div>
 			</div></div>
 			<!-- Reference Guides Box -->
-			<div class="block bw50"><div class="padded">
+			<div class="block bw50 xs-100 sm-100 md-100"><div class="padded">
 				<div style="padding: 6px;" class="hue-h sliced-corner red">
 					<a href="https://www.brutalistwebdesign.com/" target="_blank"><div class="emptiness padded sliced-corner">
 						<h4 class="fluid-text monolisk red-t white-t-s"><i class="bi bi-reference"></i> Reference Guides</h4>
@@ -290,7 +290,7 @@ require 'bos/build/constructor.php';
 			</div></div>
 			
 			<!-- About Box -->
-			<div class="block bw50"><div class="padded">
+			<div class="block bw50 xs-100 sm-100 md-100"><div class="padded">
 				<div class="sand sliced-corner charcoal-t sandtitle"><h4 class="flow-text monolisk">Background</h4></div>
 				<div class="sand-b b-s-k padded dotgrid-throb flow-text" style="margin-top: -2px; border-radius: 0 1rem 2rem 3rem;">
 					<div class="lcd-trip jagged" style="max-width: 80%; margin: 2rem auto 3rem auto;"><div class="padded">
@@ -301,7 +301,7 @@ require 'bos/build/constructor.php';
 			</div></div>
 			
 			<!-- Brutal Blast -->
-			<div class="block bw50"><div class="padded">
+			<div class="block bw50 xs-100 sm-100 md-100"><div class="padded">
 				<div class="sand sliced-corner charcoal-t sandtitle"><h4 class="flow-text monolisk"><i class="bi bi-amp charcoal-t-s"></i> Brutal Blast</h4></div>
 				<div class="sand-b b-s-k padded terminal flow-text" style="margin-top: -2px; border-radius: 0 1rem 2rem 3rem;">
 					<?php include 'app/inc/content/pages/index/mailchimp-form.php';?>
@@ -319,7 +319,9 @@ require 'bos/build/constructor.php';
 	</div>
 	
 	<!-- CUBESEA -->
+	<div class="hide-under-1280">
 	<?php include 'app/inc/content/pages/index/cubesea.php';?>
+	</div>
 	
 	<!-- CORE Components -->
 	<div class="black sepia" style="border-top: 3px solid #ff0000; border-bottom: 3px solid #ff0000;">
