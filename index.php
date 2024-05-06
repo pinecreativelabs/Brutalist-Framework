@@ -313,12 +313,10 @@ require 'bos/build/constructor.php';
 	</div>
 	<div class="vh10"></div>
 	
-
-	<div class="black sepia" style="border-top: 3px solid #ff0000; border-bottom: 3px solid #ff0000;">
+	<!-- CUBESEA -->
+	<div class="black sepia hide-under-1280" style="border-top: 3px solid #ff0000; border-bottom: 3px solid #ff0000;">
 		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
 	</div>
-	
-	<!-- CUBESEA -->
 	<div class="hide-under-1280">
 	<?php include 'app/inc/content/pages/index/cubesea.php';?>
 	</div>
@@ -364,7 +362,7 @@ require 'bos/build/constructor.php';
 		</div></div></div></div>
 	</div><div class="vh10"></div>
 
-<div class="black" style="border-top: 3px solid #ff0000; border-bottom: 3px solid #ff0000;">
+<div class="black sepia" style="border-top: 3px solid #ff0000; border-bottom: 3px solid #ff0000;">
 	<div class="clear-block jagged" id="news"><p class="checkerboard padding"></p></div>
 </div>
 <?php include 'app/inc/content/footer.php';?>
