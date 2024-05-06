@@ -127,7 +127,6 @@ echo $draggable_js;
 echo $cdp_js;
 echo $pagination_js;
 echo $b_loader_js;
-echo $megamenu_js;
 echo $video_player_js;
 echo $gif_player_js;
 echo $presenter_js;
