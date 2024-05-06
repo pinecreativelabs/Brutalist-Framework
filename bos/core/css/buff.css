@@ -110,7 +110,7 @@
 
 
 /* FANCY FILTERS */
-.filter {display: inline-block; width: 100%; line-height: 0; position:relative !important;}
+.filter {display: inline-block; width: auto; line-height: 0; position:relative !important;}
 .filter::after {position: absolute !important; content: ''; width: 100%; height: 100%; top:0; left:0; padding: 0; margin: 0;}
 .amazon,.arctic,.baby-blue,.blue-rock,.blue-lagoon,.cali-sunset,.canary,.coal-paper,.cobalt-print,
 .code-red,.desert,.fever-dream,.grey-rock,.hot-summer,.ibiza,.ocean-wave,
