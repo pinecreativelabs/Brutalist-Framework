@@ -23,7 +23,6 @@ Load Defaults (REQUIRED) */
 /* BUIX */
 @import url('buix.css');
 @import url('molds/multimedia.css');
-@import url('molds/navigation.css');
 @import url('molds/presenter.css');
 
 /* Give Some FUX */
