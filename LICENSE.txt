@@ -1,15 +1,16 @@
 BITCHY License
-// The Brutal Intent to Create Homage to Yourself License
-//
-// Brutalist Framework
-// Author: Brad Fogelstrom
-// Copyright Year: 2024
-// Software Version: 3.0.3
+Brutal Intent Toward Creating Homage to Yourself
 
-Permission is granted, free of charge, to any person or organization obtaining a copy 
-of this software and all associated digital files, including all images and other 
+Brutalist Framework
+Author: Brad Fogelstrom
+Copyright Year: 2024
+Software Version: 3.0.3
+
+Permission is granted, free of charge, to any person, group, or organization obtaining
+a copy of this software and all associated digital files, including all images and other 
 forms of media associated with Brutalist Framework, to revise, edit, manipulate, 
-brutalize, and otherwise redistribute in any method or medium. Create homage to yourself!
+brutalize, and otherwise intentionally redistribute in any method or medium.
+Create homage to yourself!
 
 All included source code is released under the MIT license, as stated as follows:
 
