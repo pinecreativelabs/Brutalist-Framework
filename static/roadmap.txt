@@ -1,0 +1,5 @@
+Brutalist Framework: Static Build Version
+
+This is the directory where the static HTML-only version of BF will live, as of version 3.1. The standalone repo for Brutalist Framework Static is available at: 
+
+https://github.com/pinecreativelabs/Brutalist-Framework-Static
