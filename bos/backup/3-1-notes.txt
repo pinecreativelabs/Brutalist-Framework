@@ -1,3 +1,0 @@
-bos/backup DIRECTORY
-
-Coming in 3.1, this directory will contain folders and files that have been backed up via BOS.

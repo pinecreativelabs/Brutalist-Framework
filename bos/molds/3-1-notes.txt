@@ -1,3 +1,0 @@
-bos/molds/ DIRECTORY
-
-Coming in 3.1, this directory will contain all BOS modules (MOLDS). 
