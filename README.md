@@ -1,15 +1,9 @@
-# Brutalist Framework 3.0.3
+# Brutalist Framework 2.5.3
 A framework for the brutalist web design trend.
 
 ![BF Cover](https://www.brutalistframework.com/app/files/images/bf-social-tile.jpg)
 ## About
-_Brutalist Framework_ is a free and open source collection of PHP & HTML templates, CSS libraries, and javascript resources specifically for the brutalist web design style.
-
-Features:
-* Flat-file (no database needed)
-* Lightweight & portable
-* No third-party dependencies
-* Open source under MIT license
+_Brutalist Framework_ is a free and open source collection of HTML templates, CSS libraries, and javascript resources specifically for the brutalist web design style.
 
 Ideal for:
 * Beginner & novice web designers and developers
@@ -19,7 +13,6 @@ Ideal for:
 Technologies Used: 
 * HTML5 / CSS3
 * Vanilla javascript & jquery
-* PHP
 * CSV, XML, and JSON
 
 ***
