@@ -1,0 +1,6 @@
+/* ChopText */
+var truncate=function(t,e,n){if(t&&e){var r=t.textContent.trim();r=(r=r.split(" ").slice(0,e)).join(" ")+(n||""),t.textContent=r}},elem=document.querySelector(".chop-8");truncate(elem,8,"...");
+var truncate=function(t,e,n){if(t&&e){var r=t.textContent.trim();r=(r=r.split(" ").slice(0,e)).join(" ")+(n||""),t.textContent=r}},elem=document.querySelector(".chop-16");truncate(elem,16,"...");
+var truncate=function(t,e,n){if(t&&e){var r=t.textContent.trim();r=(r=r.split(" ").slice(0,e)).join(" ")+(n||""),t.textContent=r}},elem=document.querySelector(".chop-32");truncate(elem,32,"...");
+var truncate=function(t,e,n){if(t&&e){var r=t.textContent.trim();r=(r=r.split(" ").slice(0,e)).join(" ")+(n||""),t.textContent=r}},elem=document.querySelector(".chop-64");truncate(elem,64,"...");
+var truncate=function(t,e,n){if(t&&e){var r=t.textContent.trim();r=(r=r.split(" ").slice(0,e)).join(" ")+(n||""),t.textContent=r}},elem=document.querySelector(".chop-128, .chop-256, .chop-512");truncate(elem,128,"...");

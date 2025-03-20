@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>PolyGrids Demo</title>
+	<meta name="description" content="MOLDS shapes demo." />
+
+	<!-- Favicons -->
+	<link rel="icon" href="core/files/favicon-16.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="core/files/favicon-96.png" type="image/png" />
+	<link rel="apple-touch-icon" href="core/files/favicon-180.png" type="image/png" />
+	
+	<!-- CORE CSS  -->
+	<link href="core/css/construct.css" type="text/css" rel="stylesheet" media="all"/>
+	<style>
+		.shape{color: #fff; font-size: 1rem;}
+		.shape:nth-child(odd){background-color: #a47764;}
+		.shape:nth-child(even){background-color: #5c4451;}
+		.polygrid.fifths>.shape, .polygrid.sixths>.shape{font-size: 0.8rem; font-weight: 700;}
+	</style>
+</head>
+<body>
+
+<!-- PAGE -->
+<header class="padded flex middle" id="uptop" style="min-height: 25vh; margin-bottom: 0;">
+	<h1 class="fluid-text courier center">&#9650;<br /><strong>PolyGrids</strong></h1>
+</header>
+<div class="wrap-1200 lucida">
+	<h3 class="flow-text"><strong>Getting Started</strong></h3>
+	<div class="flex"><div class="half padded">
+		<p><strong>MARKUP.</strong><br />PolyGrids are Flexbox items arranged in a row. Use the following markup:</p>
+		<p class="padded terminal">
+			&lt;div class="polygrid <em>SHAPE SIZE</em>"&gt;<br />&nbsp;&nbsp;&lt;div class="shape"&gt;<br />&nbsp;&nbsp;..content..<br />
+			&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;...<br />&lt;/div&gt;
+		</p>
+		<p>Where <em>SHAPE</em> and <em>SIZE</em> are a shape and size class.</p>
+	</div><div class="half padded">
+		<p><strong>REQUIRED SCRIPT.</strong><br />The following javascript is required and needs to be placed before the closing <em>body</em> tag:</p>
+		<p class="padded warning"><strong>core/jab/poly-grid.js</strong></p>
+		<p>The javascript automatically inserts the necessary shape elements that will be floated left and right within each shape grid item.</p>
+	</div></div>
+	<hr />
+	<h3 class="flow-text"><strong>Constructing Grids</strong></h3>
+	<div class="flex"><div class="half padded">
+		<p><strong>SIZES.</strong><br />Grid shape items have pre-defined widths and heights that are proportionate to the <strong>height</strong> of the viewport. For example, if we want shape items to occupy 25% of the height of the screen, we would apply the class <em>fourths</em>. Use any of the following size classes:</p>
+		<p class="padded info"><strong>.sixths</strong> - 16.5% (1/6) height<br />
+		<strong>.fifths</strong> - 20% (1/5) height<br /><strong>.fourths</strong> - 25% (1/4) height<br />
+		<strong>.thirds</strong> - 33% (1/3) height<br /><strong>.halves</strong> - 50% (1/2) height<br />
+	</div><div class="half padded">
+		<p><strong>SHAPES</strong><br />Use any of the following shape classes:</p>
+		<p class="padded info"><strong>.circle<br />.triangle<br />.rhombus<br />.hexagon<br />.octagon<br />.plus<br />.hourglass<br />.chevron</strong></p>
+	</div></div>
+	<hr />
+	<h3 class="flow-text"><strong>Additional Options</strong></h3>
+	<div class="flex"><div class="half padded">
+		<p><strong>GAPS.</strong><br />Gap spacing can be added between items for several shape grids. Simply add the class <em><strong>gaps</strong></em> to the polygrid wrapper. In the example below, we have applly gaps to a sixth triangle polygrid:<br /><br /><strong>.gaps</strong>.polygrid triangle.sixths</p>
+		<div class="polygrid packed triangle sixths gaps">
+			<div class="shape">1</div>
+			<div class="shape">2</div>
+			<div class="shape">3</div>
+			<div class="shape">4</div>
+		</div>
+	</div><div class="padded half">
+		<p><strong>REVERSE.</strong><br />We can reverse the flow of grid items from last to first by applying the class <em><strong>reverse</strong></em>. In the example below, we have a reversed packed triangle grid:<br /><br /><strong>.reverse</strong>.polygrid.triangle.packed.sixths.gaps</p>
+		<div class="polygrid reverse packed triangle sixths gaps">
+			<div class="shape">1</div>
+			<div class="shape">2</div>
+			<div class="shape">3</div>
+			<div class="shape">4</div>
+		</div>
+	</div></div>
+</div>
+
+<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+
+<div class="container">
+	<h3 class="flow-text"><strong>Circle Fourths PolyGrid w/ Gaps</strong></h3>
+	<p>In the example below, we wrap a circle fourths polygrid (with gap spacing) within a container.<br /><br /></p>
+	<!-- Circle Fourths PolyGrid -->
+	<div class="polygrid fourths circle gaps">
+		<div class="shape">
+			<p>Let your hopes, not your hurts, shape your future.</p>
+		</div>
+		<div class="shape">
+			<p>Strategy is about shaping the future.</p>
+		</div>
+		<div class="shape">
+			<p>We shape our buildings; thereafter they shape us.</p>
+		</div>
+		<div class="shape">
+			<p>If you change the way you look at things, the things you look at change.</p>
+		</div>
+		<div class="shape">
+			<p>Every day do something that will inch you closer to a better tomorrow.</p>
+		</div>
+		<div class="shape">
+			<p>In the long run, we shape our lives, and we shape ourselves</p>
+		</div>
+		<div class="shape">
+			<p>It takes a big heart to shape little minds.</p>
+		</div>
+		<div class="shape">
+			<p>The name we give to something shapes our attitude toward it.</p>
+		</div>
+		<div class="shape">
+			<p>Everything has shape, if you look for it. There is no escape from form.</p>
+		</div>
+		<div class="shape">
+			<p>The only way to predict the future is to have power to shape the future.</p>
+		</div>
+		<div class="shape">
+			<p>Colors answer feeling in man; shapes answer thought; and motion answers will.</p>
+		</div>
+		<div class="shape">
+			<p>Human nature is like water. It takes the shape of its container.</p>
+		</div>
+		<div class="shape">
+			<p>Eagles come in all shapes and size, but you will recognize them chiefly by their attitudes.</p>
+		</div>
+	</div>
+	
+	<p class="spacer"></p>
+	<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+	<p class="spacer"></p>
+	
+	<h3 class="flow-text"><strong>PACKED Triangle Thirds PolyGrid w/ Gaps</strong></h3>
+	<p>In the example below, we wrap a triangle thirds polygrid (with gap spacing) within a container.<br /><br /></p>
+	<!-- Circle Fourths PolyGrid -->
+	<div class="polygrid thirds triangle packed gaps">
+		<div class="shape">
+			<p>Let your hopes, not your hurts, shape your future.</p>
+		</div>
+		<div class="shape">
+			<p>Strategy is about shaping the future.</p>
+		</div>
+		<div class="shape">
+			<p>We shape our buildings; thereafter they shape us.</p>
+		</div>
+		<div class="shape">
+			<p>If you change the way you look at things, the things you look at change.</p>
+		</div>
+		<div class="shape">
+			<p>Every day do something that will inch you closer to a better tomorrow.</p>
+		</div>
+		<div class="shape">
+			<p>In the long run, we shape our lives, and we shape ourselves</p>
+		</div>
+		<div class="shape">
+			<p>It takes a big heart to shape little minds.</p>
+		</div>
+		<div class="shape">
+			<p>The name we give to something shapes our attitude toward it.</p>
+		</div>
+		<div class="shape">
+			<p>Everything has shape, if you look for it. There is no escape from form.</p>
+		</div>
+		<div class="shape">
+			<p>The only way to predict the future is to have power to shape the future.</p>
+		</div>
+		<div class="shape">
+			<p>Colors answer feeling in man; shapes answer thought; and motion answers will.</p>
+		</div>
+		<div class="shape">
+			<p>Human nature is like water. It takes the shape of its container.</p>
+		</div>
+		<div class="shape">
+			<p>Eagles come in all shapes and size, but you will recognize them chiefly by their attitudes.</p>
+		</div>
+	</div>
+	
+	<p class="spacer"></p>
+	<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+	<p class="spacer"></p>
+	
+	<h3 class="flow-text"><strong>PACKED &amp; REVERSED Rhombus Fifths PolyGrid</strong></h3>
+	<p>In the example below, we wrap a reversed rhombus thirds polygrid within a container.<br /><br /></p>
+	
+	<!-- Rhombus Fifths PolyGrid -->
+	<div class="polygrid fifths rhombus packed reverse">
+		<div class="shape">
+			<p>Let your hopes, not your hurts, shape your future.</p>
+		</div>
+		<div class="shape">
+			<p>Strategy is about shaping the future.</p>
+		</div>
+		<div class="shape">
+			<p>We shape our buildings; thereafter they shape us.</p>
+		</div>
+		<div class="shape">
+			<p>If you change the way you look at things, the things you look at change.</p>
+		</div>
+		<div class="shape">
+			<p>Every day do something that will inch you closer to a better tomorrow.</p>
+		</div>
+		<div class="shape">
+			<p>In the long run, we shape our lives, and we shape ourselves</p>
+		</div>
+		<div class="shape">
+			<p>It takes a big heart to shape little minds.</p>
+		</div>
+		<div class="shape">
+			<p>The name we give to something shapes our attitude toward it.</p>
+		</div>
+		<div class="shape">
+			<p>Everything has shape, if you look for it. There is no escape from form.</p>
+		</div>
+		<div class="shape">
+			<p>The only way to predict the future is to have power to shape the future.</p>
+		</div>
+		<div class="shape">
+			<p>Colors answer feeling in man; shapes answer thought; and motion answers will.</p>
+		</div>
+		<div class="shape">
+			<p>Human nature is like water. It takes the shape of its container.</p>
+		</div>
+		<div class="shape">
+			<p>Eagles come in all shapes and size, but you will recognize them chiefly by their attitudes.</p>
+		</div>
+	</div>
+
+	<p class="spacer"></p>
+	<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+	<p class="spacer"></p>
+	
+	<h3 class="flow-text"><strong>PACKED Hexagon Thirds PolyGrid</strong></h3>
+	<p>In the example below, we have a hexagon thirds polygrid within a container.<br /><br /></p>
+
+	<!-- Hexagon Thirds PolyGrid -->
+	<div class="polygrid thirds hexagon packed">
+		<div class="shape">
+			<p>Let your hopes, not your hurts, shape your future.</p>
+		</div>
+		<div class="shape">
+			<p>Strategy is about shaping the future.</p>
+		</div>
+		<div class="shape">
+			<p>We shape our buildings; thereafter they shape us.</p>
+		</div>
+		<div class="shape">
+			<p>If you change the way you look at things, the things you look at change.</p>
+		</div>
+		<div class="shape">
+			<p>Every day do something that will inch you closer to a better tomorrow.</p>
+		</div>
+		<div class="shape">
+			<p>In the long run, we shape our lives, and we shape ourselves</p>
+		</div>
+		<div class="shape">
+			<p>It takes a big heart to shape little minds.</p>
+		</div>
+		<div class="shape">
+			<p>The name we give to something shapes our attitude toward it.</p>
+		</div>
+		<div class="shape">
+			<p>Everything has shape, if you look for it. There is no escape from form.</p>
+		</div>
+		<div class="shape">
+			<p>The only way to predict the future is to have power to shape the future.</p>
+		</div>
+		<div class="shape">
+			<p>Colors answer feeling in man; shapes answer thought; and motion answers will.</p>
+		</div>
+		<div class="shape">
+			<p>Human nature is like water. It takes the shape of its container.</p>
+		</div>
+		<div class="shape">
+			<p>Eagles come in all shapes and size, but you will recognize them chiefly by their attitudes.</p>
+		</div>
+	</div>
+	
+	<p class="spacer"></p>
+	<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+	<p class="spacer"></p>
+	
+	<h3 class="flow-text"><strong>PACKED Hourglass Thirds PolyGrid</strong></h3>
+	<p>In the example below, we have a hourglass thirds polygrid within a container.<br /><br /></p>
+	
+	<!-- Hourglass Thirds PolyGrid -->
+	<div class="polygrid fourths hourglass packed">
+		<div class="shape">
+			<p>Let your hopes, not your hurts, shape your future.</p>
+		</div>
+		<div class="shape">
+			<p>Strategy is about shaping the future.</p>
+		</div>
+		<div class="shape">
+			<p>We shape our buildings; thereafter they shape us.</p>
+		</div>
+		<div class="shape">
+			<p>If you change the way you look at things, the things you look at change.</p>
+		</div>
+		<div class="shape">
+			<p>Every day do something that will inch you closer to a better tomorrow.</p>
+		</div>
+		<div class="shape">
+			<p>In the long run, we shape our lives, and we shape ourselves</p>
+		</div>
+		<div class="shape">
+			<p>It takes a big heart to shape little minds.</p>
+		</div>
+		<div class="shape">
+			<p>The name we give to something shapes our attitude toward it.</p>
+		</div>
+		<div class="shape">
+			<p>Everything has shape, if you look for it. There is no escape from form.</p>
+		</div>
+		<div class="shape">
+			<p>The only way to predict the future is to have power to shape the future.</p>
+		</div>
+		<div class="shape">
+			<p>Colors answer feeling in man; shapes answer thought; and motion answers will.</p>
+		</div>
+		<div class="shape">
+			<p>Human nature is like water. It takes the shape of its container.</p>
+		</div>
+		<div class="shape">
+			<p>Eagles come in all shapes and size, but you will recognize them chiefly by their attitudes.</p>
+		</div>
+	</div>
+	
+	<p class="spacer"></p>
+	<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+	<p class="spacer"></p>
+	
+	<h3 class="flow-text"><strong>PACKED Chevron Fifths PolyGrid w/ Gaps</strong></h3>
+	<!-- Chevron Fifths PolyGrid -->
+	<div class="polygrid fifths chevron packed gaps">
+		<div class="shape">
+			<p>Let your hopes, not your hurts, shape your future.</p>
+		</div>
+		<div class="shape">
+			<p>Strategy is about shaping the future.</p>
+		</div>
+		<div class="shape">
+			<p>We shape our buildings; thereafter they shape us.</p>
+		</div>
+		<div class="shape">
+			<p>If you change the way you look at things, the things you look at change.</p>
+		</div>
+		<div class="shape">
+			<p>Every day do something that will inch you closer to a better tomorrow.</p>
+		</div>
+		<div class="shape">
+			<p>In the long run, we shape our lives, and we shape ourselves</p>
+		</div>
+		<div class="shape">
+			<p>It takes a big heart to shape little minds.</p>
+		</div>
+		<div class="shape">
+			<p>The name we give to something shapes our attitude toward it.</p>
+		</div>
+		<div class="shape">
+			<p>Everything has shape, if you look for it. There is no escape from form.</p>
+		</div>
+		<div class="shape">
+			<p>The only way to predict the future is to have power to shape the future.</p>
+		</div>
+		<div class="shape">
+			<p>Colors answer feeling in man; shapes answer thought; and motion answers will.</p>
+		</div>
+		<div class="shape">
+			<p>Human nature is like water. It takes the shape of its container.</p>
+		</div>
+		<div class="shape">
+			<p>Eagles come in all shapes and size, but you will recognize them chiefly by their attitudes.</p>
+		</div>
+	</div>
+	
+	<p class="spacer"></p>
+	<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+	<p class="spacer"></p>
+	
+	<h3 class="flow-text"><strong>Octagon Fourths PolyGrid w/ Gaps</strong></h3>
+	<!-- Octagon Fourths PolyGrid -->
+	<div class="polygrid fourths octagon gaps">
+		<div class="shape">
+			<p>Let your hopes, not your hurts, shape your future.</p>
+		</div>
+		<div class="shape">
+			<p>Strategy is about shaping the future.</p>
+		</div>
+		<div class="shape">
+			<p>We shape our buildings; thereafter they shape us.</p>
+		</div>
+		<div class="shape">
+			<p>If you change the way you look at things, the things you look at change.</p>
+		</div>
+		<div class="shape">
+			<p>Every day do something that will inch you closer to a better tomorrow.</p>
+		</div>
+		<div class="shape">
+			<p>In the long run, we shape our lives, and we shape ourselves</p>
+		</div>
+		<div class="shape">
+			<p>It takes a big heart to shape little minds.</p>
+		</div>
+		<div class="shape">
+			<p>The name we give to something shapes our attitude toward it.</p>
+		</div>
+		<div class="shape">
+			<p>Everything has shape, if you look for it. There is no escape from form.</p>
+		</div>
+		<div class="shape">
+			<p>The only way to predict the future is to have power to shape the future.</p>
+		</div>
+		<div class="shape">
+			<p>Colors answer feeling in man; shapes answer thought; and motion answers will.</p>
+		</div>
+		<div class="shape">
+			<p>Human nature is like water. It takes the shape of its container.</p>
+		</div>
+		<div class="shape">
+			<p>Eagles come in all shapes and size, but you will recognize them chiefly by their attitudes.</p>
+		</div>
+	</div>
+	
+	<p class="spacer"></p>
+	<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+	<p class="spacer"></p>
+	
+	<h3 class="flow-text"><strong>Plus Fourths PolyGrid w/ Gaps</strong></h3>
+	<!-- Plus Thirds PolyGrid -->
+	<div class="polygrid fourths plus gaps">
+		<div class="shape">
+			<p>Let your hopes, not your hurts, shape your future.</p>
+		</div>
+		<div class="shape">
+			<p>Strategy is about shaping the future.</p>
+		</div>
+		<div class="shape">
+			<p>We shape our buildings; thereafter they shape us.</p>
+		</div>
+		<div class="shape">
+			<p>If you change the way you look at things, the things you look at change.</p>
+		</div>
+		<div class="shape">
+			<p>Every day do something that will inch you closer to a better tomorrow.</p>
+		</div>
+		<div class="shape">
+			<p>In the long run, we shape our lives, and we shape ourselves</p>
+		</div>
+		<div class="shape">
+			<p>It takes a big heart to shape little minds.</p>
+		</div>
+		<div class="shape">
+			<p>The name we give to something shapes our attitude toward it.</p>
+		</div>
+		<div class="shape">
+			<p>Everything has shape, if you look for it. There is no escape from form.</p>
+		</div>
+		<div class="shape">
+			<p>The only way to predict the future is to have power to shape the future.</p>
+		</div>
+		<div class="shape">
+			<p>Colors answer feeling in man; shapes answer thought; and motion answers will.</p>
+		</div>
+		<div class="shape">
+			<p>Human nature is like water. It takes the shape of its container.</p>
+		</div>
+		<div class="shape">
+			<p>Eagles come in all shapes and size, but you will recognize them chiefly by their attitudes.</p>
+		</div>
+	</div>
+</div>
+
+<footer class="padded center courier disabled">
+	<p><a href="https://www.brutalistframework.com" target="_blank">Brutalist Framework</a> &copy; 2025</p>
+</footer>
+<script src="core/jab/poly-grid.js"></script>
+</body>
+</html>

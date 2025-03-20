@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>MOLDS: Shapes</title>
+	<meta name="description" content="MOLDS shapes demo." />
+
+	<!-- Favicons -->
+	<link rel="icon" href="core/files/favicon-16.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="core/files/favicon-96.png" type="image/png" />
+	<link rel="apple-touch-icon" href="core/files/favicon-180.png" type="image/png" />
+	
+	<!-- CORE CSS  -->
+	<link href="core/css/construct.css" type="text/css" rel="stylesheet" media="all"/>
+	<link href="core/css/polygrids.css" type="text/css" rel="stylesheet" media="all"/>
+	<style>
+		.shape.large, .mold-shape.large {width: 360px; height: 360px;}
+		.shape.medium, .mold-shape.medium {width: 256px; height: 256px;}
+		.shape.small, .mold-shape.small {width: 128px; height: 128px;}
+		@media (max-width: 960px) {
+			.shape.large, .mold-shape.large {width: 256px; height: 256px;}
+			.shape.medium, .mold-shape.medium {width: 128px; height: 128px;}
+			.shape.small, .mold-shape.small {width: 64px; height: 64px;}
+		}
+	</style>
+</head>
+<body>
+
+<!-- PAGE -->
+<header class="padded flex middle" id="uptop" style="min-height: 25vh; margin-bottom: 0;">
+	<h1 class="fluid-text courier center">&#9650;<br /><strong>Shapes</strong></h1>
+</header>
+<div class="wrap-1200 padded">
+	<p class="rebecca-t rice-t-s bitstream">Any element can be a shape. These are clipped elements that can also have content wrapped around them when floated left or right. Shape elements must have the class <strong><em>.shape</em></strong> applied, as well as their shape class, like so:<br /><span class="bold flow-text">.shape.<em>shape-class</em></span></p>
+</div>
+
+<!-- jagged checkerboard divider -->
+<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+
+<!-- flexbox layout -->
+<div class="wrap-1200">
+	<h3 class="courier fluid-text"><strong>Quadrants</strong></h3>
+	<div class="flex flow-text arial">
+		<div class="padded b-s-t red-b">
+			<p><strong>.quadrant.top-left</strong></p>
+			<div class="shape quadrant top-left medium info"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.quadrant.top-right</strong></p>
+			<div class="shape quadrant top-right medium info"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.quadrant.bottom-left</strong></p>
+			<div class="shape quadrant bottom-left medium info"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.quadrant.bottom-right</strong></p>
+			<div class="shape quadrant bottom-right medium info"></div>
+		</div>
+	</div>
+	<p class="spacer"></p>
+	<h3 class="courier fluid-text"><strong>Semicircles</strong></h3>
+	<div class="flex flow-text arial">
+		<div class="padded b-s-t red-b">
+			<p><strong>.semicircle.north</strong></p>
+			<div class="shape semicircle north medium ready"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.semicircle.south</strong></p>
+			<div class="shape semicircle south medium ready"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.semicircle.east</strong></p>
+			<div class="shape semicircle east medium ready"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.semicircle.west</strong></p>
+			<div class="shape semicircle west medium ready"></div>
+		</div>
+	</div>
+	
+	<!-- TRIANGLES -->
+	<p class="spacer"></p>
+	<h3 class="courier fluid-text"><strong>Triangles</strong></h3>
+	<div class="flex flow-text arial">
+		<div class="padded b-s-t red-b">
+			<p><strong>.triangle</strong></p>
+			<div class="shape triangle medium taffy"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.triangle-flip</strong></p>
+			<div class="shape triangle-flip medium taffy"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.triangle.point-right</strong></p>
+			<div class="shape triangle point-right medium taffy"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.triangle.point-left</strong></p>
+			<div class="shape triangle point-left medium taffy"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.triangle.incline</strong></p>
+			<div class="shape triangle incline medium taffy"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.triangle.decline</strong></p>
+			<div class="shape triangle decline medium taffy"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.triangle.incline-flip</strong></p>
+			<div class="shape triangle incline-flip medium taffy"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.triangle.decline-flip</strong></p>
+			<div class="shape triangle decline-flip medium taffy"></div>
+		</div>
+	</div>
+	
+	<!-- RHOMBUS -->
+	<p class="spacer"></p>
+	<h3 class="courier fluid-text"><strong>Rhombus</strong></h3>
+	<div class="flex flow-text arial">
+		<div class="padded b-s-t red-b">
+			<p><strong>.rhombus.outside-l</strong></p>
+			<div class="shape rhombus outside-l medium rust"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.rhombus</strong></p>
+			<div class="shape rhombus medium rust"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.rhombus.outside-r</strong></p>
+			<div class="shape rhombus outside-r medium rust"></div>
+		</div>
+	</div>
+	
+	<!-- PENTAGON -->
+	<p class="spacer"></p>
+	<h3 class="courier fluid-text"><strong>Pentagon</strong></h3>
+	<div class="flex flow-text arial">
+		<div class="padded b-s-t red-b">
+			<p><strong>.pentagon.outside-l</strong></p>
+			<div class="shape pentagon outside-l medium pickle"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.pentagon</strong></p>
+			<div class="shape pentagon medium pickle"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.pentagon.outside-r</strong></p>
+			<div class="shape pentagon outside-r medium pickle"></div>
+		</div>
+	</div>
+	
+	<!-- HEXAGON -->
+	<p class="spacer"></p>
+	<h3 class="courier fluid-text"><strong>Hexagon</strong></h3>
+	<div class="flex flow-text arial">
+		<div class="padded b-s-t red-b">
+			<p><strong>.hexagon.outside-l</strong></p>
+			<div class="shape hexagon outside-l medium purple"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.hexagon</strong></p>
+			<div class="shape hexagon medium purple"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.hexagon.outside-r</strong></p>
+			<div class="shape hexagon outside-r medium purple"></div>
+		</div>
+	</div>
+	
+	<!-- HEPTAGON -->
+	<p class="spacer"></p>
+	<h3 class="courier fluid-text"><strong>Heptagon</strong></h3>
+	<div class="flex flow-text arial">
+		<div class="padded b-s-t red-b">
+			<p><strong>.heptagon.outside-l</strong></p>
+			<div class="shape heptagon outside-l medium honey"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.heptagon</strong></p>
+			<div class="shape heptagon medium honey"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.heptagon.outside-r</strong></p>
+			<div class="shape heptagon outside-r medium honey"></div>
+		</div>
+	</div>
+	
+	<!-- OCTAGON -->
+	<p class="spacer"></p>
+	<h3 class="courier fluid-text"><strong>Octaagon</strong></h3>
+	<div class="flex flow-text arial">
+		<div class="padded b-s-t red-b">
+			<p><strong>.octagon.outside-l</strong></p>
+			<div class="shape octagon outside-l medium red"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.octagon</strong></p>
+			<div class="shape octagon medium red"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.octagon.outside-r</strong></p>
+			<div class="shape octagon outside-r medium red"></div>
+		</div>
+	</div>
+	
+	<!-- NONAGON -->
+	<p class="spacer"></p>
+	<h3 class="courier fluid-text"><strong>Nonagon</strong></h3>
+	<div class="flex flow-text arial">
+		<div class="padded b-s-t red-b">
+			<p><strong>.nonagon.outside-l</strong></p>
+			<div class="shape nonagon outside-l medium tangerine"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.nonagon</strong></p>
+			<div class="shape nonagon medium tangerine"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.nonagon.outside-r</strong></p>
+			<div class="shape nonagon outside-r medium tangerine"></div>
+		</div>
+	</div>
+	
+	<!-- DIRECTIONAL -->
+	<p class="spacer"></p>
+	<h3 class="courier fluid-text"><strong>Directional</strong></h3>
+	<div class="flex flow-text arial">
+		<div class="padded b-s-t red-b">
+			<p><strong>.chevron-right</strong></p>
+			<div class="shape chevron-right medium sage"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.chevron-left</strong></p>
+			<div class="shape chevron-left medium sage"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.point-right</strong></p>
+			<div class="shape point-right medium papaya"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.point-left</strong></p>
+			<div class="shape point-left medium papaya"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.arrowhead-right</strong></p>
+			<div class="shape arrowhead-right medium eggplant"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.arrowhead-left</strong></p>
+			<div class="shape arrowhead-left medium eggplant"></div>
+		</div>
+	</div>
+	
+	<!-- OTHER / MISC -->
+	<p class="spacer"></p>
+	<h3 class="courier fluid-text"><strong>Other / Misc.</strong></h3>
+	<div class="flex flow-text arial">
+		<div class="padded b-s-t red-b">
+			<p><strong>.star</strong></p>
+			<div class="shape star medium midnight"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.bolt</strong></p>
+			<div class="shape bolt medium fire"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.parallelogram</strong></p>
+			<div class="shape parallelogram medium plum"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.home</strong></p>
+			<div class="shape home medium grass"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.frame</strong></p>
+			<div class="shape frame medium fuchsia"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.fat-frame</strong></p>
+			<div class="shape fat-frame medium fuchsia"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.message</strong></p>
+			<div class="shape message medium mauve"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.diamond</strong></p>
+			<div class="shape diamond medium sapphire"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.heart</strong></p>
+			<div class="shape heart medium pink"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.hourglass</strong></p>
+			<div class="shape hourglass medium pink"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.bowtie</strong></p>
+			<div class="shape bowtie medium pink"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.plus</strong></p>
+			<div class="shape plus medium raspberry"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.rabbet</strong></p>
+			<div class="shape rabbet medium raspberry"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.cross</strong></p>
+			<div class="shape cross medium raspberry"></div>
+		</div>
+	</div>
+	
+	<!-- NATURAL SHAPES -->
+	<p class="spacer"></p>
+	<h3 class="courier fluid-text"><strong>Natural Shapes</strong></h3>
+	<div class="flex flow-text arial">
+		<div class="padded b-s-t red-b">
+			<p><strong>.cliff-right</strong></p>
+			<div class="shape cliff-right medium sand"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.cliff-left</strong></p>
+			<div class="shape cliff-left medium sand"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.cave-right</strong></p>
+			<div class="shape cave-right medium fossil"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.cave-left</strong></p>
+			<div class="shape cave-left medium fossil"></div>
+		</div>
+		<div class="padded b-s-t red-b">
+			<p><strong>.flower</strong></p>
+			<div class="shape flower medium sapphire"></div>
+		</div>
+	</div>
+	<p class="spacer"></p>
+	
+	<!-- WRAPPING CONTENT -->
+	<h3 class="courier fluid-text"><strong>Wrapping Content</strong></h3>
+	<p class="arial">Content can be wrapped around any shape. To do this, the shape element must be floated either left or right.<br /><br /></p>
+	<div class="padded infinitile times b-s-k red-b" style="min-height: 600px;">
+		<div class="shape large semicircle east left padded plush" style="margin-right: 2em;">
+			<p class="lucida"><br /><br /><br /><strong>PLUSHY<br />Semicircle</strong></p>
+		</div>
+		<p class="flow-text"><strong>See how this text wraps around the floated shape elements.</strong></p>
+		<p style="margin-top: 1.5em;">Lorem ipsum no facer prompta vim, movet ubique qui ei. Per no regione aliquid, ea mei nulla scribentur liberavisse. Vim cu tale ludus possit, discere suavitate nam ad. No verterem reprimique vix, phaedrum hendrerit an quo. Qui feugait apeirian ut, ne virtute numquam mandamus mea. Eos et enim dicant deterruisset. At nec ceteros mentitum, ex solum putent offendit per.</p>
+		<p style="margin-top: 1.5em;">Mei autem disputando cu, usu porro democritum te. Vide propriae petentium mea eu, ea mea dicta nihil. Usu quas lucilius an, at mea malis debet civibus. Ullum nihil nostrum vix in, ad epicuri recteque temporibus mel, ceteros fastidii phaedrum qui an. Eu vis graeco tibique fierent, ei agam malis iracundia eum. Semper consectetuer te has, ad dolore virtute mea.</p>
+		<div class="shape triangle incline right medium navy"></div>
+		<p style="margin-top: 1.5em;">Ad wisi efficiantur his. Ea scripta gloriatur pri, et graecis docendi explicari nec. At his adhuc reque, qui at doming reformidans, porro complectitur per ex. Vis at maluisset reprimique.</p>
+		<p style="margin-top: 1.5em;">Errem suscipiantur cu eos, vidit accusam sea no. Id sea labore accumsan nominavi. No facer nobis pro, ex mei nostrud interesset. Prompta imperdiet ei eam, quo nobis persius eloquentiam ne, assum dissentias liberavisse nec eu. Vim epicuri singulis ut.</p>
+	</div>
+	<p class="spacer"></p>
+	
+	<!-- SHAPE BORDERS -->
+	<h3 class="courier fluid-text"><strong>Shape Borders / Outlines</strong></h3>
+	<div class="flex arial"><div class="half padded">
+		<p>Unfortunately, it's not possible to apply borders directly to shapes. This is because shapes are "clipped" elements, so only portions of a border may appear, as in the example below:</p>
+		<div class="shape orange hexagon b-s-k red-b small"></div>
+	</div><div class="half padded">
+		<p><strong><em>However...</em></strong> there is a workaround for this. To get a solid border / outline to surround a shape element, we'll need to nest it within another shape element that is slightly larger. For example, we would like a 200 x 200 px hexagon to have a red border that is 10px thick. Our outer hexagon will need to be 220 x 220. For perfect centering, we can apply a padding-top of 10px to the outer shape (or, we could use flexbox to middle-align it). The result should be:</p>
+		<div class="shape red hexagon" style="width: 220px; height: 220px; padding-top: 10px;">
+			<div class="shape orange hexagon" style="height: 200px; width: 200px; margin: 0 auto;"></div>
+		</div>
+	</div></div>
+	<p class="spacer"></p>
+	
+	<!-- SHAPE-MOLDS -->
+	<h3 class="courier fluid-text"><strong>Mold-Shapes</strong></h3>
+	<div class="flex arial"><div class="half padded">
+		<p><strong>The Shape-Inside Problem</strong><br />Shapes use the <em>shape-outline</em> and <em>clip-path</em> CSS properties to define the path of a shape. However, this only works for wrapping content on the <em>outside</em> of an element, "clipping" any content that is placed within a shape element. The <em>shape-inside</em> property does not readily exist, so we need to mimick it. In the example below, we see how the shape clips the text.</p>
+		<div class="shape pentagon medium blueprint center">
+			<h3><strong>Writhen</strong></h3>
+			<p style="font-size: 1.25rem;">Twisted or contorted out of normal shape or form; having spirally twisted ornamentation.</p>
+		</div>
+	</div><div class="padded half">
+		<p><strong>The Solution: <em>Mold-Shapes</em></strong><br />In order to make content wrap <em>within</em> a shape element, we need to define a <em>shape-outside</em> path and float them left and / or right within a shape element (most are 50% of the width of the shape container). Enter <strong><em>Mold-Shapes</em></strong>! We can "mold" content within a shape to wrap within it. The example below demonstrates this solution.</p>
+		<!-- PENTAGON MOLD-SHAPE -->
+		<div class="mold-shape pentagon medium blueprint center"><div class="shape">
+			<div class="shape-left"></div>
+			<div class="shape-right"></div>
+			<h3><strong>Writhen</strong></h3>
+			<p style="font-size: 1.25rem;">Twisted or contorted out of normal shape or form; having spirally twisted ornamentation.</p>
+		</div></div>
+		<!-- END MOLD-SHAPE -->
+	</div></div>
+	<h4 class="courier flow-text"><strong>Making Mold-Shapes</strong></h4>
+	<div class="flex arial"><div class="half padded">
+		<p>A <em>mold-shape</em> allows us to make content "fluid" within a shape without it being clipped. We'll need to float a left and right outside shape on either side of the content, wrapped within a shape container:</p>
+		<p class="padded terminal lucida smaller">
+			&lt;div class="mold-shape <em>SHAPE</em>"&gt;&lt;div class="shape"&gt;<br />
+			&nbsp;&lt;div class="shape-left"&gt;&lt;/div&gt;<br />&nbsp;&lt;div class="shape-right"&gt;&lt;/div&gt;<br />
+			&nbsp;...CONTENT...<br />&lt;/div&gt;&lt;/div&gt;
+		</p>
+		<p>Where <em>SHAPE</em> is the name of the class (i.e. <em>hexagon</em>).</p>
+	</div><div class="padded half">
+		<div class="padded warning rounded">
+			<h4 class="courier flow-text"><strong>Caveats &amp; Tips</strong></h4>
+			<ul class="square">
+				<li><strong>Specify width and height of shapes.</strong> All shapes need a specified height and width. To make shapes proportionate (fluid) in size relative to the window, try using a <em>vw</em> or <em>vh</em> value.<br /><br /></li>
+				<li><strong>Adjust font sizes as necessary.</strong> Even with <em>mold-shapes</em>, content can still get cut off. Adjusting font sizes may help.</li>
+			</ul>
+		</div>
+	</div></div>
+	<h4 class="courier flow-text"><strong>Supported Mold-Shapes</strong></h4>
+	<div class="flex arial">
+		<div class="padded b-s-t red-b">
+			<div class="mold-shape circle medium blueprint center"><div class="shape">
+				<div class="shape-left"></div>
+				<div class="shape-right"></div>
+				<h3 class="banana-t" style="margin:0;"><strong>.circle</strong></h3>
+				<p style="font-size: 1.25rem;"><strong>writhen</strong>: twisted or contorted out of normal shape or form; having spirally twisted ornamentation.</p>
+			</div></div>
+		</div><div class="padded b-s-t red-b">
+			<div class="mold-shape rhombus medium blueprint center"><div class="shape">
+				<div class="shape-left"></div>
+				<div class="shape-right"></div>
+				<h3 class="banana-t" style="margin:0;"><strong>.rhombus</strong></h3>
+				<p style="font-size: 1rem;"><strong>writhen</strong>: twisted or contorted out of normal shape or form; having spirally twisted ornamentation.</p>
+			</div></div>
+		</div><div class="padded b-s-t red-b">
+			<div class="mold-shape pentagon medium blueprint center"><div class="shape">
+				<div class="shape-left"></div>
+				<div class="shape-right"></div>
+				<h3 class="banana-t" style="margin:0;"><strong>.pentagon</strong></h3>
+				<p style="font-size: 1.15rem;"><strong>writhen</strong>: twisted or contorted out of normal shape or form; having spirally twisted ornamentation.</p>
+			</div></div>
+		</div><div class="padded b-s-t red-b">
+			<div class="mold-shape hexagon medium blueprint center"><div class="shape">
+				<div class="shape-left"></div>
+				<div class="shape-right"></div>
+				<h3 class="banana-t" style="margin:0;"><strong>.hexagon</strong></h3>
+				<p style="font-size: 1.25rem;"><strong>writhen</strong>: twisted or contorted out of normal shape or form; having spirally twisted ornamentation.</p>
+			</div></div>
+		</div><div class="padded b-s-t red-b">
+			<div class="mold-shape heptagon medium blueprint center"><div class="shape">
+				<div class="shape-left"></div>
+				<div class="shape-right"></div>
+				<h3 class="banana-t" style="margin:0;"><strong>.heptagon</strong></h3>
+				<p style="font-size: 1.25rem;"><strong>writhen</strong>: twisted or contorted out of normal shape or form; having spirally twisted ornamentation.</p>
+			</div></div>
+		</div><div class="padded b-s-t red-b">
+			<div class="mold-shape octagon medium blueprint center"><div class="shape">
+				<div class="shape-left"></div>
+				<div class="shape-right"></div>
+				<h3 class="banana-t" style="margin:0;"><strong>.octagon</strong></h3>
+				<p style="font-size: 1.25rem;"><strong>writhen</strong>: twisted or contorted out of normal shape or form; having spirally twisted ornamentation.</p>
+			</div></div>
+		</div><div class="padded b-s-t red-b">
+			<div class="mold-shape nonagon medium blueprint center"><div class="shape">
+				<div class="shape-left"></div>
+				<div class="shape-right"></div>
+				<h3 class="banana-t" style="margin:0;"><strong>.nonagon</strong></h3>
+				<p style="font-size: 1.25rem;"><strong>writhen</strong>: twisted or contorted out of normal shape or form; having spirally twisted ornamentation.</p>
+			</div></div>
+		</div><div class="padded b-s-t red-b">
+			<div class="mold-shape plus medium blueprint center"><div class="shape">
+				<div class="shape-left white"></div>
+				<div class="shape-right white" style="margin-right:-1px;"></div>
+				<h3 class="banana-t" style="margin: 0; padding: 10px 0 10px 0;"><strong>.plus</strong></h3>
+				<p style="font-size: 1rem;"><strong>writhen</strong>: twisted or contorted out of normal shape or form; having spirally twisted ornamentation.</p>
+			</div></div>
+		</div>
+	</div>
+	<p class="spacer"></p>
+	
+	<!-- CUSTOM EXAMPLES -->
+	<h3 class="courier fluid-text"><strong>CUSTOM SHAPE-INSIDE EXAMPLES</strong></h3>
+	<p class="arial">Let's look at some custom <em>shape-inside</em> examples. We'll float some shapes to the left and right of basic content within standard boxes.</p>
+	
+	<div class="flex"><div class="half campfire">
+		<div style="height: 300px;">
+			<div class="fire shape rhombus outside-l" style="width: 33%; height: 100%; float:left;"></div>
+			<div class="fire shape rhombus outside-r" style="width: 33%; height: 100%; float:right;"></div>
+			<p style="padding: 2rem; text-align:center;"><span class="flow-text"><strong>CAMPFIRE BOX 1</strong></span><br />
+			In this example, we have two fire rhombus outside-l and outside-r shapes floated on the left and right, respectively, and set to 33% of the width of the box. This paragraph is padded, giving some space between the text and floated shapes.</p>
+		</div><div style="height: 300px;">
+			<div class="fire shape heptagon outside-l" style="width: 33%; height: 100%; float:left;"></div>
+			<div class="fire shape triangle decline-flip" style="width: 33%; height: 100%; float:right;"></div>
+			<p style="padding: 2rem; text-align:center;"><span class="flow-text"><strong>CAMPFIRE BOX 2</strong></span><br />This box has two shapes at 33% width each. On the right is a heptagon outside-l shape, and on the right is a triangle decline-flip shape.</p>
+		</div>
+	</div><div class="half midnight" style="min-height: 600px;">
+		<div style="height: 50%;">
+			<div class="fire shape triangle point-right" style="width: 25%; height: 100%; float:left;"></div>
+			<div class="fire shape hexagon outside-r" style="width: 50%; height: 100%; float:right;"></div>
+			<p style="padding: 2rem;"><span class="flow-text"><strong>MIDNIGHT BOX 1</strong></span><br />
+			In this example, we have a fire point-right triangle floated left (set to 25% width), and a hexagon outside-r floated right (set to 50% width).</p>
+		</div><div style="height: 50%;">
+			<div class="fire shape cliff-left" style="width: 25%; height: 100%; float:left; margin-right: 2rem;"></div>
+			<div class="fire shape nonagon outside-r" style="width: 50%; height: 100%; float:right;"></div>
+			<p style="padding: 2rem;"><span class="flow-text"><strong>MIDNIGHT BOX 2</strong></span><br />This box has a cliff-left shape floated left with 25% width and 2rem right margin, and a nonagon outside-r shape floated right with 50% width.</p>
+		</div>
+	</div></div>
+	<p class="spacer"></p>
+	<h4 class="courier flow-text"><strong>Advanced Example: <em>Nesting Shapes</em></h4>
+	<div class="padded sky">
+		<div class="shape flower grape" style="width: 76vh; height: 76vh; margin: 0 auto; padding: 3vh;">
+			<div class="shape flower rebecca" style="width: 70vh; height: 70vh; display:flex;">
+				<div class="mold-shape circle grass" style="width: 42vh; height: 42vh; margin: auto auto; text-align:center;">
+					<div class="shape">
+						<div class="shape-left"></div>
+						<div class="shape-right"></div>
+						<p class="flow-text parchment-t times"><strong>FLOWER POWER</strong><br />I am a circle <em>mold-shape</em> centered within a nested flower shape.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="padded center courier disabled">
+	<p><a href="https://www.brutalistframework.com" target="_blank">Brutalist Framework</a> &copy; 2025</p>
+</footer>
+</body>
+</html>

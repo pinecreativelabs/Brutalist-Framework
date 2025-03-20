@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	
+	<title>Grids</title>
+	<meta name="description" content="Create dynamic and responsive layouts using multiple methods." />
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Grids" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content="Create dynamic and responsive layouts using multiple methods." /> 
+	<meta property="og:site_name" content="Brutalist Framework" />
+	
+	<!-- Icons -->
+	<link rel="icon" href="core/files/favicon-16.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="core/files/favicon-32.png" type="image/png" />
+	<link rel="apple-touch-icon" href="core/files/favicon-128.png" type="image/png" />
+	
+	<!-- CORE CSS  -->
+	<link href="core/css/construct.css" type="text/css" rel="stylesheet" media="all"/>
+	<!-- Theme CSS -->
+	<link href="app/theme/css/theme.css" type="text/css" rel="stylesheet" media="all" />
+	
+</head>
+<body>
+<!-- MAIN MENU -->
+<div class="blonk-tr shape quadrant bottom-left flex middle sand" style="z-index: 10002;">
+	<button class="reveal-overlay" id="reveal-nav" aria-controls="primary-menu" aria-expanded="false">
+	  <span class="topbar charcoal"></span><span class="middlebar charcoal"></span><span class="bottombar charcoal"></span>
+	</button>
+</div>
+<div class="overlay" id="overlay-nav">
+	<div class="wrap-960 monolisk" style="margin-top: 1.5rem;"><div class="checkerboard padded" style="border-radius: 1rem;"><div class="padded emptiness">
+		<ul class="flex flow-text">
+			<li class="third"><a href="index.html"><i class="bi bi-home"></i> HOME</a></li>
+			<li class="third"><a href="about.html"><i class="bi bi-info"></i> About BF</a></li>
+			<li class="third"><a href="https://www.brutalcms.com" target="_blank"><i class="bi bi-communist black red-t"></i> Brutal CMS</a></li>
+		</ul>
+		<ul class="flow-text flex" style="border-top: 2px solid #fff; padding-top: 8px;">
+			<li class="third"><a href="bfx.html"><i class="bi bi-sparkle"></i> BFX</a></li>
+			<li class="third"><a href="bicons.html"><i class="bi bi-flag"></i> bIcons</a></li>
+			<li class="third"><a href="buff.html"><i class="bi bi-fill"></i> BUFF</a></li>
+			<li class="third"><a href="buix.html"><i class="bi bi-navigate"></i> BUIX</a></li>
+			<li class="third"><a href="butch.html"><i class="bi bi-pick"></i> BUTCH</a></li>
+			<li class="third"><a href="flavors.html"><i class="bi bi-cone"></i> Flavors</a></li>
+			<li class="third"><a href="fux.html"><i class="bi bi-box-x"></i> FUX</a></li>
+			<li class="third current"><a href="grids.html"><i class="bi bi-quadrant"></i> Grids</a></li>
+			<li class="third"><a href="rebar.html"><i class="bi bi-converge-left"></i> ReBAR</a></li>
+		</ul>
+	</div><div class="padded emptiness" style="margin-top: 1.25rem;">
+		<ul class="flex flow-text">
+			<li class="third"><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank">Roadmap</a></li>
+			<li class="third"><a href="https://github.com/pinecreativelabs" target="_blank">Github</a></li>
+			<li class="third"><a href="https://www.instagram.com/brutalistfwk" target="_blank">Instagram</a></li>
+		</ul>
+		<ul class="flex flow-text" style="width: 100%; border-top: 2px solid #fff; padding-top: 8px;">
+			<li class="half"><a href="https://www.blueprintgrid.com" target="_blank"><i class="blueprint bi bi-grid"></i> Blueprint Grid</a></li>
+			<li class="half"><a href="https://www.brutalistwebdesign.com" target="_blank"><i class="bi bi-reference lemon black-t"></i> Reference Guides</a></li>
+		</ul>
+	</div></div></div>
+</div>
+<script>
+document.querySelector("#reveal-nav").addEventListener("click", function() {
+  this.classList.toggle("active");
+  document.querySelector("#overlay-nav").classList.toggle("open");
+})
+</script>
+<a href="#uptop" class="blonk-cr blood shape semicircle west white-t monolisk lighten-h"><i class="bi bi-up bi-3x"></i><br /><strong>top</strong></a>
+
+<!-- PAGE -->
+<header class="brickbuild padded flex middle" id="uptop" style="min-height: 25vh; margin-bottom: 0;">
+	<a href="index.html"><img class="large-thumb brdr-s-k red-b invert-h" src="app/files/images/bf3logo_bloodsand.png" alt="Brutalist Framework" /></a>
+</header>
+<div class="dune white-t flex" style="height: 25vh; margin: 0;">
+	<div class="shape point-right sand center flex middle" style="min-width: 15vw; height: 100%; margin: 0 1rem 0 0;">
+		<div class="fluid-text-h1" style="margin-left: -20px;"><i class="bi bi-quadrant charcoal-t wheat-t-s"></i></div>
+	</div>
+	<div class="flex middle column charcoal-t sand-t-s">
+		<h1 class="fluid-text start monolisk" style="margin: -10px 0 0 0; font-weight:900;">Grids</h1>
+		<h2 class="flow-text baffle start keep-all depixel" style="margin: 0; padding: 0;">Multiple Layout Methods</h2>
+	</div>
+</div>
+
+<div class="fossil smoke-t padded">
+	<div class="wrap-1200">
+		<p class="flow-text bitstream" style="margin-bottom: 1rem;">Create dynamic and responsive layouts using multiple methods. Built with CSS grid, Flexbox, and vanilla javascript.</p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		<!-- STICKY PAGE SANDBAR NAV -->
+		<nav class="sandbar sand monolisk flow-text">
+			<ul>
+				<li><a href="#overview">Overview</a></li>
+				<li><a href="#methods">Methods</a></li>
+				<li><a href="#nesting">Nesting</a></li>
+			</ul>
+		</nav>
+		
+		<!-- OVERVIEW -->
+		<h3 class="fluid-text monolisk" id="overview">Overview</h3>
+		<p class="bitstream">The CORE includes <a href="https://www.blueprintgrid.com" target="_blank" class="lemonlink">Blueprint Grid</a>, a multi-method layout library built with Flexbox and CSS Grid. You'll only need to include the following CSS file:</p>
+		<p class="requiresbox bitstream"><span class="flow-text bold"><em>core/css/blueprintgrid.css</em></span></p>
+		<p class="bitstream" style="margin-top: 1.5rem;">This imports all necessary CSS components from the following directory:<br />
+			<strong><span class="terminal">core/css/grids/</span></strong></p>
+		<p class="bitstream" style="margin-top: 1.5rem;">There are six layout methods included:</p>
+		<ul class="square bitstream col2">
+			<li>B3Grid</li>
+			<li>CSS Grid</li>
+			<li>Print Grid</li>
+			<li>Bento Grid</li>
+			<li>Chaos Grid</li>
+			<li>PolyGrids</li>
+		</ul>
+		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		<!-- METHODS -->
+		<h3 class="fluid-text monolisk" id="methods">Methods</h3>
+		<!-- B3 Grid -->
+		<h4 class="blueprint padded box-s charcoal-b b-s-k flow-text communist"><strong>B3Grid:</strong> 1-Dimensional Layouts</h4>
+		<div class="flex bitstream"><div class="padded third"><img src="https://www.blueprintgrid.com/core/files/images/b3grid-bw-demo.jpg" alt="b3grid" class="responsive box-s" />
+		</div><div class="padded third">
+			<p><em><strong>Blocks &amp; Bricks Base Grid</strong></em> (B3Grid) is a Flexbox-based grid system that organizes elements into either rows or columns (one-dimensional layout). </p>
+			<p class="center" style="margin-top: 1.5rem;"><a href="https://github.com/pinecreativelabs/Blueprint-Grid/wiki/B3Grid" target="_blank" class="nb-btn">Documentation &raquo;</a></p>
+		</div><div class="padded third">
+			<h5 class="center">DEMOS</h5>
+			<ul class="center tags">
+				<li><a href="https://www.blueprintgrid.com/b3grid.html" target="_blank" class="btn tiny-btn">Basic Example</a></li>
+				<li><a href="https://www.blueprintgrid.com/panes.html" target="_blank" class="btn tiny-btn">Panes Example</a></li>
+				<li><a href="https://www.blueprintgrid.com/responsive.html" target="_blank" class="btn tiny-btn">Responsive Demo</a></li>
+			</ul>
+		</div></div>
+		<p class="spacer"></p>
+
+		<!-- CSS Grid -->
+		<h4 class="blueprint padded box-s charcoal-b b-s-k flow-text communist"><strong>CSS Grid:</strong> 2-Dimensional Layouts</h4>
+		<div class="flex bitstream"><div class="padded third"><img src="https://www.blueprintgrid.com/core/files/images/cssgrid-ssdemo.jpg" alt="css grid" class="responsive box-s" />
+		</div><div class="padded third">
+			<p><em><strong>CSS Grid</strong></em> combines both rows and columns (two-dimensional) for a more efficient layout. </p>
+			<p class="center" style="margin-top: 1.5rem;"><a href="https://github.com/pinecreativelabs/Blueprint-Grid/wiki/CSS-Grid" target="_blank" class="nb-btn">Documentation &raquo;</a></p>
+		</div><div class="padded third">
+			<h5 class="center">DEMOS</h5>
+			<ul class="center tags">
+				<li><a href="https://www.blueprintgrid.com/css-grid.html" target="_blank" class="btn tiny-btn">CSS Grid Example</a></li>
+				<li><a href="https://www.blueprintgrid.com/nesting.html" target="_blank" class="btn tiny-btn">Nesting Example</a></li>
+			</ul>
+		</div></div>
+		<p class="spacer"></p>
+		<!-- Print Grid -->
+		<h4 class="blueprint padded box-s charcoal-b b-s-k flow-text communist"><strong>Print Grid:</strong> Paper-Friendly Layouts</h4>
+		<div class="flex bitstream"><div class="padded third"><img src="https://www.blueprintgrid.com/core/files/images/pgrid-ssdemo.jpg" alt="print grid" class="responsive box-s" />
+		</div><div class="third padded">
+			<p>Intended primarily for printer-friendly content, Print Grid can be used to divide content up into columns. Create elements with up to 12 columns. Columns can have specified widths in either cm- or em-based units.</p>
+			<p class="center" style="margin-top: 1.5rem;"><a href="https://github.com/pinecreativelabs/Blueprint-Grid/wiki/Print-Grid" target="_blank" class="nb-btn">Documentation &raquo;</a></p>
+		</div><div class="padded third">
+			<h5 class="center">DEMO</h5>
+			<ul class="center tags">
+				<li><a href="https://www.blueprintgrid.com/papers.html" target="_blank" class="btn tiny-btn">Paper Pages Example</a></li>
+			</ul>
+		</div></div>
+		<p class="spacer"></p>
+		<!-- Bento Grid -->
+		<h4 class="blueprint padded box-s charcoal-b b-s-k flow-text communist"><strong>Bento Grid:</strong> Dynamic Grid</h4>
+		<div class="flex bitstream"><div class="padded third"><img src="https://www.blueprintgrid.com/core/files/images/bentogrid-layout.jpg" alt="bento grid" class="box-s responsive" />
+		</div><div class="third padded">
+			<p class="requiresbox"><strong><em>core/jab/bento-grid.js</em></strong></p>
+			<p style="margin-top: 1rem;">Bento Grid is a dynamic layout method that relies on vanilla javascript to generate a responsive two-dimensional layout using CSS Grid.</p>
+			<p class="center" style="margin-top: 1.5rem;"><a href="https://github.com/pinecreativelabs/Blueprint-Grid/wiki/Bento-Grid" target="_blank" class="nb-btn">Documentation &raquo;</a></p>
+		</div><div class="padded third">
+			<h5 class="center">DEMO</h5>
+			<ul class="center tags">
+				<li><a href="https://www.blueprintgrid.com/bento-grid.html" target="_blank" class="btn tiny-btn">Bento Grid Example</a></li>
+			</ul>
+		</div></div>
+		<p class="spacer"></p>
+		<!-- CHaOs grId -->
+		<h4 class="blueprint padded box-s charcoal-b b-s-k flow-text communist"><strong>Chaos Grid:</strong> Anti-Grid Grid</h4>
+		<div class="flex bitstream"><div class="padded third"><img src="https://www.blueprintgrid.com/core/files/images/chaosgrid-randomized.jpg" alt="chaos grid" class="box-s responsive" />
+		</div><div class="third padded">
+			<p class="requiresbox"><strong><em>core/jab/chaos-grid.js</em></strong></p>
+			<p style="margin-top: 1rem;">Elements are rendered as inline-blocks that are either relative- or absolute-positioned, and can be offset in various directions. Using vanilla javascript (optional), elements can be randomly positioned, skewed, and rotated.</p>
+			<p class="center" style="margin-top: 1.5rem;"><a href="https://github.com/pinecreativelabs/Blueprint-Grid/wiki/Chaos-Grid" target="_blank" class="nb-btn">Documentation &raquo;</a></p>
+		</div><div class="padded third">
+			<h5 class="center">DEMOS</h5>
+			<ul class="center tags">
+				<li><a href="https://www.blueprintgrid.com/chaos-grid.html" target="_blank" class="btn tiny-btn">Standard Chaos</a></li>
+				<li><a href="https://www.blueprintgrid.com/chaos-grid-randomize.html" target="_blank" class="btn tiny-btn">Randomized Chaos</a></li>
+			</ul>
+		</div></div>
+		<p class="spacer"></p>
+		<!-- Polygrids -->
+		<h4 class="blueprint padded box-s charcoal-b b-s-k flow-text communist"><strong>PolyGrids:</strong> Polygon Shapes Grid System</h4>
+		<div class="flex bitstream"><div class="padded third"><img src="https://www.blueprintgrid.com/core/files/images/polygrid-demo.jpg" alt="poly grids" class="box-s responsive" />
+		</div><div class="third padded">
+			<p class="requiresbox"><strong><em>core/jab/poly-grid.js</em></strong></p>
+			<p style="margin-top: 1rem;">PolyGrids are Flexbox-based grids that form items into shapes using CSS polygon paths. Content wraps within a shape items.</p>
+			<p class="center" style="margin-top: 1.5rem;"><a href="https://github.com/pinecreativelabs/Blueprint-Grid/wiki/PolyGrids" target="_blank" class="nb-btn">Documentation &raquo;</a></p>
+		</div><div class="padded third">
+			<h5 class="center">DEMO</h5>
+			<ul class="center tags">
+				<li><a href="polygrids.html" target="_blank" class="btn tiny-btn">PolyGrids DEMO</a></li>
+				<li><a href="polygrids-bonus.html" target="_blank" class="btn tiny-btn">IsoGrid Demo (BONUS)</a></li>
+			</ul>
+		</div></div>
+		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		<!-- NESTING -->
+		<h3 class="fluid-text monolisk" id="nesting">Nesting</h3>
+		<p class="bitstream">We can combine several methods by nesting elements, with one exception:</p>
+		<p class="padded warning bitstream" style="margin: 1.5rem 0 1.5rem 0;"><strong>REMEMBER:</strong> It is <em>NOT</em> possible to nest CSS Grid items within Flexbox (B3Grid) elements! <em>However</em>... it <strong>is</strong> possible to nest Flexbox elements within CSS Grid items.</p>
+		<p class="bitstream">In the example below, we create a two-column Flexbox layout within two 2x1 Bento boxes (Flexbox nested within a dynamic CSS Grid layout). We also include a full-width block with a nested two-column text content area with double gap spacing (using Print Grid).<br /><br /></p>
+
+		<div class="bentogrid smoke-t lucida">
+			<div class="charcoal b-s-t white-b padded" data-bento="2x1">
+				<h4 class="flow-text">Bento Box 1</h4>
+				<div class="block-wrap">
+					<div class="block bw50 xs-100 sm-100 md-100 b-s-t fossil-b">
+						<h5>Block Left</h5>
+					</div>
+					<div class="block bw50 xs-100 sm-100 md-100 b-s-t fossil-b">
+						<h5>Block Right</h5>
+					</div>
+					<div class="block bw100 fossil-b b-s-t">
+						<h5>Full Block</h5>
+						<div class="cc2 cg-2x smaller">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="charcoal b-s-t white-b padded" data-bento="2x1">
+				<h4 class="flow-text">Bento Box 2</h4>
+				<div class="block-wrap">
+					<div class="block bw50 xs-100 sm-100 md-100 b-s-t fossil-b">
+						<h5>Block Left</h5>
+					</div>
+					<div class="block bw50 xs-100 sm-100 md-100 b-s-t fossil-b">
+						<h5>Block Right</h5>
+					</div>
+					<div class="block bw100 fossil-b b-s-t">
+						<h5>Full Block</h5>
+						<div class="cc2 cg-2x smaller">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p class="spacer"></p>
+		<p class="spacer"></p>
+	</div>
+</div>
+
+<footer class="brickbuild bitstream center" style="border-top: 14px solid #000; padding: 0 0 10vh 0;">
+	<div class="shape semicircle south padded emptiness flex column smoke-t center" style="height: 100%; max-width: 768px; margin: 0 auto; border-bottom: 3px solid #000;">
+		<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="evergreen smoke-t invert-h">Pine Creative Labs</a> production</p>
+		<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-t invert-h">Brad Fogelstrom</span></a></p>
+		<ul class="tags" style="margin-bottom: 0.75rem;">
+			<li><a href="https://github.com/pinecreativelabs" target="_blank" class="btn box-s black white-t invert-h"><strong>GitHub</strong></a></li>
+		</ul>
+		<a href="http://eepurl.com/cEW1RX" target="_blank" class="sweden-gradient invert-h" style="width: 100%;">
+			<span class="white-t"><i class="bi bi-amp"></i>Brutal Blast /<span class="blink-182">/</span>/<span class="blink">/</span>/</span><br />
+			<small><strong>Subscribe to our e-newsletter. &raquo;</strong></small>
+		</a>
+		<p class="white-t" style="margin: 1rem 0 1rem 0;"><small>Brutalist Framework &copy; 2025</small></p>
+	</div>
+</footer>
+
+<script src="core/jab/bfx/baffle.js" type="text/javascript"></script>
+
+<!-- bento grid script -->
+<script src="core/jab/bento-grid.js" type="text/javascript"></script>
+
+</body>
+</html>

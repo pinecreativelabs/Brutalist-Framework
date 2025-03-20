@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	
+	<title>Flavors</title>
+	<meta name="description" content="Blender Utility for Filters: CSS blends and filters library." />
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Flavors" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content="A free open source CSS library for the brutalist web design trend." /> 
+	<meta property="og:site_name" content="Brutalist Framework" />
+	
+	<!-- Icons -->
+	<link rel="icon" href="core/files/favicon-16.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="core/files/favicon-32.png" type="image/png" />
+	<link rel="apple-touch-icon" href="core/files/favicon-128.png" type="image/png" />
+	
+	<!-- CORE CSS  -->
+	<link href="core/css/construct.css" type="text/css" rel="stylesheet" media="all"/>
+	<!-- Theme CSS -->
+	<link href="app/theme/css/theme.css" type="text/css" rel="stylesheet" media="all" />
+	
+</head>
+<body>
+<!-- MAIN MENU -->
+<div class="blonk-tr shape quadrant bottom-left flex middle sand" style="z-index: 10002;">
+	<button class="reveal-overlay" id="reveal-nav" aria-controls="primary-menu" aria-expanded="false">
+	  <span class="topbar charcoal"></span><span class="middlebar charcoal"></span><span class="bottombar charcoal"></span>
+	</button>
+</div>
+<div class="overlay" id="overlay-nav">
+	<div class="wrap-960 monolisk" style="margin-top: 1.5rem;"><div class="checkerboard padded" style="border-radius: 1rem;"><div class="padded emptiness">
+		<ul class="flex flow-text">
+			<li class="third"><a href="index.html"><i class="bi bi-home"></i> HOME</a></li>
+			<li class="third"><a href="about.html"><i class="bi bi-info"></i> About BF</a></li>
+			<li class="third"><a href="https://www.brutalcms.com" target="_blank"><i class="bi bi-communist black red-t"></i> Brutal CMS</a></li>
+		</ul>
+		<ul class="flow-text flex" style="border-top: 2px solid #fff; padding-top: 8px;">
+			<li class="third"><a href="bfx.html"><i class="bi bi-sparkle"></i> BFX</a></li>
+			<li class="third"><a href="bicons.html"><i class="bi bi-flag"></i> bIcons</a></li>
+			<li class="third"><a href="buff.html"><i class="bi bi-fill"></i> BUFF</a></li>
+			<li class="third"><a href="buix.html"><i class="bi bi-navigate"></i> BUIX</a></li>
+			<li class="third"><a href="butch.html"><i class="bi bi-pick"></i> BUTCH</a></li>
+			<li class="third current"><a href="flavors.html"><i class="bi bi-cone"></i> Flavors</a></li>
+			<li class="third"><a href="fux.html"><i class="bi bi-box-x"></i> FUX</a></li>
+			<li class="third"><a href="grids.html"><i class="bi bi-quadrant"></i> Grids</a></li>
+			<li class="third"><a href="rebar.html"><i class="bi bi-converge-left"></i> ReBAR</a></li>
+		</ul>
+	</div><div class="padded emptiness" style="margin-top: 1.25rem;">
+		<ul class="flex flow-text">
+			<li class="third"><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank">Roadmap</a></li>
+			<li class="third"><a href="https://github.com/pinecreativelabs" target="_blank">Github</a></li>
+			<li class="third"><a href="https://www.instagram.com/brutalistfwk" target="_blank">Instagram</a></li>
+		</ul>
+		<ul class="flex flow-text" style="width: 100%; border-top: 2px solid #fff; padding-top: 8px;">
+			<li class="half"><a href="https://www.blueprintgrid.com" target="_blank"><i class="blueprint bi bi-grid"></i> Blueprint Grid</a></li>
+			<li class="half"><a href="https://www.brutalistwebdesign.com" target="_blank"><i class="bi bi-reference lemon black-t"></i> Reference Guides</a></li>
+		</ul>
+	</div></div></div>
+</div>
+<script>
+document.querySelector("#reveal-nav").addEventListener("click", function() {
+  this.classList.toggle("active");
+  document.querySelector("#overlay-nav").classList.toggle("open");
+})
+</script>
+<a href="#uptop" class="blonk-cr blood shape semicircle west white-t monolisk lighten-h"><i class="bi bi-up bi-3x"></i><br /><strong>top</strong></a>
+
+<!-- PAGE -->
+<header class="brickbuild padded flex middle" id="uptop" style="min-height: 25vh; margin-bottom: 0;">
+	<a href="index.html"><img class="large-thumb brdr-s-k red-b invert-h" src="app/files/images/bf3logo_bloodsand.png" alt="Brutalist Framework" /></a>
+</header>
+<div class="dune white-t flex" style="height: 25vh; margin: 0;">
+	<div class="shape point-right sand center flex middle" style="min-width: 15vw; height: 100%; margin: 0 1rem 0 0;">
+		<div class="fluid-text-h1" style="margin-left: -20px;"><i class="bi bi-cone sepia charcoal-t wheat-t-s"></i></div>
+	</div>
+	<div class="flex middle column charcoal-t sand-t-s">
+		<h1 class="fluid-text start monolisk" style="margin: -10px 0 0 0; font-weight:900;">Flavors</h1>
+		<h2 class="flow-text baffle start keep-all depixel" style="margin: 0; padding: 0;">Color Classes Library</h2>
+	</div>
+</div>
+
+<div class="fossil smoke-t padded">
+	<div class="wrap-1200">
+		<p class="flow-text bitstream"><em>Flavors</em> is a delicious buffet of colors, baked with CSS love.</p>
+		<p class="requiresbox bitstream"><span class="flow-text bold"><small>requires:</small><br /><em>core/css/flavors.css</em></span></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		<!-- STICKY PAGE SANDBAR NAV -->
+		<nav class="sandbar sand monolisk flow-text">
+			<ul>
+				<li><a href="#corecolors">Core Colors</a></li>
+				<li><a href="#vars">Variables</a></li>
+				<li><a href="#mixed">Concoctions</a></li>
+				<li><a href="#gradients">Gradients</a></li>
+			</ul>
+		</nav>
+
+		<h3 class="fluid-text monolisk" id="corecolors">Core Colors</h3>
+		<p style="margin-bottom: 2em;">Core color classes can be used to apply a plain background, text, border, or outline color.</p>
+		<h4 class="flow-text">Shades of White</h4>
+		<ul class="brixlist bold black-t">
+			<!-- WHITES -->
+			<li class="white b-s-t black-b">.white / .vanilla</li>
+			<li class="ivory b-s-t black-b">.ivory / .rice</li>
+			<li class="coconut b-s-t black-b">.coconut / .cream</li>
+			<li class="bone b-s-t black-b">.bone</li>
+			<li class="mint-cream b-s-t black-b">.mint-cream</li>
+			<li class="parchment b-s-t black-b">.parchment</li>
+			<li class="pearl b-s-t black-b">.pearl</li>
+			<li class="sea-shell b-s-t black-b">.sea-shell</li>
+		</ul>
+		<!-- Shades of Grey -->
+		<h4 class="flow-text">Shades of Grey</h4>
+		<ul class="brixlist bold black-t">
+			<li class="platinum b-s-t black-b">.platinum</li>
+			<li class="mushroom b-s-t black-b">.mushroom</li>
+			<li class="silver b-s-t black-b">.silver</li>
+			<li class="smoke b-s-t black-b">.smoke</li>
+			<li class="graphite b-s-t black-b">.graphite</li>
+			<li class="grey b-s-t black-b">.grey / .gray</li>
+			<li class="fossil b-s-t black-b">.fossil</li>
+			<li class="fog b-s-t black-b">.fog</li>
+			<li class="ash b-s-t black-b">.ash</li>
+			<li class="charcoal white-t b-s-t black-b">.charcoal</li>
+			<li class="noir white-t b-s-t black-b">.noir</li>
+			<li class="black white-t">.black</li>
+		</ul>
+		<!-- REDS -->
+		<h4 class="flow-text">Shades of Red</h4>
+		<ul class="brixlist bold black-t">
+			<li class="grapefruit">.grapefruit</li>
+			<li class="strawberry">.strawberry</li>
+			<li class="rose">.rose</li>
+			<li class="cherry">.cherry</li>
+			<li class="apple">.apple</li>
+			<li class="cranberry">.cranberry</li>
+			<li class="red">.red / .tomato</li>
+			<li class="blood">.blood / .maroon</li>
+			<li class="blood-orange">.blood-orange</li>
+			<li class="chili">.chili</li>
+			<li class="scarlet">.scarlet</li>
+			<li class="punch">.punch</li>
+			<li class="sangria strawberry-t">.sangria</li>
+			<li class="mahogany strawberry-t">.mahogany</li>
+		</ul>
+		<!-- PINKS -->
+		<h4 class="flow-text">Shades of Pink</h4>
+		<ul class="brixlist bold black-t">
+			<li class="bubblegum">.bubblegum</li>
+			<li class="flamingo">.flamingo</li>
+			<li class="cotton-candy">.cotton-candy</li>
+			<li class="taffy">.taffy</li>
+			<li class="blush">.blush</li>
+			<li class="pink">.pink</li>
+			<li class="hot-pink">.hot-pink</li>
+			<li class="amaranth">.amaranth</li>
+			<li class="raspberry">.raspberry</li>
+			<li class="fuchsia">.fuchsia</li>
+			<li class="salmon">.salmon</li>
+		</ul>
+		<!-- PURPLES -->
+		<h4 class="flow-text">Shades of Purple</h4>
+		<ul class="brixlist bold black-t">
+			<li class="lilac">.lilac</li>
+			<li class="lavender">.lavender</li>
+			<li class="iris">.iris</li>
+			<li class="heather">.heather</li>
+			<li class="rebecca">.rebecca</li>
+			<li class="mauve">.mauve</li>
+			<li class="purple">.purple</li>
+			<li class="eggplant">.eggplant</li>
+			<li class="purple-basil">.purple-basil</li>
+			<li class="grape">.grape</li>
+			<li class="raisin lavender-t">.raisin</li>
+			<li class="plum lavender-t">.plum</li>
+			<li class="blackberry lavender-t">.blackberry</li>
+		</ul>
+		<!-- BLUES -->
+		<h4 class="flow-text">Shades of Blue</h4>
+		<ul class="brixlist bold black-t">
+			<li class="brittany">.brittany</li>
+			<li class="sky">.sky</li>
+			<li class="water">.water</li>
+			<li class="poolwater">.poolwater</li>
+			<li class="pastel">.pastel</li>
+			<li class="olympic">.olympic</li>
+			<li class="sapphire">.sapphire</li>
+			<li class="blue">.blue</li>
+			<li class="cornflower">.cornflower</li>
+			<li class="azure">.azure</li>
+			<li class="blueberry">.blueberry</li>
+			<li class="indigo sky-t">.indigo</li>
+			<li class="denim sky-t">.denim</li>
+			<li class="navy sky-t">.navy</li>
+		</ul>
+		<!-- BROWNS -->
+		<h4 class="flow-text smoke-t bitstream">Shades of Brown</h4>
+		<ul class="brixlist bold black-t">
+			<li class="hazelnut">.hazelnut</li>
+			<li class="wheat">.wheat</li>
+			<li class="khaki">.khaki</li>
+			<li class="sand">.sand</li>
+			<li class="peanut">.peanut</li>
+			<li class="light-brown">.cappuccino</li>
+			<li class="mocha">.mocha</li>
+			<li class="coffee">.coffee</li>
+			<li class="brown">.brown</li>
+			<li class="steak">.steak</li>
+			<li class="cider">.cider</li>
+			<li class="cinnamon">.cinnamon</li>
+			<li class="spice">.spice</li>
+			<li class="cocoa wheat-t">.cocoa</li>
+			<li class="bistre wheat-t">.bistre</li>
+			<li class="chocolate wheat-t">.chocolate</li>
+			<li class="cola rice-t">.cola</li>
+		</ul>
+		<!-- ORANGES -->
+		<h4 class="flow-text">Shades of Orange</h4>
+		<ul class="brixlist bold black-t">
+			<li class="peach">.peach</li>
+			<li class="coral">.coral</li>
+			<li class="mango">.mango</li>
+			<li class="fire">.fire</li>
+			<li class="tangerine">.tangerine</li>
+			<li class="squash">.squash</li>
+			<li class="carrot">.carrot</li>
+			<li class="orange">.orange</li>
+			<li class="pumpkin">.pumpkin</li>
+			<li class="papaya">.papaya</li>
+			<li class="rust">.rust</li>
+			<li class="bbq">.bbq</li>
+		</ul>
+		<!-- YELLOWS -->
+		<h4 class="flow-text">Shades of Yellow</h4>
+		<ul class="brixlist bold black-t">
+			<li class="aureolin">.aureolin</li>
+			<li class="butter">.butter</li>
+			<li class="yellow">.yellow / .lemon</li>
+			<li class="cheddar">.cheddar</li>
+			<li class="caramel">.caramel</li>
+			<li class="corn">.corn</li>
+			<li class="pineapple">.pineapple</li>
+			<li class="banana">.banana</li>
+			<li class="honey">.honey / .amber</li>
+			<li class="beer">.beer / .gold</li>
+			<li class="mustard">.mustard</li>
+			<li class="flaxen">.flaxen</li>
+			<li class="dijon">.dijon</li>
+		</ul>
+		<!-- GREENS -->
+		<h4 class="flow-text">Shades of Green</h4>
+		<ul class="brixlist bold black-t">
+			<li class="turquoise">.turquoise</li>
+			<li class="teal">.teal</li>
+			<li class="mint">.mint</li>
+			<li class="kiwi">.kiwi</li>
+			<li class="pistachio">.pistachio</li>
+			<li class="celery">.celery</li>
+			<li class="sage">.sage</li>
+			<li class="pear">.pear</li>
+			<li class="lime">.lime</li>
+			<li class="slime">.slime</li>
+			<li class="green">.green / .cucumber</li>
+			<li class="emerald">.emerald</li>
+			<li class="spinach">.spinach</li>
+			<li class="green-tea">.green-tea</li>
+			<li class="olive">.olive</li>
+			<li class="grass">.grass</li>
+			<li class="pickle">.pickle</li>
+			<li class="seaweed">.seaweed</li>
+		</ul>
+		<p class="spacer"></p>
+		<div class="flex">
+			<div class="half padded">
+				<div class="info padded"><h3 class="flow-text" style="margin: 0;"><strong>Text Color</strong></h3>
+					<p>Simply apply <span class="bigger bold"><em>-t</em></span> after a core color class to change the text color.</p>
+				</div>
+				<div class="disabled padded" style="margin-bottom: 15px;">
+					<p><strong>EXAMPLE:</strong></p>
+					<p class="flow-text"><span class="green-t">.green-t</span></p>
+				</div>
+				<div class="info padded" style="margin-top: 1.5rem;"><h3 class="flow-text" style="margin: 0;"><strong>Text Shadow</strong></h3>
+					<p>Simply apply <span class="bigger bold"><em>-t-s</em></span> (text-shadow) after a core color class to change the text shadow color.</p>
+				</div>
+				<div class="disabled padded" style="margin-bottom: 15px;">
+					<p><strong>EXAMPLE:</strong></p>
+					<p class="flow-text"><span class="green-t-s">.green-t-s</span></p>
+				</div>
+			</div><div class="half padded">
+				<div class="info padded"><h3 class="flow-text" style="margin: 0;"><strong>Border &amp; Outline Color</strong></h3>
+					<p>Simply apply <strong><em>-b</em></strong> (border) or <strong><em>-o</em></strong> (outline) after a core color class to change the border or outline color.<br />
+					<strong>See "Basic Borders" and "Outlines" under BUTCH on how to apply borders.</strong></p>
+				</div>
+				<div class="disabled padded" style="margin-bottom: 15px;">
+					<p><strong>EXAMPLE:</strong></p>
+					<p class="o-d-f plum-o green-b b-a-k" style="margin-top: 1.8em;">Thick dashed green border with fat dotted plum outline<br />
+						<span class="bold">.plum-o .green-b</span></p>
+				</div>
+				<div class="info padded" style="margin-top: 1.5rem;"><h3 class="flow-text" style="margin: 0;"><strong>Change Background Color on Hover</strong></h3>
+					<p>The background color can be changed upon hover by applying a <em><strong>-h</strong></em> after the class name. In the example below, we change a banana box to a mango upon hover:</p>
+				</div>
+				<div class="disabled padded" style="margin-bottom: 15px;">
+					<p class="inline-block banana mango-h arial chocolate-t"><span class="flow-text">HOVER ME</span><br /><strong>.banana.mango-h</strong></p>
+				</div>
+			</div>
+		</div>
+		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		<!-- Variable Colors -->
+		<h3 class="fluid-text monolisk" id="vars">Variables</h3>
+		<p>Similar to Core Colors, there are CSS variables used to define a few color classes. Variables are defined in the <strong><em>core/css/variables.css</em></strong> file. See <em>CORE</em> for more details on working with CSS variables. Variable-based color classes work the same way as <em>Core Colors</em>:</p>
+		<ul class="none flow-text bold info inline-block">
+			<li>.primary <span class="primary">&nbsp;&nbsp;</span></li>
+			<li>.secondary <span class="secondary">&nbsp;&nbsp;</span></li>
+			<li>.tertiary <span class="tertiary">&nbsp;&nbsp;</span></li>
+			<li>.accent <span class="accent">&nbsp;&nbsp;</span></li>
+			<li>.auxiliary <span class="auxiliary">&nbsp;&nbsp;</span></li>
+			<li>.ocolor <span class="ocolor">&nbsp;&nbsp;</span> <small>(other)</small></li>
+		</ul>
+		<p class="inline-block padded info">
+			<span class="bold flow-text">Examples:</span><br /><span class="secondary-t">.secondary-t</span><br /><span class="tertiary primary-t">.tertiary.primary-t</span><br />
+			<span class="b-s-t ocolor-b auxiliary ocolor-t">.auxiliary.ocolor-b.ocolor-t</span>
+		</p>
+		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		<!-- MIXED FLAVORS -->
+		<h3 class="fluid-text monolisk" id="mixed">Concoctions</h3>
+		<p style="margin-bottom: 2.5rem;">Concoctions are pre-defined color combinations that include flat or gradient backgrounds, text colors, link colors, and border &amp; outline colors.</p>
+		<h4 class="flow-text">Flat Concoctions</h4>
+		<ul class="brixlist">
+			<li class="success ccbo"><span class="flow-text">.success</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="info ccbo"><span class="flow-text">.info</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="warning ccbo"><span class="flow-text">.warning</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="alert ccbo"><span class="flow-text">.alert</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="ready ccbo"><span class="flow-text">.ready</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="disabled ccbo"><span class="flow-text">.disabled</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="mono ccbo"><span class="flow-text">.mono</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="mono-inv ccbo"><span class="flow-text">.mono-inv</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="blueprint ccbo"><span class="flow-text">.blueprint</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="bubblepop ccbo"><span class="flow-text">.bubblepop</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="campfire ccbo"><span class="flow-text">.campfire</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="cherry-cordial ccbo"><span class="flow-text">.cherry-cordial</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="greek ccbo"><span class="flow-text">.greek</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="grillmaster ccbo"><span class="flow-text">.grillmaster</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="lemonade ccbo"><span class="flow-text">.lemonade</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="midnight ccbo"><span class="flow-text">.midnight</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="mint-chocolate ccbo"><span class="flow-text">.mint-chocolate</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="orange-cream ccbo"><span class="flow-text">.orange-cream</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="plush ccbo"><span class="flow-text">.plush</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="pool-party ccbo"><span class="flow-text">.pool-party</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="slimeball ccbo"><span class="flow-text">.slimeball</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="strawnana ccbo"><span class="flow-text">.strawnana</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="steakhouse ccbo"><span class="flow-text">.steakhouse</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="stormy-sky ccbo"><span class="flow-text">.stormy-sky</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="sweden ccbo"><span class="flow-text">.sweden</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="terminal ccbo"><span class="flow-text">.terminal</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+		</ul>
+		<h4 class="flow-text">Gradient Concoctions</h4>
+		<ul class="brixlist">
+			<li class="barbie ccbo"><span class="flow-text">.barbie</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="dune ccbo"><span class="flow-text">.dune</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="gourd ccbo"><span class="flow-text">.gourd</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="grapejuice ccbo"><span class="flow-text">.grapejuice</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="julia ccbo"><span class="flow-text">.julia</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="katherine ccbo"><span class="flow-text">.katherine</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="lagoon ccbo"><span class="flow-text">.lagoon</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="mbi ccbo"><span class="flow-text">.mbi</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="northern ccbo"><span class="flow-text">.northern</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="oceana ccbo"><span class="flow-text">.oceana</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="pencil ccbo"><span class="flow-text">.pencil</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="reeses ccbo"><span class="flow-text">.reeses</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="royale ccbo"><span class="flow-text">.royale</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="vixen ccbo"><span class="flow-text">.vixen</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="wealth ccbo"><span class="flow-text">.wealth</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+			<li class="wildcat ccbo"><span class="flow-text">.wildcat</span><br />Lorem ipsum filler text.<br /><a href="#">Link Example</a></li>
+		</ul>
+		<p class="spacer"></p>
+		<div class="flex bitstream">
+			<div class="padded half">
+				<div class="padded disabled">
+					<h4 class="flow-text">Color Override</h4>
+					<p>Background, text, border, and outline core color classes can be used to override a concoction color.</p>
+					<pre class="black lime-t">&lt;p class="orange-cream"&gt;Orange<br />&nbsp;&nbsp;&lt;span class="blueberry-t"&gt;Blueberry&lt;/span&gt;<br />&lt;/p&gt;</pre>
+					<p class="heavy">Output:</p>
+					<p class="orange-cream flow-text">Orange <span class="blueberry-t">Blueberry</span></p>
+				</div>
+			</div><div class="padded half">
+				<div class="padded disabled">
+					<h4 class="flow-text">Borders &amp; Outlines</h4>
+					<p><em>Concoctions</em> use pre-define border and outline colors. However, to display them, you'll need to apply the appropriate classes. See the <em>Boundaries</em> section in <a href="butch.php">BUTCH</a>.</p>
+				</div>
+			</div>
+		</div>
+		<p class="spacer"></p>
+		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		<!-- GRADIENTS -->
+		<h3 class="fluid-text monolisk white-t" id="gradients">Gradients</h3>
+		<p>Use these classes to apply a pre-defined gradient background to any element.</p>
+		<ul class="brixlist bold black-t">
+			<li class="monogradient"><p class="padded"> <br />.monogradient<br /><br /></p></li>
+			<li class="cherry-delight"><p class="padded"> <br />.cherry-delight<br /><br /></p></li>
+			<li class="happiness"><p class="padded"> <br />.happiness<br /><br /></p></li>
+			<li class="pina-colada"><p class="padded"> <br />.pina-colada<br /><br /></p></li>
+			<li class="deep-desire"><p class="padded"> <br />.deep-desire<br /><br /></p></li>
+			<li class="sprite"><p class="padded"> <br />.sprite<br /><br /></p></li>
+			<li class="aqua"><p class="padded"> <br />.aqua<br /><br /></p></li>
+			<li class="fresh"><p class="padded"> <br />.fresh<br /><br /></p></li>
+			<li class="piglet"><p class="padding"> <br />.piglet<br /><br /></p></li>
+			<li class="vanilla-chip"><p class="padded"> <br />.vanilla-chip<br /><br /></p></li>
+			<li class="mint-chip"><p class="padded"> <br />.mint-chip<br /><br /></p></li>
+			<li class="vampire"><p class="padded white-t"> <br />.vampire<br /><br /></p></li>
+			<li class="passion"><p class="padded"> <br />.passion<br /><br /></p></li>
+			<li class="neapolitan"><p class="padded"> <br />.neapolitan<br /><br /></p></li>
+			<li class="pride"><p class="padded"> <br />.pride<br /><br /></p></li>
+			<li class="watermelon"><p class="padded"> <br />.watermelon<br /><br /></p></li>
+			<li class="dragonfruit"><p class="padded"> <br />.dragonfruit<br /><br /></p></li>
+			<li class="oreo"><p class="padded"> <br />.oreo<br /><br /></p></li>
+			<li class="peppermint"><p class="padded"> <br />.peppermint<br /><br /></p></li>
+			<li class="bacon"><p class="padding"> <br />.bacon<br /><br /></p></li>
+			<li class="swedish"><p class="padding"> <br />.swedish<br /><br /></p></li>
+			<li class="octoberfest"><p class="padded"> <br />.octoberfest<br /><br /></p></li>
+			<li class="halloween"><p class="padded"> <br />.halloween<br /><br /></p></li>
+			<li class="caramel-apple"><p class="padded"> <br />.caramel-apple<br /><br /></p></li>
+			<li class="ireland"><p class="padding"> <br />.ireland<br /><br /></p></li>
+			<li class="autumn"><p class="padded"> <br />.autumn<br /><br /></p></li>
+			<li class="winter"><p class="padding"> <br />.winter<br /><br /></p></li>
+			<li class="spring"><p class="padding"> <br />.spring<br /><br /></p></li>
+			<li class="summer"><p class="padding"> <br />.summer<br /><br /></p></li>
+			<li class="lush"><p class="padding"> <br />.lush<br /><br /></p></li>
+			<li class="evergreen"><p class="padding white-t"> <br />.evergreen<br /><br /></p></li>
+			<li class="viking"><p class="padding white-t"> <br />.viking<br /><br /></p></li>
+			<li class="violence"><p class="padding white-t"> <br />.violence<br /><br /></p></li>
+			<li class="emptiness"><p class="padding white-t"> <br />.emptiness<br /><br /></p></li>
+			<li class="clean"><p class="padding"> <br />.clean<br /><br /></p></li>
+			<li class="socialize"><p class="padded"> <br />.socialize<br /><br /></p></li>
+			<li class="river"><p class="padding"> <br />.river<br /><br /></p></li>
+			<li class="dusk"><p class="padding"> <br />.dusk<br /><br /></p></li>
+			<li class="sunset"><p class="padding"> <br />.sunset<br /><br /></p></li>
+			<li class="royalty"><p class="padding"> <br />.royalty<br /><br /></p></li>
+			<li class="aragon"><p class="padding"> <br />.aragon<br /><br /></p></li>
+			<li class="hottie"><p class="padding"> <br />.hottie<br /><br /></p></li>
+			<li class="virgin"><p class="padding"> <br />.virgin<br /><br /></p></li>
+			<li class="shades"><p class="padding"> <br />.shades<br /><br /></p></li>
+			<li class="liminal"><p class="padding"> <br />.liminal<br /><br /></p></li>
+			<li class="checkerboard"><p class="padding red-t black-t-s"> <br />.checkerboard<br /><br /></p></li>
+		</ul>
+		<h3 class="fluid-text monolisk white-t">Mesh Gradients</h3>
+		<ul class="brixlist bold black-t">
+			<li class="alfresco" style="min-width: 220px;"><p class="padding"> <br />.alfresco<br /><br /></p></li>
+			<li class="chosen" style="min-width: 220px;"><p class="padding"> <br />.chosen<br /><br /></p></li>
+			<li class="coffee-blend" style="min-width: 220px;"><p class="padding cappuccino-t"> <br />.coffee-blend<br /><br /></p></li>
+			<li class="cold-spirit" style="min-width: 220px;"><p class="padding"> <br />.cold-spirit<br /><br /></p></li>
+			<li class="dreamscape" style="min-width: 220px;"><p class="padding"> <br />.dreamscape<br /><br /></p></li>
+			<li class="gold-digger" style="min-width: 220px;"><p class="padding"> <br />.gold-digger<br /><br /></p></li>
+			<li class="insta-mesh" style="min-width: 220px;"><p class="padding"> <br />.insta-mesh<br /><br /></p></li>
+			<li class="pastel-mesh" style="min-width: 220px;"><p class="padding"> <br />.pastel-mesh<br /><br /></p></li>
+			<li class="polyamory" style="min-width: 220px;"><p class="padding smoke-t"> <br />.polyamory<br /><br /></p></li>
+			<li class="purgatory" style="min-width: 220px;"><p class="padding smoke-t"> <br />.purgatory<br /><br /></p></li>
+			<li class="purify" style="min-width: 220px;"><p class="padding"> <br />.purify<br /><br /></p></li>
+			<li class="spruce" style="min-width: 220px;"><p class="padding"> <br />.spruce<br /><br /></p></li>
+			<li class="sunscape" style="min-width: 220px;"><p class="padding"> <br />.sunscape<br /><br /></p></li>
+			<li class="warm-winter" style="min-width: 220px;"><p class="padding"> <br />.warm-winter<br /><br /></p></li>
+			<li class="water-fairy" style="min-width: 220px;"><p class="padded"> <br />.water-fairy<br /><br /></p></li>
+		</ul>
+		<p class="spacer"></p>
+		<p class="spacer"></p>
+	</div>
+</div>
+
+<footer class="brickbuild bitstream center" style="border-top: 14px solid #000; padding: 0 0 10vh 0;">
+	<div class="shape semicircle south padded emptiness flex column smoke-t center" style="height: 100%; max-width: 768px; margin: 0 auto; border-bottom: 3px solid #000;">
+		<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="evergreen smoke-t invert-h">Pine Creative Labs</a> production</p>
+		<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-t invert-h">Brad Fogelstrom</span></a></p>
+		<ul class="tags" style="margin-bottom: 0.75rem;">
+			<li><a href="https://github.com/pinecreativelabs" target="_blank" class="btn box-s black white-t invert-h"><strong>GitHub</strong></a></li>
+		</ul>
+		<a href="http://eepurl.com/cEW1RX" target="_blank" class="sweden-gradient invert-h" style="width: 100%;">
+			<span class="white-t"><i class="bi bi-amp"></i>Brutal Blast /<span class="blink-182">/</span>/<span class="blink">/</span>/</span><br />
+			<small><strong>Subscribe to our e-newsletter. &raquo;</strong></small>
+		</a>
+		<p class="white-t" style="margin: 1rem 0 1rem 0;"><small>Brutalist Framework &copy; 2025</small></p>
+	</div>
+</footer>
+<script src="core/jab/bfx/baffle.js" type="text/javascript"></script>
+</body>
+</html>

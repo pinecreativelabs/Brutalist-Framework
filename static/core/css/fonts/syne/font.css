@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Syne';
+    src: url('Syne-ExtraBold.eot');
+    src: url('Syne-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Syne-ExtraBold.woff2') format('woff2'),
+        url('Syne-ExtraBold.woff') format('woff'),
+        url('Syne-ExtraBold.ttf') format('truetype');
+    font-weight: bold; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'Syne Mono';
+    src: url('SyneMono-Regular.eot');
+    src: url('SyneMono-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SyneMono-Regular.woff2') format('woff2'),
+        url('SyneMono-Regular.woff') format('woff'),
+        url('SyneMono-Regular.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'Syne';
+    src: url('Syne-Italic.eot');
+    src: url('Syne-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Syne-Italic.woff2') format('woff2'),
+        url('Syne-Italic.woff') format('woff'),
+        url('Syne-Italic.ttf') format('truetype');
+    font-weight: normal; font-style: italic; font-display: swap;
+}
+@font-face {
+    font-family: 'Syne';
+    src: url('Syne-Bold.eot');
+    src: url('Syne-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Syne-Bold.woff2') format('woff2'),
+        url('Syne-Bold.woff') format('woff'),
+        url('Syne-Bold.ttf') format('truetype');
+    font-weight: bold; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'Syne';
+    src: url('Syne-Regular.eot');
+    src: url('Syne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Syne-Regular.woff2') format('woff2'),
+        url('Syne-Regular.woff') format('woff'),
+        url('Syne-Regular.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.syne{font-family: 'Syne';}
+.syne-mono {font-family: 'Syne Mono';}

@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	
+	<title>BUIX</title>
+	<meta name="description" content="Base User Interface and Experience" />
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="BUIX" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content="Base User Interface and Experience" /> 
+	<meta property="og:site_name" content="Brutalist Framework" />
+	
+	<!-- Icons -->
+	<link rel="icon" href="core/files/favicon-16.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="core/files/favicon-32.png" type="image/png" />
+	<link rel="apple-touch-icon" href="core/files/favicon-128.png" type="image/png" />
+	
+	<!-- CORE CSS  -->
+	<link href="core/css/construct.css" type="text/css" rel="stylesheet" media="all"/>
+	<!-- Theme CSS -->
+	<link href="app/theme/css/theme.css" type="text/css" rel="stylesheet" media="all" />
+	
+</head>
+<body>
+<!-- MAIN MENU -->
+<div class="blonk-tr shape quadrant bottom-left flex middle sand" style="z-index: 10002;">
+	<button class="reveal-overlay" id="reveal-nav" aria-controls="primary-menu" aria-expanded="false">
+	  <span class="topbar charcoal"></span><span class="middlebar charcoal"></span><span class="bottombar charcoal"></span>
+	</button>
+</div>
+<div class="overlay" id="overlay-nav">
+	<div class="wrap-960 monolisk" style="margin-top: 1.5rem;"><div class="checkerboard padded" style="border-radius: 1rem;"><div class="padded emptiness">
+		<ul class="flex flow-text">
+			<li class="third"><a href="index.html"><i class="bi bi-home"></i> HOME</a></li>
+			<li class="third"><a href="about.html"><i class="bi bi-info"></i> About BF</a></li>
+			<li class="third"><a href="https://www.brutalcms.com" target="_blank"><i class="bi bi-communist black red-t"></i> Brutal CMS</a></li>
+		</ul>
+		<ul class="flow-text flex" style="border-top: 2px solid #fff; padding-top: 8px;">
+			<li class="third"><a href="bfx.html"><i class="bi bi-sparkle"></i> BFX</a></li>
+			<li class="third"><a href="bicons.html"><i class="bi bi-flag"></i> bIcons</a></li>
+			<li class="third"><a href="buff.html"><i class="bi bi-fill"></i> BUFF</a></li>
+			<li class="third current"><a href="buix.html"><i class="bi bi-navigate"></i> BUIX</a></li>
+			<li class="third"><a href="butch.html"><i class="bi bi-pick"></i> BUTCH</a></li>
+			<li class="third"><a href="flavors.html"><i class="bi bi-cone"></i> Flavors</a></li>
+			<li class="third"><a href="fux.html"><i class="bi bi-box-x"></i> FUX</a></li>
+			<li class="third"><a href="grids.html"><i class="bi bi-quadrant"></i> Grids</a></li>
+			<li class="third"><a href="rebar.html"><i class="bi bi-converge-left"></i> ReBAR</a></li>
+		</ul>
+	</div><div class="padded emptiness" style="margin-top: 1.25rem;">
+		<ul class="flex flow-text">
+			<li class="third"><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank">Roadmap</a></li>
+			<li class="third"><a href="https://github.com/pinecreativelabs" target="_blank">Github</a></li>
+			<li class="third"><a href="https://www.instagram.com/brutalistfwk" target="_blank">Instagram</a></li>
+		</ul>
+		<ul class="flex flow-text" style="width: 100%; border-top: 2px solid #fff; padding-top: 8px;">
+			<li class="half"><a href="https://www.blueprintgrid.com" target="_blank"><i class="blueprint bi bi-grid"></i> Blueprint Grid</a></li>
+			<li class="half"><a href="https://www.brutalistwebdesign.com" target="_blank"><i class="bi bi-reference lemon black-t"></i> Reference Guides</a></li>
+		</ul>
+	</div></div></div>
+</div>
+<script>
+document.querySelector("#reveal-nav").addEventListener("click", function() {
+  this.classList.toggle("active");
+  document.querySelector("#overlay-nav").classList.toggle("open");
+})
+</script>
+<a href="#uptop" class="blonk-cr blood shape semicircle west white-t monolisk lighten-h"><i class="bi bi-up bi-3x"></i><br /><strong>top</strong></a>
+
+<!-- PAGE -->
+<header class="brickbuild padded flex middle" id="uptop" style="min-height: 25vh; margin-bottom: 0;">
+	<a href="index.html"><img class="large-thumb brdr-s-k red-b invert-h" src="app/files/images/bf3logo_bloodsand.png" alt="Brutalist Framework" /></a>
+</header>
+<div class="dune white-t flex" style="height: 25vh; margin: 0;">
+	<div class="shape point-right sand center flex middle" style="min-width: 15vw; height: 100%; margin: 0 1rem 0 0;">
+		<div class="fluid-text-h1" style="margin-left: -20px;"><i class="bi bi-navigate charcoal-t wheat-t-s"></i></div>
+	</div>
+	<div class="flex middle column charcoal-t sand-t-s">
+		<h1 class="fluid-text start monolisk" style="margin: -10px 0 0 0; font-weight:900;">BUIX</h1>
+		<h2 class="flow-text baffle start keep-all depixel" style="margin: 0; padding: 0;">Base User Interface & Experience</h2>
+	</div>
+</div>
+
+<div class="fossil smoke-t padded">
+	<div class="wrap-1200">
+		<p class="flow-text bitstream">Elements for a brutal user interface and experience.</p>
+		<p class="requiresbox bitstream"><span class="flow-text bold"><small>requires:</small><br /><em>core/css/buix.css</em></span></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		<!-- STICKY PAGE SANDBAR NAV -->
+		<nav class="sandbar sand monolisk flow-text">
+			<ul>
+				<li><a href="#buttons">Buttons</a></li>
+				<li><a href="#nav">Navigation</a></li>
+				<li><a href="#media">Multimedia</a></li>
+				<li><a href="#interactions">Interactions</a></li>
+				<li><a href="#modals">Modals</a></li>
+				<li><a href="#tabs">Tabs</a></li>
+			</ul>
+		</nav>
+		
+		<!-- BUTTONS -->
+		<h3 class="fluid-text monolisk" id="buttons">Buttons</h3>
+		<p class="bitstream" style="margin-bottom: 1.1em;">To create a button, simply use the <strong>button</strong> tag, or apply <strong>.btn</strong> class to a link. Buttons are displayed as an inline block, by default.</p>
+		<div class="smoke-b b-d-t padded bold center bitstream">
+			<h4 class="flow-text">Default Buttons</h4>
+			<button>Default Button</button>&nbsp;&nbsp;<button class="jumbo-btn">.jumbo-btn</button>&nbsp;&nbsp;
+			<button class="large-btn">.large-btn</button>&nbsp;&nbsp;<button class="md-btn">.medium-btn</button>&nbsp;&nbsp;
+			<button class="small-btn">.small-btn</button>&nbsp;&nbsp;<button class="tiny-btn">.tiny-btn</button>&nbsp;&nbsp;
+			<p>To make a button take up the full width of a container, apply this class:</p>
+			<button class="btn full-btn">.full-btn</button>
+		</div>
+		<div class="flex bitstream"><div class="padded half">
+			<h4 class="flow-text"><strong>NeoBrutalist Buttons</strong></h4>
+			<p>These button classes use of the <em>primary</em> and <em>secondary</em> <a href="flavors.php#vars" class="lemonlink">flavor CSS variables</a> to define the colors.</p>
+			<p class="center" style="margin-top: 1rem;">
+				<a href="#" class="nb-btn-small">.nb-btn-small</a><br /><a href="#" class="nb-btn">.nb-btn</a><br />
+				<a href="#" class="nb-btn-big">.nb-btn-big</a><br /><a href="#" class="nb-btn-jumbo">.nb-btn-jumbo</a>
+			</p>
+		</div><div class="half padded">
+			<h4 class="flow-text"><strong>NeoBrutalist Accent Buttons</strong></h4>
+			<p>These button classes use of the <em>tertiary, accent</em> and <em>auxiliary</em> <a href="flavors.php#vars" class="lemonlink">flavor CSS variables</a> to define the colors.</p>
+			<p class="center" style="margin-top: 1rem;">
+				<a href="#" class="nba-btn-small">.nba-btn-small</a><br /><a href="#" class="nba-btn">.nba-btn</a><br />
+				<a href="#" class="nba-btn-big">.nba-btn-big</a><br /><a href="#" class="nba-btn-jumbo">.nba-btn-jumbo</a>
+			</p>
+		</div><div class="padded half">
+			<h4 class="flow-text"><strong>Sharp Buttons</strong></h4>
+			<p>To have sharp corners on buttons and elements, simply add the class <em>.sharp</em>:<br /><br /></p>
+			<p class="center"><a href="#" class="nb-btn sharp">.nb-btn.sharp</a></p>
+		</div><div class="padded half">
+			<h4 class="flow-text"><strong>Pill Buttons</strong></h4>
+			<p>To make pill-shaped buttons and elements, simply add the class <em>.pill</em>:<br /><br /></p>
+			<p class="center"><a href="#" class="nba-btn pill">.nba-btn.pill</a></p>
+		</div></div>
+		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		
+		<!-- NAVIGATION -->
+		<h3 class="fluid-text monolisk" id="nav">Navigation</h3>
+		<!-- Simple Menu -->
+		<h4 class="charcoal flow-text bitstream">Simple Menu</h4>
+		<div class="flex bitstream"><div class="half padded">
+			<p>A pure CSS menu that displays an optional description upon hover over each item.</p>
+			<h4>Markup</h4>
+			<code class="black lime-t lucida padded smaller">
+				&lt;ul class="simple-nav"&gt;<br />
+				&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;List Item<br />
+				&nbsp;&nbsp;&nbsp;&lt;span class="desc"&gt;Description text&lt;/span&gt;&lt;/a&gt;<br />
+				&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br />
+				&lt;/ul&gt;
+			</code>
+		</div><div class="padded half">
+			<h4>Default View</h4>
+			<ul class="simple-nav lucida">
+				<li><a href="#">Link 1 <span class="des">Description text for item 1.</span></a></li>
+				<li><a href="#">Link 2 <span class="des">Description text for item 2.</span></a></li>
+				<li><a href="#">Link 3 <span class="des">Description text for item 3.</span></a>
+				<ul>
+					<li><a href="#">Sub-Page 1</a>
+						<ul>
+							<li><a href="#">Sub-Sub-Page 1</a></li>
+							<li><a href="#">Sub-Sub-Page 2</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Sub-Page 2</a></li>
+					<li><a href="#">Sub-Page 3</a></li>
+				</ul>
+				</li>
+				<li><a href="#">Link 4 <span class="des">Description text for item 4.</span></a></li>
+				<li><a href="#">Link 5 <span class="des">Description text for item 5.</span></a></li>
+			</ul>
+		</div></div>
+		<p class="spacer"></p>
+		<!-- Tree List -->
+	<h4 class="charcoal flow-text bitstream">Tree List</h4>
+		<div class="flex bitstream"><div class="padded half">
+			<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/buix/tree-list.js</em></p>
+			<p>Create a nested tree list menu for unordered lists. Child items can be toggled. Each parent item will need to be wrapped in a span with class of <strong><em>parent</em></strong>. Unlimited child levels are supported.</p>
+			<h4>Markup</h4>
+			<code class="black lime-t lucida padded smaller">
+				&lt;ul class="tree-list"&gt;<br />
+				&nbsp;&nbsp;&lt;li&gt;&lt;span class="parent"&gt;Parent Item&lt;/span&gt;<br />
+				&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;child item&lt;/li&gt;<br />
+				&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br />
+				&nbsp;&nbsp;&lt;/li&gt;<br />&lt;/ul&gt;
+			</code>
+		</div><div class="padded half">
+			<h4>Tree List Demo</h4>
+			<ul class="tree-list smoke-b b-b-t" style="max-width: 80%; padding: 10px;">
+				<li><span class="parent">Category 1</span>
+					<ul class="nested">
+						<li>Child 1</li>
+						<li>Child 2</li>
+						<li><span class="parent">Child 3</span>
+							<ul class="nested">
+								<li>Grandchild 1</li>
+								<li>Grandchild 2</li>
+								<li><span class="parent">Grandchild 3</span>
+									<ul class="nested">
+										<li>Descendant 1</li>
+										<li>Descendant 2</li>
+										<li>Descendant 3</li>
+									</ul>
+								</li>
+							</ul>
+						</li>  
+					</ul>
+				</li>
+				<li><span class="parent">Category 2</span>
+					<ul class="nested">
+						<li>Sub-Category 1</li><li>Sub-Category 2</li>
+					</ul>
+				</li>
+				<li>Category 3 <em>(no children)</em></li>
+			</ul>
+		</div></div>
+		<p class="spacer"></p>
+		<!-- Pagination -->
+		<h4 class="flow-text white-t charcoal bitstream">Pagination</h4>
+		<div class="flex bitstream">
+			<div class="padded half">
+				<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/jquery.3.js</em><br /><em>core/jab/plugins/pagination.js</em></p>
+				<p>Create a list of items within a pagination interface. Show 5, 10, 15, 20, or 25 items per page. Wrap the pagination interface within container with class <strong>.paginate-<em>X</em></strong>, where <em>X</em> is either 5, 10, 15, 20, or 25.</p>
+				<h4 class="flow-text">Markup</h4>
+				<code class="black lime-t lucida padded smaller">
+					&lt;div class="paginate-<em>X</em>"&gt;<br />
+					&nbsp;&nbsp;&lt;div class="items"&gt;<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;item 1&lt;/div&gt;<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;item 2&lt;/div&gt;...<br />
+					&nbsp;&nbsp;&lt;/div&gt;<br />
+					&nbsp;&nbsp;&lt;div class="pager"&gt;<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="firstPage"&gt;first&lt;/div&gt;<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="previousPage"&gt;prev&lt;/div&gt;<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="pageNumbers"&gt;&lt;/div&gt;<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="nextPage"&gt;next&lt;/div&gt;<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="lastPage"&gt;last&lt;/div&gt;<br />
+					&nbsp;&nbsp;&lt;/div&gt;<br />&lt;/div&gt;
+				</code>
+			</div>
+			<div class="padded half">
+				<h4 class="flow-text">Default View</h4>
+				<div class="paginate-5 padded white charcoal-t">
+					<div class="items">
+						<div>Item 1</div>
+						<div>Item 2</div>
+						<div>Item 3</div>
+						<div>Item 4</div>
+						<div>Item 5</div>
+						<div>Item 6</div>
+						<div>Item 7</div>
+						<div>Item 8</div>
+						<div>Item 9</div>
+						<div>Item 10</div>
+						<div>Item 11</div>
+						<div>Item 13</div>
+						<div>Item 14</div>
+						<div>Item 15</div>
+					</div>
+					<div class="pager">
+						<div class="firstPage">&laquo;</div>
+						<div class="previousPage">&lsaquo;</div>
+						<div class="pageNumbers"></div>
+						<div class="nextPage">&rsaquo;</div>
+						<div class="lastPage">&raquo;</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		
+		<!-- MULTIMEDIA -->
+		<h3 class="fluid-text monolisk" id="media">Multimedia</h3>
+		<!-- Thumbnails -->
+		<h4 class="charcoal flow-text bitstream padded">Thumbnails</h4>
+		<div class="flex bitstream"><div class="padded half">
+			<p>Thumbnails allow you to display a list of images at a reduced size. Useful for galleries. Wrap <em>img</em> tags within a container with any of these classes:</p>
+			<h4 class="flow-text">Markup</h4>
+			<code class="black lime-t padding smaller">
+				&lt;div class="<em>size</em>-thumb"&gt;<br />
+				&nbsp;&nbsp;&nbsp;&lt;img src="URL" /&gt;&nbsp;<br />
+				&nbsp;&nbsp;&nbsp;&lt;img src="URL" /&gt;&nbsp;...<br />&lt;/div&gt;
+			</code>
+			<p class="info padded"><span class="flow-text bold">TIP:</span> Thumbnail classes can also be applied directly to the <em><b>img</b></em> or <em><b>picture</b></em> tags.</p>
+		</div><div class="padded half">
+			<div class="warning padded" style="margin-top: 1.5em;">
+				<h4 class="flow-text">Cropped &amp; Circle Thumbnails</h4>
+				<p>Crop images into even squares (regardless of their original dimensions) by applying the <span class="bigger bold">.crop</span> class in conjunction with any of the thumbnail classes!</p>
+				<p style="margin-top: 1rem;">We can also make circle thumbnails! Apply the <span class="bold bigger">.circle</span> class in conjunction with <em>.crop</em> and any thumbnail size class:<br />
+					<strong>.size-thumb.crop.circle</strong></p>
+				<div class="tiny-thumb crop circle">
+					<img src="app/files/images/brutal-building.jpg" />
+					<img src="app/files/images/brutpink.jpg" />
+					<img src="app/files/images/contemplate.jpg" />
+				</div>
+			</div>
+		</div><div class="padded half">
+			<h4 class="flow-text"><strong>.micro-thumb</strong> <small>(40px)</small></h4>
+			<div class="micro-thumb">
+				<img src="app/files/images/brutal-building.jpg" />
+				<img src="app/files/images/brutpink.jpg" />
+				<img src="app/files/images/contemplate.jpg" />
+				<img src="app/files/images/edgespace.jpg" />
+			</div>
+			<h4 class="flow-text"><strong>.tiny-thumb</strong> <small>(60px)</small></h4>
+			<div class="tiny-thumb">
+				<img src="app/files/images/brutal-building.jpg" />
+				<img src="app/files/images/brutpink.jpg" />
+				<img src="app/files/images/contemplate.jpg" />
+				<img src="app/files/images/edgespace.jpg" />
+			</div>
+			<h4 class="flow-text"><strong>.small-thumb</strong> <small>(90px)</small></h4>
+			<div class="small-thumb crop">
+				<img src="app/files/images/brutal-building.jpg" />
+				<img src="app/files/images/brutpink.jpg" />
+				<img src="app/files/images/contemplate.jpg" />
+				<img src="app/files/images/edgespace.jpg" />
+			</div>
+			<h4 class="flow-text"><strong>.medium-thumb</strong> <small>(120px)</small></h4>
+			<div class="medium-thumb crop">
+				<img src="app/files/images/brutal-building.jpg" />
+				<img src="app/files/images/brutpink.jpg" />
+				<img src="app/files/images/contemplate.jpg" />
+			</div>
+		</div><div class="padded half">
+			<h4 class="flow-text"><strong>.large-thumb</strong> <small>(150px)</small></h4>
+			<div class="large-thumb crop">
+				<img src="app/files/images/brutal-building.jpg" />
+				<img src="app/files/images/brutpink.jpg" />
+				<img src="app/files/images/contemplate.jpg" />
+			</div>
+			<h4 class="flow-text"><strong>.xlarge-thumb</strong> <small>(180px)</small></h4>
+			<div class="xlarge-thumb"><img src="app/files/images/brutal-building.jpg" /></div>
+			<h4 class="flow-text"><strong>.jumbo-thumb</strong> <small>(240px)</small></h4>
+			<div class="jumbo-thumb"><img src="app/files/images/brutal-building.jpg" /></div>
+		</div></div>
+		<p class="spacer"></p>
+		
+		<!-- Audio Player -->
+		<h4 class="flow-text charcoal padded"><i class="bi bi-vol-h"></i> Audio Player</h4>
+		<div class="flex"><div class="padded half">
+			<p class="bitstream">A brutally simple responsive audio player.</p>
+			<p class="requiresbox" style="margin-top: 1rem;"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/jquery.3.js<br />core/jab/plugins/audio-player.js</em></p>
+			<p style="margin-top: 1em;" class="padded bitstream disabled">Audio players use data attributes to specify a title and artist:<br /><strong>data-title</strong>: name of file<br /><strong>data-artist</strong>: name of artist / source</p>
+		</div><div class="padded half">
+			<h5 class="flow-text">Markup</h5>
+			<code class="padded smaller lucida">
+				&lt;audio class="baudio" data-title="" data-artist=""&gt;<br />
+				&nbsp;&nbsp;&lt;source src="" type="audio/ogg"&gt;<br />
+				&nbsp;&nbsp;&lt;source src="" type="audio/mpeg"&gt;<br />&lt;/audio&gt;
+			</code>
+			<h5 class="flow-text">DEMO:</h5>
+			<div class="padded shine">
+				<audio class="baudio" data-title="Cinemato" data-artist="Unknown Artist">
+					<!--<source src="https://www.jqueryscript.net/images/sample.ogg" type="audio/ogg">-->
+					<source src="app/files/audio/cinemato.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+		</div></div>
+		<p class="spacer"></p>
+		<!-- Video Player -->
+		<h4 class="flow-text charcoal padded"><i class="bi bi-video"></i> Video Player</h4>
+		<div class="flex"><div class="padded half">
+			<p class="bitstream">A brutally simple video player for self-hosted videos, with fullscreen viewer.</p>
+			<p class="requiresbox" style="margin-top: 1rem;"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/jquery.3.js<br />core/jab/plugins/video-player.js</em></p>
+			<p style="margin-top: 1em;" class="padded bitstream disabled">Video players use data attributes to customize their appearance:<br />
+				<strong>data-skin</strong>: <em>default</em>, <em>minimal</em> or <em>compact</em>.<br />
+				<strong>data-color</strong><small>(optional)</small>: custom hex color<br /><strong>data-title</strong><small>(optional)</small>: title of video<br />
+				<strong>data-overlay</strong>: use value 1 or 2
+			</p>
+		</div><div class="padded half">
+			<h5 class="flow-text">Markup</h5>
+			<code class="padded lucida smaller">
+				&lt;video src="" poster=""<br />&nbsp;&nbsp;data-title=""<br />
+				&nbsp;&nbsp;data-skin="default"<br />
+				&nbsp;&nbsp;data-overlay="1"<br />&nbsp;&nbsp;data-color="#ff0000"&gt;<br />
+				&lt;/video&gt;
+			</code>
+		</div></div>
+		<div class="flex flood"><div class="third padded">
+			<h5 class="navy-t tahoma water-t-s">Default DEMO</h5>
+			<video poster="" src="app/files/video/ocean.mp4" data-skin="default" data-overlay="1" data-title="Wavy Waves"></video>
+		</div><div class="third padded">
+			<h5 class="navy-t tahoma water-t-s">Minimal DEMO</h5>
+			<video poster="" src="app/files/video/ocean.mp4" data-skin="minimal" data-overlay="2"></video>
+		</div><div class="third padded">
+			<h5 class="navy-t tahoma water-t-s">Red Compact DEMO</h5>
+			<video poster="" src="app/files/video/ocean.mp4" data-color="#ff0000" data-skin="compact" data-overlay="1"></video>
+		</div></div>
+		<p class="spacer"></p>
+		<!-- GIF Player -->
+		<h4 class="flow-text charcoal padded"><i class="bi bi-play"></i> GIF Player</h4>
+		<div class="flex"><div class="padded third">
+			<p class="bitstream">A simple plugin that allows the user to play / pause an animated GIF upon click or hover.</p>
+			<p class="requiresbox" style="margin-top: 1rem;"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/jquery.3.js<br />core/jab/plugins/gif-player.js</em></p>
+			<p class="padded disabled bitstream" style="margin-top: 1em;">Apply either of these classes to an <em>img</em> tag:<br /><strong>.gifplay</strong>: play upon click<br /><strong>.gifplay-h</strong>: play upon hover</p>
+		</div><div class="padded third">
+			<h5 class="bitstream flow-text">Play Upon Click</h5>
+			<img src="app/files/images/swedekat-glitch.gif" class="gifplay responsive" alt="Glitch KAT" />
+		</div><div class="padded third">
+			<h5 class="bitstream flow-text">Play Upon Hover</h5>
+			<img src="app/files/images/swedekat-glitch.gif" class="gifplay-h responsive" alt="Glitchy Kitty" />
+		</div></div>
+		<p class="spacer"></p>
+		<!-- Presenter -->
+		<h4 class="flow-text charcoal padded"><i class="bi bi-seek-next"></i> Presenter</h4>
+		<div class="presenter half-screen">
+			<a href="#" class="slide-prev charcoal smoke-t">&laquo;</a>
+			<div class="slides">
+				<div class="slide passion"><div class="padded white-t black-t-s">
+					<h5 class="fluid-text communist">Presenter</h5>
+					<img class="shape point-left right" src="app/files/images/dune.jpg" alt="pain" style="max-height: 300px; width: auto;" />
+					<p class="flow-text bitstream">Presenter is a touch-enabled, swipe-friendly content slider! Ideal for displaying presentational content.</p>
+					<p class="bitstream flow-text" style="margin-top: 1em;">Presenter is fluid-width, so it will fit within any area. You can add as many slides as you want. By default, Presenter loops back to the beginning / end.</p>
+				</div></div>
+				<div class="slide virgin"><div class="padded center">
+					<p class="requiresbox" style="margin-top: 1rem;"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/jquery.3.js<br />core/jab/plugins/presenter.js</em></p>
+					<p class="bitstream" style="margin-top: 1em;"><strong>NOTE:</strong> You'll need to make sure jQuery is loaded.</p>
+				</div></div>
+				<div class="slide emptiness white-t"><div class="padded">
+					<h5 class="fluid-text communist">Code</h5>
+					<hr class="thick shades" />
+					<p class="bitstream flow-text">Code markup is pretty straight forward:</p>
+					<code class="padded smaller lucida lime-b b-s-t">
+						&lt;div class="presenter"&gt; <br />
+						&nbsp;&nbsp;&nbsp;&lt;a href="#" class="slide-prev"&gt;&laquo;&lt;/a&gt;<br />
+						&nbsp;&nbsp;&nbsp;&lt;div class="slides"&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="slide"&gt;...content...&lt;/div&gt;<br />
+						&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+						&nbsp;&nbsp;&nbsp;&lt;a href="#" class="slide-next"&gt;&raquo;&lt;/a&gt;<br />
+						&lt;/div&gt;
+					</code>
+				</div></div>
+				<div class="slide hottie"><div class="padded">
+					<h5 class="fluid-text communist">Specify Height</h5>
+					<p class="bitstream flow-text">The presenter height needs to be specified. Use inline style to specify a height on the <em>presenter</em> element wrapper. Alternatively, you can apply any of these classes to the <em>presenter</em> outer wrapper:<br /><br />
+					<strong>.third-screen</strong> (33% height of screen)<br /><strong>.half-screen</strong> (50% height of screen)<br /><strong>.full-screen</strong> (100% height of screen)</p>
+				</div></div>
+				<div class="slide liminal"><div class="padded">
+					<h5 class="fluid-text communist">Disable Auto-Loop</h5>
+					<p class="bitstream flow-text">To disable the auto-loop, simply append <em><strong>-noloop</strong></em> to the outer wrapper, so that:<br /><br />
+					<span class="flow-text"><b><em>presenter-noloop</em></b></span></p>
+				</div></div>
+				<div class="slide liminal"><div class="padded">
+					<h5 class="fluid-text communist">AutoPlay</h5>
+					<p class="bitstream flow-text">To enable autoplay so that slides automatically advance to the next (every 5 seconds), simply append <em><strong>-autoplay</strong></em> to the outer wrapper, so that:<br /><br /><span class="flow-text"><b><em>presenter-autoplay</em></b></span></p>
+				</div></div>
+				<div class="slide liminal"><div class="padded">
+					<h5 class="fluid-text communist">Vertical Options</h5>
+					<p class="bitstream flow-text">Slides can transition vertically. Use any of these classes as the outer wrapper:<br /><br />
+					<span class="flow-text"><b><em>.presenter-vertical<br />.presenter-vertical-noloop<br />.presenter-vertical-autoplay</em></b></span></p>
+				</div></div>
+			</div>
+			<a href="#" class="slide-next charcoal smoke-t">&raquo;</a>
+		</div>
+		<p class="spacer"></p>
+		<!-- Printer -->
+		<h4 class="flow-text charcoal padded"><i class="bi bi-print"></i> Printer</h4>
+		<div class="flex"><div class="padded half">
+			<p class="bitstream">The printer plugin makes a specific element easily printable, with a custom header and footer.</p>
+			<p class="requiresbox" style="margin-top: 1rem;"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/jquery.3.js<br />core/jab/plugins/printer.js</em></p>
+			<div class="disabled padded bitstream" style="margin-top: 1em;">
+				<p class="flow-text bold">Classes</p>
+				<p><strong>.printer</strong><br /><small>wrap content to be printed within this class</small><br />
+					<strong>.headprint</strong><br /><small>(optional) content to displayed as header</small><br />
+					<strong>.footprint</strong><br /><small>(optional) content to displayed as footer</small><br />
+					<strong>button onclick="printer();"</strong><br /><small>button to launch printer interface</small>
+				</p><hr />
+				<p><span class="bold flow-text">PUC (Print Utility Classes)</span><br />
+					<strong>.print-only</strong><br /><small>content is only displayed when being printed, but is hidden on screens</small><br />
+					<strong>.screen-only</strong><br /><small>content is hidden from being printed, and is only visible on screens</small><br />
+					<strong>.print-monochrome</strong><br /><small>applied only to print view, all text is black, and images are rendered in grayscale</small>
+				</p>
+				<h5 class="flow-text">Markup</h5>
+				<code class="padded lucida smaller">
+					&lt;div class="printer"&gt;<br />&nbsp;&nbsp;content...<br />
+					&lt;/div&gt;<br />&lt;button onclick="printer();"&gt;Print&lt;/button&gt;<br />
+					&lt;div class="headprint print-only"&gt;&lt;h1&gt;Header&lt;/h1&gt;&lt;/div&gt;<br />
+					&lt;div class="footprint print-only"&gt;&lt;p&gt;Footer&lt;/p&gt;&lt;/div&gt;
+				</code>
+			</div>
+		</div><div class="padded half">
+			<div class="padded emptiness">
+				<p class="bitstream rice-t"><span class="bold flow-text">DEMO: </span> Hit the "Print Now" button to print this section.</p>
+				<!-- Content to be printed -->
+				<div class="printer monochrome times">
+					<h4>Text To Print</h4>
+					<p>Aliquam faucibus luctus quam a placerat. Donec sit amet cursus ante. Nunc volutpat hendrerit orci non viverra. Nam iaculis vitae risus vel interdum. Phasellus tempus odio ac lectus efficitur, in porta ante vulputate. Suspendisse lobortis sem ligula, non pulvinar lectus dictum ut. Ut eu mi vitae felis semper placerat. Proin eget ante facilisis, faucibus ipsum mattis, volutpat libero. Curabitur tincidunt ex sit amet tellus tincidunt interdum a eget ipsum.</p>
+					<!-- NOT to be printed -->
+					<p class="screen-only warning"><b>This text will NOT be printed.</b></p>
+					<!-- resume printing content -->
+					<p class="indent">Sed volutpat volutpat ligula at placerat. Integer ut hendrerit arcu. Praesent id massa et turpis laoreet dictum a laoreet justo. Donec semper magna nec sapien lobortis, tincidunt auctor nunc efficitur. Nullam in massa dictum, hendrerit sem et, lacinia odio.</p>
+					<img src="app/files/images/edgespace.jpg" class="large-thumb" />
+				</div>
+				<!-- Launch printer interface -->
+				<button class="btn bold black-t" onclick="printer();">Print Now</button>
+				<!-- Custom Header (only visible for print) -->
+				<div class="headprint print-only"><h1>Header Print Test</h1></div>
+				<!-- Custom Footer (only visible for print -->
+				<div class="footprint print-only"><p>Footer print test</p></div>
+			</div>
+		</div></div>		
+		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		
+		<!-- INTERACTIONS -->
+		<h3 class="fluid-text monolisk" id="interactions">Interactions</h3>
+		<p class="bitstream">Interactions are elements that enhance user experience.</p>
+		<!-- Cursors & Resizeable Elements -->
+		<h4 class="charcoal bitstream flow-text white-t padded">Cursors & Resizeable Elements</h4>
+		<p class="bitstream">Make any element have a specific cursor type, or make any element rezizeable by the user!</p>
+		<div class="flex bitstream"><div class="padded half">
+			<h5 class="flow-text">Cursor Classes</h5>
+			<p>Apply these classes to any element. Hover for preview.</p>
+			<div class="disabled blocked padded"><span class="bold bigger">.blocked</span></div>
+			<div class="ready cell padded"><span class="bold bigger">.cell</span></div>
+			<div class="alert crosshair padded"><span class="bold bigger">.crosshair</span></div>
+			<div class="success grab padded"><span class="bold bigger">.grab</span></div>
+			<div class="info help padded"><span class="bold bigger">.help</span></div>
+			<div class="warning move padded"><span class="bold bigger">.move</span></div>
+			<div class="bubblepop pointer padded"><span class="bold bigger">.pointer</span></div>
+			<div class="mono-inv wait padded"><span class="bold bigger">.wait</span></div>
+			<div class="mint-chocolate zoom-in padded"><span class="bold bigger">.zoom-in</span></div>
+			<div class="campfire zoom-out padded"><span class="bold bigger">.zoom-out</span></div>
+		</div><div class="padded half">
+			<h5 class="flow-text">Resize Elements</h5>
+			<p>Apply these classes to make any element resizeable by the user.</p>
+			<div class="padded info blue-b b-s-t resize-both"><span class="bold bigger">.resize-both</span><br />
+				Resize the element both vertically and horizontally.</div>
+			<div class="padded ready orange-b b-s-t resize-h"><span class="bold bigger">.resize-h</span><br />
+				Resize the element horizontally only.</div>
+			<div class="padded disabled grey-b b-s-t resize-v"><span class="bold bigger">.resize-v</span><br />
+				Resize the element vertically only.</div>
+		</div></div>
+		<p class="spacer"></p>
+		<!-- Preview Hover -->
+		<h4 class="charcoal bitstream flow-text white-t padded">Preview Hover</h4>
+		<div class="flex bitstream"><div class="padded half">
+			<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/buix/link-previewer.js</em></p>
+			<p>Add hoverable video and image previews to any element.</p>
+			<h5 class="flow-text">Markup</h5>
+			<p>Markup is simple! Simply apply the class <strong><em>.ph</em></strong> and a <em>data-src</em> attribute, like so:</p>
+			<code class="black lime-t padding smaller">
+				&lt;element class="ph" data-src="./file-url"&gt;&lt;/element&gt;
+			</code>
+			<p class="padded info"><strong>Supported File Types:</strong> .jpg, .jpeg, .png, .ico, .gif, .svg, .bmp, .webp, .mp4, .webm</p>
+		</div><div class="padded half">
+			<p><strong>Demo:</strong> Hover over each of the elements below.</p>
+			<button href="#" class="ph btn small-btn red-t heavy" data-src="app/files/images/blinker-fluid.jpg">Blinker Fluid Button</button>&nbsp;&nbsp;
+			<img class="ph small-thumb circle" data-src="app/files/images/blinker-fluid.jpg" alt="Blinker Fluid" src="app/files/images/blinker-fluid.jpg" /><br />
+		</div></div>
+		<p class="spacer"></p>
+		
+		<!-- REVEAL -->
+		<div class="flex bitstream"><div class="padded half">
+			<h4 class="flow-text bitstream charcoal white-t padded">Hover Reveal</h4>
+			<p><em>Reveal.hover</em> reveals hidden content upon hovering over an element!</p>
+			<p>The reveal container starts at a maximum width of 50% of the container it is wrapped within, and enlarges to 100% width upon hover while also revealing a caption.</p>
+			<p class="info padded"><span class="heavy">.reveal</span> (wrap content within this class)<br />
+				&nbsp;&nbsp;&nbsp;<span class="heavy">.secret</span> (hidden content to be revealed upon hover)</p>
+			<div class="flex" style="margin-top: 2em;"><div class="padded half">
+				<div class="reveal hover orange-cream">
+					<p class="lucida heavy flow-text center">Hover Over Me!</p>
+					<p class="arial secret center">I'm a <span class="heavy">SECRET</span>!</p>
+				</div>
+			</div><div class="padded half">
+				<div class="reveal hover orange-cream">
+					<img src="app/files/images/contemplate.jpg" class="medium-thumb" />
+					<p class="arial secret">SECRET - only visible upon hover!</p>
+				</div>
+			</div></div>
+		</div><div class="padded half">
+			<h4 class="flow-text bitstream charcoal white-t padded">Tooltip Reveal</h4>
+			<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br />core/jab/buix/tooltip-reveal.js</em></p>
+			<p><em>Tooltip Reveal</em> applies a mouse-tracking tooltip to any element that uses a <em>data-tooltip</em> attribute.</p>
+			<p><span class="flow-text"><strong>DEMO:</strong></span><br />Hover over the image below to see tooltip follow your cursor around.</p>
+			
+			<img src="app/files/images/contemplate.jpg" class="responsive" alt="Concrete Contemplation" data-tooltip="Concrete Contemplation" />
+			<div id="tooltip-reveal" class="tooltip-hide"></div>
+			
+			<p><span class="flow-text"><strong>Markup</strong></span><br />Apply a <em>data-tooltip</em> attribute to any element, and include the following div element somewhere only once on a page:</p>
+			<code class="black lime-t lucida padding"><small>
+				&lt;div id="tooltip-reveal" class="tooltip-hide"&gt;&lt;/div&gt;<br />
+			</small></code>
+			
+		</div></div>
+		<p class="spacer"></p>
+		
+		<!-- DRAGGABLE ELEMENTS -->
+		<h4 class="flow-text charcoal bitstream white-t padded">Draggable Elements</h4>
+		<div class="flex bitstream">
+			<div class="padded half">
+				<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/jquery.3.js<br />core/jab/plugins/draggable.js</em></p>
+				<p>Make any element draggable! Simply apply the class <span class="heavy flow-text">.draggable</span> to any element.</p>
+				<p class="info padded" style="margin-top: 2em;"><span class="bigger bold">Draggable Modals</span><br />Make a modal draggable just by adding the class <em>draggable</em> to the modal inner wrapper:<br /><span class="bold">.modal-inner.draggable</span></p>
+			</div>
+			<div class="padded half">
+				<h4 class="flow-text"><strong>DEMO:</strong> <em>Draggable Bricks</em></h4>
+				<p>In the example below, we have two draggable brick elements, which can be dragged anywhere, including outside of the <em>bricks</em> container.</p>
+				<!-- Draggable Bricks -->
+				<div class="rounded padded b-a-k silver charcoal-b bricks brix-demo" style="min-height: 25vh;">
+					<div class="draggable">Drag Me</div>
+					<div class="draggable b-d-t smoke-b"><img src="app/files/images/dune.jpg" class="medium-thumb" /><br /><small>move me</small></div>
+				</div>
+			</div>
+		</div>
+		<p class="spacer"></p>
+		<!-- Content Display Picker -->
+		<h4 class="flow-text bitstream charcoal white-t padded">CDP: Content Display Picker</h4>
+		<div class="flex bitstream">
+			<div class="padded half">
+				<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/jquery.3.js<br />core/jab/plugins/cdp.js</em></p>
+				<p>Display content when an option is selected.</p>
+				<h5 class="flow-text">Markup</h5>
+				<code class="black lime-t lucida-t padding smaller">
+					&lt;div class="cdp-wrap" id="unique-id"&gt;<br />
+					&nbsp;&nbsp;&lt;select class="cdp_select"&gt;<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="0"&gt;Content 1&lt;/option&gt;<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="1"&gt;Content 2&lt;/option&gt;<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="2"&gt;Content 3&lt;/option&gt;...<br />
+					&nbsp;&nbsp;&lt;/select&gt;<br /><br />
+					&nbsp;&nbsp;&lt;div class="content"&gt;<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cdp-element" data-option="0"&gt;<br />...Option 1 Content...&lt;/div&gt;<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cdp-element" data-option="1"&gt;<br />...Option 2 Content...&lt;/div&gt;<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cdp-element" data-option="2"&gt;<br />...Option 3 Content...&lt;/div&gt;<br />
+					&nbsp;&nbsp;&lt;/div&gt;<br />&lt;/div&gt;
+				</code>
+			</div>
+			<div class="padded half">
+				<h5 class="flow-text">Demo:</h5>
+				<div class="cdp-wrap" id="cdp1">
+					<select class="cdp_select flow-text charcoal lime-t">
+						<option value="0">Content 1</option>
+						<option value="1">Content 2</option>
+						<option value="2">Content 3</option>
+					</select>
+					<div class="content">
+						<div class="cdp_element" data-option="0">
+							<div class="padded ireland flow-text seaweed-t bold">Win a trip to Ireland!</div>
+						</div>
+						<div class="cdp_element" data-option="1">
+							<div class="padded sweden-gradient flow-text white-t bold">Win a trip to Sweden!</div>
+						</div>
+						<div class="cdp_element" data-option="2">
+							<div class="padded octoberfest flow-text black-t comic bold">Win a Beer Party!</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p class="spacer"></p>
+		<!-- B-Loader -->
+		<h4 class="flow-text charcoal bitstream white-t padded">B-Loader</h4>
+		<div class="flex bitstream"><div class="padded half">
+			<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/jquery.3.js<br />core/jab/plugins/b-loader.js</em></p>
+			<p style="margin-bottom: 1em;">Load more list items upon button press!</p>
+			<p class="padded info">Simply create a list of <strong>div, p, li</strong> or <strong>article</strong> elements, wrapped within a <strong><em>.b-loader</em></strong> class container!
+			<br /><br />By default, <em>b-loader</em> displays 5 items at a time. This can be modified in the <em>start.brutalizing.js</em> initialization script.
+			<br /><br />To <em>hide</em> the counter within the "load more" button, add the class <em><strong>no-counter</strong></em> to the <em>b-loader</em> wrapper.
+			</p>
+		</div><div class="padded half">
+			<h5 class="flow-text">DEMO:</h5>
+			<div class="b-loader vanilla charcoal-t padded">
+				<div>List Item 1</div>
+				<div>List Item 2</div>
+				<div>List Item 3</div>
+				<div>List Item 4</div>
+				<p>List Item 5 (Paragraph)</p>
+				<div>List Item 6</div>
+				<div>List Item 7</div>
+				<div>List Item 8</div>
+				<div>List Item 9</div>
+				<p>List Item 10 (Paragraph)</p>
+				<div>List Item 11</div>
+				<div>List Item 12</div>
+				<div>List Item 13</div>
+				<div>List Item 14</div>
+				<div>List Item 15</div>
+				<div>List Item 16</div>
+				<div>List Item 17</div>
+				<div>List Item 18</div>
+				<div>List Item 19</div>
+				<p>List Item 20 (Paragraph)</p>
+				<div>List Item 21</div>
+				<div>List Item 22</div>
+				<div>List Item 23</div>
+				<div>List Item 24</div>
+				<div>List Item 25</div>
+				<div>List Item 26</div>
+				<div>LAST List Item 27</div>
+			</div>
+		</div></div>
+		<p class="spacer"></p>
+		<!-- H-Scroll -->
+		<h4 class="charcoal bitstream flow-text white-t padded">H-Scroll</h4>
+		<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/buix/h-scroll.js</em></p>
+		<p class="bitstream">H-Scroll is an interactive element that allows the user to horizontal scroll content by holding down buttons on either side of the scrollable content.</p>
+		<div class="flex"><div class="padded half">
+			<h5 class="flow-text bitstream">Markup</h5>
+			<code class="black lime-t lucida-t padding smaller">
+				&lt;div class="h-scroll"&gt;<br />
+				&nbsp;&nbsp;&lt;button class="h-scroll-btn h-scroll-btn-left"&gt;left&lt;/button&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class="h-scroll-list"&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ITEM 1&lt;/li&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ITEM 2&lt;/li&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="h-scroll-btn h-scroll-btn-right"&gt;right&lt;/button&gt;<br />
+				&lt;/div&gt;
+			</code>
+		</div><div class="padded half bitstream">
+			<p class="disabled padded box-s"><span class="flow-text"><strong></strong>Hide Scroll Bar</span><br />
+				To hide the scroll bar, apply the class <strong><em>.hide-scrollbar</em></strong> to the <em>h-scroll</em> wrapper, so that:<br /><br />
+			<strong>.h-scroll.hide-scrollbar</strong></p>
+		</div></div>
+		<h5 class="flow-text bitstream"><strong>DEMO</strong></h5>
+		<div class="h-scroll">
+			<button class="h-scroll-btn h-scroll-btn-left flow-text">&laquo;</button>
+			<ul class="h-scroll-list">
+				<li class="katherine b-d-k o-s-t communist"><h3><i class="bi bi-cat lighten bi-2x"></i><br />KAT</h3><p><strong>litterbox</strong></p></li>
+				<li class="dune b-s-t"><h3 class="monolisk"><strong>DUNEbox</strong></h3><p class="depixel">Spice expands<br />consciousness.</p></li>
+				<li class="water-fairy teal-t times center"><h3><strong>FACT:</strong></h3>
+					<p><i class="bi bi-fairy bi-2x teal-t-s"></i><i class="bi bi-wet bi-2x teal-t-s"></i><br /><em>water fairies <i class="bi bi-heart-black"></i> being wet</em></p></li>
+				<li class="rebecca white-t times"><span class="flow-text"><strong>BekahBox</strong></span><br /><strong>rebeccapurple</strong> is a <em>real</em> and <em>captivating</em> color.<br />
+					[hex: <strong>#663399</strong>]<br /><i class="bi bi-bouquet bi-2x"></i><i class="bi bi-exotic bi-2x"></i></p></li>
+				<li class="olive mushroom-t bitstream">Olives &amp; <i class="bi bi-mushroom bi-3x"></i> make me <i class="bi bi-strong"></i></li>
+				<li class="depixel terminal blue-t-s"><p class="fluid-text-h2">I'm a Fluid-Text Example</p></li>
+				<li class="alert fluid-text communist"><strong>THE<br />END</strong></li>
+			</ul>
+			<button class="h-scroll-btn h-scroll-btn-right flow-text">&raquo;</button>
+		</div>
+		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		
+		<!-- MODALS -->
+		<h3 class="fluid-text monolisk" id="modals">Modals</h3>
+		<p class="bitstream">Modals are popup boxes that open when a user clicks on a link. There are two types of Modals: <em>Vanilla</em> and <em>Lite</em>.</p>
+		<h4 class="flow-text bitstream white-t charcoal">Vanilla Modals</h4>
+		<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/buix/modal.js</em></p>
+		<p class="bitstream">Vanilla modals use plain vanilla javascript (no dependencies). Display a modal with any type of content. Users can close the modal either by clicking anywhere outside of it, or the X in the top right corner. There are three components that are needed.</p>
+		<div class="flex bitstream"><div class="half padded">
+			<h4 class="flow-text"><strong>STEP 1:</strong> Create Modal Content</h4>
+			<p>Wrap your content within this markup. This is what will be displayed within the modal. <em><strong>NOTE:</strong> Content will need to be set to a max-width.</em></p>
+			<code class="black lime-t lucida padding smaller">
+				&lt;div id="unique-modal-id" style="display: none;"&gt;<br /><br />
+				&nbsp;...content...&nbsp;<br /><br />
+				&lt;/div&gt;
+			</code>
+			<h4 class="flow-text"><strong>STEP 2:</strong> Initiate Modal Box</h4>
+			<p>This only needs to be included ONCE on the page. It loads the modal content within it. Place this after the main body content, but before any <em>script</em> tags.</p>
+			<code class="black lime-t lucida padding smaller">
+				&lt;div class="modal"&gt;<br />
+				&nbsp;&lt;div class="modal-inner"&gt;<br />
+				&nbsp;&nbsp;&lt;span data-modal-close&gt;&times;&lt;/span&gt;<br />
+				&nbsp;&nbsp;&lt;div class="modal-content"&gt;&lt;/div&gt;<br />
+				&nbsp;&lt;/div&gt;<br />
+				&lt;/div&gt;
+			</code>
+			<h4 class="flow-text"><strong>STEP 3:</strong> Launch Modal</h4>
+			<p>Simply create a link with a unique ID and <em>data-modal-open</em> attribute to launch the modal.</p>
+			<code class="black lime-t lucida padded smaller">
+				&lt;a href="unique-modal-id" data-modal-open&gt;Open Modal&lt;/a&gt;
+			</code>
+		</div><div class="half padded">
+			<h4 class="flow-text">Examples</h4>
+			<!-- Links to launch modals -->
+			<p class="flow-text">
+				+ <a href="#modal-1" data-modal-open>Single Image</a><br />
+				+ <a href="#modal-yt" data-modal-open>YouTube Video</a><br />
+				+ <a href="#modal-2" data-modal-open>Basic Content</a>
+			</p>
+		</div></div>
+		<!-- Image Demo Modal -->
+		<div id="modal-1" style="display:none;">
+			<img src="app/files/images/contemplate.jpg" style="max-width: 478px; height: auto !important;" alt="Contemplation" />
+		</div>
+		<!-- YouTube Video Demo Modal -->
+		<div id="modal-yt" style="display:none;"><div class="flex" style="max-width: 620px;">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/8XWX5EIxBz8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div></div>
+		<!-- Content Demo Modal -->
+		<div id="modal-2" style="display:none;">
+			<div class="flex blue" style="max-width: 768px;">
+				<div class="padded half sweden lucida">
+					<h5>Left Column</h5>
+					<p>This is a two-column layout modal, with the width restricted to 768px. This is the left side.</p>
+				</div>
+				<div class="padded half sweden-gradient">
+					<h5 class="lucida white-t">Right Column</h5>
+					<p class="bold lucida white-t">Here is a thumbnail image for you stare at.<br /><img class="xlarge-thumb" src="app/files/images/dune.jpg" alt="Think Brutalism" /></p>
+				</div>
+			</div>
+		</div>
+		<p class="spacer"></p>
+		
+		<!-- LITE MODALS -->
+		<h4 class="charcoal bitstream flow-text white-t" id="modals-lite">Lite Modals</h4>
+		<p class="bitstream">Pure CSS modals for simple and lightweight content!</p>
+		<div class="flex bitstream"><div class="padded half">
+			<h4 class="flow-text">Create Modal Content</h4>
+			<p>Wrap your content within this markup.</p>
+			<code class="black lime-t lucida padding smaller">
+				&lt;div id="unique-id" class="modal-lite"&gt;<br />
+				&nbsp;&nbsp;&lt;a href="javascript:history.go(-1)" class="close"&gt;&amp;#10006;&lt;/a&gt;<br />
+				&nbsp;&nbsp;&lt;div class="modal-content"&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="header"&gt;..heading..&lt;/div&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="body"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;..body content..<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="footer"&gt;..footer..&lt;/div&gt;<br />
+				&nbsp;&nbsp;&lt;/div&gt;<br />&lt;/div&gt;
+			</code>
+			<h4 class="flow-text">Launch Modal</h4>
+			<p>Just link to the corresponding unique ID!</p>
+			<code class="black lime-t lucida padded smaller">&lt;a href="#unique-id"&gt;Launch Modal&lt;/a&gt;</code>
+			<h4 class="flow-text">Examples</h4>
+			<a href="#lm-1" class="btn btn-large yellow blue-t invert-h">Lite Modal</a>
+			<a href="#lm-2" class="btn btn-large sweden invert-h">Fullscreen Lite Modal</a>
+				
+			<!-- lite modal demo -->
+			<div id="lm-1" class="modal-lite">
+				<a href="javascript:history.go(-1)" class="close">&#10006;</a>
+				<div class="modal-content">
+					<div class="header sweden"><h5 class="flow-text">Concrete Contemplation</h5></div>
+					<div class="body" style="max-width: 468px;">
+						<img src="app/files/images/contemplate.jpg" class="responsive" alt="contemplate" />
+					</div>
+					<div class="footer disabled"><p class="right-align flow-text heavy"><a href="javascript:history.go(-1)">&laquo; BACK</a></p></div>
+				</div>
+			</div>
+			
+			<!-- lite modal full demo -->
+			<div class="modal-lite" id="lm-2">
+				<a href="javascript:history.go(-1)" class="close">&#10006;</a>
+				<div class="modal-content full">
+					<div class="header midnight"><h5 class="flow-text">FULL Lite Modal</h5></div>
+					<div class="body scroll-y">
+						<h4 class="fittext monolisk glitchtext midnight-t center">FULLSCREEN!</h4>
+						<p class="flow-text grey-t center arial">I am a fullscreen modal, taking up the entire viewport.<br /><br />
+							Did you know you can link between Lite Modals?<br />Simply link to their respective IDs.<br /><br /><a href="#lm-1" class="sweden invert-h">#lm-1</a><br /><br /></p>
+						<h4 class="fittext monolisk glitchtext midnight-t center">SCROLLABLE</h4>
+						<p class="flow-text grey-t center arial">This modal body container is scrollable.</p>
+						<p class="spacer"></p>
+						<p class="center flow-text grey-t arial">LOREM IPSUMS:</p>
+						<p class="col2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+						<p class="col2" style="margin: 1em 0 1.5em 0;">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh.</p>
+					</div>
+					<div class="footer disabled"><p class="left-align heavy flow-text"><a href="javascript:history.go(-1)">&laquo; BACK</a></p></div>
+				</div>
+			</div>
+		</div><div class="padded half">
+			<p class="padded info"><span class="flow-text bold">Customize</span><br />By default, no backgrounds or other colors are applied. Apply any flavors classes as necessary to any of the modal elements. <br /><br /><span class="flow-text bold">Closing Modals</span><br />
+				Optionally link the modal footer button to a unique ID within the page, so the user is returned to a specific point on the page.<br /><br />
+			<span class="flow-text bold">Fullscreen</span><br />To create a fullscreen modal, apply the class <b>.full</b> to the <em>.modal-content</em> container.<br /><br />
+			<span class="flow-text bold">Scrollable</span><br />Ideal for fullscreen modals, make the modal body content vertically scrollable by applying the class <b>.scroll-y</b> to the <em>.modal-content .body</em> container.</p>
+		</div></div>
+		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+
+
+		<!-- TABS -->
+		<h3 class="fluid-text monolisk" id="tabs">Tabs (CSS-only)</h3>
+		<div class="flex bitstream"><div class="padded half">
+			<div class="tabs">
+				<input type="radio" name="tabgroup1" id="tab1" checked="checked">
+				<label for="tab1">Welcome</label>
+				<div class="tab">
+					<h4 class="flow-text">Pure CSS Tabs!</h4>
+					<p><img src="app/files/images/contemplate.jpg" alt="Comprehend Brutalism" class="right xlarge-thumb b-b-t blue-b rounded" />
+					These tabs are purely CSS-based, and use variables to control the default colors.<br /><br />Multiple groups of tabs can be placed on the same page.</p>
+				</div>
+					
+				<input type="radio" name="tabgroup1" id="tab2">
+				<label for="tab2">Custom Layout</label>
+				<div class="tab">
+					<h4 class="flow-text">Tab with Custom Layout</h4>
+					<p>This tab has a 2-column layout using the flexbox.</p>
+					<div class="flex" style="margin-top: 1em;">
+						<div class="padded half navy-blue orange-t"><h5>Column 1</h5></div>
+						<div class="padded half midnight"><h5>Column 2</h5></div>
+					</div>
+				</div>
+					
+				<input type="radio" name="tabgroup1" id="tab3">
+				<label for="tab3">Markup</label>
+				<div class="tab brickbuild">
+					<h4>Markup</h4>
+					<code class="padded smaller">
+						&lt;div class="tabs"&gt; <span class="blue-candy-text">/* outer wrapper */</span><br />
+						<span class="azure-t">/* Tab 1 */</span><br />
+						&nbsp;&nbsp;&nbsp;&lt;input type="radio" name="tabgroup1" id="tab1" checked="checked"&gt;<br />
+						&nbsp;&nbsp;&nbsp;&lt;label for="tab1" class=""&gt;Tab One&lt;/label&gt;<br />
+						&nbsp;&nbsp;&nbsp;&lt;div class="tab"&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...content...<br />
+						&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+						<span class="azure-t">/* Tab 2 */</span><br />
+						&nbsp;&nbsp;&nbsp;&lt;input type="radio" name="tabgroup1" id="tab2" checked="checked"&gt;<br />
+						&nbsp;&nbsp;&nbsp;&lt;label for="tab2" class=""&gt;Tab One&lt;/label&gt;<br />
+						&nbsp;&nbsp;&nbsp;&lt;div class="tab"&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...content...<br />
+						&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+						&lt;/div&gt;
+					</code>
+				</div>
+			</div>
+		</div><div class="padded half">
+			<div class="tabs">
+				<input type="radio" name="tabgroup2" checked="checked" id="tab4">
+				<label for="tab4">Tab Group 2</label>
+				<div class="tab">
+					<h4 class="flow-text">Tab Group #2</h4>
+					<p>This is the 2nd set of tabs on this page. Below is a 2-column justified paragraph:</p>
+					<p class="col2 gap30 indent justify times" style="margin-top: 1em;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+				<input type="radio" name="tabgroup2" id="tab5">
+				<label for="tab5">Customized</label>
+				<div class="tab">
+					<h4 class="flow-text">Customized Tabs</h4>
+					<p>When applying custom CSS to a specific group of tabs, specify styles according to their group name:</p>
+					<p class="terminal"><strong><span class="azure-t">/* tabs */</span><br /><small>.tabs input[name="<em>groupname</em>"] + label {}</small><br />
+					<span class="azure-t">/* selected tab */</span><br /><small>.tabs input[name="<em>groupname</em>"]:checked + label {}</small><br />
+					<span class="azure-t">/* tab content */</span><br /><small>.tabs input[name="<em>groupname</em>"]:checked + label + .tab {}</small>
+					</strong></p>
+				</div>
+			</div>
+		</div></div>
+		<p class="spacer"></p>
+		<h3 class="fluid-text monolisk" id="tabs">B-Tabs</h3>
+		<div class="flex bitstream"><div class="padded half">
+			<p class="flow-text"><strong>Horizontal B-Tabs</strong></p>
+			<ul class="b-tabs tabs-h">
+				<li data-title="Intro" class="tab-content">
+					<h4 class="flow-text">Vanilla JS Tabs</h4>
+					<p>B-Tabs use vanilla javascript to create a tabbed interface in three formats:</p>
+					<ul class="check"><li>Vertical</li><li>Horizontal</li><li>Accordion</li></ul>
+					<p style="margin: 1rem 0 1rem 0;">Horizontal and vertical tabs become an accordion on screen sizes 840px and down.</p>
+					<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/buix/b-tabs.js</em></p>
+				</li>
+				<li data-title="Markup" class="tab-content">
+					<p>Markup is simple:</p>
+					<code class="padded smaller">
+						&lt;ul class="b-tabs tabs-<em>X</em>"&gt;<br />
+						<span class="azure-t">/* Tab 1 */</span><br />
+						&nbsp;&nbsp;&nbsp;&lt;li data-title="<em>TAB 1 TITLE</em>" class="tab-content"&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...content...<br />
+						&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br />
+						<span class="azure-t">/* Tab 2 */</span><br />
+						&nbsp;&nbsp;&nbsp;&lt;li data-title="<em>TAB 2 TITLE</em>" class="tab-content"&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...content...<br />
+						&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br />
+						&lt;/ul&gt;
+					</code>
+					<p>Where <em>X</em> is either <em>a</em>, <em>h</em>, or <em>v</em>.</p>
+				</li>
+			</ul>
+		</div><div class="padded half">
+			<p class="flow-text"><strong>Vertical B-Tabs</strong></p>
+			<ul class="b-tabs tabs-v">
+				<li data-title="Classes" class="tab-content">
+					<h4 class="flow-text">B-Tabs Classes</h4>
+					<p><strong>.tabs-h</strong> <small>[horizontal tabs]</small><br /><strong>.tabs-v</strong> <small>[vertical tabs]</small><br />
+					<strong>.tabs-a</strong> <small>[accordion tabs]</small></p>
+				</li>
+				<li data-title="Nesting" class="tab-content">
+					<div class="tabs">
+						<input type="radio" name="tabgroup3" checked="checked" id="tab6">
+						<label for="tab6">Nesting CSS Tabs</label>
+						<div class="tab">
+							<p>You can nest CSS tabs within a B-Tabs tab, allowing for a more compact content interface.</p>
+						</div>
+						<input type="radio" name="tabgroup3" id="tab7">
+						<label for="tab7">Notes</label>
+						<div class="tab">
+							<p>By default, the first B-Tab tab is always active. </p>
+						</div>
+					</div>
+				</li>
+				<li data-title="Tiny" class="tab-content"><h4>Tiny Tab</h4><img src="app/files/images/contemplate.jpg" class="tiny-thumb" /></li>
+			</ul>
+			<p class="flow-text" style="margin-top: 1.5em;"><strong>Accordion B-Tabs</strong></p>
+			<ul class="b-tabs tabs-a">
+				<li data-title="Fact 1" class="tab-content">
+					<p class="padded">Accordion tabs could be useful for a FAQs area!</p>
+				</li>
+				<li data-title="Fact 2" class="tab-content">
+					<p class="padded">CSS tabs could be nested within an accordion item!</p>
+				</li>
+				<li data-title="Fact 3" class="tab-content">
+					<p class="padded">B-Tabs use flexbox, so tabs will auto-fit content.</p>
+				</li>
+			</ul>
+		</div></div>
+		<p class="spacer"></p>
+		<p class="spacer"></p>
+	</div>
+</div>
+
+<footer class="brickbuild bitstream center" style="border-top: 14px solid #000; padding: 0 0 10vh 0;">
+	<div class="shape semicircle south padded emptiness flex column smoke-t center" style="height: 100%; max-width: 768px; margin: 0 auto; border-bottom: 3px solid #000;">
+		<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="evergreen smoke-t invert-h">Pine Creative Labs</a> production</p>
+		<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-t invert-h">Brad Fogelstrom</span></a></p>
+		<ul class="tags" style="margin-bottom: 0.75rem;">
+			<li><a href="https://github.com/pinecreativelabs" target="_blank" class="btn box-s black white-t invert-h"><strong>GitHub</strong></a></li>
+		</ul>
+		<a href="http://eepurl.com/cEW1RX" target="_blank" class="sweden-gradient invert-h" style="width: 100%;">
+			<span class="white-t"><i class="bi bi-amp"></i>Brutal Blast /<span class="blink-182">/</span>/<span class="blink">/</span>/</span><br />
+			<small><strong>Subscribe to our e-newsletter. &raquo;</strong></small>
+		</a>
+		<p class="white-t" style="margin: 1rem 0 1rem 0;"><small>Brutalist Framework &copy; 2025</small></p>
+	</div>
+</footer>
+
+<!-- Initiate and display modal itself -->
+<div class="modal"><div class="modal-inner">
+	<span data-modal-close>&times;</span>
+	<div class="modal-content"></div>
+</div></div>
+
+<!-- vanilla javascript -->
+<script src="core/jab/bfx/baffle.js" type="text/javascript"></script>
+<script src="core/jab/buix/tooltip-reveal.js" type="text/javascript"></script>
+<script src="core/jab/buix/modal.js" type="text/javascript"></script>
+<script src="core/jab/buix/h-scroll.js" type="text/javascript"></script>
+<script src="core/jab/buix/link-previewer.js" type="text/javascript"></script>
+<script src="core/jab/buix/tree-list.js" type="text/javascript"></script>
+<script src="core/jab/buix/b-tabs.js" type="text/javascript"></script>
+
+<!-- jquery plugins -->
+<script src="core/jab/jquery.3.js" type="text/javascript"></script>
+<script src="core/jab/plugins/audio-player.js" type="text/javascript"></script>
+<script src="core/jab/plugins/b-loader.js" type="text/javascript"></script>
+<script src="core/jab/plugins/cdp.js" type="text/javascript"></script>
+<script src="core/jab/plugins/draggable.js" type="text/javascript"></script>
+<script src="core/jab/plugins/gif-player.js" type="text/javascript"></script>
+<script src="core/jab/plugins/pagination.js" type="text/javascript"></script>
+<script src="core/jab/plugins/presenter.js" type="text/javascript"></script>
+<script src="core/jab/plugins/printer.js" type="text/javascript"></script>
+<script src="core/jab/plugins/video-player.js" type="text/javascript"></script>
+
+</body>
+</html>

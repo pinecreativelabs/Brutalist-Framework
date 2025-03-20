@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Sudbury Basin 3D';
+    src: url('SudburyBasin3D-Regular.eot');
+    src: url('SudburyBasin3D-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SudburyBasin3D-Regular.woff2') format('woff2'),
+        url('SudburyBasin3D-Regular.woff') format('woff'),
+        url('SudburyBasin3D-Regular.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'Sudbury Basin';
+    src: url('SudburyBasin-Regular.eot');
+    src: url('SudburyBasin-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SudburyBasin-Regular.woff2') format('woff2'),
+        url('SudburyBasin-Regular.woff') format('woff'),
+        url('SudburyBasin-Regular.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.sudbury{font-family: 'Sudbury Basin';}
+.sudbury-3d{font-family: 'Sudbury Basin 3D';}

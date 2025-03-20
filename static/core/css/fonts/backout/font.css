@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'BackOutWeb';
+    src: url('BackOutWeb.eot');
+    src: url('BackOutWeb.eot?#iefix') format('embedded-opentype'),
+        url('BackOutWeb.woff2') format('woff2'),
+        url('BackOutWeb.woff') format('woff'),
+        url('BackOutWeb.ttf') format('truetype');
+    font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'BackOutPrint';
+    src: url('BackOutPrint.eot');
+    src: url('BackOutPrint.eot?#iefix') format('embedded-opentype'),
+        url('BackOutPrint.woff2') format('woff2'),
+        url('BackOutPrint.woff') format('woff'),
+        url('BackOutPrint.ttf') format('truetype');
+    font-weight: 500; font-style: normal; font-display: swap;
+}
+.backout{font-family: 'BackOutWeb';}
+.backout-print{font-family: 'BackOutPrint';}

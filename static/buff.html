@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	
+	<title>BUFF</title>
+	<meta name="description" content="Blender Utility for Filters: CSS blends and filters library." />
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="BUFF" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content="A free open source CSS library for the brutalist web design trend." /> 
+	<meta property="og:site_name" content="Brutalist Framework" />
+	
+	<!-- Icons -->
+	<link rel="icon" href="core/files/favicon-16.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="core/files/favicon-32.png" type="image/png" />
+	<link rel="apple-touch-icon" href="core/files/favicon-128.png" type="image/png" />
+	
+	<!-- CORE CSS  -->
+	<link href="core/css/construct.css" type="text/css" rel="stylesheet" media="all"/>
+	<!-- Theme CSS -->
+	<link href="app/theme/css/theme.css" type="text/css" rel="stylesheet" media="all" />
+	
+</head>
+<body>
+<!-- MAIN MENU -->
+<div class="blonk-tr shape quadrant bottom-left flex middle sand" style="z-index: 10002;">
+	<button class="reveal-overlay" id="reveal-nav" aria-controls="primary-menu" aria-expanded="false">
+	  <span class="topbar charcoal"></span><span class="middlebar charcoal"></span><span class="bottombar charcoal"></span>
+	</button>
+</div>
+<div class="overlay" id="overlay-nav">
+	<div class="wrap-960 monolisk" style="margin-top: 1.5rem;"><div class="checkerboard padded" style="border-radius: 1rem;"><div class="padded emptiness">
+		<ul class="flex flow-text">
+			<li class="third"><a href="index.html"><i class="bi bi-home"></i> HOME</a></li>
+			<li class="third"><a href="about.html"><i class="bi bi-info"></i> About BF</a></li>
+			<li class="third"><a href="https://www.brutalcms.com" target="_blank"><i class="bi bi-communist black red-t"></i> Brutal CMS</a></li>
+		</ul>
+		<ul class="flow-text flex" style="border-top: 2px solid #fff; padding-top: 8px;">
+			<li class="third"><a href="bfx.html"><i class="bi bi-sparkle"></i> BFX</a></li>
+			<li class="third"><a href="bicons.html"><i class="bi bi-flag"></i> bIcons</a></li>
+			<li class="third current"><a href="buff.html"><i class="bi bi-fill"></i> BUFF</a></li>
+			<li class="third"><a href="buix.html"><i class="bi bi-navigate"></i> BUIX</a></li>
+			<li class="third"><a href="butch.html"><i class="bi bi-pick"></i> BUTCH</a></li>
+			<li class="third"><a href="flavors.html"><i class="bi bi-cone"></i> Flavors</a></li>
+			<li class="third"><a href="fux.html"><i class="bi bi-box-x"></i> FUX</a></li>
+			<li class="third"><a href="grids.html"><i class="bi bi-quadrant"></i> Grids</a></li>
+			<li class="third"><a href="rebar.html"><i class="bi bi-converge-left"></i> ReBAR</a></li>
+		</ul>
+	</div><div class="padded emptiness" style="margin-top: 1.25rem;">
+		<ul class="flex flow-text">
+			<li class="third"><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank">Roadmap</a></li>
+			<li class="third"><a href="https://github.com/pinecreativelabs" target="_blank">Github</a></li>
+			<li class="third"><a href="https://www.instagram.com/brutalistfwk" target="_blank">Instagram</a></li>
+		</ul>
+		<ul class="flex flow-text" style="width: 100%; border-top: 2px solid #fff; padding-top: 8px;">
+			<li class="half"><a href="https://www.blueprintgrid.com" target="_blank"><i class="blueprint bi bi-grid"></i> Blueprint Grid</a></li>
+			<li class="half"><a href="https://www.brutalistwebdesign.com" target="_blank"><i class="bi bi-reference lemon black-t"></i> Reference Guides</a></li>
+		</ul>
+	</div></div></div>
+</div>
+<script>
+document.querySelector("#reveal-nav").addEventListener("click", function() {
+  this.classList.toggle("active");
+  document.querySelector("#overlay-nav").classList.toggle("open");
+})
+</script>
+<a href="#uptop" class="blonk-cr blood shape semicircle west white-t monolisk lighten-h"><i class="bi bi-up bi-3x"></i><br /><strong>top</strong></a>
+
+<!-- PAGE -->
+<header class="brickbuild padded flex middle" id="uptop" style="min-height: 25vh; margin-bottom: 0;">
+	<a href="index.html"><img class="large-thumb brdr-s-k red-b invert-h" src="app/files/images/bf3logo_bloodsand.png" alt="Brutalist Framework" /></a>
+</header>
+<div class="dune white-t flex" style="height: 25vh; margin: 0;">
+	<div class="shape point-right sand center flex middle" style="min-width: 15vw; height: 100%; margin: 0 1rem 0 0;">
+		<div class="fluid-text-h1" style="margin-left: -20px;"><i class="bi bi-fill charcoal-t wheat-t-s"></i></div>
+	</div>
+	<div class="flex middle column charcoal-t sand-t-s">
+		<h1 class="fluid-text start monolisk" style="margin: -10px 0 0 0; font-weight:900;">BUFF</h1>
+		<h2 class="flow-text baffle start keep-all depixel" style="margin: 0; padding: 0;">Blend Utility &amp; Fancy Filters</h2>
+	</div>
+</div>
+
+<div class="fossil smoke-t padded">
+	<div class="wrap-1200">
+		<p class="flow-text bitstream">BUFF utilizes CSS blends and filter properties to apply preset filters to elements.</p>
+		<p class="requiresbox bitstream"><span class="flow-text bold"><small>requires:</small><br /><em>core/css/buff.css</em></span></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		<!-- STICKY PAGE SANDBAR NAV -->
+		<nav class="sandbar sand monolisk flow-text">
+			<ul>
+				<li><a href="#blends">Blenders</a></li>
+				<li><a href="#basic">Basic Filters</a></li>
+				<li><a href="#fancy">Fancy Filters</a></li>
+			</ul>
+		</nav>
+
+		<!-- BLENDERS -->
+		<h3 class="fluid-text monolisk" id="blends">Blenders</h3>
+		<div class="flex bitstream"><div class="padded half">
+			<p>Blenders allow text or any other element to blend with its background.<br /><br /></p>
+			<p class="padded warning">NOTE: Apply only one class per element. Combining multple classes together isn't possible (except <em>unblend</em>).</p>
+			<p class="padded disabled"><span class="bigger bold">Classes</span><br />
+				<strong>.lighten-blend<br />.darken-blend<br />.hue-blend<br />.sat-blend</strong> (saturation)<br /><strong>.lum-blend</strong> (luminosity)<br />
+				<strong>.color-blend<br />.dodge-blend<br />.burn-blend<br />.diff-blend</strong> (difference)<br /><strong>.exc-blend</strong> (exclusion)<br />
+				<strong>.soft-blend</strong> (soft light)<br /><strong>.hard-blend</strong> (hard light)<br /><strong>.overlay-blend</strong> (inverted hard light)<br />
+				<strong>.multi-blend</strong> (darkens element)<br /><strong>.screen-blend</strong> (lightens element)<br /><strong>.unblend</strong> (removes blend from current element)
+			</p>
+		</div><div class="padded half">
+			<p>In the example below, we use a blue box with white text and apply different blender classes to each.</p>
+			<div class="white-t" style="background: url('app/files/images/edgespace.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+				<p class="inline-block padded"><strong>.color-blend</strong><br /><span class="blue color-blend fluid-text">Color Blend</span></p>
+				<p>&nbsp;</p>
+				<p class="inline-block padded"><strong>.diff-blend</strong><br /><span class="blue diff-blend fluid-text">Difference Blend</span></p>
+				<p>&nbsp;</p>
+				<p class="inline-block padded"><strong>.dodge-blend</strong><br /><span class="fluid-text dodge-blend blue">Dodge Blend</span></p>
+				<p>&nbsp;</p>
+				<p class="inline-block padded"><strong>.multi-blend</strong><br /><span class="blue multi-blend fluid-text">Multi-Blend</span></p>
+				<p>&nbsp;</p>
+				<p class="inline-block padded"><strong>.exc-blend</strong><br /><span class="blue fluid-text exc-blend">Exclusion Blend</span></p>
+				<p>&nbsp;</p>
+				<p class="inline-block padded"><strong>.screen-blend</strong><br /><span class="screen-blend blue fluid-text">Screen (Standard) Blend</span></p>
+			</div>
+		</div></div>
+		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		<!-- BASIC FILTERS -->
+		<h3 class="fluid-text monolisk" id="basic">Basic Filters</h3>
+		<p class="bitstream">Basic filters apply a single CSS filter property to elements. Use these classes to apply filters directly to any element. Ideal for images.</p>
+		<p class="padded warning bitstream" style="display: inline-block;"><strong>NOTE:</strong> It is NOT possible to apply multiple filter classes to the same element.</p>
+		<div class="flex" style="margin-top: 1.15em;">
+			<div class="disabled padded"><p><strong>Original Image</strong><br />
+				<img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded">
+				<p><strong>.invert</strong><br /><img class="large-thumb invert" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded">
+				<p><strong>.grayscale</strong> <small>-d</small><br />
+				<img class="large-thumb grayscale" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded">
+				<p><strong>.sepia</strong> <small>-d</small><br />
+				<img class="large-thumb sepia" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded">
+				<p><strong>.contrast</strong> <small>-d / -i</small><br />
+				<img class="large-thumb contrast" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded">
+				<p><strong>.hue</strong> <small>-d / -i</small><br />
+				<img class="large-thumb hue" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded">
+				<p><strong>.saturate</strong> <small>-d / -i</small><br />
+				<img class="large-thumb saturate-i" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded">
+				<p><strong>.darken</strong> <small>-d / -i</small><br />
+				<img class="large-thumb darken" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded">
+				<p><strong>.lighten</strong> <small>-d / -i</small><br />
+				<img class="large-thumb lighten" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded">
+				<p><strong>.blur</strong> <small>-d / -i</small><br />
+				<img class="large-thumb blur" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+		</div>
+		<div class="flex bitstream">
+			<div class="padded half">
+				<div class="info padded">
+					<h4 class="flow-text allcaps"><strong>Increase / Decrease Filters</strong></h4>
+					<p>Simply append <em>-i</em> or <em>-d</em> to a basic filter class to increase or decrease the affect a filter has on an element.<br /><br />
+						<strong>-i</strong> <em>(increases filter affect)</em><br />
+						<strong>-d</strong> <em>(decreases filter affect)</em><br /><br />
+						<span class="flow-text">Examples:</span><br /><strong>.contrast-i</strong> <em>(increase contrast)</em><br />
+						<strong>.hue-d</strong> <em>(decrease hue)</em><br /><br />
+						<strong>NOTE: </strong>Not all filter classes support increasing or decreasing a filter. See the list of filter classes above to see what classes support <em>-i</em> and <em>-d</em>.</p>
+				</div>
+			</div><div class="padded half">
+				<div class="disabled padding">
+					<h4 class="flow-text allcaps"><strong>Hover Filter</strong></h4>
+					<p>Apply a filter upon hover simply by adding <em>-h</em> after the class. <br /><strong>Examples:</strong></p>
+					<p class="courier" style="display: inline-block;"><strong>.invert-h</strong><br />
+						<img class="medium-thumb invert-h pointer" src="app/files/images/brutal-building.jpg" /></p>
+					<p class="courier" style="display: inline-block;"><strong>.darken .hue-i-h</strong><br />
+						<img class="medium-thumb darken hue-i-h pointer" src="app/files/images/brutal-building.jpg" /></p>
+				</div>
+			</div>
+		</div>
+		<div class="flex bitstream">
+			<div class="half padded">
+				<div class="disabled padded">
+					<h4 class="flow-text allcaps charcoal-t"><strong>Background Filters</strong></h4>
+					<p class="charcoal-t">Filters can be applied to backgrounds. Apply any of these classes:</p>
+					<p><strong>.grayscale-bg<br />.sepia-bg<br />.saturate-bg<br />.hue-bg<br />.invert-bg<br />.brighten-bg<br />.darken-bg<br />.glassmorph <small>(blur)</small></strong></p>
+				</div>
+			</div><div class="padded half">
+				<div class="padded disabled">
+					<p class="flow-text bold">EXAMPLE</p>
+					<div class="flex middle column center" style="width: 100%; height: 300px; background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url('app/files/images/brutpink.jpg');">
+					<p class="padded grayscale-bg flow-text white-t fuchsia-t-s">.GREYSCALE-BG</p>
+					<p class="padded sepia-bg flow-text white-t fuchsia-t-s">.SEPIA-BG</p>
+					<p class="padded glassmorph flow-text white-t fuchsia-t-s">.GLASSMORPH</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		<!-- FANCY FILTERS -->
+		<h3 class="fluid-text monolisk" id="fancy">Fancy Filters</h3>
+		<p class="bitstream" style="margin: 0 0 1rem 0;">Fancy filters combine multiple filter properties to create a preset filter effect. Filtered elements need to be wrapped within a filter container. An example markup:</p>
+		<p class="terminal inline-block"><strong>&lt;div class="filter <em>filter-name</em>"&gt; &lt;any-elements&gt; &lt;/div&gt;</strong></p>
+		<p class="bitstream" style="margin: 1rem 0 1rem 0;">All direct child elements within a fancy <em>filter class</em> container will be affected. The class <strong><em>filter</em></strong> must be applied in conjunction with a filter class (ex: <strong><em>.filter.firestorm</em></strong>).</p>
+		<div class="flex" style="margin-top: 1.15em;">
+			<div class="disabled padded"><p><strong>Original Image</strong><br />
+				<img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.amazon</strong><br />
+				<p class="filter amazon"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.arctic</strong><br />
+				<p class="filter arctic"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.baby-blue</strong><br />
+				<p class="filter baby-blue"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.bluebird</strong><br />
+				<p class="filter bluebird"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.blue-rock</strong><br />
+				<p class="filter blue-rock"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.blue-lagoon</strong><br />
+				<p class="filter blue-lagoon"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.brannan</strong><br />
+				<p class="filter brannan"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.cali-sunset</strong><br />
+				<p class="filter cali-sunset"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.canary</strong><br />
+				<p class="filter canary"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.coal-paper</strong><br />
+				<p class="filter coal-paper"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.cobalt-print</strong><br />
+				<p class="filter cobalt-print"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.code-red</strong><br />
+				<p class="filter code-red"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.desert</strong><br />
+				<p class="filter desert"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.earlybird</strong><br />
+				<p class="filter earlybird"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.fever-dream</strong><br />
+				<p class="filter fever-dream"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.firestorm</strong><br />
+				<p class="filter firestorm"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.grey-rock</strong><br />
+				<p class="filter grey-rock"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.honey-mustard</strong><br />
+				<p class="filter honey-mustard"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.hot-summer</strong><br />
+				<p class="filter hot-summer"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.ibiza</strong><br />
+				<p class="filter ibiza"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.inkwell</strong><br />
+				<p class="filter inkwell"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.leaf</strong><br />
+				<p class="filter leaf"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.lofi</strong><br />
+				<p class="filter lofi"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.moon</strong><br />
+				<p class="filter moon"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.new80s</strong><br />
+				<p class="filter new80s"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.ocean-wave</strong><br />
+				<p class="filter ocean-wave"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.old-wood</strong><br />
+				<p class="filter old-wood"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.princess</strong><br />
+				<p class="filter princess"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.rose-quartz</strong><br />
+				<p class="filter rose-quartz"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.sandstorm</strong><br />
+				<p class="filter sandstorm"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.seaside</strong><br />
+				<p class="filter seaside"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.solar</strong><br />
+				<p class="filter solar"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.space-trip</strong><br />
+				<p class="filter space-trip"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.studio54</strong><br />
+				<p class="filter studio54"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.thaw</strong><br />
+				<p class="filter thaw"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.toaster</strong><br />
+				<p class="filter toaster"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.vintage-may</strong><br />
+				<p class="filter vintage-may"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.wetness</strong><br />
+				<p class="filter wetness"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+			<div class="padded"><strong>.xpro2</strong><br />
+				<p class="filter xpro2"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>
+			</div>
+		</div>
+		<p class="spacer"></p>
+		<p class="spacer"></p>
+	</div>
+</div>
+
+<footer class="brickbuild bitstream center" style="border-top: 14px solid #000; padding: 0 0 10vh 0;">
+	<div class="shape semicircle south padded emptiness flex column smoke-t center" style="height: 100%; max-width: 768px; margin: 0 auto; border-bottom: 3px solid #000;">
+		<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="evergreen smoke-t invert-h">Pine Creative Labs</a> production</p>
+		<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-t invert-h">Brad Fogelstrom</span></a></p>
+		<ul class="tags" style="margin-bottom: 0.75rem;">
+			<li><a href="https://github.com/pinecreativelabs" target="_blank" class="btn box-s black white-t invert-h"><strong>GitHub</strong></a></li>
+		</ul>
+		<a href="http://eepurl.com/cEW1RX" target="_blank" class="sweden-gradient invert-h" style="width: 100%;">
+			<span class="white-t"><i class="bi bi-amp"></i>Brutal Blast /<span class="blink-182">/</span>/<span class="blink">/</span>/</span><br />
+			<small><strong>Subscribe to our e-newsletter. &raquo;</strong></small>
+		</a>
+		<p class="white-t" style="margin: 1rem 0 1rem 0;"><small>Brutalist Framework &copy; 2025</small></p>
+	</div>
+</footer>
+<script src="core/jab/bfx/baffle.js" type="text/javascript"></script>
+</body>
+</html>

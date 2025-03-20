@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Tea For God';
+    src: url('TeaForGodRegular.eot');
+    src: url('TeaForGodRegular.eot?#iefix') format('embedded-opentype'),
+        url('TeaForGodRegular.woff2') format('woff2'),
+        url('TeaForGodRegular.woff') format('woff'),
+        url('TeaForGodRegular.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.tea-for-god{font-family: 'Tea For God';}

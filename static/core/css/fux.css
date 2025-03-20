@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/* FUX: Form User Experience */
+
+form { display: block; }
+form fieldset {margin: 0.75em;}
+form fieldset legend {font-weight: 600;}
+form .form-group { display: block; margin-top: 0.75em; margin-bottom: 0.75em; }
+form input[type="text"], form input[type="email"], form input[type="tel"], form input[type="url"], form input[type="number"], form input[type="password"] { 
+	padding: 0.4em; margin: 0.25em; display: block; width: 98.5%; 
+}
+form input[type="checkbox"] { width: 1.5em; height: 1.5em; margin: 0.25em; }
+form input[type="radio"] { width: 1.5em; height: 1.5em; margin: 0.25em; }
+label.radio, label.checkbox { line-height: 1.5em; font-size: 1.1em; margin: 0.25em; }
+form select { width: 98.5%; padding: 0.4em; margin: 0.25em; }
+form select option { background: #ccc; color: #333; font-size: 1.35em;}
+form textarea { width: 98.5%; min-height: 3em; padding: 0.4em; margin: 0.25em; }
+form input[type="text"]:active, form input[type="email"]:active, form input[type="tel"]:active, form input[type="url"]:active, form input[type="number"]:active, form textarea:active, 
+form input[type="text"]:focus, form input[type="email"]:focus, form input[type="tel"]:focus, form input[type="url"]:focus, form input[type="number"]:focus, form textarea:focus, form select:focus, form select:active { 
+	border: 3px solid #333; outline: none !important; 
+}
+form input[type="submit"] { padding: 0.75em; margin: 0.25em; }
+form .errorMsg { padding: 0.5em; background: #ff0000; color: #ffff00; display: none; font-size: 12px;}
+
+/* Datetime Picker */
+.flatpickr-wrapper{display:inline-block;width:100%;position:relative;box-sizing:content-box}
+.flatpickr-wrapper input{cursor:pointer;position:relative;z-index:1}
+.flatpickr-wrapper .flatpickr-calendar{background:#fff;color:#484848;border:1px solid #ddd;font-size:13px;border-radius:4px;position:absolute;top:100%;left:0;margin-top:3px;opacity:0;z-index:0;visibility:hidden;overflow:hidden;-webkit-transition:opacity 75ms;transition:opacity 75ms;width:100%;max-width:256px}
+.flatpickr-wrapper .flatpickr-calendar .flatpickr-months{background:0 0;color:#000;padding:4px 0;text-align:center;font-size:135%}
+.flatpickr-wrapper .flatpickr-calendar .flatpickr-months .flatpickr-next-month,.flatpickr-wrapper .flatpickr-calendar .flatpickr-months .flatpickr-prev-month{text-decoration:none;cursor:pointer}
+.flatpickr-wrapper .flatpickr-calendar .flatpickr-months .flatpickr-next-month:hover,.flatpickr-wrapper .flatpickr-calendar .flatpickr-months .flatpickr-prev-month:hover{color:#f64747}
+.flatpickr-wrapper .flatpickr-calendar .flatpickr-months .flatpickr-prev-month{float:left;margin-left:.4em}
+.flatpickr-wrapper .flatpickr-calendar .flatpickr-months .flatpickr-next-month{float:right;margin-right:.4em}
+.flatpickr-wrapper .flatpickr-calendar .flatpickr-months .flatpickr-current-month{font-weight:300}
+.flatpickr-wrapper .flatpickr-calendar .flatpickr-months .flatpickr-current-month span{font-weight:700}
+.flatpickr-wrapper .flatpickr-calendar table{border-collapse:collapse;margin:0;padding:0;width:100%;background:0 0}
+.flatpickr-wrapper .flatpickr-calendar table thead{font-size:90%;background:0 0}
+.flatpickr-wrapper .flatpickr-calendar table td,.flatpickr-wrapper .flatpickr-calendar table th{text-align:center;width:14.3%}
+.flatpickr-wrapper .flatpickr-calendar table th{color:#999;padding:2px 0 4px;font-weight:700}
+.flatpickr-wrapper .flatpickr-calendar table tr{background:0 0}
+.flatpickr-wrapper .flatpickr-calendar table td{cursor:pointer;padding:0}
+.flatpickr-wrapper .flatpickr-calendar table td .flatpickr-day{background:0 0;display:inline-block;width:100%;max-width:32px;line-height:32px;text-align:center;padding:0;margin:0 1px 1px 0;border:1px solid transparent;border-radius:150px}
+.flatpickr-wrapper .flatpickr-calendar table td:hover .flatpickr-day{background:#e6e6e6;border-color:#e6e6e6}
+.flatpickr-wrapper .flatpickr-calendar table td:first-child .flatpickr-day{margin-left:1px}
+.flatpickr-wrapper .flatpickr-calendar table td.today .flatpickr-day{border-color:#f64747}
+.flatpickr-wrapper .flatpickr-calendar table td.today:hover .flatpickr-day{border-color:#f64747;background-color:#f64747;color:#fff}
+.flatpickr-wrapper .flatpickr-calendar table td.selected .flatpickr-day,.flatpickr-wrapper .flatpickr-calendar table td.selected:hover .flatpickr-day{background-color:#ff0000;color:#fff;border-color:#ff0000;}
+.flatpickr-wrapper .flatpickr-calendar .disabled,.flatpickr-wrapper .flatpickr-calendar .disabled .flatpickr-day,.flatpickr-wrapper .flatpickr-calendar .disabled:hover .flatpickr-day{color:#ddd;background:0 0;border-color:transparent;cursor:default}
+.flatpickr-wrapper.inline .flatpickr-calendar,.flatpickr-wrapper.open .flatpickr-calendar{z-index:100;opacity:1;visibility:visible}
+.flatpickr-wrapper.inline .flatpickr-calendar{position:static}
+.flatpickr-time{overflow:auto;border-top:1px solid rgba(72,72,72,.15)}
+.flatpickr-hour,.flatpickr-minute{background:0 0;-webkit-appearance:none;box-shadow:none;border:0;border-radius:0;display:inline-block;margin:0;padding:0 2%;height:38px;line-height:38px;cursor:pointer;float:left;font-weight:700;width:36%;color:#484848}
+.flatpickr-hour:focus,.flatpickr-minute:focus{outline:0;border:0}
+.flatpickr-hour{font-weight:700;text-align:right}
+.flatpickr-minute{width:26%;font-weight:300;text-align:left}
+.flatpickr-am-pm:hover,.flatpickr-hour:hover,.flatpickr-minute:hover{background:#f5f5f5}
+.flatpickr-am-pm,.flatpickr-time-separator{height:38px;display:block;line-height:38px;float:left;text-align:center;width:5%}
+.flatpickr-am-pm{width:20%;padding:0 2%;cursor:pointer;text-align:left}
+.flatpickr-time input[type=number] {width: 30% !important; padding: 0;}
+.flatpickr-time input[type=number]::-webkit-inner-spin-button,.flatpickr-time input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+
+/* Credit Card Input */
+.card-input {
+  width: 100%; background-color: #fff;
+  padding-left: 66px; padding-right: 40px;
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+}
+.card-input input {
+  width: 100%; letter-spacing: 1px;
+  font-size: 20px;
+  padding: 15px 15px 15px 25px;
+  border: 0; outline: none;
+  box-sizing: border-box;
+}
+.card-type {
+ width: 60px; height: 40px;
+  background-repeat: no-repeat; background-size: contain;
+  background-position: center center;
+  background: url('images/card.png');
+  position: absolute; top: 4px; left: 4px;
+}
+.card-type.mastercard { background: url('images/mastercard.png');}
+.card-type.visa { background: url('images/visa.png');}
+.card-type.amex { background: url('images/amex.png');}
+.card-type.discover { background: url('images/discover.png');}
+.card-valid {
+  position: absolute;
+  top: 0; right: 15px; line-height: 60px;
+  font-size: 1.5em; font-family: 'bicons'; color: #ccc;
+}
+.card-valid.active {color: #42ca7c;}
+.card-exp input, .card-cvv input {
+  font-size: 20px; padding: 15px;
+  box-sizing: border-box; max-width: 75%;
+}
+.card-exp input.error, .card-cvv input.error {
+  border: 1px solid #c2313c; outline: none;
+  box-shadow: 0 4px 8px 0 rgba(238,76,87,0.3);
+}
+
+/* PRISTINE FORMS */
+.pristine-error {display: block; width: 100%;
+	background: #ff0000; color: #fff;
+	font-size: 1rem; font-weight: 500;
+	padding: 6px; margin: 4px 0 4px 0;
+}

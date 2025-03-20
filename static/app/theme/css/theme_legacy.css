@@ -1,0 +1,155 @@
+/* Default Theme Style
+===================================================*/ 
+header { padding: 1em 0 1em 0; }
+.coming-soon { background-image: url('images/concrete-room.jpg');
+	background-position: center center; background-size: cover; background-attachment: fixed; 
+}
+.homepage { background-color: #000;
+	background-position: right; background-repeat: repeat-y;
+	background-image: url('images/brutal-tiles.jpg'); background-attachment: fixed;
+	background-size: 30% auto;
+}
+.home-head { border-right: 5px solid #ff0000; padding: 0; border-top: 4px solid #ff0000;}
+.darkangel { background-image: url('images/blox.png'); background-attachment: fixed; background-size: 25% auto; 
+	background-position: left top; background-repeat: no-repeat;
+}
+.glitchybox { width: 220px; max-width: 220px; height: 220px; display: inline-block; position: absolute; left: 3em; top: 8em; }
+.sliced-corner { -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+}
+.pageintro { display: inline-block; max-width: 75%; position: relative; padding: 1.1em; margin-top: 4.5em; background: rgba(74,74,74,0.6); font-size: 1.1em; line-height: 150%;}
+.jqtag,.vantag,.csstag{font-size: 0.45em; font-weight: normal; padding: 4px;}
+.jqtag {color: #d8d8d8; background: #333;}
+.vantag {color: #fff; background: #00BFFF;}
+.csstag {color: #fff; background: #FA5858;}
+.link-block { text-align: left; background-size: contain; background-position: center center; background-repeat: no-repeat; padding-top: 2.25em; }
+.link-block h3, .link-block p { background: rgba(0,0,0,0.8); color: #fff; text-shadow: 2px 2px #ff0000; text-align: left;}
+.link-block h3 { border-radius: 45%; -webkit-border-radius: 45%; font-size: 2.5em; display: inline-block; border-bottom: 3px solid #ff0000; padding: 0.3em 0.5em 0.3em 0; }
+.link-block h3 i {display:inline-block; background: #ff0000; padding: 8px; width: 1.5em; height: 1.5em; margin-right: -6px; 
+	border-radius: 50%; -webkit-border-radius: 50%; color: #000; text-shadow: 2px 2px #fff; text-align: center;
+}
+.link-block p { margin: 0.5em 0 0 0; min-height: 3.5em; display: block; padding: 0.3em; border-right: 4px solid #ff0000; border-bottom: 2px solid #ff0000;}
+.link-block button { margin: 0; padding: 0; }
+.link-block a.lbbtn { display: inline-block; text-decoration: none; background: #ff0000; margin: 0 0 1em 0; padding: 1em; 
+	font-size: 1.5em; line-height: 140%; font-weight: 600; color: #fff; text-shadow: 2px 2px #000;
+}
+.link-block a.lbbtn:hover { display: block; width: 100%; text-align: center; text-decoration: none;text-shadow: 2px 2px #fff; color: #000;}
+
+.home-head h1 { display: inline-block; font-size: 2em; }
+.home-head .stackswitch { max-width: 250px;}
+.dontpress { width: 150px; height: 150px; padding-top: 2em; border-radius: 50%; -webkit-border-radius: 50%; display: inline-block; font-size: 1.5em; line-height: 140%; }
+.about-btn, .pr-btn { 
+	width: 150px; height: 150px; padding-top: 1.75em;
+	border-radius: 50%; -webkit-border-radius: 50%; display: inline-block;
+	background-repeat: no-repeat; background-size: cover; background-position: center center; 
+	font-size: 1.5em; line-height: 140%; 
+}
+.git-btn { width: 150px; height: 150px; background: #000; color: #fff; padding-top: 2.5em; border-radius: 50%; -webkit-border-radius: 50%; display: inline-block; line-height: 140%; font-size: 1.5em;  }
+
+.bpmodal { background-image: url('../files/images/gelora/grainy-meditation.jpg'); background-size: cover; background-position: center top; background-repeat: no-repeat; }
+.page-title, .page-desc { display: inline-block; float: left; clear: left; }
+.page-title { padding: 8px 12px 8px 8px; margin: 20px; background: rgba(0,0,0,0.8); }
+.page-title i { margin: 0 12px 0 4px; }
+.page-desc { max-width: 80%; padding: 1em; margin: 20px 20px 20px 40px; background: rgba(0,0,0,0.8);}
+.page-desc h2 { margin: 0; line-height: 150%; width: 100%; display: block; }
+.page-desc p::before { display: block; content: ''; width: 20%; height: 4px; background: #fff; margin-top: 8px; margin-bottom: 8px; padding: 0; }
+.about-section { background: url('../files/images/edgespace.jpg');
+	background-repeat: no-repeat; background-size: cover; background-position: center center; 
+	padding-top: 1.8em; padding-bottom: 1.8em;
+}
+.about-section .tabs input[type="radio"]:checked + label { background: #fff !important; } /* Force white background on active tabs on home page */
+.menu i::before { width: 1.2em; text-align: center; }
+.menu ul li ul li > a:hover, .menu li > a:hover { text-decoration: none; border-bottom: 2px solid #333;}
+@media only screen and (min-width: 769px) and (max-width: 1600px){
+	.darkangel { background-size: 20% auto;}
+}
+@media only screen and (max-width: 768px){
+	.darkangel { background-size: 33% auto;}
+}
+@media only screen and (max-width:600px) { 
+	.glitchybox { width: 170px; height: 170px; }
+	.glitchybox .xlarge-thumb { height: 150px; width: auto; }
+	.glitchybox .jumbo-thumb { height: 190px; width: auto;}
+}
+@media only screen and (min-width: 481px) and (max-width:600px) { .b33.link-block { width: 50%; max-width: 50%; flex-basis: 50%; -webkit-flex-basis: 50%;}}
+@media only screen and (max-width:768px) { .about-btn, .pr-btn, .git-btn, .dontpress {width: 120px; height: 120px; font-size: 1.25em; padding-top: 1.5em; }
+	.git-btn { padding-top: 2.25em; }
+}
+
+/* WHEEL NAV */
+.wheelNav {
+    height: 560px; max-height: 560px; width: 100%; padding: 0;
+    margin: 0 auto; /*background: #330066;*/
+    -moz-transition: ease 1s;
+    -o-transition: ease 1s;
+    -webkit-transition: ease 1s;
+    transition: ease 1s;
+}
+.wheelNavGitHub > svg, .wheelNav > svg { width: 100%; height: 100%;}
+.wheelNav > svg text { color: #fff !important; fill: #fff !important; text-shadow: 2px 1px #000; letter-spacing: 2px;
+font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1920 - 300))) !important;
+}
+@media (max-width: 880px) {
+    .wheelNavGitHub {height: 200px;width: 200px;}
+    .wheelNav {height: 330px;width: 330px;}
+}
+@media (max-width: 680px) {
+    .wheelNavGitHub {height: 190px;width: 190px;}
+    .wheelNav {height: 310px; width: 310px;}
+}
+@media (max-width: 480px) {
+    .wheelNavGitHub {height: 180px;width: 180px;}
+    .wheelNav {height: 290px;width: 290px;}
+	.pageintro { width: 80%; margin-top: 3em; }
+}
+/* Css classes for radialWheel */
+#wheelnav-radialWheel-slice-0 {
+    fill: #cbff71;
+}
+#wheelnav-radialWheel-slice-1 {
+    fill: #a2ff00;
+}
+#wheelnav-radialWheel-slice-2 {
+    fill: #6ad400;
+}
+#wheelnav-radialWheel-slice-3 {
+    fill: #09b501;
+}
+#wheelnav-radialWheel-slice-4 {
+    fill: #028f27;
+}
+#wheelnav-radialWheel-slice-5 {
+    fill: #0a6f25;
+}
+#wheelnav-radialWheel-slice-6 {
+    fill: #ff0000;
+}
+[class|=wheelnav-radialWheel-slice-hover] {
+    stroke-width: 2px; cursor: pointer;
+}
+[class|=wheelnav-radialWheel-slice-selected] {
+    stroke-width: 3px;
+}
+[class|=wheelnav-radialWheel-title] {
+    cursor: pointer;
+}
+#wheelnav-radialWheel-title-5 > tspan {
+    font-family: 'Bookman Old Style', 'Bookman', 'URW Bookman L', 'Palatino Linotype', serif;
+}
+.wheelnav-radialWheel-title-basic-5 > tspan { font-size: 17px;}
+.wheelnav-radialWheel-title-hover-5 > tspan { font-size: 23px;}
+.wheelnav-radialWheel-title-selected-5 > tspan { font-size: 33px;}
+.wheelnav-radialWheel-spreader-in,
+.wheelnav-radialWheel-spreader-out {
+    fill: #0a6f25;
+    stroke-width: 3px;
+    cursor: pointer;
+}
+.wheelnav-radialWheel-spreadertitle-in,
+.wheelnav-radialWheel-spreadertitle-out { cursor: pointer;}
+.wheelnav-radialWheel-marker {
+    stroke: orange;
+    stroke-width: 3px;
+    fill: #666;
+    fill-opacity: 0.3;
+}

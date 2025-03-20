@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	
+	<title>bIcons</title>
+	<meta name="description" content="Blender Utility for Filters: CSS blends and filters library." />
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="bIcons" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content="A free open source CSS library for the brutalist web design trend." /> 
+	<meta property="og:site_name" content="Brutalist Framework" />
+	
+	<!-- Icons -->
+	<link rel="icon" href="core/files/favicon-16.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="core/files/favicon-32.png" type="image/png" />
+	<link rel="apple-touch-icon" href="core/files/favicon-128.png" type="image/png" />
+	
+	<!-- CORE CSS  -->
+	<link href="core/css/construct.css" type="text/css" rel="stylesheet" media="all"/>
+	<!-- Theme CSS -->
+	<link href="app/theme/css/theme.css" type="text/css" rel="stylesheet" media="all" />
+	
+</head>
+<body>
+<!-- MAIN MENU -->
+<div class="blonk-tr shape quadrant bottom-left flex middle sand" style="z-index: 10002;">
+	<button class="reveal-overlay" id="reveal-nav" aria-controls="primary-menu" aria-expanded="false">
+	  <span class="topbar charcoal"></span><span class="middlebar charcoal"></span><span class="bottombar charcoal"></span>
+	</button>
+</div>
+<div class="overlay" id="overlay-nav">
+	<div class="wrap-960 monolisk" style="margin-top: 1.5rem;"><div class="checkerboard padded" style="border-radius: 1rem;"><div class="padded emptiness">
+		<ul class="flex flow-text">
+			<li class="third"><a href="index.html"><i class="bi bi-home"></i> HOME</a></li>
+			<li class="third"><a href="about.html"><i class="bi bi-info"></i> About BF</a></li>
+			<li class="third"><a href="https://www.brutalcms.com" target="_blank"><i class="bi bi-communist black red-t"></i> Brutal CMS</a></li>
+		</ul>
+		<ul class="flow-text flex" style="border-top: 2px solid #fff; padding-top: 8px;">
+			<li class="third"><a href="bfx.html"><i class="bi bi-sparkle"></i> BFX</a></li>
+			<li class="third current"><a href="bicons.html"><i class="bi bi-flag"></i> bIcons</a></li>
+			<li class="third"><a href="buff.html"><i class="bi bi-fill"></i> BUFF</a></li>
+			<li class="third"><a href="buix.html"><i class="bi bi-navigate"></i> BUIX</a></li>
+			<li class="third"><a href="butch.html"><i class="bi bi-pick"></i> BUTCH</a></li>
+			<li class="third"><a href="flavors.html"><i class="bi bi-cone"></i> Flavors</a></li>
+			<li class="third"><a href="fux.html"><i class="bi bi-box-x"></i> FUX</a></li>
+			<li class="third"><a href="grids.html"><i class="bi bi-quadrant"></i> Grids</a></li>
+			<li class="third"><a href="rebar.html"><i class="bi bi-converge-left"></i> ReBAR</a></li>
+		</ul>
+	</div><div class="padded emptiness" style="margin-top: 1.25rem;">
+		<ul class="flex flow-text">
+			<li class="third"><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank">Roadmap</a></li>
+			<li class="third"><a href="https://github.com/pinecreativelabs" target="_blank">Github</a></li>
+			<li class="third"><a href="https://www.instagram.com/brutalistfwk" target="_blank">Instagram</a></li>
+		</ul>
+		<ul class="flex flow-text" style="width: 100%; border-top: 2px solid #fff; padding-top: 8px;">
+			<li class="half"><a href="https://www.blueprintgrid.com" target="_blank"><i class="blueprint bi bi-grid"></i> Blueprint Grid</a></li>
+			<li class="half"><a href="https://www.brutalistwebdesign.com" target="_blank"><i class="bi bi-reference lemon black-t"></i> Reference Guides</a></li>
+		</ul>
+	</div></div></div>
+</div>
+<script>
+document.querySelector("#reveal-nav").addEventListener("click", function() {
+  this.classList.toggle("active");
+  document.querySelector("#overlay-nav").classList.toggle("open");
+})
+</script>
+<a href="#uptop" class="blonk-cr blood shape semicircle west white-t monolisk lighten-h"><i class="bi bi-up bi-3x"></i><br /><strong>top</strong></a>
+
+<!-- PAGE -->
+<header class="brickbuild padded flex middle" id="uptop" style="min-height: 25vh; margin-bottom: 0;">
+	<a href="index.html"><img class="large-thumb brdr-s-k red-b invert-h" src="app/files/images/bf3logo_bloodsand.png" alt="Brutalist Framework" /></a>
+</header>
+<div class="dune white-t flex" style="height: 25vh; margin: 0;">
+	<div class="shape point-right sand center flex middle" style="min-width: 15vw; height: 100%; margin: 0 1rem 0 0;">
+		<div class="fluid-text-h1" style="margin-left: -20px;"><i class="bi bi-flag charcoal-t wheat-t-s"></i></div>
+	</div>
+	<div class="flex middle column charcoal-t sand-t-s">
+		<h1 class="fluid-text start monolisk" style="margin: -10px 0 0 0; font-weight:900;">bIcons</h1>
+		<h2 class="flow-text start keep-all depixel" style="margin: 0; padding: 0;"><span class="rounded sand charcoal-t box-s" style="padding: 6px; display:inline-block;">646</span> <span class="baffle">Brutal Icons</span></h2>
+	</div>
+</div>
+
+<div class="fossil smoke-t padded">
+	<div class="wrap-1200">
+		<p class="flow-text bitstream">Native UTF-8 symbols in the form of brutal icons.</p>
+		<p class="requiresbox bitstream"><span class="flow-text bold"><small>requires:</small><br /><em>core/css/bicons.css</em></span></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		<!-- STICKY PAGE SANDBAR NAV -->
+		<nav class="sandbar sand monolisk flow-text">
+			<ul>
+				<li><a href="#getstarted">Getting Started</a></li>
+				<li><a href="#categories"><i class="bi bi-rows"></i> Categories</a></li>
+				<li class="files"><a href="#filetypes"><i class="blank"></i> Filetype Icons</a></li>
+			</ul>
+		</nav>
+
+		<!-- GET STARTED -->
+		<h3 class="fluid-text monolisk" id="getstarted">Getting Started</h3>
+		<div class="flex bitstream"><div class="half padded">
+			<p style="margin-bottom: 1em;">Most browsers support some basic symbols, with no dependencies. <em>bIcons</em> allows you to render native UTF-8 symbols by applying classes! Keep in mind that various browsers may render symbols differently. Simply use the following markup, where "<em>icon-name</em>" is any of the below class names.</p>
+			<code class="padded flow-text">&lt;i class="bi bi-<span class="red-t"><em>icon-name</em></span>"&gt;&lt;/i&gt;</code>
+			<p class="spacer"></p>
+			<p><strong>XML DATA</strong><br />A full list of all bIcon data can be found at: <span class="terminal">core/data/xml/bicons.xml</span>.</p>
+			<p class="spacer"></p>
+		</div><div class="half padded">
+			<h4 class="flow-text">Icon Sizes</h4>
+			<p>Apply these classes to change the icon size. The <em><strong>.bi-fi</strong></em> class is fluid and resizes in proportion to the screen size.</p>
+			<ul class="tags">
+				<li><i class="bi bi-2x bi-explode"></i><br /><strong>.bi-2x</strong></li>
+				<li><i class="bi bi-3x bi-explode"></i><br /><strong>.bi-3x</strong></li>
+				<li><i class="bi bi-4x bi-explode"></i><br /><strong>.bi-4x</strong></li>
+				<li><i class="bi bi-5x bi-explode"></i><br /><strong>.bi-5x</strong></li>
+				<li><i class="bi bi-6x bi-explode"></i><br /><strong>.bi-6x</strong></li>
+				<li><i class="bi bi-fi bi-explode"></i><br /><strong>.bi-fi</strong></li>
+			</ul>
+			<p><strong>EXAMPLE:</strong> A dangerous red-flag icon that is four times it's original size would have the following markup:</p>
+			<code class="padded flow-text">&lt;i class="bi bi-red-flag bi-4x&gt;&lt;/i&gt;</code>
+			<p><strong>OUTPUT:</strong> <i class="bi bi-red-flag bi-4x"></i></p>
+		</div></div>
+		
+		<!-- CATEGORIES -->
+		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		<h3 class="monolisk fluid-text" id="categories">Browse by Category</h3>
+		<div class="block-wrap">
+			<div class="block bw25 xs-100 sm-100">
+				<div style="position: sticky; position:-webkit-sticky; top: 3.75rem;">
+					<ul class="tags monolisk bicon-cat-list">
+						<li><a href="#zoo">Animals</a></li>
+						<li><a href="#astrology">Astrology</a></li>
+						<li><a href="#currency">Currency</a></li>
+						<li><a href="#danger">Danger Zone</a></li>
+						<li><a href="#directional">Directional</a></li>
+						<li><a href="#emoticons">Emoticons</a></li>
+						<li><a href="#food">Food</a></li>
+						<li><a href="#freaks">Freakshow</a></li>
+						<li><a href="#layout">Layout</a></li>
+						<li><a href="#nature">Nature</a></li>
+						<li><a href="#objects">Objects</a></li>
+						<li><a href="#places">Places</a></li>
+						<li><a href="#religion">Religion</a></li>
+						<li><a href="#sports">Sports &amp; Rec</a></li>
+						<li><a href="#symbols">Symbols &amp; Other</a></li>
+						<li><a href="#ui-actions">UI Actions</a></li>
+						<li><a href="#ui-av">UI A/V</a></li>
+						<li><a href="#ui-basic">UI Basic</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="block bw75 xs-100 sm-100"><div class="padded">
+				<!-- animals -->
+				<div id="zoo"><h4 class="bicon-cat">Animals</h4>
+					<ul class="bicon-list">
+						<li><i class="bi bi-alligator bi-2x"></i> alligator / gator<li><i class="bi bi-badger bi-2x"></i> badger<li><i class="bi bi-bat bi-2x"></i> bat<li><i class="bi bi-bee bi-2x"></i> bee<li><i class="bi bi-bird bi-2x"></i> bird / parrot<li><i class="bi bi-butterfly bi-2x"></i> butterfly<li><i class="bi bi-camel bi-2x"></i> camel<li><i class="bi bi-cat bi-2x"></i> cat / kitty<li><i class="bi bi-cow bi-2x"></i> cow<li><i class="bi bi-crab bi-2x"></i> crab<li><i class="bi bi-deer bi-2x"></i> deer<li><i class="bi bi-dog bi-2x"></i> dog<li><i class="bi bi-dolphin bi-2x"></i> dolphin<li><i class="bi bi-dragon bi-2x"></i> dragon<li><i class="bi bi-duck bi-2x"></i> duck<li><i class="bi bi-eagle bi-2x"></i> eagle<li><i class="bi bi-elephant bi-2x"></i> elephant<li><i class="bi bi-fish bi-2x"></i> fish<li><i class="bi bi-flamingo bi-2x"></i> flamingo<li><i class="bi bi-fox bi-2x"></i> fox<li><i class="bi bi-frog bi-2x"></i> frog<li><i class="bi bi-goat bi-2x"></i> goat<li><i class="bi bi-gorilla bi-2x"></i> gorilla<li><i class="bi bi-guide-dog bi-2x"></i> guide-dog<li><i class="bi bi-horse bi-2x"></i> horse<li><i class="bi bi-kangaroo bi-2x"></i> kangaroo<li><i class="bi bi-ladybug bi-2x"></i> ladybug<li><i class="bi bi-lion bi-2x"></i> lion<li><i class="bi bi-lizard bi-2x"></i> lizard<li><i class="bi bi-llama bi-2x"></i> llama<li><i class="bi bi-lobster bi-2x"></i> lobster<li><i class="bi bi-monkey bi-2x"></i> monkey<li><i class="bi bi-octopus bi-2x"></i> octopus<li><i class="bi bi-owl bi-2x"></i> owl<li><i class="bi bi-panda bi-2x"></i> panda<li><i class="bi bi-peacock bi-2x"></i> peacock<li><i class="bi bi-penguin bi-2x"></i> penguin<li><i class="bi bi-pig bi-2x"></i> pig<li><i class="bi bi-poodle bi-2x"></i> poodle<li><i class="bi bi-rabbit bi-2x"></i> rabbit<li><i class="bi bi-raccoon bi-2x"></i> raccoon / trash-panda<li><i class="bi bi-rat bi-2x"></i> rat<li><i class="bi bi-rhino bi-2x"></i> rhino<li><i class="bi bi-shark bi-2x"></i> shark<li><i class="bi bi-sheep bi-2x"></i> sheep<li><i class="bi bi-shrimp bi-2x"></i> shrimp<li><i class="bi bi-skunk bi-2x"></i> skunk<li><i class="bi bi-snail bi-2x"></i> snail<li><i class="bi bi-snake bi-2x"></i> snake<li><i class="bi bi-squid bi-2x"></i> squid<li><i class="bi bi-tiger bi-2x"></i> tiger<li><i class="bi bi-turkey bi-2x"></i> turkey<li><i class="bi bi-turtle bi-2x"></i> turtle<li><i class="bi bi-whale bi-2x"></i> whale</li>
+					</ul>
+				</div>
+				<!-- astrology -->
+				<div id="astrology"><h4 class="bicon-cat">Astrology</h4>
+					<ul class="bicon-list">
+						<li><i class="bi bi-aquarius bi-2x"></i> aquarius<li><i class="bi bi-aries bi-2x"></i> aries<li><i class="bi bi-cancer bi-2x"></i> cancer<li><i class="bi bi-capricorn bi-2x"></i> capricorn<li><i class="bi bi-gemini bi-2x"></i> gemini<li><i class="bi bi-leo bi-2x"></i> leo<li><i class="bi bi-libra bi-2x"></i> libra<li><i class="bi bi-pisces bi-2x"></i> pisces<li><i class="bi bi-saggitarius bi-2x"></i> saggitarius<li><i class="bi bi-scorpius bi-2x"></i> scorpius<li><i class="bi bi-taurus bi-2x"></i> taurus<li><i class="bi bi-virgo bi-2x"></i> virgo<li><i class="bi bi-mercury bi-2x"></i> mercury<li><i class="bi bi-jupiter bi-2x"></i> jupiter<li><i class="bi bi-saturn bi-2x"></i> saturn<li><i class="bi bi-uranus bi-2x"></i> uranus<li><i class="bi bi-neptune bi-2x"></i> neptune<li><i class="bi bi-pluto bi-2x"></i> pluto<li><i class="bi bi-ceres bi-2x"></i> ceres<li><i class="bi bi-chiron bi-2x"></i> chiron<li><i class="bi bi-juno bi-2x"></i> juno<li><i class="bi bi-lilith bi-2x"></i> lilith<li><i class="bi bi-pallas bi-2x"></i> pallas<li><i class="bi bi-vesta bi-2x"></i> vesta</li>
+					</ul>
+				</div>
+				<!-- currency -->
+				<div id="currency"><h4 class="bicon-cat">Currency</h4>
+					<ul class="bicon-list">
+						<li><i class="bi bi-bitcoin bi-2x"></i> bitcoin<li><i class="bi bi-euro bi-2x"></i> euro<li><i class="bi bi-kip bi-2x"></i> kip<li><i class="bi bi-lira bi-2x"></i> lira<li><i class="bi bi-peso bi-2x"></i> peso<li><i class="bi bi-won bi-2x"></i> won</li>
+					</ul>
+				</div>
+				<!-- danger zone -->
+				<div id="danger"><h4 class="bicon-cat">Danger Zone</h4>
+					<ul class="bicon-list">
+						<li><i class="bi bi-alert bi-2x"></i> alert<li><i class="bi bi-biohazard bi-2x"></i> biohazard / toxic<li><i class="bi bi-black-flag bi-2x"></i> black-flag<li><i class="bi bi-bomb bi-2x"></i> bomb<li><i class="bi bi-danger bi-2x"></i> danger<li><i class="bi bi-dead bi-2x"></i> dead<li><i class="bi bi-dynamite bi-2x"></i> dynamite / firecracker<li><i class="bi bi-explode bi-2x"></i> explode / burst<li><i class="bi bi-poison bi-2x"></i> poison / deadly<li><i class="bi bi-radioactive bi-2x"></i> radioactive<li><i class="bi bi-red-alert bi-2x"></i> red-alert / attention<li><i class="bi bi-red-flag bi-2x"></i> red-flag<li><i class="bi bi-red-light bi-2x"></i> red-light<li><i class="bi bi-restricted bi-2x"></i> restricted / blocked<li><i class="bi bi-sos bi-2x"></i> sos<li><i class="bi bi-warning bi-2x"></i> warning<li><i class="bi bi-wrong bi-2x"></i> wrong<li><i class="bi bi-yield bi-2x"></i> yield</li>
+					</ul>
+				</div>
+				<!-- directional -->
+				<div id="directional"><h4 class="bicon-cat">Directional</h4>
+					<ul class="bicon-list">
+						<li><i class="bi bi-converge-left bi-2x"></i> converge-left<li><i class="bi bi-converge-right bi-2x"></i> converge-right<li><i class="bi bi-decrease bi-2x"></i> decrease<li><i class="bi bi-increase bi-2x"></i> increase<li><i class="bi bi-charrow bi-2x"></i> charrow<li><i class="bi bi-farrow bi-2x"></i> farrow<li><i class="bi bi-warrow-left bi-2x"></i> warrow-left / left-wave<li><i class="bi bi-warrow-right bi-2x"></i> warrow-right / right-wave<li><i class="bi bi-migrate bi-2x"></i> migrate<li><i class="bi bi-next bi-2x"></i> next<li><i class="bi bi-prev bi-2x"></i> prev / previous<li><i class="bi bi-left bi-2x"></i> left<li><i class="bi bi-right bi-2x"></i> right<li><i class="bi bi-up bi-2x"></i> up<li><i class="bi bi-down bi-2x"></i> down<li><i class="bi bi-up-down bi-2x"></i> up-down<li><i class="bi bi-download bi-2x"></i> download<li><i class="bi bi-upload bi-2x"></i> upload<li><i class="bi bi-down-right bi-2x"></i> down-right<li><i class="bi bi-up-right bi-2x"></i> up-right<li><i class="bi bi-point-left bi-2x"></i> point-left<li><i class="bi bi-point-right bi-2x"></i> point-right<li><i class="bi bi-top bi-2x"></i> top<li><i class="bi bi-back bi-2x"></i> back<li><i class="bi bi-pull-left bi-2x"></i> pull-left<li><i class="bi bi-push-right bi-2x"></i> push-right<li><i class="bi bi-scale-up bi-2x"></i> scale-up / expand<li><i class="bi bi-scale-down bi-2x"></i> scale-down / condense<li><i class="bi bi-two-way bi-2x"></i> two-way<li><i class="bi bi-two-way-o bi-2x"></i> two-way-o<li><i class="bi bi-undo bi-2x"></i> undo<li><i class="bi bi-redo bi-2x"></i> redo<li><i class="bi bi-zoom-left bi-2x"></i> zoom-left<li><i class="bi bi-zoom-right bi-2x"></i> zoom-right</li>
+					</ul>
+				</div>
+				<!-- emoticons -->
+				<div id="emoticons"><h4 class="bicon-cat">Emoticons</h4>
+					<ul class="bicon-list">
+						<li><i class="bi bi-happy bi-2x"></i> happy / smile<li><i class="bi bi-unhappy bi-2x"></i> unhappy / frown<li><i class="bi bi-censored bi-2x"></i> censored / cuss<li><i class="bi bi-cool bi-2x"></i> cool / famous<li><i class="bi bi-cowboy bi-2x"></i> cowboy / howdy<li><i class="bi bi-grimace bi-2x"></i> grimace / stressed<li><i class="bi bi-loved bi-2x"></i> loved / cherished<li><i class="bi bi-mind-blown bi-2x"></i> mind-blown<li><i class="bi bi-nerdy bi-2x"></i> nerdy / geeky<li><i class="bi bi-rich bi-2x"></i> rich / greedy<li><i class="bi bi-sad bi-2x"></i> sad / cry<li><i class="bi bi-star-struck bi-2x"></i> star-struck</li>
+					</ul>
+				</div>
+				<!-- food -->
+				<div id="food"><h4 class="bicon-cat">Food</h4>
+					<ul class="bicon-list">
+						<li><i class="bi bi-apple bi-2x"></i> apple<li><i class="bi bi-avocado bi-2x"></i> avocado<li><i class="bi bi-banana bi-2x"></i> banana<li><i class="bi bi-bacon bi-2x"></i> bacon<li><i class="bi bi-baguette bi-2x"></i> baguette<li><i class="bi bi-beer bi-2x"></i> beer<li><i class="bi bi-bento-box bi-2x"></i> bento-box<li><i class="bi bi-bread bi-2x"></i> bread<li><i class="bi bi-broccoli bi-2x"></i> broccoli<li><i class="bi bi-burger bi-2x"></i> burger<li><i class="bi bi-burrito bi-2x"></i> burrito<li><i class="bi bi-butter bi-2x"></i> butter<li><i class="bi bi-carrot bi-2x"></i> carrot<li><i class="bi bi-cheese bi-2x"></i> cheese<li><i class="bi bi-cherry bi-2x"></i> cherry<li><i class="bi bi-coconut bi-2x"></i> coconut<li><i class="bi bi-coffee bi-2x"></i> coffee<li><i class="bi bi-cookie bi-2x"></i> cookie<li><i class="bi bi-cone bi-2x"></i> cone<li><i class="bi bi-corn bi-2x"></i> corn<li><i class="bi bi-croissant bi-2x"></i> croissant<li><i class="bi bi-cupcake bi-2x"></i> cupcake<li><i class="bi bi-donut bi-2x"></i> donut / doughnut<li><i class="bi bi-drink bi-2x"></i> drink<li><i class="bi bi-drumstick bi-2x"></i> drumstick<li><i class="bi bi-eggplant bi-2x"></i> eggplant / penis<li><i class="bi bi-fortune-cookie bi-2x"></i> fortune-cookie<li><i class="bi bi-garlic bi-2x"></i> garlic<li><i class="bi bi-grapes bi-2x"></i> grapes<li><i class="bi bi-honey bi-2x"></i> honey<li><i class="bi bi-hotdog bi-2x"></i> hotdog<li><i class="bi bi-ice bi-2x"></i> ice<li><i class="bi bi-ice-cream bi-2x"></i> ice-cream<li><i class="bi bi-kiwi bi-2x"></i> kiwi<li><i class="bi bi-lemon bi-2x"></i> lemon<li><i class="bi bi-lolipop bi-2x"></i> lolipop<li><i class="bi bi-mango bi-2x"></i> mango<li><i class="bi bi-martini bi-2x"></i> martini<li><i class="bi bi-mushroom bi-2x"></i> mushroom<li><i class="bi bi-onion bi-2x"></i> onion<li><i class="bi bi-orange bi-2x"></i> orange<li><i class="bi bi-pancakes bi-2x"></i> pancakes<li><i class="bi bi-peach bi-2x"></i> peach / ass<li><i class="bi bi-pear bi-2x"></i> pear<li><i class="bi bi-pickle bi-2x"></i> pickle<li><i class="bi bi-pie bi-2x"></i> pie<li><i class="bi bi-pineapple bi-2x"></i> pineapple<li><i class="bi bi-pizza bi-2x"></i> pizza<li><i class="bi bi-potato bi-2x"></i> potato<li><i class="bi bi-pretzel bi-2x"></i> pretzel<li><i class="bi bi-salad bi-2x"></i> salad<li><i class="bi bi-salt bi-2x"></i> salt<li><i class="bi bi-sandwich bi-2x"></i> sandwich<li><i class="bi bi-shortcake bi-2x"></i> shortcake<li><i class="bi bi-spaghetti bi-2x"></i> spaghetti<li><i class="bi bi-steak bi-2x"></i> steak<li><i class="bi bi-strawberry bi-2x"></i> strawberry<li><i class="bi bi-sushi bi-2x"></i> sushi<li><i class="bi bi-taco bi-2x"></i> taco<li><i class="bi bi-tea bi-2x"></i> tea / teacup<li><i class="bi bi-tomato bi-2x"></i> tomato<li><i class="bi bi-waffle bi-2x"></i> waffle<li><i class="bi bi-watermelon bi-2x"></i> watermelon<li><i class="bi bi-wine bi-2x"></i> wine</li>
+					</ul>
+				</div>
+				<!-- freakshow -->
+				<div id="freaks"><h4 class="bicon-cat">Freakshow</h4>
+					<ul class="bicon-list">
+						<li><i class="bi bi-alien bi-2x"></i> alien<li><i class="bi bi-clown bi-2x"></i> clown<li><i class="bi bi-evil bi-2x"></i> evil<li><i class="bi bi-fairy bi-2x"></i> fairy<li><i class="bi bi-freak bi-2x"></i> freak<li><i class="bi bi-genie bi-2x"></i> genie<li><i class="bi bi-ghost bi-2x"></i> ghost<li><i class="bi bi-mermaid bi-2x"></i> mermaid<li><i class="bi bi-sick bi-2x"></i> sick<li><i class="bi bi-spider bi-2x"></i> spider<li><i class="bi bi-unicorn bi-2x"></i> unicorn<li><i class="bi bi-web bi-2x"></i> web<li><i class="bi bi-wizard bi-2x"></i> wizard<li><i class="bi bi-vampire bi-2x"></i> vampire<li><i class="bi bi-zombie bi-2x"></i> zombie</li>
+					</ul>
+				</div>
+				<!-- layout -->
+				<div id="layout"><h4 class="bicon-cat">Layout</h4>
+					<ul class="bicon-list">
+						<li><i class="bi bi-grid bi-2x"></i> grid<li><i class="bi bi-corners bi-2x"></i> corners<li><i class="bi bi-columns bi-2x"></i> columns / cols<li><i class="bi bi-rows bi-2x"></i> rows / menu<li><i class="bi bi-cols-over-rows bi-2x"></i> cols-over-rows<li><i class="bi bi-cols-between-rows bi-2x"></i> cols-between-rows<li><i class="bi bi-cols-under-rows bi-2x"></i> cols-under-rows<li><i class="bi bi-row-over-cols bi-2x"></i> row-over-cols<li><i class="bi bi-row-between-cols bi-2x"></i> row-between-cols<li><i class="bi bi-row-under-cols bi-2x"></i> row-under-cols<li><i class="bi bi-quadrant bi-2x"></i> quadrant / panes<li><i class="bi bi-half-panes bi-2x"></i> half-panes</li>
+					</ul>
+				</div>
+				<!-- nature & outdoors -->
+				<div id="nature"><h4 class="bicon-cat">Nature &amp; Outdoors</h4>
+					<ul class="bicon-list">
+						<li><i class="bi bi-autumn bi-2x"></i> autumn / fall<li><i class="bi bi-camp bi-2x"></i> camp<li><i class="bi bi-cloud bi-2x"></i> cloud<li><i class="bi bi-clover bi-2x"></i> clover<li><i class="bi bi-cactus bi-2x"></i> cactus<li><i class="bi bi-daisy bi-2x"></i> daisy<li><i class="bi bi-desert bi-2x"></i> desert<li><i class="bi bi-earth bi-2x"></i> earth<li><i class="bi bi-exotic bi-2x"></i> exotic<li><i class="bi bi-fire bi-2x"></i> fire / hot<li><i class="bi bi-flower bi-2x"></i> flower<li><i class="bi bi-galaxy bi-2x"></i> galaxy<li><i class="bi bi-hurricane bi-2x"></i> hurricane<li><i class="bi bi-leaf bi-2x"></i> leaf<li><i class="bi bi-mountain bi-2x"></i> mountain<li><i class="bi bi-ocean bi-2x"></i> ocean<li><i class="bi bi-palm bi-2x"></i> palm<li><i class="bi bi-pine bi-2x"></i> pine<li><i class="bi bi-rain bi-2x"></i> rain<li><i class="bi bi-rainbow bi-2x"></i> rainbow<li><i class="bi bi-rose bi-2x"></i> rose<li><i class="bi bi-shamrock bi-2x"></i> shamrock<li><i class="bi bi-shooting-star bi-2x"></i> shooting-star<li><i class="bi bi-snowflake bi-2x"></i> snowflake<li><i class="bi bi-sprout bi-2x"></i> sprout / spring<li><i class="bi bi-sun bi-2x"></i> sun<li><i class="bi bi-sunflower bi-2x"></i> sunflower / summer<li><i class="bi bi-sunset-land bi-2x"></i> sunset-land<li><i class="bi bi-sunset-sea bi-2x"></i> sunset-sea<li><i class="bi bi-tornado bi-2x"></i> tornado<li><i class="bi bi-tree bi-2x"></i> tree<li><i class="bi bi-t-storm bi-2x"></i> t-storm<li><i class="bi bi-tulip bi-2x"></i> tulip<li><i class="bi bi-weather bi-2x"></i> weather<li><i class="bi bi-volcano bi-2x"></i> volcano<li><i class="bi bi-water bi-2x"></i> water<li><i class="bi bi-wet bi-2x"></i> wet / moist</li>
+					</ul>
+				</div>
+				<!-- objects -->
+				<div id="objects"><h4 class="bicon-cat">Objects</h4>
+					<ul class="bicon-list">
+						<li><i class="bi bi-airplane bi-2x"></i> airplane<li><i class="bi bi-alarm bi-2x"></i> alarm<li><i class="bi bi-anchor bi-2x"></i> anchor<li><i class="bi bi-article bi-2x"></i> article / newspaper<li><i class="bi bi-atm bi-2x"></i> atm<li><i class="bi bi-award bi-2x"></i> award<li><i class="bi bi-badge bi-2x"></i> badge<li><i class="bi bi-balloon bi-2x"></i> balloon<li><i class="bi bi-basket bi-2x"></i> basket<li><i class="bi bi-battery bi-2x"></i> battery<li><i class="bi bi-bike bi-2x"></i> bike<li><i class="bi bi-bikini bi-2x"></i> bikini<li><i class="bi bi-bolt bi-2x"></i> bolt / screw<li><i class="bi bi-bookmark bi-2x"></i> bookmark<li><i class="bi bi-books bi-2x"></i> books<li><i class="bi bi-book-open bi-2x"></i> book-open / open-book<li><i class="bi bi-book-open-o bi-2x"></i> book-open-o / open-book-o<li><i class="bi bi-book-red bi-2x"></i> book-red / red-book<li><i class="bi bi-book-green bi-2x"></i> book-green / green-book<li><i class="bi bi-book-blue bi-2x"></i> book-blue / blue-book<li><i class="bi bi-book-yellow bi-2x"></i> book-yellow / yellow-book<li><i class="bi bi-bouquet bi-2x"></i> bouquet<li><i class="bi bi-bricks bi-2x"></i> bricks<li><i class="bi bi-briefcase bi-2x"></i> briefcase<li><i class="bi bi-broom bi-2x"></i> broom / sweep<li><i class="bi bi-bulb bi-2x"></i> bulb / idea<li><i class="bi bi-camera bi-2x"></i> camera<li><i class="bi bi-candle bi-2x"></i> candle<li><i class="bi bi-car bi-2x"></i> car<li><i class="bi bi-card bi-2x"></i> card<li><i class="bi bi-cart bi-2x"></i> cart / shop<li><i class="bi bi-cd bi-2x"></i> cd<li><i class="bi bi-chains bi-2x"></i> chains<li><i class="bi bi-chopsticks bi-2x"></i> chopsticks<li><i class="bi bi-coinbag bi-2x"></i> coinbag<li><i class="bi bi-compass bi-2x"></i> compass<li><i class="bi bi-computer bi-2x"></i> computer<li><i class="bi bi-cosmetic bi-2x"></i> cosmetic / lipstick<li><i class="bi bi-diamond bi-2x"></i> diamond / gem<li><i class="bi bi-dice bi-2x"></i> dice<li><i class="bi bi-door bi-2x"></i> door<li><i class="bi bi-dress bi-2x"></i> dress<li><i class="bi bi-fireworks bi-2x"></i> fireworks<li><i class="bi bi-flashlight bi-2x"></i> flashlight<li><i class="bi bi-fork-knife bi-2x"></i> fork-knife / cutlery<li><i class="bi bi-fountain bi-2x"></i> fountain<li><i class="bi bi-fuel bi-2x"></i> fuel / gas<li><i class="bi bi-gift bi-2x"></i> gift / present<li><i class="bi bi-grad bi-2x"></i> grad / edu / cap<li><i class="bi bi-guitar bi-2x"></i> guitar<li><i class="bi bi-hammer bi-2x"></i> hammer<li><i class="bi bi-home bi-2x"></i> home<li><i class="bi bi-key bi-2x"></i> key<li><i class="bi bi-keyboard bi-2x"></i> keyboard<li><i class="bi bi-knife bi-2x"></i> knife<li><i class="bi bi-labcoat bi-2x"></i> lab-coat<li><i class="bi bi-lotion bi-2x"></i> lotion / bottle<li><i class="bi bi-love-letter bi-2x"></i> love-letter<li><i class="bi bi-luggage bi-2x"></i> luggage / baggage<li><i class="bi bi-magnet bi-2x"></i> magnet<li><i class="bi bi-mailbox bi-2x"></i> mailbox<li><i class="bi bi-map bi-2x"></i> map / world<li><i class="bi bi-mic bi-2x"></i> mic / microphone<li><i class="bi bi-microscope bi-2x"></i> microscope<li><i class="bi bi-mobile bi-2x"></i> mobile<li><i class="bi bi-notebook bi-2x"></i> notebook / journal<li><i class="bi bi-notepad bi-2x"></i> notepad<li><i class="bi bi-palette bi-2x"></i> palette / colors<li><i class="bi bi-pants bi-2x"></i> pants<li><i class="bi bi-pennant bi-2x"></i> pennant<li><i class="bi bi-pennant-o bi-2x"></i> pennant-o<li><i class="bi bi-piano bi-2x"></i> piano<li><i class="bi bi-pick bi-2x"></i> pick<li><i class="bi bi-plug bi-2x"></i> plug / plugin<li><i class="bi bi-poop bi-2x"></i> poop / shit<li><i class="bi bi-radio bi-2x"></i> radio<li><i class="bi bi-receipt bi-2x"></i> receipt<li><i class="bi bi-robot bi-2x"></i> robot<li><i class="bi bi-roller-coaster bi-2x"></i> roller-coaster / coaster<li><i class="bi bi-ruler bi-2x"></i> ruler<li><i class="bi bi-saxophone bi-2x"></i> saxophone<li><i class="bi bi-ship bi-2x"></i> ship<li><i class="bi bi-shower bi-2x"></i> shower<li><i class="bi bi-skull bi-2x"></i> skull<li><i class="bi bi-soap bi-2x"></i> soap<li><i class="bi bi-socks bi-2x"></i> socks<li><i class="bi bi-sparkler bi-2x"></i> sparkler<li><i class="bi bi-spoon bi-2x"></i> spoon<li><i class="bi bi-tag bi-2x"></i> tag<li><i class="bi bi-target bi-2x"></i> target<li><i class="bi bi-taxi bi-2x"></i> taxi<li><i class="bi bi-teddy-bear bi-2x"></i> teddy-bear / teddy<li><i class="bi bi-telescope bi-2x"></i> telescope<li><i class="bi bi-test-tube bi-2x"></i> test-tube<li><i class="bi bi-ticket bi-2x"></i> ticket<li><i class="bi bi-toilet bi-2x"></i> toilet<li><i class="bi bi-toolbox bi-2x"></i> toolbox<li><i class="bi bi-tp bi-2x"></i> tp / toilet-paper<li><i class="bi bi-trophy bi-2x"></i> trophy<li><i class="bi bi-train bi-2x"></i> train<li><i class="bi bi-tractor bi-2x"></i> tractor / agriculture<li><i class="bi bi-truck bi-2x"></i> truck<li><i class="bi bi-trumpet bi-2x"></i> trumpet<li><i class="bi bi-tv bi-2x"></i> tv / television<li><i class="bi bi-umbrella bi-2x"></i> umbrella<li><i class="bi bi-vhs bi-2x"></i> vhs<li><i class="bi bi-violin bi-2x"></i> violin<li><i class="bi bi-wrench bi-2x"></i> wrench<li><i class="bi bi-yarn bi-2x"></i> yarn</li>
+					</ul>
+				</div>
+				<!-- places -->
+				<div id="places"><h4 class="bicon-cat">Places</h4>
+					<ul class="bicon-list">
+						<li><i class="bi bi-bank bi-2x"></i> bank<li><i class="bi bi-castle bi-2x"></i> castle<li><i class="bi bi-church bi-2x"></i> church<li><i class="bi bi-factory bi-2x"></i> factory / industrial<li><i class="bi bi-hospital bi-2x"></i> hospital<li><i class="bi bi-hotel bi-2x"></i> hotel<li><i class="bi bi-house bi-2x"></i> house<li><i class="bi bi-office bi-2x"></i> office<li><i class="bi bi-school bi-2x"></i> school<li><i class="bi bi-store bi-2x"></i> store / retail<li><i class="bi bi-synagogue bi-2x"></i> synagogue<li><i class="bi bi-temple bi-2x"></i> temple / hindu</li>
+					</ul>
+				</div>
+				<!-- religion / philosophy -->
+				<div id="religion"><h4 class="bicon-cat">Religion &amp; Philosophy</h4>
+					<ul class="bicon-list">
+						<li><i class="bi bi-celtic bi-2x"></i> celtic<li><i class="bi bi-communist bi-2x"></i> communist<li><i class="bi bi-cross bi-2x"></i> cross<li><i class="bi bi-faith bi-2x"></i> faith<li><i class="bi bi-islam bi-2x"></i> islam / muslim<li><i class="bi bi-jew bi-2x"></i> jew<li><i class="bi bi-khanda bi-2x"></i> khanda<li><i class="bi bi-om bi-2x"></i> om<li><i class="bi bi-peace bi-2x"></i> peace<li><i class="bi bi-pentagram bi-2x"></i> pentagram<li><i class="bi bi-pentagram-i bi-2x"></i> pentagram-i<li><i class="bi bi-yin-yang bi-2x"></i> yin-yang</li>
+					</ul>
+				</div>
+				<!-- Sports & Recreation -->
+				<div id="sports"><h4 class="bicon-cat">Sports &amp; Recreation</h4>
+					<ul class="bicon-list">
+						<li><i class="bi bi-archery bi-2x"></i> archery<li><i class="bi bi-baseball bi-2x"></i> baseball<li><i class="bi bi-basketball bi-2x"></i> basketball<li><i class="bi bi-beach bi-2x"></i> beach<li><i class="bi bi-billiards bi-2x"></i> billiards<li><i class="bi bi-bicycle bi-2x"></i> bicycle / cycling<li><i class="bi bi-birthday bi-2x"></i> birthday<li><i class="bi bi-canoe bi-2x"></i> canoe<li><i class="bi bi-celebrate bi-2x"></i> celebrate / cheers<li><i class="bi bi-christmas bi-2x"></i> christmas / xmas<li><i class="bi bi-circus bi-2x"></i> circus<li><i class="bi bi-climbing bi-2x"></i> climbing / climber<li><i class="bi bi-dating bi-2x"></i> dating<li><i class="bi bi-dining bi-2x"></i> dining<li><i class="bi bi-diving bi-2x"></i> diving / snorkel<li><i class="bi bi-fencing bi-2x"></i> fencing / fencer<li><i class="bi bi-fishing bi-2x"></i> fishing<li><i class="bi bi-football bi-2x"></i> football<li><i class="bi bi-gambling bi-2x"></i> gambling / slots<li><i class="bi bi-gaming bi-2x"></i> gaming<li><i class="bi bi-golf bi-2x"></i> golf<li><i class="bi bi-halloween bi-2x"></i> halloween<li><i class="bi bi-horse-racing bi-2x"></i> horse-racing / horse-race<li><i class="bi bi-lift bi-2x"></i> lift<li><i class="bi bi-model bi-2x"></i> model<li><i class="bi bi-movies bi-2x"></i> movies<li><i class="bi bi-party bi-2x"></i> party<li><i class="bi bi-ping-pong bi-2x"></i> ping-pong<li><i class="bi bi-puzzle bi-2x"></i> puzzle<li><i class="bi bi-rowing bi-2x"></i> rowing<li><i class="bi bi-rugby bi-2x"></i> rugby<li><i class="bi bi-run bi-2x"></i> run / jog<li><i class="bi bi-sailboat bi-2x"></i> sailboat / sailing<li><i class="bi bi-soccer bi-2x"></i> soccer<li><i class="bi bi-softball bi-2x"></i> softball<li><i class="bi bi-surf bi-2x"></i> surf / surfer<li><i class="bi bi-swim bi-2x"></i> swim<li><i class="bi bi-tennis bi-2x"></i> tennis<li><i class="bi bi-volleyball bi-2x"></i> volleyball<li><i class="bi bi-walk bi-2x"></i> walk</li>
+					</ul>
+				</div>
+				<!-- Symbols & Other -->
+				<div id="symbols"><h4 class="bicon-cat">Symbols &amp; Other</h4>
+					<ul class="bicon-list">
+						<li><i class="bi bi-amp bi-2x"></i> amp</li><li><i class="bi bi-alternate bi-2x"></i> alternate</li><li><i class="bi bi-anger bi-2x"></i> anger</li><li><i class="bi bi-angle bi-2x"></i> angle</li>
+						<li><i class="bi bi-audio bi-2x"></i> audio / headphones</li><li><i class="bi bi-awareness bi-2x"></i> awareness / ribbon</li>
+						<li><i class="bi bi-mining bi-2x"></i> mining</li><li><i class="bi bi-balance bi-2x"></i> balance / justice</li><li><i class="bi bi-bars bi-2x"></i> bars</li>
+						<li><i class="bi bi-bowtie bi-2x"></i> bowtie</li><li><i class="bi bi-comet bi-2x"></i> comet</li><li><i class="bi bi-construction bi-2x"></i> construction</li>
+						<li><i class="bi bi-card bi-2x"></i> card</li><li><i class="bi bi-core bi-2x"></i> core / fisheye</li>
+						<li><i class="bi bi-core-block bi-2x"></i> core-block</li><li><i class="bi bi-deploy bi-2x"></i> deploy / trident</li>
+						<li><i class="bi bi-diameter bi-2x"></i> diameter</li><li><i class="bi bi-dna bi-2x"></i> dna</li>
+						<li><i class="bi bi-evil-eye bi-2x"></i> evil-eye / nazar</li><li><i class="bi bi-finish-line bi-2x"></i> finish-line</li>
+						<li><i class="bi bi-fleur bi-2x"></i> fleur</li><li><i class="bi bi-global bi-2x"></i> global</li>
+						<li><i class="bi bi-numero bi-2x"></i> numero</li><li><i class="bi bi-per bi-2x"></i> per</li>
+						<li><i class="bi bi-handicap bi-2x"></i> handicap</li><li><i class="bi bi-heat bi-2x"></i> heat</li>
+						<li><i class="bi bi-heart bi-2x"></i> heart / love</li><li><i class="bi bi-heart-o bi-2x"></i> heart-o / love-o</li><li><i class="bi bi-heart-black bi-2x"></i> heart-black / black-heart</li>
+						<li><i class="bi bi-heart-brown bi-2x"></i> heart-brown / brown-heart</li><li><i class="bi bi-heart-red bi-2x"></i> heart-red / red-heart</li>
+						<li><i class="bi bi-heart-yellow bi-2x"></i> heart-yellow / yellow-heart</li><li><i class="bi bi-heart-blue bi-2x"></i> heart-blue / blue-heart</li>
+						<li><i class="bi bi-heart-green bi-2x"></i> heart-green / green-heart</li><li><i class="bi bi-heart-purple bi-2x"></i> heart-purple / purple-heart</li>
+						<li><i class="bi bi-history bi-2x"></i> history</li><li><i class="bi bi-infinity bi-2x"></i> infinity</li>
+						<li><i class="bi bi-info bi-2x"></i> info</li><li><i class="bi bi-link bi-2x"></i> link</li><li><i class="bi bi-loz bi-2x"></i> loz</li>
+						<li><i class="bi bi-atomic bi-2x"></i> atomic</li><li><i class="bi bi-medical bi-2x"></i> medical</li>
+						<li><i class="bi bi-metro bi-2x"></i> metro</li><li><i class="bi bi-music bi-2x"></i> music</li>
+						<li><i class="bi bi-musical bi-2x"></i> musical</li><li><i class="bi bi-puzzle bi-2x"></i> puzzle</li>
+						<li><i class="bi bi-symphony bi-2x"></i> symphony</li><li><i class="bi bi-no-smoking bi-2x"></i> no-smoking / non-smoking</li>
+						<li><i class="bi bi-smoking bi-2x"></i> smoking / cigarette</li><li><i class="bi bi-squiggle bi-2x"></i> squiggle / wavy</li>
+						<li><i class="bi bi-prescribe bi-2x"></i> prescribe / rx</li><li><i class="bi bi-temperature bi-2x"></i> temperature / thermostat</li>
+						<li><i class="bi bi-celsius bi-2x"></i> celsius</li><li><i class="bi bi-farenheit bi-2x"></i> farenheit</li><li><i class="bi bi-real bi-2x"></i> real / 100</li>
+						<li><i class="bi bi-king bi-2x"></i> king</li><li><i class="bi bi-queen bi-2x"></i> queen</li><li><i class="bi bi-male bi-2x"></i> male</li>
+						<li><i class="bi bi-female bi-2x"></i> female</li><li><i class="bi bi-gay bi-2x"></i> gay</li>
+						<li><i class="bi bi-lesbian bi-2x"></i> lesbian</li><li><i class="bi bi-divorce bi-2x"></i> divorce</li>
+						<li><i class="bi bi-family bi-2x"></i> family</li><li><i class="bi bi-marriage bi-2x"></i> marriage</li>
+						<li><i class="bi bi-partners bi-2x"></i> partners</li><li><i class="bi bi-paws bi-2x"></i> paws</li>
+						<li><i class="bi bi-strong bi-2x"></i> strong / strength</li><li><i class="bi bi-men bi-2x"></i> men</li>
+						<li><i class="bi bi-women bi-2x"></i> women</li><li><i class="bi bi-unisex bi-2x"></i> unisex</li>
+						<li><i class="bi bi-free bi-2x"></i> free</li><li><i class="bi bi-new bi-2x"></i> new</li>
+						<li><i class="bi bi-ohm bi-2x"></i> ohm</li><li><i class="bi bi-pi bi-2x"></i> pi</li>
+						<li><i class="bi bi-pinwheel bi-2x"></i> pinwheel</li><li><i class="bi bi-place-of-interest bi-2x"></i> place-of-interest</li>
+						<li><i class="bi bi-paper-recycle bi-2x"></i> paper-recycle / recycle-paper</li><li><i class="bi bi-recycle bi-2x"></i> recycle / recycling</li>
+						<li><i class="bi bi-trash bi-2x"></i> trash</li><li><i class="bi bi-sparkle bi-2x"></i> sparkle</li>
+						<li><i class="bi bi-reference bi-2x"></i> reference</li><li><i class="bi bi-sleep bi-2x"></i> sleep</li>
+						<li><i class="bi bi-sol bi-2x"></i> sol / solar</li><li><i class="bi bi-spy bi-2x"></i> spy</li>
+						<li><i class="bi bi-sunshine bi-2x"></i> sunshine</li><li><i class="bi bi-superstar bi-2x"></i> superstar</li>
+						<li><i class="bi bi-tel bi-2x"></i> tel</li><li><i class="bi bi-underage bi-2x"></i> underage / 18-plus</li><li><i class="bi bi-unequal bi-2x"></i> unequal</li>
+						<li><i class="bi bi-viewdata bi-2x"></i> viewdata</li><li><i class="bi bi-wait bi-2x"></i> wait</li>
+						<li><i class="bi bi-wifi bi-2x"></i> wifi / signal</li><li><i class="bi bi-fortune bi-2x"></i> fortune / horoscope</li><li><i class="bi bi-wonder bi-2x"></i> wonder / magic</li></li>
+					</ul>
+				</div>
+				<!-- UI Actions -->
+				<div id="ui-actions"><h4 class="bicon-cat">UI Actions</h4>
+					<ul class="bicon-list">
+						<li><i class="bi bi-action bi-2x"></i> action<li><i class="bi bi-announce bi-2x"></i> announce / bullhorn<li><i class="bi bi-app-install bi-2x"></i> app-install<li><i class="bi bi-broadcast bi-2x"></i> broadcast / satellite<li><i class="bi bi-call bi-2x"></i> call<li><i class="bi bi-compose bi-2x"></i> compose / write<li><i class="bi bi-compress bi-2x"></i> compress<li><i class="bi bi-create bi-2x"></i> create<li><i class="bi bi-approve bi-2x"></i> approve / thumbs-up<li><i class="bi bi-disapprove bi-2x"></i> disapprove / thumbs-down<li><i class="bi bi-encrypt bi-2x"></i> encrypt<li><i class="bi bi-favorite bi-2x"></i> favorite<li><i class="bi bi-f-off bi-2x"></i> f-off / flip-off<li><i class="bi bi-halt bi-2x"></i> halt<li><i class="bi bi-isolate bi-2x"></i> isolate<li><i class="bi bi-join bi-2x"></i> join<li><i class="bi bi-launch bi-2x"></i> launch / rocket<li><i class="bi bi-look bi-2x"></i> look / eyes<li><i class="bi bi-pin bi-2x"></i> pin<li><i class="bi bi-pinpoint bi-2x"></i> pinpoint / mark<li><i class="bi bi-read bi-2x"></i> read<li><i class="bi bi-save bi-2x"></i> save<li><i class="bi bi-sign bi-2x"></i> sign / pen<li><i class="bi bi-speak bi-2x"></i> speak / voice<li><i class="bi bi-think bi-2x"></i> think / thought<li><i class="bi bi-time bi-2x"></i> time / stopwatch<li><i class="bi bi-watch bi-2x"></i> watch<li><i class="bi bi-wave bi-2x"></i> wave / hello</li>
+					</ul>
+				</div>
+				<!-- UI A/V -->
+				<div id="ui-av"><h4 class="bicon-cat">UI Audio / Video</h4>
+					<ul class="bicon-list">
+						<li><i class="bi bi-video bi-2x"></i> video<li><i class="bi bi-filter bi-2x"></i> filter<li><i class="bi bi-play bi-2x"></i> play<li><i class="bi bi-pause bi-2x"></i> pause<li><i class="bi bi-stop bi-2x"></i> stop<li><i class="bi bi-rec bi-2x"></i> rec / record<li><i class="bi bi-ff bi-2x"></i> ff / fast-forward<li><i class="bi bi-rewind bi-2x"></i> rewind<li><i class="bi bi-seek-next bi-2x"></i> seek-next<li><i class="bi bi-seek-prev bi-2x"></i> seek-prev<li><i class="bi bi-shuffle bi-2x"></i> shuffle<li><i class="bi bi-repeat bi-2x"></i> repeat<li><i class="bi bi-repeat-once bi-2x"></i> repeat-once<li><i class="bi bi-sync bi-2x"></i> sync<li><i class="bi bi-mute bi-2x"></i> mute<li><i class="bi bi-vol-l bi-2x"></i> vol-l / low-vol<li><i class="bi bi-vol-m bi-2x"></i> vol-m / med-vol<li><i class="bi bi-vol-h bi-2x"></i> vol-h / hi-vol</li>
+					</ul>
+				</div>
+				<!-- UI Basic -->
+				<div id="ui-basic"><h4 class="bicon-cat">UI (Basic)</h4>
+					<ul class="bicon-list">
+						<li><i class="bi bi-add bi-2x"></i> add / plus<li><i class="bi bi-attachment bi-2x"></i> attachment / attach<li><i class="bi bi-bar-graph bi-2x"></i> bar-graph / stats<li><i class="bi bi-box bi-2x"></i> box<li><i class="bi bi-box-check bi-2x"></i> box-check<li><i class="bi bi-box-x bi-2x"></i> box-x<li><i class="bi bi-calendar bi-2x"></i> calendar<li><i class="bi bi-charts bi-2x"></i> charts / analytics<li><i class="bi bi-chat bi-2x"></i> chat<li><i class="bi bi-check bi-2x"></i> check<li><i class="bi bi-clear bi-2x"></i> clear<li><i class="bi bi-clipboard bi-2x"></i> clipboard<li><i class="bi bi-close bi-2x"></i> close / exit<li><i class="bi bi-close-o bi-2x"></i> close-o / exit-o<li><i class="bi bi-control bi-2x"></i> control<li><i class="bi bi-cut bi-2x"></i> cut<li><i class="bi bi-data-disk bi-2x"></i> data-disk<li><i class="bi bi-data-disk-gold bi-2x"></i> data-disk-gold<li><i class="bi bi-database bi-2x"></i> database<li><i class="bi bi-delete bi-2x"></i> delete<li><i class="bi bi-directory bi-2x"></i> directory / folder<li><i class="bi bi-edit bi-2x"></i> edit / pencil<li><i class="bi bi-edit-active bi-2x"></i> edit-active<li><i class="bi bi-ellipsis bi-2x"></i> ellipsis / more<li><i class="bi bi-ellipsis-v bi-2x"></i> ellipsis-v / more-v<li><i class="bi bi-email bi-2x"></i> email<li><i class="bi bi-file bi-2x"></i> file / document<li><i class="bi bi-file-edit bi-2x"></i> file-edit<li><i class="bi bi-fill bi-2x"></i> fill<li><i class="bi bi-flag bi-2x"></i> flag<li><i class="bi bi-flag-o bi-2x"></i> flag-o<li><i class="bi bi-forum bi-2x"></i> forum<li><i class="bi bi-help bi-2x"></i> help<li><i class="bi bi-help-o bi-2x"></i> help-o<li><i class="bi bi-hub bi-2x"></i> hub / network<li><i class="bi bi-image bi-2x"></i> image<li><i class="bi bi-input-letters bi-2x"></i> input-letters<li><i class="bi bi-input-numbers bi-2x"></i> input-numbers<li><i class="bi bi-input-symbols bi-2x"></i> input-symbols<li><i class="bi bi-lock bi-2x"></i> lock<li><i class="bi bi-notify bi-2x"></i> notify / bell<li><i class="bi bi-package bi-2x"></i> package<li><i class="bi bi-phone bi-2x"></i> phone<li><i class="bi bi-phone-o bi-2x"></i> phone-o<li><i class="bi bi-pk bi-2x"></i> pk / primary-key<li><i class="bi bi-print bi-2x"></i> print<li><i class="bi bi-script bi-2x"></i> script<li><i class="bi bi-settings bi-2x"></i> settings / gear<li><i class="bi bi-sitemap bi-2x"></i> sitemap / nav<li><i class="bi bi-star bi-2x"></i> star<li><i class="bi bi-star-o bi-2x"></i> star-o<li><i class="bi bi-tools bi-2x"></i> tools<li><i class="bi bi-unlock bi-2x"></i> unlock<li><i class="bi bi-unnotify bi-2x"></i> unnotify<li><i class="bi bi-verify bi-2x"></i> verify<li><i class="bi bi-user bi-2x"></i> user / profile<li><i class="bi bi-group bi-2x"></i> group</li>
+					</ul>
+				</div>
+			</div></div>
+		</div>
+		
+		<!-- FILETYPE ICONS -->
+		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		<h4 class="fluid-text monolisk" id="filetypes">Filetype Icons Library</h4>
+		<p class="bitstream">The filetype icons library allows you to automatically prepend icons to lists of linked files. Over 400 filetypes are supported.<br />
+			Simply load the filetypes CSS script from:<br /><span class="flow-text"><strong>/core/css/filetypes.css</strong></span><br /><br />
+			<a href="filetypes.html" target="_blank" class="nb-btn-big">See demo for more details &raquo;</a>
+		</p>
+		
+		<p class="spacer"></p>
+		<p class="spacer"></p>
+	</div>
+</div>
+
+<footer class="brickbuild bitstream center" style="border-top: 14px solid #000; padding: 0 0 10vh 0;">
+	<div class="shape semicircle south padded emptiness flex column smoke-t center" style="height: 100%; max-width: 768px; margin: 0 auto; border-bottom: 3px solid #000;">
+		<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="evergreen smoke-t invert-h">Pine Creative Labs</a> production</p>
+		<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-t invert-h">Brad Fogelstrom</span></a></p>
+		<ul class="tags" style="margin-bottom: 0.75rem;">
+			<li><a href="https://github.com/pinecreativelabs" target="_blank" class="btn box-s black white-t invert-h"><strong>GitHub</strong></a></li>
+		</ul>
+		<a href="http://eepurl.com/cEW1RX" target="_blank" class="sweden-gradient invert-h" style="width: 100%;">
+			<span class="white-t"><i class="bi bi-amp"></i>Brutal Blast /<span class="blink-182">/</span>/<span class="blink">/</span>/</span><br />
+			<small><strong>Subscribe to our e-newsletter. &raquo;</strong></small>
+		</a>
+		<p class="white-t" style="margin: 1rem 0 1rem 0;"><small>Brutalist Framework &copy; 2025</small></p>
+	</div>
+</footer>
+<script src="core/jab/bfx/baffle.js" type="text/javascript"></script>
+</body>
+</html>

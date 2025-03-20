@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Dsans Med';
+    src: url('Brendiva-Medium.eot');
+    src: url('Brendiva-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Brendiva-Medium.woff2') format('woff2'),
+        url('Brendiva-Medium.woff') format('woff'),
+        url('Brendiva-Medium.ttf') format('truetype');
+    font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'Dsans';
+    src: url('Brendiva-Regular.eot');
+    src: url('Brendiva-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Brendiva-Regular.woff2') format('woff2'),
+        url('Brendiva-Regular.woff') format('woff'),
+        url('Brendiva-Regular.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'Dsans';
+    src: url('Brendiva-Light.eot');
+    src: url('Brendiva-Light.eot?#iefix') format('embedded-opentype'),
+        url('Brendiva-Light.woff2') format('woff2'),
+        url('Brendiva-Light.woff') format('woff'),
+        url('Brendiva-Light.ttf') format('truetype');
+    font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'Dsans ExtBd';
+    src: url('Brendiva-ExtraBold.eot');
+    src: url('Brendiva-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Brendiva-ExtraBold.woff2') format('woff2'),
+        url('Brendiva-ExtraBold.woff') format('woff'),
+        url('Brendiva-ExtraBold.ttf') format('truetype');
+    font-weight: bold; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'Dsans';
+    src: url('Brendiva-Bold.eot');
+    src: url('Brendiva-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Brendiva-Bold.woff2') format('woff2'),
+        url('Brendiva-Bold.woff') format('woff'),
+        url('Brendiva-Bold.ttf') format('truetype');
+    font-weight: bold; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'Dsans';
+    src: url('Brendiva-Black.eot');
+    src: url('Brendiva-Black.eot?#iefix') format('embedded-opentype'),
+        url('Brendiva-Black.woff2') format('woff2'),
+        url('Brendiva-Black.woff') format('woff'),
+        url('Brendiva-Black.ttf') format('truetype');
+    font-weight: 900; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'Dsans SemBd';
+    src: url('Brendiva-SemiBold.eot');
+    src: url('Brendiva-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Brendiva-SemiBold.woff2') format('woff2'),
+        url('Brendiva-SemiBold.woff') format('woff'),
+        url('Brendiva-SemiBold.ttf') format('truetype');
+    font-weight: 600; font-style: normal; font-display: swap;
+}
+.brendiva {font-family: 'Dsans';}
+.brendiva b, .brendiva strong, strong .brendiva, b .brendiva {font-family: 'Dsans SemBd';}

@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Sudo';
+    src: url('Sudo-Bold.eot');
+    src: url('Sudo-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Sudo-Bold.woff2') format('woff2'),
+        url('Sudo-Bold.woff') format('woff'),
+        url('Sudo-Bold.ttf') format('truetype');
+    font-weight: bold; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'Sudo';
+    src: url('Sudo-Regular.eot');
+    src: url('Sudo-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Sudo-Regular.woff2') format('woff2'),
+        url('Sudo-Regular.woff') format('woff'),
+        url('Sudo-Regular.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'Sudo';
+    src: url('Sudo-ThinItalic.eot');
+    src: url('Sudo-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('Sudo-ThinItalic.woff2') format('woff2'),
+        url('Sudo-ThinItalic.woff') format('woff'),
+        url('Sudo-ThinItalic.ttf') format('truetype');
+    font-weight: 100; font-style: italic; font-display: swap;
+}
+@font-face {
+    font-family: 'Sudo';
+    src: url('Sudo-LightItalic.eot');
+    src: url('Sudo-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Sudo-LightItalic.woff2') format('woff2'),
+        url('Sudo-LightItalic.woff') format('woff'),
+        url('Sudo-LightItalic.ttf') format('truetype');
+    font-weight: 300; font-style: italic; font-display: swap;
+}
+@font-face {
+    font-family: 'Sudo';
+    src: url('Sudo-Medium.eot');
+    src: url('Sudo-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Sudo-Medium.woff2') format('woff2'),
+        url('Sudo-Medium.woff') format('woff'),
+        url('Sudo-Medium.ttf') format('truetype');
+    font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'Sudo';
+    src: url('Sudo-MediumItalic.eot');
+    src: url('Sudo-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Sudo-MediumItalic.woff2') format('woff2'),
+        url('Sudo-MediumItalic.woff') format('woff'),
+        url('Sudo-MediumItalic.ttf') format('truetype');
+    font-weight: 500; font-style: italic; font-display: swap;
+}
+@font-face {
+    font-family: 'Sudo';
+    src: url('Sudo-Italic.eot');
+    src: url('Sudo-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Sudo-Italic.woff2') format('woff2'),
+        url('Sudo-Italic.woff') format('woff'),
+        url('Sudo-Italic.ttf') format('truetype');
+    font-weight: normal; font-style: italic; font-display: swap;
+}
+@font-face {
+    font-family: 'Sudo';
+    src: url('Sudo-Light.eot');
+    src: url('Sudo-Light.eot?#iefix') format('embedded-opentype'),
+        url('Sudo-Light.woff2') format('woff2'),
+        url('Sudo-Light.woff') format('woff'),
+        url('Sudo-Light.ttf') format('truetype');
+    font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'Sudo';
+    src: url('Sudo-BoldItalic.eot');
+    src: url('Sudo-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Sudo-BoldItalic.woff2') format('woff2'),
+        url('Sudo-BoldItalic.woff') format('woff'),
+        url('Sudo-BoldItalic.ttf') format('truetype');
+    font-weight: bold; font-style: italic; font-display: swap;
+}
+@font-face {
+    font-family: 'Sudo Variable';
+    src: url('SudoVariable.eot');
+    src: url('SudoVariable.eot?#iefix') format('embedded-opentype'),
+        url('SudoVariable.woff2') format('woff2'),
+        url('SudoVariable.woff') format('woff'),
+        url('SudoVariable.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'Sudo';
+    src: url('Sudo-Thin.eot');
+    src: url('Sudo-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Sudo-Thin.woff2') format('woff2'),
+        url('Sudo-Thin.woff') format('woff'),
+        url('Sudo-Thin.ttf') format('truetype');
+    font-weight: 100; font-style: normal; font-display: swap;
+}
+.sudo{font-family: 'Sudo';}
+.sudo-variable{font-family: 'Sudo Variable';}

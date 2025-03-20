@@ -1,0 +1,378 @@
+/* Filetypes */
+
+/* general file icon style */
+.files a:before, .files i { display: inline-block; width: 1em; height: 1em; }
+.files a:before {margin-right: 0.25em; margin-left: 0.25em; margin-top: 0.125em;}
+
+/* AV (video) files */
+.files a[href$=".3g2"]:before, .files a[href$=".3gp"]:before, .files a[href$=".asf"]:before, .files a[href$=".avi"]:before,
+.files a[href$=".m2v"]:before, .files a[href$=".m4v"]:before, .files a[href$=".mkv"]:before, .files a[href$=".mp4"]:before,
+.files a[href$=".mpe"]:before, .files a[href$=".mpeg"]:before, .files a[href$=".mpg"]:before, .files a[href$=".ogv"]:before,
+.files a[href$=".rm"]:before, .files a[href$=".vob"]:before, .files a[href$=".webm"]:before, .files a[href$=".wmv"]:before, .files i.mp4 {
+	content:url("icons/ft/avi.svg");
+}
+/* Audio files */
+.files a[href$=".3ga"]:before, .files a[href$=".aa"]:before, .files a[href$=".aac"]:before, .files a[href$=".aif"]:before,
+.files a[href$=".aifc"]:before, .files a[href$=".aiff"]:before, .files a[href$=".amr"]:before, .files a[href$=".asx"]:before,
+.files a[href$=".au"]:before, .files a[href$=".caf"]:before, .files a[href$=".flac"]:before, .files a[href$=".iff"]:before,
+.files a[href$=".m4a"]:before, .files a[href$=".m4r"]:before, .files a[href$=".mid"]:before, .files a[href$=".midi"]:before,
+.files a[href$=".mod"]:before, .files a[href$=".mp2"]:before, .files a[href$=".mp3"]:before, .files a[href$=".mpa"]:before,
+.files a[href$=".mpga"]:before, .files a[href$=".ogg"]:before, .files a[href$=".ra"]:before, .files a[href$=".wav"]:before,
+.files a[href$=".wma"]:before, .files i.mp3 {
+	content:url("icons/ft/mp3.svg");
+}
+/* compression files */
+.files a[href$=".7z"]:before, .files a[href$=".bz2"]:before, .files a[href$=".cab"]:before, .files a[href$=".gz"]:before, .files a[href$=".rar"]:before,
+.files a[href$=".tgz"]:before, .files a[href$=".xz"]:before, .files a[href$=".z"]:before, .files a[href$=".zip"]:before, .files i.zip {
+	content:url("icons/ft/zip.svg");
+}
+/* ac files */
+.files a[href$=".ac"]:before, .files i.ac {content:url("icons/ft/ac.svg");}
+/* MS Access database files */
+.files a[href$=".accdb"]:before, .files a[href$=".mdb"]:before, .files i.accdb {content:url("icons/ft/accdb.svg");}
+.files a[href$=".accdt"]:before, .files a[href$=".adn"]:before, .files i.accdt {content:url("icons/ft/adn.svg");}
+/* Adobe Illustrator files */
+.files a[href$=".ai"]:before, .files a[href$=".ait"]:before, .files i.ai {content:url("icons/ft/ai.svg");}
+/* ani files */
+.files a[href$=".ani"]:before, .files i.ani {content:url("icons/ft/ani.svg");}
+/* android package file */
+.files a[href$=".apk"]:before, .files i.apk {content:url("icons/ft/apk.svg");}
+/* app files */
+.files a[href$=".app"]:before, .files a[href$=".exe"]:before, .files i.exe {content:url("icons/ft/exe.svg");}
+/* applescript file */
+.files a[href$=".applescript"]:before, .files i.applescript { content:url("icons/ft/applescript.svg");}
+/* aspx files */
+.files a[href$=".asax"]:before, .files a[href$=".ascx"]:before, .files a[href$=".ashx"]:before, .files a[href$=".asmx"]:before,
+.files a[href$=".aspx"]:before, .files a[href$=".mdf"]:before, .files a[href$=".resx"]:before, .files i.aspx { 
+	content:url("icons/ft/aspx.svg");
+}
+/* blank files */
+.files a[href$=".asc"]:before, .files a[href$=".blank"]:before, .files a[href$=".in"]:before, .files a[href$=".pcd"]:before,
+.files a[href$=".prop"]:before, .files a[href$=".master"]:before, .files i.blank {
+	content:url("icons/ft/blank.svg");
+}
+/* bash files */
+.files a[href$=".ash"]:before, .files a[href$=".bash"]:before, .files a[href$=".csh"]:before, .files a[href$=".ksh"]:before,
+.files a[href$=".sh"]:before, .files a[href$=".wsf"]:before, .files a[href$=".zsh"]:before, .files i.bash {
+	content:url("icons/ft/bash.svg")
+}
+/* asp files*/
+.files a[href$=".asp"]:before, .files i.asp { content:url("icons/ft/asp.svg");}
+/* axd files */
+.files a[href$=".axd"]:before, .files a[href$=".cd"]:before, .files i.axd {content:url("icons/ft/axd.svg");}
+/* aze */
+.files a[href$=".aze"]:before, .files i.aze {content:url("icons/ft/aze.svg");}
+/* bak */
+.files a[href$=".bak"]:before, .files i.bak {content:url("icons/ft/bak.svg");}
+/* cmd files */
+.files a[href$=".bat"]:before, .files a[href$=".cmd"]:before, .files a[href$=".tcsh"]:before, .files i.cmd {
+	content:url("icons/ft/cmd.svg");
+}
+/* binary files */
+.files a[href$=".bin"]:before, .files a[href$=".dat"]:before, .files i.bin {content:url("icons/ft/bin.svg");}
+/* bitmap image files */
+.files a[href$=".bmp"]:before, .files a[href$=".bpg"]:before, .files a[href$=".cr2"]:before, .files a[href$=".dng"]:before,
+.files a[href$=".gif"]:before, .files a[href$=".heic"]:before, .files a[href$=".image"]:before, .files a[href$=".jpe"]:before,
+.files a[href$=".jpeg"]:before, .files a[href$=".jpg"]:before, .files a[href$=".nef"]:before, .files a[href$=".png"]:before,
+.files a[href$=".psp"]:before, .files a[href$=".raw"]:before, .files a[href$=".tga"]:before, .files a[href$=".tif"]:before,
+.files a[href$=".tiff"]:before, .files a[href$=".webp"]:before, .files i.bmp { 
+	content:url("icons/ft/bmp.svg");
+}
+/* bowerrc */
+.files a[href$=".bowerrc"]:before, .files i.bowerrc {content:url("icons/ft/bowerrc.svg");}
+/* browser files */
+.files a[href$=".browser"]:before, .files a[href$=".browserinfo"]:before, .files i.browser {
+	content:url("icons/ft/browser.svg");
+}
+.files a[href$=".crdownload"]:before, .files i.chrome {content:url("icons/ft/crdownload.svg");}
+/* c, h files */
+.files a[href$=".c"]:before, .files i.c {content: url("icons/ft/c.svg");}
+.files a[href$=".h"]:before, .files i.h {content:url("icons/ft/h.svg");}
+/* CAD files*/
+.files a[href$=".cad"]:before, .files a[href$=".dgn"]:before, .files a[href$=".dwg"]:before, .files a[href$=".dxf"]:before,
+.files a[href$=".step"]:before, .files a[href$=".stl"]:before, .files i.cad {
+	content:url("icons/ft/cad.svg");
+}
+/* audacity files */
+.files a[href$=".aup"]:before, .files a[href$=".m3u"]:before, .files a[href$=".m3u8"]:before, .files a[href$=".ram"]:before,
+.files a[href$=".xspf"]:before, .files i.aup { 
+	content: url("icons/ft/ram.svg");
+}
+/* cal files */
+.files a[href$=".cal"]:before, .files i.cal {content:url("icons/ft/cal.svg");}
+.files a[href$=".ics"]:before, .files i.ics {content:url("icons/ft/ics.svg");}
+.files a[href$=".vcs"]:before, .files i.vcs {content:url("icons/ft/vcs.svg");}
+/* key files */
+.files a[href$=".gpg"]:before, .files a[href$=".key"]:before, .files a[href$=".p12"]:before,
+.files a[href$=".p7b"]:before, .files a[href$=".pfx"]:before, .files a[href$=".pgp"]:before, .files i.key {
+	content: url("icons/ft/key.svg");
+}
+/* encoded files */
+.files a[href$=".cer"]:before, .files a[href$=".crt"]:before, .files a[href$=".enc"]:before, .files a[href$=".pem"]:before,
+.files a[href$=".rsa"]:before, .files i.enc {
+	content:url("icons/ft/enc.svg");
+}
+/* config files */
+.files a[href$=".cfg"]:before, .files a[href$=".conf"]:before, .files a[href$=".config"]:before, .files a[href$=".inf"]:before,
+.files a[href$=".ini"]:before, .files i.config {
+	content: url("icons/ft/config.svg");
+}
+.files a[href$=".editorconfig"]:before, .files i.editorconfig {content: url("icons/ft/editorconfig.svg");}
+/* coldfusion files */
+.files a[href$=".cfm"]:before, .files a[href$=".cfml"]:before, .files i.cfm {content:url("icons/ft/cfml.svg");}
+/* cgi files */
+.files a[href$=".cgi"]:before, .files i.cgi { content:url("icons/ft/cgi.svg");}
+/* class files */
+.files a[href$=".class"]:before, .files i.class {content:url("icons/ft/class.svg");}
+/* codekit files */
+.files a[href$=".codekit"]:before, .files i.codekit {content:url("icons/ft/codekit.svg");}
+/* coffee files */
+.files a[href$=".coffee"]:before, .files i.coffee {content:url("icons/ft/coffee.svg");}
+.files a[href$=".sitemap"]:before, .files i.sitemap {content: url("icons/ft/sitemap.svg");}
+/* compile */
+.files a[href$=".compile"]:before, .files i.compile {content: url("icons/ft/compile.svg");}
+/* c++ files */
+.files a[href$=".cpp"]:before, .files i.cpp {content: url("icons/ft/cpp.svg");}
+/* captivate */
+.files a[href$=".cptx"]:before, .files i.cptx {content: url("icons/ft/cptx.svg");}
+/* c sharp files */
+.files a[href$=".cs"]:before, .files i.cs {content: url("icons/ft/cs.svg");}
+/* css files */
+.files a[href$=".css"]:before, .files i.css {content: url("icons/ft/css.svg");}
+/* MS Excel spreadsheet files*/
+.files a[href$=".csv"]:before, .files a[href$=".tsv"]:before, .files i.csv {content: url("icons/ft/csv.svg");}
+/* database files */
+.files a[href$=".db"]:before, .files a[href$=".dbf"]:before, .files a[href$=".pdb"]:before, .files a[href$=".sdf"]:before,
+.files a[href$=".sql"]:before, .files i.db, .files i.sql { 
+	content: url("icons/ft/db.svg");
+}
+.files a[href$=".md"]:before, .files i.md {content: url("icons/ft/md.svg");}
+.files a[href$=".odb"]:before, .files i.odb {content: url("icons/ft/odb.svg");}
+.files a[href$=".sqlite"]:before, .files i.sqlite {content: url("icons/ft/sqlite.svg");}
+/* package files */
+.files a[href$=".deb"]:before, .files a[href$=".msi"]:before, .files a[href$=".pkg"]:before, .files a[href$=".tar"]:before,
+.files a[href$=".rpm"]:before, .files a[href$=".xrb"]:before, .files i.pkg {
+	content: url("icons/ft/pkg.svg");
+}
+/* xsl files */
+.files a[href$=".dist"]:before, .files a[href$=".xaml"]:before, .files a[href$=".xps"]:before, a[href$=".xsl"]:before,
+.files i.xsl {
+	content: url("icons/ft/xsl.svg");
+}
+/* dll files*/
+.files a[href$=".dll"]:before, .files a[href$=".gadget"]:before, .files i.dll {content: url("icons/ft/dll.svg");}
+/* dmg files */
+.files a[href$=".dmg"]:before, .files i.dmg {content:url("icons/ft/dmg.svg");}
+/* document files */
+.files a[href$=".doc"]:before, .files a[href$=".docb"]:before, .files a[href$=".docm"]:before, .files a[href$=".docx"]:before,
+.files a[href$=".dot"]:before, .files a[href$=".dotm"]:before, .files a[href$=".dotx"]:before, .files i.doc {
+  content:url("icons/ft/doc.svg");
+}
+/* download */
+.files a[href$=".download"]:before, .files i.download {content:url("icons/ft/download.svg");}
+/* ds_store */
+.files a[href$=".ds_store"]:before, .files i.ds-store {content:url("icons/ft/ds_store.svg");}
+/* dtd file */
+.files a[href$=".dtd"]:before, .files i.dtd {content: url("icons/ft/dtd.svg");}
+/* eot, otf, woff */
+.files a[href$=".eot"]:before, .files a[href$=".otf"]:before, .files a[href$=".woff"]:before, .files a[href$=".woff2"]:before, .files i.eot {content: url("icons/ft/eot.svg");}
+/* eps, svg */
+.files a[href$=".eps"]:before, .files a[href$=".ps"]:before, .files a[href$=".svg"]:before, .files a[href$=".wmf"]:before, .files i.svg { content: url("icons/ft/svg.svg");}
+/* epub */
+.files a[href$=".epub"]:before, .files a[href$=".fb2"]:before, .files a[href$=".ibooks"]:before, .files a[href$=".kf8"]:before,
+.files a[href$=".lit"]:before, .files a[href$=".mobi"]:before, .files i.epub { 
+	content: url("icons/ft/epub.svg");
+}
+/* fax */
+.files a[href$=".fax"]:before, .files i.fax {content:url("icons/ft/fax.svg");}
+/* flash files */
+.files a[href$=".f4v"]:before, .files a[href$=".flv"]:before, .files a[href$=".swf"]:before, .files i.swf {content:url("icons/ft/flv.svg");}
+.files a[href$=".fla"]:before, .files i.fla { content:url("icons/ft/fla.svg");}
+.files a[href$=".swd"]:before, .files i.swd {content: url("icons/ft/swd.svg");}
+.files a[href$=".xfl"]:before, .files i.xfl {content:url("icons/ft/xfl.svg");}
+/* folder */
+.files a[href$=".folder"]:before {content:url("icons/ft/folder.svg");}
+/* gdp */
+.files a[href$=".gdp"]:before, .files i.gdp {content:url("icons/ft/gdp.svg");}
+/* git and ignore files */
+.files a[href$=".gitattributes"]:before, .files i.git {content: url("icons/ft/gitattributes.svg");}
+.files a[href$=".coffeelintignore"]:before, .files a[href$=".eslintignore"]:before, .files a[href$=".gitignore"]:before, .files a[href$=".npmignore"]:before,
+.files a[href$=".tfignore"]:before, .files i.ignore {
+	content:url("icons/ft/gitignore.svg");
+}
+/* go files */
+.files a[href$=".go"]:before, .files i.go {content: url("icons/ft/go.svg");}
+/* handlebars */
+.files a[href$=".handlebars"]:before, .files a[href$=".hbs"]:before, .files i.hbs {content:url("icons/ft/hbs.svg");}
+/* hs files */
+.files a[href$=".hs"]:before, .files a[href$=".hsl"]:before, .files i.hs {content:url("icons/ft/hs.svg");}
+/* HTML */
+.files a[href$=".htm"]:before, .files a[href$=".html"]:before, .files i.html {content:url("icons/ft/html.svg");}
+/* ico */
+.files a[href$=".ico"]:before, .files a[href$=".icns"]:before, .files i.ico {content: url("icons/ft/ico.svg");}
+/* ifo, img */
+.files a[href$=".cue"]:before, .files a[href$=".ifo"]:before, .files i.ifo {content:url("icons/ft/ifo.svg");}
+.files a[href$=".img"]:before, .files a[href$=".iso"]:before, .files a[href$=".udf"]:before, .files a[href$=".vcd"]:before, .files i.iso {content:url("icons/ft/iso.svg");}
+/* indd */
+.files a[href$=".indd"]:before, .files i.indd{content:url("icons/ft/indd.svg");}
+/* jinja */
+.files a[href$=".j2"]:before, .files i.j2 {content:url("icons/ft/j2.svg");}
+/* java, javascript */
+.files a[href$=".jar"]:before, .files a[href$=".java"]:before, .files a[href$=".jsp"]:before, .files i.java {content:url("icons/ft/java.svg");}
+.files a[href$=".js"]:before, .files i.js {content:url("icons/ft/js.svg");}
+.files a[href$=".json"]:before, .files i.json {content:url("icons/ft/json.svg");}
+.files a[href$=".jsx"]:before, .files i.jsx {content:url("icons/ft/jsx.svg");}
+/* kmk, kup */
+.files a[href$=".kmk"]:before, .files i.kmk{content:url("icons/ft/kmk.svg");}
+.files a[href$=".kup"]:before, .files i.kup{content:url("icons/ft/kup.svg");}
+/* lex */
+.files a[href$=".lex"]:before, .files a[href$=".mo"]:before, .files a[href$=".po"]:before, .files a[href$=".pot"]:before, .files i.lex {content:url("icons/ft/lex.svg");}
+/* lisp, el */
+.files a[href$=".lisp"]:before, .files i.lisp {content:url("icons/ft/lisp.svg");}
+.files a[href$=".el"]:before {content: url("icons/ft/el.svg");}
+/* link, lock */
+.files a[href$=".link"]:before, .files i.link {content:url("icons/ft/lnk.svg");}
+.files a[href$=".lock"]:before, .files i.lock {content:url("icons/ft/lock.svg");}
+/* logs, txt */
+.files a[href$=".log"]:before, .files a[href$=".rdf"]:before, .files a[href$=".rtf"]:before, .files a[href$=".txt"]:before, .files i.txt {content:url("icons/ft/log.svg");}
+.files a[href$=".me"]:before, .files i.me {content:url("icons/ft/me.svg");}
+/* lua */
+.files a[href$=".lua"]:before, .files i.lua {content:url("icons/ft/lua.svg");}
+/* objectiv-c m files*/
+.files a[href$=".m"]:before, .files i.m {content:url("icons/ft/m.svg");}
+/* map files */
+.files a[href$=".map"]:before, .files i.map {content:url("icons/ft/map.svg");}
+/* molecular constructor files */
+.files a[href$=".mc"]:before, .files a[href$=".mi"]:before, .files a[href$=".ph"]:before, .files a[href$=".pm"]:before, .files i.mc {content:url("icons/ft/mc.svg");}
+.files a[href$=".pl"]:before, .files i.pl {content:url("icons/ft/pl.svg");}
+/* mk, mm */
+.files a[href$=".mk"]:before, .files i.mk {content:url("icons/ft/mk.svg");}
+.files a[href$=".mm"]:before, .files i.mm {content:url("icons/ft/mm.svg");}
+/* quicktime movie */
+.files a[href$=".mov"]:before, .files a[href$=".qt"]:before, .files i.mov {content:url("icons/ft/mov.svg");}
+/* mpd */
+.files a[href$=".mpd"]:before, .files i.mpd {content:url("icons/ft/mpd.svg");}
+.files a[href$=".mpp"]:before, .files a[href$=".mpt"]:before, .files i.mpp {content:url("icons/ft/mpp.svg");}
+/* nes */
+.files a[href$=".nes"]:before, .files i.nes {content:url("icons/ft/nes.svg");}
+/* nfo about stuff */
+.files a[href$=".nfo"]:before, .files i.nfo {content:url("icons/ft/nfo.svg");}
+/* nix, yaml */
+.files a[href$=".nix"]:before, .files i.nix {content:url("icons/ft/nix.svg");}
+.files a[href$=".cson"]:before, .files a[href$=".tex"]:before, .files a[href$=".yml"]:before, .files a[href$=".yaml"]:before, .files i.yml {content:url("icons/ft/yaml.svg");}
+
+/* open office and apple */
+.files a[href$=".odt"]:before, .files a[href$=".ott"]:before, .files i.odt {content:url("icons/ft/odt.svg");}
+.files a[href$=".ods"]:before, .files i.ods {content:url("icons/ft/ods.svg");}
+.files a[href$=".pages"]:before, .files i.pages {content:url("icons/ft/pages.svg");}
+.files a[href$=".plist"]:before, .files i.plist {content:url("icons/ft/plist.svg");}
+
+/* offline outlook */
+.files a[href$=".ost"]:before, .files a[href$=".pst"]:before, .files i.ost {content:url("icons/ft/ost.svg");}
+/* ova */
+.files a[href$=".ova"]:before, .files a[href$=".ovf"]:before, .files a[href$=".vdi"]:before, .files a[href$=".vmdk"]:before, .files i.vdi {content:url("icons/ft/ova.svg");}
+/* part */
+.files a[href$=".part"]:before, .files i.part {content:url("icons/ft/part.svg");}
+/* pdf */
+.files a[href$=".pdf"]:before, .files i.pdf {content:url("icons/ft/pdf.svg");}
+/* phar */
+.files a[href$=".phar"]:before, .files i.phar {content:url("icons/ft/phar.svg");}
+/* php */
+.files a[href$=".php"]:before, .files i.php {content:url("icons/ft/php.svg");}
+/* pom */
+.files a[href$=".pom"]:before, .files i.pom {content:url("icons/ft/pom.svg");}
+/* presentation files */
+.files a[href$=".potx"]:before, .files a[href$=".pps"]:before, .files a[href$=".ppsx"]:before, 
+.files a[href$=".ppt"]:before, .files a[href$=".pptm"]:before, .files a[href$=".pptx"]:before, .files i.ppt {
+  content:url("icons/ft/pptx.svg");
+}
+/* ps1 */
+.files a[href$=".ps1"]:before, .files i.ps1 {content:url("icons/ft/ps1.svg");}
+/* photoshop */
+.files a[href$=".psd"]:before, .files i.psd {content:url("icons/ft/psd.svg");}
+.files a[href$=".xcf"]:before, .files i.xcf {content:url("icons/ft/xcf.svg");}
+/* publisher */
+.files a[href$=".pub"]:before, .files i.pub {content:url("icons/ft/pub.svg");}
+/* python */
+.files a[href$=".py"]:before, .files a[href$=".pyc"]:before, .files i.py {content:url("icons/ft/py.svg");}
+/* ruby */
+.files a[href$=".gem"]:before, .files a[href$=".ru"]:before, .files i.gem {content: url("icons/ft/gem.svg");}
+.files a[href$=".rb"]:before, .files a[href$=".rub"]:before, .files i.rub {content: url("icons/ft/rub.svg");}
+/* rss */
+.files a[href$=".rss"]:before, .files i.rss {content:url("icons/ft/rss.svg");}
+/* less, sass, scss */
+.files a[href$=".less"]:before, .files a[href$=".sass"]:before, .files a[href$=".scss"]:before, .files i.sass {content:url("icons/ft/sass.svg");}
+/* sldm */
+.files a[href$=".sldm"]:before, .files a[href$=".sldx"]:before, .files i.sldm {content:url("icons/ft/sldm.svg");}
+/* sol */
+.files a[href$=".sol"]:before, .files i.sol {content:url("icons/ft/sol.svg");}
+/* sln, skin */
+.files a[href$=".skin"]:before, .files i.skin {content:url("icons/ft/skin.svg");}
+.files a[href$=".sln"]:before, .files i.sln {content:url("icons/ft/sln.svg");}
+/* swift */
+.files a[href$=".swift"]:before, .files i.swift {content:url("icons/ft/swift.svg");}
+/* sys, tmp */
+.files a[href$=".sys"]:before, .files i.sys {content:url("icons/ft/sys.svg");}
+.files a[href$=".tmp"]:before, .files i.tmp {content:url("icons/ft/tmp.svg");}
+/* torrent */
+.files a[href$=".torrent"]:before, .files i.torrent {content:url("icons/ft/torrent.svg");}
+/* ts */
+.files a[href$=".ts"]:before, .files i.ts {content:url("icons/ft/ts.svg");}
+/* twig */
+.files a[href$=".twig"]:before, .files i.twig {content:url("icons/ft/twig.svg");}
+/* visual basic */
+.files a[href$=".vb"]:before, .files i.vb {content:url("icons/ft/vb.svg");}
+.files a[href$=".licx"]:before, .files a[href$=".vbproj"]:before, .files i.vbproj {content:url("icons/ft/licx.svg");}
+.files a[href$=".vscodeignore"]:before, .files i.vscodeignore {content:url("icons/ft/vscodeignore.svg");}
+.files a[href$=".vbs"]:before, .files i.vbs {content:url("icons/ft/vbs.svg");}
+/* visio drawing */
+.files a[href$=".vdx"]:before, .files a[href$=".vsd"]:before, .files a[href$=".vss"]:before,.files a[href$=".vst"]:before,
+.files a[href$=".vsx"]:before, .files a[href$=".vtx"]:before, .files i.vsd {
+	content:url("icons/ft/vsd.svg");
+}
+/* war */
+.files a[href$=".war"]:before, .files i.war {content:url("icons/ft/war.svg");}
+/* word processing */
+.files a[href$=".wbk"]:before, .files i.wbk {content:url("icons/ft/wbk.svg");}
+.files a[href$=".wps"]:before, .files i.wps {content:url("icons/ft/wps.svg");}
+/* xlsm */
+.files a[href$=".xlsm"]:before, .files i.xlsm {content:url("icons/ft/xlsm.svg");}
+/* excel */
+.files a[href$=".xltx"]:before, .files a[href$=".xlm"]:before, .files a[href$=".xlsm"]:before, .files a[href$=".xlt"]:before, .files i.xlm {
+	content:url("icons/ft/xlm.svg");
+}
+/* xls */
+.files a[href$=".xls"]:before, .files a[href$=".xlsx"]:before, .files i.xls {content:url("icons/ft/xlsx.svg");}
+/* xpi */
+.files a[href$=".xpi"]:before, .files i.xpi {content:url("icons/ft/xpi.svg");}
+/* xml */
+.files a[href$=".xml"]:before, .files i.xml {content:url("icons/ft/xml.svg");}
+/* xsd */
+.files a[href$=".xsd"]:before, .files i.xsd {content:url("icons/ft/xsd.svg");}
+
+/* FOLDER icons */
+.files i.folder {content:url("icons/ft/folders/folder.svg");}
+.files i.folder-open {content:url("icons/ft/folders/folder-open.svg");}
+.files i.folder-archive {content:url("icons/ft/folders/folder-archive.svg");}
+.files i.folder-classic {content:url("icons/ft/folders/folder-classic.svg");}
+.files i.folder-classic-open {content:url("icons/ft/folders/folder-classic-open.svg");}
+.files i.folder-favorite {content:url("icons/ft/folders/folder-favorite.svg");}
+.files i.folder-flat {content:url("icons/ft/folders/folder-flat.svg");}
+.files i.folder-git {content:url("icons/ft/folders/folder-git.svg");}
+.files i.folder-hidden {content:url("icons/ft/folders/folder-hidden.svg");}
+.files i.folder-hidden-open {content:url("icons/ft/folders/folder-hidden-open.svg");}
+.files i.folder-idea {content:url("icons/ft/folders/folder-idea.svg");}
+.files i.folder-image {content:url("icons/ft/folders/folder-image.svg");}
+.files i.folder-lock {content:url("icons/ft/folders/folder-lock.svg");}
+.files i.folder-music {content:url("icons/ft/folders/folder-music.svg");}
+.files i.folder-neon {content:url("icons/ft/folders/folder-neon.svg");}
+.files i.folder-neon-open {content:url("icons/ft/folders/folder-neon-open.svg");}
+.files i.folder-network {content:url("icons/ft/folders/folder-network.svg");}
+.files i.folder-network-open {content:url("icons/ft/folders/folder-network-open.svg");}
+.files i.folder-photo {content:url("icons/ft/folders/folder-photo.svg");}
+.files i.folder-plain {content:url("icons/ft/folders/folder-plain.svg");}
+.files i.folder-plain-open {content:url("icons/ft/folders/folder-plain-open.svg");}
+.files i.folder-svn {content:url("icons/ft/folders/folder-svn.svg");}
+.files i.folder-trash {content:url("icons/ft/folders/folder-trash.svg");}
+.files i.folder-tree {content:url("icons/ft/folders/folder-tree.svg");}
+.files i.folder-video {content:url("icons/ft/folders/folder-video.svg");}

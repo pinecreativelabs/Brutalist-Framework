@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Lack Line';
+    src: url('Lack-Line-Italic.eot');
+    src: url('Lack-Line-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Lack-Line-Italic.woff2') format('woff2'),
+        url('Lack-Line-Italic.woff') format('woff'),
+        url('Lack-Line-Italic.ttf') format('truetype');
+    font-weight: normal; font-style: italic; font-display: swap;
+}
+@font-face {
+    font-family: 'Lack Line';
+    src: url('Lack-Line-Regular.eot');
+    src: url('Lack-Line-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Lack-Line-Regular.woff2') format('woff2'),
+        url('Lack-Line-Regular.woff') format('woff'),
+        url('Lack-Line-Regular.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'Lack';
+    src: url('Lack-Regular.eot');
+    src: url('Lack-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Lack-Regular.woff2') format('woff2'),
+        url('Lack-Regular.woff') format('woff'),
+        url('Lack-Regular.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'Lack';
+    src: url('Lack-Italic.eot');
+    src: url('Lack-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Lack-Italic.woff2') format('woff2'),
+        url('Lack-Italic.woff') format('woff'),
+        url('Lack-Italic.ttf') format('truetype');
+    font-weight: normal; font-style: italic; font-display: swap;
+}
+.lack{font-family: 'Lack';}
+.lack-line{font-family: 'Lack Line';}

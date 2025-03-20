@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	
+	<title>BUTCH</title>
+	<meta name="description" content="BUTCH is a library of general-use classes for typography, layout, and other basic page elements." />
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="BUTCH" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content="BUTCH is a library of general-use classes for typography, layout, and other basic page elements." /> 
+	<meta property="og:site_name" content="Brutalist Framework" />
+	
+	<!-- Icons -->
+	<link rel="icon" href="core/files/favicon-16.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="core/files/favicon-32.png" type="image/png" />
+	<link rel="apple-touch-icon" href="core/files/favicon-128.png" type="image/png" />
+	
+	<!-- CORE CSS  -->
+	<link href="core/css/construct.css" type="text/css" rel="stylesheet" media="all"/>
+	<!-- Theme CSS -->
+	<link href="app/theme/css/theme.css" type="text/css" rel="stylesheet" media="all" />
+	
+</head>
+<body>
+<!-- MAIN MENU -->
+<div class="blonk-tr shape quadrant bottom-left flex middle sand" style="z-index: 10002;">
+	<button class="reveal-overlay" id="reveal-nav" aria-controls="primary-menu" aria-expanded="false">
+	  <span class="topbar charcoal"></span><span class="middlebar charcoal"></span><span class="bottombar charcoal"></span>
+	</button>
+</div>
+<div class="overlay" id="overlay-nav">
+	<div class="wrap-960 monolisk" style="margin-top: 1.5rem;"><div class="checkerboard padded" style="border-radius: 1rem;"><div class="padded emptiness">
+		<ul class="flex flow-text">
+			<li class="third"><a href="index.html"><i class="bi bi-home"></i> HOME</a></li>
+			<li class="third"><a href="about.html"><i class="bi bi-info"></i> About BF</a></li>
+			<li class="third"><a href="https://www.brutalcms.com" target="_blank"><i class="bi bi-communist black red-t"></i> Brutal CMS</a></li>
+		</ul>
+		<ul class="flow-text flex" style="border-top: 2px solid #fff; padding-top: 8px;">
+			<li class="third"><a href="bfx.html"><i class="bi bi-sparkle"></i> BFX</a></li>
+			<li class="third"><a href="bicons.html"><i class="bi bi-flag"></i> bIcons</a></li>
+			<li class="third"><a href="buff.html"><i class="bi bi-fill"></i> BUFF</a></li>
+			<li class="third"><a href="buix.html"><i class="bi bi-navigate"></i> BUIX</a></li>
+			<li class="third current"><a href="butch.html"><i class="bi bi-pick"></i> BUTCH</a></li>
+			<li class="third"><a href="flavors.html"><i class="bi bi-cone"></i> Flavors</a></li>
+			<li class="third"><a href="fux.html"><i class="bi bi-box-x"></i> FUX</a></li>
+			<li class="third"><a href="grids.html"><i class="bi bi-quadrant"></i> Grids</a></li>
+			<li class="third"><a href="rebar.html"><i class="bi bi-converge-left"></i> ReBAR</a></li>
+		</ul>
+	</div><div class="padded emptiness" style="margin-top: 1.25rem;">
+		<ul class="flex flow-text">
+			<li class="third"><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank">Roadmap</a></li>
+			<li class="third"><a href="https://github.com/pinecreativelabs" target="_blank">Github</a></li>
+			<li class="third"><a href="https://www.instagram.com/brutalistfwk" target="_blank">Instagram</a></li>
+		</ul>
+		<ul class="flex flow-text" style="width: 100%; border-top: 2px solid #fff; padding-top: 8px;">
+			<li class="half"><a href="https://www.blueprintgrid.com" target="_blank"><i class="blueprint bi bi-grid"></i> Blueprint Grid</a></li>
+			<li class="half"><a href="https://www.brutalistwebdesign.com" target="_blank"><i class="bi bi-reference lemon black-t"></i> Reference Guides</a></li>
+		</ul>
+	</div></div></div>
+</div>
+<script>
+document.querySelector("#reveal-nav").addEventListener("click", function() {
+  this.classList.toggle("active");
+  document.querySelector("#overlay-nav").classList.toggle("open");
+})
+</script>
+<a href="#uptop" class="blonk-cr blood shape semicircle west white-t monolisk lighten-h"><i class="bi bi-up bi-3x"></i><br /><strong>top</strong></a>
+
+<!-- PAGE -->
+<header class="brickbuild padded flex middle" id="uptop" style="min-height: 25vh; margin-bottom: 0;">
+	<a href="index.html"><img class="large-thumb brdr-s-k red-b invert-h" src="app/files/images/bf3logo_bloodsand.png" alt="Brutalist Framework" /></a>
+</header>
+<div class="dune white-t flex" style="height: 25vh; margin: 0;">
+	<div class="shape point-right sand center flex middle" style="min-width: 15vw; height: 100%; margin: 0 1rem 0 0;">
+		<div class="fluid-text-h1" style="margin-left: -20px;"><i class="bi bi-pick charcoal-t wheat-t-s"></i></div>
+	</div>
+	<div class="flex middle column charcoal-t sand-t-s">
+		<h1 class="fluid-text start monolisk" style="margin: -10px 0 0 0; font-weight:900;">BUTCH</h1>
+		<h2 class="flow-text baffle start keep-all depixel" style="margin: 0; padding: 0;">Base Utility & Typography Class Helpers</h2>
+	</div>
+</div>
+
+<div class="fossil smoke-t padded">
+	<div class="wrap-1200">
+		<p class="flow-text bitstream">BUTCH is a library of general-use classes for typography, layout, and other basic page elements.</p>
+		<p class="requiresbox bitstream"><span class="flow-text bold"><small>requires:</small><br /><em>core/css/butch.css</em></span></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		<!-- STICKY PAGE SANDBAR NAV -->
+		<nav class="sandbar sand monolisk flow-text">
+			<ul>
+				<li><a href="#type">Typography</a></li>
+				<li><a href="#layout">Layout &amp; Layering</a></li>
+				<li><a href="#utils">Utility Classes</a></li>
+				<li><a href="#bounds">Boundaries</a></li>
+				<li><a href="#shapes">Shapes</a></li>
+				<li><a href="#tables">Tables &amp; Media</a></li>
+			</ul>
+		</nav>
+		
+		<!-- TYPOGRAPHY -->
+		<h3 class="fluid-text monolisk" id="type">Typography</h3>
+		<!-- Font Families -->
+		<h4 class="white-t courier charcoal flow-text">Web-Safe Fonts</h4>
+		<p class="col2" style="font-size: 1.25rem;"><span class="arial">.arial</span><br />
+			<span class="arial-black">.arial-black</span><br />
+			<span class="comic">.comic</span><br />
+			<span class="tahoma">.tahoma</span><br />
+			<span class="helvetica">.helvetica</span><br />
+			<span class="impact">.impact</span><br />
+			<span class="verdana">.verdana</span><br />
+			<span class="courier">.courier</span><br />
+			<span class="lucida">.lucida</span><br />
+			<span class="georgia">.georgia</span><br />
+			<span class="times">.times</span><br />
+			<span class="palatino">.palatino</span>
+		</p>
+		<h4 class="white-t courier charcoal flow-text">Custom Fonts</h4>
+		<p class="fluid-text-h4 arial"><span class="brutalism">.brutalism</span> <small>(.brutalism)</small><br />
+		<span class="crude">.crude</span> <small>(.crude)</small></p>
+		<p class="col2" style="font-size: 1.75rem;"><span class="antidesign">.antidesign</span><br />
+			<span class="backout">.backout</span><br /><span class="bilbo-inc">.bilbo-inc</span><br />
+			<span class="bitstream">.bitstream</span><br /><span class="bluu-next">.bluu-next</span><br />
+			<span class="boa-construktor">.boa-construktor</span><br />
+			<span class="brendiva">.brendiva</span><br />
+			<span class="communist">.communist</span><br /><span class="depixel">.depixel</span><br />
+			<span class="lack">.lack</span> / <span class="lack-line">.lack-line</span><br />
+			<span class="monolisk">.monolisk</span><br /><span class="murmure">.murmure</span><br />
+			<span class="realico">.realico</span><br />
+			<span class="sudbury">.sudbury</span> / <span class="sudbury-3d">.sudbury-3d</span><br />
+			<span class="sudo">.sudo</span><br /><span class="superglue">.superglue</span><br />
+			<span class="syne">.syne</span> / <span class="syne-mono">.syne-mono</span><br />
+			<span class="tea-for-god">.tea-for-god</span><br /><span class="vcr-mono">.vcr-mono</span><br />
+			<span class="writer-duospace">.writer-duospace</span>
+		</p>
+		<div class="flex"><div style="width: 50%;">
+			<!-- Font Weight -->
+			<h4 class="white-t flow-text courier charcoal">Font Weight</h4>
+			<p class="normal">.normal</p>
+			<p class="bold">.bold</p>
+			<p class="heavy">.heavy</p>
+		</div><div style="width: 50%;">
+			<!-- Font Sizing -->
+			<h4 class="white-t courier flow-text charcoal">Font Sizing</h4>
+			<p class="fineprint">.fineprint</p>
+			<p class="smaller">.smaller</p>
+			<p>Normal size text</p>
+			<p class="larger">.larger</p>
+			<p class="huge">.huge</p>
+		</div></div>
+		<h4 class="white-t flow-text charcoal courier">Text Alignment &amp; Direction</h4>
+		<p><strong>.center-t</strong> <small>[centers text]</small><br />
+			<strong>.left-t</strong> <small>[aligns text to the left (default)]</small><br />
+			<strong>.right-t</strong> <small>[aligns text to the right]</small><br />
+			<strong>.justify-t</strong> <small>[justifies text]</small><br />
+			<strong>.rtl</strong> <small>[right-to-left]</small><br />
+			<strong>.wm-lr</strong> <small>[vertical writing mode left-to-right]</small><br />
+			<strong>.wm-rl</strong> <small>[vertical writing mode right-to-left]</small><br />
+			<strong>.left</strong> <small>[floats element to the left]</small><br /><strong>.right</strong> <small>[floats element to the right]</small>
+		</p>
+		<h4 class="white-t flow-text charcoal courier">Text Formatting</h4>
+		<p><strong>.letterspace</strong> <small>[character spacing using <em>--charspace</em> variable]</small><br />
+			<strong>.spread</strong> <small>[doubles character spacing using <em>--charspace</em> variable]</small><br />
+			<strong>.compress</strong> <small>[cuts character spacing by one-third using <em>--charspace</em> variable]</small><br />
+			<strong>.oblique</strong> <small>[<span class="oblique">Slants text</span>]</small><br />
+			<strong>.allcaps</strong> <small>[<span class="allcaps">Capitalizes all characters</span>]</small><br />
+			<strong>.lowercase</strong> <small>[<span class="lowercase">ALL LOWERCASE</span>]</small><br />
+			<strong>.capitalize</strong> <small>[<span class="capitalize">all words uppercased</span>]</small><br />
+			<strong>.smallcaps</strong> <small>[<span class="smallcaps">Small caps font is displayed</span>]</small><br />
+			<strong>.spaced-2x</strong> <small>[double spaced]</small><br />
+			<strong>.spaced-3x</strong> <small>[triple line spacing]</small><br />
+			<strong>.spaced-4x</strong> <small>[4x line spacing]</small>
+		</p>
+		<p><strong>.tal-l</strong> <small>[left-aligns last line of text]</small><br /><strong>.tal-r</strong> <small>[right-aligns last line of text</small><br />
+			<strong>.tal-c</strong> <small>[centers last line of text]</small><br /><strong>.tal-j</strong> <small>[justifies last line of text]</small><br />
+			<strong>.indent</strong> <small>[indents text by 1cm]</small>
+		</p>
+		<p class="nowrap"><strong>.nowrap</strong> <small>[text will never wrap to next line]</small></p>
+		<p class="ws-sm"><strong>.ws-sm</strong> <small>[small word spacing]</small></p>
+		<p class="ws-md"><strong>.ws-md</strong> <small>[medium word spacing]</small></p>
+		<p class="wordspace-large"><strong>.ws-lg</strong> <small>[large word spacing]</small></p>
+		<p class="keep-all"><strong>.keep-all</strong> <small>[word breaks are prohibited between pairs of letters]</small></p>
+		<p class="break-all"><strong>.break-all</strong> <small>[lines may break between any two letters]</small></p>
+		<p class="break"><strong>.break</strong> <small>[word wrap allows unbreakable words to be broken]</small></p>
+		<p class="guard-text"><strong>.guard</strong> <small>[prevents text from being selectable]</small></p>
+		<p class="spacer"></p>
+		
+		<h4 class="white-t flow-text charcoal courier"><strong>.flow-text</strong> <small>(responsive text)</small></h4>
+		<p class="flow-text">Flow-text makes your text responsive! The font size uses media queries, so it scales depending on the screen width.</p>
+		<p>This is a paragraph <em>without</em> flow-text applied.</p>
+		<h4 class="white-t flow-text charcoal courier"><strong>.fluid-text</strong></h4>
+		<p><em>Fluid-text</em> is similar to <em>flow-text</em> in that the size scales in relation to the screen size. However, it does NOT make use of media queries. Rather, it uses a calculated scale range to determine the font size. Done in pure CSS!<br /><br /></p>
+		<p class="fluid-text bold">.fluid-text</p>
+		<p class="fluid-text-h1">.fluid-text-h1</p>
+		<p class="fluid-text-h2">.fluid-text-h2</p>
+		<p class="fluid-text-h3">.fluid-text-h3</p>
+		<p class="fluid-text-h4">.fluid-text-h4</p>
+		<p class="fluid-text-h5">.fluid-text-h5</p>
+		<p class="fluid-text">.fluid-text-h6</p>
+		<h4 class="white-t flow-text charcoal courier"><strong>.flex-text</strong></h4>
+		<p><em>Flex-text</em> uses variables to define a minimum, preferred, and maximum font size, which will scale in proportion to the screen size. Values can be customized in the <em>variables.css</em> file.</p>
+		<p class="flex-text">.flex-text</p>
+		<p class="spacer"></p>
+		
+		<p class="white-t flow-text charcoal courier">Address</p>
+		<address>Address Line 1<br />Address Line 2<br />Address Line 3</address>
+		<p>&nbsp;</p>
+		<p class="white-t flow-text charcoal courier">Blockquote</p>
+		<blockquote>
+			New brutalism, inevitably, in global dissemination, degenerated into a rough concrete style.
+		</blockquote>
+		<p class="white-t flow-text charcoal courier">Description Lists</p>
+		<dl>
+			<dt>Term</dt><dd>Description</dd>
+			<dt>Concrete</dt><dd>Cement, air, water, gravel, sand</dd>
+		</dl>
+		<p class="padding"></p>
+		<p class="white-t flow-text charcoal courier">Unordered Lists</p>
+		<div class="flex">
+			<div class="third">
+				<p><strong>ul.disc</strong></p>
+				<ul class="disc">
+					<li>Item 1</li><li>Item 2</li><li>Item 3</li>
+				</ul>
+				<p><strong>ul.diamond</strong></p>
+				<ul class="diamond">
+					<li>Item 1</li><li>Item 2</li><li>Item 3</li>
+				</ul>
+				<p><strong>ul.fisheye</strong></p>
+				<ul class="fisheye">
+					<li>Item 1</li><li>Item 2</li><li>Item 3</li>
+				</ul>
+				<p><strong>ul.check</strong></p>
+				<ul class="check">
+					<li>Item 1</li><li>Item 2</li><li>Item 3</li>
+				</ul>
+				<p><strong>ul.heart</strong></p>
+				<ul class="heart">
+					<li>Item 1</li><li>Item 2</li><li>Item 3</li>
+				</ul>
+			</div><div class="third">
+				<p><strong>ul.circle</strong></p>
+				<ul class="circle">
+					<li>Item 1</li><li>Item 2</li><li>Item 3</li>
+				</ul>
+				<p><strong>ul.triangle</strong></p>
+				<ul class="triangle">
+					<li>Item 1</li><li>Item 2</li><li>Item 3</li>
+				</ul>
+				<p><strong>ul.bullseye</strong></p>
+				<ul class="bullseye">
+					<li>Item 1</li><li>Item 2</li><li>Item 3</li>
+				</ul>
+				<p><strong>ul.xmark</strong></p>
+				<ul class="xmark">
+					<li>Item 1</li><li>Item 2</li><li>Item 3</li>
+				</ul>
+				<p><strong>ul.sparkle</strong></p>
+				<ul class="sparkle">
+					<li>Item 1</li><li>Item 2</li><li>Item 3</li>
+				</ul>
+			</div><div class="third">
+				<p><strong>ul.square</strong></p>
+				<ul class="square">
+					<li>Item 1</li><li>Item 2</li><li>Item 3</li>
+				</ul>
+				<p><strong>ul.brutal</strong></p>
+				<ul class="brutal">
+					<li>Item 1</li><li>Item 2</li><li>Item 3</li>
+				</ul>
+				<p><strong>ul.lozenge</strong></p>
+				<ul class="lozenge">
+					<li>Item 1</li><li>Item 2</li><li>Item 3</li>
+				</ul>
+				<p><strong>ul.arrow</strong></p>
+				<ul class="arrow">
+					<li>Item 1</li><li>Item 2</li><li>Item 3</li>
+				</ul>
+				<p><strong>ul.burst</strong></p>
+				<ul class="burst">
+					<li>Item 1</li><li>Item 2</li><li>Item 3</li>
+				</ul>
+			</div><div class="half">
+				<p><span class="bold bigger">ul.tags</span> - makes ul li items display inline</p>
+				<ul class="tags">
+					<li>Brutalism</li><li>Concrete</li>
+					<li>Architecture</li><li>Structures</li>
+				</ul>
+				<p><span class="bigger bold">ul.tags-hash</span> - prepends a hashtag to tags</p>
+				<ul class="tags-hash">
+					<li>Brutalism</li><li>Concrete</li>
+					<li>Architecture</li><li>Structures</li>
+				</ul>
+			</div><div class="half">
+				<p><span class="bigger bold">ul.tags-check</span> - prepends a checkmark to tags</p>
+				<ul class="tags-check">
+					<li>Brutalism</li><li>Concrete</li>
+					<li>Architecture</li><li>Structures</li>
+				</ul>
+				<p><span class="bigger bold">ul.tags-xmark</span> - prepends an x-mark to tags</p>
+				<ul class="tags-xmark">
+					<li>Brutalism</li><li>Concrete</li>
+					<li>Architecture</li><li>Structures</li>
+				</ul>
+			</div>
+		</div>
+		<p class="white-t flow-text charcoal courier" style="margin-top: 1em;">Ordered Lists</p>
+		<div class="flex">
+			<div style="width: 50%;">
+				<p><strong>Default</strong></p>
+				<ol>
+					<li>Item 1</li><li>Item 2</li><li>Item 3</li>
+				</ol>
+				<p><strong>ol.roman</strong></p>
+				<ol class="roman">
+					<li>Item 1</li><li>Item 2</li><li>Item 3</li>
+				</ol>
+			</div><div style="width: 50%;">
+				<p><strong>ol.alpha</strong></p>
+				<ol class="alpha">
+					<li>Item 1</li><li>Item 2</li><li>Item 3</li>
+				</ol>
+				<p><strong>ol.none</strong></p>
+				<ol class="none">
+					<li>Item 1</li><li>Item 2</li><li>Item 3</li>
+				</ol>
+			</div>
+		</div>
+		<p class="spacer"></p>
+		<!-- Section Header Counter -->
+		<p class="white-t flow-text charcoal courier" style="margin-top: 1em;">Section Header Counter</p>
+		<div class="flex"><div class="padded half">
+			<p>The section header counter allows you to create auto-incremented section headers and sub-headers. </p>
+			<p class="indent">Counted heading tags need to be wrapped within a <em>count</em> class div. Sub-headings need to be wrapped within a <em>subcount</em> class div (that is also nested within a <em>count</em> element).</p>
+			<code class="black lime-t lucida padding" style="margin-top: 1em;">
+				&lt;div class="count"&gt;<br />
+				&nbsp;&lt;h2&gt;Heading&lt;/h2&gt;<br />&nbsp;&lt;h2&gt;Heading&lt;/h2&gt;<br />
+				&nbsp;&nbsp;&lt;div class="subcount"&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Sub-heading&lt;/h3&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Sub-heading&lt;/h3&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Sub-heading&lt;/h3&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+				&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&lt;h2&gt;Heading&lt;/h2&gt;<br />...<br />
+				&lt;/div&gt;
+			</code>
+		</div><div class="half">
+			<p class="padded info"><span class="bold bigger">Classes</span><br />
+				<strong>.count h(1-5)</strong> - auto-increments H tags (1-5)<br /><strong>.subcount h(2-6)</strong> - auto-increments H tags (2-6)<br />
+				<strong>.count-reset</strong> - resets count to 0<br /><strong>.subcount-reset</strong> - resets sub-count to 0<br />
+			</p>
+			<div class="count">
+				<h4>Regions</h4>
+				<div class="subcount indent">
+					<h5>North America</h5>
+					<h5>Europe</h5>
+					<h5>Asia</h5>
+				</div>
+				<h4>States</h4>
+				<div class="subcount indent">
+					<h5>Counties</h5>
+					<h5>Cities</h5>
+					<h5>Attractions</h5>
+				</div>
+				<h4>Planets</h4>
+				<div class="subcount indent">
+					<h5>Uranus</h5>
+					<h5>Saturn</h5>
+					<h5>Jupiter</h5>
+				</div>
+			</div>
+		</div></div>
+		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		 
+		<!-- LAYOUT & LAYERING -->
+		<h3 class="fluid-text monolisk" id="layout">Layout</h3>
+		<!-- Flexbox -->
+		<p class="flow-text charcoal white-t courier">Flexbox</p>
+		<p>Flexbox is a one-dimensional approach to arranging items in rows or columns, allowing items to fill available space in order to prevent overflow. To create a Flexbox area, simply wrap div elements within an element with the class:<br><span class="flow-text"><strong>.flex</strong></span></p>
+		<div class="flex">
+			<div class="half padded">
+				<div class="disabled padded">
+					<p><span class="flow-text"><strong>Flex Classes</strong></span><br />Apply these additional Flexbox classes for additional control:<br />
+						<strong>.column</strong> - <small>arrange items into vertical columns</small><br />
+						<strong>.start</strong> - <small>place item(s) at beginning of container</small><br />
+						<strong>.middle</strong> - <small>place item(s) in middle of container</small><br />
+						<strong>.end</strong> - <small>place item(s) at end of container</small><br />
+						<strong>.reverse</strong> - <small>arrange items in reverse order (last to first)</small><br />
+						<strong>.evenly</strong> - <small>items will have equal spacing around them</small><br />
+						<strong>.around</strong> - <small>items will have space before, between, and after them</small><br />
+						<strong>.between</strong> - <small>items will have space between them</small><br />
+						<strong>.stretch</strong> - <small>items are stretched to fit the container</small><br />
+						<strong>.baseline</strong> - <small>items are positioned at the baseline of the container</small><br />
+					</p>
+					<p style="margin-top: 1em;"><strong>.wrap-600</strong> - <small>[600px max-width container]</small><br />
+						<strong>.wrap-960</strong> - <small>[960px max-width container]</small><br />
+						<strong>.wrap-1200</strong> - <small>[1200px max-width container]</small><br /><strong>.wrap-1600</strong> - <small>[1600px max-width container]</small>
+					</p>
+				</div>
+			</div>
+			<div class="half padded">
+				<p class="padded disabled"><span class="flow-text">Width Classes</span><br />Items wrapped within <strong>.flex</strong> containers should have a width specified. Percent widths are recommended. Apply these classes to flex child elements:<br />
+				<strong>.half</strong> <small>[50% width]</small><br /><strong>.third</strong> <small>[33% width]</small><br /><strong>.two-thirds</strong> <small>[67% width]</small><br />
+				<strong>.fourth</strong> <small>[25% width]</small><br />
+				<strong>.fifth</strong> <small>[20% width]</small><br /><strong>.sidebar</strong> <small>[25% width]</small><br /> <strong>.main</strong> <small>[75% width]</small>
+				</p>
+				<p style="margin-top: 1em;" class="padded blueprint"><span class="flow-text monolisk"><i class="bi bi-grid"></i>Blueprint Grid</span><br />
+				If a more robust layout grid is needed, take a look at our <a href="grids.html" class="lemonlink"><strong>multi-method layout grid system</strong></a>.</p>
+			</div>
+		</div>
+		<p class="spacer"></p>
+		<!-- Content Columns -->
+		<p class="flow-text charcoal white-t courier">Content Columns</p>
+		<p>Apply these classes to paragraphs or divs to create a multi-column layout. Ideal for long text areas and lists.<br /><br /></p>
+		<p class="flow-text white-t"><strong>.col2</strong> - 2 column layout</p>
+		<p class="arial col2">Lorem ipsum no facer prompta vim, movet ubique qui ei. Per no regione aliquid, ea mei nulla scribentur liberavisse. Vim cu tale ludus possit, discere suavitate nam ad. No verterem reprimique vix, phaedrum hendrerit an quo. Qui feugait apeirian ut, ne virtute numquam mandamus mea. Eos et enim dicant deterruisset. At nec ceteros mentitum, ex solum putent offendit per. Odio putent discere cu vim. Oportere disputationi ea mea. Per civibus constituam et, an feugait omittam mel, no suas quas doming qui. Sit aeterno numquam no.</p>
+		<p>&nbsp;</p>
+		<p class="flow-text white-t"><strong>.col3</strong> - 3 column layout</p>
+		<p class="arial col3">Lorem ipsum no facer prompta vim, movet ubique qui ei. Per no regione aliquid, ea mei nulla scribentur liberavisse. Vim cu tale ludus possit, discere suavitate nam ad. No verterem reprimique vix, phaedrum hendrerit an quo. Qui feugait apeirian ut, ne virtute numquam mandamus mea. Eos et enim dicant deterruisset. At nec ceteros mentitum, ex solum putent offendit per. Odio putent discere cu vim. Oportere disputationi ea mea. Per civibus constituam et, an feugait omittam mel, no suas quas doming qui. Sit aeterno numquam no.</p>
+		<p>&nbsp;</p>
+		<p class="flow-text white-t"><strong>.col4</strong> - 4 column layout</p>
+		<p class="arial col4">Lorem ipsum no facer prompta vim, movet ubique qui ei. Per no regione aliquid, ea mei nulla scribentur liberavisse. Vim cu tale ludus possit, discere suavitate nam ad. No verterem reprimique vix, phaedrum hendrerit an quo. Qui feugait apeirian ut, ne virtute numquam mandamus mea. Eos et enim dicant deterruisset. At nec ceteros mentitum, ex solum putent offendit per. Odio putent discere cu vim. Oportere disputationi ea mea. Per civibus constituam et, an feugait omittam mel, no suas quas doming qui. Sit aeterno numquam no.</p>
+		<div class="flex">
+			<div class="half padded">
+				<div class="disabled padded">
+					<p><span class="flow-text"><strong>More Column Classes</strong></span><br />
+					<strong>.col5</strong> - 5 columns<br /><strong>.col6</strong> - 6 columns<br /><strong>.col7</strong> - 7 columns<br /><strong>.col8</strong> - 8 columns<br /><strong>.col9</strong> - 9 columns</p>
+				</div>
+			</div><div class="half padded">
+				<div class="info padded">
+					<p><span class="flow-text"><strong>Column Gaps</strong></span><br />Add 10, 20, 30, 40, 50, or 60px gaps between columns.</p>
+					<p class="bold col2">.gap10<br />.gap20<br />.gap30<br />.gap40<br />.gap50<br />.gap60</p>
+				</div><div class="ready padded">
+					<p><strong>EXAMPLE:</strong> White justified arial text within a 3-column layout with 30px gaps between columns, with double spacing and an indent.</p>
+					<p class="black-t"><strong>&lt;p class="white-t justify arial triple-col gap30 dbl-spaced indent"&gt;...&lt;/p&gt;</strong></p>
+				</div>
+			</div>
+		</div>
+		<p class="spacer"></p>
+		<h3 class="fluid-text monolisk">Layering &amp; Positioning</h3>
+		<p class="bitstream">Position and layer elements.</p>
+		<div class="flex bitstream"><div class="padded half">
+			<p class="padded disabled"><span class="flow-text bold">Positioning</span><br />
+			<strong>.sticky</strong> <small>[sticky positions element at top of container]</small><br />
+			<strong>.fixed</strong> <small>[fixed positions an element]</small><br />
+			<strong>.fixed-t-l</strong> <small>[fixed position at top left]</small><br />
+			<strong>.fixed-t-r</strong> <small>[fixed position at top right]</small><br />
+			<strong>.fixed-b-l</strong> <small>[fixed position at bottom left]</small><br />
+			<strong>.fixed-b-r</strong> <small>[fixed position at bottom right]</small><br />
+			<strong>.absolute</strong> <small>[absolute positions an element]</small><br />
+			<strong>.relative</strong> <small>[relative positions an element]</small></p>
+		</div><div class="padded half">
+			<p class="padded disabled"><span class="flow-text bold">Layering</span><br />
+			<strong>.layer-b</strong> <small>[lowest z-index using <em>--base</em> variable]</small><br />
+			<strong>.layer-l</strong> <small>[low z-index using <em>--low</em> variable]</small><br />
+			<strong>.layer-m</strong> <small>[middle z-index using <em>--mid</em> variable]</small><br />
+			<strong>.layer-h</strong> <small>[high z-index using <em>--high</em> variable]</small><br />
+			<strong>.layer-t</strong> <small>[topmost z-index using <em>--topmost</em> variable]</small></p>
+		</div></div>
+		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		<!-- UTILITY CLASSES -->
+		<h3 class="fluid-text monolisk" id="utils">Utility Classes</h3>
+		<p>These classes are used for brutalizing your content. Apply them to any element.<br /><br /></p>
+		<!-- Spacing & Offsets -->
+		<div class="flex"><div class="half">
+			<p class="white-t courier flow-text"><span class="charcoal allcaps"><strong>Spacing Classes</strong></span></p>
+			<p><strong>.padded</strong> <small>[applies <em>--padding</em> variable]</small><br />
+				<strong>.no-padding</strong> <small>[no padding on element]</small><br />
+				<strong>.no-margins</strong> <small>[no margin around element]</small><br />
+				<strong>.confined</strong> <small>[absolutely NO padding or margins]</small><br />
+				<strong>.comfortable</strong> <small>[enlarges <em>--padding</em> variable by 50%]</small><br />
+				<strong>.uncomfortable</strong> <small>[reduces <em>--padding</em> variable by 25%]</small><br />
+				<strong>.solitary</strong> <small>[applies <em>--margins</em> variable]</small><br />
+				<strong>.sociable</strong> <small>[applies <em>--pullmargin</em> variable]</small><br />
+				<strong>.paranoid</strong> <small>[applies <em>--pushmargin</em> variable to left and right of element]</small><br />
+				<strong>.isolated</strong> <small>[applies <em>--pushmargin</em> variable to top and bottom of element]</small><br />
+				<strong>.spacer</strong> <small>[applies <em>--spacer</em> height variable to element]</small><br />
+				<strong>.spacer-tall</strong> <small>[triples <em>--spacer</em> height variable]</small><br />
+			</p>
+		</div><div class="half">
+			<p class="white-t courier flow-text"><span class="charcoal allcaps"><strong>Offsets</strong></span></p>
+			<p><strong>.pull-right</strong> <small>[applies <em>--pullmargin</em> margin-right variable]</small><br />
+				<strong>.pull-left</strong> <small>[applies <em>--pullmargin</em> margin-left variable]</small><br />
+				<strong>.pull-up</strong> <small>[applies <em>--pullmargin</em> margin-top variable]</small><br />
+				<strong>.pull-down</strong> <small>[applies <em>--pullmargin</em> margin-bottom variable]</small><br /><br />
+				<strong>.push-right</strong> <small>[applies <em>--pushmargin</em> margin-right variable]</small><br />
+				<strong>.push-left</strong> <small>[applies <em>--pushmargin</em> margin-left variable]</small><br />
+				<strong>.push-up</strong> <small>[applies <em>--pushmargin</em> margin-top variable]</small><br />
+				<strong>.push-down</strong> <small>[applies <em>--pushmargin</em> margin-bottom variable]</small><br />
+			</p>
+		</div></div>
+		<p class="spacer"></p>
+		<div class="flex"><div class="half">
+			<!-- Scale Classes -->
+			<p class="white-t courier flow-text"><span class="charcoal allcaps"><strong>Scale Classes</strong></span></p>
+			<p><strong>.scale</strong> <small>[applies <em>--scalex</em> variable to element]</small><br />
+				<strong>.scale-3d</strong> <small>[applies <em>--scalex, --scaley</em>, and <em>--scalez</em> variables to 3D transformation of element]</small><br />
+				<strong>.scale-x</strong> <small>[applies <em>--scalex</em> variable to scaleX transformation of element]</small><br />
+				<strong>.scale-y</strong> <small>[applies <em>--scaley</em> variable to scaleY transformation of element]</small><br />
+				<strong>.scale-z</strong> <small>[applies <em>--scalez</em> variable to scaleZ transformation of element]</small><br />
+			</p>
+			<p class="spacer"></p>
+		</div><div class="half">
+			<!-- Skew Classes -->
+			<p class="white-t courier flow-text" style="margin-top: 1em;"><span class="charcoal allcaps"><strong>Skew Classes</strong></span></p>
+			<p><strong>.skew</strong> <small>[skews element along X and Y axis using <em>--skewx</em> and <em>--skewy</em> variables]</small><br />
+				<strong>.skew-r</strong> <small>[same as .skew, but multiplied by -1 (reversed)]</small><br />
+				<strong>.skew-x</strong> <small>[skews element along X axis using <em>-skewx</em> variable]</small><br />
+				<strong>.skew-x-r</strong> <small>[same as .skew-x, but multiplied by -1 (reversed)]</small><br />
+				<strong>.skew-y</strong> <small>[skews element along Y axis using <em>-skewy</em> variable]</small><br />
+				<strong>.skew-y-r</strong> <small>[same as .skew-y, but multiplied by -1 (reversed)]</small><br />
+			</p>
+			<p class="spacer"></p>
+		</div><div class="half">
+			<!-- Perspective Classes -->
+			<p class="white-t courier flow-text"><span class="charcoal allcaps"><strong>Perspective Classes</strong></span></p>
+			<p><strong>.po</strong> <small>[applies <em>--origin</em> variable (perspective origin)]</small><br />
+				<strong>.po-c</strong> <small>[centered perspective origin]</small><br />
+				<strong>.po-l</strong> <small>[left perspective origin]</small><br />
+				<strong>.po-r</strong> <small>[right perspective origin]</small><br />
+				<strong>.perspective</strong> <small>[applies <em>--perspective</em> variable]</small><br />
+			</p>
+			<p class="spacer"></p>
+		</div><div class="half">
+			<!-- Aspect Ratios -->
+			<p class="white-t courier flow-text"><span class="charcoal allcaps"><strong>Aspect Ratios</strong></span></p>
+			<p><strong>.ar-square</strong> <small>[1:1]</small><br />
+				<strong>.ar-standard</strong> <small>[4:3]</small><br />
+				<strong>.ar-widescreen</strong> <small>[16:9]</small><br />
+				<strong>.ar-smartphone</strong> <small>[9:16]</small><br />
+				<strong>.ar-ultrawide</strong> <small>[21:9]</small><br /><strong>.ar-cinemascope</strong> <small>[2.35:1]</small><br />
+				<strong>.ar-cinema-film</strong> <small>[1:85:1]</small><br /><strong>.ar-full-frame</strong> <small>[3:2]</small>
+			</p>
+			<p class="spacer"></p>
+		</div></div>
+		<!-- Rotation Classes -->
+		<p class="white-t courier flow-text"><span class="charcoal allcaps"><strong>Rotation Classes</strong></span></p>
+		<p><strong>.rr</strong> <small>[rotate right using <em>--rotatex</em> variable]</small><br />
+			<strong>.rl</strong> <small>[rotate left using <em>--rotatex</em> variable (multiplied by -1)]</small><br />
+			<strong>.rr-x</strong> <small>[rotate right on X axis using <em>--rotatex</em> variable]</small><br />
+			<strong>.rl-x</strong> <small>[rotate left on X axis using <em>--rotatex</em> variable (multiplied by -1)]</small><br />
+			<strong>.rr-y</strong> <small>[rotate right on Y axis using <em>--rotatey</em> variable]</small><br />
+			<strong>.rl-y</strong> <small>[rotate left on Y axis using <em>--rotatey</em> variable (multiplied by -1)]</small><br />
+			<strong>.rr-z</strong> <small>[rotate right on Z axis using <em>--rotatez</em> variable]</small><br />
+			<strong>.rl-z</strong> <small>[rotate right on Z axis using <em>--rotatez</em> variable (multiplied by -1)]</small><br />
+		</p>
+		<p class="spacer"></p>
+		<!-- Flip 'n Hover -->
+		<div class="flex"><div class="half">
+			<p class="white-t courier flow-text"><span class="charcoal allcaps"><strong>Transformation Classes</strong></span></p>
+			<p><strong>.flip</strong> <small>[flips element horizontally]</small><br />
+				<strong>.flip-h</strong> <small>[flip horizontally upon hover]</small><br />
+				<strong>.flip-up</strong> <small>[flips element vertically]</small><br />
+				<strong>.flip-up-h</strong> <small>[flip vertically upon hover]</small><br /><br />
+			</p>
+		</div><div class="padded half">
+			<p class="info padded"><span class="flow-text bold">Transform on Hover</span><br />To apply a transformation class upon hover, simply append a <strong><em>-h</em></strong> to a rotation, skew, or scale class. Examples:<br /><strong>.scale-h<br />.skew-y-r-h<br />.rl-y-h</strong></p>
+		</div></div>
+		<!-- Opacities -->
+		<p class="white-t courier flow-text"><span class="charcoal allcaps"><strong>OPACITIES</strong></span></p>
+		<p>Make elements have opacity, or force a transparent background (ideal for PNG images).</p>
+		<div class="flex">
+			<div class="padded">
+				<h6 class="heavy">.transparent</h6>
+				<p class="box-shadow-bottom grey lemon-t center">Transparent background.<br />
+					<img src="core/files/images/border.png" alt="Brutal Border" class="transparent large-thumb" />
+				</p>
+			</div><div class="padded">
+				<h6 class="heavy">.hi-opacity</h6>
+				<p class="box-shadow-bottom grey lemon-t center">75% opacity.<br />
+					<img src="app/files/images/brutal-building.jpg" alt="Brutal Building" class="hi-opacity large-thumb" />
+				</p>
+			</div><div class="padded">
+				<h6 class="heavy">.opacity</h6>
+				<p class="box-shadow-bottom grey lemon-t center">50% opacity.<br />
+					<img src="app/files/images/brutal-building.jpg" alt="Brutal Building" class="opacity large-thumb" />
+				</p>
+			</div><div class="padded">
+				<h6 class="heavy lucida">.lo-opacity</h6>
+				<p class="box-shadow-bottom grey lemon-t center">25% opacity.<br />
+					<img src="app/files/images/brutal-building.jpg" alt="Brutal Building" class="lo-opacity large-thumb" />
+				</p>
+			</div>
+		</div>
+		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		<!-- BOUNDARIES -->
+		<h3 class="fluid-text monolisk" id="bounds">Boundaries</h3>
+		<p>Boundaries need to be respected. This includes brutal borders and rigid rules.<br /><br /></p>
+		<p class="white-t courier flow-text"><span class="charcoal allcaps"><strong>Basic Borders</strong></span></p>
+		<p>Apply basic borders using these classes. To change the border color, see <em>Flavors</em>.<br /><br /></p>
+		<div class="flex">
+			<div class="padded">
+				<p class="b-s-t black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-s-t</strong><br /><small>Solid thin border</small></p>
+				<p class="b-s-k black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-s-k</strong><br /><small>Solid thick border</small></p>
+				<p class="b-s-f black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-s-f</strong><br /><small>Solid fat border</small></p>
+			</div><div class="padded">
+				<p class="b-d-t black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-d-t</strong><br /><small>Dotted thin border</small></p>
+				<p class="b-d-k black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-d-k</strong><br /><small>Dotted thick border</small></p>
+				<p class="b-d-f black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-d-f</strong><br /><small>Dotted fat border</small></p>
+			</div><div class="padded">
+				<p class="b-a-t black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-a-t</strong><br /><small>Dashed thin border</small></p>
+				<p class="b-a-k black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-a-k</strong><br /><small>Dashed thick border</small></p>
+				<p class="b-a-f black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-a-f</strong><br /><small>Dashed fat border</small></p>
+			</div><div class="padded">
+				<p class="b-b-t black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-b-t</strong><br /><small>Double thin border</small></p>
+				<p class="b-b-k black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-b-k</strong><br /><small>Double thick border</small></p>
+				<p class="b-b-f black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-b-f</strong><br /><small>Double fat border</small></p>
+			</div>
+		</div>
+		<p class="spacer"></p>
+		<!-- Outlines -->
+		<p class="white-t courier flow-text"><span class="charcoal allcaps"><strong>Outlines</strong></span></p>
+		<p style="margin-bottom: 1em;">Add an outline border around any element. You can apply both borders and outlines to the same element. Similar to the border classes above, use <strong><em>o</em></strong> in place of the first <strong><em>b</em></strong>. Example: <b><em>.o-s-t</em></b> produces a solid thin outline.</p>
+		<div class="flex">
+			<div class="padded half">
+				<p class="padded info"><span class="flow-text bold">Offset Outlines</span><br />Offset outlines around an element by 2, 5, 10, 15, or 20px:<br /><strong>.os-2<br />.os-5<br />.os-10<br />.os-15<br />.os-20</strong></p>
+			</div><div class="padded half">
+				<p class="bubblepop b-d-f o-d-f" style="margin-bottom: 1.5em; padding: 0.5em;"><b>.bubblepop .b-d-f .o-d-f</b><br /><small>fat dotted border and outline</small></p>
+				<p class="b-s-k o-a-t red-b blue-o os-5" style="margin-bottom: 1.5em; padding: 0.5em;"><strong>.b-s-k .o-a-t .os-5</strong><br />
+					<small>Solid thick red border with thin dashed blue outline, offset by 5px</small>
+				</p>
+				<p class="strawberry-banana o-d-k chocolate-o os-2" style="margin-bottom: 1.75em; padding: 0.5em;"><strong>.o-d-k .os-5</strong><br /><small>Strawberry-banana box with chocolate outline, offset by 2px</small></p>
+				<p class="b-a-k purple-b red-o o-s-t os-5 rounded" style="margin-bottom: 1.5em; padding: 0.5em;"><strong>.b-a-k .o-s-t .os-5 .rounded</strong></p>
+				<p class="b-a-t black-b o-a-t black-o os-2" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-a-t .o-a-t .os-2</strong></p>
+			</div>
+		</div>
+		<p class="padding"></p>
+		<!-- Horizontal Rules -->
+		<p class="white-t courier flow-text"><span class="charcoal allcaps"><strong>Horizontal Rules</strong></span></p>
+		<div class="flex"><div class="padded third">
+			<p>These apply the <em>--accent</em> color variable:</p>
+			<p class="flow-text"><strong>hr.sawtooth</strong></p>
+			<hr class="sawtooth" />
+			<p class="flow-text" style="margin-top: 14px;"><strong>hr.gradient</strong></p>
+			<hr class="gradient" />
+			<p class="flow-text" style="margin-top: 14px;"><strong>hr.dashed</strong></p>
+			<hr class="dashed" />
+			<p class="flow-text" style="margin-top: 14px;"><strong>hr.slash</strong></p>
+			<hr class="slash" />
+		</div><div class="padded third">
+			<p>These are hard-coded:</p>
+			<p class="flow-text" style="margin-top: 14px;"><strong>hr.central</strong></p>
+			<hr class="central" />
+			<p class="flow-text" style="margin-top: 14px;"><strong>hr.charlie</strong></p>
+			<hr class="charlie" />
+		</div><div class="padded third">
+			<p>These allow for Flavor classes to be applied:</p>
+			<p class="flow-text">hr.fat</p>
+			<hr class="fat bubblegum" />
+			<p class="flow-text" style="margin-top: 14px;"><strong>hr.thick</strong></p>
+			<hr class="thick tomato" />
+			<p class="flow-text" style="margin-top: 14px;"><strong>hr.thin</strong></p>
+			<hr class="thin clean" />
+		</div></div>
+		<p class="spacer"></p>
+		<!-- Gradient Borders -->
+		<p class="white-t courier flow-text"><span class="charcoal allcaps"><strong>Gradient Borders</strong></span></p>
+		<div class="flex emptiness flow-text">
+			<div class="padded third">
+				<div class="love-b padded"><p>.love-b</p></div>
+			</div><div class="padded third">
+				<div class="lush-b padded"><p>.lush-b</p></div>
+			</div><div class="padded third">
+				<div class="virgin-b padded"><p>.virgin-b</p></div>
+			</div><div class="padded third">
+				<div class="frost-b padded"><p>.frost-b</p></div>
+			</div><div class="padded third">
+				<div class="sunset-b padded"><p>.sunset-b</p></div>
+			</div><div class="padded third">
+				<div class="dusk-b padded"><p>.dusk-b</p></div>
+			</div><div class="padded third">
+				<div class="shades-b padded"><p>.shades-b</p></div>
+			</div><div class="padded third">
+				<div class="river-b padded"><p>.river-b</p></div>
+			</div><div class="padded third">
+				<div class="hottie-b padded"><p>.hottie-b</p></div>
+			</div>
+		</div>
+		<p class="spacer"></p>
+		<!-- Border -->
+		<div class="flex"><div class="padded half">
+			<div class="slant-dark white"><p class="flow-text blue-t">.slant-dark</p></div>
+		</div><div class="padded half">
+			<div class="slant-light white"><p class="flow-text blue-t">.slant-light</p></div>
+		</div><div class="padded half">
+			<div class="bevel white"><p class="flow-text blue-t">.bevel</p></div>
+		</div><div class="padded half">
+			<div class="emboss white"><p class="flow-text blue-t">.emboss</p></div>
+		</div><div class="padded half">
+			<div class="jagged white padding">
+				<p class="blue-t flow-text">.jagged</p>
+				<p class="grey-t">Creates a grey triangular border above and below an element.</p>
+			</div>
+		</div><div class="padded half">
+			<div class="jagged-alt white padding">
+				<p class="blue-t flow-text">.jagged-alt</p>
+				<p class="grey-t">Jagged alternative</p>
+			</div>
+		</div></div>
+		<p class="spacer"></p>
+		<!-- Box Shadows -->
+		<p class="white-t courier flow-text"><span class="charcoal allcaps"><strong>Box Shadows</strong></span></p>
+		<p>Apply these classes to add a box shadow. By default, box shadow colors use the <em>--secondary</em> color variable.</p>
+		<div class="flex charcoal-t" style="margin-bottom: 1.5em;">
+			<div class="padded fourth">
+				<div class="smoke box-shadow padded"><p><strong>.box-s</strong></p></div>
+			</div><div class="padded fourth">
+				<div class="smoke box-s-k padded"><p><strong>.box-s-k</strong></p></div>
+			</div><div class="padded fourth">
+				<div class="smoke box-s-f padded"><p><strong>.box-s-f</strong></p></div>
+			</div><div class="padded fourth">
+				<div class="smoke box-s-d padded"><p><strong>.box-s-d</strong></p></div>
+			</div><div class="padded fourth">
+				<div class="smoke box-s-t padded"><p><strong>.box-s-t</strong></p></div>
+			</div><div class="padded fourth">
+				<div class="smoke box-s-q padded"><p><strong>.box-s-q</strong></p></div>
+			</div><div class="padded fourth">
+				<div class="smoke box-s-p padded"><p><strong>.box-s-p</strong></p></div>
+			</div><div class="padded fourth">
+				<div class="smoke box-s-s padded"><p><strong>.box-s-s</strong></p></div>
+			</div><div class="padded fourth">
+				<div class="smoke box-s-l padded"><p><strong>.box-s-l</strong></p></div>
+			</div><div class="padded fourth">
+				<div class="smoke box-s-r padded"><p><strong>.box-s-r</strong></p></div>
+			</div><div class="padded fourth">
+				<div class="smoke box-s-a padded"><p><strong>.box-s-a</strong></p></div>
+			</div><div class="padded fourth">
+				<div class="smoke box-s-b padded"><p><strong>.box-s-b</strong></p></div>
+			</div>
+		</div>
+		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		<!-- SHAPES -->
+		<h3 class="fluid-text monolisk" id="shapes">Shapes</h3>
+		<div class="flex bitstream"><div class="padded half">
+			<p>Shapes are simple CSS classes that can be applied to any element to make it into a shape. When floated left or right, a shape element can have content wrap around it.</p>
+			<p class="indent" style="margin-top: 1rem;">To see examples and documentation, see the demo.</p>
+		</div><div class="padded half center">
+			<a href="shapes.html" target="_blank" class="inline-block" style="margin: 0 auto;">
+				<div class="shape star neon flex middle" style="width: 242px; height: 242px;">
+					<div class="shape star vampire hue-h" style="width: 212px; height: 212px;">
+						<p class="flow-text monolisk yellow-t" style="margin-top: 3.25em; line-height: 100%;"><strong>VIEW<br />DEMO</strong></p>
+					</div>
+				</div>
+			</a>
+		</div></div>
+		<div class="flex clean"><div class="padded third">
+			<div class="circle padded b-s-t mauve-b" style="margin-bottom: 1.5em; min-height: 200px;">
+				<p class="center"><span class="flow-text bold purple-t">.circle</span><br />
+				<small><span class="grey-t">Applies 50% radius to any element. To create a perfect circle, specify an equal width and height. When applying float classes <strong>.left</strong> or <strong>.right</strong>, content will wrap around the circle.</span></small></p>
+			</div>
+		</div><div class="padded third">
+			<div class="sketchbox silver grey-b b-a-t" style="margin-bottom: 1.5em;">
+				<p class="flow-text blue-t center comic-sans">&nbsp;<br />.sketchbox<br />&nbsp;</p>
+			</div>
+		</div><div class="padded third">
+			<div class="rounded gray-b b-s-k">
+				<p class="flow-text blue-t center">&nbsp;<br />.rounded<br />&nbsp;</p>
+			</div>
+		</div></div>
+		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+
+		<!-- TABLES & MEDIA -->
+		<h3 class="fluid-text monolisk" id="tables">Tables &amp; Media</h3>
+		<p class="bitstream">Tables can be made responsive simply by applying the class <span class="heavy"><em>.responsive</em></span> directly to the <em>table</em> tag. On devices under 600px wide, each table row is displayed as a record. Re-size your browser window to see it in action.</p>
+		<table class="responsive charcoal-t">
+			<caption class="bitstream smoke-t">Table.responsive</caption>
+			<thead class="courier bold">
+				<tr class="aqua">
+					<th scope="col">Client</th><th scope="col">Due Date</th>
+					<th scope="col">Amount</th><th scope="col">Status</th>
+				</tr>
+			</thead>
+			<tbody class="courier">
+				<tr class="lush">
+					<td data-label="Account">Ma Pa Shop</td>
+					<td data-label="Due Date">08/20/2017</td>
+					<td data-label="Amount">$1,165</td>
+					<td data-label="Period">Paid</td>
+				</tr>
+				<tr class="lush">
+					<td scope="row" data-label="Account">Creative Studio</td>
+					<td data-label="Due Date">02/01/2015</td>
+					<td data-label="Amount">$2,167</td>
+					<td data-label="Period">Collections</td>
+					</tr>
+				<tr class="lush">
+					<td scope="row" data-label="Account">Food Bistro</td>
+					<td data-label="Due Date">04/30/2020</td>
+					<td data-label="Amount">$978</td>
+					<td data-label="Period">Good Standing</td>
+				</tr>
+				<tr class="lush">
+					<td scope="row" data-label="Acount">Repair Shop</td>
+					<td data-label="Due Date">02/15/2019</td>
+					<td data-label="Amount">$15,500</td>
+					<td data-label="Period">Unpaid</td>
+				</tr>
+			</tbody>
+		</table>
+		<p class="spacer"></p>
+		<!-- Media -->
+		<div class="flex bitstream">
+			<div class="padded half">
+				<h4 class="charcoal white-t courier flow-text">Responsive Images</h4>
+				<p>To make an image fluid width so that it fits within any area, simply apply the class: <em><strong>.responsive</strong></em>.<br /><br /></p>
+				<div class="adaptor center" style="min-height: 200px; display: block;">
+					<img src="app/files/images/dune.jpg" class="responsive" alt="Dune" />
+				</div>
+			</div>
+			<div class="padded half">
+				<h4 class="charcoal white-t courier flow-text">Responsive Video</h4>
+				<p>Use the <em>video</em> tag, and the video will be fluid-width. If embedding a YouTube, Vimeo, or any other third-party video that uses an iframe, simply wrap the <em>iframe</em> embed code within a div with class <strong><em>.video</em></strong>.<br /><br /></p>
+				<div class="video box-shadow">
+					<iframe src="https://www.youtube.com/embed/8XWX5EIxBz8?showinfo=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<p class="spacer"></p>
+		<p class="spacer"></p>
+	</div>
+</div>
+
+<footer class="brickbuild bitstream center" style="border-top: 14px solid #000; padding: 0 0 10vh 0;">
+	<div class="shape semicircle south padded emptiness flex column smoke-t center" style="height: 100%; max-width: 768px; margin: 0 auto; border-bottom: 3px solid #000;">
+		<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="evergreen smoke-t invert-h">Pine Creative Labs</a> production</p>
+		<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-t invert-h">Brad Fogelstrom</span></a></p>
+		<ul class="tags" style="margin-bottom: 0.75rem;">
+			<li><a href="https://github.com/pinecreativelabs" target="_blank" class="btn box-s black white-t invert-h"><strong>GitHub</strong></a></li>
+		</ul>
+		<a href="http://eepurl.com/cEW1RX" target="_blank" class="sweden-gradient invert-h" style="width: 100%;">
+			<span class="white-t"><i class="bi bi-amp"></i>Brutal Blast /<span class="blink-182">/</span>/<span class="blink">/</span>/</span><br />
+			<small><strong>Subscribe to our e-newsletter. &raquo;</strong></small>
+		</a>
+		<p class="white-t" style="margin: 1rem 0 1rem 0;"><small>Brutalist Framework &copy; 2025</small></p>
+	</div>
+</footer>
+<script src="core/jab/bfx/baffle.js" type="text/javascript"></script>
+</body>
+</html>

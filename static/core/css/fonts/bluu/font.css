@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Bluu Next';
+    src: url('BluuNext-BoldItalic.eot');
+    src: url('BluuNext-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('BluuNext-BoldItalic.woff2') format('woff2'),
+        url('BluuNext-BoldItalic.woff') format('woff'),
+        url('BluuNext-BoldItalic.ttf') format('truetype');
+    font-weight: bold; font-style: italic; font-display: swap;
+}
+@font-face {
+    font-family: 'Bluu Next';
+    src: url('BluuNext-Bold.eot');
+    src: url('BluuNext-Bold.eot?#iefix') format('embedded-opentype'),
+        url('BluuNext-Bold.woff2') format('woff2'),
+        url('BluuNext-Bold.woff') format('woff'),
+        url('BluuNext-Bold.ttf') format('truetype');
+    font-weight: bold; font-style: normal; font-display: swap;
+}
+.bluu-next,.bluu{font-family: 'Bluu Next';}

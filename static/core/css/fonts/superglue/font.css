@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Superglue';
+    src: url('Superglue-Regular.eot');
+    src: url('Superglue-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Superglue-Regular.woff2') format('woff2'),
+        url('Superglue-Regular.woff') format('woff'),
+        url('Superglue-Regular.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.superglue{font-family: 'Superglue';}

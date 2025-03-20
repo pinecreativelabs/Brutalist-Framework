@@ -1,0 +1,143 @@
+/* ChAoS aNtI-gRiD gRiD */
+@import url('variables.css');
+
+.chaos-grid {width: 100%; position: relative;}
+.chaos-grid,.chaos-grid>*{
+	box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+.chaos-grid>a,.chaos-grid>article,.chaos-grid>blockquote,.chaos-grid>code,
+.chaos-grid>details,.chaos-grid>div,.chaos-grid>figure,.chaos-grid>form,
+.chaos-grid>iframe,.chaos-grid>img,.chaos-grid>nav, .chaos-grid>p,.chaos-grid>pre,
+.chaos-grid>section,.chaos-grid>video{
+	display:inline-block; position: relative; margin: 0;
+}
+.chaos-grid>a,.chaos-grid>article,.chaos-grid>blockquote,.chaos-grid>code,
+.chaos-grid>details,.chaos-grid>div,.chaos-grid>figure,.chaos-grid>form,
+.chaos-grid>iframe,.chaos-grid>nav,.chaos-grid>p,.chaos-grid>pre,
+.chaos-grid>section{min-width: 10vw;}
+
+/* animate elements upon load 
+@keyframes chaoSlideIn {
+  0% {transform: translateX(-100%);}
+  100% {transform: translateX(0);}
+}*/
+@keyframes chaoSlideIn {
+  0% {transform: rotate(-20%);}
+  100% {transform: rotate(0);}
+}
+.chaos-grid.slidein>*{animation: 1s ease-out 0s 1 chaoSlideIn;}
+
+/* positioniong */
+.chaos-grid.randomize > * {/*position: absolute; top: 100px; left: 100px; */ position: relative;}
+.chaos-grid.relative > *:nth-child(odd){position: relative; z-index: 1;}
+.chaos-grid.relative > *:nth-child(even){position: absolute; z-index: 2;}
+.chaos-grid.absolute > *:nth-child(odd){position: absolute; z-index: 1;}
+.chaos-grid.absolute > *:nth-child(even){position: relative; z-index: 2;}
+.chaos-grid.absolute-seconds > *:nth-child(2n+0){position: absolute; z-index: 2;}
+.chaos-grid.absolute-thirds > *:nth-child(3n+0){position: absolute; z-index: 3;}
+.chaos-grid.absolute-fourths > *:nth-child(4n+0){position: absolute; z-index: 4;}
+.chaos-grid.absolute-fifths > *:nth-child(5n+0){position: absolute; z-index: 5;}
+
+/* offsets */
+.chaos-grid.pull-right-seconds > *:nth-child(2n+0),.chaos-grid.pull-right-thirds > *:nth-child(3n+0),
+.chaos-grid.pull-right-fourths > *:nth-child(4n+0),.chaos-grid.pull-right-fifths > *:nth-child(5n+0),
+.pull-right{right: var(--pull-right);}
+
+.chaos-grid.push-right-seconds > *:nth-child(2n+0),.chaos-grid.push-right-thirds > *:nth-child(3n+0),
+.chaos-grid.push-right-fourths > *:nth-child(4n+0),.chaos-grid.push-right-fifths > *:nth-child(5n+0),
+.push-right{right: var(--push-right);}
+
+.chaos-grid.pull-left-seconds > *:nth-child(2n+0),.chaos-grid.pull-left-thirds > *:nth-child(3n+0),
+.chaos-grid.pull-left-fourths > *:nth-child(4n+0),.chaos-grid.pull-left-fifths > *:nth-child(5n+0),
+.pull-left{left: var(--pull-left);}
+
+.chaos-grid.push-left-seconds > *:nth-child(2n+0),.chaos-grid.push-left-thirds > *:nth-child(3n+0),
+.chaos-grid.push-left-fourths > *:nth-child(4n+0),.chaos-grid.push-left-fifths > *:nth-child(5n+0),
+.push-left{left: var(--push-left);}
+
+.chaos-grid.pull-up-seconds > *:nth-child(2n+0),.chaos-grid.pull-up-thirds > *:nth-child(3n+0),
+.chaos-grid.pull-up-fourths > *:nth-child(4n+0),.chaos-grid.pull-up-fifths > *:nth-child(5n+0),
+.pull-up{top: var(--pull-up);}
+
+.chaos-grid.push-up-seconds > *:nth-child(2n+0),.chaos-grid.push-up-thirds > *:nth-child(3n+0),
+.chaos-grid.push-up-fourths > *:nth-child(4n+0),.chaos-grid.push-up-fifths > *:nth-child(5n+0),
+.push-up{top: var(--push-up);}
+
+.chaos-grid.pull-down-seconds > *:nth-child(2n+0),.chaos-grid.pull-down-thirds > *:nth-child(3n+0),
+.chaos-grid.pull-down-fourths > *:nth-child(4n+0),.chaos-grid.pull-down-fifths > *:nth-child(5n+0),
+.pull-down{bottom: var(--pull-down);}
+
+.chaos-grid.push-down-seconds > *:nth-child(2n+0),.chaos-grid.push-down-thirds > *:nth-child(3n+0),
+.chaos-grid.push-down-fourths > *:nth-child(4n+0),.chaos-grid.push-down-fifths > *:nth-child(5n+0),
+.push-down{bottom: var(--push-down);}
+
+.pull-up-2x{top:calc(var(--pull-up)*2);}
+.pull-up-3x{top:calc(var(--pull-up)*3);}
+.pull-up-4x{top:calc(var(--pull-up)*4);}
+.pull-up-5x{top:calc(var(--pull-up)*5);}
+.push-up-2x{top:calc(var(--push-up)*2);}
+.push-up-3x{top:calc(var(--push-up)*3);}
+.push-up-4x{top:calc(var(--push-up)*4);}
+.push-up-5x{top:calc(var(--push-up)*5);}
+
+.pull-down-2x{bottom:calc(var(--pull-down)*2);}
+.pull-down-3x{bottom:calc(var(--pull-down)*3);}
+.pull-down-4x{bottom:calc(var(--pull-down)*4);}
+.pull-down-5x{bottom:calc(var(--pull-down)*5);}
+.push-down-2x{bottom:calc(var(--push-down)*2);}
+.push-down-3x{bottom:calc(var(--push-down)*3);}
+.push-down-4x{bottom:calc(var(--push-down)*4);}
+.push-down-5x{bottom:calc(var(--push-down)*5);}
+
+.pull-left-2x{left:calc(var(--pull-left)*2);}
+.pull-left-3x{left:calc(var(--pull-left)*3);}
+.pull-left-4x{left:calc(var(--pull-left)*4);}
+.pull-left-5x{left:calc(var(--pull-left)*5);}
+.push-left-2x{left:calc(var(--push-left)*2);}
+.push-left-3x{left:calc(var(--push-left)*3);}
+.push-left-4x{left:calc(var(--push-left)*4);}
+.push-left-5x{left:calc(var(--push-left)*5);}
+
+.pull-right-2x{right:calc(var(--pull-right)*2);}
+.pull-right-3x{right:calc(var(--pull-right)*3);}
+.pull-right-4x{right:calc(var(--pull-right)*4);}
+.pull-right-5x{right:calc(var(--pull-right)*5);}
+.push-right-2x{right:calc(var(--push-right)*2);}
+.push-right-3x{right:calc(var(--push-right)*3);}
+.push-right-4x{right:calc(var(--push-right)*4);}
+.push-right-5x{right:calc(var(--push-right)*5);}
+
+@media only screen and (max-width: 667px) { 
+	/* orderly-on-mobile */
+	.orderly-on-mobile>a,.orderly-on-mobile>article,.orderly-on-mobile>blockquote,.orderly-on-mobile>code,
+	.orderly-on-mobile>details,.orderly-on-mobile>div,.orderly-on-mobile>figure,.orderly-on-mobile>form,
+	.orderly-on-mobile>iframe,.orderly-on-mobile>nav,.orderly-on-mobile>p,.orderly-on-mobile>pre,.orderly-on-mobile>section
+	{position: relative; display: block; width: 100%;}
+	.orderly-on-mobile>img,.orderly-on-mobile>video{max-width: 100%; height: auto !important; position: relative;}
+	
+	.orderly-on-mobile.absolute-seconds > *:nth-child(2n+0),.orderly-on-mobile.absolute-thirds > *:nth-child(3n+0),
+	.orderly-on-mobile.absolute-fourths > *:nth-child(4n+0),.orderly-on-mobile.absolute-fifths > *:nth-child(5n+0),
+	.orderly-on-mobile.relative > *:nth-child(even),.orderly-on-mobile.absolute > *:nth-child(odd){position: relative; z-index: 1;}
+	
+	/* reset all offsets to 0 on mobile */
+	.orderly-on-mobile.pull-right-seconds > *:nth-child(2n+0),.orderly-on-mobile.pull-right-thirds > *:nth-child(3n+0),
+	.orderly-on-mobile.pull-right-fourths > *:nth-child(4n+0),.orderly-on-mobile.pull-right-fifths > *:nth-child(5n+0),
+	.orderly-on-mobile.pull-right,.orderly-on-mobile.push-right-seconds > *:nth-child(2n+0),.orderly-on-mobile.push-right-thirds > *:nth-child(3n+0),
+	.orderly-on-mobile.push-right-fourths > *:nth-child(4n+0),.orderly-on-mobile.push-right-fifths > *:nth-child(5n+0),
+	.push-right,.pull-right-2x,.pull-right-3x,.pull-right-4x,.pull-right-5x,.push-right-2x,.push-right-3x,.push-right-4x,.push-right-5x{right: 0;}
+	.orderly-on-mobile.pull-left-seconds > *:nth-child(2n+0),.orderly-on-mobile.pull-left-thirds > *:nth-child(3n+0),
+	.orderly-on-mobile.pull-left-fourths > *:nth-child(4n+0),.orderly-on-mobile.pull-left-fifths > *:nth-child(5n+0),
+	.pull-left,.chaos-grid.push-left-seconds > *:nth-child(2n+0),.orderly-on-mobile.push-left-thirds > *:nth-child(3n+0),
+	.orderly-on-mobile.push-left-fourths > *:nth-child(4n+0),.orderly-on-mobile.push-left-fifths > *:nth-child(5n+0),
+	.push-left,.pull-left-2x,.pull-left-3x,.pull-left-4x,.pull-left-5x,.push-left-2x,.push-left-3x,.push-left-4x,.push-left-5x{left: 0;}
+	.orderly-on-mobile.pull-up-seconds > *:nth-child(2n+0),.orderly-on-mobile.pull-up-thirds > *:nth-child(3n+0),
+	.orderly-on-mobile.pull-up-fourths > *:nth-child(4n+0),.orderly-on-mobile.pull-up-fifths > *:nth-child(5n+0),
+	.pull-up,.orderly-on-mobile.push-up-seconds > *:nth-child(2n+0),.orderly-on-mobile.push-up-thirds > *:nth-child(3n+0),
+	.orderly-on-mobile.push-up-fourths > *:nth-child(4n+0),.orderly-on-mobile.push-up-fifths > *:nth-child(5n+0),
+	.push-up,.pull-up-2x,.pull-up-3x,.pull-up-4x,.pull-up-5x,.push-up-2x,.push-up-3x,.push-up-4x,.push-up-5x{top: 0;}
+	.orderly-on-mobile.pull-down-seconds > *:nth-child(2n+0),.orderly-on-mobile.pull-down-thirds > *:nth-child(3n+0),
+	.orderly-on-mobile.pull-down-fourths > *:nth-child(4n+0),.orderly-on-mobile.pull-down-fifths > *:nth-child(5n+0),
+	.pull-down,.orderly-on-mobile.push-down-seconds > *:nth-child(2n+0),.orderly-on-mobile.push-down-thirds > *:nth-child(3n+0),
+	.orderly-on-mobile.push-down-fourths > *:nth-child(4n+0),.orderly-on-mobile.push-down-fifths > *:nth-child(5n+0),
+	.push-down,.pull-down-2x,.pull-down-3x,.pull-down-4x,.pull-down-5x,.push-down-2x,.push-down-3x,.push-down-4x,.push-down-5x{bottom: 0;}
+}

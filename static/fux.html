@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	
+	<title>FUX</title>
+	<meta name="description" content="Form User Experience." />
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="FUX" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content="Form User Experience." /> 
+	<meta property="og:site_name" content="Brutalist Framework" />
+	
+	<!-- Icons -->
+	<link rel="icon" href="core/files/favicon-16.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="core/files/favicon-32.png" type="image/png" />
+	<link rel="apple-touch-icon" href="core/files/favicon-128.png" type="image/png" />
+	
+	<!-- CORE CSS  -->
+	<link href="core/css/construct.css" type="text/css" rel="stylesheet" media="all"/>
+	<!-- Theme CSS -->
+	<link href="app/theme/css/theme.css" type="text/css" rel="stylesheet" media="all" />
+	
+</head>
+<body>
+<!-- MAIN MENU -->
+<div class="blonk-tr shape quadrant bottom-left flex middle sand" style="z-index: 10002;">
+	<button class="reveal-overlay" id="reveal-nav" aria-controls="primary-menu" aria-expanded="false">
+	  <span class="topbar charcoal"></span><span class="middlebar charcoal"></span><span class="bottombar charcoal"></span>
+	</button>
+</div>
+<div class="overlay" id="overlay-nav">
+	<div class="wrap-960 monolisk" style="margin-top: 1.5rem;"><div class="checkerboard padded" style="border-radius: 1rem;"><div class="padded emptiness">
+		<ul class="flex flow-text">
+			<li class="third"><a href="index.html"><i class="bi bi-home"></i> HOME</a></li>
+			<li class="third"><a href="about.html"><i class="bi bi-info"></i> About BF</a></li>
+			<li class="third"><a href="https://www.brutalcms.com" target="_blank"><i class="bi bi-communist black red-t"></i> Brutal CMS</a></li>
+		</ul>
+		<ul class="flow-text flex" style="border-top: 2px solid #fff; padding-top: 8px;">
+			<li class="third"><a href="bfx.html"><i class="bi bi-sparkle"></i> BFX</a></li>
+			<li class="third"><a href="bicons.html"><i class="bi bi-flag"></i> bIcons</a></li>
+			<li class="third"><a href="buff.html"><i class="bi bi-fill"></i> BUFF</a></li>
+			<li class="third"><a href="buix.html"><i class="bi bi-navigate"></i> BUIX</a></li>
+			<li class="third"><a href="butch.html"><i class="bi bi-pick"></i> BUTCH</a></li>
+			<li class="third"><a href="flavors.html"><i class="bi bi-cone"></i> Flavors</a></li>
+			<li class="third current"><a href="fux.html"><i class="bi bi-box-x"></i> FUX</a></li>
+			<li class="third"><a href="grids.html"><i class="bi bi-quadrant"></i> Grids</a></li>
+			<li class="third"><a href="rebar.html"><i class="bi bi-converge-left"></i> ReBAR</a></li>
+		</ul>
+	</div><div class="padded emptiness" style="margin-top: 1.25rem;">
+		<ul class="flex flow-text">
+			<li class="third"><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank">Roadmap</a></li>
+			<li class="third"><a href="https://github.com/pinecreativelabs" target="_blank">Github</a></li>
+			<li class="third"><a href="https://www.instagram.com/brutalistfwk" target="_blank">Instagram</a></li>
+		</ul>
+		<ul class="flex flow-text" style="width: 100%; border-top: 2px solid #fff; padding-top: 8px;">
+			<li class="half"><a href="https://www.blueprintgrid.com" target="_blank"><i class="blueprint bi bi-grid"></i> Blueprint Grid</a></li>
+			<li class="half"><a href="https://www.brutalistwebdesign.com" target="_blank"><i class="bi bi-reference lemon black-t"></i> Reference Guides</a></li>
+		</ul>
+	</div></div></div>
+</div>
+<script>
+document.querySelector("#reveal-nav").addEventListener("click", function() {
+  this.classList.toggle("active");
+  document.querySelector("#overlay-nav").classList.toggle("open");
+})
+</script>
+<a href="#uptop" class="blonk-cr blood shape semicircle west white-t monolisk lighten-h"><i class="bi bi-up bi-3x"></i><br /><strong>top</strong></a>
+
+<!-- PAGE -->
+<header class="brickbuild padded flex middle" id="uptop" style="min-height: 25vh; margin-bottom: 0;">
+	<a href="index.html"><img class="large-thumb brdr-s-k red-b invert-h" src="app/files/images/bf3logo_bloodsand.png" alt="Brutalist Framework" /></a>
+</header>
+<div class="dune white-t flex" style="height: 25vh; margin: 0;">
+	<div class="shape point-right sand center flex middle" style="min-width: 15vw; height: 100%; margin: 0 1rem 0 0;">
+		<div class="fluid-text-h1" style="margin-left: -20px;"><i class="bi bi-box-x charcoal-t wheat-t-s"></i></div>
+	</div>
+	<div class="flex middle column charcoal-t sand-t-s">
+		<h1 class="fluid-text start monolisk" style="margin: -10px 0 0 0; font-weight:900;">FUX</h1>
+		<h2 class="flow-text baffle start keep-all depixel" style="margin: 0; padding: 0;">Form User Experience</h2>
+	</div>
+</div>
+
+<div class="fossil smoke-t padded">
+	<div class="wrap-1200">
+		<p class="flow-text bitstream">Form elements and validators for giving a few FUX about user experience.</p>
+		<p class="requiresbox bitstream"><span class="flow-text bold"><small>requires:</small><br /><em>core/css/fux.css</em></span></p>
+		<div class="clear-block"></div>
+
+		
+		<!-- STICKY PAGE SANDBAR NAV -->
+		<nav class="sandbar sand monolisk flow-text">
+			<ul>
+				<li><a href="#basic">Basic</a></li>
+				<li><a href="#ui">UI Elements</a></li>
+				<li><a href="#validators">Validators</a></li>
+				<li><a href="#processing">Processing</a></li>
+			</ul>
+		</nav>
+		
+		<!-- FORMS -->
+		<h3 class="fluid-text monolisk" id="basic">Basic Forms</h3>
+		<div class="flex">
+			<div class="padded bitstream half">
+				<p>Basic forms are supported. It is possible to apply classes from other components, such as Flavors and BUTCH classes.<br /><br /></p>
+				<p class="info padded"><span class="heavy">Layouts</span><br />You could use <a href="https://www.blueprintgrid.com" target="_blank" class="yellow invert-h">Blueprint Grid</a> to create a custom layout for your form. This can be done within the <em>form</em> tag, and it is possible to nest layouts.<br /><br />
+				<span class="heavy">.form-group</span><br />Use this class to add vertical spacing above and below a group of form elements.</p>
+				<p class="padded warning"><span class="heavy">.highlight</span><br />An input or entire form can be "highlighted" when the user focuses on (interacts with) an input. Simply apply the <em><b>.highlight</b></em> class to the area that is to be highlighted.</p>
+			</div>
+			<div class="padded half">
+				<form class="white grey-t brutal-border-dark box-s-k padded" name="demoform" action="" method="post">
+					<div class="form-group">
+						<label class="heavy">Text Label</label><br />
+						<input type="text" name="name" placeholder="Text Input" />
+					</div>
+					<div class="form-group">
+						<label class="heavy">Email Input</label><br />
+						<input type="email" name="name" placeholder="email@address.net" />
+					</div>
+					<div class="form-group">
+						<label class="heavy">Checkbox</label><br />
+						<input type="checkbox" name="check1" value="True"><label class="radio">True</label><br>
+						<input type="checkbox" name="check2" value="False"><label class="radio">False</label>
+					</div>
+					<div class="form-group">
+						<label class="heavy">Radio</label><br />
+						<input type="radio" name="radio-group" value="responsive"><label class="radio">Responsive</label><br />
+						<input type="radio" name="radio-group" value="nonresponsive"><label class="radio">Non-Responsive</label>
+					</div>
+					<div class="form-group">
+						<label class="heavy">Select Dropdown</label><br />
+						<select name="optionlist">
+							<option value="mobile">Mobile</option>
+							<option value="tablet">Tablet</option>
+							<option value="desktop">Desktop</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label class="heavy">Number</label>
+						<input type="number" name="quantity" min="1" max="50">
+					</div>
+					<div class="form-group">
+						<label class="heavy">Text Area</label><br />
+						<textarea name="comments" placeholder="Text area comments"></textarea>
+					</div>
+					<div class="form-group highlight">
+						<label class="heavy">HIGHLIGHTED Text Area</label><br />
+						<textarea name="highlighted" placeholder="I am a highlighted message."></textarea>
+					</div>
+					<div class="form-group">
+						<input type="submit" value="Submit" class="squared full-btn">
+					</div>
+				</form>
+			</div>
+		</div>
+		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		<!-- UI Elements -->
+		<h3 class="fluid-text monolisk" id="ui">UI Elements</h3>
+		<p class="bitstream">Forms may need to be enhanced with various UI elements, which require javascript plugins.</p>
+		<p class="spacer"></p>
+		<h4 class="charcoal white-t flow-text bitstream padded">Duplicate Fieldset Input</h4>
+		<div class="flex bitstream"><div class="padded half">
+			<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/fux/form-functions.js</em></span></small></p>
+			<p>Copy all input fields (including select options) from one fieldset to another when a checkbox is checked.<br /><br /></p>
+			<p class="padded warning"><strong>NOTE:</strong> This feature uses unique IDs, so it can only be used once per page.</p>
+			<p class="padded info"><span class="flow-text bold">Setup:</span><br />
+				<strong>fieldset id="copyFrom"<br />fieldset id="pasteTo"</strong><br /><br />Checkbox input with<br /><strong>id="field-copy"</strong></p>
+			<p class="padded success"><span class="bigger bold">TIP:</span><br />Use this method to copy inputs to hidden fields!</p>
+		</div><div class="padded half">
+			<form class="white grey-t brutal-border-dark box-s-k padded" name="demoform" action="" method="post">
+				<!-- All inputs in this fieldset will get copied -->
+				<fieldset id="copyFrom"><legend>Billing Address</legend>
+					<label for="billFName">First Name</label>
+					<input id="billFName" name="BillingFirstName" type="text" required="required" />
+					<label for="billStreet">Street Address</label>
+					<input id="billStreet" name="BillingStreet" type="text" required="required" />
+					<label for="billCity">City</label>
+					<input id="billCity" name="BillingCity" type="text" required="required" />
+					<div class="flex"><div class="half">
+						<label for="billState">State</label>
+						<select id="billState" name="BillingState" required="required">
+							<option value="IN">IN</option>
+							<option value="OH">OH</option>
+							<option value="MI">MI</option>
+						</select>
+					</div><div class="half">
+						<label for="billZip">Zip</label>
+						<input id="billZip" name="BillingZip" type="number" required="required" />
+					</div></div>
+				</fieldset>
+				<fieldset id="pasteTo"><legend>Shipping Address</legend>
+					<div class="form-group">
+						<input id="field-copy" name="SameAddress" type="checkbox" />
+						<label for="field-copy">same as billing</label>
+					</div>
+					<label for="delivFName">First Name</label>
+					<input id="delivFName" name="DeliveryFirstName" type="text" required="required" />
+					<label for="delivStreet">Street Address</label>
+					<input id="delivStreet" name="DeliveryStreet" type="text" required="required" />
+					<label for="delivCity">City</label>
+					<input id="delivCity" name="DeliveryCity" type="text" required="required" />
+					<div class="flex"><div class="half">
+						<label for="shiptoState">State</label>
+						<select id="shiptoState" name="ShiptoState" required="required">
+							<option value="IN">IN</option>
+							<option value="OH">OH</option>
+							<option value="MI">MI</option>
+						</select>
+					</div><div class="half">
+						<label for="shipZip">Zip</label>
+						<input id="shipZip" name="ShipZip" type="number" required="required" />
+					</div></div>
+				</fieldset>
+				<input type="submit" value="Submit" class="squared full-btn">
+			</form>
+		</div></div>
+		<p class="spacer"></p>
+
+		<!-- Date Picker -->
+		<h4 class="charcoal white-t flow-text bitstream padded">Date / Time Picker</h4>
+		<div class="flex bitstream"><div class="padded half">
+			<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/fux/datetime-picker.js</em></span></p>
+			<p>A date / time picker can be added simply by applying a class to a text input field!</p>
+			<div class="info padded"><p><span class="bigger bold">Classes</span><br />Add a text input and apply any of these classes:<br />
+				<strong>.datepick</strong> - m/d/y<br />
+				<strong>.datetime</strong> - m/d/y h:m am/pm<br />
+				<strong>.datepick-euro</strong> - d-m-y<br />
+				<strong>.datetime-euro</strong> - d-m-y h:m am/pm<br />
+				<strong>.datepick-full</strong> - Day, Month XX, YYYY<br />
+				<strong>.datetime-full</strong> - Day, Month XX, YYYY h:m am/pm</p>
+			<hr />
+			<p><span class="bigger bold">Inline Picker</span><br />To display the picker inline (beneath the text input), simply apply the following data-attribute to the text input tag: <br /><strong>data-inline="true"</strong></p>
+			</div>
+		</div><div class="padded half">
+			<form class="white grey-t brutal-border-dark box-s-k padded" name="demoform" action="" method="post">	
+				<div class="form-group">
+					<label class="heavy">Date Only</label>
+					<input type="text" class="datepick" placeholder="Pick a Date" />
+				</div>
+				<div class="form-group">
+					<label class="heavy">Date / Time</label>
+					<input type="text" class="datetime" placeholder="Pick a Date &amp; Time" />
+				</div>
+				<div class="form-group">
+					<label class="heavy">Inline Date / Time</label>
+					<input type="text" class="datetime" placeholder="Select Date / Time" data-inline="true"/>
+				</div>
+				<div class="form-group">
+					<label class="heavy">Select Day</label>
+					<input type="text" class="datepick-full" placeholder="Pick a Day" />
+				</div>
+				<div class="form-group">
+					<label class="heavy">Select Day &amp; Time</label>
+					<input type="text" class="datetime-full" placeholder="Pick a Day / Time" />
+				</div>
+			</form>
+		</div></div>
+		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		<!-- VALIDATORS -->
+		<h3 class="fluid-text monolisk" id="validators">Validators</h3>
+		<!-- credit card input -->
+		<h4 class="charcoal white-t flow-text bitstream padded">Credit Card Input Validator</h4>
+		<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/fux/credit-card-validator.js</em></span></p>
+		<p class="bitstream">The credit card input validates the type of card number the user inputs. AMEX, Discover, MasterCard, and Visa is supported. The expiration date input is automatically formatted.<br /><br /></p>
+		<div class="flex">
+			<div class="padded half">
+				<p class="padded info bitstream">
+					<span class="bigger bold">Card Examples</span><br /><strong>AMEX</strong><br />3400 0000 0000 009<br />
+					<strong>Discover</strong><br />6011 0000 0000 0004<br />
+					<strong>MasterCard</strong><br />5500 0000 0000 0004<br />
+					<strong>Visa</strong><br />4111 1111 1111 1111
+				</p>
+			</div><div class="padded half">
+				<div class="lush padded">
+					<!-- CREDIT CARD FORM -->
+					<form class="brick-wrap">
+						<div class="brick b100">
+							<h5 class="flow-text">Card Number:</h5>
+							<div class="card-input">
+								<div class="card-type"></div>
+								<input placeholder="0000 0000 0000 0000" onkeyup="$cc.validate(event)" />
+								<div class="card-valid">&#10004;</div>
+							</div>
+						</div><div class="brick b50 card-exp">
+							<label>Expiration Date</label><br />
+							<input onkeyup="$cc.expiry.call(this,event)" maxlength="7" placeholder="mm/yyyy" />
+						</div>
+						<div class="brick b50 card-cvv">
+							<label>CVV</label><br />
+							<input placeholder="XXX"/>
+						</div>
+					</form>
+					<!-- END CARD INPUT FORM -->
+				</div>
+			</div>
+		</div>
+		<p class="spacer"></p>
+		<!-- PRISTINE VALIDATOR -->
+		<h4 class="charcoal white-t flow-text bitstream padded">General Form Input Validation</h4>
+		<div class="flex">
+			<div class="padded half">
+				<p class="bitstream"><a href="https://pristine.js.org/" target="_blank" class="lemonlink"><strong><em>PristineJS</em></strong></a>, a micro-library for validating various types of form inputs, is available as part of the CORE JAB library.</p>
+				<p class="requiresbox" style="margin-top: 1rem;"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/fux/pristine.js</em></span></p>
+				<p class="bitstream">It automatically validates <em>required, min, max, minlength,</em> and <em>maxlength</em> attributes, and the value of type attributes like email, number and more. For full documentation, see <a href="https://pristine.js.org/" target="_blank" class="lemonlink">pristine.js.org</a>.</p>
+				
+				<div class="padded disabled bitstream" style="margin-top: 1rem;">
+					<h4 class="flow-text">Patterns</h4>
+					<p>Below are patterns that can be used with the <em>pattern</em> or <em>data-pristine-pattern</em> attributes for password or other types of input.</p>
+					<p><small>Number rounded to 2 demimal points<br /><span class="terminal">"/^\d+\.\d{2}$/g"</span></small></p>
+					<p><small>Min 8 characters, at least one letter and one number:<br /><span class="terminal">"^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"</span></small></p>
+					<p><small>Min 8 characters, at least one letter, one number and one special character:<br /><span class="terminal">"^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"</span></small></p>
+					<p><small>Min 8 characters, at least one uppercase letter, one lowercase letter and one number:<br /><span class="terminal">"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"</span></small></p>
+					<p><small>Min 8 characters, at least one uppercase letter, one lowercase letter, one number and one special character:<br />
+					<span class="terminal">"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"</span></small></p>
+					<p><small>Min 8 and max 10 characters, at least one uppercase letter, one lowercase letter, one number and one special character:<br />
+					<span class="terminal">"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$"</span></small></p>
+				</div>
+			</div><div class="padded half">
+				<h4 class="flow-text bitstream"><strong>DEMO</strong></h4>
+				<form id="form1" class="validate padded b-d-t smoke-b" novalidate method="post">
+					<input type="hidden"/>
+					<div class="form-group">
+						<label>Text Input <small>(required)</small></label>
+						<input type="text" required class="form-control" />
+					</div>
+					<div class="form-group">
+						<label>Text Input <small>(optional, min 5 chars)</small></label>
+						<input type="text" minlength="5" class="form-control" />
+					</div>
+					<div class="form-group">
+						<label>Email</label>
+						<input type="email" class="form-control" />
+					</div>
+					<div class="form-group">
+						<label>Number <small>(required, min 100)</small></label>
+						<input type="number" min="100" required class="form-control" />
+					</div>
+					<div class="form-group">
+						<label>Decimal Number <small>(required)</small></label>
+						<input type="number" pattern="/^\d+\.\d{2}$/g" required data-pristine-pattern-message="The value must have 2 decimal points" class="form-control" />
+					</div>
+					<div class="form-group">
+						<label>Select <small>(required)</small></label><br />
+						<select required class="form-control">
+						  <option value="">-----</option>
+						  <option value="mx">Mexico</option>
+						  <option value="us">USA</option>
+						  <option value="ca">Canada</option>
+						</select>
+					</div>
+					<div class="form-group inline-label">
+						<label>Choose at least 1 <small>(required, min = 1, max = 2)</small></label><br />
+						<input id="ch1" type="checkbox" min="1" max="2" name="future" required data-pristine-min-message="Select at least 1" data-pristine-max-message="Select no more than 2"/>
+						<label for="ch1">Blocks</label><br/>
+						<input id="ch2" type="checkbox" min="1" max="2" name="future" required data-pristine-min-message="Select at least 1" data-pristine-max-message="Select no more than 2"/>
+						<label for="ch2">Bricks</label><br/>
+						<input id="ch3" type="checkbox" min="1" max="2" name="future" required data-pristine-min-message="Select at least 1" data-pristine-max-message="Select no more than 2"/>
+						<label for="ch3">Tiles</label>
+					</div>
+					<div class="form-group b-s-t smoke-b padded">
+						<label>Password</label><br />
+						<input type="password" id="pwd"  required data-pristine-required-message="Please choose a password" data-pristine-pattern= "/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$/" data-pristine-pattern-message="Minimum 8 characters, at least one uppercase letter, one lowercase letter and one number" class="form-control" />
+						<br />
+						<label>Confirm Password</label><br />
+						<input type="password" data-pristine-equals="#pwd" data-pristine-equals-message="Passwords don't match" class="form-control" />
+					</div>
+					<div class="form-group">
+						<input type="submit" value="Submit" class="btn info rounded sepia-h"/>
+					</div>
+				</form>
+		</div></div>
+		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		<!-- Processing -->
+		<h3 class="fluid-text monolisk" id="processing">Processing</h3>
+		<div class="padded warning bitstream"><p><strong>NOTE:</strong> Form processing functionality and documentation will be available as part of <a href="https://www.brutalcms.com" target="_blank" class="link">Brutal CMS</a>. This will include:</p>
+			<ul class="check">
+				<li>PHP form validation</li>
+				<li>Collect and store data in XML and CSV files</li>
+				<li>Example processing scripts</li>
+			</ul>
+		</div>
+		<p class="spacer"></p>
+		<p class="spacer"></p>
+	</div>
+</div>
+
+<footer class="brickbuild bitstream center" style="border-top: 14px solid #000; padding: 0 0 10vh 0;">
+	<div class="shape semicircle south padded emptiness flex column smoke-t center" style="height: 100%; max-width: 768px; margin: 0 auto; border-bottom: 3px solid #000;">
+		<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="evergreen smoke-t invert-h">Pine Creative Labs</a> production</p>
+		<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-t invert-h">Brad Fogelstrom</span></a></p>
+		<ul class="tags" style="margin-bottom: 0.75rem;">
+			<li><a href="https://github.com/pinecreativelabs" target="_blank" class="btn box-s black white-t invert-h"><strong>GitHub</strong></a></li>
+		</ul>
+		<a href="http://eepurl.com/cEW1RX" target="_blank" class="sweden-gradient invert-h" style="width: 100%;">
+			<span class="white-t"><i class="bi bi-amp"></i>Brutal Blast /<span class="blink-182">/</span>/<span class="blink">/</span>/</span><br />
+			<small><strong>Subscribe to our e-newsletter. &raquo;</strong></small>
+		</a>
+		<p class="white-t" style="margin: 1rem 0 1rem 0;"><small>Brutalist Framework &copy; 2025</small></p>
+	</div>
+</footer>
+
+<script src="core/jab/bfx/baffle.js" type="text/javascript"></script>
+<script src="core/jab/fux/credit-card-validator.js" type="text/javascript"></script>
+<script src="core/jab/fux/form-functions.js" type="text/javascript"></script>
+<script src="core/jab/fux/datetime-picker.js" type="text/javascript"></script>
+<script src="core/jab/fux/pristine.js" type="text/javascript"></script>
+<script>
+window.onload = function () {
+   var form = document.getElementById("form1");
+   var pristine = new Pristine(form);
+   form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var valid = pristine.validate();
+      //alert('Form is valid: ' + valid);
+   });
+};
+</script>
+</body>
+</html>

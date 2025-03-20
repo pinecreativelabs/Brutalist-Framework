@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Brutalism';
+    src: url('BrutalismRegular.eot');
+    src: url('BrutalismRegular.eot?#iefix') format('embedded-opentype'),
+        url('BrutalismRegular.woff2') format('woff2'),
+        url('BrutalismRegular.woff') format('woff'),
+        url('BrutalismRegular.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'Crude';
+    src: url('CrudeRegular.eot');
+    src: url('CrudeRegular.eot?#iefix') format('embedded-opentype'),
+        url('CrudeRegular.woff2') format('woff2'),
+        url('CrudeRegular.woff') format('woff'),
+        url('CrudeRegular.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.brutalism{font-family:'Brutalism';}
+.crude{font-family:'Crude';}

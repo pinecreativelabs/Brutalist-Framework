@@ -1,0 +1,8 @@
+/* VCR Mono Font */
+@font-face {
+    font-family: 'VCR Mono';
+    src: url('vcr_mono.001-webfont.woff2') format('woff2'),
+         url('vcr_mono.001-webfont.woff') format('woff');
+    font-weight: normal; font-style: normal;
+}
+.vcr-mono{font-family: 'VCR Mono';}

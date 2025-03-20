@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'BOA CONSTRUKTOR';
+    src: url('BOACONSTRUKTOR-Bold.eot');
+    src: url('BOACONSTRUKTOR-Bold.eot?#iefix') format('embedded-opentype'),
+        url('BOACONSTRUKTOR-Bold.woff2') format('woff2'),
+        url('BOACONSTRUKTOR-Bold.woff') format('woff'),
+        url('BOACONSTRUKTOR-Bold.ttf') format('truetype');
+    font-weight: bold; font-style: normal; font-display: swap;
+}
+.boa-constructor,.boa-construktor {font-family: 'BOA CONSTRUKTOR';}

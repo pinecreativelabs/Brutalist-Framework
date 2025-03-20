@@ -1,0 +1,104 @@
+/* CUBESEA */
+:root {
+	--unit: 10vw;
+	--half: 5vw;
+	--neg-half: -5vw;
+	/*--gray-1: #E0E0E0;*/
+	--gray-1: url('images/concrete_tile001.jpg');
+	/*--gray-2: #D0D0D0;*/
+	--gray-2: url('images/concrete_tile002.jpg');
+	/*--gray-3: #BEBEBE;*/
+	--gray-3: url('images/concrete_tile003.jpg');
+	/*--gray-4: #A8A8A8;*/
+	--gray-4: url('images/concrete_tile004.jpg');
+	/*--gray-5: #888888;*/
+	--gray-5: url('images/concrete_tile005.jpg');
+	/*--gray-6: #707070;*/
+	--gray-6: url('images/concrete_tile006.jpg');
+	--duration: 20s;
+}
+*,*:before,*:after {box-sizing: border-box;}
+.grid-mask {transform-style: preserve-3d;
+	height: 100vh; z-index: 1; perspective: 1000px;
+	overflow: hidden; display: flex;
+	align-items: center; justify-content: center;
+}
+.grid-mask > .main {
+	display: grid;
+	grid-template-columns: repeat(5, var(--unit));
+	grid-auto-rows: var(--unit);
+	transform: translateZ(-600px) rotateX(55deg) rotateY(10deg) rotateZ(-20deg);
+	transform-style: preserve-3d;
+	grid-gap: calc(var(--half) * 1.5); transform-origin: 50% 50% -15vw;
+	/*spin grid*/
+	animation: main var(--duration) ease-in-out infinite;
+}
+.grid-mask > .main > div {
+	transform-origin: var(--half) var(--half) var(--neg-half);
+	/*transform:rotate3d(0,1,1,100deg);*/
+	/*spin individual cubes*/
+	animation: box calc(var(--duration) / 3) ease-in-out infinite;
+}
+.grid-mask > .main > div:nth-child(even) {animation-direction: reverse;}
+.grid-mask div {position: relative;transform-style: preserve-3d;}
+.grid-mask .panel {
+	background: var(--gray-1);
+	background-repeat: none; background-position: center center; background-size: cover;
+	height: 100%; width: 100%; border: 2px solid #ff0000;
+	/*animation: glow 1s ease-in-out infinite alternate;*/
+	box-shadow: 0px 0px 20px 10px #ff0000; 
+}
+.grid-mask .panel:before,.panel:after {
+	position: absolute; border: 2px solid #ff0000;
+	height: 100%; width: 100%; 
+	/*animation: glow 1s ease-in-out infinite alternate;*/
+	box-shadow: 0px 0px 20px 10px #ff0000;
+}
+.grid-mask .panel, .grid-mask .panel:before, .grid-mask .panel:after {
+	display: flex; align-items: center; justify-content: center;
+	color: #ff0000; background-repeat: none; background-position: center center; background-size: cover;
+	font-size: 2.5rem; 
+}
+.grid-mask .panel:after {
+	content: "\26DB"; background: var(--gray-2);
+	transform: rotateX(90deg) translate3d(0, var(--neg-half), var(--neg-half));
+}
+.grid-mask .panel:before {
+	content: "\26DB"; background: var(--gray-3);
+	transform: rotateX(90deg) translate3d(0, var(--neg-half), var(--half));
+}
+.grid-mask .panel:nth-child(2) {
+	transform: rotateX(180deg) rotateZ(90deg) rotateY(0) translate3d(var(--unit), 0vw, var(--unit));
+	background: var(--gray-6); background-repeat: none; background-position: center center; background-size: cover;
+}
+.grid-mask .panel:nth-child(2):after {
+	content: "\26DB"; background-repeat: none; background-position: center center; background-size: cover;
+	background: var(--gray-4);
+}
+.grid-mask .panel:nth-child(2):before {
+	content: "\26DB"; background-repeat: none; background-position: center center; background-size: cover;
+	background: var(--gray-5);
+}
+
+@keyframes box {
+	0% {transform:rotate3d(1,1,1,0deg);}
+	33% {transform:rotate3d(1,1,1,-100deg);}
+	66% {transform:rotate3d(1,1,1,100deg);}
+}
+@keyframes main {
+	0% {transform: translateZ(-1000px) rotateX(55deg) rotateY(10deg) rotateZ(0deg);}
+	50% {transform: translateZ(200px) rotateX(55deg) rotateY(10deg) rotateZ(-360deg);}
+	100% {transform: translateZ(-1000px) rotateX(55deg) rotateY(10deg) rotateZ(0deg);}
+}
+	
+@-webkit-keyframes glow {
+  from {
+    /*text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;*/
+	box-shadow: 0px 0px 20px 10px #ffff00;
+  }
+  
+  to {
+    /*text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;*/
+	box-shadow: 0px 0px 20px 10px #ff0000;
+  }
+}

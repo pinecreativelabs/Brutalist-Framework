@@ -1,0 +1,23 @@
+Brutalist Framework Changelog
+Version 2.5.3
+
+BFX:
++ Added new text effect classes: "stroke-text" and "cellophane-bounce"
+
+BICONS:
++ 10 new icons: bank, basket, bikini, bookmark, construction, desert, lab-coat, om, shortcake, tea / teacup
+
+BUIX:
++ New interaction: "Tooltip Reveal"
++ Reveal Toggle is now considered deprecated - use a details HTML element, instead
+
+BUTCH:
++ Added custom fonts: antidesign, backout, bluu-next, boa-construktor, brendiva, lack / lack-line, murmure, realico, sudo, sudbury / sudbury-3d, superglue, syne, tea-for-god
++ Added aspect ratio classes
+
+FLAVORS:
++ Deprecated 'yam' (now same as 'squash')
++ Added new flavors: amaranth, aureolin, bistre, celery (celadon)
+
+ReBAR:
++ Deprecated outdated code

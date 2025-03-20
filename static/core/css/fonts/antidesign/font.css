@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Anti Design Endeavour';
+    src: url('AntiDesignEndeavour-Demo.eot');
+    src: url('AntiDesignEndeavour-Demo.eot?#iefix') format('embedded-opentype'),
+        url('AntiDesignEndeavour-Demo.woff2') format('woff2'),
+        url('AntiDesignEndeavour-Demo.woff') format('woff'),
+        url('AntiDesignEndeavour-Demo.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'Anti Design Endeavour';
+    src: url('AntiDesignEndeavour-Demo_1.eot');
+    src: url('AntiDesignEndeavour-Demo_1.eot?#iefix') format('embedded-opentype'),
+        url('AntiDesignEndeavour-Demo_1.woff2') format('woff2'),
+        url('AntiDesignEndeavour-Demo_1.woff') format('woff'),
+        url('AntiDesignEndeavour-Demo_1.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+.antidesign{font-family: 'Anti Design Endeavour';}
