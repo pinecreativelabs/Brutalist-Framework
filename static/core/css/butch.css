@@ -1,4 +1,4 @@
-/* BUTCH 3.1 */
+/* BUTCH 2.5.4 */
 @import url('variables.css');
 
 /* BODY DEFAULTS 
@@ -101,6 +101,11 @@ h6 {
 .letterspace {letter-spacing: var(--charspace);}
 .compress{letter-spacing: calc(var(--charspace)*-0.33);}
 .spread{letter-spacing: calc(var(--charspace)*2);}
+/* Marks (highlighting) */
+mark{background-color: yellow; color: black;}
+mark.important{background-color: red; color: yellow;}
+mark.noted{background-color: green; color: yellow;}
+mark.remember{background-color: DeepSkyBlue; color: black;}
 /* badges */
 span.badge {border-radius: 4px; -webkit-border-radius: 4px; padding: 4px; font-weight: 600; margin-left: 6px; margin-right: 6px;}
 

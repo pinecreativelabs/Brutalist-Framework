@@ -568,13 +568,16 @@
 .bi-alligator::before,.bi-gator::before{content:"\1F40A";}
 .bi-badger::before{content:"\1F9A1";}
 .bi-bee:before{content:"\1F41D";}
-.bi-bird::before, .bi-parrot::before{content:"\1F426";}
+.bi-bird::before{content:"\1F426";}
+.bi-bison::before,.bi-buffalo::before{content:"\1F9AC";}
 .bi-butterfly::before{content:"\1F98B";}
 .bi-camel::before{content:"\1F42B";}
 .bi-cat::before{content:"\1F408";}
 .bi-cow::before{content:"\1F404";}
 .bi-crab::before{content:"\1F980";}
+.bi-cricket::before{content:"\1F997";}
 .bi-deer::before{content:"\1F98C";}
+.bi-dodo::before{content:"\1F9A4";}
 .bi-dog::before{content:"\1F415";}
 .bi-dolphin::before{content:"\1F42C";}
 .bi-dragon::before{content:"\1F409";}
@@ -585,9 +588,12 @@
 .bi-flamingo::before{content:"\1F9A9";}
 .bi-fox::before{content:"\1F98A";}
 .bi-frog::before{content:"\1F438";}
+.bi-giraffe::before{content:"\1F992";}
 .bi-goat::before{content:"\1F410";}
 .bi-gorilla::before{content:"\1F98D";}
 .bi-guide-dog::before{content:"\1F9AE";}
+.bi-hedgehog::before{content:"\1F994";}
+.bi-hippo::before,.bi-hippopatamus::before{content:"\1F99B";}
 .bi-horse::before{content:"\1F434";}
 .bi-kangaroo::before{content:"\1F998";}
 .bi-ladybug::before{content:"\1F41E";}
@@ -595,10 +601,14 @@
 .bi-lizard::before{content:"\1F98E";}
 .bi-llama::before{content:"\1F999";}
 .bi-lobster::before{content:"\1F99E";}
+.bi-mammoth::before{content:"\1F9A3";}
 .bi-monkey::before{content:"\1F412";}
 .bi-octopus::before{content:"\1F419";}
+.bi-otter::before{content:"\1F9A6";}
 .bi-owl::before{content:"\1F989";}
+.bi-oyster::before{content:"\1F9AA";}
 .bi-panda::before{content:"\1F43C";}
+.bi-parrot::before{content:"\1F99C";}
 .bi-peacock::before{content:"\1F99A";}
 .bi-penguin::before{content:"\1F427";}
 .bi-pig::before{content:"\1F416";}
@@ -607,10 +617,12 @@
 .bi-raccoon::before,.bi-trash-panda::before,.bi-coon::before{content:"\1F99D";}
 .bi-rat::before{content:"\1F400";}
 .bi-rhino::before{content:"\1F98F";}
+.bi-scorpion::before{content:"\1F982";}
 .bi-shark::before{content:"\1F988";}
 .bi-sheep::before{content:"\1F411";}
 .bi-shrimp::before{content:"\1F990";}
 .bi-skunk::before{content:"\1F9A8";}
+.bi-sloth::before{content:"\1F9A5";}
 .bi-snail::before{content:"\1F40C";}
 .bi-snake::before{content:"\1F40D";}
 .bi-squid::before{content:"\1F991";}
@@ -619,6 +631,7 @@
 .bi-turkey::before{content:"\1F983";}
 .bi-turtle::before{content:"\1F422";}
 .bi-whale::before{content:"\1F433";}
+.bi-zebra::before{content:"\1F993";}
 
 /* Food */
 .bi-apple::before{content:"\1F34E";}

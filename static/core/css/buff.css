@@ -225,6 +225,18 @@
 	-webkit-filter:   contrast(90%) grayscale(0%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
           filter:   contrast(90%) grayscale(0%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
 }
+/* Flat-Retro */
+.filter.flat-retro {background-color: #FCA300;}
+.filter.flat-retro::after {background-color: #e23241; mix-blend-mode: lighten;}
+.filter.flat-retro > *{
+	mix-blend-mode: darken; -webkit-filter: grayscale(100%) contrast(1.5); filter: grayscale(100%) contrast(1.5);
+}
+/* Green-Dream */
+.filter.green-dream{background-color: #00ff36;}
+.filter.green-dream::after{background-color: #23278a; mix-blend-mode: lighten;}
+.filter.green-dream>*{
+	mix-blend-mode: multiply; -webkit-filter: grayscale(100%) contrast(1.2); filter: grayscale(100%) contrast(1);
+}
 /* Grey Rock */
 .filter.grey-rock::after {mix-blend-mode: none; background: #faaa00; opacity: 0.13;}
 .filter.grey-rock > * {
@@ -303,6 +315,12 @@
           filter:  brightness(105%) contrast(102%) grayscale(50%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(140%) sepia(9%);
   mix-blend-mode: none;
 }
+/* Orange-Juice */
+.filter.orange-juice {background-color: #f65e35;}
+.filter.orange-juice::after{background-color: #1e3265; mix-blend-mode: lighten;}
+.filter.orange-juice>*{
+	mix-blend-mode: multiply; -webkit-filter: grayscale(100%) contrast(1.2); filter: grayscale(100%) contrast(1.2);
+}
 /* Princess */
 .filter.princess {background: #c4ba86;}
 .filter.princess::after {mix-blend-mode: lighten; background: #f430a9; opacity: 1;}
@@ -310,6 +328,15 @@
   -webkit-filter:    grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
           filter:    grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
   mix-blend-mode: hard-light;
+}
+/* Purple-Power */
+.filter.purple-power{background-color: #88169d;}
+.filter.purple-power::after{
+	mix-blend-mode: hard-light; background: linear-gradient(to top left, #75d775, #321a5b);
+}
+.filter.purple-power>*{
+	-webkit-filter: grayscale(100%) contrast(1.2);
+    filter: grayscale(100%) contrast(1.2); mix-blend-mode: lighten;
 }
 /* Rose Quartz */
 .filter.rose-quartz::after {mix-blend-mode: multiply; background: #fa00cc; opacity: 0.5;}
