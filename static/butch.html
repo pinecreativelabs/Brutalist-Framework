@@ -206,19 +206,25 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 		<p><em>Flex-text</em> uses variables to define a minimum, preferred, and maximum font size, which will scale in proportion to the screen size. Values can be customized in the <em>variables.css</em> file.</p>
 		<p class="flex-text">.flex-text</p>
 		<p class="spacer"></p>
-		
-		<p class="white-t flow-text charcoal courier">Address</p>
-		<address>Address Line 1<br />Address Line 2<br />Address Line 3</address>
-		<p>&nbsp;</p>
-		<p class="white-t flow-text charcoal courier">Blockquote</p>
-		<blockquote>
-			New brutalism, inevitably, in global dissemination, degenerated into a rough concrete style.
-		</blockquote>
-		<p class="white-t flow-text charcoal courier">Description Lists</p>
-		<dl>
-			<dt>Term</dt><dd>Description</dd>
-			<dt>Concrete</dt><dd>Cement, air, water, gravel, sand</dd>
-		</dl>
+		<div class="flex"><div class="half">
+			<p class="white-t flow-text charcoal courier">Address</p>
+			<address>Address Line 1<br />Address Line 2<br />Address Line 3</address>
+			<p>&nbsp;</p>
+			<p class="white-t flow-text charcoal courier">Blockquote</p>
+			<blockquote>
+				New brutalism, inevitably, in global dissemination, degenerated into a rough concrete style.
+			</blockquote>
+		</div><div class="half">
+			<p class="white-t flow-text charcoal courier">Description Lists</p>
+			<dl>
+				<dt>Term</dt><dd>Description</dd>
+				<dt>Concrete</dt><dd>Cement, air, water, gravel, sand</dd>
+			</dl>
+			<p>&nbsp;</p>
+			<p class="white-t flow-text charcoal courier">Marked (Highlighted) Text</p>
+			<p style="font-size: 1.15rem;"><mark>default mark</mark><br /><mark class="important">mark.important</mark><br />
+			<mark class="noted">mark.noted</mark><br /><mark class="remember">mark.remember</mark></p>
+		</div></div>
 		<p class="padding"></p>
 		<p class="white-t flow-text charcoal courier">Unordered Lists</p>
 		<div class="flex">

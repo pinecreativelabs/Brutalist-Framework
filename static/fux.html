@@ -262,6 +262,83 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 			</form>
 		</div></div>
 		<p class="spacer"></p>
+		
+		<!-- Relaated Selectors -->
+		<h4 class="charcoal white-t flow-text bitstream padded">Related Selectors</h4>
+		<div class="flex bitstream"><div class="padded half">
+			<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/jquery.3.js<br />core/jab/fux/select-relations.js</em></span></p>
+			<p>Related Selectors is a lightweight jQuery cascading dropdown plugin that automatically filters &lt;select&gt; options based on the chosen option in the previous dropdown.</p>
+			<p class="spacer"></p>
+			<p>All related selectors will need their own unique ID and use the class <em>select-relations</em>. All subsequent selectors will need the data attribute <em>data-sf-parent</em> with the unique ID of the previous selector as the value. Each option in every subsequent selector will need the data attribute <em>data-pr</em> with the value applied like so:<br />
+			<strong><em>previousID:option-value</em></strong><br />There is no limit to the number of subsequent selectors.</p>
+			<p class="spacer"></p>
+		</div><div class="padded half">
+			<h5 class="flow-text">DEMO 1</h5>
+			<p>In the example below, first select a continent in order to select a country, then select a city.</p>
+			
+			<!-- RELATED SELECTOR EXAMPLE 1 -->
+			<form><div class="form-group charcoal-t">
+			<!-- level 1 -->
+			<select name="continent" id="continentSelect" class="select-relations">
+				<option value="none">[no continent selected]</option>
+				<option value="NA">North America</option>
+				<option value="Europe">Europe</option>
+			</select>
+			<!-- level 2 -->
+			<select name="country" id="countrySelect" class="select-relations" data-sf-parent="continentSelect">
+				<option value="USA" data-pr="continentSelect:NA">USA</option>
+				<option value="Canada" data-pr="continentSelect:NA">Canada</option>
+				<option value="Mexico" data-pr="continentSelect:NA">Mexico</option>
+				<option value="France" data-pr="continentSelect:Europe">France</option>
+				<option value="Germany" data-pr="continentSelect:Europe">Germany</option>
+				<option value="Italy" data-pr="continentSelect:Europe">Italy</option>
+			</select>
+			<!-- level 3 -->
+			<select name="city" id="citySelect" class="select-relations" data-sf-parent="countrySelect">
+				<option value="Chicago" data-pr="countrySelect:USA">Chicago</option>
+				<option value="New York" data-pr="countrySelect:USA">New York</option>
+				<option value="Los Angeles" data-pr="countrySelect:USA">Los Angeles</option>
+				<option value="Toronto" data-pr="countrySelect:Canada">Toronto</option>
+				<option value="Montreal" data-pr="countrySelect:Canada">Montreal</option>
+				<option value="Mexico City" data-pr="countrySelect:Mexico">Mexico City</option>
+				<option value="Reynosa" data-pr="countrySelect:Mexico">Reynosa</option>
+				<option value="Paris" data-pr="countrySelect:France">Paris</option>
+				<option value="Lyon" data-pr="countrySelect:France">Lyon</option>
+				<option value="Berlin" data-pr="countrySelect:Germany">Berlin</option>
+				<option value="Frankfurt" data-pr="countrySelect:Germany">Frankfurt</option>
+				<option value="Rome" data-pr="countrySelect:Italy">Rome</option>
+				<option value="Naples" data-pr="countrySelect:Italy">Naples</option>
+			</select>
+			</div></form>
+			<!-- END RELATED SELECTOR EXAMPLE 1 -->
+			
+			<p class="spacer"></p>
+			<h5 class="flow-text">DEMO 2</h5>
+			<p>In this example, we select a group and then choose a related category.</p>
+			<p></p>
+			<!-- RELATED SELECTOR EXAMPLE 2 -->
+			<form><div class="form-group charcoal-t">
+			<!-- level 1 -->
+			<select name="group" id="groupSelect" class="select-relations">
+				<option value="designers">Designers</option>
+				<option value="photographers">Photographers</option>
+				<option value="writers">Writers</option>
+			</select>
+			<!-- level 2 -->
+			<select name="category" id="categorySelect" class="select-relations" data-sf-parent="groupSelect">
+				<option value="wedding" data-pr="groupSelect:photographers">Wedding</option>
+				<option value="interior" data-pr="groupSelect:designers">Interior</option>
+				<option value="graphic" data-pr="groupSelect:designers">Graphic</option>
+				<option value="commercial" data-pr="groupSelect:photographers">Commercial</option>
+				<option value="fantasy" data-pr="groupSelect:writers">Fantasy</option>
+				<option value="non-fiction" data-pr="groupSelect:writers">Non-Fiction</option>
+				<option value="travel" data-pr="groupSelect:writers">Travel</option>
+			</select>
+			</div></form>
+			<!-- END RELATED SELECTOR EXAMPLE 2 -->
+			<p class="spacer"></p>
+		</div></div>
+		<p class="spacer"></p>
 		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
 		
 		<!-- VALIDATORS -->
@@ -409,6 +486,7 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 	</div>
 </footer>
 
+<!-- vanilla js -->
 <script src="core/jab/bfx/baffle.js" type="text/javascript"></script>
 <script src="core/jab/fux/credit-card-validator.js" type="text/javascript"></script>
 <script src="core/jab/fux/form-functions.js" type="text/javascript"></script>
@@ -425,5 +503,10 @@ window.onload = function () {
    });
 };
 </script>
+
+<!-- jquery -->
+<script src="core/jab/jquery.3.js" type="text/javascript"></script>
+<script src="core/jab/fux/select-relations.js" type="text/javascript"></script>
+
 </body>
 </html>

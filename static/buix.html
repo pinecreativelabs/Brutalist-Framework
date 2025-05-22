@@ -143,9 +143,9 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 		
 		<!-- NAVIGATION -->
 		<h3 class="fluid-text monolisk" id="nav">Navigation</h3>
-		<!-- Simple Menu -->
-		<h4 class="charcoal flow-text bitstream">Simple Menu</h4>
 		<div class="flex bitstream"><div class="half padded">
+			<!-- Simple Menu -->
+			<h4 class="charcoal flow-text bitstream">Simple Menu</h4>
 			<p>A pure CSS menu that displays an optional description upon hover over each item.</p>
 			<h4>Markup</h4>
 			<code class="black lime-t lucida padded smaller">
@@ -155,7 +155,6 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 				&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br />
 				&lt;/ul&gt;
 			</code>
-		</div><div class="padded half">
 			<h4>Default View</h4>
 			<ul class="simple-nav lucida">
 				<li><a href="#">Link 1 <span class="des">Description text for item 1.</span></a></li>
@@ -175,10 +174,29 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 				<li><a href="#">Link 4 <span class="des">Description text for item 4.</span></a></li>
 				<li><a href="#">Link 5 <span class="des">Description text for item 5.</span></a></li>
 			</ul>
+		</div><div class="padded half">
+			<!-- Perspective Nav -->
+			<h4 class="charcoal flow-text bitstream">Perspective-Nav</h4>
+			<p>A pure CSS simple menu with a little perspective! Simple markup with a creative style. By default, the nav item background gradient uses the <em>--primary</em> and <em>--secondary</em> variables.</p>
+			<h4>Markup</h4>
+			<code class="black lime-t lucida padded smaller">
+				&lt;ul class="perspective-nav"&gt;<br />
+				&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;List Item&lt;/a&gt;&lt;/li&gt;<br />
+				&lt;/ul&gt;
+			</code>
+			<p class="spacer"></p>
+			<ul class="perspective-nav">
+				<li><a href="#">Blocks</a></li>
+				<li><a href="#">Bricks</a></li>
+				<li><a href="#">Tiles</a></li>
+				<li><a href="#">Masons</a></li>
+				<li><a href="#">Painters</a></li>
+			</ul>
+			<p class="spacer"></p>
 		</div></div>
 		<p class="spacer"></p>
 		<!-- Tree List -->
-	<h4 class="charcoal flow-text bitstream">Tree List</h4>
+		<h4 class="charcoal flow-text bitstream">Tree List</h4>
 		<div class="flex bitstream"><div class="padded half">
 			<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/buix/tree-list.js</em></p>
 			<p>Create a nested tree list menu for unordered lists. Child items can be toggled. Each parent item will need to be wrapped in a span with class of <strong><em>parent</em></strong>. Unlimited child levels are supported.</p>
