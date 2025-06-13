@@ -1,4 +1,4 @@
-# Brutalist Framework 2.5.4
+# Brutalist Framework 2.5.5
 A framework for the brutalist web design trend.
 
 ![BF Cover](https://www.brutalistframework.com/app/files/images/bf-social-tile.jpg)
