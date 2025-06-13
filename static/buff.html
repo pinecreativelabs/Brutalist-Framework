@@ -219,9 +219,20 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 		
 		<!-- FANCY FILTERS -->
 		<h3 class="fluid-text monolisk" id="fancy">Fancy Filters</h3>
-		<p class="bitstream" style="margin: 0 0 1rem 0;">Fancy filters combine multiple filter properties to create a preset filter effect. Filtered elements need to be wrapped within a filter container. An example markup:</p>
-		<p class="terminal inline-block"><strong>&lt;div class="filter <em>filter-name</em>"&gt; &lt;any-elements&gt; &lt;/div&gt;</strong></p>
-		<p class="bitstream" style="margin: 1rem 0 1rem 0;">All direct child elements within a fancy <em>filter class</em> container will be affected. The class <strong><em>filter</em></strong> must be applied in conjunction with a filter class (ex: <strong><em>.filter.firestorm</em></strong>).</p>
+		<div class="flex bitstream"><div class="padded half">
+			<p>style="margin: 0 0 1rem 0;">Fancy filters combine multiple filter properties to create a preset filter effect. Filtered elements need to be wrapped within a filter container. An example markup:</p>
+			<p class="terminal inline-block"><strong>&lt;div class="filter <em>filter-name</em>"&gt; &lt;any-elements&gt; &lt;/div&gt;</strong></p>
+			<p class="bitstream" style="margin: 1rem 0 1rem 0;">All direct child elements within a fancy <em>filter class</em> container will be affected. The class <strong><em>filter</em></strong> must be applied in conjunction with a filter class (ex: <strong><em>.filter.firestorm</em></strong>).</p>
+		</div><div class="padded half">
+			<div class="disabled padding">
+					<h4 class="flow-text allcaps"><strong>Hover Filter</strong></h4>
+					<p>Apply a filter upon hover simply by adding <em>-h</em> after the <em>.filter</em> class, like so:<br /><strong><em>.filter-h.fancy-filter</em></strong><br /><br /></p>
+					<ul class="tiles arial bold">
+						<li style="margin-right: 12px;">.filter-h.purple-power<br /><span class="filter-h purple-power"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></span></li>
+						<li>.filter-h.new80s<br /><span class="filter-h new80s"><img class="large-thumb" src="app/files/images/brutal-building.jpg" /></span></li>
+					</ul>
+				</div>
+		</div></div>
 		<div class="flex" style="margin-top: 1.15em;">
 			<div class="disabled padded"><p><strong>Original Image</strong><br />
 				<img class="large-thumb" src="app/files/images/brutal-building.jpg" /></p>

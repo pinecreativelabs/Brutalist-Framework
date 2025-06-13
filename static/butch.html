@@ -154,40 +154,46 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 			<p class="huge">.huge</p>
 		</div></div>
 		<h4 class="white-t flow-text charcoal courier">Text Alignment &amp; Direction</h4>
-		<p><strong>.center-t</strong> <small>[centers text]</small><br />
-			<strong>.left-t</strong> <small>[aligns text to the left (default)]</small><br />
-			<strong>.right-t</strong> <small>[aligns text to the right]</small><br />
-			<strong>.justify-t</strong> <small>[justifies text]</small><br />
-			<strong>.rtl</strong> <small>[right-to-left]</small><br />
-			<strong>.wm-lr</strong> <small>[vertical writing mode left-to-right]</small><br />
-			<strong>.wm-rl</strong> <small>[vertical writing mode right-to-left]</small><br />
-			<strong>.left</strong> <small>[floats element to the left]</small><br /><strong>.right</strong> <small>[floats element to the right]</small>
-		</p>
+		<div class="flex"><div class="padded half">
+			<p><strong>.center-t</strong> <small>[centers text]</small><br />
+				<strong>.left-t</strong> <small>[aligns text to the left (default)]</small><br />
+				<strong>.right-t</strong> <small>[aligns text to the right]</small><br />
+				<strong>.justify-t</strong> <small>[justifies text]</small><br />
+				<strong>.rtl</strong> <small>[right-to-left]</small>
+			</p>
+		</div><div class="padded half">
+			<p><strong>.wm-lr</strong> <small>[vertical writing mode left-to-right]</small><br />
+				<strong>.wm-rl</strong> <small>[vertical writing mode right-to-left]</small><br />
+				<strong>.left</strong> <small>[floats element to the left]</small><br /><strong>.right</strong> <small>[floats element to the right]</small>
+			</p>
+		</div></div>
 		<h4 class="white-t flow-text charcoal courier">Text Formatting</h4>
-		<p><strong>.letterspace</strong> <small>[character spacing using <em>--charspace</em> variable]</small><br />
-			<strong>.spread</strong> <small>[doubles character spacing using <em>--charspace</em> variable]</small><br />
-			<strong>.compress</strong> <small>[cuts character spacing by one-third using <em>--charspace</em> variable]</small><br />
-			<strong>.oblique</strong> <small>[<span class="oblique">Slants text</span>]</small><br />
-			<strong>.allcaps</strong> <small>[<span class="allcaps">Capitalizes all characters</span>]</small><br />
-			<strong>.lowercase</strong> <small>[<span class="lowercase">ALL LOWERCASE</span>]</small><br />
-			<strong>.capitalize</strong> <small>[<span class="capitalize">all words uppercased</span>]</small><br />
-			<strong>.smallcaps</strong> <small>[<span class="smallcaps">Small caps font is displayed</span>]</small><br />
-			<strong>.spaced-2x</strong> <small>[double spaced]</small><br />
-			<strong>.spaced-3x</strong> <small>[triple line spacing]</small><br />
-			<strong>.spaced-4x</strong> <small>[4x line spacing]</small>
-		</p>
-		<p><strong>.tal-l</strong> <small>[left-aligns last line of text]</small><br /><strong>.tal-r</strong> <small>[right-aligns last line of text</small><br />
-			<strong>.tal-c</strong> <small>[centers last line of text]</small><br /><strong>.tal-j</strong> <small>[justifies last line of text]</small><br />
-			<strong>.indent</strong> <small>[indents text by 1cm]</small>
-		</p>
-		<p class="nowrap"><strong>.nowrap</strong> <small>[text will never wrap to next line]</small></p>
-		<p class="ws-sm"><strong>.ws-sm</strong> <small>[small word spacing]</small></p>
-		<p class="ws-md"><strong>.ws-md</strong> <small>[medium word spacing]</small></p>
-		<p class="wordspace-large"><strong>.ws-lg</strong> <small>[large word spacing]</small></p>
-		<p class="keep-all"><strong>.keep-all</strong> <small>[word breaks are prohibited between pairs of letters]</small></p>
-		<p class="break-all"><strong>.break-all</strong> <small>[lines may break between any two letters]</small></p>
-		<p class="break"><strong>.break</strong> <small>[word wrap allows unbreakable words to be broken]</small></p>
-		<p class="guard-text"><strong>.guard</strong> <small>[prevents text from being selectable]</small></p>
+		<div class="flex"><div class="padded half">
+			<p><strong>.letterspace</strong> <small>[character spacing using <em>--charspace</em> variable]</small><br />
+				<strong>.spread</strong> <small>[doubles character spacing using <em>--charspace</em> variable]</small><br />
+				<strong>.compress</strong> <small>[cuts character spacing by one-third using <em>--charspace</em> variable]</small><br />
+				<strong>.oblique</strong> <small>[<span class="oblique">Slants text</span>]</small><br />
+				<strong>.allcaps</strong> <small>[<span class="allcaps">Capitalizes all characters</span>]</small><br />
+				<strong>.lowercase</strong> <small>[<span class="lowercase">ALL LOWERCASE</span>]</small><br />
+				<strong>.capitalize</strong> <small>[<span class="capitalize">all words uppercased</span>]</small><br />
+				<strong>.smallcaps</strong> <small>[<span class="smallcaps">Small caps font is displayed</span>]</small><br />
+				<strong>.spaced-2x</strong> <small>[double spaced]</small><br />
+				<strong>.spaced-3x</strong> <small>[triple line spacing]</small><br />
+				<strong>.spaced-4x</strong> <small>[4x line spacing]</small><br />
+				<strong>.tal-l</strong> <small>[left-aligns last line of text]</small><br /><strong>.tal-r</strong> <small>[right-aligns last line of text</small><br />
+				<strong>.tal-c</strong> <small>[centers last line of text]</small><br /><strong>.tal-j</strong> <small>[justifies last line of text]</small>
+			</p>
+		</div><div class="padded half">
+			<p class="nowrap"><strong>.indent</strong> <small>[indents text by 1cm]</small><br />
+			<strong>.nowrap</strong> <small>[text will never wrap to next line]</small></p>
+			<p class="ws-sm"><strong>.ws-sm</strong> <small>[small word spacing]</small></p>
+			<p class="ws-md"><strong>.ws-md</strong> <small>[medium word spacing]</small></p>
+			<p class="wordspace-large"><strong>.ws-lg</strong> <small>[large word spacing]</small></p>
+			<p class="keep-all"><strong>.keep-all</strong> <small>[word breaks are prohibited between pairs of letters]</small></p>
+			<p class="break-all"><strong>.break-all</strong> <small>[lines may break between any two letters]</small></p>
+			<p class="break"><strong>.break</strong> <small>[word wrap allows unbreakable words to be broken]</small></p>
+			<p class="guard-text"><strong>.guard</strong> <small>[prevents text from being selectable]</small></p>
+		</div></div>
 		<p class="spacer"></p>
 		
 		<h4 class="white-t flow-text charcoal courier"><strong>.flow-text</strong> <small>(responsive text)</small></h4>
@@ -601,9 +607,9 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 		<h3 class="fluid-text monolisk" id="bounds">Boundaries</h3>
 		<p>Boundaries need to be respected. This includes brutal borders and rigid rules.<br /><br /></p>
 		<p class="white-t courier flow-text"><span class="charcoal allcaps"><strong>Basic Borders</strong></span></p>
-		<p>Apply basic borders using these classes. To change the border color, see <em>Flavors</em>.<br /><br /></p>
-		<div class="flex">
-			<div class="padded">
+		<p>Apply basic borders using these classes. To change the border color, see <a href="flavors.html" class="lemonlink"><em>Flavors</em></a>.<br /><br /></p>
+		<div class="flex"><div class="padded two-thirds">
+			<div class="flex"><div class="padded">
 				<p class="b-s-t black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-s-t</strong><br /><small>Solid thin border</small></p>
 				<p class="b-s-k black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-s-k</strong><br /><small>Solid thick border</small></p>
 				<p class="b-s-f black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-s-f</strong><br /><small>Solid fat border</small></p>
@@ -619,9 +625,42 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 				<p class="b-b-t black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-b-t</strong><br /><small>Double thin border</small></p>
 				<p class="b-b-k black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-b-k</strong><br /><small>Double thick border</small></p>
 				<p class="b-b-f black-b" style="margin-bottom: 1em; padding: 0.5em;"><strong>.b-b-f</strong><br /><small>Double fat border</small></p>
-			</div>
-		</div>
+			</div></div>
+		</div><div class="padded third">
+			<p class="padded info"><strong>NOTE:</strong> Border thicknesses are set using the following CSS variables:<br /><br />
+			<strong><em>--thin<br />--thick<br />--fat</em></strong><br /><br />These are also applied to outline thicknesses.</p>
+		</div></div>
+		<p class="white-t courier flow-text"><span class="charcoal allcaps"><strong>Border-Block-Start/End</strong></span></p>
+		<div class="flex"><div class="half padded">
+			<p>Depending on the writing-mode direction of the block, a border at the start and/or end can be applied. Solid, dotted, dashed, or double styles can be applied.<br /><br />
+			A combination of classes can be applied to the same element. To specify a color, simply use <a href="flavors.html" class="lemonlink">Flavors</a> classes with either an <em>-bs</em> (block-start) or <em>-be</em> (block-end) appended to the end of the class (ex: <em><strong>.lemon-bs</strong></em>).<br /><br />
+			The border-block start and end widths are set using the variables <strong><em>--bsw</em></strong> and <strong><em>--bew</em></strong>, respectively.<br /><br />
+			In the examples below, we apply various flavors to both the start and end.</p>
+		</div><div class="padded half">
+			<p class="padded info"><span class="flow-text"><strong>Classes</strong></span><br />
+			<strong>.bs-s</strong> <small>[block-start solid]</small><br /><strong>.bs-d</strong> <small>[block-start dotted]</small><br />
+			<strong>.bs-a</strong> <small>[block-start dashed]</small><br /><strong>.bs-b</strong><small>[block-start double]</small><br />
+			<strong>.be-s</strong> <small>[block-end solid]</small><br /><strong>.be-d</strong> <small>[block-end dotted]</small><br />
+			<strong>.be-a</strong> <small>[block-end dashed]</small><br /><strong>.be-b</strong><small>[block-end double]</small><br /><br />
+			<strong>.<em>flavor</em>-bs</strong> <small>[block-start color]</small><br /><strong>.<em>flavor</em>-be</strong> <small>[block-end color]</small>
+			</p>
+		</div></div>
+		<div class="flex"><div class="padded third">
+			<p class="bs-s smoke-bs charcoal" style="margin-bottom: 1em; padding: 0.5em;"><strong>.bs-s .smoke-bs</strong><br /><small>Solid block-start</small></p>
+			<p class="bs-a rose-bs ash" style="margin-bottom: 1em; padding: 0.5em;"><strong>.bs-a .rose-bs</strong><br /><small>Dashed block-start</small></p>
+			<p class="bs-d lavender-bs charcoal" style="margin-bottom: 1em; padding: 0.5em;"><strong>.bs-d .lavender-bs</strong><br /><small>Dotted block-start</small></p>
+			<p class="bs-b sky-bs ash" style="margin-bottom: 1em; padding: 0.5em;"><strong>.bs-b .sky-bs</strong><br /><small>Double block-start</small></p>
+		</div><div class="padded third">
+			<p class="be-s honey-be charcoal" style="margin-bottom: 1em; padding: 0.5em;"><strong>.be-s .honey-be</strong><br /><small>Solid block-end</small></p>
+			<p class="be-a lime-be ash" style="margin-bottom: 1em; padding: 0.5em;"><strong>.be-a .lime-be</strong><br /><small>Dashed block-end</small></p>
+			<p class="be-d fuchsia-be charcoal" style="margin-bottom: 1em; padding: 0.5em;"><strong>.be-d .fuchsia-be</strong><br /><small>Dotted block-end</small></p>
+			<p class="be-b fire-be ash" style="margin-bottom: 1em; padding: 0.5em;"><strong>.be-b .fire-be</strong><br /><small>Double block-end</small></p>
+		</div><div class="padded third">
+			<p class="wm-rl bs-s be-a tertiary-bs auxiliary-be ash" style="margin-bottom: 1em; padding: 0.5em;"><strong>.wm-rl .bs-s .be-a<br />.tertiary-bs .auxiliary-be</strong><br />
+			<small>Right-left writing mode, Solid block-start, dashed block-end</small></p>
+		</div></div>
 		<p class="spacer"></p>
+		
 		<!-- Outlines -->
 		<p class="white-t courier flow-text"><span class="charcoal allcaps"><strong>Outlines</strong></span></p>
 		<p style="margin-bottom: 1em;">Add an outline border around any element. You can apply both borders and outlines to the same element. Similar to the border classes above, use <strong><em>o</em></strong> in place of the first <strong><em>b</em></strong>. Example: <b><em>.o-s-t</em></b> produces a solid thin outline.</p>

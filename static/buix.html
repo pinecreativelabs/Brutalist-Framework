@@ -612,6 +612,61 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 		</div></div>
 		<p class="spacer"></p>
 		
+		<h4 class="flow-text bitstream charcoal white-t padded" id="listgridview">List-Grid-View</h4>
+		<div class="flex bitstream"><div class="padded half">
+			<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br />core/jab/buix/list-grid-view.js</em></p>
+			<p><em>List-Grid-View</em> is a simple interface that allows the user to toggle between a list and grid view. Child items within a <em>gridwrap</em> container get "compacted" from a full-width view to a grid layout.<br /><br />
+			Both views use CSS grid for the layout. By default, the grid view has 3 items per row.</p>
+		</div><div class="padded half">
+			<p><span class="flow-text"><strong>Markup</strong></span><br />First add the toggler buttons:</p>
+			<code class="black lime-t lucida padding"><small>
+				&lt;div id="ListGridViewToggler"&gt;<br />
+				&nbsp;&nbsp;&lt;button class="btn active" onclick="listView()"&gt;List&lt;/button&gt;<br />
+				&nbsp;&nbsp;&lt;button class="btn" onclick="gridView()"&gt;Grid&lt;/button&gt;<br />
+				&lt;/div&gt;<br />
+			</small></code>
+			<p>Then add the list of items:</p>
+			<code class="black lime-t lucida padding"><small>
+				&lt;div class="list-grid-view"&gt;<br />
+				&nbsp;&nbsp;&lt;div&gt;..item 1..&lt;/div&gt;<br />
+				&nbsp;&nbsp;&lt;div&gt;..item 2..&lt;/div&gt;<br />
+				&lt;/div&gt;<br />
+			</small></code>
+		</div></div>
+		
+		<div id="ListGridViewToggler">
+			<button class="nb-btn btn active" onclick="listView()">&#9636; List</button>
+			<button class="nb-btn btn" onclick="gridView()">&#9638; Grid</button>
+		</div>
+		<div class="list-grid-view">
+			<div class="b-s-k mono">
+				<h5 class="flow-text">Mono Box</h5>
+				<p>I'm a black 'n white description.</p>
+			</div>
+			<div class="b-s-k mono-inv">
+				<h5 class="flow-text">Mono Inverse</h5>
+				<p>Let's flip the narrative on it's head.</p>
+			</div>
+			<div class="b-s-k campfire">
+				<h5 class="flow-text">Campfire</h5>
+				<p>Time to tell scary stories.</p>
+			</div>
+			<div class="b-s-k pool-party">
+				<h5 class="flow-text">Pool Party</h5>
+				<p>Time to get wet 'n wild up in here.</p>
+			</div>
+			<div class="b-s-k grillmaster">
+				<h5 class="flow-text">Grillmaster</h5>
+				<p>Time to roast 'n toast the most.</p>
+			</div>
+			<div class="b-s-k midnight">
+				<h5 class="flow-text">Midnight</h5>
+				<p>Under the enchanting moonlit sky.</p>
+			</div>
+		</div>
+		
+		<p class="spacer"></p>
+		
 		<!-- DRAGGABLE ELEMENTS -->
 		<h4 class="flow-text charcoal bitstream white-t padded">Draggable Elements</h4>
 		<div class="flex bitstream">
@@ -1050,6 +1105,7 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 <script src="core/jab/buix/link-previewer.js" type="text/javascript"></script>
 <script src="core/jab/buix/tree-list.js" type="text/javascript"></script>
 <script src="core/jab/buix/b-tabs.js" type="text/javascript"></script>
+<script src="core/jab/buix/list-grid-view.js" type="text/javascript"></script>
 
 <!-- jquery plugins -->
 <script src="core/jab/jquery.3.js" type="text/javascript"></script>

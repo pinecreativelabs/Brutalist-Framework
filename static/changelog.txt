@@ -1,23 +1,20 @@
 Brutalist Framework Changelog
-Version 2.5.4
+Version 2.5.5
 
-BFX:
-+ New "Deconstructed Text" text effect
-
-BICONS:
-+ 14 new icons: bison / buffalo, cricket, dodo, giraffe, hedgehog, hippo, mammoth, otter, oyster, parrot, scorpion, sloth, swan, zebra
+GENERAL:
++ Rearrangement and segregation of various CSS components into separate CSS files
 
 BUFF:
-+ 4 new Fancy Filters: flat-retro, green-dream, orange-juice, purple-power
++ Added ability to apply Fancy Filters upon hover
 
 BUIX:
-+ Added new "Perspective-Nav" menu 
++ Added new "list-grid-view" interaction 
 
 BUTCH:
-+ Added marked (highlighted) text classes under Typography: mark.important, mark.noted, mark.remember
++ Segregated Flexbox layout into a separate CSS file
++ Introduced border-block-end/start classes to Boundaries
 
 FLAVORS:
-+ New pure CSS "Patterns": blueprint-grid, bokeh, carbon-black, crossed, cubic, grey-rigidity, honeycomb, moss-mat, notebook-paper, paradox, polkadot, pyramidal, red-bricks, retro-bunch, smoke-flow, strawberry-steps, weaver, zig-zag
++ New "Shades of Teal" flavors: aquamarine, baja-blast, dep-teal, egyptian-teal, olo, tropical
++ Other flavors added: chipotle, cosmic-latte, melon, rouge, tea-rose
 
-FUX:
-+ Added new "Related Selectors" UI element: a cascading chained select jQuery plugin
