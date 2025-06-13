@@ -1,0 +1,99 @@
+/* QUICK-GRID */
+.clear-block {display: block; clear: both;}
+.wrap-600,.wrap-960,.wrap-1200,.wrap-1600{width:100%; margin: 0 auto;}
+.wrap-600{max-width: 600px;}
+.wrap-960{max-width: 960px;}
+.wrap-1200{max-width: 1200px;}
+.wrap-1600{max-width: 1600px;}
+.flex {
+	box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+  display: -ms-flex; display: -webkit-box; display: -moz-box;
+  display: -ms-flexbox; display: -webkit-flex; display: flex;
+  -ms-flex: 0 1 auto; -webkit-box-flex: 0; flex: 0 1 auto;
+  -ms-flex-direction: row; -moz-flex-direction: row; -webkit-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal; flex-direction: row;
+  -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap;
+  margin-right: 0; margin-left: 0;
+}
+.flex > * {flex: 0 0 auto;}
+.flex.column{
+	flex-direction: column; -webkit-flex-direction: column;
+	-ms-flex-direction: column; -moz-flex-direction: column;
+	-webkit-box-orient: vertical;
+}
+.flex.reverse {
+	-ms-flex-direction: row-reverse; -moz-flex-direction: row-reverse; -webkit-flex-direction: row-reverse;
+  -webkit-box-orient: horizontal; -webkit-box-direction: reverse; flex-direction: row-reverse;
+}
+.flex.columns.reverse{
+	-ms-flex-direction: column-reverse; -moz-flex-direction: column-reverse;
+  -webkit-flex-direction: column-reverse; -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse; flex-direction: column-reverse;
+}
+.flex.middle, .flex .middle { 
+	-ms-flex-pack: center; -webkit-box-pack: center; justify-content: center;
+	-moz-justify-content: center; -webkit-justify-content: center;
+	align-self: center;
+	-ms-flex-align: center; -webkit-box-align: center;
+	align-items: center; -webkit-align-items: center; 
+	align-content: center; -webkit-align-content: center;
+}
+.flex.start, .flex .start { 
+	-ms-flex-align: start; -webkit-box-align: start;
+	align-self: flex-start; align-items: flex-start; -webkit-align-items: flex-start;
+	-ms-flex-pack: start; -webkit-box-pack: start; justify-content: flex-start;
+	-moz-justify-content: flex-start; -webkit-justify-content: flex-start; text-align: start;
+}
+.flex.end, .flex .end { 
+	-ms-flex-pack: end; -webkit-box-pack: end; -ms-flex-align: end; -webkit-box-align: end;
+    justify-content: flex-end; -moz-justify-content: flex-end; -webkit-justify-content: flex-end;
+	align-self: flex-end; align-items: flex-end; -webkit-align-items: flex-end; text-align: end;
+}
+.flex.around { 
+	-ms-flex-pack: distribute;
+	justify-content: space-around; -moz-justify-content: space-around; -webkit-justify-content: space-around;
+}
+.flex.evenly {
+	justify-content: space-evenly; -moz-justify-content: space-evenly; -webkit-justify-content: space-evenly;
+}
+.flex.between {
+	-ms-flex-pack: justify; -webkit-box-pack: justify;
+	justify-content: space-between; -moz-justify-content: space-between; -webkit-justify-content: space-between;
+}
+.flex.stretch, .flex .stretch {
+	align-self: stretch !important;
+	align-items: stretch !important;
+	align-content: stretch !important;
+} 
+.flex.baseline, .flex .baseline {
+	align-items: baseline !important;
+	align-self: baseline !important;
+	align-content: baseline !important;
+}
+.flex>.full{width: 100%; flex-basis: 100%; -webkit-flex-basis: 100%;}
+.bricks>div,.bricks>p,.bricks>li,.inline-brick,.inline-block{display:inline-block;padding: var(--padding);}
+
+@media screen and (min-width: 1200px){
+	.flex>.sidebar {width: 20%; flex-basis: 20%; -webkit-flex-basis: 20%;}
+	.flex>.main {width: 80%; flex-basis: 80%; -webkit-flex-basis: 80%;}
+	.flex>.half {flex-basis: 50%; -webkit-flex-basis: 50%; width: 50%;}
+	.flex>.third {flex-basis: 33.33%; -webkit-flex-basis: 33.33%; width: 33.33%;}
+	.flex>.two-thirds {flex-basis: 66.67%; -webkit-flex-basis: 66.67%; width: 66.67%;}
+	.flex>.fourth{flex-basis: 25%; -webkit-flex-basis: 25%; width: 25%;}
+	.flex>.fifth{flex-basis: 20%; -webkit-flex-basis: 20%; width: 20%;}
+}
+@media screen and (min-width: 701px) and (max-width: 1199px) {
+	.flex>.sidebar{width: 25%; flex-basis: 25%; -webkit-flex-basis: 25%; -moz-flex-basis: 25%;}
+	.flex>.main {width: 75%; flex-basis: 75%; -webkit-flex-basis: 75%; -moz-flex-basis: 75%;}
+	.flex>.half {flex-basis: 50%; -webkit-flex-basis: 50%; width: 50%;}
+	.flex>.third, .flex>.fifth {flex-basis: 33.33%; -webkit-flex-basis: 33.33%; width: 33.33%;}
+	.flex>.two-thirds {flex-basis: 66.67%; -webkit-flex-basis: 66.67%; width: 66.67%;}
+	.flex>.fourth{flex-basis: 50%; -webkit-flex-basis: 50%; width: 50%;}
+	.flex>.fifth:nth-of-type(4n+0),.flex>.fifth:nth-of-type(5n+0){flex-basis: 50%; -webkit-flex-basis: 50%; width; 50%;}
+}
+@media screen and (max-width: 700px){
+	.sidebar {width: 100%; flex-basis: 100%; -webkit-flex-basis: 100%; -moz-flex-basis: 100%; position: relative;}
+	.main{width: 100%; }
+	.flex>.half,.flex>.third,.flex>.fourth,.flex>.fifth,.flex>.two-thirds{flex-basis: 100%; -webkit-flex-basis: 100%; width: 100%;}
+}

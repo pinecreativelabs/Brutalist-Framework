@@ -1,10 +1,11 @@
 /* Construct CORE CSS 
- * version 2.5.4
+ * version 2.5.5
  *
 Load Defaults (REQUIRED) */
 @import url('default.css');
 
-/* Blueprint Grid */
+/* Grids */
+@import url('grids/quick-grid.css');
 @import url('blueprintgrid.css');
 
 /* ReBAR */
@@ -12,18 +13,25 @@ Load Defaults (REQUIRED) */
 
 /* BUTCH */
 @import url('butch.css');
-@import url('molds/shapes.css');
+@import url('butch/shapes.css');
 
 /* Flavors */
 @import url('flavors.css');
+@import url('flavors/concoctions.css');
+@import url('flavors/gradients.css');
+@import url('flavors/mesh-gradients.css');
+@import url('flavors/patterns.css');
 
 /* BUFF */
 @import url('buff.css');
+@import url('buff/fancy-filters.css');
 
 /* BUIX */
 @import url('buix.css');
-@import url('molds/multimedia.css');
-@import url('molds/presenter.css');
+@import url('buix/multimedia.css');
+@import url('buix/presenter.css');
+@import url('buix/timeline.css');
+@import url('buix/popup-uiux.css');
 
 /* Give Some FUX */
 @import url('fux.css');
@@ -39,9 +47,6 @@ Load Defaults (REQUIRED) */
 
 /* Font Packs */
 @import url('fonts/construct-fonts.css');
-
-/* Misc UI/UX */
-@import url('molds/uiux.css');
 
 /* Load Animation Libraries */
 @import url('animate.css');

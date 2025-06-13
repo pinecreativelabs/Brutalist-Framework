@@ -43,8 +43,11 @@
 	--spacer: 2rem;			/* spacer height */
 	
 	/* Border & Outline Thickness */
-	--thin: 1px;	/* thin borders */
-	--thick: 3px;	/* thick borders */
+	--thin: 2px;	/* thin borders */
+	--thick: 5px;	/* thick borders */
+	--fat: 8px; 	/* fat borders */
+	--bsw: 15px;	/* block-start width */
+	--bew: 10px;	/* block-end width */
 	
 	/* Character & Word Spacing */
 	--charspace: 3px;

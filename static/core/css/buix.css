@@ -1,11 +1,14 @@
 /*************************************************
-BUIX 2.5.4 - Base User Interface Experience
+BUIX 2.5.5 - Base User Interface Experience
 **************************************************/
 @import url('variables.css');
 @font-face {
   font-family: 'bicons';
   src: url("fonts/icomoon.woff") format('woff'), url("fonts/icomoon.ttf") format('truetype'), url("fonts/icomoon.otf") format('opentype'), url("fonts/icomoon.eot") format('embedded-opentype');
 }
+
+/* PRINTER */
+iframe.kinzi-print { display: none !important; }
 
 /* BUTTONS */
 button, .button, .btn, input[type="submit"] {
@@ -56,7 +59,7 @@ button.full-btn, button.btn-full, .button.full-btn, .btn.full-btn, .btn.btn-full
 .nba-btn-small:active,.nba-btn:active,.nba-btn-big:active,.nba-btn-jumbo:active { background: var(--accent); color: var(--auxiliary);}
 @media (max-width: 960px) {
 	.nb-btn-jumbo,.nba-btn-jumbo {font-size: 1.8rem; padding: 0.75rem 2rem;}
-	.nb-btn-big,.nba-btn-big {padding: 0.75rem; 1.5rem;}
+	.nb-btn-big,.nba-btn-big {padding: 0.75rem 1.5rem;}
 }
 
 /* NAVIGATION */
@@ -296,6 +299,15 @@ ul.tree-list ul { padding: 0 0 0 1.2em; margin: 0; list-style-type: none; }
 @keyframes overlayFadeInRight {
   0% {opacity: 0; left: 20%;}
   100% {opacity: 1; left: 0;}
+}
+
+/* List-Grid-View */
+.list-grid-view {display: grid; gap:10px; grid-template-columns: auto;}
+.list-grid-view.compacted{grid-template-columns: auto auto auto;}
+.list-grid-view>*{width: 100%; display: block;}
+#ListGridViewToggler>.active{filter:brightness(60%);}
+@media only screen and (max-width: 959px) {
+	.list-grid-view.compacted{grid-template-columns: auto auto;}
 }
 
 /* CDP: Content Display Picker */

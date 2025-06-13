@@ -1,0 +1,304 @@
+/* FANCY FILTERS */
+.filter, .filter-h {display: inline-block; width: auto; line-height: 0; position:relative !important;}
+.filter-h{cursor:pointer;}
+.filter::after, .filter-h::after {position: absolute !important; content: ''; width: 100%; height: 100%; top:0; left:0; padding: 0; margin: 0;}
+.amazon,.arctic,.baby-blue,.blue-rock,.blue-lagoon,.cali-sunset,.canary,.coal-paper,.cobalt-print,
+.code-red,.desert,.fever-dream,.grey-rock,.hot-summer,.ibiza,.ocean-wave,
+.old-wood,.rose-quartz,.sandstorm,.space-trip,.thaw-out,.vintage-may,.wetness {background:#fff;}
+
+/* Amazon */
+.filter.amazon::after, .filter-h:hover.amazon::after {mix-blend-mode: multiply; background: #00b309; opacity: 1;}
+.filter.amazon>*, .filter-h:hover.amazon>* {
+  -webkit-filter:    grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+          filter:    grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+  mix-blend-mode: none;
+}
+/* Arctic */
+.filter.arctic::after, .filter-h:hover.arctic::after {mix-blend-mode: multiply; background: #00e1fa; opacity: 0.13;}
+.filter.arctic>*,.filter-h:hover.arctic>* {
+  -webkit-filter: brightness(104%) contrast(104%) grayscale(0%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(122%) sepia(0%);
+        filter: brightness(104%) contrast(104%) grayscale(0%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(122%) sepia(0%);
+  mix-blend-mode: none;
+}
+/* BLUEBIRD */
+.filter.bluebird, .filter-h:hover.bluebird {background: #42a4ff;}
+.filter.bluebird::after, .filter-h:hover.bluebird::after {mix-blend-mode: lighten; background: #002a8c; opacity: 1;}
+.filter.bluebird>*, .filter-h:hover.bluebird>* {
+  -webkit-filter: contrast(120%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+        filter: contrast(120%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+  mix-blend-mode: multiply;
+}
+/* BABY BLUE */
+.filter.baby-blue::after, .filter-h:hover.baby-blue::after{mix-blend-mode: multiply; background: #00ccfa; opacity: 1;}
+.filter.baby-blue>*, .filter-h:hover.baby-blue>* {
+  -webkit-filter: grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(140%) sepia(0%);
+        filter: grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(140%) sepia(0%);
+  mix-blend-mode: none;
+}
+/* BLUE ROCK */
+.filter.blue-rock::after, .filter-h:hover.blue-rock::after {mix-blend-mode: multiply; background: #008efa; opacity: 0.15;}
+.filter.blue-rock>*, .filter-h:hover.blue-rock>* {
+  -webkit-filter: contrast(128%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(120%) sepia(0%);
+        filter: contrast(128%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(120%) sepia(0%);
+  mix-blend-mode: none;
+}
+/* BLUE LAGOON */
+.filter.blue-lagoon::after, .filter-h:hover.blue-lagoon::after {mix-blend-mode: multiply; background: #00e1fa; opacity: 0.5;}
+.filter.blue-lagoon>*, .filter-h:hover.blue-lagoon>* {
+  -webkit-filter: brightness(104%) contrast(104%) grayscale(0%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(122%) sepia(0%);
+        filter: brightness(104%) contrast(104%) grayscale(0%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(122%) sepia(0%);
+  mix-blend-mode: none;
+}
+/* BRANNAN */
+.filter.brannan::after, .filter-h:hover.brannan::after {mix-blend-mode: lighten; background: rgba(161, 44, 199, 0.31); }
+.filter.brannan>*, .filter-h:hover.brannan>* {
+	-webkit-filter: contrast(140%) sepia(50%); filter: contrast(140%) sepia(50%);
+}
+/* CALI SUNSET */
+.filter.cali-sunset::after, .filter-h:hover.cali-sunset::after {mix-blend-mode: multiply; background: #fa00cc; opacity: 0.15;}
+.filter.cali-sunset>*, .filter-h:hover.cali-sunset>* {
+  -webkit-filter: contrast(128%) grayscale(0%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(120%) sepia(0%);
+        filter: contrast(128%) grayscale(0%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(120%) sepia(0%);
+  mix-blend-mode: none;
+}
+/* CANARY */
+.filter.canary::after, .filter-h:hover.canary::after {mix-blend-mode: multiply; background: #ffff00; opacity: 1;}
+.filter.canary>*, .filter-h:hover.canary>* {
+  -webkit-filter:  brightness(106%)  grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+        filter:  brightness(106%)  grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+  mix-blend-mode: none;
+}
+/* COAL PAPER */
+.filter.coal-paper::after, .filter-h:hover.coal-paper::after {mix-blend-mode: darken; background: #7d0000; opacity: 0.1;}
+.filter.coal-paper>*, .filter-h:hover.coal-paper>* {
+  -webkit-filter: brightness(90%) contrast(125%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(50%);
+        filter: brightness(90%) contrast(125%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(50%);
+  mix-blend-mode: none;
+}
+/* COBALT */
+.filter.cobalt-print::after, .filter-h:hover.cobalt-print::after {mix-blend-mode: lighten; background: #033dc5; opacity: 1;}
+.filter.cobalt-print>*, .filter-h:hover.cobalt-print>* {
+  -webkit-filter: contrast(120%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+        filter: contrast(120%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+  mix-blend-mode: none;
+}
+/* CODE RED! */
+.filter.code-red::after, .filter-h:hover.code-red::after {mix-blend-mode: multiply; background: #fa0000; opacity: 1;}
+.filter.code-red>*, .filter-h:hover.code-red>* {
+  -webkit-filter: brightness(106%)  grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+        filter: brightness(106%)  grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+  mix-blend-mode: none;
+}
+/* DESERT */
+.filter.desert::after, .filter-h:hover.desert::after {mix-blend-mode: hard-light; background: #fae500; opacity: 0.2;}
+.filter.desert>*,.filter-h:hover.desert>* {
+  -webkit-filter: brightness(110%) contrast(114%) grayscale(0%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(122%) sepia(0%);
+        filter: brightness(110%) contrast(114%) grayscale(0%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(122%) sepia(0%);
+  mix-blend-mode: none;
+}
+/* EARLYBIRD */
+.filter.earlybird::after, .filter-h:hover.earlybird::after{
+	background: radial-gradient(ellipse at center,rgba(208, 186, 142, 0.98) 0%, rgba(54, 3, 9, 0.99) 100%);
+    mix-blend-mode: overlay;
+}
+/* FEVER DREAM */
+.filter.fever-dream::after, .filter-h:hover.fever-dream::after {mix-blend-mode: multiply; background: #ff0000; opacity: 0.13;}
+.filter.fever-dream>*, .filter-h:hover.fever-dream>* {
+  -webkit-filter:   contrast(97%) grayscale(0%) hue-rotate(330deg) invert(0%) opacity(100%) saturate(111%) sepia(0%);
+          filter:   contrast(97%) grayscale(0%) hue-rotate(330deg) invert(0%) opacity(100%) saturate(111%) sepia(0%);
+  mix-blend-mode: none;
+}
+/* FIRESTORM */
+.filter.firestorm::after, .filter-h:hover.firestorm::after{
+	background: linear-gradient(45deg,rgb(255, 0, 0) 0%, rgb(253, 255, 0) 100%);
+    mix-blend-mode: multiply;
+	-webkit-filter:   contrast(90%) grayscale(0%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+          filter:   contrast(90%) grayscale(0%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+}
+/* Flat-Retro */
+.filter.flat-retro, .filter-h:hover.flat-retro {background-color: #FCA300;}
+.filter.flat-retro::after, .filter-h:hover.flat-retro::after {background-color: #e23241; mix-blend-mode: lighten;}
+.filter.flat-retro>*,.filter-h:hover.flat-retro>*{
+	mix-blend-mode: darken; -webkit-filter: grayscale(100%) contrast(1.5); filter: grayscale(100%) contrast(1.5);
+}
+/* Green-Dream */
+.filter.green-dream, .filter-h:hover.green-dream{background-color: #00ff36;}
+.filter.green-dream::after, .fiflter-h.green-dream::after{background-color: #23278a; mix-blend-mode: lighten;}
+.filter.green-dream>*, .filter-h:hover.green-dream>*{
+	mix-blend-mode: multiply; -webkit-filter: grayscale(100%) contrast(1.2); filter: grayscale(100%) contrast(1);
+}
+/* Grey Rock */
+.filter.grey-rock::after, .filter-h:hover.grey-rock::after {mix-blend-mode: none; background: #faaa00; opacity: 0.13;}
+.filter.grey-rock>*, .filter-h:hover.grey-rock>* {
+  -webkit-filter: grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+          filter: grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+  mix-blend-mode: none;
+}
+/* Honey-Mustard */
+.filter.honey-mustard, .filter-h:hover.honey-mustard {background: #ffcd45;}
+.filter.honey-mustard::after, .filter-h:hover.honey-mustard::after {mix-blend-mode: lighten; background: #0d5c45; opacity: 1;}
+.filter.honey-mustard>*, .filter-h:hover.honey-mustard>* {
+  -webkit-filter: contrast(125%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+          filter: contrast(125%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+  mix-blend-mode: multiply;
+}
+/* HOT SUMMER */
+.filter.hot-summer::after, .filter-h:hover.hot-summar::after {mix-blend-mode: overlay; background: #fae900; opacity: 0.23;}
+.filter.hot-summer>*, .filter-h:hover.hot-summer>* {
+  -webkit-filter: brightness(103%) contrast(114%) grayscale(0%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(122%) sepia(0%);
+        filter: brightness(103%) contrast(114%) grayscale(0%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(122%) sepia(0%);
+  mix-blend-mode: none;
+}
+/* IBIZA */
+.filter.ibiza::after, .filter-h:hover.ibiza::after {mix-blend-mode: soft-light; background: #3a00fa; opacity: 0.5;}
+.filter.ibiza>*, .filter-h:hover.ibiza>* {
+  -webkit-filter: contrast(107%) grayscale(0%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(165%) sepia(50%);
+        filter: contrast(107%) grayscale(0%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(165%) sepia(50%);
+  mix-blend-mode: none;
+}
+/* INKWELL */
+.filter.inkwell::after, .filter-h:hover.inkwell::after {background: rgba(0, 0, 0, 0);}
+.filter.inkwell>*, .filter-h:hover.inkwell>*{
+	-webkit-filter: contrast(110%) brightness(110%) sepia(30%) grayscale(100%);
+  filter: contrast(110%) brightness(110%) sepia(30%) grayscale(100%);
+}
+/* LEAF */
+.filter.leaf, .filter-h:hover.leaf { background: #0665c4;}
+.filter.leaf::after, .filter-h:hover.leaf::after {mix-blend-mode: multiply; background: #f9ed3a; opacity: 1;}
+.filter.leaf>*, .filter-h:hover.leaf>* {
+  -webkit-filter: contrast(79%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+    filter: contrast(79%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+  mix-blend-mode: lighten;
+}
+/* LOFI */
+.filter.lofi::after, .filter-h:hover.lofi::after{
+	mix-blend-mode: multiply;
+	background: -webkit-radial-gradient(50% 50%, circle closest-corner, rgba(0, 0, 0, 0) 70, rgba(34, 34, 34, 1));
+	background: radial-gradient(50% 50%, circle closest-corner, rgba(0, 0, 0, 0) 70, rgba(34, 34, 34, 1));
+}
+.filter.lofi>*, .filter-h:hover.lofi>* {
+	-webkit-filter: contrast(150%) saturate(110%); filter: contrast(150%) saturate(110%);
+}
+/* MOON */
+.filter.moon::after, .filter-h:hover.moon::after{background: #383838; mix-blend-mode: lighten;}
+.filter.moon>*, .filter-h:hover>* {
+	  -webkit-filter: grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+        filter: grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+}
+/* NEW80s */
+.filter.new80s::after, .filter-h:hover.new80s::after{
+	background: linear-gradient(to bottom,rgb(255, 0, 134) 0%, rgb(0, 117, 255) 100%);
+    mix-blend-mode: overlay;
+}
+/* OCEAN WAVE */
+.filter.ocean-wave::after, .filter-h:hover.ocean-wave::after {mix-blend-mode: multiply; background: #00e5fa; opacity: 0.13;}
+.filter.ocean>*, .filter-h:hover.ocean>* {
+  -webkit-filter:  brightness(105%) contrast(104%) grayscale(10%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(50%);
+          filter:  brightness(105%) contrast(104%) grayscale(10%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(50%);
+  mix-blend-mode: none;
+}
+/* OLD WOOD */
+.filter.old-wood::after, .filter-h:hover.old-wood::after {mix-blend-mode: soft-light; background: #574400; opacity: 1;}
+.filter.old-wood>*, .filter-h:hover.old-wood>* {
+  -webkit-filter:  brightness(105%) contrast(102%) grayscale(50%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(140%) sepia(9%);
+          filter:  brightness(105%) contrast(102%) grayscale(50%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(140%) sepia(9%);
+  mix-blend-mode: none;
+}
+/* Orange-Juice */
+.filter.orange-juice, .filter-h:hover.orange-juice {background-color: #f65e35;}
+.filter.orange-juice::after, .filter-h:hover.orange-juice::after{background-color: #1e3265; mix-blend-mode: lighten;}
+.filter.orange-juice>*, .filter-h:hover.orange-juice>*{
+	mix-blend-mode: multiply; -webkit-filter: grayscale(100%) contrast(1.2); filter: grayscale(100%) contrast(1.2);
+}
+/* Princess */
+.filter.princess, .filter-h:hover.princess {background: #c4ba86;}
+.filter.princess::after, .filter-h:hover.princess::after {mix-blend-mode: lighten; background: #f430a9; opacity: 1;}
+.filter.princess>*, .filter-h:hover.princess>* {
+  -webkit-filter: grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+          filter: grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+  mix-blend-mode: hard-light;
+}
+/* Purple-Power */
+.filter.purple-power, .filter-h:hover.purple-power{background-color: #88169d;}
+.filter.purple-power::after, .filter-h:hover.purple-power::after{
+	mix-blend-mode: hard-light; background: linear-gradient(to top left, #75d775, #321a5b);
+}
+.filter.purple-power>*, .filter-h:hover.purple-power>*{
+	-webkit-filter: grayscale(100%) contrast(1.2);
+    filter: grayscale(100%) contrast(1.2); mix-blend-mode: lighten;
+}
+/* Rose Quartz */
+.filter.rose-quartz::after, .filter-h:hover.rose-quartz::after {mix-blend-mode: multiply; background: #fa00cc; opacity: 0.5;}
+.filter.rose-quartz>*, .filter-h:hover.rose-quartz>* {
+  -webkit-filter: grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+          filter: grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+  mix-blend-mode: none;
+}
+/* Sandstorm */
+.filter.sandstorm::after, .filter-h:hover.sandstorm::after {mix-blend-mode: multiply; background: #e3dca1; opacity: 1;}
+.filter.sandstorm>*, .filter-h:hover.sandstorm>* {
+  -webkit-filter: contrast(80%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+          filter: contrast(80%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+  mix-blend-mode: none;
+}
+/* Seaside */
+.filter.seaside::after, .filter-h:hover.seaside::after{
+	background: linear-gradient(to bottom,rgb(0, 255, 84) 0%, rgb(0, 61, 255) 100%);
+    mix-blend-mode: color;
+}
+/* SOLAR */
+.filter.solar:after, .filter-h:hover.solar::after{
+    background: linear-gradient(to bottom,rgba(20, 0, 255, 0.65) 0%, rgba(0, 188, 255, 0.4) 100%);
+    mix-blend-mode: exclusion;
+}
+/* Space Trip */
+.filter.space-trip::after, .filter-h:hover.space-trip::after {mix-blend-mode: saturation; background: #faaa00; opacity: 1;}
+.filter.space-trip>*, .filter-h:hover.space-trip>* {
+  -webkit-filter: grayscale(50%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(140%) sepia(0%);
+          filter: grayscale(50%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(140%) sepia(0%);
+  mix-blend-mode: none;
+}
+/* STUDIO54 */
+.filter.studio54, .filter-h:hover.studio54 {background: #ff0000;}
+.filter.studio54::after, .filter-h:hover.studio54::after {mix-blend-mode: lighten; background: #002b96; opacity: 1;}
+.filter.studio54>*, .filter-h:hover.studio54>* {
+  -webkit-filter: grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+          filter: grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+  mix-blend-mode: multiply;
+}
+/* THAW */
+.filter.thaw::after, .filter-h:hover.thaw::after {mix-blend-mode: lighten; background: #6be9ff; opacity: 0.23;}
+.filter.thaw>*, .filter-h:hover.thaw>* {
+  -webkit-filter:  brightness(110%) contrast(116%) grayscale(0%) hue-rotate(342deg) invert(0%) opacity(100%) saturate(84%) sepia(0%);
+          filter:  brightness(110%) contrast(116%) grayscale(0%) hue-rotate(342deg) invert(0%) opacity(100%) saturate(84%) sepia(0%);
+  mix-blend-mode: none;
+}
+/* TOASTER */
+.filter.toaster::after, .filter-h:hover.toaster::after {
+	background: radial-gradient(ellipse at center,rgba(128, 78, 15, 0.99) 0%, rgba(59, 0, 59, 0.99) 100%);
+    mix-blend-mode: screen;
+}
+.filter.toaster>*, .filter-h:hover.toaster>*{
+	-webkit-filter: contrast(150%) brightness(90%); filter: contrast(150%) brightness(90%);
+}
+/* Vintage May */
+.filter.vintage-may::after, .filter-h:hover.vintage-may::after {mix-blend-mode: none; background: #faaa00; opacity: 0.13;}
+.filter.vintage-may>*, .filter-h:hover.vintage-may>* {
+  -webkit-filter: brightness(105%)  grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(50%);
+        filter: brightness(105%)  grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(50%);
+  mix-blend-mode: none;
+}
+/* Wetness */
+.filter.wetness::after, .filter-h:hover.wetness::after {mix-blend-mode: hard-light; background: #008efa; opacity: 0.15;}
+.filter.wetness>*, .filter-h:hover.wetness>* {
+  -webkit-filter: contrast(128%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(120%) sepia(0%);
+        filter: contrast(128%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(120%) sepia(0%);
+  mix-blend-mode: none;
+}
+/* XPRO2 */
+.filter.xpro2::after, .filter-h:hover.xpro2::after {
+	mix-blend-mode: color-burn;
+	background: -webkit-radial-gradient(50% 50%, circle closest-corner, rgba(224, 231, 230, 1) 40, rgba(43, 42, 161, 0.6));
+	background: radial-gradient(50% 50%, circle closest-corner, rgba(224, 231, 230, 1) 40, rgba(43, 42, 161, 0.6));
+}
+.filter.xpro2>*, .filter-h:hover.xpro2>* {-webkit-filter: sepia(30%); filter: sepia(30%);}

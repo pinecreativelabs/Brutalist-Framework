@@ -1,0 +1,95 @@
+/* MESHES */
+.alfresco{
+	background-color: #0819b5;
+	background-image: 
+	radial-gradient(at 40% 20%, #0819b5 0px, transparent 50%), radial-gradient(at 80% 0%, #07d2fb 0px, transparent 50%),
+	radial-gradient(at 0% 50%, #07d2fb 0px, transparent 40%), radial-gradient(at 80% 20%, #0819b5 0px, transparent 40%),
+	radial-gradient(at 0% 100%, #21fcc7 0px, transparent 50%), radial-gradient(at 85% 35%, #21fcc7 0px, transparent 55%);
+}
+.chosen {
+    background-color: hsla(259.00000000000006, 100%, 58%, 1);
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1517 1517' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"), radial-gradient(circle at 100% 64%, hsla(45, 55%, 56%, 1) 1%, transparent 68%), radial-gradient(circle at 74% 91%, hsla(336.17647058823525, 54%, 73%, 1) 4%, transparent 77%);
+    background-blend-mode: overlay, normal, normal;
+}
+.coffee-blend{
+	background-color: #302a18;
+	background-image:
+	radial-gradient(at 40% 25%, #1c1c1c 0px, transparent 75%), radial-gradient(at 80% 5%, #fde4c3 0px, transparent 70%),
+	radial-gradient(at 0% 50%, #302a18 0px, transparent 60%), radial-gradient(at 80% 40%, #302a18 0px, transparent 50%),
+	radial-gradient(at 0% 100%, #9a8174 0px, transparent 80%), radial-gradient(at 100% 40%, #1c1c1c 0px, transparent 44%);
+}
+.cold-spirit{
+	background-color: #badaff;
+	background-image: 
+	radial-gradient(at 40% 20%, #00eaff 0px, transparent 50%), radial-gradient(at 80% 0%, #4d3589 0px, transparent 50%),
+	radial-gradient(at 0% 50%, #badaff 0px, transparent 50%), radial-gradient(at 80% 50%, #0025ce 0px, transparent 50%),
+	radial-gradient(at 0% 100%, #00eaff 0px, transparent 50%);
+}
+.dreamscape {
+    background-color: hsla(185, 58%, 56%, 1);
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 0 0' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"), radial-gradient(circle at 68% 1%, hsla(253, 66%, 75%, 1) 7%, transparent 61%), radial-gradient(circle at 1% 48%, hsla(226, 66%, 63%, 1) 13%, transparent 54%), radial-gradient(circle at 58% 29%, hsla(359, 63%, 67%, 1) 19%, transparent 81%), radial-gradient(circle at 83% 79%, hsla(181, 88%, 59%, 1) 15%, transparent 61%), radial-gradient(circle at 85% 56%, hsla(293, 91%, 54%, 1) 0%, transparent 78%), radial-gradient(circle at 20% 43%, hsla(293, 89%, 59%, 1) 8%, transparent 55%), radial-gradient(circle at 63% 14%, hsla(197, 99%, 92%, 1) 9%, transparent 69%), radial-gradient(circle at 51% 27%, hsla(251, 96%, 90%, 1) 4%, transparent 50%), radial-gradient(circle at 26% 50%, hsla(270, 63%, 55%, 1) 20%, transparent 71%), radial-gradient(circle at 65% 83%, hsla(278, 99%, 97%, 1) 2%, transparent 90%);
+    background-blend-mode: overlay, normal, normal, normal, normal, normal, normal, normal, normal, normal, normal;
+}
+.gold-digger{
+	background-color: #2f2f2f;
+	background-image:
+	radial-gradient(at 40% 25%, #ffcb74 0px, transparent 85%), radial-gradient(at 80% 5%, #ffcb74 0px, transparent 50%),
+	radial-gradient(at 0% 50%, #111 0px, transparent 80%), radial-gradient(at 80% 40%, #111 0px, transparent 80%),
+	radial-gradient(at 0% 100%, #ffcb74 0px, transparent 50%), radial-gradient(at 100% 40%, #f6f6f6 0px, transparent 44%);
+}
+.insta-mesh{
+	background-color: #a0004f;
+	background-image:
+	radial-gradient(at 40% 20%, #9613ad 0px, transparent 50%), radial-gradient(at 0% 100%, #f1ae00 0px, transparent 75%),
+	radial-gradient(at 0% 50%, #9613ad 0px, transparent 50%), radial-gradient(at 80% 50%, #a0004f 0px, transparent 50%),
+	radial-gradient(at 100% 100%, #9613ad 0px, transparent 60%);
+}
+.pastel-mesh{
+	background-color:hsla(0,100%,50%,1);
+	background-image:
+	radial-gradient(at 40% 20%, hsla(28,100%,74%,1) 0px, transparent 50%), radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0px, transparent 50%),
+	radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%), radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0px, transparent 50%),
+	radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%), radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%),
+	radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 50%);
+}
+.polyamory {
+    background-color: hsla(14.588235294117649, 100%, 50%, 1);
+    background-image: radial-gradient(circle at 93% 95%, hsla(283.27868852459017, 100%, 23%, 1) 0%, transparent 66%), radial-gradient(circle at 0% 99%, hsla(271.9148936170212, 99%, 53%, 1) 0%, transparent 67%), radial-gradient(circle at 46% 94%, hsla(14.588235294117649, 0%, 0%, 1) 0%, transparent 81%), radial-gradient(circle at 89% 8%, hsla(252.38849030066928, 89%, 23%, 1) 0%, transparent 150%);
+    background-blend-mode: normal, normal, normal, normal;
+}
+.purgatory {
+    background-color: hsla(220.9090909090909, 30%, 14%, 1);
+    background-image: radial-gradient(circle at 0% 5%, hsla(225.00000000000003, 56%, 60%, 0.7) 3.1210986267166043%, transparent 40%), radial-gradient(circle at 23% 3%, hsla(210.4411764705882, 96%, 48%, 0.37) 3.1210986267166043%, transparent 76.4190383017679%), radial-gradient(circle at 100% 93%, hsla(186.61764705882354, 70%, 55%, 0.21) 3.1210986267166043%, transparent 45.38487571252063%), radial-gradient(circle at 96% 103%, hsla(120.44117647058823, 76%, 39%, 0.1) 3.1210986267166043%, transparent 50.0047517726123%), radial-gradient(circle at 80% 0%, hsla(158.82352941176472, 80%, 48%, 0.23) 3.1210986267166043%, transparent 24.819747276612727%);
+    background-blend-mode: normal, normal, normal, normal, normal;
+}
+.purify {
+    background-color: hsla(0, 0%, 60%, 1);
+    background-image: radial-gradient(circle at 0% 50%, hsla(112.49999999999999, 37%, 91%, 1) 0%, transparent 50%), radial-gradient(circle at 40% 20%, hsla(27.999999999999577, 0%, 86%, 1) 0%, transparent 50%), radial-gradient(circle at 80% 0%, hsla(189.00000000000065, 0%, 100%, 1) 0%, transparent 50%), radial-gradient(circle at 80% 50%, hsla(89.69696969696984, 100%, 92%, 1) 0%, transparent 50%);
+    background-blend-mode: normal, normal, normal, normal;
+}
+.spruce {
+	background-color: #113e21;
+	background-image: 
+	radial-gradient(at 40% 20%, #b38b59 0px, transparent 50%), radial-gradient(at 0% 100%, #113e21 0px, transparent 75%),
+	radial-gradient(at 0% 50%, #f0f0f0 0px, transparent 50%), radial-gradient(at 80% 50%, #113e21 0px, transparent 50%),
+	radial-gradient(at 100% 100%, #b38b59 0px, transparent 33%), radial-gradient(at 0% 85%, #fefefe 0px, transparent 40%);
+}
+.sunscape {
+    background-color: hsla(44.81012658227848, 100%, 53%, 1);
+    background-image: radial-gradient(circle at 40% 20%, hsla(35.55555555555556, 93%, 54%, 1) 0%, transparent 50%), radial-gradient(circle at 80% 0%, hsla(16.03960396039604, 85%, 53%, 1) 0%, transparent 50%), radial-gradient(circle at 0% 50%, hsla(357.92079207920796, 82%, 52%, 1) 0%, transparent 50%);
+    background-blend-mode: normal, normal, normal;
+}
+.water-fairy{
+	background-color: #dee7ee;
+	background-image: 
+	radial-gradient(at 40% 20%, #6395a0 0px, transparent 50%), radial-gradient(at 80% 0%, #7dc7d2 0px, transparent 50%),
+	radial-gradient(at 0% 50%, #dee7ee 0px, transparent 50%), radial-gradient(at 80% 50%, #9994b4 0px, transparent 50%),
+	radial-gradient(at 0% 100%, #d85366 0px, transparent 50%);
+}
+.warm-winter {
+	background-color: #fff;
+	background-image: radial-gradient(at 19% 54%, hsla(55,100%,77%,0.34) 0px, transparent 50%),
+    radial-gradient(at 3% 47%, hsla(45,100%,80%,0.8) 0px, transparent 50%), radial-gradient(at 98% 3%, hsla(226,100%,53%,0.87) 0px, transparent 50%),
+    radial-gradient(at 94% 44%, hsla(44,100%,79%,0.8) 0px, transparent 50%), radial-gradient(at 53% 29%, hsla(13,100%,72%,0.87) 0px, transparent 50%),
+    radial-gradient(at 65% 14%, hsla(273,100%,68%,0.83) 0px, transparent 50%), radial-gradient(at 14% 14%, hsla(16,100%,76%,1) 0px, transparent 50%);
+}
