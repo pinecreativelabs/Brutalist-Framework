@@ -1,5 +1,10 @@
-Brutalist Framework: Dynamic Build (a.k.a. Brutal CMS)
+Brutalist Framework: Dynamic Build 
 
-This is the directory where the PHP-based version of BF will live. The standalone repo for Brutal CMS is available at: 
+This is the directory where the PHP-based version of BF will live. There will be two dynamic solutions: 
+
+1) Concrete CMS add-ons and themes 
+2) Brutal CMS
+
+The standalone repo for Brutal CMS is available at: 
 
 https://github.com/pinecreativelabs/BrutalCMS 
