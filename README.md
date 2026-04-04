@@ -1,7 +1,7 @@
 # Brutalist Framework 2.6
 A framework for the brutalist web design trend.
 
-![BF Cover](https://www.brutalistframework.com/app/files/images/bf-social-tile.jpg)
+![BF Cover](https://www.brutalistframework.com/core/files/images/bf-og-tile.jpg)
 ## About
 _Brutalist Framework_ is a free and open source collection of HTML templates, CSS libraries, and javascript resources specifically for the brutalist web design style.
 
