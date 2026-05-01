@@ -254,18 +254,24 @@
 .bi-zombie::before{content:"\1F9DF";}
 
 /* Currencies */
+.bi-austral::before{content:"\20B3";}
 .bi-bitcoin::before{content:"\20BF";}
 .bi-euro::before{content:"\20AC";}
+.bi-euro-currency::before{content:"\20A0";}
+.bi-franc::before{content:"\20A3";}
 .bi-kip::before{content:"\20AD";}
 .bi-lira::before{content:"\20A4";}
+.bi-naira::before{content:"\20A6";}
+.bi-nordic-mark::before{content:"\20BB";}
 .bi-peso::before{content:"\20B1";}
+.bi-rupee::before{content:"\20B9";}
 .bi-won::before{content:"\20A9";}
 
 /* Religion and Philosophy */
 .bi-celtic::before{content:"\1F548";}
 .bi-communist::before{content:"\262D";}
 .bi-cross::before{content:"\2670";}
-.bi-faith::before{content:"\🕊";}
+.bi-faith::before{content:"\1F54A";}
 .bi-islam::before{content:"\262A";}
 .bi-jew::before{content:"\2721";}
 .bi-khanda::before{content:"\262C";}

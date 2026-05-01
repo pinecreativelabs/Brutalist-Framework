@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>User Profile</title>
+	<meta name="description" content="A user profile template." />
+	<!-- OPEN GRAPH -->
+	
+	<!-- CORE CSS  -->
+	<link href="core/css/construct.css" type="text/css" rel="stylesheet" media="all"/>
+	<style>
+	h1{padding:0; margin: 0;}
+	a {font-weight: 600;}
+	.profile-cover {}
+	.profile-cover .shape {margin: 0 auto; width: 80%; height: 100%;}
+	.avatar {
+		display:flex; justify-content: center;
+		align-items: center;
+		width: 200px; height: 200px;
+		padding: 0; margin: 0 auto;
+		text-align:center;
+	}
+	.avatar img {margin: 0; padding: 0;}
+	.actionbar {text-align: right;}
+	.activity-feed {
+		border-top: 1px solid #c0c0c0;
+		margin-top: 8px; padding: 1.25rem 1rem 1.5rem 1rem;
+	}
+	</style>
+</head>
+<body class="notebook-paper">
+
+<header class="padded bluu-next sapphire-t">
+	<h1 class="fluid-text center">User Profile</h1>
+</header>
+
+<div class="container-1200">
+	<!-- Profile Heading -->
+	<div class="flex rounded crossed profile-cover bh-33">
+		<div class="shape semicircle north end glassmorph center">
+			<div class="avatar circle socialize">
+				<img src="app/files/images/contemplate.jpg" alt="avatar" class="circle crop xlarge-thumb" />
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="padded bitstream">
+			<ul class="b-tabs tabs-v">
+				<li data-title="Intro" class="tab-content">
+					<div class="flex">
+						<div class="padded half">
+							<div class="tabs">
+								<input type="radio" name="intro" checked="checked" id="bio">
+								<label for="bio">My Bio</label>
+								<div class="tab">
+									<p>This is who I am. I am brutal. I am beautiful.</p>
+								</div>
+								<input type="radio" name="intro" id="links">
+								<label for="links">Links</label>
+								<div class="tab">
+									<p>No links specified.</p>
+								</div>
+							</div>
+						</div><div class="padded half">
+							<!-- User Actions -->
+							<div class="actionbar">
+								<a href="#add-friend" data-modal-open class="nb-btn">+ Add Friend</a>
+							</div>
+							<!-- Recent Post Activity -->
+							<div class="activity-feed">
+								<p><span class="flow-text"><strong>Recent Activity</strong></span><br />No recent posts.</p>
+							</div>
+					</div></div>
+				</li>
+				<li data-title="Details" class="tab-content">
+					<div class="tabs">
+						<input type="radio" name="details" checked="checked" id="tab6">
+						<label for="tab6">Personal</label>
+						<div class="tab">
+							<p><strong>Gender:</strong> <i class="bi bi-female"></i> female<br />
+							<strong>Relationship Status:</strong> single</p>
+							<hr />
+							<p><strong>Birthday:</strong> 4/22/1985<br />
+							<strong>City:</strong> Brutalville</p>
+						</div>
+						<!-- Education Details -->
+						<input type="radio" name="details" id="edu">
+						<label for="edu">Education</label>
+						<div class="tab">
+							<p>Graduated from <strong>CLHS</strong> in 2004.</p>
+							<hr />
+							<p>Attended <strong>Ivy Tech Community College</strong></p>
+						</div>
+						<!-- Work Details -->
+						<input type="radio" name="details" id="work">
+						<label for="work">Work</label>
+						<div class="tab">
+							<p>No jobs to show.</p>
+						</div>
+					</div>
+				</li>
+				<li data-title="Connections" class="tab-content">
+					<p><strong>User</strong> has no connections. They are lonely.</p>
+				</li>
+				<li data-title="Gallery" class="tab-content">
+					<p>This will be a photo gallery.</p>
+				</li>
+			</ul>
+	</div>
+	<p class="spacer"></p>
+</div>
+
+<footer class="padded center bitstream disabled">
+	<p><a href="https://www.brutalistframework.com" target="_blank">Brutalist Framework</a> &copy; 2026</p>
+</footer>
+
+
+<!-- Vanilla Modal -->
+<div id="add-friend" style="display:none;">
+	<div class="wrap-960 blueprint rounded bitstream padded" style="max-width: 468px;">
+		<h4 class="flow-text"><strong>Friend Requested</strong></h4>
+		<p>They will either accept or reject you.</p>
+	</div>
+</div>
+<!-- Initiate and display modal itself -->
+<div class="modal">
+	<div class="modal-inner draggable"><!-- Remove "draggable" class to prevent modals from being moveable -->
+		<span data-modal-close>&times;</span>
+		<div class="modal-content"></div>
+	</div>
+</div>
+
+
+<!-- Vanilla Javascript -->
+<script src="core/jab/buix/modal.js"></script>
+<script src="core/jab/buix/b-tabs.js"></script>
+
+<!-- jQuery Plugins -->
+<script src="core/jab/jquery.3.js"></script>
+<script src="core/jab/plugins/draggable.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>Lead Capture</title>
+	<meta name="description" content="Lead capture boilerplate template with Exit Intent." />
+	<!-- CORE CSS  -->
+	<link href="core/css/construct.css" type="text/css" rel="stylesheet" media="all"/>
+	
+</head>
+<body class="liminal">
+<div style="padding-top: 20px;">
+	<div class="container">
+		<div class="row" style="margin-bottom: 20px;">
+			<div class="col-xs-12 center"><a href="index.html"><img src="app/files/images/bf3logo_bloodsand.png" alt="BF Logo" class="medium-thumb" style="margin: 0 auto;" /></a></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-6">
+				<div class="padded white navy-t lucida box-s-k">
+					<h1 style="font-size: 2.25em; margin-top: 20px;">Lead Capture</h1>
+					<hr class="river thin"  style="margin-bottom: 1em;"/>
+					<img src="app/files/images/blinker-fluid.jpg" class="circle large-thumb left box-shadow" alt="Blinker Fluid" style="margin: 1.25em;" />
+					<h2 class="verdana flow-text" style="margin: 0; padding:0;">Blinker Fluid <span class="heavy blink"><em>Sale</em></span>!</h2>
+					<p class="white padded grey-t">Do you find yourself constantly getting flipped off by other drivers? It's likely because your turn signal has run out of blinker fluid! Don't become a flipped-off statistic. Keep your blinker fluid topped off!</p>
+					<p class="spacer"></p>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-6">
+				<form class="white grey-t brutal-border-dark box-s-k padding" name="demoform" action="" method="post" id="form">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="form-group highlight">
+								<label class="heavy">Name</label>
+								<input type="text" name="name" placeholder="First Last" />
+							</div>
+							<div class="form-group highlight">
+								<label class="heavy">Email</label>
+								<input type="email" name="name" placeholder="email@address.net" />
+							</div>
+							<div class="form-group highlight">
+								<label class="heavy">Phone</label>
+								<input type="tel" name="name" placeholder="" />
+							</div>
+							<div class="form-group flow-text">
+								<input type="submit" value="Request Quote" class="nb-btn sharp">
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<hr class="jagged-rule-light padded" />
+		<div class="blocks stretch">
+			<div class="vanilla block b66  xs-100 sm-100 md-100 padded">
+				<h4 class="lucida">Exit Intent &amp; Cookie Consent</h4>
+				<p>This boilerplate includes an Exit Intent popup. When the cursor is moved above the top of the window, a popup box appears.<br /><br />
+				A Cookie Consent bar should appear at the bottom, which can be closed by the user.</p>
+			</div>
+			<div class="vanilla block b33 xs-100 sm-100 md-100 padded">
+				<div class="padded rounded smoke">
+					<p class="center padded"><span class="orange bigger bold">$995.95</span><br /><span class="smaller">12oz bottle.<br />FREE overnight shipping</p>
+					<p class="center bold padded"><a href="#form" class="nb-btn throb">ORDER NOW!</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="center padding" style="margin-bottom: 3em; margin-top: 2em;">
+		<p class="lucida smoke-t">&copy; 2026 <em>Brutalist Framework</em>. All rights reserved.<br /><br /></p>
+	</footer>
+</div>
+
+<!-- EXIT INTENT -->
+<div id="dontgo" class="ei-popup" style="display: none; max-width: 500px;">
+	<div class="padded rounded ready">
+		<div class="ei-close" onclick="$.stick_close()">X</div>
+		<div class="ei-content center padded">
+			<h4 class="verdana bold black-t-s blink-fast">Don't Go!</h4>
+			<p class="flow-text tahoma black-t">Blinker Fluid Sale ends in 2 hours!</p>
+			<a href="#" class="nb-btn">Buy Now &raquo;</a>
+		</div>
+	</div>
+</div>
+
+<!-- Cookie Consent Bar -->
+<div class="cookie-consent ready">
+  <p class="black-t">We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you accept and understand our <a href="#">Privacy Policy</a>, and our <a href="#">Terms of Service</a>.</p>
+  <span class="cookie-btn">ACCEPT</span>
+</div>
+
+<!-- jquery -->
+<script src="core/jab/jquery.3.js" type="text/javascript"></script>
+<script src="core/jab/plugins/cookie-consent.js" type="text/javascript"></script>
+<script src="core/jab/plugins/exit-intent.js" type="text/javascript"></script>
+<script>
+ $(document).ready(function(){
+  $.stickToMe({
+   layer: '#dontgo'
+ });
+});
+</script>
+</body>
+</html>

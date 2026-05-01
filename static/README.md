@@ -1,5 +1,5 @@
 # Brutalist-Framework-Static
-Static HTML-only version of BF. This version of Brutalist Framework uses CSS3, jQuery / vanilla javascript, and HTML5. It contains 9 core components: 
+Static HTML-only version of BF. This version of Brutalist Framework uses CSS3, jQuery / vanilla javascript, and HTML5. It contains 11 core components: 
 
 ### BFX: **Brutal Effects**
 Text effects, animations, and other element effects.
@@ -27,5 +27,11 @@ Utilize multiple grid systems to create responsive and dynamic layouts.
 
 ### ReBAR: **Responsive Breakpoint Assistance Reference**
 Utility class library for enhancing responsive behavior across multiple devices.
+
+### BAD-Assets: **Brutal Anti-Design Assets Library**
+A library of digital assets ideal for use in anti-designs.
+
+### Boilerplates: **Project starting point templates**
+A collection of static HTML templates for a variety of projects.
 
 Documentation is self-contained in this package. Consult each HTML page for examples and details.

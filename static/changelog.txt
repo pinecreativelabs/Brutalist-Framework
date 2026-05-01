@@ -1,17 +1,29 @@
 Brutalist Framework Changelog
-Version 2.6
+Version 2.7
 
 GENERAL:
-+ Rearrangement and segregation of various CSS components into separate CSS files
-+ Introduction of "BAD-Assets" library, including 50 transparent PNG images
++ Added jQuery 4.0.0 to JAB
++ animated-backgrounds.css added to core/css/bfx directory
++ Updated top-corner navigation menu panel
++ Re-introduction of Boilerplates
 
-Grids:
-+ Updated to Blueprint Grid 2.2
+BFX: 
++ New "color-shift" animated background
++ New "spazz" animation glitch effect
+
+BICONS:
++ 6 new currency icons: austral, euro-currency, franc, naira, nordic-mark, rupee 
+
+BUFF:
++ 4 new basic filters: deep-sea, dreamy, vibrant, vintage
+
+BUIX:
++ Re-added Megamenu
++ Added new "Instant Search"
 
 BUTCH:
-+ Segregated Flexbox layout into a separate CSS file
-+ Introduced border-block-end/start classes to Boundaries
++ 4 new custom fonts: biorhyme, lewatur, mupen, riosark
++ Added Bar Graphs under 'Tables & Media'
 
 FLAVORS: 
-+ New flavors: apricot, brandy, grapeseed, indigo
-+ New Concoctions: canary-lilac, raspberry-honey, roadway
++ 5 new gradients: agent, crystal-ice, goldenrod, lemon-mint, spring-meadow

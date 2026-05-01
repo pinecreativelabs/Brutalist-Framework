@@ -37,7 +37,7 @@
 	<div class="wrap-960 monolisk" style="margin-top: 1.5rem;"><div class="checkerboard padded" style="border-radius: 1rem;"><div class="padded emptiness">
 		<ul class="flex flow-text">
 			<li class="third"><a href="index.html"><i class="bi bi-home"></i> HOME</a></li>
-			<li class="third"><a href="about.html"><i class="bi bi-info"></i> About BF</a></li>
+			<li class="third"><a href="boilerplates.html"><i class="bi bi-heat"></i> Boilerplates</a></li>
 			<li class="third"><a href="bad-assets.html"><i class="bi bi-pinwheel"></i> BAD-Assets</a></li>
 		</ul>
 		<ul class="flow-text flex" style="border-top: 2px solid #fff; padding-top: 8px;">
@@ -53,8 +53,9 @@
 		</ul>
 	</div><div class="padded emptiness" style="margin-top: 1.25rem;">
 		<ul class="flex flow-text">
-			<li class="half"><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank">Roadmap</a></li>
-			<li class="half"><a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank">Github Repo</a></li>
+			<li class="third"><a href="https://brutalistframework.com/#about" target="_blank"><i class="bi bi-info"></i> About BF</a></li>
+			<li class="third"><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank">Roadmap</a></li>
+			<li class="third"><a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank">Github Repo</a></li>
 		</ul>
 		<ul class="flex flow-text" style="width: 100%; border-top: 2px solid #fff; padding-top: 8px;">
 			<li class="third"><a href="https://www.blueprintgrid.com" target="_blank"><i class="blueprint bi bi-grid"></i> Blueprint Grid</a></li>
@@ -94,17 +95,17 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 		<!-- STICKY PAGE SANDBAR NAV -->
 		<nav class="sandbar sand monolisk flow-text">
 			<ul>
-				<li><a href="#buttons">Buttons</a></li>
-				<li><a href="#nav">Navigation</a></li>
+				<li><a href="#buttons-nav">Buttons &amp; Navigation</a></li>
 				<li><a href="#media">Multimedia</a></li>
 				<li><a href="#interactions">Interactions</a></li>
 				<li><a href="#modals">Modals</a></li>
 				<li><a href="#tabs">Tabs</a></li>
+				<li><a href="#livesearch">Instant Search</a></li>
 			</ul>
 		</nav>
 		
 		<!-- BUTTONS -->
-		<h3 class="fluid-text monolisk" id="buttons">Buttons</h3>
+		<h3 class="fluid-text monolisk" id="buttons-nav">Buttons</h3>
 		<p class="bitstream" style="margin-bottom: 1.1em;">To create a button, simply use the <strong>button</strong> tag, or apply <strong>.btn</strong> class to a link. Buttons are displayed as an inline block, by default.</p>
 		<div class="smoke-b b-d-t padded bold center bitstream">
 			<h4 class="flow-text">Default Buttons</h4>
@@ -138,14 +139,12 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 			<p class="center"><a href="#" class="nba-btn pill">.nba-btn.pill</a></p>
 		</div></div>
 		<p class="spacer"></p>
-		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
-		
 		
 		<!-- NAVIGATION -->
 		<h3 class="fluid-text monolisk" id="nav">Navigation</h3>
 		<div class="flex bitstream"><div class="half padded">
 			<!-- Simple Menu -->
-			<h4 class="charcoal flow-text bitstream">Simple Menu</h4>
+			<h4 class="charcoal padded flow-text bitstream">Simple Menu</h4>
 			<p>A pure CSS menu that displays an optional description upon hover over each item.</p>
 			<h4>Markup</h4>
 			<code class="black lime-t lucida padded smaller">
@@ -176,7 +175,7 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 			</ul>
 		</div><div class="padded half">
 			<!-- Perspective Nav -->
-			<h4 class="charcoal flow-text bitstream">Perspective-Nav</h4>
+			<h4 class="charcoal padded flow-text bitstream">Perspective-Nav</h4>
 			<p>A pure CSS simple menu with a little perspective! Simple markup with a creative style. By default, the nav item background gradient uses the <em>--primary</em> and <em>--secondary</em> variables.</p>
 			<h4>Markup</h4>
 			<code class="black lime-t lucida padded smaller">
@@ -195,8 +194,71 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 			<p class="spacer"></p>
 		</div></div>
 		<p class="spacer"></p>
+
+		<!-- MEGAMENU -->
+		<h4 class="charcoal bitstream padded flow-text">Megamenu</h4>
+		<div class="flex bitstream"><div class="half padded">
+			<p><em>Megamenu</em> is a responsive dropdown menu that supports multiple columns.<br /><br />See page source for markup.</p>
+		</div><div class="half padded">
+			<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/jquery.3.js<br />core/jab/plugins/megamenu.js</em></p>
+		</div></div>
+			<!-- Megamenu Demo -->
+			<div class="menu-container bitstream">
+				<div class="menu">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Dropdown</a>
+							<ul>
+								<li><a href="#">Page 1</a></li>
+								<li><a href="#">Page 2</a></li>
+								<li><a href="#">Page 3</a></li>
+								<li><a href="#">Page 4</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Multi-Columns</a>
+							<ul>
+								<li><a href="#">Category 1</a>
+									<ul>
+										<li><a href="#">Sub-page 1</a></li>
+										<li><a href="#">Sub-page 2</a></li>
+										<li><a href="#">Sub-page 3</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Category 2</a>
+									<ul>
+										<li><a href="#">Sub-page 1</a></li>
+										<li><a href="#">Sub-page 2</a></li>
+										<li><a href="#">Sub-page 3</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Category 3</a>
+									<ul>
+										<li><a href="#">Sub-page 1</a></li>
+										<li><a href="#">Sub-page 2</a></li>
+										<li><a href="#">Sub-page 3</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Category 4</a>
+									<ul>
+										<li><a href="#">Sub-page 1</a></li>
+										<li><a href="#">Sub-page 2</a></li>
+										<li><a href="#">Sub-page 3</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#">Single Page</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- END MEGAMENU -->
+			<p class="spacer"></p>
+			<p class="spacer"></p>
+			<p class="spacer"></p>
+			<p class="spacer"></p>
+			
 		<!-- Tree List -->
-		<h4 class="charcoal flow-text bitstream">Tree List</h4>
+		<h4 class="charcoal padded flow-text bitstream">Tree List</h4>
 		<div class="flex bitstream"><div class="padded half">
 			<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/buix/tree-list.js</em></p>
 			<p>Create a nested tree list menu for unordered lists. Child items can be toggled. Each parent item will need to be wrapped in a span with class of <strong><em>parent</em></strong>. Unlimited child levels are supported.</p>
@@ -240,7 +302,7 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 		</div></div>
 		<p class="spacer"></p>
 		<!-- Pagination -->
-		<h4 class="flow-text white-t charcoal bitstream">Pagination</h4>
+		<h4 class="flow-text padded white-t charcoal bitstream">Pagination</h4>
 		<div class="flex bitstream">
 			<div class="padded half">
 				<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/jquery.3.js</em><br /><em>core/jab/plugins/pagination.js</em></p>
@@ -404,13 +466,13 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 		</div></div>
 		<div class="flex flood"><div class="third padded">
 			<h5 class="navy-t tahoma water-t-s">Default DEMO</h5>
-			<video poster="" src="app/files/video/ocean.mp4" data-skin="default" data-overlay="1" data-title="Wavy Waves"></video>
+			<video poster="" src="app/files/video/brutcrete.mp4" data-skin="default" data-overlay="1" data-title="Brutcrete"></video>
 		</div><div class="third padded">
 			<h5 class="navy-t tahoma water-t-s">Minimal DEMO</h5>
-			<video poster="" src="app/files/video/ocean.mp4" data-skin="minimal" data-overlay="2"></video>
+			<video poster="" src="app/files/video/brutcrete.mp4" data-skin="minimal" data-overlay="2"></video>
 		</div><div class="third padded">
 			<h5 class="navy-t tahoma water-t-s">Red Compact DEMO</h5>
-			<video poster="" src="app/files/video/ocean.mp4" data-color="#ff0000" data-skin="compact" data-overlay="1"></video>
+			<video poster="" src="app/files/video/brutcrete.mp4" data-color="#ff0000" data-skin="compact" data-overlay="1"></video>
 		</div></div>
 		<p class="spacer"></p>
 		<!-- GIF Player -->
@@ -701,9 +763,9 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 					&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="2"&gt;Content 3&lt;/option&gt;...<br />
 					&nbsp;&nbsp;&lt;/select&gt;<br /><br />
 					&nbsp;&nbsp;&lt;div class="content"&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cdp-element" data-option="0"&gt;<br />...Option 1 Content...&lt;/div&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cdp-element" data-option="1"&gt;<br />...Option 2 Content...&lt;/div&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cdp-element" data-option="2"&gt;<br />...Option 3 Content...&lt;/div&gt;<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cdp_element" data-option="0"&gt;<br />...Option 1 Content...&lt;/div&gt;<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cdp_element" data-option="1"&gt;<br />...Option 2 Content...&lt;/div&gt;<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cdp_element" data-option="2"&gt;<br />...Option 3 Content...&lt;/div&gt;<br />
 					&nbsp;&nbsp;&lt;/div&gt;<br />&lt;/div&gt;
 				</code>
 			</div>
@@ -817,7 +879,7 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 		<!-- MODALS -->
 		<h3 class="fluid-text monolisk" id="modals">Modals</h3>
 		<p class="bitstream">Modals are popup boxes that open when a user clicks on a link. There are two types of Modals: <em>Vanilla</em> and <em>Lite</em>.</p>
-		<h4 class="flow-text bitstream white-t charcoal">Vanilla Modals</h4>
+		<h4 class="flow-text bitstream white-t charcoal padded">Vanilla Modals</h4>
 		<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/buix/modal.js</em></p>
 		<p class="bitstream">Vanilla modals use plain vanilla javascript (no dependencies). Display a modal with any type of content. Users can close the modal either by clicking anywhere outside of it, or the X in the top right corner. There are three components that are needed.</p>
 		<div class="flex bitstream"><div class="half padded">
@@ -876,7 +938,7 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 		<p class="spacer"></p>
 		
 		<!-- LITE MODALS -->
-		<h4 class="charcoal bitstream flow-text white-t" id="modals-lite">Lite Modals</h4>
+		<h4 class="charcoal bitstream padded flow-text white-t" id="modals-lite">Lite Modals</h4>
 		<p class="bitstream">Pure CSS modals for simple and lightweight content!</p>
 		<div class="flex bitstream"><div class="padded half">
 			<h4 class="flow-text">Create Modal Content</h4>
@@ -1072,6 +1134,35 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 			</ul>
 		</div></div>
 		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		
+		<!-- INSTANT SEARCH -->
+		<h3 class="fluid-text monolisk" id="livesearch">Instant Search</h3>
+		<div class="flex bitstream"><div class="padded half">
+			<p><em>Instant Search</em> is an in-page filtered search interface using vanilla javascript. Upon typing keywords in a search box, results are displayed.<br /><br />
+			Results are based on text content within a <em>.searchable</em> list item. There is also support for an optional "fuzzy" search, where hidden keywords are factored in.<br /><br /></p>
+			<p class="padded warning"><strong>CAVEAT:</strong> Since Instant Search filters a list of DOM elements, very long lists (i.e. hundreds of items) are not advised, as this could affect the performance.</p>
+			
+			<p class="center">&nbsp;<br />
+				<a href="quick-search.html" target="_blank" class="pill nba-btn sepia allcaps vcr-mono">Quick Search Demo &raquo;</a>
+			</p>
+			<p class="spacer"></p>
+		</div><div class="padded half">
+			<p class="requiresbox"><span class="flow-text">REQUIRES:</span><br /><em>core/jab/buix/instant-search.js</em></p>
+			<p class="flow-text">Markup:</p>
+			<code class="padded smaller">
+			&lt;label for="instant-search"&gt;Search&lt;/label&gt;<br />
+			&lt;input type="search" id="instant-search" placeholder="search keyword..."&gt;<br />
+			<br />
+			&lt;div class="searchable"&gt;<br />
+			&nbsp;&nbsp;...search result content...<br />
+			&nbsp;&nbsp;&lt;p class="keywords"&gt;keyword list...&lt;/p&gt;<span class="azure-t"> <em>(optional)</em></span><br />
+			&lt;/div&gt;
+			</code>
+		</div></div>
+		
+		<p class="spacer"></p>
 		<p class="spacer"></p>
 	</div>
 </div>
@@ -1087,7 +1178,7 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 			<span class="white-t"><i class="bi bi-amp"></i>Brutal Blast /<span class="blink-182">/</span>/<span class="blink">/</span>/</span><br />
 			<small><strong>Subscribe to our e-newsletter. &raquo;</strong></small>
 		</a>
-		<p class="white-t" style="margin: 1rem 0 1rem 0;"><small>Brutalist Framework &copy; 2025</small></p>
+		<p class="white-t" style="margin: 1rem 0 1rem 0;"><small>Brutalist Framework &copy; 2026</small></p>
 	</div>
 </footer>
 
@@ -1107,8 +1198,9 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 <script src="core/jab/buix/b-tabs.js" type="text/javascript"></script>
 <script src="core/jab/buix/list-grid-view.js" type="text/javascript"></script>
 
-<!-- jquery plugins -->
+<!-- jquery -->
 <script src="core/jab/jquery.3.js" type="text/javascript"></script>
+<script src="core/jab/plugins/megamenu.js" type="text/javascript"></script>
 <script src="core/jab/plugins/audio-player.js" type="text/javascript"></script>
 <script src="core/jab/plugins/b-loader.js" type="text/javascript"></script>
 <script src="core/jab/plugins/cdp.js" type="text/javascript"></script>

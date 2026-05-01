@@ -15,388 +15,10 @@ https://freefrontend.com/css-animation-examples/
 .turbulence, .turbulence-h:hover { filter: url(#turbulence);}
 .turbulence.severe, .turbulence-h.severe:hover { filter: url(#turbulence-severe);}
 
-/* ANIMATED BACKGROUNDS 
- * =============================
- */
-.aurora {
-	background: #181818;
-	animation: aurora-borealis 15s linear infinite;
-	background-size: 200% 200%;
-	background-image: radial-gradient(transparent 0, transparent 20%), radial-gradient(at 62% 9%, #7FFF00 0px, transparent 50%), radial-gradient(at 69% 60%, #FF00FF 0px, transparent 50%), radial-gradient(at 74% 60%, #00E3E7 0px, transparent 50%), radial-gradient(at 24% 89%, #00FFFF 0px, transparent 50%), radial-gradient(at 38% 69%, #062043 0px, transparent 50%), radial-gradient(at 51% 77%, #07113F 0px, transparent 50%), radial-gradient(at 63% 75%, #000000 0px, transparent 50%), radial-gradient(at 78% 92%, #7FFF00 0px, transparent 50%);
-}
-@keyframes aurora-borealis {
-  0% {background-position: center, 50% 50%, 30% 100%, 100% 10%, 21% 23%, 0% 80%;}
-  33.333% {background-position: center, 10% 75%, 40% 80%, 60% 20%, 43% 23%, 16% 30%;}
-  66.666% {background-position: center, 25% 45%, 80% 50%, 10% 10%, 66% 5%, 30% 0%;}
-  100% {background-position: center, 50% 50%, 30% 100%, 100% 10%, 21% 23%, 0% 72%;}
-}
- 
-.dotgrid,.dotgrid-throb {
-	background: radial-gradient(#333 8%, transparent 8%), #fff;
-	background-position: 0 0, 25px 25px; background-size:25px 25px;
-}
-.dotgrid-throb{	animation: dotthrob 6s linear infinite;}
-@keyframes dotthrob{
-	0% {
-		background: radial-gradient(#333 9%, transparent 9%), #fff;
-		background-position: 0 0, 25px 25px; background-size:25px 25px;
-	}
-	25%{
-		background: radial-gradient(#333 9%, transparent 9%), #fff;
-		background-position: 0 0, 26px 26px; background-size:26px 26px;
-	}
-	50%{
-		background: radial-gradient(#333 10%, transparent 10%), #fff;
-		background-position: 0 0, 27px 27px; background-size:27px 27px;
-	}
-	75%{
-		background: radial-gradient(#333 9%, transparent 9%), #fff;
-		background-position: 0 0, 26px 26px; background-size:26px 26px;
-	}
-	100%{
-		background: radial-gradient(#333 9%, transparent 9%), #fff;
-		background-position: 0 0, 25px 25px; background-size:25px 25px;
-	}
-}
-
-.lcd-trip {
-   background: linear-gradient(gold 30%, transparent 30%), linear-gradient(90deg, cyan 50%, rgba(100, 48, 10, 1) 50%);
-   background-size: 15px 15px, 5px 5px; background-position: 0 15px, 0 0; background-color: #fff;
-   filter: saturate(130%) contrast(110%);
-   animation: lcdtrip 5s linear infinite;
-}
-@keyframes lcdtrip {
- 0% {background-position: 0 -50%;}
-}
-
-.gathering {
-background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-	background-size: 400% 400%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
-}
-@-webkit-keyframes Gradient {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-@-moz-keyframes Gradient {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-@keyframes Gradient {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-
-.fright-night { 
-background: rgb(134,0,0);
-background: radial-gradient(circle, rgba(134,0,0,1) 0%, rgba(97,11,11,1) 50%, rgba(0,0,0,1) 100%);
-	background-size: 500% 500%;
-	-webkit-animation: Vampire 23s ease infinite;
-	-moz-animation: Vampire 23s ease infinite;
-	animation: Vampire 23s ease infinite;
-}
-@-webkit-keyframes Vampire {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-@-moz-keyframes Vampire {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-@keyframes Vampire {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-
-.pastelize { 
-background: linear-gradient(217deg, rgba(255,0,0,1), rgba(255,0,0,0) 70.71%),
-      linear-gradient(127deg, rgba(0,255,0,1), rgba(0,255,0,0) 70.71%),
-      linear-gradient(336deg, rgba(0,0,255,1), rgba(0,0,255,0) 70.71%);
-	background-size: 400% 400%;
-	-webkit-animation: Pastel 13s ease infinite;
-	-moz-animation: Pastel 13s ease infinite;
-	animation: Pastel 13s ease infinite;
-}
-@-webkit-keyframes Pastel {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-@-moz-keyframes Pastel {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-@keyframes Pastel {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-
-.heat { color: #000;
-background: linear-gradient(98deg, #ff0000, #ffab40, #ff9800, #F4FA58);
-	background-size: 400% 400%;
-	-webkit-animation: Hot 12s ease infinite;
-	-moz-animation: Hot 12s ease infinite;
-	animation: Hot 12s ease infinite;
-}
-@-webkit-keyframes Hot {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-@-moz-keyframes Hot {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-@-o-keyframes Hot {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-@keyframes Hot {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-
-.flood { color: #fff;
-background-image: radial-gradient(circle, #add8e6, #81d4fa, #2196f3, #81d4fa, #add8e6);
-	background-size: 500% 500%;
-	-webkit-animation: Water 22s ease-in-out infinite;
-	-moz-animation: Water 22s ease-in-out infinite;
-	animation: Water 22s ease-in-out infinite;
-}
-@-webkit-keyframes Water {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-@-moz-keyframes Water {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-@-o-keyframes Water {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-@keyframes Water {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-
-.shine { color: #000;
-background: linear-gradient(-45deg, #808080, #808080, #e6e6e6, #808080, #808080, #e6e6e6, #808080, #808080, #e6e6e6);
-	background-size: 400% 400%;
-	-webkit-animation: Shine 9s ease-in-out infinite;
-	-moz-animation: Shine 9s ease-in-out infinite;
-	animation: Shine 9s ease-in-out infinite;
-}
-@-webkit-keyframes Shine {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-@-moz-keyframes Shine {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-@keyframes Shine {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-
-.neon { color: #000;
-background: linear-gradient(-60deg, #000000, #00ff00, #00ccff, #ff3399, #cc66ff, #000000, #83ff17, #fffb21, #000000, #ff1c27, #ff1c27, #000000, #ff1c8a, #ff1c8a, #ff1c27, #ff1c27);
-	background-size: 500% 500%;
-	-webkit-animation: Neon 14s ease-in-out infinite;
-	-moz-animation: Neon 14s ease-in-out infinite;
-	animation: Neon 14s ease-in-out infinite;
-}
-@-webkit-keyframes Neon {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-@-moz-keyframes Neon {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-@-o-keyframes Neon {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-@keyframes Neon {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-
-.earthly { color: #fff;
-background: linear-gradient(55deg, #305ca8, #2f673b, #2f673b, #2f673b, #305ca8, #305ca8, #305ca8, #5a4f2f, #5a4f2f, #5a4f2f, #2f673b, #2f673b, #2f673b, #305ca8, #305ca8, #305ca8);
-	background-size: 450% 450%;
-	-webkit-animation: Earth 24s ease-in-out infinite;
-	-moz-animation: Earth 24s ease-in-out infinite;
-	animation: Earth 24s ease-in-out infinite;
-}
-@-webkit-keyframes Earth {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-@-moz-keyframes Earth {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-@-o-keyframes Earth {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-@keyframes Earth {
-	0% { background-position: 0% 50% }
-	50% { background-position: 100% 50% }
-	100% { background-position: 0% 50% }
-}
-
-/* Infinity (light) */
-@-webkit-keyframes bg-scrolling-reverse {
-  100% {background-position: 50px 50px;}
-}
-@-moz-keyframes bg-scrolling-reverse {
-  100% {background-position: 50px 50px;}
-}
-@-o-keyframes bg-scrolling-reverse {
-  100% {background-position: 50px 50px;}
-}
-@keyframes bg-scrolling-reverse {
-  100% {background-position: 50px 50px;}
-}
-@-webkit-keyframes bg-scrolling {
-  0% {background-position: 50px 50px;}
-}
-@-moz-keyframes bg-scrolling {
-  0% {background-position: 50px 50px;}
-}
-@-o-keyframes bg-scrolling {
-  0% {background-position: 50px 50px;}
-}
-@keyframes bg-scrolling {
-  0% {background-position: 50px 50px;}
-}
-
-.infinitile {
-  /* img size is 50x50 */
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
-  -webkit-animation: bg-scrolling-reverse .92s infinite;
-  /* Safari 4+ */
-  -moz-animation: bg-scrolling-reverse .92s infinite;
-  /* Fx 5+ */
-  -o-animation: bg-scrolling-reverse .92s infinite;
-  /* Opera 12+ */
-  animation: bg-scrolling-reverse .92s infinite;
-  /* IE 10+ */
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
-  -o-animation-timing-function: linear;
-  animation-timing-function: linear;
-}
-
-.psychedelic {
-  background: linear-gradient(233deg, #e56420, #c22525, #3d9c31, #37bbde);
-  background-blend-mode: hard-light;
-  -webkit-animation: hue-rotate 3s linear infinite; animation: hue-rotate 3s linear infinite;
-}
-@-webkit-keyframes hue-rotate {
-  from {
-    -webkit-filter: hue-rotate(0); -moz-filter: hue-rotate(0);
-    -ms-filter: hue-rotate(0); filter: hue-rotate(0);
-  }
-  to {
-    -webkit-filter: hue-rotate(360deg); -moz-filter: hue-rotate(360deg);
-    -ms-filter: hue-rotate(360deg); filter: hue-rotate(360deg);
-  }
-}
-@keyframes hue-rotate {
-  from {
-    -webkit-filter: hue-rotate(0); -moz-filter: hue-rotate(0);
-    -ms-filter: hue-rotate(0); filter: hue-rotate(0);
-  }
-  to {
-    -webkit-filter: hue-rotate(360deg); -moz-filter: hue-rotate(360deg);
-    -ms-filter: hue-rotate(360deg); filter: hue-rotate(360deg);
-  }
-}
-
-/* BRICKBUILD Background */
-:root {
-  --s: 100px;
-  --c1: var(--color1);
-  --c2: var(--color2);
-  --_s: calc(2*var(--s)) calc(2*var(--s));
-  --_g: var(--_s) conic-gradient(at 40% 40%,#0000 75%,var(--c1) 0);
-  --_p: var(--_s) conic-gradient(at 20% 20%,#0000 75%,var(--c2) 0);
-}
-.brickbuild{
-  background:
-    calc( .9*var(--s)) calc( .9*var(--s))/var(--_p),calc(-.1*var(--s)) calc(-.1*var(--s))/var(--_p),
-    calc( .7*var(--s)) calc( .7*var(--s))/var(--_g),calc(-.3*var(--s)) calc(-.3*var(--s))/var(--_g),
-    conic-gradient(from 90deg at 20% 20%,var(--c2) 25%,var(--c1) 0) 
-     0 0/var(--s) var(--s);
-  animation: m 3s infinite;
-}
-@keyframes m {
-  0% {
-   background-position: 
-    calc( .9*var(--s)) calc( .9*var(--s)),calc(-.1*var(--s)) calc(-.1*var(--s)),
-    calc( .7*var(--s)) calc( .7*var(--s)),calc(-.3*var(--s)) calc(-.3*var(--s)),0 0
-  }
-  25% {
-   background-position: 
-    calc(1.9*var(--s)) calc( .9*var(--s)),calc(-1.1*var(--s)) calc(-.1*var(--s)),
-    calc(1.7*var(--s)) calc( .7*var(--s)),calc(-1.3*var(--s)) calc(-.3*var(--s)),0 0
-  }
-  50% {
-   background-position: 
-    calc(1.9*var(--s)) calc(-.1*var(--s)),calc(-1.1*var(--s)) calc( .9*var(--s)),
-    calc(1.7*var(--s)) calc(-.3*var(--s)),calc(-1.3*var(--s)) calc( .7*var(--s)),0 0
-  }
-  75% {
-   background-position: 
-    calc(2.9*var(--s)) calc(-.1*var(--s)),calc(-2.1*var(--s)) calc( .9*var(--s)),
-    calc(2.7*var(--s)) calc(-.3*var(--s)),calc(-2.3*var(--s)) calc( .7*var(--s)),0 0
-  }
-  100% {
-   background-position: 
-    calc(2.9*var(--s)) calc(-1.1*var(--s)),calc(-2.1*var(--s)) calc(1.9*var(--s)),
-    calc(2.7*var(--s)) calc(-1.3*var(--s)),calc(-2.3*var(--s)) calc(1.7*var(--s)),0 0
-  }
-}
-
-
 /* TRIANGLIFY */
 .triangle-dark, .triangle-light { position: relative; width: 100%; height: 100%; overflow: hidden; }
 .triangle-dark .content, .triangle-light .content { position: relative !important; }
 .triangle-pattern, .upsdwn-triangle{ position: absolute; z-index: inherit; } 
-
-/* ========= BETA ELEMENTS ======== */
 
 /* SPOTLIGHT Cursor Effect */
 .spotlight {
@@ -409,88 +31,6 @@ background: linear-gradient(55deg, #305ca8, #2f673b, #2f673b, #2f673b, #305ca8, 
 @keyframes fadein {
   0% { opacity: 0; }
   100% { opacity: 1; }
-}
-
-.swede-split {
-  --s: 20vmin;
-  --p: calc(var(--s) / 2);
-  --c1: yellow;
-  --c2: blue;
-  --c3: white;
-  --bg: var(--c3);
-  --d: 6000ms;
-  --e: cubic-bezier(0.76, 0, 0.24, 1);
-  background-color: var(--bg);
-  background-image:
-    linear-gradient(45deg, var(--c1) 25%, transparent 25%),
-    linear-gradient(-45deg, var(--c1) 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, var(--c2) 75%),
-    linear-gradient(-45deg, transparent 75%, var(--c2) 75%);
-  background-size: var(--s) var(--s);
-  background-position: 
-    calc(var(--p) *  1) calc(var(--p) *  0), 
-    calc(var(--p) * -1) calc(var(--p) *  1), 
-    calc(var(--p) *  1) calc(var(--p) * -1), 
-    calc(var(--p) * -1) calc(var(--p) *  0);
-  animation: 
-    color var(--d) var(--e) infinite,
-    position var(--d) var(--e) infinite;
-}
-
-@keyframes color {
-  0%, 25% {
-    --bg: var(--c3);
-  }
-  26%, 50% {
-    --bg: var(--c1);
-  }
-  51%, 75% {
-    --bg: var(--c3);
-  }
-  76%, 100% {
-    --bg: var(--c2);
-  }
-}
-
-@keyframes position {
-  0% {
-    background-position: 
-      calc(var(--p) *  1) calc(var(--p) *  0), 
-      calc(var(--p) * -1) calc(var(--p) *  1), 
-      calc(var(--p) *  1) calc(var(--p) * -1), 
-      calc(var(--p) * -1) calc(var(--p) *  0);
-  }
-  25% {
-    background-position: 
-      calc(var(--p) *  1) calc(var(--p) *  4), 
-      calc(var(--p) * -1) calc(var(--p) *  5), 
-      calc(var(--p) *  1) calc(var(--p) *  3), 
-      calc(var(--p) * -1) calc(var(--p) *  4);
-  }
-  50% {
-    background-position: 
-      calc(var(--p) *  3) calc(var(--p) * 8), 
-      calc(var(--p) * -3) calc(var(--p) * 9), 
-      calc(var(--p) *  2) calc(var(--p) * 7), 
-      calc(var(--p) * -2) calc(var(--p) * 8);
-  }
-  75% {
-    background-position: 
-      calc(var(--p) *  3) calc(var(--p) * 12), 
-      calc(var(--p) * -3) calc(var(--p) * 13), 
-      calc(var(--p) *  2) calc(var(--p) * 11), 
-      calc(var(--p) * -2) calc(var(--p) * 12);
-  }
-  100% {    
-    background-position: 
-      calc(var(--p) *  5) calc(var(--p) * 16), 
-      calc(var(--p) * -5) calc(var(--p) * 17), 
-      calc(var(--p) *  5) calc(var(--p) * 15), 
-      calc(var(--p) * -5) calc(var(--p) * 16);
-  }
-}
-@media (prefers-reduced-motion) {
-  .swedesplit {animation: none;}
 }
 
 /* Crossfade */
@@ -621,4 +161,149 @@ background: linear-gradient(55deg, #305ca8, #2f673b, #2f673b, #2f673b, #305ca8, 
 }
 @media (max-height: 350px) {
   .infiniplane {perspective: 210px;}
+}
+
+/* BRICKBUILD Background */
+:root {
+  --s: 100px;
+  --c1: var(--color1);
+  --c2: var(--color2);
+  --_s: calc(2*var(--s)) calc(2*var(--s));
+  --_g: var(--_s) conic-gradient(at 40% 40%,#0000 75%,var(--c1) 0);
+  --_p: var(--_s) conic-gradient(at 20% 20%,#0000 75%,var(--c2) 0);
+}
+.brickbuild{
+  background:
+    calc( .9*var(--s)) calc( .9*var(--s))/var(--_p),calc(-.1*var(--s)) calc(-.1*var(--s))/var(--_p),
+    calc( .7*var(--s)) calc( .7*var(--s))/var(--_g),calc(-.3*var(--s)) calc(-.3*var(--s))/var(--_g),
+    conic-gradient(from 90deg at 20% 20%,var(--c2) 25%,var(--c1) 0) 
+     0 0/var(--s) var(--s);
+  animation: brickbuild 3s infinite;
+}
+@keyframes brickbuild {
+  0% {
+   background-position: 
+    calc( .9*var(--s)) calc( .9*var(--s)),calc(-.1*var(--s)) calc(-.1*var(--s)),
+    calc( .7*var(--s)) calc( .7*var(--s)),calc(-.3*var(--s)) calc(-.3*var(--s)),0 0
+  }
+  25% {
+   background-position: 
+    calc(1.9*var(--s)) calc( .9*var(--s)),calc(-1.1*var(--s)) calc(-.1*var(--s)),
+    calc(1.7*var(--s)) calc( .7*var(--s)),calc(-1.3*var(--s)) calc(-.3*var(--s)),0 0
+  }
+  50% {
+   background-position: 
+    calc(1.9*var(--s)) calc(-.1*var(--s)),calc(-1.1*var(--s)) calc( .9*var(--s)),
+    calc(1.7*var(--s)) calc(-.3*var(--s)),calc(-1.3*var(--s)) calc( .7*var(--s)),0 0
+  }
+  75% {
+   background-position: 
+    calc(2.9*var(--s)) calc(-.1*var(--s)),calc(-2.1*var(--s)) calc( .9*var(--s)),
+    calc(2.7*var(--s)) calc(-.3*var(--s)),calc(-2.3*var(--s)) calc( .7*var(--s)),0 0
+  }
+  100% {
+   background-position: 
+    calc(2.9*var(--s)) calc(-1.1*var(--s)),calc(-2.1*var(--s)) calc(1.9*var(--s)),
+    calc(2.7*var(--s)) calc(-1.3*var(--s)),calc(-2.3*var(--s)) calc(1.7*var(--s)),0 0
+  }
+}
+
+/* PSYCHEDELIC */
+.psychedelic {
+  background: linear-gradient(233deg, #e56420, #c22525, #3d9c31, #37bbde);
+  background-blend-mode: hard-light;
+  -webkit-animation: hue-rotate 3s linear infinite; animation: hue-rotate 3s linear infinite;
+}
+@-webkit-keyframes hue-rotate {
+  from {
+    -webkit-filter: hue-rotate(0); -moz-filter: hue-rotate(0);
+    -ms-filter: hue-rotate(0); filter: hue-rotate(0);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg); -moz-filter: hue-rotate(360deg);
+    -ms-filter: hue-rotate(360deg); filter: hue-rotate(360deg);
+  }
+}
+@keyframes hue-rotate {
+  from {
+    -webkit-filter: hue-rotate(0); -moz-filter: hue-rotate(0);
+    -ms-filter: hue-rotate(0); filter: hue-rotate(0);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg); -moz-filter: hue-rotate(360deg);
+    -ms-filter: hue-rotate(360deg); filter: hue-rotate(360deg);
+  }
+}
+
+/* SWEDESPLIT */
+.swede-split {
+  --s: 20vmin;
+  --p: calc(var(--s) / 2);
+  --c1: yellow;
+  --c2: blue;
+  --c3: white;
+  --bg: var(--c3);
+  --d: 6000ms;
+  --e: cubic-bezier(0.76, 0, 0.24, 1);
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(45deg, var(--c1) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--c1) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--c2) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--c2) 75%);
+  background-size: var(--s) var(--s);
+  background-position: 
+    calc(var(--p) *  1) calc(var(--p) *  0), 
+    calc(var(--p) * -1) calc(var(--p) *  1), 
+    calc(var(--p) *  1) calc(var(--p) * -1), 
+    calc(var(--p) * -1) calc(var(--p) *  0);
+  animation: 
+    swedesplit var(--d) var(--e) infinite,
+    ssposition var(--d) var(--e) infinite;
+}
+@keyframes swedesplit {
+  0%, 25% {--bg: var(--c3);}
+  26%, 50% {--bg: var(--c1);}
+  51%, 75% {--bg: var(--c3);}
+  76%, 100% {--bg: var(--c2);}
+}
+@keyframes ssposition {
+  0% {
+    background-position: 
+      calc(var(--p) *  1) calc(var(--p) *  0), 
+      calc(var(--p) * -1) calc(var(--p) *  1), 
+      calc(var(--p) *  1) calc(var(--p) * -1), 
+      calc(var(--p) * -1) calc(var(--p) *  0);
+  }
+  25% {
+    background-position: 
+      calc(var(--p) *  1) calc(var(--p) *  4), 
+      calc(var(--p) * -1) calc(var(--p) *  5), 
+      calc(var(--p) *  1) calc(var(--p) *  3), 
+      calc(var(--p) * -1) calc(var(--p) *  4);
+  }
+  50% {
+    background-position: 
+      calc(var(--p) *  3) calc(var(--p) * 8), 
+      calc(var(--p) * -3) calc(var(--p) * 9), 
+      calc(var(--p) *  2) calc(var(--p) * 7), 
+      calc(var(--p) * -2) calc(var(--p) * 8);
+  }
+  75% {
+    background-position: 
+      calc(var(--p) *  3) calc(var(--p) * 12), 
+      calc(var(--p) * -3) calc(var(--p) * 13), 
+      calc(var(--p) *  2) calc(var(--p) * 11), 
+      calc(var(--p) * -2) calc(var(--p) * 12);
+  }
+  100% {    
+    background-position: 
+      calc(var(--p) *  5) calc(var(--p) * 16), 
+      calc(var(--p) * -5) calc(var(--p) * 17), 
+      calc(var(--p) *  5) calc(var(--p) * 15), 
+      calc(var(--p) * -5) calc(var(--p) * 16);
+  }
+}
+@media (prefers-reduced-motion) {
+  .swedesplit {animation: none;}
 }

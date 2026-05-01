@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>Bento Dashboard</title>
+	<meta name="description" content="An application dashboard template with a Bento layout." />
+	<!-- OPEN GRAPH -->
+	
+	<!-- CORE CSS  -->
+	<link href="core/css/construct.css" type="text/css" rel="stylesheet" media="all"/>
+	
+	<!-- TRACKING CODE -->
+	<style>
+		h1 {padding: 0; margin: 0;}
+		.bentogrid>div>h4, .tab h4 {padding: 0 0 6px 0; margin: 0;}
+		.project-list li {border-bottom: 1px solid blue; font-weight: 600;}
+		.project-list li a:link, .project-list li a:visited {color: blue;}
+		.project-list li a:hover {background: #c0c0c0;}
+		.h-scroll-btn {max-width: 66px;}
+		.cta-link:link, .cta-link:visited {color: navy;}
+		.cta-link:hover {color: #ffff00;}
+	</style>
+	
+</head>
+<body>
+<div class="container-fluid padded blueprint-grid">
+	<div class="bentogrid soften">
+		<div data-bento="3x2" class="b-s-t charcoal-b infinitile padded">
+			<header class="blueprint padded rounded">
+				<h1 class="fluid-text-h3 tea-for-god charcoal-t-s">Blueprint App</h1>
+			</header>
+			<div class="padded">
+				<p class="flow-text bitstream charcoal-t">Welcome to the Bento Dashboard application boilerplate.<br /><br />
+				This space could be used for an introductory slider or some other summary content.</p>
+			</div>
+		</div>
+		<div data-bento="2x2" class="b-s-t blueprint padded">
+			
+			<div class="tabs bitstream">
+				<input type="radio" name="details" checked="checked" id="projects">
+				<label for="projects">My Projects</label>
+				<div class="tab">
+					<ul class="tiles project-list full">
+						<li><a href="#">Architectural Museum</a></li>
+						<li><a href="#">Engineering Emporium</a></li>
+						<li><a href="#">Concrete Construction</a></li>
+					</ul>
+					<p class="center padded">
+						<a href="#new-project" data-modal-open class="nb-btn-small charcoal smoke-t">+ Project</a>
+					</p>
+				</div>
+				<!-- Tasks Tab -->
+				<input type="radio" name="details" id="tasks">
+				<label for="tasks">My Tasks</label>
+				<div class="tab">
+					<p class="center">
+						<a href="#new-task" data-modal-open class="nb-btn-small charcoal smoke-t">+ Task</a>
+					</p>
+					<div class="paginate-5 white charcoal-t">
+						<div class="items">
+							<div>Task 1</div>
+							<div>Task 2</div>
+							<div>Task 3</div>
+							<div>Task 4</div>
+							<div>Task 5</div>
+							<div>Task 6</div>
+							<div>Task 7</div>
+							<div>Task 8</div>
+							<div>Task 9</div>
+							<div>Task 10</div>
+							<div>Task 11</div>
+							<div>Task 12</div>
+							<div>Task 13</div>
+							<div>Task 14</div>
+							<div>Task 15</div>
+						</div>
+						<div class="pager">
+							<div class="firstPage">&laquo;</div>
+							<div class="previousPage">&lsaquo;</div>
+							<div class="pageNumbers"></div>
+							<div class="nextPage">&rsaquo;</div>
+							<div class="lastPage">&raquo;</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Analytics -->
+				<input type="radio" name="details" id="stats">
+				<label for="stats">Analytics</label>
+				<div class="tab">
+					<h4 class="flow-text"><strong>Most Popular</strong></h4>
+					<!-- bar-graph chart -->
+					<ul class="bar-graph">
+						<li><span style="height:5%" title="ReBAR"></span></li>
+						<li><span style="height:70%" title="BUFF"></span></li>
+						<li><span style="height:50%" title="BUIX"></span></li>
+						<li><span style="height:15%" title="BFX"></span></li>
+					</ul>
+					<p class="spacer"></p>
+				</div>
+			</div>
+		</div>
+		<div data-bento="1x2" class="b-s-t white-b notebook-paper charcoal-t comic padded">
+			<h4 class="flow-text center"><strong>My Notepad</strong></h4>
+			<div class="cdp-wrap" id="notepad1">
+				<select class="cdp_select">
+					<option value="0">Notepad 1</option>
+					<option value="1">Notepad 2</option>
+					<option value="2">Notepad 3</option>...
+				</select>
+
+				<div class="content">
+					<div class="cdp_element" data-option="0">
+						<p>Primary notepad notes.<br /><br />This widget uses the Content Display Picker to show multiple "pages" of notes.</p>
+					</div>
+					<div class="cdp_element" data-option="1">
+						<p>Additional secondary notes.<br /><br />Page 2 of my notepad.</p>
+					</div>
+					<div class="cdp_element" data-option="2">
+						<p>Tertiary afterthought notes.</p>
+					</div>
+				</div>
+			</div>
+			<hr />
+			<p class="center"><a href="#new-notepad" data-modal-open class="nb-btn-small charcoal smoke-t">+ Notepad</a></p>
+		</div>
+		<div data-bento="1x1" class="b-s-t wealth padded">
+			<h4 class="flow-text pickle-t-s center"><strong>ROI Reports</strong></h4>
+			<p class="center huge"><i class="bi bi-up bi-2x"></i>11%</p>
+			<ul class="none">
+				<li><a href="#">First Quarter</a></li>
+				<li><a href="#">Third Quarter</a></li>
+				<li><a href="#">Expenditures Summary</a></li>
+			</ul>
+		</div>
+		<div data-bento="2x1" class="b-s-t greek padded">
+			<h4 class="flow-text"><strong>App Usage</strong></h4>
+			<ul class="bar-graph">
+				<li><span style="height:8%" title="Jan"></span></li>
+				<li><span style="height:26%" title="Feb"></span></li>
+				<li><span style="height:67%" title="Mar"></span></li>
+				<li><span style="height:14%" title="Apr"></span></li>
+				<li><span style="height:85%" title="May"></span></li>
+				<li><span style="height:50%" title="Jun"></span></li>
+			</ul>
+		</div>
+		<div data-bento="2x1" class="b-s-t greek padded">
+			<h4 class="flow-text"><strong>Latest Designs</strong></h4>
+			<div class="h-scroll">
+				<button class="h-scroll-btn h-scroll-btn-left flow-text">&laquo;</button>
+				<ul class="h-scroll-list">
+					<li><img src="app/files/images/edgespace.jpg" alt="edgespace" class="crop large-thumb shape hexagon" /></li>
+					<li><img src="app/files/images/brutal-building.jpg" alt="edgespace" class="crop large-thumb shape pentagon" /></li>
+					<li><img src="app/files/images/brutpink.jpg" alt="edgespace" class="crop large-thumb shape cross" /></li>
+					<li><img src="app/files/images/brutal-tower.jpg" alt="edgespace" class="crop large-thumb shape circle" /></li>
+					<li><img src="app/files/images/brutal-peak.png" alt="edgespace" class="crop large-thumb" /></li>
+					<li><img src="app/files/images/stepping-stone-falls.jpg" alt="edgespace" class="crop large-thumb" /></li>
+				</ul>
+				<button class="h-scroll-btn h-scroll-btn-right flow-text">&raquo;</button>
+			</div>
+		</div>
+		<div data-bento="1x1" class="b-s-t agent padded bitstream">
+			<a href="https://www.blueprints-ai.com/" target="_blank" class="center cta-link charcoal-t-s">
+				<h4 class="flow-text"><i class="bi bi-robot bi-3x"></i><br /><strong>Blueprints AI</strong></h4>
+				<p>AI for construction blueprints. You design. AI drafts the permit set.</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+
+<footer class="padded center bitstream disabled">
+	<p><a href="https://www.brutalistframework.com" target="_blank">Brutalist Framework</a> &copy; 2026</p>
+</footer>
+
+<!-- New Project Modal -->
+<div id="new-project" style="display:none;">
+	<div class="wrap-960 blueprint padded rounded" style="max-width: 468px;">
+		<h4 class="flow-text lucida"><strong>Create New Project</strong></h4>
+		<p class="bitstream">Enter a title for a new project.</p>
+		<form class="padded" name="projectform" action="" method="post">
+		<input type="text" name="title" class="flow-text charcoal-t" /><br />
+		<input type="submit" value="Create Project" class="nb-btn sharp full-btn">
+		</form>
+	</div>
+</div>
+
+<!-- New Task Modal -->
+<div id="new-task" style="display:none;">
+	<div class="wrap-960 blueprint padded rounded" style="max-width: 468px;">
+		<h4 class="flow-text lucida"><strong>Create New Task</strong></h4>
+		<form class="padded" name="taskform" action="" method="post">
+		<input type="text" name="task" class="flow-text charcoal-t" /><br />
+		<input type="submit" value="Create Task" class="nb-btn sharp full-btn">
+		</form>
+	</div>
+</div>
+
+<!-- New Notepad Modal -->
+<div id="new-notepad" style="display:none;">
+	<div class="wrap-960 blueprint padded rounded" style="max-width: 468px;">
+		<h4 class="flow-text lucida"><strong>Create New Notepad</strong></h4>
+		<p class="bitstream">Enter a title for a new notepad.</p>
+		<form class="padded" name="noteform" action="" method="post">
+		<input type="text" name="title" class="flow-text charcoal-t" /><br />
+		<input type="submit" value="Create Notepad" class="nb-btn sharp full-btn">
+		</form>
+	</div>
+</div>
+
+<!-- Initiate and display modal itself -->
+<div class="modal">
+	<div class="modal-inner"><!-- Remove "draggable" class to prevent modals from being moveable -->
+		<span data-modal-close>&times;</span>
+		<div class="modal-content"></div>
+	</div>
+</div>
+
+
+<!-- Vanilla Javascript -->
+<script src="core/jab/buix/modal.js"></script>
+<script src="core/jab/grids/bento-grid.js"></script>
+<script src="core/jab/buix/h-scroll.js"></script>
+<!-- jQuery Plugins -->
+<script src="core/jab/jquery.3.js"></script>
+<script src="core/jab/plugins/draggable.js"></script>
+<script src="core/jab/plugins/cdp.js"></script>
+<script src="core/jab/plugins/pagination.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Mupen';
+    src: url('Mupen.eot');
+    src: url('Mupen.eot?#iefix') format('embedded-opentype'),
+        url('Mupen.woff2') format('woff2'),
+        url('Mupen.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.mupen {font-family: 'Mupen';}

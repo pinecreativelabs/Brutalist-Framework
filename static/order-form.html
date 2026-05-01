@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>Order Form</title>
+	<meta name="description" content="Checkout order form boilerplate" />
+	<!-- OPEN GRAPH -->
+	
+	<!-- CORE CSS  -->
+	<link href="core/css/construct.css" type="text/css" rel="stylesheet" media="all"/>
+	
+	<style>
+	header h1, header h2 {padding: 0; margin: 0;}
+	summary {font-size: 1.75rem; font-weight: 900; color: #fffff0;}
+	summary::before,summary::marker{display:none;}
+	.tiles li a img {margin-right: 6px !important;}
+	.tiles .total {border-top: 2px solid #333; margin-top: 0.75rem;}
+	</style>
+	
+</head>
+<body class="carbon-black">
+
+<div class="wrap-1600 sudo padded">
+	<header class="padded flex middle column rounded fossil smoke-t">
+		<h1 class="fluid-text-h2 center">Order Form</h1>
+		<h2 class="fluid-text-h4 center">Complete Checkout</h2>
+	</header>
+	<p class="spacer"></p>
+	<form method="post" name="orderform" novalidate class="block-wrap validate" id="form1">
+		<div class="block bw33 xs-100 sm-100 md-100 padded">
+			<details open class="sticky">
+				<summary class="lush padded rounded">Order Summary</summary>
+				<div class="padded clean rounded">
+					<ul class="tiles full">
+						<li><a href="#">
+							<img src="app/files/images/blinker-fluid.jpg" alt="blinker-fluid" class="tiny-thumb crop left"/>
+							<strong>Blinker Fluid</strong><br />$995.95 <strong>(x2)</strong>
+						</a></li>
+						<li><a href="#">
+							<img src="app/files/images/cubik-modular.jpg" alt="blinker-fluid" class="tiny-thumb crop left"/>
+							<strong>Brut Module Pack</strong><br />$99,985.85 <strong>(x1)</strong>
+						</a></li>
+						<li class="total">
+							<p>TOTAL:<br /><span class="flow-text heavy">$101,977.75</span></p>
+						</li>
+					</ul>
+				</div>
+			</details>
+		</div>
+		<div class="block bw67 xs-100 sm-100 md-100 padded">
+			
+			<!-- BILLING / SHIPPING -->
+			<details open>
+				<summary class="lush padded rounded">Billing &amp; Shipping</summary>
+				<div class="padded clean rounded">
+					<fieldset><legend>Account</legend>
+						<div class="form-group">
+							<label for="billEmail">Email <small>(required)</small></label>
+							<input id="billEmail" type="email" name="email" required class="form-control" />
+						</div>
+					</fieldset>
+					<fieldset id="copyFrom"><legend>Billing Address</legend>
+						<div class="form-group">
+							<label for="billName">Name <small>(required)</small></label>
+							<input id="billName" type="text" name="BillingName" required class="form-control" />
+						</div>
+						<div class="form-group">
+							<label for="billStreet">Street Address</label>
+							<input id="billStreet" name="BillingStreet" type="text" required class="form-control" />
+						</div>
+						<div class="flex"><div class="third">
+							<div class="form-group">
+								<label for="billCity">City</label>
+								<input id="billCity" name="BillingCity" type="text" required class="form-control" />
+							</div>
+						</div><div class="third">
+							<div class="form-group">
+								<label for="billState">State</label>
+								<select id="billState" name="BillingState" required>
+									<option value="IN">IN</option>
+									<option value="OH">OH</option>
+									<option value="MI">MI</option>
+								</select>
+							</div>
+						</div><div class="third">
+							<div class="form-group">
+								<label for="billZip">Zip</label>
+								<input id="billZip" name="BillingZip" type="number" required />
+							</div>
+						</div></div>
+					</fieldset>
+					<fieldset id="pasteTo"><legend>Shipping Address</legend>
+						<div class="form-group">
+							<input id="field-copy" name="SameAddress" type="checkbox" />
+							<label for="field-copy">same as billing</label>
+						</div>
+						<div class="form-group">
+							<label for="delivName">Name</label>
+							<input id="delivName" name="DeliveryName" type="text" />
+						</div>
+						<div class="form-group">
+							<label for="delivStreet">Street Address</label>
+							<input id="delivStreet" name="DeliveryStreet" type="text" />
+						</div>
+						<div class="flex"><div class="third">
+							<div class="form-group">
+								<label for="delivCity">City</label>
+								<input id="delivCity" name="DeliveryCity" type="text" />
+							</div>
+						</div><div class="third">
+							<div class="form-group">
+								<label for="shiptoState">State</label>
+								<select id="shiptoState" name="ShiptoState">
+									<option value="IN">IN</option>
+									<option value="OH">OH</option>
+									<option value="MI">MI</option>
+								</select>
+							</div>
+						</div><div class="third">
+							<div class="form-group">
+								<label for="shipZip">Zip</label>
+								<input id="shipZip" name="ShipZip" type="number" />
+							</div>
+						</div></div>
+					</fieldset>
+				</div>
+			</details>
+			
+			<!-- PAYMENT METHOD -->
+			<details open>
+				<summary class="lush padded rounded">Payment</summary>
+				<div class="padded clean rounded"><div class="tabs">
+					<input type="radio" name="payment-method" checked="checked" id="ccard" value="creditcard">
+					<label for="ccard">Credit Card</label>
+					<div class="tab">
+						<!-- CREDIT CARD -->
+						<div class="brick-wrap">
+							<div class="brick b100">
+								<h5 class="flow-text">Card Number:</h5>
+								<div class="card-input">
+									<div class="card-type"></div>
+									<input placeholder="0000 0000 0000 0000" onkeyup="$cc.validate(event)" />
+									<div class="card-valid">&#10004;</div>
+								</div>
+							</div>
+							<div class="brick b50 card-exp">
+								<label>Expiration Date</label><br />
+								<input onkeyup="$cc.expiry.call(this,event)" maxlength="7" placeholder="mm/yyyy" />
+							</div>
+							<div class="brick b50 card-cvv">
+								<label>CVV</label><br />
+								<input placeholder="XXX"/>
+							</div>
+						</div>
+						<!-- END CARD INPUT -->
+						<p class="spacer"></p>
+					</div>
+					<input type="radio" name="payment-method" id="bank" value="bank">
+					<label for="bank">Bank Transfer</label>
+					<div class="tab">
+						<p>You've chosen to pay by bank transfer (e-check).</p>
+						<div class="form-group">
+							<label>Routing Number</label><br />
+							<input type="text" name="routing" />
+						</div>
+						<div class="form-group">
+							<label>Account Number</label><br />
+							<input type="text" name="bank-acct" />
+						</div>
+						<p class="spacer"></p>
+					</div>
+					<input type="radio" name="payment-method" id="check" value="check">
+					<label for="check">Check</label>
+					<div class="tab">
+						<p>You've chosen to pay by mail-in check. Make payment out to <strong><em>Brut Biz</em></strong> and mail to:<br /><br /></p>
+						<address>
+							Brut Biz Inc.<br />111 Concrete Lane<br />Cementville, OH 44444
+						</address>
+						<p class="spacer"></p>
+					</div>
+				</div></div>
+			</details>
+			<div class="form-group">
+				<input type="submit" value="Submit Order" class="nb-btn sepia-h"/>
+			</div>
+		</div>
+	</form>
+	<p class="spacer"></p>
+	<p class="spacer"></p>
+	<footer class="padded center bitstream disabled">
+		<p><a href="https://www.brutalistframework.com" target="_blank">Brutalist Framework</a> &copy; 2026</p>
+	</footer>
+</div>
+
+
+<!-- Vanilla Javascript -->
+<script src="core/jab/fux/credit-card-validator.js" type="text/javascript"></script>
+<script src="core/jab/fux/form-functions.js" type="text/javascript"></script>
+<script src="core/jab/fux/pristine.js" type="text/javascript"></script>
+<script>
+window.onload = function () {
+   var form = document.getElementById("form1");
+   var pristine = new Pristine(form);
+   form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var valid = pristine.validate();
+      //alert('Form is valid: ' + valid);
+   });
+};
+</script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'BioRhyme Expanded';
+    src: url('BioRhymeExpanded-Bold.eot');
+    src: url('BioRhymeExpanded-Bold.eot?#iefix') format('embedded-opentype'),
+        url('BioRhymeExpanded-Bold.woff2') format('woff2'),
+        url('BioRhymeExpanded-Bold.woff') format('woff');
+    font-weight: bold; font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BioRhyme Expanded';
+    src: url('BioRhymeExpanded-ExtraBold.eot');
+    src: url('BioRhymeExpanded-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('BioRhymeExpanded-ExtraBold.woff2') format('woff2'),
+        url('BioRhymeExpanded-ExtraBold.woff') format('woff');
+    font-weight: bold; font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BioRhyme Expanded';
+    src: url('BioRhymeExpanded-Light.eot');
+    src: url('BioRhymeExpanded-Light.eot?#iefix') format('embedded-opentype'),
+        url('BioRhymeExpanded-Light.woff2') format('woff2'),
+        url('BioRhymeExpanded-Light.woff') format('woff');
+    font-weight: 300; font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BioRhyme Expanded';
+    src: url('BioRhymeExpanded-ExtraLight.eot');
+    src: url('BioRhymeExpanded-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('BioRhymeExpanded-ExtraLight.woff2') format('woff2'),
+        url('BioRhymeExpanded-ExtraLight.woff') format('woff');
+    font-weight: 200; font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BioRhyme Expanded';
+    src: url('BioRhymeExpanded-Regular.eot');
+    src: url('BioRhymeExpanded-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BioRhymeExpanded-Regular.woff2') format('woff2'),
+        url('BioRhymeExpanded-Regular.woff') format('woff');
+    font-weight: normal; font-style: normal;
+    font-display: swap;
+}
+.biorhyme {font-family: 'BioRhyme Expanded';}

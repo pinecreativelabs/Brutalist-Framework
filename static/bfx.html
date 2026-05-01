@@ -24,7 +24,14 @@
 	<link href="core/css/construct.css" type="text/css" rel="stylesheet" media="all"/>
 	<!-- Theme CSS -->
 	<link href="app/theme/css/theme.css" type="text/css" rel="stylesheet" media="all" />
-	
+	<style>
+	.spazz-demo { display: flex; justify-content: center;
+		width: 80%; height: 300px; align-items: center; margin: 0 auto;
+		background-size: cover; background-position: center center; background-repeat: no-repeat;
+		background-image: url('app/files/images/contemplate.jpg');
+	}
+	.spazz-demo>p {display:inline-block; border-radius: 0.75rem; background: rgba(0,0,0,0.5); padding: 6px;}
+	</style>
 </head>
 <body>
 <!-- MAIN MENU -->
@@ -37,7 +44,7 @@
 	<div class="wrap-960 monolisk" style="margin-top: 1.5rem;"><div class="checkerboard padded" style="border-radius: 1rem;"><div class="padded emptiness">
 		<ul class="flex flow-text">
 			<li class="third"><a href="index.html"><i class="bi bi-home"></i> HOME</a></li>
-			<li class="third"><a href="about.html"><i class="bi bi-info"></i> About BF</a></li>
+			<li class="third"><a href="boilerplates.html"><i class="bi bi-heat"></i> Boilerplates</a></li>
 			<li class="third"><a href="bad-assets.html"><i class="bi bi-pinwheel"></i> BAD-Assets</a></li>
 		</ul>
 		<ul class="flow-text flex" style="border-top: 2px solid #fff; padding-top: 8px;">
@@ -53,8 +60,9 @@
 		</ul>
 	</div><div class="padded emptiness" style="margin-top: 1.25rem;">
 		<ul class="flex flow-text">
-			<li class="half"><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank">Roadmap</a></li>
-			<li class="half"><a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank">Github Repo</a></li>
+			<li class="third"><a href="https://brutalistframework.com/#about" target="_blank"><i class="bi bi-info"></i> About BF</a></li>
+			<li class="third"><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank">Roadmap</a></li>
+			<li class="third"><a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank">Github Repo</a></li>
 		</ul>
 		<ul class="flex flow-text" style="width: 100%; border-top: 2px solid #fff; padding-top: 8px;">
 			<li class="third"><a href="https://www.blueprintgrid.com" target="_blank"><i class="blueprint bi bi-grid"></i> Blueprint Grid</a></li>
@@ -351,12 +359,47 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 			<p class="center"><strong>NOTE:</strong> <em>.glitchtext</em> works only on text.<br />You can also add <em><strong>-h</strong></em> to apply the effect upon hover.</p>
 		</div></div>
 		<p class="spacer"></p>
+		
+		<!-- Spazz Glitch Effect -->
+		<h4 class="flow-text charcoal white-t padded">Spazz Glitch Effect</h4>
+		<p>Apply a popping glitch effect to any element. Simply apply the class <strong>.spazz</strong>.<br />
+		To increase the speed, add the class <strong>.speedy</strong>.<br />
+		To reduce the speed, add the class <strong>.sluggish</strong>.<br />
+		To apply the effect upon hover, append an <em><strong>-h</strong></em> so that: <strong><em>.spazz-h</em></strong>.<br /><br />
+		Let's say we wanted to "speedily spazz" an element upon hover, we would apply: <strong>.spazz-h.speedy</strong><br /><br />
+		<strong>DEMO:</strong> In the first example below, the effect is applied directly to an image, as well as it's paragraph parent element.<br /><br /></p>
+		<div class="flex"><div class="padded half">
+			<p class="spacer"></p>
+			<!-- spazz example 1 -->
+			<p class="center spazz sluggish padded inline-block" style="margin-left: 3rem;">
+				<img src="app/files/images/contemplate.jpg" alt="spazzed" class="spazz xlarge-thumb" />
+			</p>
+			<p class="spacer"></p>
+			<!-- sluggish (slow) spazz -->
+			<div class="spazz sluggish spazz-demo">
+				<p class="flow-text monolisk heavy red-t lemon-t-s">.spazz.sluggish</p>
+			</div>
+		</div><div class="padded half">
+			<p class="spacer"></p>
+			<!-- standard spazz -->
+			<div class="spazz spazz-demo">
+				<p class="flow-text monolisk heavy red-t lemon-t-s">.spazz</p>
+			</div>
+			<p class="spacer"></p>
+			<!-- speedy (fast) spazz -->
+			<div class="spazz speedy spazz-demo">
+				<p class="flow-text monolisk heavy red-t lemon-t-s">.spazz.speedy</p>
+			</div>
+			<p class="spacer"></p>
+		</div></div>
+		<p class="spacer"></p>
+		
 		<!-- Blinky 'n Bouncy -->
 		<div class="flex"><div class="padded half">
 			<h4 class="flow-text charcoal white-t padded">Blink</h4>
 			<p>Blink is back! Formerly known as the <span class="terminal"><em>&lt;blink&gt;</em></span> HTML tag, blink is now available as a CSS animation! Apply theses classes to blink any element!</p>
 			<h4 class="flow-text">.blink</h4>
-			<p class="blink alert box-shadow-double lucida padded yellow-t-s">ALERT!<br />&nbsp;ALERT!<br />&nbsp;&nbsp;ALERT!</p>
+			<p class="blink alert box-shadow-double lucida padded"><span class="yellow-t">ALERT!<br />&nbsp;ALERT!<br />&nbsp;&nbsp;ALERT!</span></p>
 			<h4 class="flow-text">.blink-slow</h4>
 			<p class="blink-slow warning box-shadow lucida center flow-text bold">////////<br />WARNING!!!!<br />////////</p>
 			<h4 class="flow-text">.blink-fast</h4>
@@ -368,7 +411,7 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 				<img src="app/files/images/blinker-fluid.jpg" alt="Blinker Fluid" class="blink-182 circle medium-thumb" />
 			</p>
 			<h4 class="flow-text">.strobe</h4>
-			<p class="padded passion box-s-b charcoal cream-t center"><span class="strobe">Get Your Blinker Fluid!</span></p>
+			<p class="padded passion box-s-b charcoal cream-t center bigger"><span class="strobe">Get Your Blinker Fluid!</span></p>
 		</div><div class="padded half">
 			<h4 class="flow-text charcoal white-t padded">Bouncy</h4>
 			<p>Bounce any element by applying the following class:<br /><span class="flow-text"><strong>.bouncy</strong></span></p>
@@ -451,47 +494,56 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 		<!-- ANIMATED BACKGROUNDS -->
 		<h3 class="fluid-text monolisk" id="animbg">Animated Backgrounds</h3>
 		<p>Animated backgrounds are based purely on CSS. Apply any of these classes to any element:<br /><br /></p>
-		<div class="flex flow-text">
+		<div class="flex flow-text lucida black-t">
 			<div class="padded half gathering">
-				<div class="comfortable"><h4 class="lime-t">.gathering</h4></div>
+				<div class="comfortable"><h4>.gathering</h4></div>
 			</div><div class="padded half fright-night">
-				<div class="comfortable"><h4 class="black-t">.fright-night</h4></div>
+				<div class="comfortable"><h4 class="white-t">.fright-night</h4></div>
 			</div><div class="padded half heat">
-				<div class="comfortable"><h4 class="lucida black-t">.heat</h4></div>
+				<div class="comfortable"><h4>.heat</h4></div>
 			</div><div class="padded half pastelize">
-				<div class="comfortable"><h4 class="lucida black-t">.pastelize</h4></div>
+				<div class="comfortable"><h4>.pastelize</h4></div>
 			</div><div class="padded half flood">
-				<div class="comfortable"><h4 class="lucida navy-t">.flood</h4></div>
+				<div class="comfortable"><h4 class="navy-t">.flood</h4></div>
 			</div><div class="padded half shine">
-				<div class="comfortable"><h4 class="lucida black-t">.shine</h4></div>
+				<div class="comfortable"><h4>.shine</h4></div>
 			</div><div class="padded half neon">
-				<div class="comfortable"><h4 class="lucida black-t">.neon</h4></div>
+				<div class="comfortable"><h4>.neon</h4></div>
 			</div><div class="padded half earthly">
-				<div class="comfortable"><h4 class="lucida black-t">.earthly</h4></div>
+				<div class="comfortable"><h4>.earthly</h4></div>
 			</div><div class="padded half psychedelic">
-				<div class="comfortable"><h4 class="lucida black-t">.psychedelic</h4></div>
+				<div class="comfortable"><h4>.psychedelic</h4></div>
 			</div><div class="padded half infinitile">
-				<div class="comfortable"><h4 class="lucida blueberry-t">.infinitile</h4></div>
+				<div class="comfortable"><h4 class="blueberry-t">.infinitile</h4></div>
 			</div>
 		</div>
-		<div class="flex middle swede-split padded" style="min-height: 30vh;">
-			<h3 class="sweden padded yellow-b b-b-k inline-block">.swede-split</h3>
-		</div><div class="flex middle brickbuild padded" style="min-height: 30vh;">
+		<div class="flex middle aurora padded" style="min-height: 30vh;">
+			<div class="inline-block campfire padded b-d-k center">
+				<h3 style="margin: 0;">.aurora</h3>
+			</div>
+		</div>
+		<div class="flex middle brickbuild padded" style="min-height: 30vh;">
 			<div class="inline-block red-b b-b-k center padded black red-t">
 				<h3 style="margin: 0;">.brickbuild</h3>
 				<p>This uses the <em>--color1</em> and <em>--color2</em> color variables.</p>
 			</div>
-		</div><div class="flex middle lcd-trip padded" style="min-height: 30vh;">
-			<h3 class="sweden padded yellow-b b-b-k inline-block">.lcd-trip</h3>
-		</div><div class="flex middle dotgrid-throb padded" style="min-height: 30vh;">
+		</div>
+		<div class="flex middle color-shift padded" style="min-height: 30vh;">
+			<div class="inline-block black red-b red-t padded b-d-k center">
+				<h3 style="margin: 0;">.color-shift</h3>
+			</div>
+		</div>
+		<div class="flex middle dotgrid-throb padded" style="min-height: 30vh;">
 			<div class="inline-block blueprint padded b-b-k center">
 				<h3 style="margin: 0;">.dotgrid-throb</h3>
 				<p>Or, just <em><strong>.dotgrid</strong></em> to disable the animation.</p>
 			</div>
-		</div><div class="flex middle aurora padded" style="min-height: 30vh;">
-			<div class="inline-block campfire padded b-d-k center">
-				<h3 style="margin: 0;">.aurora</h3>
-			</div>
+		</div>
+		<div class="flex middle lcd-trip padded" style="min-height: 30vh;">
+			<h3 class="sweden padded yellow-b b-b-k inline-block">.lcd-trip</h3>
+		</div>
+		<div class="flex middle swede-split padded" style="min-height: 30vh;">
+			<h3 class="sweden padded yellow-b b-b-k inline-block">.swede-split</h3>
 		</div>
 		<p class="spacer"></p>
 		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
@@ -564,13 +616,15 @@ document.querySelector("#reveal-nav").addEventListener("click", function() {
 			<span class="white-t"><i class="bi bi-amp"></i>Brutal Blast /<span class="blink-182">/</span>/<span class="blink">/</span>/</span><br />
 			<small><strong>Subscribe to our e-newsletter. &raquo;</strong></small>
 		</a>
-		<p class="white-t" style="margin: 1rem 0 1rem 0;"><small>Brutalist Framework &copy; 2025</small></p>
+		<p class="white-t" style="margin: 1rem 0 1rem 0;"><small>Brutalist Framework &copy; 2026</small></p>
 	</div>
 </footer>
 
+<!-- vanilla js -->
 <script src="core/jab/bfx/baffle.js" type="text/javascript"></script>
 <script src="core/jab/bfx/choptext.js" type="text/javascript"></script>
 <script src="core/jab/bfx/fittext.js" type="text/javascript"></script>
+<!-- jQuery -->
 <script src="core/jab/jquery.3.js" type="text/javascript"></script>
 <script src="core/jab/plugins/curvetext.js" type="text/javascript"></script>
 <script src="core/jab/plugins/divisive-text.js" type="text/javascript"></script>

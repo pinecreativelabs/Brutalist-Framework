@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>Quick Search</title>
+	<meta name="description" content="Instant search demo." />
+	
+	<!-- CORE CSS  -->
+	<link href="core/css/construct.css" type="text/css" rel="stylesheet" media="all"/>
+	<style>
+		header h1 {font-size: 3.25em;}
+		.searchable {border: 3px solid #fffff0;
+			color: #333; background: #f9f6ee; padding: 1rem;
+			-webkit-border-radius: 6px; border-radius: 6px;
+			box-shadow: 4px 4px #000;
+		}
+	</style>
+</head>
+<body class="carbon-black">
+
+<div class="wrap-1200">
+
+	<header class="padded flex middle" style="min-height: 25vh; margin-bottom: 0;">
+		<div class="padded half">
+			<h1 class="tea-for-god center smoke-t"><i class="bi bi-zoom-right"></i><br />Quick Search</h1>
+		</div><div class="padded half smoke-t black-t-s">
+			<h2 class="flow-text lucida">Instant Search DEMO</h2>
+			<p>Try doing a "fuzzy" search for the following keywords:<br /><em>book, movie, brutalist, concrete, framework</em></p>
+		</div>
+	</header>
+
+
+	<div class="padded pill clean lucida">
+		<label for="instant-search">Search</label>
+		<input type="search" id="instant-search" placeholder="Live search keyword..">
+	</div>
+		<!-- Toggle results between list or grid view -->
+		<div class="padded" id="ListGridViewToggler">
+			<button class="nb-btn btn active" onclick="listView()">&#9636; List</button>
+			<button class="nb-btn btn" onclick="gridView()">&#9638; Grid</button>
+		</div>
+		<!-- searchable list-grid-view results -->
+		<div class="list-grid-view">
+			<div class="searchable">
+				<h5 class="flow-text">Atlas of Brutalist Architecture</h5>
+				<p>A landmark survey</p>
+				<p class="keywords">book, publication</p> 
+			</div>
+			<div class="searchable">
+				<h5 class="flow-text">Brutalist Plants</h5>
+				<p>Green vs grey, plants vs concrete</p>
+				<p class="keywords">book, publication</p> 
+			</div>
+			<div class="searchable">
+				<h5 class="flow-text">The Brutalist</h5>
+				<p>A visionary architect comes to America to rebuild his life.</p>
+				<p class="keywords">2024 film, movies</p> 
+			</div>
+			<div class="searchable">
+				<h5 class="flow-text">BUFF</h5>
+				<p>Blend utility and fancy filters</p>
+				<p class="keywords">css, style</p> 
+			</div>
+			<div class="searchable">
+				<h5 class="flow-text">Blueprint Grid</h5>
+				<p>Multi-method flexbox and CSS grid library</p>
+			</div>
+			<div class="searchable">
+				<h5 class="flow-text">High-Rise</h5>
+				<p>A doctor moves into a high-rise building in which the residents are divided into classes.</p>
+				<p class="keywords">2015 film, movies, brutalist</p>
+			</div>
+			<div class="searchable">
+				<h5 class="flow-text">Concrete CMS</h5>
+				<p>An open-source content management system built with PHP and MySQL.</p>
+			</div>
+			<div class="searchable">
+				<h5 class="flow-text">ReBAR</h5>
+				<p>Responsive breakpoint assistance reference</p>
+				<p class="keywords">framework, construction, css, resource</p>
+			</div>
+			<div class="searchable">
+				<h5 class="flow-text">BAD-Assets</h5>
+				<p>Brutal Anti-Design Assets Library</p>
+				<p class="keywords">aesthetic, graphics, resource</p>
+			</div>
+		</div>
+	<p class="spacer"></p>
+</div>
+
+<footer class="padded center bitstream disabled">
+	<p><a href="https://www.brutalistframework.com" target="_blank">Brutalist Framework</a> &copy; 2026</p>
+</footer>
+
+
+<!-- Vanilla Javascript -->
+<script src="core/jab/buix/instant-search.js"></script>
+<script src="core/jab/buix/list-grid-view.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Lewatur';
+    src: url('LewaturRegular.eot');
+    src: url('LewaturRegular.eot?#iefix') format('embedded-opentype'),
+        url('LewaturRegular.woff2') format('woff2'),
+        url('LewaturRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.lewatur{font-family:'Lewatur';}

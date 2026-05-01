@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>Rated X</title>
+	<meta name="description" content="A boilerplate responsive HTML age verification template." />
+	
+	<!-- CORE CSS  -->
+	<link href="core/css/construct.css" type="text/css" rel="stylesheet" media="all"/>
+	<style>
+		.ratedx{ background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat; background-attachment: fixed;
+			background-image: url('app/files/images/contemplate.jpg');
+		}
+	</style>
+</head>
+<body>
+<div class="container-fluid ratedx">
+<div class="block-wrap bh100 b100 center glassmorph">
+	<div class="block b100">
+		<h1 class="fluid-text boa-construktor">RATED X</h1>
+		<h2  class="black padded red-t fluid-text-h3 vcr-mono">This page has been rated X by the MPAA.</h2>
+	</div>
+</div>
+</div>
+
+<!-- jQuery -->
+<script src="core/jab/jquery.3.js"></script>
+<script src="core/jab/plugins/age-restrict.js"></script>
+<script>
+ $(document).ready(function(){
+  $.ageCheck({
+    minAge: 18,
+    title: 'Age Verify',
+    copy:'Must be 18 or older',
+    redirectTo:'',
+    redirectOnFail:'https://www.brutalistframework.com',
+    underAgeMsg:'Not old enough!'
+ });
+});
+</script>
+
+</body>
+</html>

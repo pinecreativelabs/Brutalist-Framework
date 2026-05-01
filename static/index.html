@@ -21,150 +21,93 @@
 	
 	<!-- CORE CSS  -->
 	<link href="core/css/construct.css" type="text/css" rel="stylesheet" media="all"/>
-	<!-- Theme CSS -->
-	<link href="app/theme/css/theme_legacy.css" type="text/css" rel="stylesheet" media="all" />
-	<link href="app/theme/css/wheeltabtest.css" type="text/css" rel="stylesheet" media="all" />
-	
+	<style>
+	.corelist li {border: 1px solid #800000;}
+	.corelist a:link, .corelist a:visited{color: #800000;}
+	.corelist li a:hover{background: #800000; color: #fffff0;}
+	</style>
 	<!-- TRACKING CODE -->
 	
 </head>
-<body class="homepage">
-<div class="container-fluid darkangel" style="padding-top: 3em; padding-bottom: 4em;">
-	<div class="row">
-	<div class="col-xs-12">
-		<div class="container-1200" id="uptop">
-			<div class="block-wrap">
-				<div class="block bw100">
+<body>
+<div class="charcoal" style="padding-top: 3em; padding-bottom: 4em;">
+
+	<div class="container-1200" id="uptop">
+		<div class="block-wrap">
+			<div class="block bw100">
 					<div class="jagged">
-						<div class="padded b-s-k red-b infinitile center">
-							<h1 class="fluid-text monolisk padded brickbuild rounded red-t smoke-t-s">Brutalist Framework</h1>
-							<h2 class="flow-text courier bold black-t baffle-prolonged red-t-s">An open source framework for the brutalist web design trend.</h2>
-						
+						<div class="padded b-s-k red-b infinitile center bitstream">
+							<h1 class="fluid-text monolisk padded brickbuild rounded red-t smoke-t-s" style="margin: 0;">Brutalist Framework</h1>
+							<h2 class="flow-text bold black-t baffle red-t-s" style="line-height: 140%;">An open source static HTML, CSS, &amp; javascript framework for the brutalist web design trend.</h2>
 						</div>
 					</div>
 					<div class="align-right padded">
 						<div class="sliced-corner fossil smoke-t inline-block left">
-							<p class="monolisk padded fluid-text white-t red-t-s"><strong>STATIC BUILD</strong> | version <span class="bigger">&nbsp;2.6&nbsp;</span></p>
-						</div><div class="inline-block left" style="padding-top: 1.85rem;">
-						<a href="https://www.brutalistframework.com/versions/Brutalist_Framework_2.6.zip" target="_blank" class="nba-btn sharp sepia">DOWNLOAD</a> 
-						<a href="about.html" class="nb-btn sharp black white-h red-t red-b b-s-t" style="margin-right: 1rem; margin-left: 1rem;">About</a>
-						<a href="#get-started" class="nb-btn sharp black white-h red-t red-b b-s-t allcaps">Get Started</a>
+							<p class="monolisk padded fluid-text white-t red-t-s"><strong>STATIC CORE</strong> | version <span class="bigger">&nbsp;2.7&nbsp;</span></p>
+						</div><div class="inline-block left bitstream" style="padding-top: 1.85rem;">
+						<a href="https://www.brutalistframework.com/versions/Brutalist_Framework_2.7.zip" target="_blank" class="nba-btn-big sharp sepia"><i class="bi bi-download charcoal-t-s"></i> DOWNLOAD</a> 
+						<a href="#get-started" class="nba-btn sepia sharp allcaps" style="margin-left: 0.75em;">Get Started</a>
 						</div>
 					</div>
-				</div>
-			
 			</div>
-			<div class="block-wrap home-head">
-				<div class="block bw100">
-					<h3 class="monolisk white-t heavy red-t-s fluid-text" style="padding-top: 0.5em;">CORE Components</h3>
-					<p class="flow-text smoke-t bitstream">Core CSS library & javascript plugin components for constructing client-side user experiences &amp; interfaces.</p>
-				</div><div class="block bw50 xs-100">
-						
-						<nav class="simple bold glued hide-over-960">
-							<ul class="lucida flow-text center">
-								<li class="red invert-h"><a href="#butch-tab" class="black-t-s white-t"><i class="bi bi-communist"></i> <small class="hide-under-768">BUTCH</small></a></li>
-								<li class="red invert-h"><a href="#buix-tab" class="black-t-s white-t"><i class="bi bi-control"></i> <small class="hide-under-768">BUIX</small></a></li>
-								<li class="red invert-h"><a href="#bfx-tab" class="black-t-s white-t"><i class="bi bi-sparkle"></i> <small class="hide-under-768">BFX</small></a></li>
-								<li class="red invert-h"><a href="#grid-tab" class="black-t-s white-t"><i class="bi bi-grid"></i> <small class="hide-under-768">Grids</small></a></li>
-								<li class="red invert-h"><a href="#rebar-tab" class="black-t-s white-t"><i class="bi bi-converge-left"></i> <small class="hide-under-768">ReBAR</small></a></li>
-								<li class="red invert-h"><a href="#bicons-tab" class="black-t-s white-t"><i class="bi bi-flag"></i> <small class="hide-under-768">bIcons</small></a></li>
-								<li class="red invert-h"><a href="#f-tab" class="black-t-s white-t"><i class="bi bi-cone"></i> <small class="hide-under-768">Flavors</small></a></li>
-								<li class="red invert-h"><a href="#bell-tab" class="black-t-s white-t"><i class="bi bi-bell"></i> <small class="hide-under-768">BUFF</small></a></li>
-								<li class="red invert-h"><a href="#bp-tab" class="black-t-s white-t"><i class="bi bi-heat"></i> <small class="hide-under-768">FUX</small></a></li>
-							</ul>
-						</nav>
-
-						<div class="glued hide-under-960">
-							<ul id="iconWheel" data-wheelnav class="wheelNav" data-wheelnav-init>
-								<li data-wheelnav-navitemtext="BFX"><a href="#bfx-tab"></a></li>
-								<li data-wheelnav-navitemtext="bIcons"><a href="#bicons-tab"></a></li>
-								<li data-wheelnav-navitemtext="BUFF"><a href="#buff-tab"></a></li>
-								<li data-wheelnav-navitemtext="BUIX"><a href="#buix-tab"></a></li>
-								<li data-wheelnav-navitemtext="BUTCH"><a href="#butch-tab"></a></li>
-								<li data-wheelnav-navitemtext="Flavors"><a href="#f-tab"></a></li>
-								<li data-wheelnav-navitemtext="FUX"><a href="#fux-tab"></a></li>
-								<li data-wheelnav-navitemtext="ReBAR"><a href="#rebar-tab"></a></li>
-							</ul>
-							<p class="flow-text" style="text-align: center;">
-								<a href="grids.html" class="nb-btn black white-h red-t red-b b-s-t"><i class="bi bi-quadrant"></i> Grids</a>
-								<a href="bad-assets.html" class="nb-btn black white-h red-t red-b b-s-t"><i class="bi bi-pinwheel"></i> BAD-Assets</a>
-							</p>
-						</div>
-					
-				</div>
-				<div class="block bw50 xs-100">
-					
-					<div class="spacer-tall" id="starthere"></div>
-					<div class="spacer-tall" id="butch-tab"></div>
-					<div class="padded link-block">
-						<h3 class="courier bold"><i class="bi bi-communist"></i> BUTCH</h3>
-						<p class="flow-text lucida">Base Utility &amp;<br />Typography Class Helpers<br />
-						<span class="smaller tahoma">General typography and content classes library.</small></p>
-						<a href="butch.html" class="courier lbbtn">Butcher &raquo;</a>
-					</div>
-						
-					<div class="spacer-tall" id="buix-tab"></div>
-					<div class="padded link-block">
-						<h3 class="courier bold"><i class="bi bi-control"></i> BUIX</h3>
-						<p class="flow-text lucida">Brutal User Interface<br />&amp; Experience<br />
-						<span class="smaller tahoma">Interactions, modals, tabs &amp; more.</span></p>
-						<a href="buix.html" class="courier lbbtn">Experience &raquo;</a>
-					</div>
-						
-					<div class="spacer-tall"id="bfx-tab"></div>
-					<div class="padded link-block">
-						<h3 class="courier bold"><i class="bi bi-sparkle"></i> BFX</h3>
-						<p class="flow-text lucida">Brutal Effects<br />
-						<span class="smaller tahoma">Element animations &amp; other effects.</span></p>
-						<a href="bfx.html" class="courier lbbtn">Animate &raquo;</a>
-					</div>
-						
-					<div class="spacer-tall" id="fux-tab"></div>
-					<div class="padded link-block">
-						<h3 class="courier bold"><i class="bi bi-grid"></i> FUX</h3>
-						<p class="flow-text lucida">Form User eXperience<br />
-						<span class="smaller tahoma">User input &amp; form components.</span></p>
-						<a href="fux.html" class="courier lbbtn">Formulate &raquo;</a>
-					</div>
-						
-					<div class="spacer-tall" id="rebar-tab"></div>
-					<div class="padded link-block">
-						<h3 class="courier bold"><i class="bi bi-converge-left"></i> ReBAR</h3>
-						<p class="flow-text lucida">Responsive Breakpoint<br />Assistance Reference<br />
-						<span class="smaller tahoma">Library for improving responsive behavior.</span></p>
-						<a href="rebar.html" class="courier lbbtn">Reinforce &raquo;</a>
-					</div>
-						
-					<div class="spacer-tall" id="f-tab"></div>
-					<div class="padded link-block">
-						<h3 class="courier bold"><i class="bi bi-cone"></i> Flavors</h3>
-						<p class="flow-text lucida">Color Classes Library<br />
-						<span class="smaller tahoma">Gradient backgrounds &amp; general color classes.</span></p>
-						<a href="flavors.html" class="courier lbbtn">Taste &raquo;</a>
-					</div>
-						
-					<div class="spacer-tall" id="bicons-tab"></div>
-					<div class="padded link-block">
-						<h3 class="courier bold"><i class="bi bi-flag"></i> bIcons</h3>
-						<p class="flow-text lucida">Brutal Icons<br />
-						<span class="smaller tahoma">Native UTF-8 symbols in the form of icon classes.</span></p>
-						<a href="bicons.html" class="courier lbbtn">Symbolize &raquo;</a>
-					</div>
-						
-					<div class="spacer-tall" id="buff-tab"></div>
-					<div class="padded link-block">
-						<h3 class="courier bold"><i class="bi bi-fill"></i> BUFF</h3>
-						<p class="flow-text lucida">Blend Utility for Filters<br />
-						<span class="smaller tahoma">CSS blends and preset filters.</span></p>
-						<a href="buff.html" class="courier lbbtn">Buff Up &raquo;</a>
-					</div>
-					<div class="spacer-tall"></div><div class="spacer-tall"></div>
-				</div>
-			</div>
-		
 		</div>
-		
-	</div>
+			
+		<div class="padded ivory rounded">
+				<h4 class="padded blood ivory-t monolisk heavy fluid-text">CORE Components</h4>
+				<p class="sudo blood-t" style="font-weight: 600; font-size: 1.25rem;">Core CSS library & javascript plugin components for constructing client-side user experiences &amp; interfaces.</p>
+			<div class="padded"><ul class="tiles corelist sudo">
+					<li class="bw33 xs-100 sm-100"><a href="bfx.html">
+						<h4 class="monolisk heavy flow-text"><i class="bi bi-sparkle"></i> BFX</h4>
+						<p>Brutal Effects</p>
+					</a></li>
+					<li class="bw33 xs-100 sm-100"><a href="bicons.html">
+						<h4 class="monolisk heavy flow-text"><i class="bi bi-flag"></i> bIcons</h4>
+						<p>Brutal Icons</p>
+					</a></li>
+					<li class="bw33 xs-100 sm-100"><a href="buix.html">
+						<h4 class="monolisk heavy flow-text"><i class="bi bi-navigate"></i> BUIX</h4>
+						<p>Base User Interface &amp; Experience</p>
+					</a></li>
+					<li class="bw33 xs-100 sm-100"><a href="buff.html">
+						<h4 class="monolisk heavy flow-text"><i class="bi bi-fill"></i> BUFF</h4>
+						<p>Blend Utility &amp; Fancy Filters</p>
+					</a></li>
+					<li class="bw33 xs-100 sm-100"><a href="butch.html">
+						<h4 class="monolisk heavy flow-text"><i class="bi bi-pick"></i> BUTCH</h4>
+						<p>Base Utility &amp; Typography Class Helpers</p>
+					</a></li>
+					<li class="bw33 xs-100 sm-100"><a href="flavors.html">
+						<h4 class="monolisk heavy flow-text"><i class="bi bi-cone sepia charcoal-t-s"></i> Flavors</h4>
+						<p>Color classes library</p>
+					</a></li>
+					<li class="bw33 xs-100 sm-100"><a href="fux.html">
+						<h4 class="monolisk heavy flow-text"><i class="bi bi-box-x"></i> FUX</h4>
+						<p>Form User Experience</p>
+					</a></li>
+					<li class="bw33 xs-100 sm-100"><a href="rebar.html">
+						<h4 class="monolisk heavy flow-text"><i class="bi bi-converge-left"></i> ReBAR</h4>
+						<p>Responsive Breakpoint Assistance Reference</p>
+					</a></li>
+					<li class="bw33 xs-100 sm-100"><a href="bad-assets.html">
+						<h4 class="monolisk heavy flow-text"><i class="bi bi-pinwheel"></i> BAD-Assets</h4>
+						<p>Brutal Anti-Design Asset Library</p>
+					</a></li>
+				</ul>
+				<p class="spacer"></p>
+				<ul class="tiles corelist sudo">
+					<li class="bw50 xs-100 sm-100"><a href="grids.html">
+						<h4 class="monolisk heavy flow-text"><i class="bi bi-grid"></i> Blueprint Grid</h4>
+						<p>Multi-method grid system</p>
+					</a></li>
+					<li class="bw50 xs-100 sm-100"><a href="boilerplates.html">
+						<h4 class="monolisk heavy flow-text"><i class="bi bi-heat"></i> Boilerplates</h4>
+						<p>Project starting point templates</p>
+					</a></li>
+				</ul>
+			<p class="spacer"></p>
+			</div>
+		</div>
+			
 	</div>
 	
 	<div class="jagged" id="get-started">
@@ -185,7 +128,7 @@
 					<div class="tab red-b b-s-t hometab1 lemon-t" style="background: url('app/files/images/stepping-stone-falls.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; padding: 3.5em;" >
 						<div class="red-b brdr-s-k white-t padded" style="background: rgba(0,0,0,0.9);">
 							<h3 class="flow-text">Components</h3>
-							<p>There are three main components to BF:</p>
+							<p>There are two main directories in the BF package:</p>
 							<ul class="triangle">
 								<li><strong>APP</strong> - Application files</li>
 								<li><strong>CORE</strong> - Core CSS and javascript files</li>
@@ -213,8 +156,8 @@
 							<p>The <em>/app</em> directory contains custom data and theme files, which may be frequently updated. The <em>/core</em> directory contains all core component CSS libraries, javascriipt plugins, and other files that are static and less likely to be regularly modified.</p>
 							<hr />
 							<h3 class="flow-text">Begin With a Boilerplate</h3>
-							<p>As an ideal starting point, use the included <a href="boilerplate.html" target="_blank" class="lemon-t link"><strong>boilerplate template</strong></a>.</p>
-							<p class="indent" style="margin: 1em 0 1em 0;">The boilerplate template includes all core CSS files, and an example javascript-based modal example.</p>
+							<p>As an ideal starting point, use the included <a href="blank_boilerplate.html" target="_blank" class="lemon-t link"><strong>boilerplate template</strong></a>.</p>
+							<p class="indent" style="margin: 1em 0 1em 0;">The boilerplate template includes all core CSS files, and an example javascript-based modal example. There are also additional boilerplates to help you get started:<br /><strong><a href="boilerplates.html" class="lemon-t link">View All Boilerplates</a></strong></p>
 						</div>
 					</div>
 					<!-- TAB 2 -->
@@ -234,45 +177,44 @@
 					<div class="tab red-b b-s-t monochrome">
 						<h3 class="flow-text">Javascript Application Base (<em>JAB</em>)</h3>
 						<p>All javascript files are found in the <span class="terminal"><em>core/jab/</em></span> directory. Some are vanilla javascript, while others are jQuery plugins. Certain BFX, BUIX, and FUX elements require javascript files.</p>
-						<p class="indent">If you are using jQuery, BF includes all 3 versions of jQuery in the <span class="terminal"><em>core/jab/</em></span> directory:</p>
+						<p class="indent">If you are using jQuery, BF includes all 4 versions of jQuery in the <span class="terminal"><em>core/jab/</em></span> directory:</p>
 						<ul class="grey-t triangle">
 							<li>core/jab/jquery.1.js</li>
 							<li>core/jab/jquery.2.js</li>
 							<li class="black-t">core/jab/jquery.3.js</li>
+							<li>core/jab/jquery.4.js</li>
 						</ul>
-						<p>It's advised to use jQuery 3, as versions 1 and 2 are no longer supported. Certain core BF elements don't work with jQuery 1 and 2.</p>
+						<p><strong>NOTE:</strong> Certain core elements don't work with jQuery 1 and 2, so version 3 is the recommended version to use.  Version 4 has NOT been tested.</p>
 					</div>
 					
 					<!-- TAB 4 -->
 					<input type="radio" name="tabs" id="tab4">
 					<label for="tab4" class="red-b b-s-t platinum"><span class="red-t heavy">Changelog</span></label>
 					<div class="tab red-b b-s-t glassmorph">
-						<h4 class="courier red-t white-t-s bold">What's New in 2.6?</h4>
+						<h4 class="courier red-t white-t-s bold">What's New in 2.7?</h4>
 						<p>GENERAL:<br />
-						+ Rearrangement and segregation of various CSS components into separate CSS files<br />
-						+ Introduction of "BAD-Assets" library, including 50 transparent PNG images<br /><br />
-						Grids:<br />
-						+ Updated to Blueprint Grid 2.2<br /><br />
+						+ Added jQuery 4.0.0 to JAB<br />
+						+ animated-backgrounds.css added to core/css/bfx directory<br />
+						+ Updated top-corner navigation menu panel<br />
+						+ Re-introduction of Boilerplates<br /><br />
+						BFX: <br />
+						+ New "color-shift" animated background<br />
+						+ New "spazz" animation glitch effect<br /><br />
+						BICONS:<br />
+						+ 6 new currency icons: austral, euro-currency, franc, naira, nordic-mark, rupee<br /><br />
+						BUFF:<br />
+						+ 4 new basic filters: deep-sea, dreamy, vibrant, vintage<br /><br />
+						BUIX:<br />
+						+ Re-added Megamenu<br />
+						+ Added new "Instant Search"<br /><br />
 						BUTCH:<br />
-						+ Segregated Flexbox layout into a separate CSS file<br />
-						+ Introduced border-block-end/start classes to Boundaries<br /><br />
+						+ 4 new custom fonts: biorhyme, lewatur, mupen, riosark<br />
+						+ Added Bar Graphs under 'Tables & Media'<br /><br />
 						FLAVORS: <br />
-						+ New flavors: apricot, brandy, grapeseed, indigo<br />
-						+ New Concoctions: canary-lilac, raspberry-honey, roadway<br /><br />
+						+ 5 new gradients: agent, crystal-ice, goldenrod, lemon-mint, spring-meadow<br /><br />
 						</p>
 					</div>
 					
-					<!-- TAB 5 -->
-					<input type="radio" name="tabs" id="tab5">
-					<label for="tab5" class="red-b b-s-t platinum"><span class="red-t heavy">BONUS</span></label>
-					<div class="tab red-b b-s-t monochrome">
-						<p class="flow-text">The following <em>bonus</em> templates are included:</p>
-						<ul class="none">
-							<li><a href="3d-cubes.html" target="_blank"><strong>3D Cube Animation</strong></a> <small>[advanced 3D CSS animation demo]</small></li>
-							<li><a href="final-countdown.html" target="_blank"><strong>Final Countdown</strong></a> <small>[javascript countdown landing page]</small></li>
-						</ul>
-						<p class="spacer"></p>
-					</div>
 				</div>
 			</div>
 			<div class="block bw33 xs-100 sm-100 md-40"><div class="padded">
@@ -289,7 +231,7 @@
 						<ul class="tags">
 							<li><a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank" class="btn black white-t invert-h"><strong>GitHub</strong></a></li>
 						</ul>
-						<p class="white-t tahoma"><small>Brutalist Framework &copy; 2025</small></p>
+						<p class="white-t tahoma"><small>Brutalist Framework &copy; 2026</small></p>
 					</div>
 				</footer>
 			</div></div>
@@ -309,28 +251,7 @@
 		</ul>
 	</nav>
 </div>
-<!-- Download Modal -->
-<div id="download" style="display:none;">
-	<div class="container monochrome infinitile" style="max-width: 468px;">
-		<div class="row">
-			<div class="col-sm-12 no-padding">
-				<div class="padded lucida">
-					<h4>Begin the <span class="blink red-t">Brutality</span></h5>
-					<p>Released <strong>3/24/2022</strong></p>
-					<p class="bigger bold"><a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.4.zip" target="_blank" class="btn full-btn sweden invert-hover">Download 2.4</a></p><hr class="jagged-rule-dark" />
-					<p style="font-size: 1.15em;"><strong><span style="font-size: 1.3em;">Archived Versions</span></strong><br />
-					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.3.3.zip" target="_blank">2.3.3</a> <small>(3/11/2022), 17mb</small><br />
-					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.3.zip" target="_blank">2.3</a> <small>(5/14/2021), 17mb</small><br />
-					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.2.zip" target="_blank">2.2</a> <small>(2/14/2021), 17mb</small><br />
-					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.1.zip" target="_blank">2.1</a> <small>(10/23/2020), 19mb</small><br />
-					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_2.0.zip" target="_blank">2.0.2.0</a> <small>(2/20/2020), 9.3mb</small><br />
-					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.9.zip" target="_blank">1.9</a> <small>(5/29/2019), 3.7mb</small><br />
-					<a href="http://www.brutalistframework.com/versions/Brutalist_Framework_1.0.zip" target="_blank">1.0</a> <small>(4/12/2017), 1.5mb</small><br /><br /></p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+
 <!-- Initiate and display modal itself -->
 <div class="modal">
 	<div class="modal-inner draggable">
@@ -339,57 +260,31 @@
 	</div>
 </div>
 
-<!-- About Modal -->
-<div id="aboutbf" class="modal-lite full">
-	<a href="javascript:history.go(-1)" class="close">&#10006;</a>
-	<div class="modal-content aboutbf hottie">
-		<div class="header center"><h2 class="black-t courier-new red-t-s bold">About BF</h2></div>
-		<div class="body scroll-y center lucida padded infinitile">
-			<div class="container-960"><div class="row"><div class="col-sm-12">
-				<p class="flow-text">Brutalism is a hot trend in web design, and this framework is a free, open source framework for building <a href="http://www.brutalistwebsites.com" class="blue-text lime invert-hover" target="_blank">brutal websites</a>!</p>
-				<p class="flow-text"><em>Brutalist Framework</em> is developed by <a href="http://www.bradfogelstrom.com" target="_blank" class="link sweden"><strong><span class="blink">B</span>rad <span class="blink">F</span>ogelstrom</strong></a>. Having always been a fan of brutalist architecture, he was inspired to create this project.</p>
-				<h4 class="fittext blue-t black-t-s impact">Brutalism = <span class="blink-182">C.R.U.D.E.</span></h4>
-				<p class="flow-text">When thinking of brutalism, think CRUDE:</p>
-				<p class="flow-text impact" style="padding-left: 2em; margin-top: 0.8em;">
-					<span class="bigger blue-t">C</span>ynically confrontational<br />
-					<span class="bigger blue-t">R</span>oughly raw &amp; rugged<br />
-					<span class="bigger blue-t">U</span>ncomfortably ugly &amp; unpolished<br />
-					<span class="bigger blue-t">D</span>eliberately daring &amp; damaging<br />
-					<span class="bigger blue-t">E</span>xtremely exasperated &amp; embittered
-				</p>
-				<p style="margin-top: 0.8em;" class="flow-text">Brutalist web design is the <strong>anti-conventional</strong> approach to traditional web design principles. Design however the F<span class="baffle-forever">UC</span>K you want! Creative possibilities are endless!</p>
-				<p>&nbsp;</p>
-				<hr class="jagged-rule-dark" />
-				<div class="video box-shadow-double grey" style="margin-bottom: 3em;">
-					<iframe src="https://www.youtube.com/embed/8XWX5EIxBz8?showinfo=0" frameborder="0" allowfullscreen></iframe>
-				</div>
-				<hr class="jagged-rule-dark" /><p>&nbsp;</p>
-			</div></div></div>
-		</div>
-		<div class="footer"><a href="javascript:history.go(-1)" class="btn large-btn black platinum-t">CLOSE</a></div>
-	</div>
-</div>
-
 <!-- More Modal -->
 <div id="more" class="modal-lite fullscreen">
 	<div class="modal-content shades rounded">
-		<div class="modal-head center"><h2 class="red-t courier-new black-t-s bold">+ More</h2></div>
+		<div class="modal-head center"><h2 class="red-t fluid-text-h4 monolisk heavy black-t-s" style="margin:0; padding:0;">+ More</h2></div>
 		<div class="modal-content-body center">
 			<div class="container-1200"><div class="row"><div class="col-xs-12 col-sm-12"><p class="padded"></p>
-				<ul class="tiles thirds flow-text">
+				<ul class="tiles thirds flow-text bitstream">
+					<li class="dune invert-h bitstream"><a href="https://brutalistframework.com/#about" target="_blank" class="blood-t">About BF<br />
+						<small>Mission &amp; History</small></a></li>
+					<li class="terminal invert-h"><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank">Roadmap<br />
+						<small>What's next?</small></a></li>
+					<li class="evergreen invert-h"><a href="http://www.bradfogelstrom.com" target="_blank" class="ivory-t">Brad Fogelstrom<br />
+						<small>Meet the Developer</small></a></li>
+					<li class="lemonade invert-h impact"><a href="https://www.brutalistwebdesign.com" target="_blank">Reference Guides<br />
+						<small>Additional BF resources</small></a></li>
+					<li class="gold-digger invert-h times"><a href="https://www.baroquest.com/framework" target="_blank" class="mahogany-t gold-t-s">Baroquest Framework<br />
+						<small>BF's Fancypants Sister</small></a></li>
 					<li class="katherine bitstream hue-h bold"><a href="http://eepurl.com/cEW1RX" target="_blank"><i class="bi bi-amp"></i> Brutal Blast<br />
 						<small>Subscribe to our newsletter</small></a></li>
-					<li class="lime invert-h arial"><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank" class="black-t">Roadmap<br />
-						<small>What's next?</small></a></li>
-					<li class="impact charcoal invert-h"><a href="https://www.concretecms.org" target="_blank" class="smoke-t">Concrete5 CMS<br />
+					<li class="impact charcoal invert-h"><a href="https://www.concretecms.org" target="_blank" class="smoke-t">Concrete CMS<br />
 						<small>Build complex websites</small></a></li>
-					<li class="sweden comic invert-h"><a href="http://www.bradfogelstrom.com" target="_blank" class="yellow-t">BradFogelstrom.com<br /><small>Meet the Developer</small></a></li>
 					<li class="black invert-h lucida"><a href="https://github.com/pinecreativelabs/Brutalist-Framework-Static" target="_blank" class="white-t">GitHub<br />
 						<small>Repository</small></a></li>
-					<li class="virgin hue-h tahoma"><a href="https://www.instagram.com/brutalistfwk" target="_blank" class="white-t">Instagram<br /><small>Follow Us</small></a></li>
-					<li class="lemonade invert-h impact"><a href="https://www.brutalistwebdesign.com" target="_blank">Reference Guides<br /><small>Additional BF resources</small></a></li>
-					<li class="blueprint invert-h bitstream"><a href="https://www.blueprintgrid.com" target="_blank" class="white-t">Blueprint Grid<br /><small>Multimethod layout system</small></a></li>
-					<li class="charcoal monolisk"><a href="https://www.brutalcms.com" target="_blank" class="red-t"><i class="bi bi-communist"></i> Brutal CMS<br /><small>Dynamic build method</small></a></li>
+					<li class="charcoal monolisk heavy lighten-h"><a href="https://www.brutalcms.com" target="_blank" class="red-t black-t-s"><i class="bi bi-communist"></i> Brutal CMS<br />
+						<small>[coming soon]</small></a></li>
 				</ul>
 				<p class="padded"></p>
 			</div></div></div>
@@ -400,38 +295,9 @@
 </div>
 
 <!-- Core Scripts -->
-<script src="core/js/jab.js"></script>
+<script src="core/jab/bfx/baffle.js"></script>
 <script src="core/jab/jquery.3.js"></script>
 
-
-<!-- Theme Scripts -->
-<script type="text/javascript" src="app/theme/js/raphael.min.js"></script>
-<script type="text/javascript" src="app/theme/js/raphael.icons.js"></script>
-<script type="text/javascript" src="app/theme/js/wheelnav.js"></script>
-<!-- initialize Umbrella Corp wheel -->
-<script type="text/javascript">
-	window.onload = function () {
-		var iconWheel = new wheelnav("iconWheel");
-        iconWheel.slicePathFunction = slicePath().LineSlice;
-        iconWheel.sliceSelectedPathFunction = slicePath().StarSlice;
-        //iconWheel.sliceHoverTransformFunction = sliceTransform().RotateTitleTransform;
-        iconWheel.spreaderEnable = true; iconWheel.markerEnable = false;
-		iconWheel.clickModeRotate = true;
-        iconWheel.minPercent = 0.3; iconWheel.spreaderRadius = 35;
-        iconWheel.maxPercent = 1; iconWheel.navAngle = 0;
-		iconWheel.colors = new Array("0-#ff0000-#000", "90-#fff-#000","270-#ff0000-#000", "90-#fff-#000", "180-#ff0000-#000", "90-#fff-#000", "90-#ff0000-#000", "90-#fff-#000");
-        iconWheel.initWheel(["BUTCH", "BUIX", "BFX", "Grid", "ReBAR", "Flavors", "bIcons", "BELL"]);
-        iconWheel.navItems[0].minPercent = 0.80; iconWheel.navItems[0].maxPercent = 1;
-        iconWheel.navItems[1].minPercent = 1; iconWheel.navItems[1].maxPercent = 0.80; iconWheel.navItems[1].initPercent = 0.80;
-        iconWheel.navItems[2].minPercent = 0.80; iconWheel.navItems[2].maxPercent = 1;
-        iconWheel.navItems[3].minPercent = 1; iconWheel.navItems[3].maxPercent = 0.80; iconWheel.navItems[3].initPercent = 0.80;
-        iconWheel.navItems[4].minPercent = 0.80; iconWheel.navItems[4].maxPercent = 1;
-        iconWheel.navItems[5].minPercent = 1; iconWheel.navItems[5].maxPercent = 0.80; iconWheel.navItems[5].initPercent = 0.80;
-		iconWheel.navItems[6].minPercent = 0.80; iconWheel.navItems[6].maxPercent = 1;
-		iconWheel.navItems[7].minPercent = 1; iconWheel.navItems[7].maxPercent = 0.80; iconWheel.navItems[7].initPercent = 0.80;
-        iconWheel.createWheel();
-    };
-</script>
 
 </body>
 </html>

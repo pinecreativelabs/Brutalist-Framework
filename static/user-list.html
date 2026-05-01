@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>User List</title>
+	<meta name="description" content="User and group list template." />
+	<!-- OPEN GRAPH -->
+	
+	<!-- CORE CSS  -->
+	<link href="core/css/construct.css" type="text/css" rel="stylesheet" media="all"/>
+	<style>
+	h1{padding:0; margin: 0;}
+	a {font-weight: 600;}
+	.polygrid>.shape>img {width: 100%; height: 100%; object-fit:cover;}
+	.polygrid>.shape{transition: transform 0.3s ease;}
+	.polygrid .shape:hover {transform: scale(0.8); 
+	</style>
+</head>
+<body class="notebook-paper">
+
+<div class="container-1200">
+	<header class="padded sapphire-t">
+		<h1 class="fluid-text center bluu-next">User List</h1>
+		<p class="flow-text bitstream center">Hover over each circle to reveal the username, then search for it.</p>
+	</header>
+	<!-- Searchable User List -->
+	<div class="padded sapphire-b b-b-k">
+		<!-- user search input -->
+		<div class="padded pill clean lucida">
+			<label for="instant-search">Search</label>
+			<input type="search" id="instant-search" placeholder="user search..">
+		</div>
+		<!-- user search results -->
+		<div class="polygrid fifths circle gaps padded">
+			<a href="user-profile.html" data-tooltip="Gelora" class="shape filter lofi searchable">
+				<img src="app/files/images/contemplate.jpg" alt="gelora" />
+				<p class="keywords">gelora</p>
+			</a>
+			<a href="user-profile.html" data-tooltip="Savannah" class="shape filter bluebird searchable">
+				<img src="app/files/images/comprehend.jpg" alt="savannah" />
+				<p class="keywords">savannah, alice</p>
+			</a>
+			<a href="user-profile.html" data-tooltip="Brut" class="shape filter canary searchable">
+				<img src="app/files/images/brut-terminal.jpg" alt="brut" />
+				<p class="keywords">brut</p>
+			</a>
+			<a href="user-profile.html" data-tooltip="Cara" class="shape filter cali-sunset searchable">
+				<img src="app/files/images/contemplate.jpg" alt="avatar" />
+				<p class="keywords">cara</p>
+			</a>
+			<a href="user-profile.html" data-tooltip="Emily" class="shape filter earlybird searchable">
+				<img src="app/files/images/comprehend.jpg" alt="avatar" />
+				<p class="keywords">emily</p>
+			</a>
+			<a href="user-profile.html" data-tooltip="Nathan" class="shape filter solar searchable">
+				<img src="app/files/images/brut-terminal.jpg" alt="avatar" />
+				<p class="keywords">nathan</p>
+			</a>
+			<a href="user-profile.html" data-tooltip="Nicole" class="shape filter amazon searchable">
+				<img src="app/files/images/contemplate.jpg" alt="avatar" />
+				<p class="keywords">nicole</p>
+			</a>
+			<a href="user-profile.html" data-tooltip="Sarah" class="shape filter ibiza searchable">
+				<img src="app/files/images/comprehend.jpg" alt="avatar" />
+				<p class="keywords">sarah</p>
+			</a>
+			<a href="user-profile.html" data-tooltip="George" class="shape filter seaside searchable">
+				<img src="app/files/images/brut-terminal.jpg" alt="avatar" />
+				<p class="keywords">george</p>
+			</a>
+		</div>
+	</div>
+	<p class="spacer"></p>
+</div>
+
+<!-- tooltip displayer -->
+<div id="tooltip-reveal" class="tooltip-hide"></div>
+
+<footer class="padded center bitstream disabled">
+	<p><a href="https://www.brutalistframework.com" target="_blank">Brutalist Framework</a> &copy; 2026</p>
+</footer>
+
+
+<!-- Vanilla Modal -->
+<div id="add-friend" style="display:none;">
+	<div class="wrap-960 blueprint rounded bitstream padded" style="max-width: 468px;">
+		<h4 class="flow-text"><strong>Friend Requested</strong></h4>
+		<p>They will either accept or reject you.</p>
+	</div>
+</div>
+<!-- Initiate and display modal itself -->
+<div class="modal">
+	<div class="modal-inner draggable"><!-- Remove "draggable" class to prevent modals from being moveable -->
+		<span data-modal-close>&times;</span>
+		<div class="modal-content"></div>
+	</div>
+</div>
+
+
+<!-- Vanilla Javascript -->
+<script src="core/jab/buix/modal.js"></script>
+<script src="core/jab/buix/instant-search.js"></script>
+<script src="core/jab/buix/tooltip-reveal.js"></script>
+<script src="core/jab/grids/poly-grid.js"></script>
+
+</body>
+</html>

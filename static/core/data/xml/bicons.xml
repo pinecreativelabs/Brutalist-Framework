@@ -4,13 +4,16 @@
 	<bicon alt="gator" cat="animals">alligator</bicon>
 	<bicon alt="" cat="animals">badger</bicon>
 	<bicon alt="" cat="animals">bat</bicon>
-	<bicon alt="parrot" cat="animals">bird</bicon>
+	<bicon alt="" cat="animals">bird</bicon>
+	<bicon alt="buffalo" cat="animals">bison</bicon>
 	<bicon alt="" cat="animals">butterfly</bicon>
 	<bicon alt="" cat="animals">camel</bicon>
 	<bicon alt="kitty" cat="animals">cat</bicon>
 	<bicon alt="" cat="animals">cow</bicon>
 	<bicon alt="" cat="animals">crab</bicon>
+	<bicon alt="" cat="animals">cricket</bicon>
 	<bicon alt="" cat="animals">deer</bicon>
+	<bicon alt="" cat="animals">dodo</bicon>
 	<bicon alt="" cat="animals">dog</bicon>
 	<bicon alt="" cat="animals">dolphin</bicon>
 	<bicon alt="" cat="animals">dragon</bicon>
@@ -21,8 +24,11 @@
 	<bicon alt="" cat="animals">flamingo</bicon>
 	<bicon alt="" cat="animals">fox</bicon>
 	<bicon alt="" cat="animals">frog</bicon>
+	<bicon alt="" cat="animals">giraffe</bicon>
 	<bicon alt="" cat="animals">gorilla</bicon>
 	<bicon alt="" cat="animals">guide-dog</bicon>
+	<bicon alt="" cat="animals">hedgehog</bicon>
+	<bicon alt="hippopotamus" cat="animals">hippo</bicon>
 	<bicon alt="" cat="animals">horse</bicon>
 	<bicon alt="" cat="animals">kangaroo</bicon>
 	<bicon alt="" cat="animals">ladybug</bicon>
@@ -30,10 +36,14 @@
 	<bicon alt="" cat="animals">lizard</bicon>
 	<bicon alt="" cat="animals">llama</bicon>
 	<bicon alt="" cat="animals">lobster</bicon>
+	<bicon alt="" cat="animals">mammoth</bicon>
 	<bicon alt="" cat="animals">monkey</bicon>
 	<bicon alt="" cat="animals">octopus</bicon>
+	<bicon alt="" cat="animals">otter</bicon>
 	<bicon alt="" cat="animals">owl</bicon>
+	<bicon alt="" cat="animals">oyster</bicon>
 	<bicon alt="" cat="animals">panda</bicon>
+	<bicon alt="" cat="animals">parrot</bicon>
 	<bicon alt="" cat="animals">peacock</bicon>
 	<bicon alt="" cat="animals">penguin</bicon>
 	<bicon alt="" cat="animals">pig</bicon>
@@ -42,16 +52,20 @@
 	<bicon alt="trash-panda" cat="animals">raccoon</bicon>
 	<bicon alt="" cat="animals">rat</bicon>
 	<bicon alt="" cat="animals">rhino</bicon>
+	<bicon alt="" cat="animals">scorpion</bicon>
 	<bicon alt="" cat="animals">shark</bicon>
 	<bicon alt="" cat="animals">sheep</bicon>
 	<bicon alt="" cat="animals">shrimp</bicon>
 	<bicon alt="" cat="animals">skunk</bicon>
+	<bicon alt="" cat="animals">sloth</bicon>
 	<bicon alt="" cat="animals">snail</bicon>
 	<bicon alt="" cat="animals">snake</bicon>
 	<bicon alt="" cat="animals">squid</bicon>
+	<bicon alt="" cat="animals">swan</bicon>
 	<bicon alt="" cat="animals">turkey</bicon>
 	<bicon alt="" cat="animals">turtle</bicon>
 	<bicon alt="" cat="animals">whale</bicon>
+	<bicon alt="" cat="animals">zebra</bicon>
 	
 	<!-- Astrology -->
 	<bicon alt="" cat="astrology">aquarius</bicon>
@@ -80,11 +94,17 @@
 	<bicon alt="" cat="astrology">vesta</bicon>
 	
 	<!-- Currency -->
+	<bicon alt="" cat="currency">austral</bicon>
 	<bicon alt="" cat="currency">bitcoin</bicon>
 	<bicon alt="" cat="currency">euro</bicon>
+	<bicon alt="" cat="currency">euro-currency</bicon>
+	<bicon alt="" cat="currency">franc</bicon>
 	<bicon alt="" cat="currency">kip</bicon>
 	<bicon alt="" cat="currency">lira</bicon>
+	<bicon alt="" cat="currency">naira</bicon>
+	<bicon alt="" cat="currency">nordic-mark</bicon>
 	<bicon alt="" cat="currency">peso</bicon>
+	<bicon alt="" cat="currency">rupee</bicon>
 	<bicon alt="" cat="currency">won</bicon>
 
 	<!-- Danger Zone -->

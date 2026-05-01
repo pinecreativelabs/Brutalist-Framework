@@ -1,5 +1,5 @@
 /* Construct CORE CSS 
- * version 2.6
+ * version 2.7
  *
 Load Defaults (REQUIRED) */
 @import url('default.css');
@@ -28,6 +28,7 @@ Load Defaults (REQUIRED) */
 
 /* BUIX */
 @import url('buix.css');
+@import url('buix/navigation.css');
 @import url('buix/multimedia.css');
 @import url('buix/presenter.css');
 @import url('buix/timeline.css');
@@ -38,7 +39,9 @@ Load Defaults (REQUIRED) */
 
 /* BFX */
 @import url('bfx.css');
+@import url('bfx/animated-backgrounds.css');
 @import url('bfx/brutal-animations.css');
+@import url('bfx/spazz-effect.css');
 @import url('bfx/text-fx.css');
 
 /* bIcons */

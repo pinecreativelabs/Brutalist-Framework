@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>Product Details</title>
+	<meta name="description" content="Product details page template." />
+	<!-- OPEN GRAPH -->
+	
+	<!-- CORE CSS  -->
+	<link href="core/css/construct.css" type="text/css" rel="stylesheet" media="all"/>
+	
+	<style>
+	header h1, header h2 {padding: 0; margin: 0;}
+	.menu>ul>li>a:hover {text-decoration: none; font-weight: 900;}
+	.menu>ul>li>a .badge {background: #333; color: #eee;}
+	.price-tag {
+		display: inline-block; margin: 1em 0 1em 0;
+		padding: 0.75rem; -webkit-border-radius: 0.75rem;
+		border-radius: 0.75rem;
+	}
+	.model-no {font-size: 1.25rem;}
+	.modal-content .tiles li {border-bottom: 1px solid #333;}
+	.modal-content .tiles li a img {margin-right: 6px !important;}
+	</style>
+	
+</head>
+<body class="carbon-black">
+<!-- MEGAMENU -->
+<div class="menu-container bitstream sticky layer-t">
+	<div class="menu">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#"><i class="bi bi-down"></i> Categories</a>
+				<ul>
+					<li><a href="#">Electronics</a>
+						<ul>
+							<li><a href="#">Computers</a></li>
+							<li><a href="#">Inter-Dimensional Meters</a></li>
+							<li><a href="#">Accessories</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Software</a>
+						<ul>
+							<li><a href="#">HAL-9000 OS</a></li>
+							<li><a href="#">HAL Module Suites</a></li>
+							<li><a href="#">Database Management</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Backroom Supplies</a>
+						<ul>
+							<li><a href="#">Medical</a></li>
+							<li><a href="#">Food &amp; Nutrition</a></li>
+							<li><a href="#">Clothing</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Construction</a>
+						<ul>
+							<li><a href="#">Equipment</a></li>
+							<li><a href="#">Tools</a></li>
+							<li><a href="#">Supplies</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#"><i class="bi bi-down"></i> My Stuff</a>
+				<ul>
+					<li><a href="#">View Orders</a></li>
+					<li><a href="#">Edit Account</a></li>
+					<li><a href="#">Rewards</a></li>
+				</ul>
+			</li>
+			<li><a href="#view-cart" data-modal-open><i class="bi bi-cart"></i> Cart <span class="badge total-count">2</span></a></li>
+		</ul>
+	</div>
+</div>
+<!-- END MEGAMENU -->
+
+
+<div class="wrap-1600 sudo">
+	<!-- heading -->
+	<header class="block-wrap">
+		<div class="block bw33 padded">
+			<img src="app/files/images/brut-terminal.jpg" class="responsive rounded" alt="Brut Terminal" />
+		</div>
+		<div class="block bw67 padded">
+			<div class="rounded fossil smoke-t padded">
+				<h1 class="fluid-text-h3 heavy">Brut Terminal 9000</h1>
+				<h2 class="flow-text">A Product Details Boilerplate</h2>
+				<p class="model-no"><strong>Model #22-4-1985</strong></p>
+			</div>
+			<p class="price-tag smoke fossil-t fluid-text"><span>$</span>27,000,000,000.95</p>
+		</div>
+	</header>
+	<!-- page body -->
+	<div class="block-wrap padded">
+		<div class="block bw67 xs-100 sm-100 md-100">
+			<div class="tabs">
+				<!-- General Description Tab -->
+				<input type="radio" name="details" checked="checked" id="desc">
+				<label for="desc">Description</label>
+				<div class="tab">
+					<p>The Brut Terminal 9000 is a resolute AI concrete computer with contemplative capabilities. Use it to calculate future probabilities and command outcomes for any scenario in any dimension.</p>
+					<h4>Features</h4>
+					<ul class="check">
+						<li>HAL-9000 Operating System</li>
+						<li>Galvanized concrete construction</li>
+						<li>Inter-dimensional communications</li>
+					</ul>
+					<h4>Versions</h4>
+					<p>The Brut Terminal 9000 is available in the following versions:</p>
+					<ul class="square">
+						<li>Basic</li>
+						<li>Modular</li>
+						<li>Super</li>
+						<li>Psychic</li>
+					</ul>
+				</div>
+				
+				<!-- Showcase Gallery Tab -->
+				<input type="radio" name="details" id="showcase">
+				<label for="showcase">Showcase</label>
+				<div class="tab">
+					<div class="presenter half-screen">
+						<a href="#" class="slide-prev charcoal smoke-t">&laquo;</a>
+						<div class="slides">
+							<div class="slide padded center">
+								<img src="app/files/images/dune.jpg" alt="dune-code" style="height: 100%; height: auto;" />
+							</div>
+							<div class="slide padded center">
+								<img src="app/files/images/cubik-modular.jpg" alt="module-crete" style="height: 100%; height: auto;" />
+							</div>
+							<div class="slide padded center">
+								<img src="app/files/images/edgespace.jpg" alt="edge-space" style="height: 100%; height: auto;" />
+							</div>
+						</div>
+						<a href="#" class="slide-next charcoal smoke-t">&raquo;</a>
+					</div>
+				</div>
+				
+				<!-- Technical Specifications Tab -->
+				<input type="radio" name="details" id="specs">
+				<label for="specs">Specifications</label>
+				<div class="tab">
+					<table class="responsive charcoal-t">
+						<caption>Technical Specifications</caption>
+						<thead>
+							<tr class="emptiness smoke-t">
+								<th scope="col">Basic</th>
+								<th scope="col">Modular</th>
+								<th scope="col">Super</th>
+								<th scope="col">Psychic</th>
+							</tr>
+						</thead>
+						<tbody class="charcoal-t">
+							<tr class="smoke">
+								<td data-label="Basic">16 TB RAM</td>
+								<td data-label="Modular">32 TB RAM</td>
+								<td data-label="Super">64 TB RAM</td>
+								<td data-label="Psychic">128 TB RAM</td>
+							</tr>
+							<tr class="silver">
+								<td data-label="Basic">25-core<br />Quantum Processor</td>
+								<td data-label="Modular">49-core<br />Quantum Processor</td>
+								<td data-label="Super">64-core<br />Quantum Processor</td>
+								<td data-label="Psychic">121-core<br />Quantum Processor</td>
+							</tr>
+							<tr class="smoke">
+								<td data-label="Basic">5 Data Ports</td>
+								<td data-label="Modular">25 Data Ports</td>
+								<td data-label="Super">25 Data Ports</td>
+								<td data-label="Psychic">50 Data Ports</td>
+							</tr>
+							<tr class="silver">
+								<td data-label="Basic">HAL-9000 OS</td>
+								<td data-label="Modular">HAL-9000 OS Pro</td>
+								<td data-label="Super">HAL-9000 OS Pro</td>
+								<td data-label="Psychic">HAL-9000 OS Pro</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<!-- Related Products Tab -->
+				<input type="radio" name="details" id="related">
+				<label for="related">Related Products</label>
+				<div class="tab">
+					<p>Users who bought this item also bought:</p>
+					<ul class="tiles">
+						<li><a href="#">
+							<img src="app/files/images/blinker-fluid.jpg" alt="blinker-fluid" class="small-thumb crop"/><br />
+							<strong>Blinker Fluid</strong>
+						</a></li>
+						<li><a href="#">
+							<img src="app/files/images/cubik-modular.jpg" alt="blinker-fluid" class="small-thumb crop"/><br />
+							<strong>Brut Module Pack</strong>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Add to Cart Form Block -->
+		<div class="block bw33 xs-100 sm-100 md-100 padded">
+			<form name="orderform" action="" method="post" class="padded rounded smoke charcoal-t">
+				<h4 class="flow-text center">Buy Now</h4>
+				<div class="form-group">
+					<label>Quantity</label>
+					<input type="number" name="quantity" min="1" max="50" value="1">
+				</div>
+				<div class="form-group">
+					<label>Select Version</label><br />
+					<select name="version">
+						<option value="basic">Basic</option>
+						<option value="modular">Modular</option>
+						<option value="super">Super</option>
+						<option value="psychic">Psychic</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<input type="submit" value="Add to Cart" class="nb-btn full">
+				</div>
+			</form>
+		</div>
+	</div>
+	<p class="spacer"></p>
+</div>
+
+<footer class="padded center bitstream disabled">
+	<p><a href="https://www.brutalistframework.com" target="_blank">Brutalist Framework</a> &copy; 2026</p>
+</footer>
+
+
+<!-- View Cart Modal -->
+<div id="view-cart" style="display:none;">
+	<div class="wrap-960 smoke rounded padded bitstream charcoal-t" style="width: 90vw; height: 90vh; max-width: 600px;">
+		<h4 class="flow-text center"><i class="bi bi-cart bi-2x greyscale charcoal-t-s"></i> <strong>My Cart</strong></h4>
+		<hr class="charlie" />
+		<ul class="tiles full">
+			<li><a href="#">
+				<img src="app/files/images/blinker-fluid.jpg" alt="blinker-fluid" class="tiny-thumb crop left"/>
+				<strong>Blinker Fluid</strong><br />$995.95
+			</a></li>
+			<li><a href="#">
+				<img src="app/files/images/cubik-modular.jpg" alt="blinker-fluid" class="tiny-thumb crop left"/>
+				<strong>Brut Module Pack</strong><br />$99,985.85
+			</a></li>
+		</ul>
+		<p class="right-align padded"><a href="order-form.html" class="nb-btn">Checkout &raquo;</a></p>
+	</div>
+</div>
+
+<!--
+<div id="my-cart" style="display:none;">
+	<div class="clean azure-b b-s-k padded rounded" style="width: 80vw; height: 80vh; max-width: 600px;">
+		<h3 class="flow-text azure ivory-t padded rounded">My Cart</h3>
+		<table class="show-cart">
+        
+        </table>
+        <div class="grand-total">Total: $<span class="total-cart"></span></div>
+		<p class="right-align padded">
+			<button style="margin: 0 8px 0 0;" class="clear-cart nb-btn-small sharp">Clear Cart</button>
+			<a href="order-form.html" class="nb-btn">Checkout &raquo;</a>
+		</p>
+	</div>
+</div>
+-->
+
+<!-- Initiate and display modal itself -->
+<div class="modal">
+	<div class="modal-inner draggable"><!-- Remove "draggable" class to prevent modals from being moveable -->
+		<span data-modal-close>&times;</span>
+		<div class="modal-content"></div>
+	</div>
+</div>
+
+
+<!-- Vanilla Javascript -->
+<script src="core/jab/buix/modal.js"></script>
+
+<!-- jQuery Plugins -->
+<script src="core/jab/jquery.3.js"></script>
+<!--<script  src="core/jab/plugins/b-cart.js"></script>-->
+<script src="core/jab/plugins/megamenu.js" type="text/javascript"></script>
+<script src="core/jab/plugins/presenter.js" type="text/javascript"></script>
+</body>
+</html>

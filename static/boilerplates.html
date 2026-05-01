@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	
+	<title>Boilerplates</title>
+	<meta name="description" content="Blender Utility for Filters: CSS blends and filters library." />
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Boilerplates" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content="A free open source CSS library for the brutalist web design trend." /> 
+	<meta property="og:site_name" content="Brutalist Framework" />
+	
+	<!-- Icons -->
+	<link rel="icon" href="core/files/favicon-16.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="core/files/favicon-32.png" type="image/png" />
+	<link rel="apple-touch-icon" href="core/files/favicon-128.png" type="image/png" />
+	
+	<!-- CORE CSS  -->
+	<link href="core/css/construct.css" type="text/css" rel="stylesheet" media="all"/>
+	<!-- Theme CSS -->
+	<link href="app/theme/css/theme.css" type="text/css" rel="stylesheet" media="all" />
+	<style>
+	.tiles li a:link, .tiles ul li a:visited{ color: #ffff00; }
+	.tiles li a {color: #ffff00; background: blue; border: 2px solid #fff;}
+	.tiles li a:hover {color: #0f0; text-decoration: none;}
+	</style>
+	
+</head>
+<body>
+<!-- MAIN MENU -->
+<div class="blonk-tr shape quadrant bottom-left flex middle sand">
+	<button class="reveal-overlay" id="reveal-nav" aria-controls="primary-menu" aria-expanded="false">
+	  <span class="topbar charcoal"></span><span class="middlebar charcoal"></span><span class="bottombar charcoal"></span>
+	</button>
+</div>
+<div class="overlay" id="overlay-nav">
+	<div class="wrap-960 monolisk" style="margin-top: 1.5rem;"><div class="checkerboard padded" style="border-radius: 1rem;"><div class="padded emptiness">
+		<ul class="flex flow-text">
+			<li class="third"><a href="index.html"><i class="bi bi-home"></i> HOME</a></li>
+			<li class="third current"><a href="boilerplates.html"><i class="bi bi-heat"></i> Boilerplates</a></li>
+			<li class="third"><a href="bad-assets.html"><i class="bi bi-pinwheel"></i> BAD-Assets</a></li>
+		</ul>
+		<ul class="flow-text flex" style="border-top: 2px solid #fff; padding-top: 8px;">
+			<li class="third"><a href="bfx.html"><i class="bi bi-sparkle"></i> BFX</a></li>
+			<li class="third"><a href="bicons.html"><i class="bi bi-flag"></i> bIcons</a></li>
+			<li class="third"><a href="buff.html"><i class="bi bi-fill"></i> BUFF</a></li>
+			<li class="third"><a href="buix.html"><i class="bi bi-navigate"></i> BUIX</a></li>
+			<li class="third"><a href="butch.html"><i class="bi bi-pick"></i> BUTCH</a></li>
+			<li class="third"><a href="flavors.html"><i class="bi bi-cone"></i> Flavors</a></li>
+			<li class="third"><a href="fux.html"><i class="bi bi-box-x"></i> FUX</a></li>
+			<li class="third"><a href="grids.html"><i class="bi bi-quadrant"></i> Grids</a></li>
+			<li class="third"><a href="rebar.html"><i class="bi bi-converge-left"></i> ReBAR</a></li>
+		</ul>
+	</div><div class="padded emptiness" style="margin-top: 1.25rem;">
+		<ul class="flex flow-text">
+			<li class="third"><a href="https://brutalistframework.com/#about" target="_blank"><i class="bi bi-info"></i> About BF</a></li>
+			<li class="third"><a href="https://github.com/pinecreativelabs/Brutalist-Framework/wiki/Roadmap" target="_blank">Roadmap</a></li>
+			<li class="third"><a href="https://github.com/pinecreativelabs/Brutalist-Framework" target="_blank">Github Repo</a></li>
+		</ul>
+		<ul class="flex flow-text" style="width: 100%; border-top: 2px solid #fff; padding-top: 8px;">
+			<li class="third"><a href="https://www.blueprintgrid.com" target="_blank"><i class="blueprint bi bi-grid"></i> Blueprint Grid</a></li>
+			<li class="third"><a href="https://www.brutalistwebdesign.com" target="_blank"><i class="bi bi-reference lemon black-t"></i> Reference Guides</a></li>
+			<li class="third"><a href="https://www.brutalcms.com" target="_blank"><i class="bi bi-communist black red-t"></i> Brutal CMS</a></li>
+		</ul>
+	</div></div></div>
+</div>
+<script>
+document.querySelector("#reveal-nav").addEventListener("click", function() {
+  this.classList.toggle("active");
+  document.querySelector("#overlay-nav").classList.toggle("open");
+})
+</script>
+<a href="#uptop" class="blonk-cr blood shape semicircle west white-t monolisk lighten-h"><i class="bi bi-up bi-3x"></i><br /><strong>top</strong></a>
+
+<!-- PAGE -->
+<header class="brickbuild padded flex middle" id="uptop" style="min-height: 25vh; margin-bottom: 0;">
+	<a href="index.html"><img class="large-thumb brdr-s-k red-b invert-h" src="app/files/images/bf3logo_bloodsand.png" alt="Brutalist Framework" /></a>
+</header>
+<div class="dune white-t flex" style="height: 25vh; margin: 0;">
+	<div class="shape point-right sand center flex middle" style="min-width: 15vw; height: 100%; margin: 0 1rem 0 0;">
+		<div class="fluid-text-h1" style="margin-left: -20px;"><i class="bi bi-heat charcoal-t wheat-t-s"></i></div>
+	</div>
+	<div class="flex middle column charcoal-t sand-t-s">
+		<h1 class="fluid-text start monolisk" style="margin: -10px 0 0 0; font-weight:900;">Boilerplates</h1>
+		<h2 class="flow-text baffle start keep-all depixel" style="margin: 0; padding: 0;">Project template starting points</h2>
+	</div>
+</div>
+
+<div class="fossil smoke-t padded">
+	<div class="wrap-1200">
+		<p class="flow-text bitstream">Boilerplates are static HTML templates that utilize the CORE components to construct starting points to assist in rapid prototyping.</p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		<!-- STICKY PAGE SANDBAR NAV -->
+		<nav class="sandbar sand monolisk flow-text">
+			<ul>
+				<li><a href="#general">General</a></li>
+				<li><a href="#commerce">Commerce</a></li>
+				<li><a href="#marketing">Marketing</a></li>
+				<li><a href="#social">Social</a></li>
+				<li><a href="#creative">Creative</a></li>
+			</ul>
+		</nav>
+
+		<!-- GENERAL Boilerplates -->
+		<h3 class="fluid-text monolisk" id="general">General</h3>
+		<div class="flex bitstream"><div class="padded half">
+			<p>These basic boilerplates are simple starter templates ideal for miscellaneous projects.<br /><br /></p>
+		</div><div class="padded half">
+			<ul class="tiles full vcr-mono">
+				<li><a href="blank_boilerplate.html" target="_blank"><span class="heavy flow-text">Blank Boilerplate</span><br />
+					A barebones BF HTML template</a></li>
+				<li><a href="404-error.html" target="_blank"><span class="heavy flow-text">404 Error</span><br />
+					A glitchy page not found template</a></li>
+				<li><a href="rated-x.html" target="_blank"><span class="heavy flow-text">Rated-X</span><br />
+					An age verification template</a></li>
+				<li><a href="quick-search.html" target="_blank"><span class="heavy flow-text">Quick Search</span><br />
+					An instant search example</a></li>
+			</ul>
+		</div></div>
+		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		<!-- COMMERCE -->
+		<h3 class="fluid-text monolisk" id="commerce">Commerce</h3>
+		<div class="flex bitstream"><div class="padded half">
+			<p>Commerce boilerplates are starter templates ideal for ecommerce projects.<br /><br /></p>
+		</div><div class="padded half">
+			<ul class="tiles full vcr-mono">
+				<li><a href="product-shop.html" target="_blank"><span class="heavy flow-text">Product Shop</span><br />
+					A products list page with shopping cart</a></li>
+				<li><a href="product-details.html" target="_blank"><span class="heavy flow-text">Product Details</span><br />
+					Product details page with slider and tabs</a></li>
+				<li><a href="order-form.html" target="_blank"><span class="heavy flow-text">Order Form</span><br />
+					A checkout order form page with validation</a></li>
+			</ul>
+		</div></div>
+		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		<!-- MARKETING -->
+		<h3 class="fluid-text monolisk" id="marketing">Marketing</h3>
+		<div class="flex bitstream"><div class="padded half">
+			<p>Marketing boilerplates are starter templates ideal for landing pages.<br /><br /></p>
+		</div><div class="padded half">
+			<ul class="tiles full vcr-mono">
+				<li><a href="lead-capture.html" target="_blank"><span class="heavy flow-text">Lead Capture</span><br />
+					A basic landing page with lead capture form, Exit Intent, and Cookie Consent</a></li>
+				<li><a href="bento-dashboard.html" target="_blank"><span class="heavy flow-text">Bento Dashboard</span><br />
+					A marketing dashboard panel using Bento Grid</a></li>
+				<li><a href="final-countdown.html" target="_blank"><span class="heavy flow-text">Final Countdown</span><br />
+					A countdown timer example</a></li>
+			</ul>
+		</div></div>
+		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		<!-- SOCIAL -->
+		<h3 class="fluid-text monolisk" id="social">Social</h3>
+		<div class="flex bitstream"><div class="padded half">
+			<p>Social boilerplates are starter templates ideal for community projects.<br /><br /></p>
+		</div><div class="padded half">
+			<ul class="tiles full vcr-mono">
+				<li><a href="blog-feed.html" target="_blank"><span class="heavy flow-text">Blog Feed</span><br />
+					A social activity post feed in a timeline format</a></li>
+				<li><a href="user-account.html" target="_blank"><span class="heavy flow-text">User Account</span><br />
+					A simple account creation and login form page</a></li>
+				<li><a href="user-list.html" target="_blank"><span class="heavy flow-text">User List</span><br />
+					A searchable list of user account profiles</a></li>
+				<li><a href="user-profile.html" target="_blank"><span class="heavy flow-text">User Profile</span><br />
+					A user account profile page</a></li>
+			</ul>
+		</div></div>
+		
+		<p class="spacer"></p>
+		<div class="clear-block jagged"><p class="checkerboard padding"></p></div>
+		
+		<!-- CREATIVE -->
+		<h3 class="fluid-text monolisk" id="creative">Creative</h3>
+		<div class="flex bitstream"><div class="padded half">
+			<p>Experimental boilerplates are starter templates ideal for creative projects.<br /><br /></p>
+		</div><div class="padded half">
+			<ul class="tiles full vcr-mono">
+				<li><a href="3d-cubes.html" target="_blank"><span class="heavy flow-text">3D-Cubes</span><br />
+					A pure CSS 3D animation example</a></li>
+			</ul>
+		</div></div>
+		<p class="spacer"></p>
+		<p class="spacer"></p>
+	</div>
+</div>
+
+<footer class="brickbuild bitstream center" style="border-top: 14px solid #000; padding: 0 0 10vh 0;">
+	<div class="shape semicircle south padded emptiness flex column smoke-t center" style="height: 100%; max-width: 768px; margin: 0 auto; border-bottom: 3px solid #000;">
+		<p>A <a href="http://www.pinecreativelabs.com" target="_blank" class="evergreen smoke-t invert-h">Pine Creative Labs</a> production</p>
+		<p>Developer: <a href="https://www.linkedin.com/in/bradfogelstrom" target="_blank"><span class="blue yellow-t invert-h">Brad Fogelstrom</span></a></p>
+		<ul class="tags" style="margin-bottom: 0.75rem;">
+			<li><a href="https://github.com/pinecreativelabs" target="_blank" class="btn box-s black white-t invert-h"><strong>GitHub</strong></a></li>
+		</ul>
+		<a href="http://eepurl.com/cEW1RX" target="_blank" class="sweden-gradient invert-h" style="width: 100%;">
+			<span class="white-t"><i class="bi bi-amp"></i>Brutal Blast /<span class="blink-182">/</span>/<span class="blink">/</span>/</span><br />
+			<small><strong>Subscribe to our e-newsletter. &raquo;</strong></small>
+		</a>
+		<p class="white-t" style="margin: 1rem 0 1rem 0;"><small>Brutalist Framework &copy; 2026</small></p>
+	</div>
+</footer>
+<script src="core/jab/bfx/baffle.js" type="text/javascript"></script>
+</body>
+</html>
