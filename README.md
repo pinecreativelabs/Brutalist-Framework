@@ -1,4 +1,4 @@
-# Brutalist Framework 2.6
+# Brutalist Framework 2.7
 A framework for the brutalist web design trend.
 
 ![BF Cover](https://www.brutalistframework.com/core/files/images/bf-og-tile.jpg)
